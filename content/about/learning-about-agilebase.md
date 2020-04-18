@@ -1,6 +1,7 @@
 ---
 title: "Learning About Agilebase"
 date: 2020-04-18T16:57:55+01:00
-draft: true
+type: docs
+weight: 1
 ---
 
