@@ -6,9 +6,9 @@ jobs:
         - gh-pages
     docker:
       - image: cibuilds/hugo:latest
-    working_directory: ~/hugo
-    environment:
-      HUGO_BUILD_DIR: ~/hugo/public
+#    working_directory: ~/hugo
+#    environment:
+#      HUGO_BUILD_DIR: ~/hugo/public
     steps:
 
       # install git
