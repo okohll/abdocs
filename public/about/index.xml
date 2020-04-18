@@ -1,0 +1,32 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site – Abouts</title>
+    <link>http://example.org/about/</link>
+    <description>Recent content in Abouts on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 18 Apr 2020 16:57:55 +0100</lastBuildDate>
+    
+	  <atom:link href="http://example.org/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>About: Learning About Agilebase</title>
+      <link>http://example.org/about/learning-about-agilebase/</link>
+      <pubDate>Sat, 18 Apr 2020 16:57:55 +0100</pubDate>
+      
+      <guid>http://example.org/about/learning-about-agilebase/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
