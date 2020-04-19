@@ -6,9 +6,9 @@ jobs:
         - gh-pages
     docker:
       - image: cibuilds/hugo:latest
-#    working_directory: ~/hugo
-#    environment:
-#      HUGO_BUILD_DIR: ~/hugo/public
+    working_directory: ~/hugo
+    environment:
+      HUGO_BUILD_DIR: ~/hugo/public
     steps:
 
       # install git
@@ -24,5 +24,5 @@ jobs:
       - run: git config --global user.email "noreply@example.com" && git config --global user.name "CircleCI Bot"
 
       # Build and push the generated files back to github
-      - run: hugo --themesDir themes --destination public
+      - run: HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR
 
