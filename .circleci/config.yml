@@ -11,8 +11,8 @@ jobs:
       HUGO_BUILD_DIR: ~/hugo/public
     steps:
 
-      # install git
-      # - run: apk update && apk add git
+      - run: npm install autoprefixer
+      - run: npm install postcss-cli
 
       # checkout the repository
       - checkout
