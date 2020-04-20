@@ -7,7 +7,7 @@ jobs:
     #   ignore:
     #     - gh-pages
     docker:
-       - image: felicianotech/docker-hugo:0.21
+       - image: felicianotech/docker-hugo:latest
     #  - image: cibuilds/hugo:latest
     # working_directory: ~/hugo
     # environment:
