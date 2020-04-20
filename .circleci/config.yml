@@ -3,9 +3,9 @@ orbs:
   node: circleci/node@2.0.2
 jobs:
   build:
-    branches:
-      ignore:
-        - gh-pages
+    # branches:
+    #   ignore:
+    #     - gh-pages
     docker:
       - image: cibuilds/hugo:latest
     working_directory: ~/hugo
@@ -13,15 +13,12 @@ jobs:
       HUGO_BUILD_DIR: ~/hugo/public
     steps:
 
+      # checkout the repository
+      - checkout
+
       - node/install:
           node-version: latest
 
-      - run: npm install autoprefixer
-
-      - run: npm install postcss-cli
-
-      # checkout the repository
-      - checkout
 
       # install git submodules for managing third-party dependencies
       - run: git submodule sync && git submodule update --init
