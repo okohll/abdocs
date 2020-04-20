@@ -16,9 +16,12 @@ jobs:
       # checkout the repository
       - checkout
 
-      - node/install:
-          node-version: latest
+      # - node/install:
+      #    node-version: latest
 
+      - run: npm install autoprefixer
+
+      - run: npm install postcss-cli
 
       # install git submodules for managing third-party dependencies
       - run: git submodule sync && git submodule update --init
