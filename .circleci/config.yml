@@ -16,8 +16,8 @@ jobs:
       # checkout the repository
       - checkout
 
-      # - node/install:
-      #    node-version: latest
+      - node/install:
+          node-version: latest
 
       - run: npm install autoprefixer
 
