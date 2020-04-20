@@ -7,7 +7,8 @@ jobs:
     #   ignore:
     #     - gh-pages
     docker:
-      - image: cibuilds/hugo:latest
+       - image: felicianotech/docker-hugo:0.21
+    #  - image: cibuilds/hugo:latest
     # working_directory: ~/hugo
     # environment:
     #   HUGO_BUILD_DIR: ~/hugo/public
@@ -16,12 +17,12 @@ jobs:
       # checkout the repository
       - checkout
 
-      - node/install:
-          node-version: latest
+      #- node/install:
+      #    node-version: latest
 
-      - run: npm install -D --save autoprefixer
+      #- run: npm install -D --save autoprefixer
 
-      - run: npm install -D --save postcss-cli
+      #- run: npm install -D --save postcss-cli
 
       # install git submodules for managing third-party dependencies
       - run: git submodule sync && git submodule update --init
