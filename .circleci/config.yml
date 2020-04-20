@@ -1,4 +1,6 @@
-version: 2
+version: 2.1
+orbs:
+  node: circleci/node@2.0.2
 jobs:
   build:
     branches:
@@ -11,7 +13,11 @@ jobs:
       HUGO_BUILD_DIR: ~/hugo/public
     steps:
 
+      - node/install:
+          node-version: latest
+
       - run: npm install autoprefixer
+
       - run: npm install postcss-cli
 
       # checkout the repository
