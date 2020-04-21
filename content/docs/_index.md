@@ -5,7 +5,7 @@ type: docs
 weight: 1
 menu:
   main:
-    weight: 15
+    weight: 3
 ---
 
 

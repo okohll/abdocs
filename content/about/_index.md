@@ -5,7 +5,7 @@ type: docs
 weight: 1
 menu:
   main:
-    weight: 20
+    weight: 1
 ---
 agileBase is our uniquely fast, friendly and flexible cloud-based platform. It provides a massively scalable and secure foundation on which to build enterprise-class software, fast. With over 29 man-years of development baked in, there’s not a lot it can’t do.
 

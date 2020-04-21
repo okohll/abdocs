@@ -5,7 +5,7 @@ type: docs
 weight: 1
 menu:
   main:
-    weight: 15
+    weight: 2
 ---
 There's lots to get your teeth into with agileBase, but this guide will give you a quick start.
 
