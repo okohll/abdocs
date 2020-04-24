@@ -9,7 +9,7 @@ printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
 
 cp -r public/* ../abdocs-public 
-rm -r public/*
+rm -r public
 
 cd ../abdocs-public
 git add --all
