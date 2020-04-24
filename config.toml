@@ -1,4 +1,4 @@
-baseURL = "https://docs.agilebase.co.uk/abdocs-public/"
+baseURL = "https://docs.agilebase.co.uk/"
 title = "agileBase docs"
 
 enableRobotsTXT = true
