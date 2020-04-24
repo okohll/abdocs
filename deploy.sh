@@ -8,16 +8,12 @@ printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 # Build the project.
 hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
 
-# Go To Public folder
-cd public
+cp -r public/* ../abdocs-public 
+rm -r public/*
 
-# Add changes to git.
-git add .
-
-# Commit changes.
-msg="rebuilding site $(date)"
-git commit -m "$msg"
-
-# Push source and build repos.
+cd ../abdocs-public
+git add --all
+git commit -a -m "rebuilding site $(date)"
 git push origin master
+
 
