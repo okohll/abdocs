@@ -31,7 +31,7 @@ Users are strongly encouraged to set up two factor authentication (2FA) using an
 
 Users without 2FA will be prompted to do so in the user interface and by email.
 
-2FA is mandatory for [administrators]({{< ref "#roles" >}}) and necessary before [manage](https://todo.com) privileges can be assigned to a user.
+2FA is mandatory for [administrators]({{< ref "#roles" >}}) and necessary for a user to have before [manage](https://todo.com) privileges can be assigned to them.
 
 When enabled, a user will be prompted for the 2FA code as well as their password when they log in from a device or location they haven't used in the past 30 days.
 
