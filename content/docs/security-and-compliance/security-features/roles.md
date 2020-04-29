@@ -21,7 +21,7 @@ You should now see an editing screen with the details of the role you just creat
 Referrs to exporting to spreadsheet - see [spreadsheet exports](https://todo.com)
 
 **User Visibility** and **Restrict Data Access**  
-These are used to set up [multi-tenanting](https://todo.com)
+These are used to set up [multi-tenanting](#multi-tenanting)
 
 ### Members
 Tick each user to add them to the role. Users will gain all the privileges defined by the role.
