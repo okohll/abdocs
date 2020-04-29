@@ -7,9 +7,7 @@ description: Organising users into groups for better management
 ---
 The primary purpose of roles is to apply privileges to groups of users, rather than applying them individually. That makes managing large numbers of users easier and also more secure as it's easy to see which privileges each type of user has and which they don't.
 
-Privileges are additive - if a user is a member of multiple roles, they gain all the privileges from each of those roles added together.
-
-Roles have some other important uses, such as multi-tennting, described below.
+Roles have some other important uses, such as multi-tenanting, described below.
 
 ## Creating a role
 1. Expand the _Administration_ menu in the lefthand sidebar
@@ -26,10 +24,12 @@ Referrs to exporting to spreadsheet - see [spreadsheet exports](https://todo.com
 These are used to set up [multi-tenanting](https://todo.com)
 
 ### Members
-Tick each user to add them to the role. Users will gain all the privileges defined by the role
+Tick each user to add them to the role. Users will gain all the privileges defined by the role.
 
 ### Privileges
-Select the [table privileges](https://todo.com) this role will apply to members
+Select the [table privileges](https://todo.com) which will apply to members.
+
+Privileges are additive - if a user is a member of multiple roles, they gain all the privileges from each of those roles added together.
 
 ## Multi-tenanting
 Multi-tenanting is the ability to separate users into groups who can’t see each other’s data. This can be used for example to allow different sets of companies, clubs, or membership groups (or whatever the organisational group is) to use the same system features whilst remaining separate from each other.
