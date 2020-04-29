@@ -22,7 +22,7 @@ You should now see an editing screen with the details of the role you just creat
 **Allow Export**  
 Referrs to exporting to spreadsheet - see [spreadsheet exports](https://todo.com)
 
-**User Visibility** and **Restrict Data Access**
+**User Visibility** and **Restrict Data Access**  
 These are used to set up [multi-tenanting](https://todo.com)
 
 ### Members
@@ -54,12 +54,15 @@ Users who **aren't** a member of the role will see the account name field in the
 
 If any multi-tenanting roles are set up, then views which **don't** contain a multi-tenanting field will be marked in red in the administration interface, as a warning. If a multi-tenanting user loads one of these views, they will see all records. Typically, practically all views will need the multi-tenanting field to be present.
 
-#### Complex multi-tenanting
+### Complex multi-tenanting
 
-**Multi-level**  
-Users may be a member of more than one multi-tenanting role, to set up multi-level multi-tenanting. For example you may use two multi-tenanting fields/roles, one for a company and another for a division. Members of a company role will be able to see data from all divisions in their company and members of both a company and a division role will only be able to see data for a single division.
+#### Multi-level
+Users may be a member of more than one multi-tenanting role. For example you may use two multi-tenanting fields/roles, one for a company and another for a division. Members of a company role will be able to see data from all divisions in their company and members of both a company and a division role will only be able to see data for a single division.
 
-**Multi-account**  
+#### Multi-account (via multiple roles)
 It's also possible for a user to be a member of multiple roles, all of which are set to multi-tenant on the same field, with different values. E.g. if a user is a member of Company A and Company B roles as in our example above, they will see data from those two companies when viewing records, but not Company C.
 
 This works best when the user has read-only privileges on the data, e.g. for a manager reporting on those two companies. They can view records but not add new records, as the system is unable to determine the value of the account name field to use.
+
+#### Multi-account (via _contains_ filtering)
+It's also possible to define a role filter under _restrict data access_ with a 'contains' rather than an '=' filter. You can then use a naming convension for your account name values to allow members of this role to see multiple accounts. As above, users of this role will need to be read-only on the data.
