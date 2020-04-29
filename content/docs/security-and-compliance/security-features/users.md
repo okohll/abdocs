@@ -31,7 +31,7 @@ Users are strongly encouraged to set up two factor authentication (2FA) using an
 
 Users without 2FA will be prompted to do so in the user interface and by email.
 
-2FA is mandatory for [administrators]({{< ref "#roles" >}}) and necessary for a user to have before [manage](https://todo.com) privileges can be assigned to them.
+2FA is mandatory for [administrators]({{< ref "#roles" >}}) and necessary for a user to have before [manage](https://todo.com) privileges can be assigned to them. Users also need to have 2FA enabled in order to perform certain functions such as exporting to spreadsheet.
 
 When enabled, a user will be prompted for the 2FA code as well as their password when they log in from a device or location they haven't used in the past 30 days.
 
@@ -40,10 +40,10 @@ If a user encounters any problems with 2FA, e.g. they lose the device for genera
 If someone can't use app-based 2FA for some reason, then a fallback option is to use text-message (SMS) based authentication. This is not recommended as there are known insecurities in this method, but it's still better than having no 2FA at all. To enable that, just type in the user's mobile phone number when editing their user details. That phone number isn't used for any other purposes.
 
 ### Other options
-**Use the custom AgileChilli UI rather than agileBase's:**
+**Use the custom AgileChilli UI rather than agileBase's:**  
 It's possible for companies to apply their logo and custom login screen to the system. Please contact us if you'd like to set this up.
 
-**Logout after**
+**Logout after**  
 Automatically end the user's session after after this many minutes of inactivity. The user themselves can also change this setting.
 
 #### Roles
@@ -59,13 +59,15 @@ If any role is a [filtering role](https://todo.com), the filter applied is also 
 Assign individual table [privileges](https://todo.com) to a user.
 > When dealing with larger numbers of users it's usually more manageable if you use roles to assign privileges.
 
-If a user has a privilege due to being a member of a role, that privilege is shown with a shaded blue background. if the privilege has been individually assigned to them, it's shown in green.
+If a user has a privilege due to being a member of a role, that privilege is shown with a shaded blue background. Any additional privileges individually assigned to them are shown in green.
 
 #### Tiles
 Allows an admin to add/remove [tiles](https://todo.com) for a user. By default users can add/remove tiles themselves too, although this can be disabled through the use of a [custom UI]({{< ref "#other-options" >}}).
 
 ## Viewing users
 Expand the _Administration_ menu in the lefthand sidebar and click users. You'll see a list of existing user accounts. Their details are listed including 2FA status (whether they're using app-based 2FA, text message codes or none) and when they last logged in.
+
+Each user's roles are shown. Any [multi-tenanting]({{<relref "roles#multi-tenanting">}}) roles are marked in bold.
 
 ## Removing users
 To remove users, when viewing the list of users, tick those to remove and press the delete (cross) button in the top toolbar.
