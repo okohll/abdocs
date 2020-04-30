@@ -9,12 +9,12 @@ In agileBase, there are three privilege levels, as well as a special ‘administ
 
 The three privileges take effect per table, i.e. a user/role can have certain privileges on one table and different ones on another.
 
-Privileges are additive - if a user is a member of multiple roles, they gain all the privileges from each of those roles added together.
+Privileges are additive - if a user is a member of multiple roles, they gain all the privileges from each of those roles added together, plus any they may have individually assigned.
 
 ## Privilege levels
 
 * **View**: ability to see data in a table
-* **Edit**: ability to edit data in a table
+* **Edit**: ability to create, edit and delete data in a table (create and delete subject to various table options)
 * **Manage**: the privilege that allows you to use the 'application building' features of agileBase, relating to a table. Namely the ability to
     * modify the structure, i.e. create/delete fields, tabs, change options etc.
     * create, edit and delete views from the table, including creating charts, maps and word clouds.
