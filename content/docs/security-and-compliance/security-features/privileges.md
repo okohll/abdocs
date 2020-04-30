@@ -20,12 +20,12 @@ Privileges are additive - if a user is a member of multiple roles, they gain all
     * create, edit and delete views from the table, including creating charts, maps and word clouds.
     * upload or create printout templates for views
     * view usage statistics about a table
-    * Manage also allows some extended user features, which are
-        * deleting any user's comments from a table
+    * Manage also allows some extended user features
+        * delete any user's comments from a table
         * unlock locked records to allow editing (one at a time)
         * override table options which would normally disallow adding/removing records from a table
+        * override options which would normally disallow exporting data to a spreadsheet
         * import data from spreadsheet
-        * export data to spreadsheet (override any option to disallow this to users without manage privileges)
         * global edit (bulk edit) data in the table
 
 Finally the **administrator** privilege allows full permissions over the complete system. An administrator can create/remove users, roles, tables etc., as well as assign table privileges to any user, including themselves.
@@ -39,7 +39,7 @@ Finally the **administrator** privilege allows full permissions over the complet
 * Table privileges can be assigned to one or more users or roles from that table's editing screen.
 * From a user or role editing screen, privileges on one or more tables can be assigned
 
-The two methods are equivalent, whichever is the most convenient can be used.
+The two methods are equivalent, whichever is the most convenient for a given purpose can be used.
 
 Managing privileges by role rather than by individual user is recommended. That makes managing large numbers of users easier and also more secure as it's easy to see which privileges each type of user has and which they don't.
 
@@ -64,6 +64,6 @@ To assign one or more table privileges to a particular role or user:
 
 ## Related to privileges
 
-Database systems often have the concept of row level privileges. The equivalent in agileBase is the [multi-tenanting]({{relref "roles#multi-tenanting"}}) system.
+Database systems often have the concept of row level privileges. The equivalent in agileBase is the [multi-tenanting]({{<relref "roles#multi-tenanting">}}) system.
 
 Individual fields in a table can be locked or hidden, see the [field options](https://todo.com)
