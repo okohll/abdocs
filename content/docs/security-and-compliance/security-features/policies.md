@@ -19,7 +19,7 @@ There may be a charge for retrieval of customer data from backup, to cover our c
 
 > Please be aware that depending on needs, this may be a complex process due to the fact that other data in the live system may have changed since the backup. A simple overwrite of existing data may not be the best option.
 
-## Privacy Policy
+## Privacy policy
 
 agileBase Ltd is funded directly by the customers we provide services to, we do not have any other business model, particularly we do not resell any data.
 

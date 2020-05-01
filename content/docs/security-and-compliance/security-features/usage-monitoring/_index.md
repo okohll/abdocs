@@ -20,7 +20,7 @@ The following actions are recorded
 
 When logging a record deletion, the data values deleted are logged.
 
-Further, for every record in a table, the following metadata is logged and can be included in views:
+Further, for every record in a table, the following metadata is stored and can be included in views:
 * The creation time and time of last update
 * The user who created the record and who last updated it
 * The view count: how many times the record has been opened

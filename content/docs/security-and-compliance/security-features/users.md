@@ -51,7 +51,7 @@ Tick a role to assign the user to it. The primary purpose of roles is to apply p
 
 There's one special role which can be assigned. It will be marked **grants administrative privileges**. Assigning that role will make a user an administrator, with full permissions over the complete system. They can create/remove users, roles, tables etc., as well as assign themselves privileges on any table.
 
-Next to each role listed is a list of tiles that will be added to their screen if that role is assigned to them. This is a convenience feature to speed up setting up their home screen. The tiles shown for a role are those which more than 50% of the members of that role have. Tiles can be manually added and removed by an [administrator](https://todo.com) or the user themselves.
+Next to each role listed is a list of tiles that will be added to their screen if that role is assigned to them. This is a convenience feature to speed up setting up their home screen. The tiles shown for a role are those which more than half of the members of that role have. Tiles can be manually added and removed by an [administrator](https://todo.com) or the user themselves.
 
 If any role is a [filtering role](https://todo.com), the filter applied is also displayed.
 
