@@ -42,7 +42,7 @@ The available options are
 > A multitude of icons are available, from [Font Awesome](https://fontawesome.com). They are constantly adding more so if you see one that's available on their website that's not in our set yet then just let us know.
 
 ## Adding views to a data tile
-Data tiles need to contain one or more views to be useful. If you have no tables or views yet, you may want to check out the [Quick Start]({{<relref "quickstart">}}) guide, or see [Views]({{<relref "views">}}) for full details on view creation.
+Data tiles need to contain one or more views to be useful. If you have no tables or views yet, you may want to check out the [Quick Start]({{<relref "quickstart">}}) guide, or see [Views](https://todo.com) for full details on view creation.
 
 In a view's manage tab, choose the tile which you want to place it in from the _Tile_ dropdown.
 
