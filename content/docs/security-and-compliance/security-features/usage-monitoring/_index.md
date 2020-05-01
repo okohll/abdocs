@@ -5,7 +5,7 @@ type: docs
 weight: 50
 description: Viewing usage statistics relating to users, tables and views
 ---
-agileBase comprehensively logs changes to data in the system as well as changes to the structure of the system. Powerful reporting facilities allow the generation of audit trails, trend monitoring, customer success monitoring etc.
+agileBase comprehensively logs changes to data in the system as well as changes to the structure of the system. Powerful [reporting facilities]({{<relref "usage-reporting"}}) allow the generation of audit trails, trend monitoring, customer success monitoring etc.
 
 ## What is logged
 ### User actions
