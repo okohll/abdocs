@@ -66,5 +66,5 @@ After assigning a role, if any tiles aren't needed for a particular user, they c
 ## System tiles
 As an administrator, you will likely create a number of views which aren't meant to be directly visible by users, but which are for the internal workings of your applications. For example, workflows, tab views etc. - see [Views - Special Uses](https://todo.com).
 
-To prevent users seeing these, you can put then in system tiles. A system tile is simple one who'se name starts with the word 'System'. These will only be visible to administrators. You may find it a good idea to create a number of System tiles for organisation purposes.
+To prevent users seeing these, you can put then in system tiles. A system tile is simply one which has a name starting with the word 'System'. These will only be visible to administrators. You may find it a good idea to create a number of System tiles for organisation purposes.
 
