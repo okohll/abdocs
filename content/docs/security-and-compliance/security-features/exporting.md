@@ -8,9 +8,8 @@ description: Allowing users to export data to spreadsheet
 Exporting to spreadsheet is only one way of getting data out of agileBase, but it is the most commonly used amongst everyday users. For less ad-hoc data transfers, such as integrations with third party systems involving incoming and/or outgoing data, the [API](https://todo.com) can be used.
 
 ## Allowing exports
-
 In order for a user to be allowed to export to spreadsheet, a number of critieria have to be matched, to suitably protect your organisation's data.
-1. The user must have [Two Factor Authentication](<{{relref "users#two-factor-authentication"}}) enabled
+1. The user must have [Two Factor Authentication]({{<relref "users#two-factor-authentication">}}) enabled
 2. The view to export from must have exporting enabled (it's enabled by default). To do this
     - in the tiles interface, open the view in question, click your user icon at the top right and select _admin - edit view_
     - tick _allow exports_
@@ -22,7 +21,6 @@ In order for a user to be allowed to export to spreadsheet, a number of critieri
 A user with [manage privileges]({{<relref "privileges">}}) on the view's parent table can bypass criteria 2 and 3. This privilege is not commonly applied to normal users.
 
 ## Exporting
-
 A user with the ability to export can do so by opening the view, clicking the print icon to the left and selecting _export to spreadsheet_ from the options at the top of the screen.
 
 > If the user [filters](https://todo.com) the data on screen before doing this, only the filtered data will be exported.
