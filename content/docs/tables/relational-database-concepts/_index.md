@@ -15,6 +15,7 @@ Here's a YouTube video with a good introduction.
 
 {{< youtube NvrpuBAMddw >}}
 
+
 If you prefer reading, here are a couple of examples.
 
 ## Simple example - what is a relation?

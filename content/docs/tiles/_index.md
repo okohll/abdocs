@@ -9,7 +9,7 @@ A tile on a user's home screen represents an application or module of an applica
 
 There are five types of tile, each of which present data in a different way.
 * Data tile
-    - the most common tile type - from the administrator's viewpoint this is a collection of views. The user can navigate the views, search for data, edit records etc.
+    - the most common tile type - from the administrator's viewpoint this is a collection of [views](https://todo.com). The user can navigate the views, search for data, edit records etc.
 * Image / document library
     - a type of data tile. Views which contain a document field can be displayed in 'card' format to show large document previews, rather than the usual 'rows' format
 * Calendar
