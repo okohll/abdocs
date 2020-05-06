@@ -10,7 +10,7 @@ In a table's _manage_ tab, there are two options which are worth considering if 
 When either option is ticked, two controls appear.
 
 ## Notify administrators on export
-Here you can enter a number. When a user exports more than that number of records at once to spreadsheet, all administrators (users with the [administrator]({{relref "/docs/security-and-compliance/security-features/privileges#assigning-the-administrator-privilege">}}) privilege) are notified by email.
+Here you can enter a number. When a user exports more than that number of records at once to spreadsheet, all administrators (users with the [administrator]({{<relref "/docs/security-and-compliance/security-features/privileges#assigning-the-administrator-privilege">}}) privilege) are notified by email.
 
 ## Disallow exports
 This is also a number, representing a hard limit on the number of records which can be exported from this table at any one time.
@@ -24,4 +24,4 @@ When **This table contains personal data, sensitive data or data about children*
 ## Potential exfiltration information
 When either option is ticked, some additional information is shown that can highlight opportunities for data to be exported.
 * Any API views which send data to third party systems
-* Any roles which are set up to allow exporting and which have users with privileges to see the table data, are shown
+* Any roles which are set up to allow exporting and which have users with privileges to see the table data

@@ -69,7 +69,7 @@ If this is un-ticked (which it is by default), any relation fields in the tab ta
 Used when a tab shows a [join (also called a junction) table]({{<relref "../relational-database-concepts#a-more-complex-example">}}). To continue the example from that page, when adding a link between supplier and raw materials, if the raw materials table had a tab showing links, this option would cause the user to be immediately prompted for a supplier when adding a link.
 
 ### Accept emails from parent table
-The system can accept incoming emails and attach them to relevant records e.g. attaching an email from a customer to that customer's record. Please [contact us](https://agilechilli.com/contact-us/) if you'd like to set that up.
+Redirect any incoming emails to the parent table to be stored in this tab. See [table options]({{<relref "../options#accept-emails-to-this-address">}}) for details of receiving emails.
 
 ## Multiple tabs for the same table
 A final note about tabs. In a small number of cases, one table A may have two relations to the **same** table B. For example, a record of a contract between two parties may have a relation to the customer and supplier, both of which are records in an organisations table.
