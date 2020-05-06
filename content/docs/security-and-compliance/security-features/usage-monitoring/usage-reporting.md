@@ -8,9 +8,9 @@ description: Viewing, querying and reporting on log data
 Log data reporting provides a rich view of system usage.
 
 ## Enhanced audit trail
-For organisations who have activated the enhanced audit trail, all logs are stored in user-accessible tablee which are just like any other tables in the system, the only difference being the data is read only. This means an administrator can use the full power of the built in agileBase reporting features, to create views, add calculations, charts etc., even export via the API.
+For organisations who have activated the enhanced audit trail, all logs are stored in user-accessible tables which are just like any other tables in the system, the only difference being the data is read only. This means an administrator can use the full power of the built in agileBase reporting features, to create views, add calculations, charts etc., even export via the API.
 
-So for example, you could analyse how many changes were made per month by each user, count the volume of logins from various locations or see what the most common fields are to search on. All actions listed above are available to query.
+So for example, you could analyse how many changes were made per month by each user, count the volume of logins from various locations or see what the most common fields are to search on. All actions listed on the [usage monitoring]({{<relref "usage-monitoring">}}) page are available to query.
 
 Data is also retained for an extended period, see [retention periods]({{<relref "usage-monitoring#retention-periods">}})
 
