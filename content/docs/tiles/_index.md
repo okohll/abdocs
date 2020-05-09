@@ -17,7 +17,7 @@ There are five types of tile, each of which present data in a different way.
 * Visualisations
     - rather than a collection of views, displays a collection of charts
 * Comment stream
-    - brings together everyone's comments (that a user has privileges to see) from everywhere in the system into one place. The newest comments are shown in the tile on the user's homepage. Clicking on a comment loads the record it's attached to
+    - brings together everyone's [comments]({{<relref "/docs/fields/field-types/special-field-types/comment-feeds">}}) (that a user has privileges to see) from everywhere in the system into one place. The newest comments are shown in the tile on the user's homepage. Clicking on a comment loads the record it's attached to
 
 Data tiles need to be created by an administrator. Once a data tile is created and filled with views, it can be added to a user's screen either as a standard data tile or, if the views contain document fields, optionally as an image/document library tile.
 

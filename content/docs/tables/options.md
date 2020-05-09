@@ -60,6 +60,8 @@ The email text will be logged as a [comment](https://todo.com) against the recor
 
 Please [contact us](https://agilechilli.com/contact-us/) if you'd like to set that up.
 
+Emails are matched by creating a view containing the email addresses of potential recipients. An incoming email is attached to the record from this view which matches the sender's email address. If there is no match, it is added to a 'holding bay' where users can view and manually attach emails to records.
+
 ## Information
 After the options, some structural information is shown, such as which tables depend on this one i.e. have a [relation](https://todo.com) to it, how many fields and views per tile there are. See also the [usage dashboard]({{<relref "/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting#the-dashboard">}})
 
