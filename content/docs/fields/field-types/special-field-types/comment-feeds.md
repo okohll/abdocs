@@ -28,6 +28,9 @@ People who are mentioned by name in a comment (TODO in this example) will get an
 
 A user's notification options affect whether they receive comments from a particular table or person by default, and how they receive those comments. The table option [email notifications]({{<relref "/docs/tables/options#accept-emails-to-this-address">}}) also affects this.
 
+### Comments to other fields
+Although adding a comments feed field is the easiest way of allowing people to comment on data, users can at any time add a comment to **any** field on the screen, by hovering over the field until an 'add comment' icon appears. This opens a smaller, basic comment adding interface, without the options for choosing recipients above, rather the default set of recipients is always used.
+
 ## The comments stream tile
 When someone's the receipient of a comment, they'll be able to see it in the comments stream tile on their homepage. Clicking on it will navigate to the related record. We won't go into every detail of the user interface in this administrator documentation, but comments can be searched and the comments tile can be expanded to full screen like any other tile.
 

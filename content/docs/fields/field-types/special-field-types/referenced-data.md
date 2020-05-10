@@ -60,7 +60,9 @@ A view containing the containing table's ID can be created one of two ways.
 
 If a view is built the second way and embedded into the table via a referenced field, the data will be editable: clicking on an element of referenced data will turn it into a data entry form.
 
-If it's built the first way, data will not be editable
+If it's built the first way, data will not be editable.
+
+In an editable referenced field, only fields directly from the table made to create the view will be editable. Other fields will be read-only.
 
 
 
