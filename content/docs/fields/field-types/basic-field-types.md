@@ -21,7 +21,7 @@ Represents a date or date/time, of any precision from year to second.
 ## Auto-generated number sequence
 The value of this field will be generated automatically, incremented by one each time a record is created.
 
-> Sequence numbers are never rolled back, even on the deletion of a record, so they can't be used if a gapless assignment of numbers is required.
+> Sequence numbers are never rolled back, even on the deletion of a record, so they can't be used if a gapless assignment of numbers is required. To accomplish that, calculate a value with a [cross-referenced field]({{<relref "../field-options/common-options#set-from-previous-referenced-field">}}).
 
 ## Relation
 Adding a relation creates a link from one table to another. For example, a contacts table may contain a relation linking to an organisations table, to allow a person to belong to an organisation. See [relational database concepts]({{<relref "/docs/tables/relational-database-concepts">}}) for further info.
