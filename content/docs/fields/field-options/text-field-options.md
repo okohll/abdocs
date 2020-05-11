@@ -36,9 +36,9 @@ When a user is selected in this way, more options for use are opened up, such as
 ## Use dropdown
 Rather than a simple text entry field, display a dropdown of choices from which one can be selected. If there are only a few values, then the user interface may display options in [radio button](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio) style, but the behaviour is exactly the same.
 
-Options can be provided with the [default value]({{<relref "#default-value"}}) setting as above. If no options are specified, then the list of options will be automatically generated from the set of unique values **already entered** into records. In this way, a set of values will gradually grow as people enter new data.
+Options can be provided with the [default value]({{<relref "#default-value">}}) setting as above. If no options are specified, then the list of options will be automatically generated from the set of unique values **already entered** into records. In this way, a set of values will gradually grow as people enter new data.
 
-See also the [Use only given values]({{<relref "#use-only-given-values"}}) option below to enforce the use of provided values only.
+See also the [Use only given values]({{<relref "#use-only-given-values">}}) option below to enforce the use of provided values only.
 
 ## Use tags
 Similar to Use dropdown, but rather than only letting the user select one value, multiple values can be chosen at once.

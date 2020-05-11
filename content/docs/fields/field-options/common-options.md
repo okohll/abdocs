@@ -30,7 +30,7 @@ If the field is blank, allow a value to be entered, however as soon as it has a 
 This can be used to prevent accidental editing of important fields which should not usually be changed, for example a product's stock code.
 
 ## Unlock if record in view
-If **Lock when value set** is ticked, unlock on certain criteria. Works the same way as [Show if record in view]({{<relref "#show-if-record-in-view"}}).
+If **Lock when value set** is ticked, unlock on certain criteria. Works the same way as [Show if record in view]({{<relref "#show-if-record-in-view">}}).
 
 ## Required
 If ticked, force the user to supply a value. They won't be able to navigate away from a record without doing so.
@@ -51,7 +51,7 @@ To have a value set only at a certain point in a process, this option can be com
 Disallow any duplicate values from being entered. No records in the table can have the same value as each other.
 
 ## Change causes record refresh
-Through the use of some field options like [Show if record in view]({{<relref "show-if-record-in-view>}}) above, the screen can change based on what's entered into a form. This option can work as a switch to refresh the configuration of the screen if it does change as someone enters new data.
+Through the use of some field options like [Show if record in view]({{<relref "#show-if-record-in-view">}}) above, the screen can change based on what's entered into a form. This option can work as a switch to refresh the configuration of the screen if it does change as someone enters new data.
 
 > For example, if there is a table to store sales opportunities, one field may be the status. If the status changes to `won` or `lost`, then you may wish to show some extra fields like 'date won' or 'reason why lost' for example. To allow this, tick the 'change causes record refresh' option on the status field. Then whenever the status changes, these fields will automatically appear if relevant.
 
