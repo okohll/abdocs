@@ -14,4 +14,4 @@ Whenever someone edits a record, agileBase automatically updates the [Last Modif
 ## Show digital signature
 Causes the user interface to show the name & username of the person who last ticked or un-ticked the checkbox, along with a timestamp.
 
-> Note these can only be shown until the maximum time that record history (audit trail) data is stored for is reached, by default 12 months. See [enhanced audit trail]({{<relref "/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting#enhanced-audit-trail">}}) for details of extending this.
+> Note these can only be shown for the maximum time that record history (audit trail) data is stored for, by default 12 months. See [enhanced audit trail]({{<relref "/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting#enhanced-audit-trail">}}) for details of extending this.
