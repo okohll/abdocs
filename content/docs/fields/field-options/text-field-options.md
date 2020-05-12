@@ -63,7 +63,7 @@ Convert people's input into the required case as it's entered - choose from
 ## Size
 If 'short' is chosen, a standard single line input box is displayed.
 
-If 'large' is chose, a multi-line text entry box is shown. This option also lets people format the text entered, such as using **bold**, _italics_ or bullet points. For data security reasons, only certain formatting is allowed.
+If 'large' is chosen, a multi-line text entry box is shown. This option also lets people format the text entered, such as using **bold**, _italics_ or bullet points. For data security reasons, only certain formatting is allowed.
 
 ## Use as record title
 The user interface has the ability to highlight the importance of certain fields by showing their contents in large font at the top of the record data. For example, a Company Name field may be the record title for an organisation record.
