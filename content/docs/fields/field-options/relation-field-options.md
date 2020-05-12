@@ -16,7 +16,7 @@ If a relation is marked as 'one to one only', then that behaviour is changed so 
 
 When is this useful?
 
-Take the case of an ingredient record. You may want to record nutritional information, chemical composition and allergens for example. With each type of date stored in a separate table, linked by a one-to-one relation, these can be separated out on the screen into [tabs]({{<relref "/docs/tables/tabs">}}).
+Take the case of an ingredient record. You may want to record nutritional information, chemical composition and allergens for example. With each type of date stored in a separate table, linked by a one-to-one relation, these can be separated out on the screen into [tabs]({{<relref "/docs/tables/hierarchy-navigation/tabs">}}).
 
 The advantages of doing that, as opposed to just adding all the fields into different blocks in a single table are
 * The user interface becomes clearer to navigate, especially if you have dozens of fields in each section
