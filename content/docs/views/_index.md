@@ -29,7 +29,9 @@ There are also other ways of displaying the output, such as in a [calendar](http
 Views are organised into [tiles]({{<relref "/docs/tiles">}}). Each tile contains a collection of views, organised into a menu system within it. Administrators can hence organise the display of data in a logical fashion.
 
 ### Behind the scenes uses
-As well as showing data to users, the power and flexibility of views allows them to be used in a multitude of different ways useful for administrators. For example, in [workflow](https://todo.com) automations, to create [APIs](https://todo.com) to allow third party systems to query the data, or to control [hiding and showing fields]({{<relref "/docs/fields/field-options/common-options#show-if-record-in-view">}}) There are many other uses we'll come across throughout this documentation, in fact almost every major feature depends on views in some way.
+As well as showing data to users, the power and flexibility of views allows them to be used in a multitude of different ways useful for administrators. For example, in [workflow](https://todo.com) automations, to create [APIs](https://todo.com) to allow third party systems to query the data, or to control [hiding and showing fields]({{<relref "/docs/fields/field-options/common-options#show-if-record-in-view">}}).
+
+There are many other uses we'll come across throughout this documentation, in fact almost every major feature depends on views in some way.
 
 So it's a useful topic to understand comprehensively.
 
