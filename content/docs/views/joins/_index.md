@@ -49,7 +49,7 @@ However, joins down can be very useful when you want to aggregate child data, fo
 So joins upwards are the more common case, but joins downward can be useful for particular purposes.
 
 ## Complex joins
-As above, agileBase automatically suggests joins to data that's related to the current view's parent table as well as any of the tables already joined to. It uses [relation field]({{<relref "/docs/fields/field-types/basic-field-types#relation">}}) to see what's related.
+As above, agileBase automatically suggests joins to data that's related to the current view's parent table as well as any of the tables already joined to. It uses [relation fields]({{<relref "/docs/fields/field-types/basic-field-types#relation">}}) to see what's related.
 
 However, sometimes you may want to join to a table or view that's not automatically suggested. These examples may become increasingly 'niche' but they are a useful reference for similar situations you may come across.
 
@@ -58,7 +58,7 @@ Joins to views aren't automatically suggested, but you can still add them.
 
 > When might this be useful? Well one example is if you have a view containing a complex calculation and you wish to include the results of that calculation in lots of other views in different places.
 > 
-> Say you calculate various nutritional values of a recipe, such as the energy, salt and fats contents. You may wish to display that information in a few views for different people to query, as well as include them in product specification documents (which can be generated from a [workflow view](https://todo.com) and perhaps product labels as well, using a view to send data to third party labelling equipment using an [API](https://todo.com)).
+> Say you calculate various nutritional values of a recipe, such as the energy, salt and fats contents. You may wish to display that information in a few views for different people to query, as well as include them in product specification documents (which can be generated from a [workflow view](https://todo.com)) and perhaps product labels as well, using a view to send data to third party labelling equipment using an [API](https://todo.com)..
 
 To add a join to a view:
 1) In the tiles interface, load the view you wish to edit (add a join to)
@@ -69,7 +69,7 @@ To add a join to a view:
 The last step is the only one different to the normal join addition process, and the one that needs a little explanation
 
 * The **left** source is the table or view to join from. Often (and by default), this will be the view's parent table
-* The *left field* is the view from the lefthand table to match on. Often (and by default) this is the table's ID field. If you're joining on a relation, choose the relation field
+* The **left field** is the view from the lefthand table to match on. Often (and by default) this is the table's ID field. If you're joining on a relation, choose the relation field
 * The **right** source is the table or view to join to
 * The **right field** is the field to match. This will usually be a table ID field. If you chose an ID field for the left field, then choose the same ID field in the target view. If the left field is a relation, choose the ID of the table it relates to on the right
 
