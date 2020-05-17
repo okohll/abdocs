@@ -5,11 +5,11 @@ type: docs
 weight: 90
 description: Left outer, inner and cross joins
 ---
-Here's a youtube video explaining the concept of joins and running through the various types.
+Here's a Youtube video explaining the concept of joins and running through the various types.
 
 {{< youtube 9yeOJ0ZMUYw >}}
 
-Just rememer, when using third party resources to learn about joins (or other SQL features), you don't need to write the SQL code in agileBase, it's generated for you behind the scenes.
+Just remember, when using third party resources to learn about joins (or other SQL features), you don't need to write the SQL code in agileBase, it's generated for you behind the scenes.
 
 ## Left outer and inner joins
 The left outer join is the default type used when a join is added to a view in agileBase. It suits most cases, but can be changed after join creation if needed.
@@ -55,7 +55,7 @@ There's one final type to consider that can be used in agileBase. Strictly speak
 
 If you have a mathematical background, it may help to know that it produces a cartesian product, or cross product, of all rows in the left and right sides.
 
-However if you don't, not to worry, it can be easily explained without maths. Basically, every combination of each row on the left with each row on the right is output. So if you have three rows, A, B and C on the left and another three X, Y and Z on the right, then you would get as output data from
+However if you don't, not to worry, it can be easily explained without maths. Basically, every combination of each row on the left with each row on the right is output. So if you have three rows, A, B and C on the left and another three X, Y and Z on the right, then you would get as output: data from
 * Row A with row X
 * Row A with row Y
 * Row A with row Z
@@ -85,4 +85,4 @@ The next step is similar to our reporting example of [joining on multiple fields
 ### Adding a cross join
 Adding a cross join is a little different to [adding a normal join]({{<relref "../joins#adding-a-join">}}). The left and right fields don't matter (as we want to apply any exclusion rules, we just want every combination of rows possible).
 
-So [follow the normal process]({{<relref "../joins#adding-a-join">}}), but just select the left and right tables (or views), leave the fields at their default values.
+So follow the [normal process for a complex join]({{<relref "../joins#complex-joins">}}), but just select the left and right tables (or views), leave the fields at their default values.
