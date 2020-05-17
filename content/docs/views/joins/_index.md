@@ -107,7 +107,7 @@ This can sometimes be useful in financial reporting. Our example here is creatin
 
 We'd start by creating a view of all product/month combinations over the past 12 months. See the [series generation](https://todo.com) example in the calculations section for how to do this.
 
-We'd then create a calculation 'product month' which would join together the product code and the month name. A similar calculation would be created in a 'sales' view, which shows individual sale lines, each with a product and month.
+We'd then create a calculation 'product month' which would merge the product code and the month name. A similar calculation would be created in a 'sales' view, which shows individual sale lines, each with a product and month.
 
 Finally, we'd join the two views together, the product/month combinations on the left, the sales view on the right, choosing the 'product month' calculations from each as the fields to match on.
 
