@@ -46,7 +46,43 @@ Practically, this isn't used much, as a right outer join is just the same as a l
 You may also hear of a full outer join - this again has a very small number of useful cases, but you can [read about them online](https://stackoverflow.com/questions/2094793/when-is-a-good-situation-to-use-a-full-outer-join) if interested.
 
 ## Venn diagram
-Joins are often represented visually with Venn diagrams. Here's a left outer join visualisation, showing all the data from the left side is visible, whether or not a matching row exists on the right, and an inner join diagram showing that data from the left is excluded without a match.
+Joins are often represented visually with Venn diagrams. Here's one, showing that for a left outer join, all the data from the left side is visible, whether or not a matching row exists on the right, and for an inner join, data from the left is excluded without a match. The results of right outer and full outer are also visualised.
 
 ![Joins Venn diagram](/joins-venn.png)
 
+## Cross join
+There's one final type to consider that can be used in agileBase. Strictly speaking, it isn't a join at all, but it does bring together data from left and right sides in a particular way, so we'll think of it as a join here and it's treated as such in agileBase.
+
+If you have a mathematical background, it may help to know that it produces a cartesian product, or cross product, of all rows in the left and right sides.
+
+However if you don't, not to worry, it can be easily explained without maths. Basically, every combination of each row on the left with each row on the right is output. So if you have three rows, A, B and C on the left and another three X, Y and Z on the right, then you would get as output data from
+* Row A with row X
+* Row A with row Y
+* Row A with row Z
+* Row B with row X
+* Row B with row Y
+* Row B with row Z
+* Row C with row X
+* Row C with row Y
+* Row C with row Z
+
+> You can see that you need to be careful when creating cross joins that results won't balloon up into massive numbers of rows that are hard to deal with. For example, if two tables, each with a hundred thousand rows in, are joined by cross join, then 100,000 x 100,000 = 10,000,000,000 (ten billion) rows would output.
+
+Once again, potential uses may be most easily explained by a real world example.
+
+Cross joins can be used when reporting, to find data that's **not** there (to get a bit Zen). For example, say we have two tables
+* customers
+* products
+
+We may want to create output representing the combination of every customer with every product - we could then further join this to sales data to find which products a customer isn't buying, or which products are being bought by most and fewest customers.
+
+Firstly, we need all combinations. Create a cross join between customers and products, in a 'customer products' view.
+
+The next step is similar to our reporting example of [joining on multiple fields]({{<relref "../joins#joining-on-multiple-fields">}}). Create a calculation 'customer product' which concatenates together customer ID and product ID. Create the same calculation in a view of sales (each sale of a product to a customer). Then join this sales view into our customer products view and bingo, we can display the total sales, whether zero or more, of each product to each customer.
+
+> If you haven't yet read up on [calculations](https://todo.com), you may need to do that in order to accomplish everything above
+
+### Adding a cross join
+Adding a cross join is a little different to [adding a normal join]({{<relref "../joins#adding-a-join">}}). The left and right fields don't matter (as we want to apply any exclusion rules, we just want every combination of rows possible).
+
+So [follow the normal process]({{<relref "../joins#adding-a-join">}}), but just select the left and right tables (or views), leave the fields at their default values.
