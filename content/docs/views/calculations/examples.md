@@ -70,7 +70,7 @@ The database has very strong support for working with dates and time - you can d
 
 `date_part('year', {date field})`
 
-`date_part('dow', {$date field})`
+`date_part('dow', {date field})`
 
 * These two extract different parts of the date - the first just the year, the second the day of the week as a number 0 - 6. More info is available in the [PostgreSQL documentation](https://www.postgresql.org/docs/current/static/functions-datetime.html#FUNCTIONS-DATETIME-EXTRACT")
 
@@ -114,18 +114,18 @@ There's another way to create aggregates, which can be used without joining down
 2. Click your user icon at the top right and select _admin - edit view_ from the menu
 3. Tick _Group by all non-aggregate fields_
 4. Add any fields you wish to group by to the view. Remove any you don't wish to group by **including any hidden fields** such as the IDs of joined tables
-5. Add the aggregate calculation e.g. `sum{my field}`
+5. Add the aggregate calculation e.g. `sum({my field})`
 
 ### Expanding rows
 Some functions do the opposite of an aggregate function - rather than condensing and summarising many rows into one, they split one row up into many. For example, if one of your fields is a comma separated list, you could split that up into many rows, one per item in the list.
 
-** TODO: real world example
+Say for example you import data from a form on a website which produces a comma separated list of products ordered.
 
 Adding the calculation
 
-`regexp_split_to_table({comma separated list}, ',')`
+`regexp_split_to_table({products ordered}, ',')`
 
-would produce one output row per item in the list.
+would produce one output row per product in the list. That could then be joined to other data in the system such as pricing.
 
 ### Window functions
 Window functions are somewhat like aggregate functions in that they can act on many rows, not just one. However, they don't condense down into a single row. An example would be calculating a rolling average or cumulative total as each row is shown.
@@ -143,7 +143,7 @@ As an example,
 
 would calculate for each item, the difference from the average price of items with the same category.
 
-This again is much too large a topic to cover in one page, there's much documentation here: https://www.postgresql.org/docs/current/tutorial-window.html
+This again is much too large a topic to cover in an introductory page, there's plenty of documentation here: https://www.postgresql.org/docs/current/tutorial-window.html
  and a video introduction to the concept here:
 
  {{< youtube blHEnrYwySE >}}
