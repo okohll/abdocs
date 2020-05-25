@@ -7,7 +7,7 @@ description: Adding calculations to a view
 ---
 The ability to add calculations to a view opens up a world of possibilities. Within the confines of the SQL language, there's no limit to what you can do, and those confines contain a pretty large space.
 
-This is the only area of agileBase which requires some 'semi-programming' to use - using snippets of SQL. SQL is a standard, widely popular and easy to learn 'language' and there are lots of resources available on the internet.
+This is the only area of agileBase which requires some 'semi-programming' to use - using snippets of SQL. SQL is a standard, widely popular and easy to learn language and there are lots of resources available on the internet.
 
 We'll start with some simple examples, then move on to some more advanced ones, but even then we won't cover every capability so will point you to specific further resources and references.
 
@@ -46,6 +46,11 @@ Some examples might be
 * `(({sale price} - {cost}) / {cost}) * 100` (calculate the profit of an item as a percentage)
 
 You can reference not only other fields and calculations in the view, but also fields and calculations from any view or table joined to the view. The syntax for that is `{source name.field name}`. Underneath the calculation editing space is a list of all fields that are available to be added, for reference. You can just copy and paste them into your calculation.
+
+## Colouring
+Text calculations can be coloured in the same way as text fields. Underneath the calculation definition and words, tick _colour words_. If a calculation outputs one of the following words, they cell in the view be coloured.
+
+![Word Colours](/word-colours.png)
 
 ## Best practices
 A few tips for working with calculations.

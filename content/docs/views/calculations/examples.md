@@ -39,6 +39,9 @@ end
 
 (We'll cover date calculations more below).
 
+> Note the top clauses of a case statement are evaluated first, so put more specific things at the top if multiple lines may match.
+
+
 ### Number functions
 Common mathematical functions can be found here: https://www.postgresql.org/docs/current/functions-math.html
 
@@ -58,6 +61,17 @@ Common mathematical functions can be found here: https://www.postgresql.org/docs
 This one is slightly more complex because it uses a powerful text matching/search and replace facility called **regular expressions**, or regexes for short. Again, this is a standard facility and there's lots of documentation available on the [PostgreSQL website](https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP) and elsewhere if you'd like to learn more.
 
 > The only difference from standard to be aware of is that when entering a regex into a calculation in agileBase, you must use two backslashes instead of one.
+
+`like` compares two elements of text and `ilike` does so case-insensitively. A percentage sign means 'match any text'. So for example:
+
+```
+case
+  when {postcode} ilike 'bs%' then 'Bristol'
+  else 'elsewhere'
+end
+```
+
+* Outputs 'Bristol' if the postcode field starts with 'BS' (or 'bs').
 
 ### Date functions
 The database has very strong support for working with dates and time - you can do many calculations on them. Here are a few examples.
@@ -160,6 +174,6 @@ Sometimes you need to **generate** a set of rows, as opposed to having the data 
 * generates one row per month, from 10 years ago up until this month
 
 ## Summary
-The functions above highlight just a few of the many possibilities. Please feel free to read up on PostgreSQL some more and if you come up with any neat calculations yourself in your everyday work, please do send them to support@agilebase.co.uk and we'll add them to this page.
+The functions above highlight just a few of the many possibilities. Please feel free to read up on PostgreSQL some more and if you come up with any neat calculations yourself in your everyday work, please do send them to support@agilebase.co.uk so we can add them to this page (with credit).
 
 
