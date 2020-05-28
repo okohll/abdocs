@@ -33,5 +33,5 @@ As well as showing data to users, the power and flexibility of views allows them
 
 There are many other uses we'll come across throughout this documentation, in fact almost every major feature depends on views in some way.
 
-So it's a useful topic to understand comprehensively.
+So it's a useful topic to understand.
 
