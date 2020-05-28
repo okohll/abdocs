@@ -5,7 +5,7 @@ type: docs
 weight: 110
 description: Options specific to separators, which form groups of fields into blocks
 ---
-A [field separator]({{<relref "/docs/fields/field-types/separators">}}) creates a block of fields, starting with the separator and ending at the next one (or the last field in the table).
+A [field separator]({{<relref "/docs/fields/field-types/special-field-types/separators">}}) creates a block of fields, starting with the separator and ending at the next one (or the last field in the table).
 
 These blocks can either be initially contracted, or expanded. Here's a screenshot showing a number of contracted blocks, with one expanded.
 

@@ -42,6 +42,18 @@ The inline editing option has three states:
 * Allow but turn off by default
 * On by default
 
+## Style (layout options)
+The visual style affects whether the view is shown as
+* spreadsheet format - standard output in rows (the default option)
+* headings and rows
+* long headings and rows
+
+When **headings and rows** is selected, the first field in the view will be used as a heading for the rows below. A new heading appears every time the field value changes.
+
+![headings and rows](/headings.png)
+
+
+
 ## Record limit
 Only return the top N rows of data from the view, even if there are more available. This is equivalent to adding a [LIMIT clause](https://www.postgresql.org/docs/current/sql-select.html#SQL-LIMIT) in SQL.
 
