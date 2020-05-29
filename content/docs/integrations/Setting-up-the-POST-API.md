@@ -13,7 +13,7 @@ To protect the system from spam input, we also suggest you tick ‘Require API k
 
 Optionally, you can add an email address to notify when a new item is added and an autoresponse text which will be sent to any email addresses found in the posted data.
 
-![Configuring the POST API](/incoming_data_api.png)
+![Configuring the POST API](/incoming-data-api.png)
 
 ## Creating new records
 
