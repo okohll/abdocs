@@ -2,7 +2,7 @@
 title: "Send an email"
 date: 2020-05-29T12:35:00+01:00
 type: docs
-weight: 110
+weight: 130
 description: Workflows can be used to send an email
 ---
 
@@ -26,7 +26,7 @@ For simple alerts of new items, add a filter “Last notified IS NULL”. That w
 
 To set up a repeating monthly alert, you could add a calculation:
 
-` Send Alert (boolean): {last notified} is null OR {last notified} < (now() - interval '1 month')
+` Send Alert (boolean): {last notified} is null OR {last notified} < (now() - interval '1 month') '
  
 and filter on “Send Alert = true”
 
@@ -36,13 +36,13 @@ If you have any difficulty thinking up what criteria you need for your purpose, 
 
 In the view’s _manage_ tab, under _send_, fill in the subject, to and body of the email. To merge in data from the view, use field names in lowercase surrounded by curly brackets. A typical template would look something like this:
  
-IMAGE
+![Workflow actions that alter data](/send-email.png)
 
 You can attach documents to the email by including the field name for a file in the message.
 
 Under the email template, set “Notification time field” to the field that you created in step 1, e.g. “Last notified”
 
-Note in the To: field, you can include email addresses manually (as above), or merge them in from the view. If you are assigning records to users in agileBase, you can use that field and the system will automatically pick out the email address for them, as long as their username is their email address.
+Note in the To: field, you can include email addresses manually, or merge them in from the view. If you are assigning records to users in agileBase, you can use that field and the system will automatically pick out the email address for them, as long as their username is their email address.
 
 That’s it! Note when testing, we recommend setting the “To:” value to your own email address, just until you’re sure everything’s working properly.
 
@@ -54,8 +54,8 @@ That means that your company can send out branded, rich-text emails (with attach
 Set up an email notification workflow as normal (in a view, use the manage -> send tab).
 
 For the body of the email, simply start it with
-`<html> and end with </html>
+`<html> and end with </html> '
 
 The email will then be interpreted as HTML, i.e. formatted.
 
-For the moment, you do need to know some basic HTML. If you’d like to get started there are plenty of great tutorials on the web – here’s an example: www.htmldog.com
+For the moment, you do need to know some basic HTML. If you’d like to get started there are plenty of great tutorials on the web – here’s an example: [www.htmldog.com](http://www.htmldog.com)

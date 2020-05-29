@@ -2,7 +2,7 @@
 title: "Altering Data"
 date: 2020-05-29T12:35:00+01:00
 type: docs
-weight: 30
+weight: 120
 description: Workflows can be used to alter data within the system
 ---
 

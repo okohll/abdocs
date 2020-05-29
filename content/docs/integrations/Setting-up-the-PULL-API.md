@@ -133,3 +133,9 @@ describe_table = true
 and the ‘Authorization’ header set to the API key (if the table requires one).
 
 This also makes testing with Postman easier, since Postman can import a Swagger API description – so you don’t have to write a single line of code to test out an API.
+
+## RSS Feed
+
+If your PULL API has been enabled for Public access then you can offer 3rd parties the option of accessing the feed via an RSS feed. The link is visible just below the tick box for public access
+
+![Configuring the PULL API](/workflow-send-rss.png)
