@@ -21,6 +21,9 @@ Third parties can access data via an API, either:
 * PULL data
 * PUSH data
 
+There is also dedicated facility for integrating data with a Calendar
+* Calendar Integration
+
 ## Incoming Data
 
 Users are ablle to add data:
