@@ -12,5 +12,5 @@ If you are using the more advanced features of agilebase workflows then knowing 
 
 It will list the success and failures of past runs as well as the next time the workflow is scheduled to be run.  
 
-![Configuring the PULL API](/workflow-logging.png)
+![Viewing the logging history of a Workflow](/workflow-history.png)
 

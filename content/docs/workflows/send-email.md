@@ -2,7 +2,7 @@
 title: "Send an email"
 date: 2020-05-29T12:35:00+01:00
 type: docs
-weight: 130
+weight: 135
 description: Workflows can be used to send an email
 ---
 
