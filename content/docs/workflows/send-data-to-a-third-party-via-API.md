@@ -2,7 +2,7 @@
 title: "Send Data to a third party via API"
 date: 2020-05-29T12:35:00+01:00
 type: docs
-weight: 10
+weight: 100
 description: Each workflow can perform a single specific action
 ---
 

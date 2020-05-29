@@ -2,7 +2,7 @@
 title: "Workflow Actions"
 date: 2020-05-29T12:35:00+01:00
 type: docs
-weight: 10
+weight: 20
 description: Each workflow can perform a single specific action
 ---
 
