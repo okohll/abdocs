@@ -31,6 +31,6 @@ The options to send data are contained within the _send_ section of the _workflo
 7) [Send an email Chaser]({{<relref "/docs/workflows/send-chaser">}})
 8) [Send data to a calendar]({{<relref "/docs/integrations/Setting-up-the-calandar-push">}})
 9) [Send to document generator]({{<relref "/docs/workflows/send-document-generator">}})
-10) RSS feed - See facility with [PULL API]({{<relref "/docs/integrations/docs/integrations/setting-up-the-pull-api">}})
+10) RSS feed - See facility with [PULL API]({{<relref "/docs/integrations/setting-up-the-pull-api">}})
 
 ![Workflow functions that send data](/workflow-send.png)
