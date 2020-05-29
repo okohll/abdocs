@@ -11,6 +11,6 @@ Depending on the [table layout]({{<relref "/docs/tables/table-layouts">}}), thes
 
 Inline help can be added for separators in the same way as for normal fields, by adding a field description. This help text will apply to the whole block of fields created by a separator.
 
-Here's a system with...
+Here's a system with several...
 
 **TODO: blocks screenshot**
