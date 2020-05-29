@@ -27,8 +27,8 @@ Options are:
 The options to send data are contained within the _send_ section of the _workflow_ tab. Matching records will be sent to the appropriate **function**.
 
 5) [Send data to a third party via API]({{<relref "/docs/workflows/send-data-to-a-third-party-via-API">}})
-6) Send an email Chaser
-7) Send an Email
+6) Send an email 
+7) Send an email Chaser
 8) Send data to a calendar
 9) Send to document generator
 
