@@ -54,11 +54,8 @@ That means that your company can send out branded, rich-text emails (with attach
 Set up an email notification workflow as normal (in a view, use the manage -> send tab).
 
 For the body of the email, simply start it with
+`<html> and end with </html>
 
-<html>
-and end with
-
-</html>
 The email will then be interpreted as HTML, i.e. formatted.
 
 For the moment, you do need to know some basic HTML. If you’d like to get started there are plenty of great tutorials on the web – here’s an example: www.htmldog.com

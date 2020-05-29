@@ -16,7 +16,7 @@ choose a minimum interval to wait between pushes
 
 The system will now make a POST to the URL specified in step 2 whenever there’s new data to send. It will contain one parameter, ‘json’, which is a JSON representation of all the data in the view.
 
-![Configuring the PUSH API](/workflow_push.png)
+![Configuring the PUSH API](/workflow-push.png)
 
 ### Selecting data to push
 

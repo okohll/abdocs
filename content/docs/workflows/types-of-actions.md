@@ -21,7 +21,7 @@ Options are:
 3) Lock record - This will apply a record level lock on the item.
 4) Delete record - This will totally remove the record.
 
-![Workflow actions that alter data](/workflow_manage.png)
+![Workflow actions that alter data](/workflow-manage.png)
 
 ### Sending Data
 The options to send data are contained within the _send_ section of the _workflow_ tab. Matching records will be sent to the appropriate **function**.
@@ -32,4 +32,4 @@ The options to send data are contained within the _send_ section of the _workflo
 8) Send data to a calendar
 9) Send to document generator
 
-![Workflow functions that send data](/workflow_send.png)
+![Workflow functions that send data](/workflow-send.png)
