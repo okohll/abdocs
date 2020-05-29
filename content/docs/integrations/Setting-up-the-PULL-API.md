@@ -16,7 +16,7 @@ Connections to agileBase are made using standard HTTP calls. This makes it easy 
 
 The remainder of this article explains how to PULL the data.
 
-![Configuring the PULL API](/workflow_pull.png)
+![Configuring the PULL API](/workflow-pull.png)
 
 The most important piece of information is the URL that the third party will access your data via. This will be:
 
