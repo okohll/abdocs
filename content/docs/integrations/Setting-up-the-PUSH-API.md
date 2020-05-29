@@ -31,7 +31,7 @@ A few common scenarios would be:
 #### Pushing any data modified since it was last pushed
 To do this, add a boolean calculation to your view, something like
 
-` needs pushing = {last modified [auto]} > {last pushed}
+` needs pushing = {last modified [auto]} > {last pushed} `
 
 where ‘last pushed’ is the name of the timestamp field you added in step 3 above.
 
