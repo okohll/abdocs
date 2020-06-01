@@ -26,7 +26,7 @@ For simple alerts of new items, add a filter “Last notified IS NULL”. That w
 
 To set up a repeating monthly alert, you could add a calculation:
 
-` Send Alert (boolean): {last notified} is null OR {last notified} < (now() - interval '1 month') '
+`Send Alert (boolean): {last notified} is null OR {last notified} < (now() - interval '1 month')`
  
 and filter on “Send Alert = true”
 
@@ -42,9 +42,9 @@ You can attach documents to the email by including the field name for a file in 
 
 Under the email template, set “Notification time field” to the field that you created in step 1, e.g. “Last notified”
 
-Note in the To: field, you can include email addresses manually, or merge them in from the view. If you are assigning records to users in agileBase, you can use that field and the system will automatically pick out the email address for them, as long as their username is their email address.
+Note in the To: field, you can include email addresses manually, or merge them in from the view. If you are assigning records to users in agileBase, you can use that field and the system will automatically pick out the email address for them.
 
-That’s it! Note when testing, we recommend setting the “To:” value to your own email address, just until you’re sure everything’s working properly.
+> That’s it! Note when testing, we recommend setting the “To:” value to your own email address, just until you’re sure everything’s working properly.
 
 ## Rich text (HTML) emails
 HTML emails can now be sent by apps built on the agileBase platform.
@@ -53,9 +53,8 @@ That means that your company can send out branded, rich-text emails (with attach
 ### Setting up
 Set up an email notification workflow as normal (in a view, use the manage -> send tab).
 
-For the body of the email, simply start it with
-`<html> and end with </html> '
+Start the body of the email with `<html>` and end with `</html>`.
 
 The email will then be interpreted as HTML, i.e. formatted.
 
-For the moment, you do need to know some basic HTML. If you’d like to get started there are plenty of great tutorials on the web – here’s an example: [www.htmldog.com](http://www.htmldog.com)
+You do need to know some basic HTML. If you’d like to get started there are plenty of great tutorials on the web - here’s an example: [www.htmldog.com](http://www.htmldog.com)
