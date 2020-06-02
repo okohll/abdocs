@@ -51,7 +51,7 @@ Once you have data successfully flowing into the system, a common next step is t
 
 You can use [automated worflows]({{<relref "/docs/workflows">}}) to copy data from one table to another if necessary.
 
-However, you could also simply create views from the 'ab calendar intray' table to allow users to view these events directly. Adding a filter to the user on the 'person' field will ensure a user will only see their own events -see [users -> restrict data access]({{relref "/docs/security-and-compliance/security-features/users#restrict-data-access"}})
+However, you could also simply create views from the 'ab calendar intray' table to allow users to view these events directly. Adding a filter to the user on the 'person' field will ensure a user will only see their own events -see [users - restrict data access]({{relref "/docs/security-and-compliance/security-features/users#restrict-data-access"}})
 
 > Please be aware of potential data privacy concerns when setting up calendar synchronisation. All events a user creates or modifies in any of the calendars in their connected account will send to agileBase. As an administrator, you may wish to set up specific work calendar accounts for your users, distinct from any personal accounts they may use.
 
