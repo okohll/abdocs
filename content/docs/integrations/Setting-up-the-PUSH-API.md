@@ -22,7 +22,7 @@ The system will now make a POST to the URL specified in step 2 whenever there’
 
 How do we know which data is new and wants to be sent out via the API?
 
-That’s up to you – any filters can be added to the view to select data you want. Commonly, you’d use the date/time field set up in step 3. When a push successfully completes, every record in the view has this field set to the current time.
+That’s up to you - any filters can be added to the view to select data you want. Commonly, you’d use the date/time field set up in step 3. When a push successfully completes, every record in the view has this field set to the current time.
 
 > Note: if the push encounters an error for any reason, say the third party system returns a HTTP error code rather than the expected ‘200’ code for success, the timestamp won’t be set.
 
@@ -31,14 +31,14 @@ A few common scenarios would be:
 #### Pushing any data modified since it was last pushed
 To do this, add a boolean calculation to your view, something like
 
-` needs pushing = {last modified [auto]} > {last pushed} `
+needs pushing = `{last modified [auto]} > {last pushed}`
 
 where ‘last pushed’ is the name of the timestamp field you added in step 3 above.
 
-Then add a filter on the view ‘needs pushing equals true’
+Then add a filter on the view ‘needs pushing equals true’.
 
 #### Pushing any new rows that have never been pushed before
-For this scenario, simply add a filter to the view ‘last pushed is empty’
+For this scenario, simply add a filter to the view ‘last pushed is empty’.
 
 #### Pushing only rows not yet marked as received
 In some cases, you may want to be even more prudent than using the internal timestamp. The third party system could make a separate API call to agileBase for every row that’s received, telling it to update the row with an ID to prove receipt. That’s more API calls of course, but some situations may warrant it.

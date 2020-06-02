@@ -40,11 +40,20 @@ If a user encounters any problems with 2FA, e.g. they lose the device for genera
 If someone can't use app-based 2FA for some reason, then a fallback option is to use text-message (SMS) based authentication. This is not recommended as there are known insecurities in this method, but it's still better than having no 2FA at all. To enable that, just type in the user's mobile phone number when editing their user details. That phone number isn't used for any other purposes.
 
 ### Other options
-**Use the custom AgileChilli UI rather than agileBase's:**  
+#### Use the custom AgileChilli UI rather than agileBase's
 It's possible for companies to apply their logo and custom login screen to the system. Please contact us if you'd like to set this up.
 
-**Logout after**  
+#### Logout after
 Automatically end the user's session after after this many minutes of inactivity. The user themselves can also change this setting.
+
+#### Restrict data access
+Here, you can specify a field name, either an equals or a contains filter and a value. The button _set to user ID_ will set the value to the user's ID.
+
+The purpose of this is to limit the data rows a particular user sees in a view. If a field with the name you specify appears in a view, a filter will be automatically applied so the user only sees rows which match the filter.
+
+For example, if you set `created by [auto] = Oliver Kohll (oliver@agilechilli.com)`, then (assuming `Oliver Kohll (oliver@agilechilli.com)` is their username), the user will only see records they created, as long as the 'created by [auto]' field appears in the view.
+
+A similar feature exists to add filters to roles - useful when you may want to apply the same filter to multiple users. See [roles]({{<relref "roles#multi-tenanting">}})
 
 #### Roles
 Tick a role to assign the user to it. The primary purpose of roles is to apply privileges to groups of users, see [roles](https://todo.com) for more information.
