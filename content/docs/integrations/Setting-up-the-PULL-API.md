@@ -2,7 +2,7 @@
 title: "Setting up the PULL API"
 date: 2020-05-29T12:35:00+01:00
 type: docs
-weight: 2-0
+weight: 140
 description: Control how third party systems read data from agileBase
 ---
 
@@ -92,6 +92,9 @@ Causes characters which would normally be encoded as HTML entities (e.g. `&` -> 
 
 #### exact_filters=true/false (default false)
 If true, filters (see below) will be need to match results exactly instead of using the default 'contains' filtering
+
+#### row_limit=[row limit]
+The default limit on the number of records to ruturn is 10,000. Add this parameter to change this. Note the hard maximum allowed is 100,000.
 
 ### Filtering
 

@@ -2,7 +2,7 @@
 title: "Setting up the Calendar API"
 date: 2020-04-24T16:40:00+01:00
 type: docs
-weight: 100
+weight: 110
 description: A powerful automation feature that can synchronise data with a third party calendar.
 ---
 

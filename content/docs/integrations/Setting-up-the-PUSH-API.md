@@ -1,8 +1,8 @@
 ---
 title: "Setting up the PUSH API"
-date: 2020-04-24T16:40:00+01:00
+date: 2020-06-01T16:40:00+01:00
 type: docs
-weight: 100
+weight: 130
 description: A powerful automation feature that can send data to third party systems.
 ---
 
