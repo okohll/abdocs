@@ -15,9 +15,10 @@ Once set up, the link will be maintained and the calendar will update whenever t
 ## Pre-requisites
 agileBase uses [OAuth](https://oauth.net/), an industry standard protocol, to synchronize with your calendar system of choice.
 
-Under this protocol, each person will need to individually grant agileBase permission to send data to, and view events in their calendar. Luckily, this is a straightforward process: as a user,
+Under this protocol, each person will need to individually grant agileBase permission to send data to, and view events in their calendar. This is a straightforward process: as a user,
 1. Click on your user icon at the top right of the screen
-2. Click the _connect calendar_ link
+2. Select _edit profile_
+3. Click the _connect calendar_ link
 
 You will see a calendar selector screen like this:
 
@@ -72,6 +73,6 @@ To set this up
 Some of these fields deserve additional explanations:
 * **calendar id**: identifies the particular calendar within the user's connected account to send events to. This is the same calendar ID used in the 'ab calendar mapping' table above, so can be looked up from there, perhaps by joining to the table.
 * **event id**: if you're creating a new event, leave this blank. If the event was created externally, or you're updating an existing event, use the event ID as listed in the 'ab calendar intray' record for it.
-* **calendar owner**: the ID of the agileBase user - this will be used to determine the person who'se linked calendar the event should be sent to. The standarg agileBase format is used 'Forename Surname (username)', so you can use the automatic field 'Created By [auto]' if you like.
+* **calendar owner**: the ID of the agileBase user - this will be used to determine the person who'se linked calendar the event should be sent to. The standard agileBase format is used 'Forename Surname (username)', so you can use the automatic field 'Created By [auto]' if you like.
 * **attendees**: a comma separated list of email addresses of people who should be invited
 
