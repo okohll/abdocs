@@ -5,7 +5,7 @@ type: docs
 weight: 40
 description: Table fields
 ---
-Adding fields to a table creates a form by which people (and other sources such as the [API](https://todo.com) or [workflows](https://todo.com)) can enter data.
+Adding fields to a table creates a form by which people (and other sources such as the [API]({{<relref "/docs/integrations">}}) or [workflows]({{<relref "/docs/workflows">}}) can enter data.
 
 There are various types of fields and field options which this section will cover.
 
