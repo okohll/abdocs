@@ -18,7 +18,7 @@ Data can be imported in two ways.
 * insert all new records
 * update existing records
 
-Inserting new records will create a new record in the database for every line in the CSV file. Updating existing records will attempt to match each line in the file with an existing record and update all field values from the CSV. This can be useful when merging in data from an external source, or exporting, altering with a third party system and re-importing. Another use can be updating one field based on another - you can [export]({{<relref "/docs/security-and-compliance/security-features/exporting"}}), update the fields as necessary and re-import.
+Inserting new records will create a new record in the database for every line in the CSV file. Updating existing records will attempt to match each line in the file with an existing record and update all field values from the CSV. This can be useful when merging in data from an external source, or exporting, altering with a third party system and re-importing. Another use can be updating one field based on another - you can [export]({{<relref "/docs/security-and-compliance/security-features/exporting">}}), update the fields as necessary and re-import.
 
 In either case, the CSV file must contain fields in the same order as they are in the table being imported into. The column titles don’t need to be the same though, it’s the order which is important. The import screen will show you the column order which is necessary.
 
