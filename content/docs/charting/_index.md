@@ -22,11 +22,11 @@ When choosing a type of chart in step 3, small previews will be displayed based 
 
 For example, if in step 1 we have a count of items per year:
 
-1[Chart - step 1](/chart-1.png)
+![Chart - step 1](/chart-1.png)
 
 then the scatter diagram will work but the bubble chart won't. For the bubble chart, **two** y-axis measurements are required, one to specify the position of the bubble on the y-axis, plus another to determine the relative size of the bubble.
 
-1[Chart - step 3](/chart-bubble.png)
+![Chart - step 3](/chart-bubble.png)
 
 ## Embedding charts in forms
 Charts can be embedded into tables. When the user opens a record, the chart will automatically filter to show data pertaining to that record only. 
