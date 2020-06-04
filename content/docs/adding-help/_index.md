@@ -19,6 +19,6 @@ Help for the application you build can be added in at many levels of the user in
 * for a tile
     - add the help when [creating or editing]({{<relref "/docs/tiles#creating-a-tile">}}) a tile
 
-If help exists for a particular area, it's generally displayed on screen as a question mark icon. Users can click on this to show the help content. Where an icon is less appropriate, it is shown in other ways, for example on hover-over of an element. In the case of views, help is shown in the menu item for each view.
+If help exists for a particular area, a link is generally displayed on screen as a question mark icon. Users can click on this to show the help content. Where an icon is less appropriate, it is shown in other ways, for example on hover-over of an element. In the case of views, help is shown in the menu item for each view.
 
 Help content can contain URLs, which are converted into links. Links to [YouTube](https://www.youtube.com) URLs are shown as videos in place.

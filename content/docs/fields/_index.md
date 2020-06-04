@@ -19,14 +19,14 @@ There are various types of fields and field options which this section will cove
 6. Optionally, drag and drop the field to a desired location relevant to other fields
 
 ## Field level help
-Any description added to the field will be used as inline help. URLs can be included and will be turned into clickable links. See [help](https://todo.com) for more information.
+Any description added to the field will be used as inline help. URLs can be included and will be turned into clickable links. See [help]({{<relref "/docs/adding-help">}}) for more information.
 
 ## Editing a field
 Field name and description (help text) can be altered at any time by clicking them. Fields can be moved on screen by dragging. Options can be altered by clicking the _edit options_ link for each field.
 
 However, once set, the field type can't be changed. A number field can't be converted to a text field for example. In particular, a decimal number can't be converted to a whole number field and vice versa, as integers and floating point numbers are different data types.
 
-There is a process available for changing field types, please see [changing field types](https://todo.com) if you need to do that.
+There is a process available for changing field types, please see [changing field types]({{<relref "/docs/advanced-usage/build-patterns#switching-a-field-from-one-type-to-another">}}) if you need to do that.
 
 ## Removing a field
 In the _fields_ tab, click the _remove_ button to the right of a field.
