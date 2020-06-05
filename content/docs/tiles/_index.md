@@ -9,7 +9,7 @@ A tile on a user's home screen represents an application or module of an applica
 
 There are five types of tile, each of which present data in a different way.
 * Data tile
-    - the most common tile type - from the administrator's viewpoint this is a collection of [views](https://todo.com). The user can navigate the views, search for data, edit records etc.
+    - the most common tile type - from the administrator's viewpoint this is a collection of [views]({{<relref "/docs/views">}}). The user can navigate the views, search for data, edit records etc.
 * Image / document library
     - a type of data tile. Views which contain a document field can be displayed in 'card' format to show large document previews, rather than the usual 'rows' format
 * Calendar
@@ -42,7 +42,7 @@ The available options are
 > A multitude of icons are available, from [Font Awesome](https://fontawesome.com). They are constantly adding more so if you see one that's available on their website that's not in our set yet then just let us know.
 
 ## Adding views to a data tile
-Data tiles need to contain one or more views to be useful. If you have no tables or views yet, you may want to check out the [Quick Start]({{<relref "quickstart">}}) guide, or see [Views](https://todo.com) for full details on view creation.
+Data tiles need to contain one or more views to be useful. If you have no tables or views yet, you may want to check out the [Quick Start]({{<relref "quickstart">}}) guide, or see [Views]({{<relref "/docs/views">}}) for full details on view creation.
 
 In a view's manage tab, choose the tile which you want to place it in from the _Tile_ dropdown.
 
@@ -64,7 +64,7 @@ When editing a user, click the _Roles_ button. Next to each role listed is a lis
 After assigning a role, if any tiles aren't needed for a particular user, they can be removed from the _Tiles_ panel for that user.
 
 ## System tiles
-As an administrator, you will likely create a number of views which aren't meant to be directly visible by users, but which are for the internal workings of your applications. For example, workflows, tab views etc. - see [Views - Special Uses](https://todo.com).
+As an administrator, you will likely create a number of views which aren't meant to be directly visible by users, but which are for the internal workings of your applications. For example, workflows, tab views etc. - see [Views - Special Uses]({{<relref "/docs/views/special-uses">}})
 
 To prevent users seeing these, you can put then in system tiles. A system tile is simply one which has a name starting with the word 'System'. These will only be visible to administrators. You may find it a good idea to create a number of System tiles for organisation purposes.
 

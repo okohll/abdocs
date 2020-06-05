@@ -22,14 +22,14 @@ Views can utilise the full power of the SQL language (mostly behind the scenes w
 
 On the screen, a view is most usually output as a series of rows of data, with field names as column headings - like a spreadsheet. 
 
-**TODO: screenshot**
+![view](/view.png)
 
-There are also other ways of displaying the output, such as in a [calendar](https://todo.com) or [document library](https://todo.com) interface.
+There are also other ways of displaying the output, such as in a [calendar]({{<relref "/docs/calendar">}}) or [document library]({{<relref "/docs/tiles">}}) interface.
 
 Views are organised into [tiles]({{<relref "/docs/tiles">}}). Each tile contains a collection of views, organised into a menu system within it. Administrators can hence organise the display of data in a logical fashion.
 
 ### Behind the scenes uses
-As well as showing data to users, the power and flexibility of views allows them to be used in a multitude of different ways useful for administrators. For example, in [workflow](https://todo.com) automations, to create [APIs](https://todo.com) to allow third party systems to query the data, or to control [hiding and showing fields]({{<relref "/docs/fields/field-options/common-options#show-if-record-in-view">}}).
+As well as showing data to users, the power and flexibility of views allows them to be used in a multitude of different ways useful for administrators. For example, in [workflow]({{<relref "/docs/workflows">}}) automations, to create [APIs]({{<relref "/docs/integrations">}}) to allow third party systems to query the data, or to control [hiding and showing fields]({{<relref "/docs/fields/field-options/common-options#show-if-record-in-view">}}).
 
 There are many other uses we'll come across throughout this documentation, in fact almost every major feature depends on views in some way.
 

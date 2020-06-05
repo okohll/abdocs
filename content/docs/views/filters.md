@@ -35,5 +35,5 @@ Some filters apply to multiple data types, others only to specific types. For ex
 
 Once you've added a filter, you'll be able to type in a description for it. If no description is entered, the system will automatically generate one, which you'll be able to see.
 
-This description is shown to users as help in particular circumstances, e.g. when the view is used as a [chaser](https://todo.com), so it's a good idea to check it makes sense.
+This description is shown to users as help in particular circumstances, e.g. when the view is used as a [chaser]({{<relref "/docs/workflows/send-chaser">}}), so it's a good idea to check it makes sense.
 

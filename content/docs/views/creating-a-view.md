@@ -24,7 +24,7 @@ Within a tile, the view can be added to a menu by editing the view name. Simply 
 
 Entering a view _Purpose_ in the space underneath the name will provide help text for the view. This will be displayed in the menu underneath the view name. Here's a screenshot of a sample menu, each with purpose completed.
 
-** TODO: screenshot **
+![menu](/menu.png)
 
 ## Using a view
 Once the view is created, how can someone use it? We won't work through every possibility here as this documentation is for administrators rather than users, but here are some of the most important points in brief you may like to be aware of in order to support apps you build.
@@ -40,6 +40,6 @@ Hovering over a column shows summary statistics, like a total and average (of al
 ### Loading a record
 Once a record has been found, click a row in the view to load that record for viewing or editing. The record loaded comes from the table that the view belongs to (as referenced at the start of this page), even though the view may contain fields from other tables as well.
 
-IT's also possible to use [inline editing](https://todo.com) to edit the contents of fields directly in the view.
+It's also possible to use [inline editing]({{<relref "/docs/views/options#inline-editing">}}) to edit the contents of fields directly in the view.
 
 Pressing the plus button to the left of the view contents will create a new record in the view's parent table.

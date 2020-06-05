@@ -13,9 +13,9 @@ When that's the case, agileBase exposes both tiers of data on screen so the user
 
 This type of navigation manifests in different ways according to the setup.
 
-If a child links to the parent with a [one-to-one relation](https://todo.com), then links to 'grandchildren' are displayed by a menu in a tab. Here's a menu showing the various grandchild items under a product's specification.
+If a child links to the parent with a [one-to-one relation]({{<relref "/docs/fields/field-options/relation-field-options#one-to-one-only">}}) then links to 'grandchildren' are displayed by a menu in a tab. Here's a menu showing the various grandchild items under a product's specification.
 
-**TODO: screenshot**
+![tab menu](/tab-menu.png)
 
 If it's a many-to-one, then grandchildren are represented by blocks at the end of the record. 
 
