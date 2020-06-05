@@ -22,13 +22,13 @@ Here's what the same data entry form looks like in each of the three configurati
 
 ![single column layout](/layout-single.png) "single column"
 
-![two column layout](/layout-two-column.png) "two columns"
+![two column layout](/layout-two-columns.png) "two columns"
 
 ![process flow layout](/layout-process.png) "process flow"
 
 and here's an example of **2. blocks in two columns** with tabs.
 
-![form with tabs](/layout-tabs.png) "form with tabs"
+![form with tabs](/layout-tabs.png)
 
 ## Separators
 To form a block, click on the _fields_ tab of a table and add a field of type 'separator' - see the [fields reference]({{<relref "/docs/fields/field-types/special-field-types/separators">}}). Move it to where the start of the block should be i.e. before the first field in the block.
