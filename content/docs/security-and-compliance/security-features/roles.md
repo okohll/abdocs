@@ -18,7 +18,7 @@ You should now see an editing screen with the details of the role you just creat
 ![Role details](/role-details.png)
 
 **Allow Export**  
-Referrs to exporting to spreadsheet - see [spreadsheet exports](https://todo.com)
+Referrs to exporting to spreadsheet - see [spreadsheet exports]({{<relref "/docs/integrations/exporting-to-spreadsheet">}})
 
 **User Visibility** and **Restrict Data Access**  
 These are used to set up [multi-tenanting](#multi-tenanting)
@@ -27,7 +27,7 @@ These are used to set up [multi-tenanting](#multi-tenanting)
 Tick each user to add them to the role. Users will gain all the privileges defined by the role.
 
 ### Privileges
-Select the [table privileges](https://todo.com) which will apply to members.
+Select the [table privileges]({{<relref "/docs/security-and-compliance/security-features/privileges">}}) which will apply to members.
 
 Privileges are additive - if a user is a member of multiple roles, they gain all the privileges from each of those roles added together.
 
@@ -40,7 +40,7 @@ Multi-tenanting is the ability to separate users into groups who can’t see eac
 
 To set up multi-tenanting:
 
-1. first [add a text field](https://todo.com) to all tables in the system for which you want data to be segragated. The field must be named the same in every table, for example's sake here let's assume it's called 'account name'.
+1. first [add a text field]({{<relref "/docs/fields">}}) to all tables in the system for which you want data to be segragated. The field must be named the same in every table, for example's sake here let's assume it's called 'account name'.
 2. Then create one role for each set of users who you want to segregate. We'll assume there's one called 'Customer A'.
 3. In the role details screen for the Customer A role, tick _user visibility_. That means that users in this role won't see users in other roles with the same option ticked. In other words, users from Customer A won't be able to select Customer B or Customer C users when doing things like adding comments or assigning users to records.
 4.  Under _restrict data access_ in the role details, enter `account name = Customer A`

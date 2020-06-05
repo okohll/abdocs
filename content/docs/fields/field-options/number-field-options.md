@@ -23,7 +23,7 @@ The number of decimal places to show numbers to.
 
 his affects display only, so for example if 1.543 is entered into a field with 1 decimal place, it will display as 1.5 but will still be stored as 1.543 and any maths done on the field operate on the higher precision value.
 
-> Note - integer and floating fields are actually different field types in the underlying database, so if a number is created with 0dp i.e. as a whole number, it can't later be converted to floating point by changing the dp. There is a process that can be followed for [converting fields from one type to another](https://todo.com).
+> Note - integer and floating fields are actually different field types in the underlying database, so if a number is created with 0dp i.e. as a whole number, it can't later be converted to floating point by changing the dp. There is a process that can be followed for [converting fields from one type to another]({{<relref "/docs/advanced-usage/build-patterns#switching-a-field-from-one-type-to-another">}}).
 
 Whole number fields can store integer values from -2,147,483,648 to +2,147,483,647, i.e. approx. -2 billion to +2 billion. Decimal number fields have a range of around 1E-307 to 1E+308. See notes for _integer_ and _double precision_ types here: https://www.postgresql.org/docs/current/datatype-numeric.html
 

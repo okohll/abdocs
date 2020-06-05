@@ -15,6 +15,6 @@ Files previews can be displayed in an [image/document library]({{<relref "/docs/
 When a new file is uploaded (or generated), any previous file is kept as a previous version, displayed with a timestamp, for download by users.
 
 ## Generating PDF documents
-If a template is uploaded using the [file field options](https://todo.com), the file upload button in the user interface will be replaced by a generate button.
+If a template is uploaded using the [file field options]({{<relref "/docs/fields/field-options/file-field-options#template">}}), the file upload button in the user interface will be replaced by a generate button.
 
-See [document templates](https://todo.com) for more information.
+See [document templates]({{<relref "/docs/fields/field-types/special-field-types/file/document-templates">}}) for more information.

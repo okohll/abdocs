@@ -27,11 +27,11 @@ Passwords are required to be at least 8 characaters long. Apart from that, there
 >
 
 ### Two factor authentication
-Users are strongly encouraged to set up two factor authentication (2FA) using an app. Unfortunately this is one step an administrator can't do for them, but luckily it is quick and easy to do: [here's how](https://todo.com).
+Users are strongly encouraged to set up two factor authentication (2FA) using an app. Unfortunately this is one step an administrator can't do for them, but luckily it is quick and easy to do: [here's how](https://agilechilli.com/help-centre/agilebase/account-settings-agilebase/how-to-set-up-two-factor-authentication-2fa/).
 
 Users without 2FA will be prompted to do so in the user interface and by email.
 
-2FA is mandatory for [administrators]({{< ref "#roles" >}}) and necessary for a user to have before [manage](https://todo.com) privileges can be assigned to them. Users also need to have 2FA enabled in order to perform certain functions such as exporting to spreadsheet.
+2FA is mandatory for [administrators]({{<relref "#roles">}}) and necessary for a user to have before [manage]({{<relref "/docs/security-and-compliance/security-features/privileges">}}) privileges can be assigned to them. Users also need to have 2FA enabled in order to perform certain functions such as exporting to spreadsheet.
 
 When enabled, a user will be prompted for the 2FA code as well as their password when they log in from a device or location they haven't used in the past 30 days.
 
@@ -56,22 +56,22 @@ For example, if you set `created by [auto] = Oliver Kohll (oliver@agilechilli.co
 A similar feature exists to add filters to roles - useful when you may want to apply the same filter to multiple users. See [roles]({{<relref "roles#multi-tenanting">}})
 
 #### Roles
-Tick a role to assign the user to it. The primary purpose of roles is to apply privileges to groups of users, see [roles](https://todo.com) for more information.
+Tick a role to assign the user to it. The primary purpose of roles is to apply privileges to groups of users, see [roles]({{<relref "roles">}}) for more information.
 
 There's one special role which can be assigned. It will be marked **grants administrative privileges**. Assigning that role will make a user an administrator, with full permissions over the complete system. They can create/remove users, roles, tables etc., as well as assign themselves privileges on any table.
 
-Next to each role listed is a list of tiles that will be added to their screen if that role is assigned to them. This is a convenience feature to speed up setting up their home screen. The tiles shown for a role are those which more than half of the members of that role have. Tiles can be manually added and removed by an [administrator](https://todo.com) or the user themselves.
+Next to each role listed is a list of tiles that will be added to their screen if that role is assigned to them. This is a convenience feature to speed up setting up their home screen. The tiles shown for a role are those which more than half of the members of that role have. Tiles can be manually added and removed by an [administrator] or the user themselves.
 
-If any role is a [filtering role](https://todo.com), the filter applied is also displayed.
+If any role is a [filtering role]({{<relref "roles#multi-tenanting">}}), the filter applied is also displayed.
 
 #### Privileges
-Assign individual table [privileges](https://todo.com) to a user.
+Assign individual table [privileges]({{<relref "privileges">}}) to a user.
 > When dealing with larger numbers of users it's usually more manageable if you use roles to assign privileges.
 
 If a user has a privilege due to being a member of a role, that privilege is shown with a shaded blue background. Any additional privileges individually assigned to them are shown in green.
 
 #### Tiles
-Allows an admin to add/remove [tiles](https://todo.com) for a user. By default users can add/remove tiles themselves too, although this can be disabled through the use of a [custom UI]({{< ref "#other-options" >}}).
+Allows an admin to add/remove [tiles]({{<relref "/docs/tiles">}}) for a user. By default users can add/remove tiles themselves too, although this can be disabled through the use of a [custom UI]({{<relref "#other-options">}}).
 
 ## Viewing users
 Expand the _Administration_ menu in the lefthand sidebar and click users. You'll see a list of existing user accounts. Their details are listed including 2FA status (whether they're using app-based 2FA, text message codes or none) and when they last logged in.

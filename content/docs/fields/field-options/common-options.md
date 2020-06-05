@@ -18,11 +18,11 @@ If a record appears in the view, the field will be visible, otherwise it won't d
 
 > As the conditions are created in a view, this mechanism is really powerful. You can create simple or very complex critera, including all of the filter options in a view, for example basing a filter on a calculation and combining multiple filters.
 > 
-> So you could make a field appear only when a particular point is reached in a process, or a status is changed elsewhere in a form, or perhaps it should only be visible to people who are [members of a certain role](https://todo.com). See [view filters](https://todo.com) for more information.
+> So you could make a field appear only when a particular point is reached in a process, or a status is changed elsewhere in a form, or perhaps it should only be visible to people who are [members of a certain role]({{<relref "/docs/security-and-compliance/security-features/roles">}}). See [view filters]({{<relref "/docs/views/filters">}}) for more information.
 
 Two special options are available
 * show always - the default state
-* show never - useful for hiding fields used for internal purposes, e.g. which help the internal workings of a [workflow](https://todo.com)
+* show never - useful for hiding fields used for internal purposes, e.g. which help the internal workings of a [workflow]({{<relref "/docs/workflows">}})
 
 ## Lock when value set
 If the field is blank, allow a value to be entered, however as soon as it has a value, lock to prevent further editing. The user can manually unlock, but will be prompted for a reason for doing so, which will be logged against the field as a comment.
@@ -41,7 +41,7 @@ If ticked, force the user to supply a value. They won't be able to navigate away
 Prominently highlight the field on the screen, e.g. if it's one that is important to fill out, without actually requiring a value to be supplied.
 
 ## Set from previous referenced field
-Provides a way to calculate a default option for a field. Tick this option and place a [referenced field] just before this field. The value of this field will be set from whatever value the referenced field outputs. 
+Provides a way to calculate a default option for a field. Tick this option and place a [referenced field]({{<relref "/docs/fields/field-types/special-field-types/referenced-data">}}) just before this field. The value of this field will be set from whatever value the referenced field outputs. 
 
 If the referenced field's view has more than one field, the last one will be used, or if any have the same name as this field then that one will be.
 

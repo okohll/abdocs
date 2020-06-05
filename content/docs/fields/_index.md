@@ -31,7 +31,7 @@ There is a process available for changing field types, please see [changing fiel
 ## Removing a field
 In the _fields_ tab, click the _remove_ button to the right of a field.
 
-If the field is used in any other locations in your application, such as a [view](https://todo.com), you'll be alerted to the fact. You'll need to first remove the field from those locations before being able to remove it.
+If the field is used in any other locations in your application, such as a [view]({{<relref "/docs/views">}}), you'll be alerted to the fact. You'll need to first remove the field from those locations before being able to remove it.
 
 
 

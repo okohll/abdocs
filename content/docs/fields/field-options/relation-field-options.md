@@ -52,7 +52,7 @@ When the user is selecting a parent record to link to a particular child, they w
 
 They will be able to filter on any field in the view to search for a record.
 
-> Using pre-set [view filters](https://todo.com) to narrow down the list of relevant records can be helpful, e.g. if only records of a certain category are required.
+> Using pre-set [view filters]({{<relref "/docs/views/filters">}}) to narrow down the list of relevant records can be helpful, e.g. if only records of a certain category are required.
 
 ## Use only given values
 When this is un-ticked, allow the user to create a new parent record directly from the child record's editing screen. Relation fields allow you to type the name of a parent record to find and select one. If no matches are found, a prompt will appear allowing the user to create one.

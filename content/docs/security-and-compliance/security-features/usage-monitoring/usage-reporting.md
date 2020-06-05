@@ -33,7 +33,7 @@ Raw data can be downloaded to spreadsheet using the links beneath each sparkline
 As well as actual usage, the dashboard shows total capacity i.e. how many users, records, tables etc. are present in the system, along with purchased capacity (if relevant). These elements affect billing.
 
 #### Workflows
-A convenience view of all workflows which carry out automated data modifications, see [workflows](https://todo.com)
+A convenience view of all workflows which carry out automated data modifications, see [workflows]({{<relref "/docs/workflows">}})
 
 #### Database graph
 Finally, for background on what the data structure looks like and how tables are connected, the database graph shows relations between tables is visual form. This can provide a fuller understaning of the system.

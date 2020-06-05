@@ -7,7 +7,7 @@ description: Templates allow the automatic generation of PDF documents, or print
 ---
 Document templates in agileBase are typically used to create output that needs to be printed or emailed, for example form letters and especially anything that needs to be branded. They can be used for some quite complex and large documents, for example one customer uses them to create branded multi-page reports that are sold to customers, complete with custom fonts, layouts, images and colours.
 
-The same templating system is used for both generating documents (which can be done automatically with a [workflow](https://todo.com) or manually) and displaying output to be printed.
+The same templating system is used for both generating documents (which can be done automatically with a [workflow]({{<relref "/docs/workflows/send-document-generator">}}) or manually) and displaying output to be printed.
 
 Each template is attached to a view and given a name.
 
@@ -16,7 +16,7 @@ Templates can be created using the built-in WYSIWYG editor, which allows simple 
 
 Alternatively and for complex needs, templates can be created manually. The templating language is [Apache Velocity](https://velocity.apache.org/), which allows concepts such as variables, loops etc. to be used, i.e. simple programming features. The output format is HTML.
 
-1. Find or create a [view](https://todo.com) which contains the data to be included in your output document. The idea is that each row in the view will correspond to one document, with the data from that row being merged in.
+1. Find or create a [view]({{<relref "/docs/views">}}) which contains the data to be included in your output document. The idea is that each row in the view will correspond to one document, with the data from that row being merged in.
 2. Press the _Print_ button in the toolbar, then the _manage_ button
 3. You will then be prompted to create a template using the WYSIWIG editor, or upload one created outside the system.
 > Existing templates can also be edited or downloaded. Manually created templates with complex features such as variable setting and looping can't be edited using the WYSIWYG editor
@@ -34,7 +34,7 @@ Here's an example of a template being updated in the WYSYWIG editor:
 ![Template editing](/template-editor.png)
 
 ### Using templates
-Templates can be used when generating documents, [manually](https://todo.com) or using an [automated workflow](https://todo.com).
+Templates can be used when generating documents, [manually]({{<relref "/docs/fields/field-options/file-field-options#template">}}) or using an [automated workflow]({{<relref "/docs/workflows/send-document-generator">}}).
 
 They can also be used as printout templates to let users print data from the system formatted as you wish.
 

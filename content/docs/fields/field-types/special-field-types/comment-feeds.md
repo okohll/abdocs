@@ -39,7 +39,7 @@ As above, anyone who receives a comment notification can reply to the email to a
 
 However, comments are also the mechanism by which emails from external parties can be logged - see the [accept emails to this address]({{<relref "/docs/tables/options#accept-emails-to-this-address">}}) table option.
 
-When a [workflow](https://todo.com) or [chaser](https://todo.com) sends an outgoing email, that is logged as a comment (including any attachments) too.
+When a [workflow]({{<relref "/docs/workflows/send-email">}}) or [chaser]({{<relref "/docs/workflows/send-chaser">}}) sends an outgoing email, that is logged as a comment (including any attachments) too.
 
 ## Slack integration
-If [Slack](https://www.slack.com) is integrated via [company options](https://todo.com), every comment added will also be sent to your Slack workspace.
+If [Slack](https://www.slack.com) is integrated via [company options]({{<relref "/docs/advanced-usage/company-settings">}}), every comment added will also be sent to your Slack workspace.

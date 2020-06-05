@@ -66,4 +66,4 @@ To assign one or more table privileges to a particular role or user:
 
 Database systems often have the concept of row level privileges. The equivalent in agileBase is the [multi-tenanting]({{<relref "roles#multi-tenanting">}}) system.
 
-Individual fields in a table can be locked or hidden, see the [field options](https://todo.com)
+Individual fields in a table can be locked or hidden, see the [field options]({{<relref "/docs/fields/field-options/common-options#show-if-record-in-view">}})

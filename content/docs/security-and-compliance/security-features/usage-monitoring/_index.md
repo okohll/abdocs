@@ -26,12 +26,12 @@ Further, for every record in a table, the following metadata is stored and can b
 * The view count: how many times the record has been opened
 * A visual activity histogram showing the number of edits per week over the past six months
 
-See [automatically present fields](https://todo.com) for full details.
+See [automatically present fields]({{<relref "/docs/fields/field-types/special-field-types/automatically-present-fields">}}) for full details.
 
 ### API and workflow actions
-Data changes or outflows arising from [API calls](https://todo.com) are logged to the same log store as user actions. Instead of logging the user taking the action, it's logged as an API call with the IP address of the source of the request.
+Data changes or outflows arising from [API calls]({{<relref "/docs/integrations">}})are logged to the same log store as user actions. Instead of logging the user taking the action, it's logged as an API call with the IP address of the source of the request.
 
-Automated [workflow](https://todo.com) actions are also logged. Each is marked as a workflow actions with the name of the action (i.e. the view name) to identify it.
+Automated [workflow]({{<relref "/docs/workflows">}}) actions are also logged. Each is marked as a workflow actions with the name of the action (i.e. the view name) to identify it.
 
 ### Administration and management actions
 All significant actions are recorded, in summary

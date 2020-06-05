@@ -10,7 +10,7 @@ When this field is included in a view, highlight it with a colour if the content
 
 ![Word Colours](/word-colours.png)
 
-> Text calculations can also be coloured based on the same words - see the [calculation options](https://todo.com)
+> Text calculations can also be coloured based on the same words - see the [calculation options]({{<relref "/docs/views/calculations#colouring">}})
 
 ## Default value
 For basic text fields, this simply provides a default value, which the field will have when a record's created. If not provided, the field will be blank.
@@ -31,7 +31,7 @@ Only users/roles which have privileges to view the data in this particular table
 
 > An example use would be assigning an account manager to a customer, selecting from a list of staff members (who are users).
 
-When a user is selected in this way, more options for use are opened up, such as automatically emailing the selected person when there's a status change or something is overdue for example. agileBase can look up the user's email address to accomplish this, See [email workflows](https://todo.com) for details.
+When a user is selected in this way, more options for use are opened up, such as automatically emailing the selected person when there's a status change or something is overdue for example. agileBase can look up the user's email address to accomplish this, See [email workflows]({{<relref "/docs/workflows/send-email">}}) for details.
 
 ## Use dropdown
 Rather than a simple text entry field, display a dropdown of choices from which one can be selected. If there are only a few values, then the user interface may display options in [radio button](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio) style, but the behaviour is exactly the same.

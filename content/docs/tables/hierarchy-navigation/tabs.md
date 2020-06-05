@@ -19,21 +19,21 @@ Tabs are one way of exposing relationships between tables, to allow the user to 
 ## Tab types
 There are two types of tab, those which show a **single record** and those which show **multiple records**.
 
-The type used depends on the relation field in the child table used in the tab, which links to the main table. If it is [one-to-one](https://todo.com), then a single record is shown in the tab. If it's [one to many]({{<relref "table-layouts">}}), then a view appears embedded in the tab, with which the user can choose a record to edit.
+The type used depends on the relation field in the child table used in the tab, which links to the main table. If it is [one-to-one]({{<relref "/docs/fields/field-options/relation-field-options#one-to-one-only">}}), then a single record is shown in the tab. If it's [one to many]({{<relref "table-layouts">}}), then a view appears embedded in the tab, with which the user can choose a record to edit.
 
 A one to one example may be showing a tab of specification information against an ingredient for example.
 
-**TODO: screenshot of spec tab**
+![one to one tab](/tab-one-to-one.png)
 
 A one to many may be a list of suppliers who supply that ingredient.
 
-**TODO: screenshot**
+![one to many tab](/tab-one-to-many.png)
 
 ## Tab options
 Typically, these options are only needed to finnesse an application. They can be useful to look at once the core of the structure is built.
 
 ### Tab view
-For one to many tabs, which [view](https://todo.com) to use to show items. By creating a specific view to use for the tab, you can control which fields are displayed in which order, add calculations, filter those which are shown etc.
+For one to many tabs, which [view]({{<relref "/docs/views">}}) to use to show items. By creating a specific view to use for the tab, you can control which fields are displayed in which order, add calculations, filter those which are shown etc.
 
 ### Populate from template
 Under a tab, a button allows the user to add records. For example in the contacts tab of an organisation, they would be able to add a new contact.
@@ -44,15 +44,15 @@ One way of doing that is to use the 'Populate from template' view, first creatin
 
 Any calculations in the view **with the same name** as a field in the tab table will be used to populate values in the records.
 
-> Another way of auto-populating data is to use a [workflow which runs on record creation](https://todo.com) or in the background. You can choose whichever method works best for a particular purpose.
+> Another way of auto-populating data is to use a [workflow which runs on record creation]({{<relref "/docs/tables/options#when-a-records-created-run-this-workflow">}}) or in the background. You can choose whichever method works best for a particular purpose.
 
 ### Show only if in view
-This option allows you to control tab visibility - whether the tab is visible on screen or not at any time depends on whether the main record appears in the view chosen. This works exactly the same way as [field visibility](https://todo.com)
+This option allows you to control tab visibility - whether the tab is visible on screen or not at any time depends on whether the main record appears in the view chosen. This works exactly the same way as [field visibility]({{<relref "/docs/fields/field-options/common-options#show-if-record-in-view">}})
 
 ### Colour from view
 The colour of each tab can be chosen. For example, different steps of a process may each be represented by a tab. Once a step is complete, the tab may be coloured green.
 
-To set this up, create a view from the main (parent) table. It should contain a text calculation called 'colour' which outputs the name of a colour e.g. green, or a blank value for no colour. The colour names are the same as those for [record flagging](https://todo.com).
+To set this up, create a view from the main (parent) table. It should contain a text calculation called 'colour' which outputs the name of a colour e.g. green, or a blank value for no colour. The colour names are the same as those for [record flagging]({{<relref "/docs/tables/options#flag-records-with-colour">}}).
 
 ### Name
 By default the tab is named the same as the table used. However, you can override that here.
@@ -60,7 +60,7 @@ By default the tab is named the same as the table used. However, you can overrid
 ### Use inline editing
 Speed up intensive data entry by allowing each field in the tab view to be edited inline. Here's an example using an order processing system.
 
-**TODO: example screenshot**
+![tab inline editing](/tab-inline-edit.png)
 
 ### Show relation fields
 If this is un-ticked (which it is by default), any relation fields in the tab table will be hidden. This can be useful if you want to reduce the complexity exposed to the user. They can load all data including relations by navigating to the full record.

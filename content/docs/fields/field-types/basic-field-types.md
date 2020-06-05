@@ -8,12 +8,12 @@ description: Text, number, date/time, auto-generated number sequence and checkbo
 These are the core types of fields by which data can be entered by users (or other sources such as the API or a workflow).
 
 ## Text
-Text fields are the most commonly used. Depending on [field options](https://todo.com), text can be entered into a standard data entry control, a large box allowing rich formatting (bold, italic etc.), chosen from a dropdown of options or added as tags.
+Text fields are the most commonly used. Depending on [field options]({{<relref "/docs/fields/field-options/text-field-options">}}), text can be entered into a standard data entry control, a large box allowing rich formatting (bold, italic etc.), chosen from a dropdown of options or added as tags.
 
 ## Number
 When adding a number field, select a _precision_ from the dropdown. If `0` is chosen, then it will be a whole number (integer) field. If any other value is chosen, it will be a decimal field. The decimal precision can be changed at any time in the field options, but a whole number can't be converted to a decimal or vice versa via field options.
 
-> See [changing field types](https://todo.com) for more information.
+> See [changing field types]({{<relref "/docs/advanced-usage/build-patterns#switching-a-field-from-one-type-to-another">}}) for more information.
 
 ## Date
 Represents a date or date/time, of any precision from year to second.

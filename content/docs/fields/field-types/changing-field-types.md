@@ -9,7 +9,7 @@ Once a field has been created, the type can't be changed with the flick of a swi
 
 1) Rename the field to `[fieldname] old`
 2) Add a new field `[fieldname]`. This means that any calculations that reference the field won't have to be changed and won't break due to mis-matching field names
-3) Copy all values from one field to another. The easiest way is to use a [workflow](https://todo.com)
+3) Copy all values from one field to another. The easiest way is to use a [workflow]({{<relref "/docs/workflows">}})
 4) Try to delete the old field. If any views reference it, the delete will fail and a list of them will be shown
 5) Edit all those views
     - remove the old field and add the new, to all fields, filters etc.

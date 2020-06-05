@@ -18,7 +18,7 @@ The record's creation time, accurate to the ms and displayed to the second by de
 ## Created By [Auto]
 The user ID of the person who created the record, in the form `Forename Surname (username)`. 
 
-> This format is used to identify a user everywhere in agileBase, for example when assigning a record to a user. When a user ID identifies a person in a [chaser](https://todo.com) or [email workflow](https://todo.com), agileBase will look up and use their email address, from their account details.
+> This format is used to identify a user everywhere in agileBase, for example when assigning a record to a user. When a user ID identifies a person in a [chaser]({{<relref "/docs/workflows/send-chaser">}}) or [email workflow]({{<relref "/docs/workflows/send-email">}}), agileBase will look up and use their email address, from their account details.
 
 When a record is created by a workflow, the Created By will be `System User (system)`.
 

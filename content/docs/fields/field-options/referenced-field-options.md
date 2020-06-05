@@ -8,11 +8,11 @@ description: Options specific to cross-reference panel fields
 ## Tabular display
 Rather than displaying rows from the referenced view as panels
 
-![Panels screenshot](https://todo.com)
+![Panels screenshot](/referenced-panels.png)
 
 show a table
 
-![Table screenshot](https://todo.com)
+![Table screenshot](/referenced-tabular.png)
 
 which is a more compact form allowing a greater volume of data to be shown in a smaller area.
 
