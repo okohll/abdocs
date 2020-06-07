@@ -80,7 +80,7 @@ Firstly, we need all combinations. Create a cross join between customers and pro
 
 The next step is similar to our reporting example of [joining on multiple fields]({{<relref "../joins#joining-on-multiple-fields">}}). Create a calculation 'customer product' which concatenates together customer ID and product ID. Create the same calculation in a view of sales (each sale of a product to a customer). Then join this sales view into our customer products view and bingo, we can display the total sales, whether zero or more, of each product to each customer.
 
-> If you haven't yet read up on [calculations](https://todo.com), you may need to do that in order to accomplish everything above
+> If you haven't yet read up on [calculations]({{<relref "/docs/views/calculations">}}), you may need to do that in order to accomplish everything above
 
 ### Adding a cross join
 Adding a cross join is a little different to [adding a normal join]({{<relref "../joins#adding-a-join">}}). The left and right fields don't matter (as we want to apply any exclusion rules, we just want every combination of rows possible).

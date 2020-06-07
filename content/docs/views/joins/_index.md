@@ -5,7 +5,7 @@ type: docs
 weight: 70
 description: Using joins to merge data from multiple sources into one view
 ---
-Without any joins, you can only add [fields](https://todo.com), [filters](https://todo.com) and [calculations](https://todo.com) (display data in other words), from a view's parent table - the one it was created from. When joins are added to other tables or views, you can also bring in data from any table or view joined to.
+Without any joins, you can only add [fields]({{<relref "/docs/fields">}}), [filters]({{<relref "/docs/views/filters">}}) and [calculations]({{<relref "/docs/views/calculations">}}) (display data in other words), from a view's parent table - the one it was created from. When joins are added to other tables or views, you can also bring in data from any table or view joined to.
 
 For example, a view based on the contacts table could join to organisations (as long as there is a [relation field]({{<relref "/docs/fields/field-types/basic-field-types#relation">}}) from contacts to organisations). You could then add in organisation name to the view, as well as fields like contact name, phone number and email address.
 
@@ -42,7 +42,7 @@ What difference does this make? Well if you join down, then the view will contai
 
 ** TODO: screenshot **
 
-However, joins down can be very useful when you want to aggregate child data, for example if you want to count the number of contacts each organisation has, you could add a join from organisations down to contacts, then add an [aggregate calculation](https://todo.com) to count the contacts. The system would then condense everything into one row per organisation, like so:
+However, joins down can be very useful when you want to aggregate child data, for example if you want to count the number of contacts each organisation has, you could add a join from organisations down to contacts, then add an [aggregate calculation]({{<relref "/docs/views/calculations/examples#aggregate-calculations">}}) to count the contacts. The system would then condense everything into one row per organisation, like so:
 
 ** TODO: screenshot **
 
@@ -58,7 +58,7 @@ Joins to views aren't automatically suggested, but you can still add them.
 
 > When might this be useful? Well one example is if you have a view containing a complex calculation and you wish to include the results of that calculation in lots of other views in different places.
 > 
-> Say you calculate various nutritional values of a recipe, such as the energy, salt and fats contents. You may wish to display that information in a few views for different people to query, as well as include them in product specification documents (which can be generated from a [workflow view](https://todo.com)) and perhaps product labels as well, using a view to send data to third party labelling equipment using an [API](https://todo.com)..
+> Say you calculate various nutritional values of a recipe, such as the energy, salt and fats contents. You may wish to display that information in a few views for different people to query, as well as include them in product specification documents (which can be generated from a [workflow view]({{<relref "/docs/workflows">}})) and perhaps product labels as well, using a view to send data to third party labelling equipment using an [API]({{<relref "/docs/integrations">}}).
 
 To add a join to a view:
 1) In the tiles interface, load the view you wish to edit (add a join to)
@@ -86,7 +86,7 @@ On occasion, you may wish to join to another table on data that is present in th
 For an example, imagine our business opens a series of restaurants - we have a table 'restaurants' listing them. We may have a table of people who've signed up to our newsletter, called 'newsletter signups'. Some of them may have provided a postcode.
 
 To find a list of people in the same postcode areas as each restaurant (the first half of a postcode, e.g. BS1):
-1) in a view 'restaurant locations', built from the restaurants table, create a calculation 'postcode area', which picks out the first part of the restaurant's postcode (see [calculations](https://todo.com) for how to create a calculation)
+1) in a view 'restaurant locations', built from the restaurants table, create a calculation 'postcode area', which picks out the first part of the restaurant's postcode (see [calculations]({{<relref "/docs/views/calculations">}}) for how to create a calculation)
 2) in a view 'all newsletter signups', from the table newsletter signups, create a similar calculation, called 'signup postcode area'
 3) from the view 'all newsletter signups', create a join with
     - left source: the **all newsletter signups** view
@@ -105,7 +105,7 @@ Extending 'creating a join on a calculation' from the above example, here we can
 
 This can sometimes be useful in financial reporting. Our example here is creating a report totalling up sales by product by month. The twist is we also want to include product/month combinations in which there were no sales of a particular product for the month.
 
-We'd start by creating a view of all product/month combinations over the past 12 months. See the [series generation](https://todo.com) example in the calculations section for how to do this.
+We'd start by creating a view of all product/month combinations over the past 12 months. See the [series generation]({{<relref "/docs/views/calculations/examples#series-generation">}}) example in the calculations section for how to do this.
 
 We'd then create a calculation 'product month' which would merge the product code and the month name. A similar calculation would be created in a 'sales' view, which shows individual sale lines, each with a product and month.
 

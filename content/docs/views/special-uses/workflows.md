@@ -9,4 +9,4 @@ A workflow can be used to edit data in the system automatically.
 
 The view created in this case is used to define the set of records to act on (others can be excluded via [view filters]({{<relref "../filters">}}) and also the data to use - each calculation or field in the view can be a source of data to create or update.
 
-For more information, see the [workflows](https://todo.com) topic, which contains full details of how to set up and use workflows.
+For more information, see the [workflows]({{<relref "/docs/workflows">}}) topic, which contains full details of how to set up and use workflows.
