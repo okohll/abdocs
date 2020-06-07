@@ -49,7 +49,7 @@ To connect them we add another field of a special type, called a *relation*. It 
 
 So now we have
 
-** TODO: diagram **
+![join](/join.png)
 
 We can now add as many contacts as we like to a supplier. And if we decide to store some more data about each contact, maybe a link to their LinkedIn profile for example, we can add that field to the contacts table and it will automatically be there for all contacts (as opposed to our naive spreadsheet example).
 
@@ -70,11 +70,11 @@ The solution is to create a **many to many** relation, where one supplier can pr
 
 There's no new field type to get to know, we just use the standard one to many relation we've already learned about in a clever new way - we use two of them, plus a join table. The structure looks like this:
 
-**TODO: diagram of junction table**
+![junction table](/junction-table.png)
 
 The table in the middle, Links, is called a join table, or junction table.
 
-It has a normal relation field linking it to suppliers, and also one linking to ingredients. By adding a record to the links table, we can join any ingredient to any supplier. A supplier can then have lots of ingredients, but an ingredient can also have lots of suppliers.
+It has a normal relation field linking it to suppliers, and also one linking to raw materials. By adding a record to the links table, we can join any raw material to any supplier. A supplier can then have lots of raw materials, but an raw material can also have lots of suppliers.
 
 The video above also explains this type of relation if you've not already watched it.
 
