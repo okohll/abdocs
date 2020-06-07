@@ -45,7 +45,7 @@ The activity over the past six months is shown, one point, or 'spike' per week. 
 
 With sparklines next to every record on screen, you can quickly get an idea of the relative activity of each.
 
-** TODO: screenshot **
+![activity histogram](/activity-histogram.png)
 
 ## Comments Feed [Auto]
 This field contains an amalagamation of all [comments]({{<relref "/docs/fields/field-types/special-field-types/comment-feeds">}}) added to a record, newest at the top. Adding this field to a view allows recent comments to be seen for many records at once and is an easy way of making record comments searchable. As opposed to the [comments tile]({{<relref "/docs/tiles">}}), the user sees all record comments, not just those they are a recipient for, but only those for the table in question.
@@ -54,9 +54,3 @@ Note - the Comments Feed [Auto] field combines comments from all comment fields 
 
 ## Document Storage (MB) [Auto]
 Shows the amount of storage used for all documents attached to a record (uploaded or generated), including previous versions. Adding this field to a view allows you to total up storage across all (or a subset of) records.
-
-
-
-
-
-** TODO: screenshot of activity histogram **

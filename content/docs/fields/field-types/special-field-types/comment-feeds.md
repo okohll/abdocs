@@ -14,17 +14,17 @@ The ability to discuss and comment on data can be one of the most important mech
 ## Comment feeds in action
 Here's an example of a comment feed in a table, being used to add a new comment. Previous comments can be seen underneath, with the user and date/time of each.
 
-**TODO: screenshot**
+![add comment](/add-comment.png)
 
 The available recipients are those people who have privileges to view data in the table (it's no use sending a comment to someone who can't see the data being discussed).
 
 The user interface intelligently selects an initial list of recipients from those available, but they can be added or removed by the user.
 
-In this example, A and B (TODO) have been set to receive email notifications as well. The email they receive will contain a link to take them directly to the record the comment was added to. They can reply to the email to log an additional comment.
+In this example, Cliff, Gemma and Mark have been set to receive email notifications as well. The email they receive will contain a link to take them directly to the record the comment was added to. They can reply to the email to log an additional comment.
 
 People who aren't recipients of a comment will still see the comment when they visit the record it's been added to, they just won't get a notification in their comments stream or elsewhere.
 
-People who are mentioned by name in a comment (TODO in this example) will get an in-app alert as well as the comment appearing in their comment stream.
+People who are mentioned by name in a comment (Mark in this example) will get an in-app alert as well as the comment appearing in their comment stream.
 
 A user's notification options affect whether they receive comments from a particular table or person by default, and how they receive those comments. The table option [email notifications]({{<relref "/docs/tables/options#accept-emails-to-this-address">}}) also affects this.
 

@@ -13,4 +13,4 @@ Inline help can be added for separators in the same way as for normal fields, by
 
 Here's a system with several...
 
-**TODO: blocks screenshot**
+![blocks](/blocks-one-expanded.png)

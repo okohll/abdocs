@@ -23,17 +23,17 @@ Referenced fields are based on views. The contents of a view will be displayed i
 
 The way it works is that the chosen view must contain the ID field of the table the referenced field is added to. When displaying data, the view is filtered to only show records where the ID matches that of the record being edited.
 
-Let's take the sales opportunity example from above. You wish to include details of a selected contact in an opportunity record.
+Let's take an example - you wish to include details of any ingredients supplied by a company in a supplier details screen. 
 
-First, create a view of contacts linked to each opportunity. It may have fields in it such as the following:
+First, create a view of ingredients linked to each supplier. It may have data in it such as the following:
 
-** TODO: screenshot of example data in spreadsheet **
+![referenced source view](/referenced-source-view.png)
 
-> Note - ID fields aren't usually displayed to the user, they're shown here to make the explanation easier
+> There is some repetition in this view because each ingredient can be supplied by more than one supplier. Each line represents an ingredient/supplier combination. The supplier names aren't included in this particular view.
 
-When a field referencing this view is added to the opportunities table, the output may display like this, when editing a particular opportunity, e.g. number 4
+When a field referencing this view is added to the suppliers table, the output may display like this, when editing a particular supplier:
 
-** TODO: screenshot **
+![referenced panels](/referenced-panels.png)
 
 So to summarise, the steps are
 1. [Create]({{<relref "/docs/views/creating-a-view">}}) or find a view containing the data you wish to embed. It must contain the ID field of the table the data is embedded in (in this case 'opportunities').
@@ -49,7 +49,7 @@ If more than one row in the view has an ID matching the ID of the table being ad
 ## Showing charts
 If the view used has one or more [charts]({{<relref "/docs/charting">}}), they will be shown instead of the data rows. The filtering acts exactly the same way, only data matching the containing table's ID is used as the source of the chart data.
 
-** TODO: screenshot of embedded chart **
+![embedded chart](/embedded-chart.png)
 
 ## Making referenced data editable
 Optionally, referenced data can be made editable by clicking on it.

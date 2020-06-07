@@ -9,7 +9,7 @@ A [field separator]({{<relref "/docs/fields/field-types/special-field-types/sepa
 
 These blocks can either be initially contracted, or expanded. Here's a screenshot showing a number of contracted blocks, with one expanded.
 
-**TODO: screenshot**
+![blocks one expanded](/blocks-one-expanded.png)
 
 ## To program the initial state of the block
 1. [Create a view]({{<relref "/docs/views/creating-a-view">}}) from the table the separator is in
