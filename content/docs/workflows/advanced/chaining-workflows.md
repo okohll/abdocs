@@ -9,11 +9,12 @@ description: Chaining Workflows
 ## How to chain Workflows
 
 Simply set the appropriate view in the Chain workflow section of the _workflow_ page of the _manage_ tab.
+
 ![Configuring the PULL API](/workflow-chain.png)
 
 ## Passing the Current record ID through chained workflows
 
-TODO
+**TODO**
 
 ## Using hidden "flagging" fields
 It is often necessary to **find** the source record when chaining workflows. This is especially true when creating records in other tables.

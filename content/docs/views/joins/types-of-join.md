@@ -24,7 +24,7 @@ Let's take the common and straightforward example of linking contacts to organis
 
 That gives us a view where we can add fields from the organisation table into the view of contacts data. The output may look something like this:
 
-** TODO: screenshot **
+![contacts view](/view-contacts.png)
 
 Each row representing a contact, has the contact details (name, email address etc.) and from the organisations table, you can see the name and website of the organisation they belong to.
 

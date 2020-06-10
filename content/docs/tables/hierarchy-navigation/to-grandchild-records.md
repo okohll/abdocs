@@ -19,7 +19,7 @@ If a child links to the parent with a [one-to-one relation]({{<relref "/docs/fie
 
 If it's a many-to-one, then grandchildren are represented by blocks at the end of the record. 
 
-**TODO: screenshot**
+![grandchild blocks](/grandchild-blocks.png)
 
 Finally, in the special case when a grandchild tab's tab view contains the ID of both its immediate parent and the parent above that, then the grandchild contents are shown directly, underneath the child record. Here's an example where there's a three tier structure of
 

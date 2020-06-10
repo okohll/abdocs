@@ -21,7 +21,7 @@ There are five types of tile, each of which present data in a different way.
 
 Data tiles need to be created by an administrator. Once a data tile is created and filled with views, it can be added to a user's screen either as a standard data tile or, if the views contain document fields, optionally as an image/document library tile.
 
-> Calendar, visualisation and comment stream tiles need not be pre-created. They are available to add to a user's screen automatically.
+> Other types of tile i.e. calendar, visualisation and comment stream tiles need not be created by an administrator, they are built-in facilities of the platform. Each of these tile offers different ways of seeing data collected from across the system. As such they are automatically available to add to a user's screen.
 
 ## Creating a tile
 1. Expand the _Administration_ section in the lefthand navigation
