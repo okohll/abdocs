@@ -6,10 +6,9 @@ weight: 120
 description: A powerful automation feature that can allow a third party system to POST data in to agileBase.
 ---
 
-Firstly, identify the Table into which you wish to recieve incoming data.
-Go to that table's manage taband press ‘options’. Tick ‘public data entry’.
+Firstly, identify the Table into which you wish to recieve incoming data. Go to that table's manage taband press 'options’. Tick 'Public form or API data entry’.
 
-To protect the system from spam input, we also suggest you tick ‘Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.
+To protect the system from spam input, we also suggest you tick 'Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.
 
 Optionally, you can add an email address to notify when a new item is added and an autoresponse text which will be sent to any email addresses found in the posted data.
 
@@ -31,17 +30,25 @@ https://appserver.gtportalbase.com/agileBase/Public.ab
 
 The form needs to be posted using the method POST.
 
-Remember also to set the ‘Authorization’ HTTP header if that option has been selected.
+Remember also to set the 'Authorization' HTTP header if that option has been selected.
 
-API use can be tested using a tool such as [Postman](https://www.postman.com) tool.
+To specify the contents of each field to be saved, add parameters for the internal field names of each field you want to send data to. The internal field names necessary will be shown on screen when API use is enabled.
+
+> The API can be tested using a tool such as [Postman](https://www.postman.com).
 
 ## Updating existing records
 The process is similar, but instead of _save_new_record=true_, supply 
-
 * _update_record=true_
 * _row_id=[internal id of the record]_
 
 The internal record ID can be got from a JSON feed or by using the _return=posted_json_ as above if editing a record previously created using the API.
+
+## Posting files
+As well as 'standard' data, agileBase can accept documents posted into a [file field]({{<relref "/docs/fields/field-types/special-field-types/file">}}). This can be done in two ways:
+
+1) Make sure the form is posted with encoding type [multipart/form-data](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST). Then simply post the contents of the file with the form parameter specifying the internal name of the file field.
+2) Post the form normally (not as multipart/form-data), and provide a URL value for the file field. That URL will be downloaded by agileBase and the contents saved as a file.
+> This method is [Zapier](https://www.zapier.com)-compatible.
 
 ## Response
 
