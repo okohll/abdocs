@@ -104,15 +104,13 @@ Standard agileBase quick filters can be used for preparing complex criteria on m
 
 ### Response codes
 
-200: request successful
+* 200: request successful
+* 401: unauthorised: the API key is missing or incorrect
+* 404: not found: an object identifier (company ID, table ID or report ID) was supplied that wasn’t found in the system
+* 429: too many requests: the frequency of requests is too high, please throttle them back
+* 500: some other server error
 
-401: unauthorised: the API key is missing or incorrect
-
-404: not found: an object identifier (company ID, table ID or report ID) was supplied that wasn’t found in the system
-
-429: too many requests: the frequency of requests is too high, please throttle them back
-
-500: some other server error
+When there is an error, the X-AB-error header will be set and JSON returned representing the error, as happens with the [POST API]({{<relref "Setting-up-the-POST-API#response">}}).
 
 ### Generate API descriptions
 For developers who use the agileBase API to create and update data within agileBase from a third party product, there’s now a way to further automate the process.
