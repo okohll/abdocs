@@ -17,5 +17,3 @@ Low Code platforms come in many flavours and have been designed to tackle differ
 agileBase has been specifically designed to build back offices for ambitious businesses. 
 
 You can start small with a quick prototype, build this over the years into a full blown ERP system and even use it to act as the hub for all your software via its built in API Creator.
-
-![agileBase three phases - balloons diagram](/ab-balloons.png)
