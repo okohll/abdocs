@@ -3,6 +3,7 @@ title: "What is no code?"
 date: 2020-04-18T16:57:55+01:00
 type: docs
 weight: 1
+description: What is a no code software platform?
 ---
 Over the last two years Low Code software has appeared to burst onto the scene from nowhere. The truth however is a bit less spectacular. Low Code platforms have been in development under the radar for at least a decade. What has changed now is the promise has become a reality. 
 
