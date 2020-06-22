@@ -38,7 +38,7 @@ As systems grow, it's important that a level of control is exercised over who ac
 
 In a low code / low code environment such as agileBase's, an additional factor is controlling the evolution of the system. Too centralised and innovation can slow, too relaxed and it can run out of control.
 
-All of these factors are taken into consideration when we design the administrative features that help decision makers set the rules for application development. The [Security and Compliance]({{<relref "/docs/security-and-compliance">}}) section of the documentation covers many of these. This is also an area of ongoing research and development - our [roadmap blog post](https://blog.agilebase.co.uk/2019/12/10/agilebase-platform-vision-2020-from-startup-to-scale-up-without-screwing-up/) details some of the current thinking.
+All of these factors are taken into consideration when we design the administrative features that help decision makers set the rules and monitoring for application development. The [Security and Compliance]({{<relref "/docs/security-and-compliance">}}) section of the documentation covers many of these. This is also an area of ongoing research and development - our [roadmap blog post](https://blog.agilebase.co.uk/2019/12/10/agilebase-platform-vision-2020-from-startup-to-scale-up-without-screwing-up/) details some of the current thinking.
 
 ## Cost
 An easily understandable, fair and transparent pricing policy means that annual costs can be reliably estimated for any future growth scenario, in fact multiple scenarios can be planned - nothing is hidden! See the [costing](https://todo.com) section for more details.
