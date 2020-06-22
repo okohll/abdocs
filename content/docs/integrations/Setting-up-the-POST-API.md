@@ -1,12 +1,12 @@
 ---
-title: "Setting up the POST API"
+title: "Creating a POST API"
 date: 2020-04-24T16:40:00+01:00
 type: docs
 weight: 120
 description: A powerful automation feature that can allow a third party system to POST data in to agileBase.
 ---
 
-Firstly, identify the Table into which you wish to recieve incoming data. Go to that table's manage taband press 'options’. Tick 'Public form or API data entry’.
+Firstly, identify the table into which you wish to recieve incoming data. Go to that table's manage taband press 'options’. Tick 'Public form or API data entry’, which will create an API for the table.
 
 To protect the system from spam input, we also suggest you tick 'Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.
 

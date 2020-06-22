@@ -1,5 +1,5 @@
 ---
-title: "Setting up the PUSH API"
+title: "Creating a PUSH API"
 date: 2020-06-01T16:40:00+01:00
 type: docs
 weight: 130

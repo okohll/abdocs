@@ -6,7 +6,8 @@ weight: 100
 description: Using the API and other data IO options to extract data from agileBase and/or connect with third party systems
 ---
 
-There are a number of ways to gextract data from agileBase, whether manually for an individual's use or programatically for integration with other systems. 
+There are a number of ways to extract data from agileBase, whether manually for an individual's use or programatically for integration with other systems. 
+
 There are also multiple ways other than the user interface to enter data into agileBase.
 
 ## Outgoing Data
@@ -30,5 +31,5 @@ Users are ablle to add data:
 * Via the User Interface
 * Import CSV files
 
-Third parties can PUSH data in to agilebase 
+Third parties can save data in to agilebase 
 * Via the POST API

@@ -51,4 +51,4 @@ Users can be subscribed to charts (or subscribe themselves) to receive them by e
 > If the view has no charts, this function can be used to send tabular data only
 
 ## Going further
-agileBase can also integrate with third party business intelligence and reporting tools, using the API. A worked example is [here for Power BI]({{<relref "/docs/integrations/pull-example-power-bi">}}).
+agileBase can also integrate with third party business intelligence and reporting tools, using the API Creator. A worked example is [here for Power BI]({{<relref "/docs/integrations/pull-example-power-bi">}}).
