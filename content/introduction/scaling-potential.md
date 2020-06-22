@@ -5,7 +5,7 @@ type: docs
 weight: 50
 description: Scaling applications as an organisation grows
 ---
-Using agileBase you can start small (perhaps in one department) and build apps iteratively to encompass a constanly widening range of business requirements. Many back office and CRM systems don't typically store high volumes of data, but as systems grow its not uncommon to add transactional apps such as customer order processing for example, which can experience high throughput.
+Using agileBase you can start small (perhaps in one department) and build apps iteratively to encompass a constantly widening range of business requirements. Many back office and CRM systems don't typically store high volumes of data, but as systems grow its not uncommon to add transactional apps such as customer order processing for example, which can experience high throughput.
 
 agileBase allows scaling though all three stages of an organisation's lifecycle - startup, scaling and growth. As a startup, development speed and flexibility are key, during scaling efficiency becomes important and as a large organisation, control, robustness and trust come to the fore. We'll explain how each of these is covered.
 
