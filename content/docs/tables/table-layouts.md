@@ -33,6 +33,14 @@ and here's an example of **2. blocks in two columns** with tabs.
 ## Separators
 To form a block, click on the _fields_ tab of a table and add a field of type 'separator' - see the [fields reference]({{<relref "/docs/fields/field-types/special-field-types/separators">}}). Move it to where the start of the block should be i.e. before the first field in the block.
 
+## Record titles
+In the screenshots above, you can see that each record has a heading, or title. drawn from the data.
+
+To set one or more fields to include in the title, use the field option [use as record title]({{<relref "/docs/fields/field-options/text-field-options#use-as-record-title">}})
+
+## See also
+When a relation field is near the top of the form, it's also moved to the record title level to become a title link, allowing navigation upwards to the 'parent' record. See [hierarchy navigation]({{<relref "/docs/tables/hierarchy-navigation">}}) for info about upwards, and downwards, navigation.
+
 
 
 
