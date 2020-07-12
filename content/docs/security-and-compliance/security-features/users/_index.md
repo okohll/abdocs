@@ -27,7 +27,7 @@ Passwords are required to be at least 8 characaters long. Apart from that, there
 >
 
 ### Two factor authentication
-Users are strongly encouraged to set up two factor authentication (2FA) using an app. Unfortunately this is one step an administrator can't do for them, but luckily it is quick and easy to do: [here's how](https://agilechilli.com/help-centre/agilebase/account-settings-agilebase/how-to-set-up-two-factor-authentication-2fa/).
+Users are strongly encouraged to set up two factor authentication (2FA) using an app. Unfortunately this is one step an administrator can't do for them, but luckily it is quick and easy to do: [here's how]({{<relref "2fa-setup">}}).
 
 Users without 2FA will be prompted to do so in the user interface and by email.
 
