@@ -14,11 +14,20 @@ Roles have some other important uses, such as multi-tenanting, described below.
 2. Click _roles_. You'll see a list of existing roles
 3. Click the plus button in the toolbar at the top
 
-You should now see an editing screen with the details of the role you just created. You can give it a name and there are a couple of options:
+You should now see an editing screen with the details of the role you just created. You can give it a name and there are a few options:
 ![Role details](/role-details.png)
 
 **Allow Export**  
 Referrs to exporting to spreadsheet - see [spreadsheet exports]({{<relref "/docs/integrations/exporting-to-spreadsheet">}})
+
+**Allow global editing**
+Users with [edit privileges]({{<relref "privileges">}}) on a particular table, when added to this role, will be able to perform global edits on the data.
+
+To perform a global edit, the user should
+1) filter the view (by typing into the filter boxes at the top of each column) to narrow down the rows to those which should be edited
+2) double click on a column header in a view, to edit the data in that field. The field must be from the view's parent table.
+3) click the 'edit filtered' button which appears
+4) type in the value you want to apply and follow through the prompts
 
 **User Visibility** and **Restrict Data Access**  
 These are used to set up [multi-tenanting](#multi-tenanting)

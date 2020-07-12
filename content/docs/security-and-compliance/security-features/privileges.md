@@ -26,7 +26,7 @@ Privileges are additive - if a user is a member of multiple roles, they gain all
         * override table options which would normally disallow adding/removing records from a table
         * override options which would normally disallow exporting data to a spreadsheet
         * import data from spreadsheet
-        * global edit (bulk edit) data in the table
+        * override options which would normally disallow global editing of data in the table
 
 Finally the **administrator** privilege allows full permissions over the complete system. An administrator can create/remove users, roles, tables etc., as well as assign table privileges to any user, including themselves.
 
