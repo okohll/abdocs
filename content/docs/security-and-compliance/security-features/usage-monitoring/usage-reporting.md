@@ -16,6 +16,61 @@ Data is also retained for an extended period, see [retention periods]({{<relref 
 
 If interested in activating this feature, please [get in touch](https://agilechilli.com/contact-us/). There will be a small recurring charge added to your bill.
 
+### Data stored
+#### Logins
+* Username
+* Date and time
+* IP Address
+* Country
+* Internet Service Provider organisation name and location
+* Client web browser (both summary and exact version details)
+* Client operating system
+
+#### Data changes (record creation / update / delete)
+* Username (in the case of an API call, will be 'Public API [IP address]'. In the case of a system workflow, 'System')
+* Date and time
+* Action (e.g. update or delete)
+* Table
+* Field (if a single field is updated)
+* Row ID - internal identifier of the record updated
+* Saved data
+
+#### View access
+This covers any time a view is opened or filtered, either by a user, or an API call
+* Username (in the case of an API call, will be 'Public API [IP address]')
+* Date and time
+* Tile and view name
+* Details - any filters and row limit applied
+* Rows - the number of records returned to the user or API
+* Processing time - the total server-side processing time in milliseconds needed to retrieve the data, and if for an API, transform it into JSON format
+* Of which Q time (API calls only) - to achieve a fair level of load balancing, agileBase operates a separate API request queue for each customer. If a request arrives and the system is still busy processing a previous request, the new one gets held in a queue. This field shows how much of the total processing time, in ms was spent waiting for previous requests to complete
+* Bytes (API calls only) - the number of bytes of JSON data returned via the API
+* Count - if many similar requests or API calls (to a particular view) reach the server in quick succession, they will be amalgamated together into one log line. The count then shows the number of requests the log line refers to, otherwise it will be 1. If more than one, then the **rows**, **processing time**, **of which q time** and **bytes** will represent the totals for all requests
+
+#### Table schema changes
+These are changes made to a table structure by someone with [manage]({{<relref "../privileges">}}) privileges, such as adding or removing a field.
+* Date and time
+* Username
+* Table name
+* Action e.g. 'add field', 'remove field'
+* Details - e.g. the name of the field
+
+#### View schema changes
+Changes made to a view structure, such as adding fields, filters, calculations or charts
+* Date and time
+* Username
+* Tile and view name
+* Action
+* Details - additional data related to the action, e.g. if adding a field, the field name
+
+## Authentication changes
+A log of administrative actions such as assigning a user to a role, assigning privileges, or user actions such as requesting a password reset
+* Date and time
+* Username (of the user making the change)
+* Action - e.g. add privilege
+* Table name - only if the action relates to a particular table, e.g. assigning a role to a table
+* Details - additional data related to the action, e.g. if adding a role to the table, the role name
+
 ## Standard reporting
 Built in reports are available in a number of areas, whether using the enhanced audit trail or standard logging.
 
