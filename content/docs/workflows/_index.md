@@ -10,7 +10,7 @@ A workflow is a task that processes data to acheive a particular function. Agile
 
 Workflows can automatically edit records and create new records, saving a lot of manual typing. The system will follow rules for creating new records, editing values in existing records or taking other actions. The rules can be simple or complex, in fact anything that can be represented by a standard view, which makes it quite powerful.
 
-Workflows can also send email notifications, generate documents and push data to 3rd parties. Importantly steps can be chained together. Many business processes can therefore be fully automated. As an example if the system stores recipes, whenever an allergen is changed, a product specification doc can be generated and emailed to significant customers.
+Workflows can also send email notifications, generate documents and push data to 3rd parties. Importantly steps can be [chained together]({{<relref "advanced/chaining-workflows">}}). Many business processes can therefore be fully automated. As an example if the system stores recipes, whenever an allergen is changed, a product specification doc can be generated and emailed to significant customers.
 
 ## Creating a rule
 

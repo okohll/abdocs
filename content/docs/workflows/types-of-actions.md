@@ -23,6 +23,13 @@ Options are:
 
 ![Workflow actions that alter data](/workflow-manage.png)
 
+#### Creating records
+
+If 'create record' is chosen, a couple of other options appear.
+
+1) You can select which table the new record should be created in
+2) 'Auto-connect new records' can be used when [chaining workflows]({{<relref "advanced/chaining-workflows">}})
+
 ### Sending Data
 The options to send data are contained within the _send_ section of the _workflow_ tab. Matching records will be sent to the appropriate **function**.
 
