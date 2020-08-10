@@ -31,7 +31,7 @@ would work too, so long as 'auto-connect new records' is ticked for workflow ste
 
 ## Workflow buttons and chained workflows
 
-When a record is kicked off from a [manual workflow button]({{<relref "workflow-buttons"}}), it will only run on the single record the user has open on the screen, i.e. the record that the workflow button is in. 
+When a record is kicked off from a [manual workflow button]({{<relref "workflow-buttons">}}), it will only run on the single record the user has open on the screen, i.e. the record that the workflow button is in. 
 
 If the workflow has further steps chained from it, you'll most likely want those to only run on that record too.
 
