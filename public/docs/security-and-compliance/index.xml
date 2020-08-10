@@ -1,0 +1,44 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>agileBase docs – Security and Compliance</title>
+    <link>https://docs.agilebase.co.uk/docs/security-and-compliance/</link>
+    <description>Recent content in Security and Compliance on agileBase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 24 Apr 2020 16:40:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/docs/security-and-compliance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Security Features</title>
+      <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Policies</title>
+      <link>https://docs.agilebase.co.uk/docs/security-and-compliance/policies/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/security-and-compliance/policies/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

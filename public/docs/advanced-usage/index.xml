@@ -1,0 +1,164 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>agileBase docs – Advanced Usage</title>
+    <link>https://docs.agilebase.co.uk/docs/advanced-usage/</link>
+    <description>Recent content in Advanced Usage on agileBase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 24 Apr 2020 16:40:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/docs/advanced-usage/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Company Settings</title>
+      <link>https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/</guid>
+      <description>
+        
+        
+        &lt;p&gt;To access them:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the administration interface, expand the &lt;em&gt;Administration&lt;/em&gt; section at the bottom left&lt;/li&gt;
+&lt;li&gt;Select &lt;em&gt;company&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Click the pencil icon in the top toolbar to edit&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;smtp-server&#34;&gt;SMTP server&lt;/h3&gt;
+&lt;p&gt;agileBase &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;workflows&lt;/a&gt; and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chasers&lt;/a&gt; that send emails use an @notifications.agilebase.co.uk email address by default.&lt;/p&gt;
+&lt;p&gt;You may wish to instead use email addresses from your own domain name, especially if the system sends emails to people outside your organisation, like customers or suppliers.&lt;/p&gt;
+&lt;p&gt;To allow this, you will need to use your own SMTP server, or a third party trusted system authenticated against your domain name. Using a service like &lt;a href=&#34;http://www.authsmtp.com/&#34;&gt;AuthSmtp&lt;/a&gt;, &lt;a href=&#34;http://www.sendgrid.com/&#34;&gt;SendGrid&lt;/a&gt; or &lt;a href=&#34;https://aws.amazon.com/ses/&#34;&gt;Amazon Simple Email Service&lt;/a&gt; is probably the most straightforward way of setting this up - their instructions will tell you how to set up facilities such as Sender Policy Framework and DomainKeys in order to increase email deliverability.&lt;/p&gt;
+&lt;p&gt;Once you have the SMTP server address, username and password from your service, enter them into the details in this section in agileBase.&lt;/p&gt;
+&lt;h3 id=&#34;slack-webhook-url&#34;&gt;Slack Webhook URL&lt;/h3&gt;
+&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/slack-integration/&#34;&gt;Integrations - Slack&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;send-chart-subscriptions-from&#34;&gt;Send chart subscriptions from&lt;/h3&gt;
+&lt;p&gt;Users can opt to have daily, weekly or monthly emails sent to them containing all the charts they&amp;rsquo;ve subscribed to for that period. The emails will come from an email address @notifications.agilebase.co.uk by default, this option will allow you to specify your own address.&lt;/p&gt;
+&lt;p&gt;If used, then the SMTP details above also need to be completed.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Build Patterns</title>
+      <link>https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Some of these are just useful ideas, some are tips and tricks and some are larger-scale build patterns for more complex tasks commonly undertaken by customers.&lt;/p&gt;
+&lt;p&gt;These tips will link to various other places in the documentation, but it will still be useful to have some experience of building in agileBase before reading.&lt;/p&gt;
+&lt;h2 id=&#34;settings-table-idea&#34;&gt;Settings table idea&lt;/h2&gt;
+&lt;p&gt;To use a single store of a common setting throughout the application. When a setting is changed it will then automatically take effect throught the whole application.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Example: VAT rate&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;snapshots-idea&#34;&gt;Snapshots idea&lt;/h2&gt;
+&lt;p&gt;Taking snapshots of a set of rows from a table at a point in time allows a comparison of earlier snapshots with later ones, or the current state, to show differences.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Example: delivery van loading reports. An initial snapshot of tomorrow’s orders shows what product quantities to load onto the vans. Later snapshots, taken at any point, will show any additions/removals needed at that time, by subtracting the current order lines from previous ones.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;gap-filling-in-monthly-or-other-period-reporting&#34;&gt;Gap filling in monthly (or other period) reporting&lt;/h2&gt;
+&lt;p&gt;When reporting monthly figures in a view (e.g. quantities sold per product per month), if there may be some gaps, they can be filled with zeros.&lt;/p&gt;
+&lt;p&gt;In outline, the solution is to&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a table containing one and only one record. Once a record has been created, disallow adding or removing records using &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/&#34;&gt;table options&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;From that table create a view called e.g. &amp;lsquo;month series&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;Add a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/examples/#series-generation&#34;&gt;&lt;code&gt;generate_series&lt;/code&gt;&lt;/a&gt; calculation to that view to generate the list of months required.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A report can then be created by joining from &amp;lsquo;month series&amp;rsquo; to the actual data you want to report. You may need to join on a calculation, e.g. a text representation of the month (using the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/examples/#date-functions&#34;&gt;&lt;code&gt;to_char&lt;/code&gt;&lt;/a&gt; function) or an amalgamation of a month and product code.&lt;/p&gt;
+&lt;h2 id=&#34;joining-on-compound-keys&#34;&gt;Joining on compound keys&lt;/h2&gt;
+&lt;p&gt;Extending the above, what about when you want to summarise by two factors, e.g. ‘by customer by product’. In that case create calculations to make a unique key per combination e.g.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;{customers.id:customers} || ‘_’ || {products.id:products}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Use the same calculation in views you want to join to and join on it.&lt;/p&gt;
+&lt;p&gt;This is much better than the &amp;lsquo;naive&amp;rsquo; idea of creating separate joins to each table, which won’t work.&lt;/p&gt;
+&lt;h2 id=&#34;including-multiple-aggregates-from-different-sources&#34;&gt;Including multiple aggregates from different sources&lt;/h2&gt;
+&lt;p&gt;Joining from one table down to multiple child tables in order to perform aggregates will not work - you&amp;rsquo;ll experience double counting.&lt;/p&gt;
+&lt;p&gt;For example, if a customers table joins down to both &amp;lsquo;customer invoices&amp;rsquo; and &amp;lsquo;customer complaints&amp;rsquo;, then a &lt;code&gt;count(*)&lt;/code&gt; calculation will return neither the number of invoices or complaints, but the product of the two i.e. the number of invoices times the number of complaints.&lt;/p&gt;
+&lt;p&gt;To solve this,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create one view dedicated to each aggregate calculation, created from the parent table. The view will then have one row per parent record i.e. customer in this case&lt;/li&gt;
+&lt;li&gt;From a final view created from the parent table, join to these views in order to include the results&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;calculating-the-number-of-weekdays-or-weekends-between-two-dates&#34;&gt;Calculating the number of weekdays or weekends between two dates&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Generate a series of all the dates between two dates, calculate the day of the week for each&lt;/li&gt;
+&lt;li&gt;From a separate view, join to this series and count up all the cases where it&amp;rsquo;s not a weekend&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is necessary as calculations on the results of a generate_series often need to be done from a separate view&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;outputting-a-pivoted-view-in-a-printout&#34;&gt;Outputting a ‘pivoted’ view in a printout&lt;/h2&gt;
+&lt;p&gt;In a template, &lt;code&gt;$view.htmlTable(“table name”, “view name”)&lt;/code&gt; outputs the contents of the view.&lt;/p&gt;
+&lt;p&gt;Use &lt;code&gt;$view.htmlTableTransverse(“table name”, “view name”)&lt;/code&gt; instead for a pivoted version with columns and rows swapped.&lt;/p&gt;
+&lt;h2 id=&#34;capturing-dates-of-status-changes-on-lookup-list&#34;&gt;Capturing dates of status changes on lookup list&lt;/h2&gt;
+&lt;p&gt;Show a date field only when the dropdown reaches the desired status, using &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#show-if-record-in-view&#34;&gt;field options&lt;/a&gt;. Use a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#set-from-previous-referenced-field&#34;&gt;referenced data field&lt;/a&gt; to populate it with the current time.&lt;/p&gt;
+&lt;h2 id=&#34;record-builder&#34;&gt;Record Builder&lt;/h2&gt;
+&lt;p&gt;Scenario: A customer tends to order the same products every time. Have an option for the system to auto fill the “standard” order every time an order is placed.&lt;/p&gt;
+&lt;p&gt;Use the tab option &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#populate-from-template&#34;&gt;Populate from template&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;de-duplicating-a-comma-separated-list&#34;&gt;De-duplicating a comma separated list&lt;/h2&gt;
+&lt;p&gt;Calculation template:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;array_to_string(
+  array(select distinct unnest(
+    regexp_split_to_array(‘my,comma,separated,list’, &#39;,&#39;)
+  ))
+,&#39;,&#39;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;array_to_string(
+  array(select distinct unnest(
+    regexp_split_to_array(
+      string_agg({b2.2) ingredient suppliers.ingredient supplier&#39;s countries of origin}, &#39;,&#39;)
+    ,&#39;,&#39;)
+  ))
+,&#39;,&#39;)
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;custom-filtering-when-choosing-a-relation&#34;&gt;Custom filtering when choosing a relation&lt;/h2&gt;
+&lt;p&gt;When choosing a relation, either in a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;junction table&lt;/a&gt; or otherwise, the system will automatically filter on the ID of any related parent record. For example, when adding order lines to a customer order, if each product is related to a customer, then the system will automatically only let the user choose products for that customer.&lt;/p&gt;
+&lt;p&gt;However it won’t filter on anything that’s more than one direct relationship away. If you want to do that, or indeed filter on anything else at all, you can create a filter calculation.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the relation chooser view, create a calculation e.g. ‘my relation filter’ and set it to contain the contents of what you want to filter on e.g. some other field. The calculation can be hidden.&lt;/li&gt;
+&lt;li&gt;From the main table, create a new view. In that view, create a calculation with the same name and contents.&lt;/li&gt;
+&lt;li&gt;Add that a cross-reference field into the main table, utilising that view. In the field options, tick [&lt;em&gt;use as filter&lt;/em&gt;]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;switching-a-field-from-one-type-to-another&#34;&gt;Switching a field from one type to another&lt;/h2&gt;
+&lt;p&gt;For example, converting a whole number field into a decimal number&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Rename the field to &amp;lsquo;{fieldname} old&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;Add a new field &amp;lsquo;{fieldname}&amp;rsquo;. This means that any calcs updated won&amp;rsquo;t have to be changed and won&amp;rsquo;t break due to mis-matching field names&lt;/li&gt;
+&lt;li&gt;Copy all values from one field to another. The easiest way to do that is to use a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Try to delete the old field. It will show a list of views that contain it&lt;/li&gt;
+&lt;li&gt;Edit all those views to remove references to the field and add the new field. That includes updating all calculations that reference the field to trigger the system to realise that the calc. no longer references eht old field&lt;/li&gt;
+&lt;li&gt;Remove the old field&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;finding-the-latest-child-record&#34;&gt;Finding the &amp;lsquo;latest&amp;rsquo; child record&lt;/h2&gt;
+&lt;p&gt;A common scenario occurs when you have a one to many relationship. You want a view which shows precise info from the &amp;lsquo;latest&amp;rsquo; child record.&lt;/p&gt;
+&lt;p&gt;Start with parent table and join to child, add the controlling field and set the correct order. For example, sorting by &amp;lsquo;created on [auto]&amp;rsquo; descending will give you the newest child record. Then go to &lt;em&gt;manage&lt;/em&gt; tab of the view and set the &lt;em&gt;Distinct Field&lt;/em&gt; option to the Parent table’s ID field.&lt;/p&gt;
+&lt;p&gt;You can now freely add what ever fields from the child record happy in the knowledge you’ll only have the one line per parent.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Performance Optimisation</title>
+      <link>https://docs.agilebase.co.uk/docs/advanced-usage/performance-optimisation/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/advanced-usage/performance-optimisation/</guid>
+      <description>
+        
+        
+        &lt;p&gt;agileBase automatically takes some measures behind the scenes to maintain high performance as data volumes grow.&lt;/p&gt;
+&lt;p&gt;There are other mechanisms that can be manually enabled such as &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/options/#cache-view-rows&#34;&gt;caching&lt;/a&gt; and increasing the memory assigned to particular views.&lt;/p&gt;
+&lt;p&gt;Finally, we will be happy to to do all we can to speed up any parts of your application that require it if you &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt;. Often, a solution as simple as manually adding an index to a particular field can speed up requests by multiple orders of magnitude.&lt;/p&gt;
+&lt;p&gt;For really big data projects, there&amp;rsquo;s also the option of utilising PostgreSQL-compatible database services designed for such tasks, like &lt;a href=&#34;https://www.citusdata.com/&#34;&gt;Citus Data&lt;/a&gt;, which we will be happy to provision.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
