@@ -43,12 +43,12 @@ The process is similar, but instead of _save_new_record=true_, supply
 
 The internal record ID can be got from a JSON feed or by using the _return=posted_json_ as above if editing a record previously created using the API.
 
-## Posting files
+## Uploading files
 As well as 'standard' data, agileBase can accept documents posted into a [file field]({{<relref "/docs/fields/field-types/special-field-types/file">}}). This can be done in two ways:
 
 1) Make sure the form is posted with encoding type [multipart/form-data](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST). Then simply post the contents of the file with the form parameter specifying the internal name of the file field.
 2) Post the form normally (not as multipart/form-data), and provide a URL value for the file field. That URL will be downloaded by agileBase and the contents saved as a file.
-> This method is [Zapier](https://www.zapier.com)-compatible.
+> Method 2 is [Zapier](https://www.zapier.com)-compatible.
 
 ## Response
 

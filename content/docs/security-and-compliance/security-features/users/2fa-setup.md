@@ -21,6 +21,11 @@ This example shows an iPhone but it’s the same process with an Android phone -
 
 Setup only needs to be done once. From then on you don’t need to do anything apart from open the app when asked. The app will automatically generate and display a code without any need for you to do anything.
 
+To kick off the process
+1) Click your user icon at the top right of the screen
+2) Select 'edit profile'
+3) Tick 'enable two factor authentication'
+
 ## What if I can’t use a smartphone?
 If you don’t use a smartphone at work, that’s no problem. You can use an app on your computer - in fact many people find that more convenient than using a phone. Please ask your system administrator how to set things up and they’ll give you a hand.
 
