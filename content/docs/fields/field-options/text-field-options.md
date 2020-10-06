@@ -79,6 +79,6 @@ This option can be selected for multiple fields in a table. In that case, the fi
 ### Preventing duplicates
 Enabling the 'use as record title' option also has the effect of enabling duplicate detection. The system will detect when a value is entered that is close to an existing value in the system. Any 'close' values that are found are displayed as links to the relevant records. 
 
-This can be useful when e.g. entering company names. Although a field can be marked [unique]({{relref "common-options#unique"}}) to prevent exact duplicates, that won't pick up near matches, which this duplicate detection will. For example, 'The Universoty Of Bristol' and 'University Of Bristol (UOB)' will be detected as close matches, or 'agileBase' and 'agileBase Ltd'.
+This can be useful when e.g. entering company names. Although a field can be marked [unique]({{<relref "common-options#unique">}}) to prevent exact duplicates, that won't pick up near matches, which this duplicate detection will. For example, 'The Universoty Of Bristol' and 'University Of Bristol (UOB)' will be detected as close matches, or 'agileBase' and 'agileBase Ltd'.
 
 The system uses [trigram matching](https://www.postgresql.org/docs/current/pgtrgm.html) to detect similar values.
