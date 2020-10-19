@@ -19,8 +19,13 @@ It is often necessary to put some thought in to the visibility of the button - i
 
 ## Workflow Buttons on Views
 Some Manual workflows are more appropriately run on a number of records. As such the ability to run them is likely to be associated to a list presented in a view.
-1) Find the view that displays the most appropriate list of records.
-2) Use the [Chain Workflows]({{<relref "/docs/workflows/advanced/chaining-workflows">}}) functionality and set the Workflow you wish to be run as a button.
+1) Create the workflow view
+2) Find or create a view we'll call 'display view', which displays an appropriate list of records - most likely this will show contain the same filters as the workflow view, so it shows the same records to the user.
+2) In the display view, use the [Chain Workflows]({{<relref "/docs/workflows/advanced/chaining-workflows">}}) functionality. Choose the workflow view.
+
+When the user opens the display view, a workflow button will appear at the top of the screen. Pressing this will run the workflow.
+
+On completion, the user will be shown the number of records that were affected by the workflow run e.g. created or updated, along with an option to see the any log messages, which can be useful to check for errors.
 
 
 
