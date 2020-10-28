@@ -11,7 +11,7 @@ These days, the majority of many people's time at work consists of interacting w
 
 Our team has used their expertise and research to develop interfaces that are not only effective and efficient but a joy to use.
 
-This documentation is about use agileBase to build software as opposed to use it, but to give a flavour of how user interfaces feel to users, here are a couple of examples videos of built applications.
+This documentation site is about use agileBase to build software as opposed to use it, but to give a flavour of how user interfaces feel to users, here are a couple of examples videos of built applications.
 
 ## agile:NPDtech
 
