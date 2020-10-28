@@ -5,7 +5,7 @@ type: docs
 weight: 20
 description: Why use agileBase as your no code development platform?
 ---
-![agileBase banner](/AB-platform.jpg)
+![agileBase banner](/ab-platform.jpg)
 
 agileBase has been created with some important aims in mind
 
