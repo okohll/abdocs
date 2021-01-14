@@ -85,7 +85,7 @@ With this option, just the JSON will be returned. This is the usual case require
 Optional, if this is included, the return content will be JSON including the ID of the record as well as the full content of the data.
 
 #### cache_seconds=[seconds]
-How long to cache the results for (default 600 seconds or 10 minutes). Only un-filtered results are cached.
+How long to cache the results for (default 600 seconds i.e 10 minutes). Only un-filtered results are cached.
 
 #### unencode_html=true
 Causes characters which would normally be encoded as HTML entities (e.g. `&` -> `&amp;`) to be returned unencoded
@@ -94,7 +94,7 @@ Causes characters which would normally be encoded as HTML entities (e.g. `&` -> 
 If true, filters (see below) will be need to match results exactly instead of using the default 'contains' filtering
 
 #### row_limit=[row limit]
-The default limit on the number of records to ruturn is 10,000. Add this parameter to change this. Note the hard maximum allowed is 100,000.
+The default limit on the number of records to return is 10,000. Add this parameter to change this. Note the hard maximum allowed is 100,000.
 
 ### Filtering
 

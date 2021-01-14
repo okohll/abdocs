@@ -25,7 +25,7 @@ For example, a food manufacturer who receives ingredients from suppliers may occ
 
 Whenever a non-conformance is raised against a supplier, whether as a result of an audit or ad hoc, the supplier can be chased for information about a resolution of the issue. Likewise, staff can be chased if an internal non-conformance is not resolved.
 
-## Technical setup
+## Setup
 
 As an agileBase administrator, if you want to set up your own chaser, here’s how to do so. 
 
@@ -45,3 +45,13 @@ That will be enough to get emails sending out. What about receiving the informat
  The system will automatically create a form containing these fields (excluding any of the chaser fields above such as ‘to’ and ‘subject’). When the recipient receives an email, it will have a link in it that takes them to this form.
 
 If you want the content that the chaser sends out to be visible to users, add the chaser view into a form as a [referenced data field]({{<relref "/docs/fields/field-types/special-field-types/referenced-data">}}). The panel displayed to users will show information such as the email to be sent, how many times the record’s been chased, when the last time was etc. If the record doesn’t need to be chased it will instead show the reasons why (the filters from the view).
+
+### Optional chaser fields
+
+The following fields can optionally be added to the table. If they are found, they will be populated by the chaser system when a chaser response is received.
+1. **chaser response received**: if a *date* field with this name exists, the value will be set to the date and time of the response
+2. **chaser response needs checking**: if a *checkbox* field with this name exists, it will be ticked when the response is received
+
+### Using multiple chasers on the same table
+
+[TODO]
