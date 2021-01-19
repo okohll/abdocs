@@ -1,6 +1,6 @@
 ---
 title: "Checking logins"
-date: 2021-01-19T16:40:00+01:00
+date: 2021-01-19T12:40:00+01:00
 type: docs
 weight: 190
 description: Logging in as a user
@@ -24,8 +24,8 @@ See section **Form Login with Cookies** of https://www.tutorialspoint.com/apache
 ### React
 Use the 'react-cookie' package: https://www.npmjs.com/package/react-cookies
 
-
-### 
+### Python
+Use the 'urllib2' library: https://stackoverflow.com/questions/301924/python-urllib-urllib2-httplib-confusion'
 
 
 
