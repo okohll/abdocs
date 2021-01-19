@@ -16,5 +16,16 @@ To do that, the third party app must act exactly as if it were a web browser all
 3) Post the form i.e. submit values j_username and j_password, along with the cookie
 4) If the username and password are correct, a JSON object will be returned in the response, containing the user's details. If not, an error page will be returned
 
+## Resources / Examples
+
+### Java
+See section **Form Login with Cookies** of https://www.tutorialspoint.com/apache_httpclient/apache_httpclient_form_based_login.htm
+
+### React
+Use the 'react-cookie' package: https://www.npmjs.com/package/react-cookies
+
+
+### 
+
 
 
