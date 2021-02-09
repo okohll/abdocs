@@ -15,6 +15,6 @@ And the work won't be wasted - we'll build a simple database of companies or org
 
 Rather than hand-holding you through the setup, we will outline the process and reference the relevant documentation pages. That way, you'll start to learn how to use the documentation too.
 
-In other words, this quick start is a recommended order in which to look at the reference documentation in order to build a simple application.
+In other words, this quick start is set out in the order we recommend you follow if you are using this documentation to start building a simple application.
 
 

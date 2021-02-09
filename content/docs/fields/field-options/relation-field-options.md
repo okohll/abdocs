@@ -56,3 +56,6 @@ They will be able to filter on any field in the view to search for a record.
 
 ## Use only given values
 When this is un-ticked, allow the user to create a new parent record directly from the child record's editing screen. Relation fields allow you to type the name of a parent record to find and select one. If no matches are found, a prompt will appear allowing the user to create one.
+
+## Show navigation link
+When this is ticked (as it is by default), allow the user to navigate from a record containing this field to the one that the relation links to. For example, if a contacts table contains a relation to the organisations table, then when a user views a contact, allow them to navigate to the related organisation by clicking a navigation icon next to the field.
