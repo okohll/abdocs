@@ -49,7 +49,7 @@ When someone adds a comment to a record, when selecting recipients, they have th
 ### Flag records with colour
 Enter a field name here and add a field with the same name to a view, to flag records. The contents of the field must be one of the colour names as given on the screen. The field added to the view can be a calculation, specifically a hidden calculation. This will flag the view without showing the colour name on screen.
 
-This option can also be used to colour items in a junction chooser (see tab option: [Choose a record when a new item is added]({{<relref "/docs/tables/hierarchy-navigation/tabs/#choose-a-record-when-a-new-item-is-added">}})). In the junction table, set this option, then in the view used as a relation picker (set in the [relation field options]({{<relref "/docs/fields/field-options/relation-field-options/#view-to-use">}})), add the colour calculation.
+This option can also be used to colour items in a junction chooser (see tab option: [Choose a record when a new item is added]({{<relref "/docs/tables/hierarchy-navigation/tabs#choose-a-record-when-a-new-item-is-added">}})). In the junction table, set this option, then in the view used as a relation picker (set in the [relation field options]({{<relref "/docs/fields/field-options/relation-field-options#view-to-use">}})), add the colour calculation.
 
 > It's also possible to colour individual table fields or calculations in a view (as opposed to this option which flags the whole row). See the options for [field colouring]({{<relref "/docs/fields/field-options/text-field-options#colour-words">}}) or [calculation colouring]({{<relref "/docs/views/calculations#colouring">}})
 
