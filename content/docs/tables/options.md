@@ -56,13 +56,19 @@ This option can also be used to colour items in a junction chooser (see tab opti
 ### Accept emails to this address
 The system can accept incoming emails and attach them to relevant records e.g. attaching an email from a customer to that customer's record.
 
-A particular email address can be set up to receive emails. The system can be configured to either accept emails from anyone, or just from users. If just from users, then users can forward any emails they receive to the system to have them imported.
+A particular email address can be set up to receive emails. The system can be configured to either accept emails from anyone, or just from users. If just from users, then users can forward any emails they receive to the system to have them imported, or BCC the address when sending to people.
 
 The email text will be logged as a [comment]({{<relref "/docs/fields/field-types/special-field-types/comment-feeds">}}) against the record, with the full email attached if it is HTML formatted or includes attachments. The table must have a comments field.
 
 Please [contact us](https://agilechilli.com/contact-us/) if you'd like to set that up.
 
 Emails are matched by creating a view containing the email addresses of potential recipients. An incoming email is attached to the record from this view which matches the sender's email address. If there is no match, it is added to a 'holding bay' where users can view and manually attach emails to records.
+
+#### Configuring the email address used
+An email address of the form viewname@accountname.domainname will be set up, e.g. contacts@mycompany.agilebase.co.uk
+* *viewname* determines the view which agileBase queries to find the recipient email address. The comment will be added to the matching record in the view's parent table, or a tab of the table, if [Accept emails from parent table]({{<relref "hierarchy-navigation/tabs#accept-emails-from-parent-table">}}) is enabled in a tab. If multiple tabs have this option enabled, then the tab with a name also matching *viewname* is used
+* *accountname* determines the company account to look in
+* *domainname* is the domain name of the agileBase server
 
 ## Information
 After the options, some structural information is shown, such as which tables depend on this one i.e. have a [relation]({{<relref "/docs/fields/field-types/basic-field-types#relation">}}) to it, how many fields and views per tile there are. See also the [usage dashboard]({{<relref "/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting#the-dashboard">}})
