@@ -72,6 +72,22 @@ For each user, `tiles` is an array of the tiles the user should see on screen wh
 }
 ```
 
+On a successful call, the JSON
 
+```
+{
+"result": "ok"
+}
+```
 
+will be returned, with a 200 HTTP status code. If there is an error,
 
+```
+{
+"error": true,
+"type": "[class of error]",
+"message": "[error message]"
+}
+```
+
+will be returned and the HTTP status code will reflect the error.
