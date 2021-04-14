@@ -5,7 +5,7 @@ type: docs
 weight: 200
 description: Creating a user account in a multi-tenanted system with an API request
 ---
-Normally, a user account can only be created by a system administrator - see [adding a user]({{<relref "/docs/security-and-compliance/users#adding-a-user">}})
+Normally, a user account can only be created by a system administrator - see [adding a user]({{<relref "/docs/security-and-compliance/security-features/users#adding-a-user">}})
 
 However there's one special case in which the organisation runs a [multi-tenanted]({{<relref "/docs/security-and-compliance/security-features/roles#multi-tenanting">}}) agileBase account. In that case, you can use an API call to create a new tenant in the account and new user(s) for that tenant.
 
