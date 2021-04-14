@@ -1,5 +1,5 @@
 ---
-title: "Checking logins"
+title: "Authenticating users via the API"
 date: 2021-01-19T12:41:00+01:00
 type: docs
 weight: 190
