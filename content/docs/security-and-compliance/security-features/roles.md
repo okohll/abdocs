@@ -75,3 +75,6 @@ This works best when the user has read-only privileges on the data, e.g. for a m
 
 #### Multi-account (via _contains_ filtering)
 It's also possible to define a role filter under _restrict data access_ with a 'contains' rather than an '=' filter. You can then use a naming convension for your account name values to allow members of this role to see multiple accounts. As above, users of this role will need to be read-only on the data.
+
+#### API setup
+In a multi-tenanting account, it's possible to create new tenants, with users, by API, as opposed to the manual actions of an administrator. See [Creating user accounts with the API]({{<relref "/docs/integrations/creating-user-accounts">}}).

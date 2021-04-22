@@ -38,7 +38,7 @@ The following paramaters are required
 
 The value of the json parameter is a JSON object, defined below.
 
-In the below format, `multi-tenanting fieldname` is the name of the field used to differentiate tenants, e.g. 'account name'. The `multi-tenanting value` is the name of the tenant you wish to create with this particular API call. A multi-tenanting role will be created named 'cust `multi-tenanting value`'. E.g. if the value is 'spurs', the role will be named 'cust spurs'. The value should be a lowercase string consisting only of letters from a through to z and numbers.
+In the below format, `multi-tenanting fieldname` is the name of the field used to differentiate tenants with spaces replaced with underscores, e.g. 'account_name'. The `multi-tenanting value` is the name of the tenant you wish to create with this particular API call. A multi-tenanting role will be created named 'cust `multi-tenanting value`'. E.g. if the value is 'spurs', the role will be named 'cust spurs'. The value should be a lowercase string consisting only of letters from a through to z and numbers.
 
 The `users` property is an array of users. Each user will be created and assigned to the above multi-tenanting role, so they can only see data belonging to them and other users of that role. The user will need a valid `email address` in order to perform a password reset so they can log in.
 
