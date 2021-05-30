@@ -19,10 +19,10 @@ You can enter the user's name and username. If the username isn't their email ad
 * as various features allow a user to be assigned to a record. Workflows can be set up to email those users. E.g. if an account manager is assigned to a customer, you may want to email them when a complaint is received from that customer.
 
 ### Passwords
-The recommended way to set passwords is for the user to choose their own, which they can do once they have a username and email address filled in. They will need to visit the login page, click the 'forgotten password' link and type in their username. They will be emailed a link which will let them set a password.
+The recommended way to set passwords is for the user to choose their own, which they can do once they have a username and email address filled in. They will need to visit the login page, click the 'reset password' link and type in their username. They will be emailed a link which will let them set a password.
 
-As an administrator, you can also manually reset a user's password by clicking 'change password' in their user details screen.
-Passwords are required to be at least 8 characaters long. Apart from that, there are no rules. However, all passwords entered are checked against the https://haveibeenpwned.com/ website. Any password that is found in their database of 'breaches' is not allowed to be used.
+As an administrator, you can also manually reset someone's password by clicking 'change password' in their user details screen.
+
 > We recommend the adoption of a password wallet service like [1Password](https://1password.com/), [LastPass](https://lastpass.com) or built-in browser features to generate and store passwords. That lets passwords become much more secure and harder to guess whilst not requiring users to remember them.
 >
 
