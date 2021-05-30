@@ -32,7 +32,7 @@ Passwords must be a minimum of 8 characters.
 
 When someone sets or changes their password, it's checked against https://haveibeenpwned.com/Passwords to ensure it's not a common one and is suitable for ongoing use.
 
-Passwords are stored in our system [salted and hashed](https://www.okta.com/blog/2019/03/what-are-salted-passwords-and-password-hashing/) using the [bcrypt](https://en.wikipedia.org/wiki/Bcrypt) scheme, with 13 rounds.
+Passwords are stored in our system [salted and hashed](https://www.okta.com/blog/2019/03/what-are-salted-passwords-and-password-hashing/) using the [bcrypt](https://en.wikipedia.org/wiki/Bcrypt) scheme, with 13 rounds. This means that we do not know what your passwords are and in the unfortunate event of our passwords database being hacked, the original passwords would still not be able to be retrieved.
 
 ### Two factor authentication
 Users are strongly encouraged to set up two factor authentication (2FA) using an app. Unfortunately this is one step an administrator can't do for them, but luckily it is quick and easy to do: [here's how]({{<relref "2fa-setup">}}).
