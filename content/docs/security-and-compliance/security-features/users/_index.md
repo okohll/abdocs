@@ -26,6 +26,14 @@ Passwords are required to be at least 8 characaters long. Apart from that, there
 > We recommend the adoption of a password wallet service like [1Password](https://1password.com/), [LastPass](https://lastpass.com) or built-in browser features to generate and store passwords. That lets passwords become much more secure and harder to guess whilst not requiring users to remember them.
 >
 
+### Notes about password security
+
+Passwords must be a minimum of 8 characters.
+
+When someone sets or changes their password, it's checked against https://haveibeenpwned.com/Passwords to ensure it's not a common one and is suitable for ongoing use.
+
+Passwords are stored in our system [salted and hashed](https://www.okta.com/blog/2019/03/what-are-salted-passwords-and-password-hashing/) using the [bcrypt](https://en.wikipedia.org/wiki/Bcrypt) scheme, with 13 rounds.
+
 ### Two factor authentication
 Users are strongly encouraged to set up two factor authentication (2FA) using an app. Unfortunately this is one step an administrator can't do for them, but luckily it is quick and easy to do: [here's how]({{<relref "2fa-setup">}}).
 
