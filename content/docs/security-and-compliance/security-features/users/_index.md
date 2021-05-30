@@ -45,8 +45,6 @@ When enabled, a user will be prompted for the 2FA code as well as their password
 
 If a user encounters any problems with 2FA, e.g. they lose the device for generating their codes, you can temporarily disable 2FA on their account by going to their user details screen and un-ticking 'use 2FA'. Of course, you need to be aware of the risks, for example double checking that a user who contacts you is really who they say they are. Once they can log in, they'll be able to enable 2FA themselves again.
 
-If someone can't use app-based 2FA for some reason, then a fallback option is to use text-message (SMS) based authentication. This is not recommended as there are known insecurities in this method, but it's still better than having no 2FA at all. To enable that, just type in the user's mobile phone number when editing their user details. That phone number isn't used for any other purposes.
-
 ### Other options
 #### Use the custom AgileChilli UI rather than agileBase's
 It's possible for companies to apply their logo and custom login screen to the system. Please contact us if you'd like to set this up.
@@ -82,7 +80,7 @@ If a user has a privilege due to being a member of a role, that privilege is sho
 Allows an admin to add/remove [tiles]({{<relref "/docs/tiles">}}) for a user. By default users can add/remove tiles themselves too, although this can be disabled through the use of a [custom UI]({{<relref "#other-options">}}).
 
 ## Viewing users
-Expand the _Administration_ menu in the lefthand sidebar and click users. You'll see a list of existing user accounts. Their details are listed including 2FA status (whether they're using app-based 2FA, text message codes or none) and when they last logged in.
+Expand the _Administration_ menu in the lefthand sidebar and click users. You'll see a list of existing user accounts. Their details are listed including 2FA status (whether they're using app-based 2FA or not) and when they last logged in.
 
 Each user's roles are shown. Any [multi-tenanting]({{<relref "roles#multi-tenanting">}}) roles are marked in bold.
 
