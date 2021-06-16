@@ -16,7 +16,12 @@ defaultContentLanguageInSubdir = false
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
 
-disableKinds = ["taxonomy", "taxonomyTerm"]
+# https://www.docsy.dev/docs/adding-content/taxonomy/
+#disableKinds = ["taxonomy", "taxonomyTerm"]
+[params.taxonomy]
+taxonomyCloud = [] # set taxonomyCloud = [] to hide taxonomy clouds
+taxonomyCloudTitle = [] # if used, must have same lang as taxonomyCloud
+taxonomyPageHeader = ["tags"] # set taxonomyPageHeader = [] to hide taxonomies on the page headers
 
 # Highlighting config
 pygmentsCodeFences = true
