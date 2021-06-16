@@ -21,7 +21,7 @@ enableMissingTranslationPlaceholders = true
 
 [params.taxonomy]
 taxonomyCloud = ["categories", "tags"] # set taxonomyCloud = [] to hide taxonomy clouds
-taxonomyCloudTitle = ["Categories", "Tags"] # if used, must have same lang as taxonomyCloud
+taxonomyCloudTitle = ["Categories", "Learner Levels"] # if used, must have same lang as taxonomyCloud
 taxonomyPageHeader = ["tags", "categories"] # set taxonomyPageHeader = [] to hide taxonomies on the page headers
 
 # Highlighting config
