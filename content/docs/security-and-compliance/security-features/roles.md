@@ -78,3 +78,18 @@ It's also possible to define a role filter under _restrict data access_ with a '
 
 #### API setup
 In a multi-tenanting account, it's possible to create new tenants, with users, by API, as opposed to the manual actions of an administrator. See [Creating user accounts with the API]({{<relref "/docs/integrations/creating-user-accounts">}}).
+
+## Role properties
+### Brand name and domain
+These two options allow system emails (password reset notification etc.) to come from a domain name of your choice and branded with a particular 'app' name. This can be useful if you're creating a public-facing app using agileBase, rather than applications for your own staff.
+
+To allow the domain name to work, you'll need to contact us to set it up - our server will need to be authorised to send email from your domain.
+
+### Custom menus
+It’s possible to add custom menu items into the user menu (the one at the top right that appears if you click your user icon). That means if your company has specific help pages or process documentation relevant to your organisation or application, you can make them available from within agileBase.
+
+Each custom menu has a title, description and URL, which will be opened in a new tab when the menu item’s chosen.
+
+Simply add these into the **menu title**, **menu description** and **menu URL** properties of a role. Assigning that role to a user will add the menu item to their profile menu.
+
+To add multiple menu items to a user or users, assign multiple roles, each with one menu item defined.
