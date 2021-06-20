@@ -81,7 +81,7 @@ In a multi-tenanting account, it's possible to create new tenants, with users, b
 
 ## Role properties
 ### Brand name and domain
-These two options allow system emails (password reset notification etc.) to come from a domain name of your choice and branded with a particular 'app' name. This can be useful if you're creating a public-facing app using agileBase, rather than applications for your own staff.
+These two options allow system emails (password reset notification etc.) to come from a domain name of your choice and be branded with a particular 'app' name. This can be useful if you're creating a public-facing app using agileBase, rather than applications for your own staff.
 
 To allow the domain name to work, you'll need to contact us to set it up - our server will need to be authorised to send email from your domain.
 
