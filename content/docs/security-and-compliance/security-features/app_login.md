@@ -5,7 +5,7 @@ type: docs
 weight: 60
 description: Validating logins from a third party app
 ---
-It's possible for a developer to create a third party application, for example a phone or tablet app, that communicates with agileBase via the API.
+It's possible for a developer to create a third party application, for example a phone or tablet app, that communicates with agileBase via the [API](/docs/integrations).
 
 Now to use the API, you don't need to authenticate as a user, as long as the app has the correct Authorization key(s), it can read and write data to agileBase.
 
