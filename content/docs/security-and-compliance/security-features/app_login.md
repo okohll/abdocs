@@ -30,6 +30,7 @@ if (window.ReactNativeWebView) {
 }
 ```
 
+## Example
 Here's a full example of a login.js page using the React Native Web View. NB this is an example taken from a full application, so you will need to modify it / strip it back to suit your needs, before it can be run.
 
 ```
