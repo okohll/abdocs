@@ -4,6 +4,8 @@ date: 2020-04-24T16:40:00+01:00
 type: docs
 weight: 120
 description: These settings apply to the whole agileBase account
+tags:
+- Pricipal Architect
 ---
 To access them:
 1. In the administration interface, expand the _Administration_ section at the bottom left

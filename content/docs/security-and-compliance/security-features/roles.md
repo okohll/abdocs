@@ -4,6 +4,9 @@ date: 2020-04-24T16:40:00+01:00
 type: docs
 weight: 20
 description: Organising users into groups for better management
+tags:
+- System Owner
+- Architect
 ---
 The primary purpose of roles is to apply privileges to groups of users, rather than applying them individually. That makes managing large numbers of users easier and also more secure as it's easy to see which privileges each type of user has and which they don't.
 

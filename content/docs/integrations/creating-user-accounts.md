@@ -4,6 +4,8 @@ date: 2021-04-14T10:41:00+01:00
 type: docs
 weight: 200
 description: Creating a user account in a multi-tenanted system with an API request
+tags:
+- Principal Architect
 ---
 Normally, a user account can only be created by a system administrator - see [adding a user]({{<relref "/docs/security-and-compliance/security-features/users#adding-a-user">}})
 

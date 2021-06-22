@@ -4,6 +4,8 @@ date: 2020-04-24T16:40:00+01:00
 type: docs
 weight: 60
 description: Text, number, date/time, auto-generated number sequence and checkbox fields
+tags:
+- Architect
 ---
 These are the core types of fields by which data can be entered by users (or other sources such as the API or a workflow).
 

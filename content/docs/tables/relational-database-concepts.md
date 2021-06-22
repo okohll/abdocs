@@ -4,6 +4,8 @@ date: 2020-04-24T16:40:00+01:00
 type: docs
 weight: 20
 description: Useful concepts to understand prior to building applications
+tags:
+- Architect
 ---
 Before diving into the details of building applications, starting with tables, let's take a step back and learn some background information about databases, including what a table is. If you're familiar with these concepts, feel free to skip this section.
 

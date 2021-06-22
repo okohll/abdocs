@@ -4,6 +4,8 @@ date: 2020-06-03T16:40:00+01:00
 type: docs
 weight: 180
 description: Adding to or updating existing data in a table using a spreadsheet import
+tags:
+- Super User
 ---
 agileBase allows data to be imported from CSV (Comma Separated Variable) files. All popular spreadsheet software can save data in this format.
 

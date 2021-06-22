@@ -4,6 +4,8 @@ date: 2020-05-15T16:40:00+01:00
 type: docs
 weight: 90
 description: Left outer, inner and cross joins
+tags:
+- Architect
 ---
 Here's a Youtube video explaining the concept of joins and running through the various types.
 

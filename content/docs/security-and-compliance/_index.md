@@ -4,6 +4,9 @@ date: 2020-04-24T16:40:00+01:00
 type: docs
 weight: 10
 description: Security features - users, roles and privileges. Policies and procedures
+tags:
+- System Owner
+- Architect
 ---
 agileBase often works best when end users become part of the development process, so they're able to give feedback as your software builds up, also gaining confidence in the end result. So it's quite likely that you'll be adding user accounts relatively early in the process.
 

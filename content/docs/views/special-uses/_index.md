@@ -4,6 +4,8 @@ date: 2020-05-13T16:40:00+01:00
 type: docs
 weight: 100
 description: Creating application functionality using views
+tags:
+- Architect
 ---
 The primary purpose of a view is to show data to users. To let them see, search and report on it, or find individual records to edit.
 

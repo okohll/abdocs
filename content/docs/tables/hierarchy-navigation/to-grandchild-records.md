@@ -4,6 +4,8 @@ date: 2020-05-04T16:40:00+01:00
 type: docs
 weight: 70
 description: agileBase automatically exposes three-tier navigation structures
+tags:
+- Architect
 ---
 [Tabs]({{<relref "tabs">}}) allow navigation from a parent record to a child, e.g. an organisation to a contact, order to order line, recipe to ingredient etc.
 

@@ -4,6 +4,8 @@ date: 2020-04-24T16:40:00+01:00
 type: docs
 weight: 20
 description: Tiles on the homepage are the entry point for the user to agileBase applications
+tags:
+- Super User
 ---
 A tile on a user's home screen represents an application or module of an application - a collection of data and functionality that forms a coherent whole.
 

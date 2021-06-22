@@ -4,6 +4,8 @@ date: 2020-04-24T16:40:00+01:00
 type: docs
 weight: 40
 description: Table fields
+tags:
+- Architect
 ---
 Adding fields to a table creates a form by which people (and other sources such as the [API]({{<relref "/docs/integrations">}}) or [workflows]({{<relref "/docs/workflows">}}) can enter data.
 

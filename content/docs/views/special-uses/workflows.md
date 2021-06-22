@@ -4,6 +4,8 @@ date: 2020-05-13T16:40:00+01:00
 type: docs
 weight: 110
 description: Using a view to create a workflow
+tags:
+- Certified Architect
 ---
 A workflow can be used to edit data in the system automatically.
 

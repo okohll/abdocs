@@ -4,6 +4,8 @@ date: 2020-04-24T16:40:00+01:00
 type: docs
 weight: 80
 description: Enforcing the correctness of data entered into the system
+tags:
+- Architect
 ---
 It can be important to ensure that certain rules are followed when data is entered, either manually by a user, by an incoming [API request]({{<relref "/docs/integrations">}}) or someone filling in a [chaser]({{<relref "/docs/workflows/send-chaser">}}) response.
 

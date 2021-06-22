@@ -4,6 +4,8 @@ date: 2020-05-07T16:40:00+01:00
 type: docs
 weight: 90
 description: Comment feeds allow collaboration between users of a system
+tags:
+- Architect
 ---
 Adding a comment feed to a table adds a discussion area to a form, transforming its usefulness.
 

@@ -4,6 +4,8 @@ date: 2020-05-13T16:40:00+01:00
 type: docs
 weight: 140
 description: Using a view to choose a record for a relation field
+tags:
+- Architect
 ---
 When a [relation field]({{<relref "/docs/fields/field-types/basic-field-types#relation">}}) is part of a form, the user can choose a record to link to from a view of items in the related table.
 

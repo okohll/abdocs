@@ -4,6 +4,8 @@ date: 2020-06-04T16:40:00+01:00
 type: docs
 weight: 130
 description: Options specific to file fields, including for generating documents
+tags:
+- Architect
 ---
 ## Type
 The type of document typically stored by this field. Can be

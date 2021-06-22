@@ -4,6 +4,8 @@ date: 2020-05-28T16:40:00+01:00
 type: docs
 weight: 110
 description: Many options affect how views look and behave
+tags:
+- Architect
 ---
 These options can be seen and edited as follows
 

@@ -4,6 +4,8 @@ date: 2020-06-02T16:40:00+01:00
 type: docs
 weight: 160
 description: A worked example showing how to send agileBase data to third party business intelligence software
+tags:
+- Architect
 ---
 agileBase has built in charting which is great for quickly analysing and answering questions about data in your system, but specialist business intelligence apps can be particularly useful if you want to join data from multiple sources (perhaps an accounting package or marketing automation system too) in one place.
 

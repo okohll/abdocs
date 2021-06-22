@@ -4,6 +4,8 @@ date: 2020-05-13T16:40:00+01:00
 type: docs
 weight: 80
 description: Adding calculations to a view
+tags:
+- Architect
 ---
 The ability to add calculations to a view opens up a world of possibilities. Within the confines of the SQL language, there's no limit to what you can do, and those confines contain a pretty large space.
 

@@ -4,6 +4,8 @@ date: 2020-05-08T16:40:00+01:00
 type: docs
 weight: 100
 description: Metadata fields created and managed by the system
+tags:
+- Architect
 ---
 When every [table]({{<relref "/docs/tables">}}) is created, a series of fields are automatically added. These aren't displayed in the data entry form of a table, but are available to be added into views.
 

@@ -4,6 +4,8 @@ date: 2020-05-07T16:40:00+01:00
 type: docs
 weight: 90
 description: Embed data or charts from elsewhere in the system into a form
+tags:
+- Architect
 ---
 Most fields in a table allow data entry into that table, but referenced data fields allow data from **other** places to be embedded, specifically [views]({{<relref "/docs/views">}}), created from any table. 
 

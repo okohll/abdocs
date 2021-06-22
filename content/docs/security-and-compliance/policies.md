@@ -4,6 +4,8 @@ date: 2020-04-24T16:40:00+01:00
 type: docs
 weight: 20
 description: Policies and further information
+tags:
+- System Owner
 ---
 ## Backups
 Data backups are performed across the stack of technology, from server down to databases and file storage.

@@ -4,6 +4,8 @@ date: 2020-04-24T16:40:00+01:00
 type: docs
 weight: 10
 description: Setting up two factor authentication - a guide for all users
+tags:
+- Core User
 ---
 ## What is two factor authentication?
 Simply put, it helps to keep your company’s data more secure, to stop outsiders stealing it, editing or even deleting it.

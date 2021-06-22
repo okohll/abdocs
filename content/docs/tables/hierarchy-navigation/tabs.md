@@ -4,6 +4,8 @@ date: 2020-05-04T16:40:00+01:00
 type: docs
 weight: 70
 description: Tabs allow navigation from a parent record to a related child record
+tags:
+- Architect
 ---
 Tabs are one way of exposing relationships between tables, to allow the user to navigate the structure of an application. For example, in a companies table, a contacts tab may show all the people employed at that particular company.
 

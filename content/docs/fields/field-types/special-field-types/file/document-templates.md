@@ -4,6 +4,8 @@ date: 2020-05-08T16:40:00+01:00
 type: docs
 weight: 100
 description: Templates allow the automatic generation of PDF documents, or printouts
+tags:
+- Architect
 ---
 Document templates in agileBase are typically used to create output that needs to be printed or emailed, for example form letters and especially anything that needs to be branded. They can be used for some quite complex and large documents, for example one customer uses them to create branded multi-page reports that are sold to customers, complete with custom fonts, layouts, images and colours.
 

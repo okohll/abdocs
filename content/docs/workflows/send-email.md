@@ -4,6 +4,8 @@ date: 2020-05-29T12:35:00+01:00
 type: docs
 weight: 135
 description: Workflows can be used to send an email
+tags:
+- Certified Architect
 ---
 
 Agilebase can be used to send emails. This facility should **NOT** be used for marketing purposes, rather as a method to notify people about data associated to the system.

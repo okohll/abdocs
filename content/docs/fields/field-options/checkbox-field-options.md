@@ -4,6 +4,8 @@ date: 2020-05-12T16:40:00+01:00
 type: docs
 weight: 90
 description: Options specific to checkbox (true/false) fields
+tags:
+- Architect
 ---
 ## Default value
 Simply whether the checkbox should default to ticked (true) or un-ticked (false) for new records.

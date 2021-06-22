@@ -4,6 +4,8 @@ date: 2020-05-08T16:40:00+01:00
 type: docs
 weight: 100
 description: Allow people to upload or generate documents, images and other file types
+tags:
+- Architect
 ---
 By default, a file field added to a table will let users upload files. 
 

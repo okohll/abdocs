@@ -4,6 +4,8 @@ date: 2020-05-29T12:35:00+01:00
 type: docs
 weight: 140
 description: Chasers are dedicated functionality that use email to ask third parties for relevant information
+tags:
+- Certified Architect
 ---
 
 The Chaser email facility is often used to remind people to send information. This facility is a dedicated tool, optimised to this purpose.

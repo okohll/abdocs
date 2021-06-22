@@ -4,6 +4,8 @@ date: 2020-05-29T12:35:00+01:00
 type: docs
 weight: 120
 description: Workflows can be used to alter data within the system
+tags:
+- Certified Architect
 ---
 
 The following Workflows alter data within the system

@@ -4,6 +4,9 @@ date: 2020-04-24T16:40:00+01:00
 type: docs
 weight: 70
 description: Options relevant to storing commerically sensitive or personal data
+tags:
+- Architect
+- System Owner
 ---
 In a table's _manage_ tab, there are two options which are worth considering if the data is storing commercially sensitive information (plenty of information in most customer systems falls under this category!) or personal information as defined by EU General Data Protection Regulations (GDPR).
 

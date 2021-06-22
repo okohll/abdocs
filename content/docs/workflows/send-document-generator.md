@@ -4,6 +4,8 @@ date: 2020-05-29T12:35:00+01:00
 type: docs
 weight: 160
 description: Workflows can be used to automatically create a PDF document based on a template
+tags:
+- Certified Architect
 ---
 
 ## Automated bulk document generation

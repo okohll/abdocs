@@ -4,6 +4,8 @@ date: 2020-04-24T16:40:00+01:00
 type: docs
 weight: 80
 description: Using the built in calendar and integrating with third party calendars
+tags:
+- Certified Architect
 ---
 Any view with one or more date/time fields can have it's data displayed in calendar form. If there are two date/time fields, the first will be the start time, the second the end time. If there's only one, events will last 1 hour by default, unless the field is a date only, in which case they will be all day.
 

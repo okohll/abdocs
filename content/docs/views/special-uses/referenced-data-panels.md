@@ -4,6 +4,8 @@ date: 2020-05-13T16:40:00+01:00
 type: docs
 weight: 120
 description: Using views to embed data from other parts of the system into a data entry form
+tags:
+- Architect
 ---
 It can be useful to include calculations and data from other parts of the system in a form, to add context and optionally allow editing of that related data.
 

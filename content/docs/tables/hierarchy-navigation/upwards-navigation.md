@@ -4,6 +4,8 @@ date: 2020-05-04T16:40:00+01:00
 type: docs
 weight: 80
 description: Relations allow navigation from a child record to its parent
+tags:
+- Architect
 ---
 Whenever a relation field is used in a table, the user has the option to navigate to the related record by clicking a link next to the relation.
 

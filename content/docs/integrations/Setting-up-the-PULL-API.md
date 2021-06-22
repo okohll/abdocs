@@ -4,6 +4,8 @@ date: 2020-05-29T12:35:00+01:00
 type: docs
 weight: 140
 description: Control how third party systems read data from agileBase
+tags:
+- Architect
 ---
 
 Connections to agileBase are made using standard HTTP calls. This makes it easy for developers in any language, so PHP, Java, even JavaScript in a browser can be used.

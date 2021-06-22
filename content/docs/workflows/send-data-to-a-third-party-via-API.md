@@ -4,6 +4,8 @@ date: 2020-05-29T12:35:00+01:00
 type: docs
 weight: 130
 description: Each workflow can perform a single specific action
+tags:
+- Principal Architect
 ---
 
 When integrating agileBase with third party systems, the API is really useful. Programmers can use it to send data to websites, to other software such as PowerBI, a  Business Intelligence tool, or to external systems such as label/barcode printers for example. The opportunities are endless.

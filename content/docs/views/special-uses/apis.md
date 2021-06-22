@@ -4,6 +4,8 @@ date: 2020-05-13T16:40:00+01:00
 type: docs
 weight: 110
 description: Using a view to create an API
+tags:
+- Architect
 ---
 Any view can be used to generate an API - a unique URL which third party services can call in order to extract data, or which can be used to push data to those services and applications.
 

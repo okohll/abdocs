@@ -4,6 +4,8 @@ date: 2020-05-13T16:40:00+01:00
 type: docs
 weight: 70
 description: Using joins to merge data from multiple sources into one view
+tags:
+- Architect
 ---
 Without any joins, you can only add [fields]({{<relref "/docs/fields">}}), [filters]({{<relref "/docs/views/filters">}}) and [calculations]({{<relref "/docs/views/calculations">}}) (display data in other words), from a view's parent table - the one it was created from. When joins are added to other tables or views, you can also bring in data from any table or view joined to.
 

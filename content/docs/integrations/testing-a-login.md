@@ -4,6 +4,8 @@ date: 2021-01-19T12:41:00+01:00
 type: docs
 weight: 190
 description: Logging in as a user
+tags:
+- Principal Architect
 ---
 Sometimes when developing an app that integrates with agileBase, you may want to allow it to query the system to check the login details a user provides. In other words, let a user 'log in' via your app.
 

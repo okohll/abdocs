@@ -4,6 +4,8 @@ date: 2020-04-24T16:40:00+01:00
 type: docs
 weight: 130
 description: Working with big data and complex views
+tags:
+- Pricipal Architect
 ---
 agileBase automatically takes some measures behind the scenes to maintain high performance as data volumes grow.
 

@@ -4,6 +4,8 @@ date: 2020-04-24T16:40:00+01:00
 type: docs
 weight: 120
 description: A powerful automation feature that can allow a third party system to POST data in to agileBase.
+tags:
+- Architect
 ---
 
 Firstly, identify the table into which you wish to recieve incoming data. Go to that table's manage taband press 'options’. Tick 'Public form or API data entry’, which will create an API for the table.
