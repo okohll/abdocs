@@ -32,7 +32,7 @@ If used, then the SMTP details above also need to be completed.
 ### Export message
 As you will know, your organisation is required to protect personal data, as per the GDPR. One thing to watch out for is what happens to data that is exported to spreadsheet?
 
-There are various [rules]({{<relref "/docs/security-and-compliance/security-features/exporting"}}) you can set up to control exports that are well worth familiarising yourself with, as an administrator. These control who can export, what they can export and how much can be exported. Once data is in a spreadsheet of course, the system no longer has any control over it. It can be emailed, shared etc. as the spreadsheet owner wishes. 
+There are various [rules]({{<relref "/docs/security-and-compliance/security-features/exporting">}}) you can set up to control exports that are well worth familiarising yourself with, as an administrator. These control who can export, what they can export and how much can be exported. Once data is in a spreadsheet of course, the system no longer has any control over it. It can be emailed, shared etc. as the spreadsheet owner wishes. 
 
 This option allows you to set the text of a prompt that users see before exporting. It can be used to remind people of their obligations and point them to any further information provided by your organisation. They will need to tick to accept before performing the export.
 
