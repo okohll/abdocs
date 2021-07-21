@@ -40,3 +40,5 @@ An administrator can log whether each table contains commercially sensitive data
 * setting a hard limit to completely disallow exports of more than a certain number of rows
 
 To configure these options, see [tables]({{<relref "/docs/tables/options">}})
+
+You may also want to set an export prompt message to show people when they request an export, to remind people of their data protection obligations under the GDPR for example. This can be done in the [company settings]({{<relref "/docs/advanced-usage/company-settings#export-message">}}).
