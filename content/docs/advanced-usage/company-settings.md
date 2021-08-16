@@ -12,6 +12,13 @@ To access them:
 2. Select _company_
 3. Click the pencil icon in the top toolbar to edit
 
+### Mandate 2FA
+When this is ticked, all users in the organisation will be required to set up [Two Factor Authentication]({{<relref "/docs/security-and-compliance/security-features/users/2fa-setup" >}}) before they can see or use any features of the application.
+
+We recommend that all administrators enable this if possible. Even when 2FA is mandated, admins can still [disable it temporarily]({{<relref "/docs/security-and-compliance/users#two-factor-authentication" >}}) on a per-user basis. The next time they log in they will be prompted to set it up again.
+
+When this is off, users will still be prompted to set up 2FA, it just won't be mandatory.
+
 ### SMTP server
 agileBase [workflows]({{<relref "/docs/workflows/send-email">}}) and [chasers]({{<relref "/docs/workflows/send-chaser">}}) that send emails use an @notifications.agilebase.co.uk email address by default.
 
