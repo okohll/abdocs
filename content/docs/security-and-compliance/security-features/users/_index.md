@@ -48,6 +48,9 @@ When enabled, a user will be prompted for the 2FA code as well as their password
 
 If a user encounters any problems with 2FA, e.g. they lose the device for generating their codes, you can temporarily disable 2FA on their account by going to their user details screen and un-ticking 'use 2FA'. Of course, you need to be aware of the risks, for example double checking that a user who contacts you is really who they say they are. Once they can log in, they'll be able to enable 2FA themselves again.
 
+#### Mandating 2FA for everyone
+This can be done in the [company settings]({{<relref "/docs/advanced-usage/company-settings#mandate-2fa" >}})
+
 ### Other options
 #### Use the custom AgileChilli UI rather than agileBase's
 It's possible for companies to apply their logo and custom login screen to the system. Please contact us if you'd like to set this up.
