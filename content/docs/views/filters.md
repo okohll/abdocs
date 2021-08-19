@@ -39,3 +39,16 @@ Once you've added a filter, you'll be able to type in a description for it. If n
 
 This description is shown to users as help in particular circumstances, e.g. when the view is used as a [chaser]({{<relref "/docs/workflows/send-chaser">}}), so it's a good idea to check it makes sense.
 
+### Including blank values
+Once a filter has been created, when you hover over it you'll see an option to tick 'or is blank'. This is useful to ensure blank values aren't excluded by your filter, which they typically would be otherwise.
+
+For example, imaging you're setting up an [email notification workflow]({{<relref "/docs/workflows/send-email" >}}) to send a notification to people once a week of any outstanding tasks. You'd likely need two filters, the first to find any tasks with an 'outstanding' status and the second to only include tasks for which no notifications have been sent within the last 7 days.
+
+For that second filter, you would set it up as
+
+    'last notified' is more than 7 days ago
+
+However, as it stands, that would exclude any tasks which have **never** had a notification sent for them, i.e. where the last notified field is blank.
+
+To include those, just tick 'or is blank' after creating the filter.
+

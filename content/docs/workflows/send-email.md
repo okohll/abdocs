@@ -26,11 +26,7 @@ Add filters so that only records that need an email notification to be sent appe
 
 For simple alerts of new items, add a filter “Last notified IS NULL”. That way, a notification will only ever be sent once for a record.
 
-To set up a repeating monthly alert, you could add a calculation:
-
-`Send Alert (boolean): {last notified} is null OR {last notified} < (now() - interval '1 month')`
- 
-and filter on “Send Alert = true”
+To set up a repeating monthly alert, you could add a filter "last notified is more than 1 month ago", with [or is blank]({{<relref "/docs/views/filters#including-blank-values" >}}) ticked:
 
 If you have any difficulty thinking up what criteria you need for your purpose, please get in touch.
 
