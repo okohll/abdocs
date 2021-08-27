@@ -98,7 +98,7 @@ However it won’t filter on anything that’s more than one direct relationship
 
 1. In the relation chooser view, create a calculation e.g. ‘my relation filter’ and set it to contain the contents of what you want to filter on e.g. some other field. The calculation can be hidden.
 2. From the main table, create a new view. In that view, create a calculation with the same name and contents.
-3. Add that a cross-reference field into the main table, utilising that view. In the field options, tick [_use as filter_]
+3. Add that a cross-reference field into the main table, utilising that view. In the field options, tick [use as filter]({{<relref "https://docs.agilebase.co.uk/docs/fields/field-options/referenced-field-options/#use-as-a-filter-for-relations">}})
 
 ## Switching a field from one type to another
 For example, converting a whole number field into a decimal number
