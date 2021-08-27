@@ -19,7 +19,7 @@ show a table
 which is a more compact form allowing a greater volume of data to be shown in a smaller area.
 
 ## Use as a filter for relations
-See [Common build patters - custom filtering when using a relation]({{<relref "/docs/advanced-usage/build-patterns#custom-filtering-when-choosing-a-relation">}})
+See [Common build patters - custom filtering when using a relation]({{<relref "/docs/advanced-usage/build-patterns/#custom-filtering-when-choosing-a-relation">}})
 
 ## Prominent
 Make the background of the referenced panel bright red - useful for showing warnings on screen.
