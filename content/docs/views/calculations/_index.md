@@ -49,6 +49,13 @@ Some examples might be
 
 You can reference not only other fields and calculations in the view, but also fields and calculations from any view or table joined to the view. The syntax for that is `{source name.field name}`. Underneath the calculation editing space is a list of all fields that are available to be added, for reference. You can just copy and paste them into your calculation.
 
+## Special functions
+In the same way that you reference fields, you can also reference some special functions that output other information:
+* `ab_tile()` - the name of the tile the user has open (not necessarily the same as the tile the workflow view is in)
+* `ab_view()` - the name of the view the user has open (again, not the name of the workflow view that is running)
+* `ab_userid()` - the currently logged in user, in the format 'Forename Surname (username)' i.e. the same format used for logging record creation metadata etc.
+* `ab_userroles()` - a comma separated list of rolenames the logged in user belongs to
+
 ## Colouring
 Text calculations can be coloured in the same way as text fields. Underneath the calculation definition and words, tick _colour words_. If a calculation outputs one of the following words, they cell in the view be coloured.
 
