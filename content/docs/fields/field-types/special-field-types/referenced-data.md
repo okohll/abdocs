@@ -53,6 +53,9 @@ If the view used has one or more [charts]({{<relref "/docs/charting">}}), they w
 
 ![embedded chart](/embedded-chart.png)
 
+## Showing images and documents
+Images and documents can be included in referenced panels too. Just include a [file field]({{<relref "file">}}) in the view used for the panel.
+
 ## Making referenced data editable
 Optionally, referenced data can be made editable by clicking on it.
 
