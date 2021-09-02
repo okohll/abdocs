@@ -49,9 +49,9 @@ If the referenced field's view has more than one field, the last one will be use
 
 To have a value set only at a certain point in a process, this option can be combined with the [Show if record in view]({{<relref "#show-if-record-in-view">}}) option. When the field becomes visible, the value will be set.
 
-> Setting the value of a relation field is a special case because you need to set both the actual relation value, which is the numeric ID of the record you wish to relate to, and the display value i.e. what the user should see. The way to do this is:
-> * Add a field or calculation with the same name as the display field for the relation. For example in a contact record, if you have a relation field 'Company' with its display field set to 'Company Name', then you could create a calculation called Company Name and set it to output the name of the relevant company.
-> * Add the internal row ID for the company to the referenced field's view. This should be the **last** field in the view
+Setting the value of a relation field is a special case because you need to set both the actual relation value, which is the numeric ID of the record you wish to relate to, and the display value i.e. what the user should see. The way to do this is:
+* Add a field or calculation with the same name as the display field for the relation. For example in a contact record, if you have a relation field 'Company' with its display field set to 'Company Name', then you could create a calculation called Company Name and set it to output the name of the relevant company.
+* Add the internal row ID for the company to the referenced field's view. This should be the **last** field in the view
 
 > Note that another way of setting a value on record creation is to use a workflow set to [run on record creation]({{<relref "/docs/tables/options#when-a-records-created-run-this-workflow ">}}). If you need to set the value on record creation, using a workflow is the best way - it will seem slightly quicker to the user. However if you need to be able to wait a while before automatically setting the value of a field, perhaps until another field has been filled in, then using this referenced field option is the way to go.
 
