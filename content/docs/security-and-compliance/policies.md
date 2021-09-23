@@ -10,9 +10,15 @@ tags:
 ## Backups
 Data backups are performed across the stack of technology, from server down to databases and file storage.
 
-Database and agileBase content (uploaded files, custom templates etc.) backups are taken daily and hosted in the European Union by Amazon. Older backups transition to [Amazon Glacier](https://aws.amazon.com/glacier/) and are kept for 200 days - this allows a balance between the practical necessity of allowing rollbacks to a certain point in time, whilst not storing data for an unnecessarily long period, to comply with the GDPR.
+1) Database backups are taken daily and hosted in the European Union by Amazon. Older backups transition to [Amazon Glacier](https://aws.amazon.com/glacier/) and are kept for 200 days - this allows a balance between the practical necessity of allowing rollbacks to a certain point in time, whilst not storing data for an unnecessarily long period, to comply with the GDPR.
 
-These backups are encrypted so that Amazon has no access to the data within then.
+By policy, backups under 100 days old are read-only and un-deletable, so will always be available in the case of attacks like ransomware.
+
+These backups are also encrypted so that Amazon has no access to the data within then.
+
+2) agileBase content (uploaded files, custom templates etc.) also have snapshots taken daily, kept for 200 days in a separate location. Live data in the UK is copied to a snapshot server in Frankfurt.
+
+3) In addition to these content-only backups, snapshots of the totality of each key server in the infrastructure (including configuration), are run daily using the Linode backup service https://www.linode.com/products/backups/
 
 The backup and recovery process is monitored and tested regularly.
 
