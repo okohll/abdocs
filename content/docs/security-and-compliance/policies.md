@@ -14,9 +14,11 @@ Data backups are performed across the stack of technology, from server down to d
 By policy, backups under 100 days old are read-only and un-deletable, so will always be available in the case of attacks like ransomware.
 These backups are also encrypted so that Amazon has no access to the data within then.
 
-2) agileBase content (uploaded files, custom templates etc.) also have snapshots taken daily, kept for 200 days in a separate EU location.
+2) Database content is also transferred in real time to a 'hot standby' server using [streaming replication](https://www.postgresql.org/docs/current/warm-standby.html#STREAMING-REPLICATION), allowing immediate failover should the primary database fail for any reason.
 
-3) In addition to these content-only backups, snapshots of the totality of each key server in the infrastructure (including configuration), are run daily using the Linode backup service https://www.linode.com/products/backups/
+3) agileBase content (uploaded files, custom templates etc.) also have snapshots taken daily, kept for 200 days in a separate EU location.
+
+4) In addition to these content-only backups, snapshots of the totality of each key server in the infrastructure (including configuration), are run daily using the Linode backup service https://www.linode.com/products/backups/
 
 The backup and recovery process is monitored and tested regularly.
 
