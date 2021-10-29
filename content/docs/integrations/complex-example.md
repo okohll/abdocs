@@ -55,8 +55,8 @@ Endole will come back with the figures for that company and in **step 3** we can
 
 Note that the value for the Organisation relation field we mentioned in the start is given as an ID. This is the internal ID of the organisation which the company number belongs to. Zapier can find this as agileBase includes it in every push or pull API request as the 'id' parameter, whether we ask for it or not. It can be really useful for linking data in different tables together, as we're doing here.
 
-	You may be thinking that this data looks like it represents one year's worth of financial data, but we want a full history covering multiple years. How do we get that?
-	In short, we don't need to worry about it. Endole provides the data to Zapier as an array, one entry for each year. Zapier transparenty handles that, sending one PUSH request to agileBase per entry.
+> You may be thinking that this data looks like it represents one year's worth of financial data, but we want a full history covering multiple years. How do we get that?
+> In short, we don't need to worry about it. Endole provides the data to Zapier as an array, one entry for each year. Zapier transparenty handles that, sending one PUSH request to agileBase per entry.
 
 Now we have everything we need regarding the integration! We could set the workflow to run in the background, so whenever a new organisation with a company number is entered into the CRM, the integration goes off and finds the financial data. However, because we have many thousands of organistions in our database, we want to be a bit more judicious about our use. Each API request to Endole costs only a small amount, but costs could add up if we were to automatically run it for every organisation, particularly if we include historical records.
 
