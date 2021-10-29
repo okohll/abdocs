@@ -2,7 +2,7 @@
 title: "Multi-step API worked example"
 date: 2021-10-29T16:40:00+01:00
 type: docs
-weight: 155
+weight: 165
 description: A more complex API example showing a real world integration consisting of multiple steps
 tags:
 - Architect
