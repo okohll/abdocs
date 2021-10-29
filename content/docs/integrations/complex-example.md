@@ -33,7 +33,7 @@ This integration will comprise a three step process.
 2. Use that number to look up the financial data for the organisation
 3. Finally, send the information back into our financial data table, one record per year
 
-** Setting up the API calls
+## Setting up the API calls
 
 The integration is relatively easy to set up using [Zapier](https://zapier.com). There's one Zapier action for each step in the process:
 
@@ -64,7 +64,7 @@ So in this case, we'll add a 'retrieve financials' [workflow button]({{<relref "
 
 ![Retrieve Financials](/retrieve-financials.png)
 
-** Final tweaks
+## Final tweaks
 
 Above, we mentioned creating a workflow to transform the YYYYMM date format (stored as text) into a proper date field. To do this we create a [workflow]({{<relref "/docs/workflows/altering-data">}} which will update our Date field. It contains a calculation called Date with the definition
 
@@ -77,7 +77,7 @@ to_date(
 
 The workflow can be set to run whenever a financial details record is created, i.e. as data comes in, using the [run workflow on record creation]({{<relref "/docs/workflows/advanced/workflow-on-create">}}) option of a table.
 
-** Charting the data
+## Charting the data
 
 There's one more thing we can do to add some polish. When opening the financial details tab of the record, we can show a chart of the data for that organisation.
 
