@@ -14,7 +14,7 @@ The scenario is that we want to be able to look up and store multiple years wort
 
 Firstly, we need to find a provider of this data who have an API - we use [Endole](https://www.endole.co.uk/).
 
-Then we need to [create a table]({{<relref "/docs/tables">}}) to store the figures. We created a 'financial data' table containing the following fields:
+We need to [create a table]({{<relref "/docs/tables">}}) to store the figures. We created a 'financial data' table containing the following fields:
 
 ![financial fields](/financial-fields.png)
 
