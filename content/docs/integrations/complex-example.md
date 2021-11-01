@@ -1,5 +1,5 @@
 ---
-title: "Multi-step API worked example"
+title: "Complete API worked example"
 date: 2021-10-29T16:40:00+01:00
 type: docs
 weight: 165
@@ -8,9 +8,9 @@ tags:
 - Architect
 ---
 
-Here's a great example of using an API to provide business benefits, that we use ourselves here at agileChilli.
+Here's a great example of using an API to provide business benefits, that we use ourselves here at agileChilli. As well as outlining the steps necessary to set up the API, with links to other documentation pages where relevant, we also include other elements of the solution, like workflows and charting, which often form a part of integrations.
 
-The scenario is that we want to be able to look up and store multiple years worth of financial data for any UK company we hold in our CRM system. It can be useful to be able to have this data to hand to aid sales, when considering partnering or when doing competitor/market analysis for example - see our [CEO's blog post]() on the subject.
+The scenario is that we want to be able to look up and store multiple years worth of financial data for any UK company we hold in our CRM system. It can be useful to be able to have this data to hand to aid sales, when considering partnering or when doing competitor/market analysis for example - see our [CEO's blog post](https://blog.agilebase.co.uk/2021/11/01/the-value-of-integrating-with-endole/) on the subject.
 
 Firstly, we need to find a provider of this data who have an API - we use [Endole](https://www.endole.co.uk/).
 
