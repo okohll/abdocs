@@ -60,7 +60,17 @@ Common mathematical functions can be found here: https://www.postgresql.org/docs
 
 * A simplistic way of extracting a person's first name from a full name - strip out everything from the first space onwards.
 
-This one is slightly more complex because it uses a powerful text matching/search and replace facility called **regular expressions**, or regexes for short. Again, this is a standard facility and there's lots of documentation available on the [PostgreSQL website](https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP) and elsewhere if you'd like to learn more.
+```
+regexp_replace(
+  {account owner},
+  '.*\\((.*)\\).*',
+  '\\1'
+)
+```
+
+* A more complex example. Given an 'account owner' value in the format **Forename Surname (username)**, extract the username, i.e. everything between the brackets.
+
+The last two are slightly more complex because they use a powerful text matching/search and replace facility called **regular expressions**, or regexes for short. Again, this is a standard facility and there's lots of documentation available on the [PostgreSQL website](https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP) and elsewhere if you'd like to learn more.
 
 > The only difference from standard to be aware of is that when entering a regex into a calculation in agileBase, you must use two backslashes instead of one.
 
