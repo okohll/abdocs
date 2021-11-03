@@ -42,6 +42,8 @@ When a tab contains many 'child' records, e.g. an organisation may have a tab wh
 
 To accomplish this, simply add a chart to the [view used by the tab]({{<relref "/docs/tables/hierarchy-navigation/tabs#tab-view">}}). When the tab is opened, the chart will automatically be filtered to only show data pertaining to the parent table, in a similar fashion to how charts embedded using cross-referenced panels are filtered, as above.
 
+![Endole example](/endole-example.png "Example of a chart in a tab")
+
 ## Subscribing users or roles to charts
 Users can be subscribed to charts (or subscribe themselves) to receive them by email.
 
