@@ -37,10 +37,10 @@ So for example if you have a chart of sales per month per customer, which you em
 
 This is accomplished by using a view with chart(s) as a [cross-referenced panel]({{<relref "/docs/fields/field-types/special-field-types/referenced-data">}}) - see that page for setup information.
 
-## The visualisations tile
-Once a few charts have been created in different views and tiles, a user can add a [visualisations tile]({{<relref "/docs/tiles">}}) to their screen and select charts to include in it. The contents of the visualisation tile are personal to each user.
+## Embedding charts in tabs
+When a tab contains many 'child' records, e.g. an organisation may have a tab which contains financial data for the past 10 years, then charts can display above the rows of data when the tab's opened.
 
-Only one visualisations tile can be added to a user's homepage, but that tile can include as many charts as necessary collected from anywhere in the system.
+To accomplish this, simply add a chart to the [view used by the tab]({{<relref "/docs/tables/hierarchy-navigation/tabs#tab-view">}}). When the tab is opened, the chart will automatically be filtered to only show data pertaining to the parent table, in a similar fashion to how charts embedded using cross-referenced panels are filtered, as above.
 
 ## Subscribing users or roles to charts
 Users can be subscribed to charts (or subscribe themselves) to receive them by email.

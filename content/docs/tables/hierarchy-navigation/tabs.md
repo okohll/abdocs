@@ -37,6 +37,8 @@ Typically, these options are only needed to finnesse an application. They can be
 ### Tab view
 For one to many tabs, which [view]({{<relref "/docs/views">}}) to use to show items. By creating a specific view to use for the tab, you can control which fields are displayed in which order, add calculations, filter those which are shown etc.
 
+If the view contains one or more charts, those charts will also be shown when opening the tab, filtered to show only data for the parent record containing the tab (in the same way that the records to display in the tab are filtered).
+
 ### Populate from template
 Under a tab, a button allows the user to add records. For example in the contacts tab of an organisation, they would be able to add a new contact.
 
