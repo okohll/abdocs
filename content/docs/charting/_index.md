@@ -31,9 +31,9 @@ We provide our own business intelligence tool, an instance of Apache Superset, w
 
 This may be useful when
 * You want to report summary KPIs or trends upwards, to higher levels of management, so you need a dashboard
-    * to include charts from different view in agileBase in one place
-    * to present them in particular formats suitable for reporting, e.g. using company colours
-    * potentially to include data from additional sources in the one dashboard e.g. from accounting systems
+    * to include charts from different views in agileBase in one place
+    * to present them in particular formats suitable for reporting, e.g. in particular sizes/layouts or using company colours
+    * potentially to include data from additional sources in the one dashboard e.g. from accounting systems as well
 * The source data views in agileBase are mature and aren't likely to change. Changes can break any integration set up
 * You are happy with the privacy and data security implications - see below
 
