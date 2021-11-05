@@ -30,11 +30,11 @@ Developers can also choose to have certain charts emailed to different groups of
 We provide our own business intelligence tool, an instance of Apache Superset, which is available at https://superset.agilebase.co.uk for easy setup 'out of the box', however any tool you wish such as Power BI can also be connected.
 
 This may be useful when
-* The source data views in agileBase are mature and aren't likely to change. Changes can break any integration set up
 * You want to report summary KPIs or trends upwards, to higher levels of management, so you need a dashboard
     * to include charts from different view in agileBase in one place
     * to present them in particular formats suitable for reporting, e.g. using company colours
     * potentially to include data from additional sources in the one dashboard e.g. from accounting systems
+* The source data views in agileBase are mature and aren't likely to change. Changes can break any integration set up
 * You are happy with the privacy and data security implications - see below
 
 ### Privacy and data security
