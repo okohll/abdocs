@@ -21,12 +21,12 @@ The Community Users mechanism allows this.
 > Community Users have limited access (described below), with subscriptions which are significantly less costly and must be purchased in bulk. Once a block of community users is purchased, you can set up and remove as many as you need within the upper limit of that block.
 
 ## Validity
-To be valid for a Community User subscription, a person must be one of
+For a Community User subscription to apply, a person must be one of
 * a *supplier*
 * a *contractor*
 * or a *member of the public*
 
-Employees must be standard 'core users' not community users, even if they only have read-only privileges or access the system intermittently.
+So this mechanism is not applicable to employees of the company (or a parent company or subsidiary).
 
 ## Setup
 ### Configuring a community of users
