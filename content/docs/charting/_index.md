@@ -27,11 +27,23 @@ Creating charts can be used in conjunction with building views, in an agile fash
 Developers can also choose to have certain charts emailed to different groups of people on a regular basis. For example, [TODO]
 
 ## Exporting to Business Intelligence
+We provide our own business intelligence tool, an instance of Apache Superset, which is available at https://superset.agilebase.co.uk for easy setup 'out of the box', however any tool you wish such as Power BI can also be connected.
+
 This may be useful when
 * The source data views in agileBase are mature and aren't likely to change. Changes can break any integration set up
 * You want to report summary KPIs or trends upwards, to higher levels of management, so you need a dashboard
-** to include charts from different view in agileBase in one place
-** to present them in particular formats suitable for reporting, e.g. using company colours
-** potentially to include data from additional sources in the one dashboard e.g. from accounting systems
+    * to include charts from different view in agileBase in one place
+    * to present them in particular formats suitable for reporting, e.g. using company colours
+    * potentially to include data from additional sources in the one dashboard e.g. from accounting systems
 * You are happy with the privacy and data security implications - see below
+
+### Privacy and data security
+When connecting a Business Intelligence tool, whether that's the Superset instance we provide, or a third party tool, it's important to realise that data *leaves agileBase* and therefore is no longer protected by agileBase's roles and privileges system.
+
+You may have data in agileBase which is only accessible to certain members of staff, however when accessed outside of agileBase, those rules no longer apply. That doesn't necessarily mean the data is accessible publicly, but it does mean it's controlled by whatever privilege system the third party tool uses, which will be different to agileBase's.
+
+Therefore, from agileBase's point of view, similar rules will apply when connecting a BI system as to when exporting data to spreadsheets. For example
+* Any user connecting a BI tool will be shown a warning of these consequences, which they'll need to accept prior to going ahead
+* agileBase system administrators will get email notifications every time data in a view is made available to BI tools, containing information on whether that data is marked as sensitive or private
+* Only people with MANAGE privileges on a table can connect BI tools. They also have to have two factor authentication enabled
 
