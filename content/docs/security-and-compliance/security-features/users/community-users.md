@@ -24,7 +24,7 @@ The Community Users mechanism allows this.
 To be valid for a Community User subscription, a person must be one of
 * a *supplier*
 * a *contractor*
-* a *member of the public*
+* or a *member of the public*
 
 Employees must be standard 'core users' not community users, even if they only have read-only privileges or access the system intermittently.
 
@@ -34,7 +34,7 @@ To set up a new community of a certain type, a role must be created for them. Th
 
 Each community user must be a member of that single role only - no additional roles or privileges can be applied.
 
-Different communities of users can be created by creating different roles. At least one block of subscriptions must be purchased for each role created. Therefore you can have multiple communities, for example one for members of the public and another for contractors, or two different types of contractor.
+Different communities of users can be created by creating different roles. A separate block of subscriptions must be purchased for each role created. Therefore you can have multiple communities, for example one for members of the public and another for contractors, or two different types of contractor.
 
 When setting up the role, tick the 'members are community users' tickbox. Then create a user and assign them to that role.
 
@@ -54,4 +54,4 @@ Further, community users are unable to
 * unlock locked fields or records
 * bulk edit
 
-Together, all of these measures will help protect data in the organisation whilst allowing people from outside to be able to usefully carry out work, without having to go through the expense of creating or purchasing dedicated applications for them.
+> Together, all of these measures will help protect data in the organisation whilst simplifying the user interface, allowing people from outside to be able to usefully carry out work, without having to go through the expense of creating or purchasing dedicated applications for them.
