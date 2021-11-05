@@ -7,8 +7,8 @@ description: Data visualisation options
 tags:
 - Super User
 ---
-In agileBase there are two mechanisms for charting and visualising data, each suited to different purposes
-1) [built-in charting](built-in-charting)
+In agileBase there are two mechanisms for charting and visualising data, each suited to a different purpose
+1) our [built-in charting](built-in-charting)
 2) exporting data to third party business intelligence tools
 
 If you're starting out, we recommend beginning by looking at built-in charting.
