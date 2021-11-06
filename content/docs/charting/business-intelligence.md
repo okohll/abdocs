@@ -56,6 +56,9 @@ Now that you've set up agileBase to make data available to Superset, you can cre
 
 For more details on creating charts and editing dashboards, including video walkthroughs, see [here](https://docs.preset.io/docs/create-a-chart)
 
+> The first view sent to Superset is free, further views can be purchased in bundles.
+
+
 
 
 
