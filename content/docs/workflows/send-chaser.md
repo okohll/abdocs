@@ -54,6 +54,13 @@ The following fields can optionally be added to the table. If they are found, th
 1. **chaser response received**: if a *date* field with this name exists, the value will be set to the date and time of the response
 2. **chaser response needs checking**: if a *checkbox* field with this name exists, it will be ticked when the response is received
 
+### Receiving a response
+When a response is received to a chaser, a comment will be logged to the first comment field in the parent table (if there is a comment field).
+
+An email will also be sent to a user notifying them of the response. The logic for who to send that notification to is:
+1) If there are any dropdown fields in the table with the option [fill with users]({{<relref "/docs/fields/field-options/text-field-options#lists-of-users">}}) then send the email to the user selected in that field. If there's more than one field with that option, use the first one.
+2) If there are no fields with 'fill with users' selected, fall back to notifying the user who last updated or created the record being chased.
+
 ### Using multiple chasers on the same table
 
 [TODO]
