@@ -8,7 +8,7 @@ tags:
 - Developer
 ---
 
-> Before setting up a BI connection, please be aware of the [data privacy and security](charting#privacy-and-data-security) considerations.
+> Before setting up a BI connection, please be aware of the [data privacy and security](/docs/charting#privacy-and-data-security) considerations.
 
 At agileBase we host an instance of [Apache Superset](https://superset.apache.org) which can be used by customers to create reporting dashboards.
 
@@ -33,9 +33,9 @@ Within a few seconds, the data will then be available in Superset.
 ### Changes
 It's easy for developers to make changes to views in agileBase, for example adding / removing fields, changing calculations or just renaming a view.
 
-> However, when the BI connection is active, bear in mind that any such changes will disable the connection. The reason is that once data is set up to transfer to a separate system, the other system typically expects it to remain in the same format.
+> However, when the BI connection is active, bear in mind that certain changes will disable the connection. The reason is that once data is set up to transfer to a separate system, the other system typically expects it to remain in the same format.
 >
-> That means that if you make *any* changes to the view, you must afterwards re-connect BI by repeating step 3 above. As long as you haven't deleted or renamed fields used in charts within Superset, those charts will continue to work.
+> That means that if you rename the view or move it, or rename/delete fields and calculations, you may afterwards need to re-connect BI by repeating step 3 above. Additionally, check your charts in Superset, to see if they need re-creating.
 
 ## Creating dashboards in Superset
 
