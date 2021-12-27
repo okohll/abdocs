@@ -47,6 +47,8 @@ agileBase will then pass the ID of that record through to the next workflow step
 
 This mechanism works until any workflow step creates a new record. When that happens, it's unclear whether subsequent steps should run on the original record or the newly created one, so the ID won't be passed through to following steps and you'll have to manage things manually, e.g. using flagging as below.
 
+> This behaviour can be manually disabled by un-ticking the option *Make subsequent workflow steps act on the same record as this one*, which will then cause the next chained workflow to always act on all records in its view.
+
 ## Using hidden "flagging" fields
 It is sometimes necessary to **find** the source record when chaining workflows.
 
