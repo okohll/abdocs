@@ -35,9 +35,9 @@ This can be used to prevent accidental editing of important fields which should 
 If **Lock when value set** is ticked, unlock on certain criteria. Works the same way as [Show if record in view]({{<relref "#show-if-record-in-view">}}).
 
 ## Required
-If ticked, force the user to supply a value. They won't be able to navigate away from a record without doing so.
+If ticked, prompt the user for a value when they try to leave a record without one. Note we can't force the value, as the user could refresh the browser as a workaround.
 
-> Note: although this is a strong prompt, it would still be possible for the user to close the browser window for example, leaving the field with no value. In that case a value will be prompted for again the next time the record is loaded.
+> For dropdown fields with the default value set to [Lists of users]({{<relref "text-field-options#lists-of-users">}}), this has the special effect of defaulting the field to the ID of the currently logged in user.
 
 ## Prominent
 Prominently highlight the field on the screen, e.g. if it's one that is important to fill out, without actually requiring a value to be supplied.

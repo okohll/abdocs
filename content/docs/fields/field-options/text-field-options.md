@@ -62,6 +62,8 @@ When using 'fill with users', the list of users to appear in the dropdown can fu
 
 i.e. `_users` followed by a vertical bar and then a comma separated list of role names. Only users which appear in one or more of the named roles will appear.
 
+If you want a field to auto-populate with the ID of the currently logged in user, enable both this option and the [required]({{<relref "common-options#required">}}) field option.
+
 ## Text case
 Convert people's input into the required case as it's entered - choose from
 * lowercase
