@@ -1,0 +1,630 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>agileBase docs – Certified Architect</title>
+    <link>https://docs.agilebase.co.uk/tags/certified-architect/</link>
+    <description>Recent content in Certified Architect on agileBase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 31 Aug 2021 16:00:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/tags/certified-architect/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Calendar</title>
+      <link>https://docs.agilebase.co.uk/docs/calendar/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/calendar/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Any view with one or more date/time fields can have it&amp;rsquo;s data displayed in calendar form. If there are two date/time fields, the first will be the start time, the second the end time. If there&amp;rsquo;s only one, events will last 1 hour by default, unless the field is a date only, in which case they will be all day.&lt;/p&gt;
+&lt;p&gt;Data can also &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/calendar/&#34;&gt;sync to and from external calendars&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Any user can add the calendar tile to their homepage, then select views containing dates to display in it. Data can be displayed in a number of formats, like standard month/week/day views but also timeline views for a gantt-style format, with each view in its own swim-lane.&lt;/p&gt;
+&lt;h2 id=&#34;default-views&#34;&gt;Default views&lt;/h2&gt;
+&lt;p&gt;Any views which are in a tile with the word &amp;lsquo;calendar&amp;rsquo; in the name will show by default when a user first opens the calendar tile.&lt;/p&gt;
+&lt;h2 id=&#34;splitting-a-view-into-tracks&#34;&gt;Splitting a view into tracks&lt;/h2&gt;
+&lt;p&gt;In a timeline grid display, each view will become a swim-lane or track down the left hand side of the screen. However it&amp;rsquo;s also possible to create multiple tracks from a single view, choosing a field to split on. Each distinct value of that field will become a separate track.&lt;/p&gt;
+&lt;p&gt;For example, here&amp;rsquo;s a view of recipe development milestones split on the product name:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/calendar-timeline.png&#34; alt=&#34;calendar timeline&#34;&gt;&lt;/p&gt;
+&lt;p&gt;To set this up, add a text calculation to the view called &amp;lsquo;calendar splitter&amp;rsquo;. The calculation should output the value to split on, in this case the product name.&lt;/p&gt;
+&lt;h2 id=&#34;colouring-events&#34;&gt;Colouring events&lt;/h2&gt;
+&lt;p&gt;By default, each view used in the calendar will be assigned a different colour.&lt;/p&gt;
+&lt;p&gt;Alternatively, you can choose to colour individual events, for example based on whether they&amp;rsquo;re overdue or not.&lt;/p&gt;
+&lt;p&gt;To do this, add a text field to the view which has the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/#colour-words&#34;&gt;colour words&lt;/a&gt; option set, or a calculation with the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/#colouring&#34;&gt;colour words&lt;/a&gt; option.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Users and Roles</title>
+      <link>https://docs.agilebase.co.uk/docs/tables/users-and-roles/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tables/users-and-roles/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &lt;em&gt;Users&lt;/em&gt; and &lt;em&gt;Roles&lt;/em&gt; panels of a table&amp;rsquo;s manage tab allow privileges to be assigned to a user or role on a table. Please see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;privileges&lt;/a&gt; page for more details.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Integrations</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/</guid>
+      <description>
+        
+        
+        &lt;p&gt;There are a number of ways to extract data from agileBase, whether manually for an individual&amp;rsquo;s use or programatically for integration with other systems.&lt;/p&gt;
+&lt;p&gt;There are also multiple ways other than the user interface to enter data into agileBase.&lt;/p&gt;
+&lt;h2 id=&#34;outgoing-data&#34;&gt;Outgoing Data&lt;/h2&gt;
+&lt;p&gt;Users are able to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Export Data to spreadsheet&lt;/li&gt;
+&lt;li&gt;Generate Docs via a template&lt;/li&gt;
+&lt;li&gt;Access attached files&lt;/li&gt;
+&lt;li&gt;Print screen information&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Third parties can access data via an API, either:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PULL data&lt;/li&gt;
+&lt;li&gt;PUSH data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There is also dedicated facility for integrating data with a Calendar&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Calendar Integration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;incoming-data&#34;&gt;Incoming Data&lt;/h2&gt;
+&lt;p&gt;Users are ablle to add data:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Via the User Interface&lt;/li&gt;
+&lt;li&gt;Import CSV files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Third parties can save data in to agilebase&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Via the POST API&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Workflows</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A workflow is a task that processes data to acheive a particular function. AgileBase has a number of workflow functions that can be used to automate or simplify the activities users would otherwise need to perform manually.&lt;/p&gt;
+&lt;p&gt;Workflows can automatically edit records and create new records, saving a lot of manual typing. The system will follow rules for creating new records, editing values in existing records or taking other actions. The rules can be simple or complex, in fact anything that can be represented by a standard view, which makes it quite powerful.&lt;/p&gt;
+&lt;p&gt;Workflows can also send email notifications, generate documents and push data to 3rd parties. Importantly steps can be &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/&#34;&gt;chained together&lt;/a&gt;. Many business processes can therefore be fully automated. As an example if the system stores recipes, whenever an allergen is changed, a product specification doc can be generated and emailed to significant customers.&lt;/p&gt;
+&lt;h2 id=&#34;creating-a-rule&#34;&gt;Creating a rule&lt;/h2&gt;
+&lt;p&gt;Here are the basics.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;A rule is represented by a view. First create the view to represent the rule. Choose what &lt;strong&gt;action&lt;/strong&gt; you want the rule to perform&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Any records which become visible in your rule view will trigger the action selected. So add filters (on a calculation if necessary) to select only the records you wish to trigger the action.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If creating or editing a record, the fields in the view will populate the new or existing record. Any fields in the view with the same name as a field in the table will populate that field with its data. The view field can be a calculation as well as a standard field.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Once the view’s created, you finish setting up by going to manage -&amp;gt; workflow. Fill in the options for ‘recording the time of the last action’ by selecting a date field in the table the view’s based on. This date will be updated every time the workflow runs. If there’s no relevant date field existing, add one to the table.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Choose when the Workflow should be run. Use the option &lt;em&gt;manually only&lt;/em&gt; if for example you want the workflow to run on a button press. Alternatively, set the frequency you wish the workflow to attempt to run. This determines how often the system should check whether there are records to process. The check is only done if there&amp;rsquo;s been a relevant change to the state of the system e.g. records edited since the last workflow run. However all workflows with a check frequency are guaranteed to run at least once a day.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Using &lt;em&gt;24 hours&lt;/em&gt; plus a filter on a &amp;rsquo;d&amp;rsquo;ay of the week&#39; calculation allows you to run weekly workflows.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;For 24hr workflows you can optionally set a specific time of day for them to run.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow.png&#34; alt=&#34;Screenshot of workflow action&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Types of Workflow Actions</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/types-of-actions/</link>
+      <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/types-of-actions/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;types-of-action&#34;&gt;Types of Action&lt;/h2&gt;
+&lt;p&gt;Actions fall in to two types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Those that effect data held within agileBase tables&lt;/li&gt;
+&lt;li&gt;Those that send data to another system.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;alter-data&#34;&gt;Alter Data&lt;/h3&gt;
+&lt;p&gt;Use the dropdown within the &lt;em&gt;workflow&lt;/em&gt; section of the &lt;em&gt;manage&lt;/em&gt; tab of the view to control the action that will be applied to every record in the view.
+Options are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create record - This will create a new item in the nominated table&lt;/li&gt;
+&lt;li&gt;Update record - This will alter the values of the record.&lt;/li&gt;
+&lt;li&gt;Lock record - This will apply a record level lock on the item.&lt;/li&gt;
+&lt;li&gt;Delete record - This will totally remove the record.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-manage.png&#34; alt=&#34;Workflow actions that alter data&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;creating-records&#34;&gt;Creating records&lt;/h4&gt;
+&lt;p&gt;If &amp;lsquo;create record&amp;rsquo; is chosen, a couple of other options appear.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You can select which table the new record should be created in&lt;/li&gt;
+&lt;li&gt;&amp;lsquo;Auto-connect new records&amp;rsquo; can be used when &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/&#34;&gt;chaining workflows&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;sending-data&#34;&gt;Sending Data&lt;/h3&gt;
+&lt;p&gt;The options to send data are contained within the &lt;em&gt;send&lt;/em&gt; section of the &lt;em&gt;workflow&lt;/em&gt; tab. Matching records will be sent to the appropriate &lt;strong&gt;function&lt;/strong&gt;.&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-data-to-a-third-party-via-api/&#34;&gt;Send data to a third party via API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;Send an email&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;Send an email Chaser&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/calendar/&#34;&gt;Send data to a calendar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-document-generator/&#34;&gt;Send to document generator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RSS feed - See facility with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/setting-up-the-pull-api/&#34;&gt;PULL API&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-send.png&#34; alt=&#34;Workflow functions that send data&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Workflows</title>
+      <link>https://docs.agilebase.co.uk/docs/views/special-uses/workflows/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/workflows/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A workflow can be used to edit data in the system automatically.&lt;/p&gt;
+&lt;p&gt;The view created in this case is used to define the set of records to act on (others can be excluded via &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;view filters&lt;/a&gt; and also the data to use - each calculation or field in the view can be a source of data to create or update.&lt;/p&gt;
+&lt;p&gt;For more information, see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; topic, which contains full details of how to set up and use workflows.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Setting up the Calendar API</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/calendar/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/calendar/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If a view contains a date field, the data in it can by synchronised with an external calendar application, e.g. Google Calendar, Microsoft Office 365, Apple calendars etc.&lt;/p&gt;
+&lt;p&gt;If it contains two date fields, the first will be used for the start date/time, the second for the finish.&lt;/p&gt;
+&lt;p&gt;Once set up, the link will be maintained and the calendar will update whenever the data in agileBase is updated, or vice versa. The synchonisation can be set up to be two-way (to and from agileBase), or just one way (either two or from agileBase)&lt;/p&gt;
+&lt;h2 id=&#34;pre-requisites&#34;&gt;Pre-requisites&lt;/h2&gt;
+&lt;p&gt;agileBase uses &lt;a href=&#34;https://oauth.net/&#34;&gt;OAuth&lt;/a&gt;, an industry standard protocol, to synchronize with your calendar system of choice.&lt;/p&gt;
+&lt;p&gt;Under this protocol, each person will need to individually grant agileBase permission to send data to, and view events in their calendar. This is a straightforward process: as a user,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click on your user icon at the top right of the screen&lt;/li&gt;
+&lt;li&gt;Select &lt;em&gt;edit profile&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Click the &lt;em&gt;connect calendar&lt;/em&gt; link&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You will see a calendar selector screen like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/cronofy.png&#34; alt=&#34;Cronofy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Choose the calendar system you use and follow through the prompt to allow access.&lt;/p&gt;
+&lt;h2 id=&#34;incoming-data&#34;&gt;Incoming data&lt;/h2&gt;
+&lt;p&gt;Once users have connected their calendars, data can be received into agileBase whenever an event is created, edited or deleted in the external calendar. We need to set up two new tables so the system can receive these events. One is a table for the event data itself, the other stores the list of calendars in the user&amp;rsquo;s account. One calendar account may contain multiple calendars, e.g. a user may have separate calendars set up for bookings, sales visits, holidays etc. - typically they display in different colours on the screen.&lt;/p&gt;
+&lt;p&gt;The main reason for recording the calendar list is so that the correct calendar can be chosen to send events to, when we come to send events from agileBase (see below).&lt;/p&gt;
+&lt;p&gt;To set up these tables, follow this process:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a table called &lt;code&gt;ab calendar intray&lt;/code&gt;. It can have a prefix if you like, e.g. &lt;code&gt;z) ab calendar intray&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add the following &lt;strong&gt;text&lt;/strong&gt; fields: &lt;code&gt;person&lt;/code&gt;, &lt;code&gt;calendar id&lt;/code&gt;, &lt;code&gt;calendar name&lt;/code&gt;, &lt;code&gt;event id&lt;/code&gt;, &lt;code&gt;summary&lt;/code&gt;, &lt;code&gt;description&lt;/code&gt;, &lt;code&gt;location&lt;/code&gt;, &lt;code&gt;participation status&lt;/code&gt;, &lt;code&gt;event status&lt;/code&gt;, &lt;code&gt;categories&lt;/code&gt;, &lt;code&gt;attendees&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add the following &lt;strong&gt;date&lt;/strong&gt; fields: &lt;code&gt;start&lt;/code&gt;, &lt;code&gt;end&lt;/code&gt;, &lt;code&gt;created&lt;/code&gt; (accurate to the second), &lt;code&gt;updated&lt;/code&gt; (accurate to the second)&lt;/li&gt;
+&lt;li&gt;Add a &lt;strong&gt;checkbox&lt;/strong&gt; field, &lt;code&gt;deleted&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;and for the calendar mapping table:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a table called &lt;code&gt;ab calendar mapping&lt;/code&gt;. Again, you can prefix it, e.g. &lt;code&gt;z) ab calendar mapping&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add &lt;strong&gt;text&lt;/strong&gt; fields: &lt;code&gt;username&lt;/code&gt;, &lt;code&gt;calendar id&lt;/code&gt;, &lt;code&gt;owner&lt;/code&gt;, &lt;code&gt;calendar name&lt;/code&gt;, &lt;code&gt;provider&lt;/code&gt;, &lt;code&gt;profile id&lt;/code&gt;, &lt;code&gt;profile name&lt;/code&gt;, &lt;code&gt;permission level&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add two &lt;strong&gt;checkbox&lt;/strong&gt; fields called: &lt;code&gt;read only&lt;/code&gt;, &lt;code&gt;primary&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The easiest way to understand the meaning of all the fields is simply to connect your calendar as above, create these tables and add some events to your third party calendar - create new events, update them and delete them, watching the data flow into the tables. New data will usually take no more than a few seconds to appear.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Different third party calendar systems may use some fields in slighlty different ways. For example, at the time of writing, Google Calendar does not support the &lt;code&gt;categories&lt;/code&gt; field but some other calendar systems do use this to show tags you may have added to your events.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Once you have data successfully flowing into the system, a common next step is to move the incoming events into tables which make sense for your particular business needs. For example, if you have a team of salespeople, you may move incoming bookings into a &amp;lsquo;leads&amp;rsquo; table. What you do with the data will depend on your particular circumstances.&lt;/p&gt;
+&lt;p&gt;You can use &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;automated worflows&lt;/a&gt; to copy data from one table to another if necessary.&lt;/p&gt;
+&lt;p&gt;However, you could also simply create views from the &amp;lsquo;ab calendar intray&amp;rsquo; table to allow users to view these events directly. Adding a filter to the user on the &amp;lsquo;person&amp;rsquo; field will ensure a user will only see their own events -see [users - restrict data access]({{relref &amp;ldquo;/docs/security-and-compliance/security-features/users#restrict-data-access&amp;rdquo;}})&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Please be aware of potential data privacy concerns when setting up calendar synchronisation. All events a user creates or modifies in any of the calendars in their connected account will send to agileBase. As an administrator, you may wish to set up specific work calendar accounts for your users, distinct from any personal accounts they may use.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;outgoing-data&#34;&gt;Outgoing data&lt;/h2&gt;
+&lt;p&gt;As well as receiving data in, you can send either new or modified events from agileBase to users&#39; connected calendars.&lt;/p&gt;
+&lt;p&gt;New events are those created in agileBase, modified events are those created externally which have come into the system via the incoming data method above, but which have then been updated in agileBase.&lt;/p&gt;
+&lt;p&gt;To set this up&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;Create a view&lt;/a&gt; to show the events to send to the calendar.&lt;/li&gt;
+&lt;li&gt;Add any relevant &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;filters&lt;/a&gt; to the view, so it only shows events which need to be sent, not &lt;strong&gt;all&lt;/strong&gt; events.&lt;/li&gt;
+&lt;li&gt;In the view&amp;rsquo;s &lt;em&gt;manage&lt;/em&gt; tab, show the &lt;em&gt;Send&lt;/em&gt; panel. Select &lt;em&gt;send data to an external calendar&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Tick &lt;em&gt;Send events to calendar&lt;/em&gt; to activate the view and add the fields shown. These are
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;text fields&lt;/strong&gt;: &lt;code&gt;calendar id&lt;/code&gt;, &lt;code&gt;event id&lt;/code&gt;, &lt;code&gt;calendar owner&lt;/code&gt;, &lt;code&gt;title&lt;/code&gt;, &lt;code&gt;description&lt;/code&gt;, &lt;code&gt;location&lt;/code&gt;, &lt;code&gt;attendees&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;a &lt;strong&gt;whole number field&lt;/strong&gt;: &lt;code&gt;reminder minutes&lt;/code&gt; - a number of minutes before the event when the calendar should alert you&lt;/li&gt;
+&lt;li&gt;two &lt;strong&gt;date fields&lt;/strong&gt;: the first date/time field in the view will be used as the event&amp;rsquo;s start date/time, the next the end date/time (if applicable)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Some of these fields deserve additional explanations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;calendar id&lt;/strong&gt;: identifies the particular calendar within the user&amp;rsquo;s connected account to send events to. This is the same calendar ID used in the &amp;lsquo;ab calendar mapping&amp;rsquo; table above, so can be looked up from there, perhaps by joining to the table.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;event id&lt;/strong&gt;: if you&amp;rsquo;re creating a new event, leave this blank. If the event was created externally, or you&amp;rsquo;re updating an existing event, use the event ID as listed in the &amp;lsquo;ab calendar intray&amp;rsquo; record for it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;calendar owner&lt;/strong&gt;: the ID of the agileBase user - this will be used to determine the person who&amp;rsquo;se linked calendar the event should be sent to. The standard agileBase format is used &amp;lsquo;Forename Surname (username)&amp;rsquo;, so you can use the automatic field &amp;lsquo;Created By [auto]&amp;rsquo; if you like.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;attendees&lt;/strong&gt;: a comma separated list of email addresses of people who should be invited&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Altering Data</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/altering-data/</link>
+      <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/altering-data/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The following Workflows alter data within the system&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create record - This will create a new item in the nominated table&lt;/li&gt;
+&lt;li&gt;Update record - This will alter the values of the record.&lt;/li&gt;
+&lt;li&gt;Lock record - This will apply a record level lock on the item.&lt;/li&gt;
+&lt;li&gt;Delete record - This will totally remove the record.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When creating or editing a record, the fields in the view will populate the new or existing record. Any fields in the view with the same name as a field in the table will populate that field with its data. The view field can be a calculation as well as a standard field.&lt;/p&gt;
+&lt;h3 id=&#34;relation-fields&#34;&gt;Relation fields&lt;/h3&gt;
+&lt;p&gt;If you want your workflow to set the value of a relation find, i.e. link to a particular record, there’s no need to create a calculation for it, just include the ID field for the record you want to link to in the view.&lt;/p&gt;
+&lt;p&gt;If creating a calculation is easier, you can still do that. Either create a numeric calculation which outputs the internal row ID of the record to link to, or the text of the primary value for the relation. If the latter case, the field for the primary value in the related table should be unique and marked as such in the field options.&lt;/p&gt;
+&lt;p&gt;To set a relation field to blank, add a numeric calculation with the name of the field as normal, but set it to output the value -1.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Deleting records is not reversible. Please use with caution.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Send an email</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/send-email/</link>
+      <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/send-email/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Agilebase can be used to send emails. This facility should &lt;strong&gt;NOT&lt;/strong&gt; be used for marketing purposes, rather as a method to notify people about data associated to the system.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: When setting up an email alert, the system needs to know the email address of the recipient. Sometimes this may be very simple, when you always want to send the alert to the same person. For some alerts though you may wish to change who gets it depending on the data, e.g. each salesperson may get the leads assigned to them. In this case, the system will need to know the email address, so it needs to be stored somewhere. For agileBase users, if they use their email address as their username, the system can pick this up when a user’s assigned to a record, either manually or as part of the automatic ‘created by’ and ‘modified by’ fields&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;step-1-add-a-necessary-field&#34;&gt;Step 1: add a necessary field&lt;/h2&gt;
+&lt;p&gt;Select the table which has the alert data in it and add a date/time field with SECOND accuracy called e.g. “Last notified”. This will be used by the system to store when the last notification was sent for each record.&lt;/p&gt;
+&lt;h2 id=&#34;step-2-create-a-new-view&#34;&gt;Step 2: create a new view&lt;/h2&gt;
+&lt;p&gt;Create a view from the table above, containing all the information you want to send in the email. Sort it by “last modified [auto]” descending, so new items appear at the top.&lt;/p&gt;
+&lt;h2 id=&#34;step-3-add-filters&#34;&gt;Step 3: add filters&lt;/h2&gt;
+&lt;p&gt;Add filters so that only records that need an email notification to be sent appear. It’s important that records must disappear once a notification’s been sent otherwise the recipient will be bombarded with repeat alerts.&lt;/p&gt;
+&lt;p&gt;For simple alerts of new items, add a filter “Last notified IS NULL”. That way, a notification will only ever be sent once for a record.&lt;/p&gt;
+&lt;p&gt;To set up a repeating monthly alert, you could add a filter &amp;ldquo;last notified is more than 1 month ago&amp;rdquo;, with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/#including-blank-values&#34;&gt;or is blank&lt;/a&gt; ticked:&lt;/p&gt;
+&lt;p&gt;If you have any difficulty thinking up what criteria you need for your purpose, please get in touch.&lt;/p&gt;
+&lt;h2 id=&#34;step-4-fill-in-an-email-template&#34;&gt;Step 4: fill in an email template&lt;/h2&gt;
+&lt;p&gt;In the view’s &lt;em&gt;manage&lt;/em&gt; tab, under &lt;em&gt;send&lt;/em&gt;, fill in the subject, to and body of the email. To merge in data from the view, use field names in lowercase surrounded by curly brackets. A typical template would look something like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/send-email.png&#34; alt=&#34;Workflow actions that alter data&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You can attach documents to the email by including the field name for a file in the message.&lt;/p&gt;
+&lt;p&gt;Under the email template, set “Notification time field” to the field that you created in step 1, e.g. “Last notified”&lt;/p&gt;
+&lt;p&gt;Note in the To: field, you can include email addresses manually, or merge them in from the view. If you are assigning records to users in agileBase, you can use that field and the system will automatically pick out the email address for them.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;That’s it! Note when testing, we recommend setting the “To:” value to your own email address, just until you’re sure everything’s working properly.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;rich-text-html-emails&#34;&gt;Rich text (HTML) emails&lt;/h2&gt;
+&lt;p&gt;HTML emails can now be sent by apps built on the agileBase platform.
+That means that your company can send out branded, rich-text emails (with attachments) to customers, suppliers and anyone else you deal with.&lt;/p&gt;
+&lt;h3 id=&#34;setting-up&#34;&gt;Setting up&lt;/h3&gt;
+&lt;p&gt;Set up an email notification workflow as normal (in a view, use the manage -&amp;gt; send tab).&lt;/p&gt;
+&lt;p&gt;Start the body of the email with &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt; and end with &lt;code&gt;&amp;lt;/html&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The email will then be interpreted as HTML, i.e. formatted.&lt;/p&gt;
+&lt;p&gt;You do need to know some basic HTML. If you’d like to get started there are plenty of great tutorials on the web - here’s an example: &lt;a href=&#34;http://www.htmldog.com&#34;&gt;www.htmldog.com&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Send a Chaser email</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/send-chaser/</link>
+      <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/send-chaser/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Chaser email facility is often used to remind people to send information. This facility is a dedicated tool, optimised to this purpose.&lt;/p&gt;
+&lt;p&gt;In a nutshell, the system comprises three parts&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;checking when something’s due and emailing the person who needs to supply it&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;allowing the recipient to easily provide the data by following a link in the email to an online form. Documents can be uploaded and other information filled in&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;if no response is received, re-sending a number of times, finally escalating to someone else (usually someone internal)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/chaser2.png&#34; alt=&#34;Screenshot of Chaser user interface&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+&lt;p&gt;The system can be applied whenever you need a third party to supply you with information or documents of a known type.&lt;/p&gt;
+&lt;p&gt;For example, a food manufacturer who receives ingredients from suppliers may occasionally need to raise a non-conformance where something isn&amp;rsquo;t up to standard.&lt;/p&gt;
+&lt;p&gt;Whenever a non-conformance is raised against a supplier, whether as a result of an audit or ad hoc, the supplier can be chased for information about a resolution of the issue. Likewise, staff can be chased if an internal non-conformance is not resolved.&lt;/p&gt;
+&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
+&lt;p&gt;As an agileBase administrator, if you want to set up your own chaser, here’s how to do so.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Create a view with a list of people to chase. In the view’s &lt;em&gt;manage&lt;/em&gt; tab, under &lt;em&gt;Send&lt;/em&gt;, choose &lt;em&gt;send email chasers&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tick &amp;lsquo;enable this chaser&amp;rsquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The system will add a number of calculations to the view and a couple of fields to the underlying table, to help manage chasing. These will be listed on the screen after ticking &amp;lsquo;enable this chaser&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;Please edit the calculations to fill in the details required, such as the email address to send messages to, the frequency with which to send messages etc.&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Now make sure that only things you want to chase are chased, by adding any relevant filters to the view. e.g. to show anything out of date&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That will be enough to get emails sending out. What about receiving the information back?&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Simply add any fields you want the recipient to supply to the view, from the parent table.
+The system will automatically create a form containing these fields (excluding any of the chaser fields above such as ‘to’ and ‘subject’). When the recipient receives an email, it will have a link in it that takes them to this form.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you want the content that the chaser sends out to be visible to users, add the chaser view into a form as a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced data field&lt;/a&gt;. The panel displayed to users will show information such as the email to be sent, how many times the record’s been chased, when the last time was etc. If the record doesn’t need to be chased it will instead show the reasons why (the filters from the view).&lt;/p&gt;
+&lt;h3 id=&#34;receiving-a-response&#34;&gt;Receiving a response&lt;/h3&gt;
+&lt;p&gt;When a response is received to a chaser, as well as saving the documents / fields the chaser asked for, a comment will be logged to the first comment field in the parent table (if there is a comment field).&lt;/p&gt;
+&lt;p&gt;An email will also be sent to a user notifying them of the response. The logic for who to send that notification to is:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;If there are any dropdown fields in the table with the option &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/#lists-of-users&#34;&gt;fill with users&lt;/a&gt; then send the email to the user selected in that field. If there&amp;rsquo;s more than one field with that option, use the first one.&lt;/li&gt;
+&lt;li&gt;If there are no fields with &amp;lsquo;fill with users&amp;rsquo; selected, fall back to notifying the user who last updated or created the record being chased.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;optional-response-fields&#34;&gt;Optional response fields&lt;/h4&gt;
+&lt;p&gt;The following fields can optionally be added to the table. If they are found, they will be populated by the chaser system when a chaser response is received.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;chaser response received&lt;/strong&gt;: if a &lt;em&gt;date&lt;/em&gt; field with this name exists, the value will be set to the date and time of the response&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;chaser response needs checking&lt;/strong&gt;: if a &lt;em&gt;checkbox&lt;/em&gt; field with this name exists, it will be ticked when the response is received&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;using-multiple-chasers-on-the-same-table&#34;&gt;Using multiple chasers on the same table&lt;/h3&gt;
+&lt;p&gt;[TODO]&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Send to Document Generator</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/send-document-generator/</link>
+      <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/send-document-generator/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;automated-bulk-document-generation&#34;&gt;Automated bulk document generation&lt;/h2&gt;
+&lt;p&gt;Automatically generating PDF documents based on criteria you specify is a powerful feature.
+For example, if your system tracks exam marks, you may wish to automatically generate a certificate whenever someone passes. Another more common example might be generating invoices for all work carried out this month.&lt;/p&gt;
+&lt;h2 id=&#34;setting-up&#34;&gt;Setting up&lt;/h2&gt;
+&lt;p&gt;The concept works much like email notifications or syncing events to Google calendar. A view must be set up that contains the records that you want to generate documents for.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The first step is to set up and upload a template as per &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/&#34;&gt;generating PDF documents&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add a date field to the table that contains the document file field, for the system to record the time each document was generated. For the purposes of these instructions, we’ll assume it’s called &lt;em&gt;document generation time&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a new view to contain only records that need documents generating, e.g. with a filter added to remove any records that already have a document&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the &lt;em&gt;manage&lt;/em&gt; tab for the view, within the &lt;em&gt;send&lt;/em&gt; section set to &lt;em&gt;Generate PDF documents&lt;/em&gt;. Select the date field that you created in step 2 above, i.e. ‘document generation time’&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That’s it. Now whenever a record appears in the view, a document will be generated. Note this generation may take up to 10 minutes from the time the record appears in the view to allow for the fact if a record’s being edited, we want to make sure all information has been captured that may go into the document template.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/send-document-generation.png&#34; alt=&#34;Workflow setup to generate a PDF document&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;automatically-emailing-documents-as-attachments&#34;&gt;Automatically emailing documents as attachments&lt;/h2&gt;
+&lt;p&gt;Once your system is generating documents automatically, you can set it up to email those out to people as attachments, also automatically without any user input. That’s great if you’re processing a large number of documents, for example invoicing hundreds or thousands of people per invoice run – it could be quite a time saver.&lt;/p&gt;
+&lt;p&gt;To set this up, create an automated notification as normal, to send an email to the intended document recipient. Just make sure that the body ‘template’ contains a reference to the field name of the document that you want to attach – the document field must be in the table that the notification view’s based on.&lt;/p&gt;
+&lt;p&gt;e.g. your template body could be
+`Dear {forename},&lt;/p&gt;
+&lt;p&gt;Many thanks for your custom with us this month. Your invoice {invoice number} is attached.&lt;/p&gt;
+&lt;p&gt;Regards
+XYZ&lt;/p&gt;
+&lt;p&gt;{invoice file}
+`&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note – we recommend setting it up to send to someone within your organisation as a test, before switching to the actual recipient.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Advanced information on Workflows</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/advanced/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/advanced/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;logging&#34;&gt;Logging&lt;/h2&gt;
+&lt;p&gt;If you are using the more advanced features of agilebase workflows then knowing where to look for logging information will become important. At the bottom fo the &lt;em&gt;workflow&lt;/em&gt; page of the &lt;em&gt;manage&lt;/em&gt; tab of a view is Logging information.&lt;/p&gt;
+&lt;p&gt;It will list the success and failures of past runs as well as the next time the workflow is scheduled to be run.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-history.png&#34; alt=&#34;Viewing the logging history of a Workflow&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Chaining Workflows</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;how-to-chain-workflows&#34;&gt;How to chain Workflows&lt;/h2&gt;
+&lt;p&gt;To set the next workflow in a chain, simply set the appropriate view in the Chain workflow section of the &lt;em&gt;workflow&lt;/em&gt; page of the &lt;em&gt;manage&lt;/em&gt; tab. The next workflow in the chain will run as soon as the previous finishes.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-chain.png&#34; alt=&#34;Configuring the PULL API&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;auto-connect-new-records-to-records-created-in-previous-chained-workflow-steps&#34;&gt;Auto-connect new records to records created in previous chained workflow steps&lt;/h2&gt;
+&lt;p&gt;This option is available when using a workflow that creates new records. Say for example a workflow consists of two steps&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create an organisation&lt;/li&gt;
+&lt;li&gt;Create a contact belonging to that organisation (assume there&amp;rsquo;s a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation field&lt;/a&gt; linking contacts to organisations)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When &amp;lsquo;auto-connect new records&amp;rsquo; is ticked on the workflow for step 2, the contact will automatically be linked to the organisation previously created by setting the relation field appropriately.&lt;/p&gt;
+&lt;p&gt;This mechanism works no matter how many steps there are in a workflow - any records created are remembered and can be used to set values in subsequent steps. So for example&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create an organisation&lt;/li&gt;
+&lt;li&gt;Create a site for the organisation, linked to it&lt;/li&gt;
+&lt;li&gt;Create a contact linked to both site and organisation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;would work too, so long as &amp;lsquo;auto-connect new records&amp;rsquo; is ticked for workflow steps 2 and 3.&lt;/p&gt;
+&lt;h2 id=&#34;workflow-buttons-and-chained-workflows&#34;&gt;Workflow buttons and chained workflows&lt;/h2&gt;
+&lt;p&gt;When a record is kicked off from a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/&#34;&gt;manual workflow button&lt;/a&gt;, it will only run on the single record the user has open on the screen, i.e. the record that the workflow button is in.&lt;/p&gt;
+&lt;p&gt;If the workflow has further steps chained from it, you&amp;rsquo;ll most likely want those to only run on that record too.&lt;/p&gt;
+&lt;p&gt;For example, imagine a workflow is made up of two chained steps&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;generate a document e.g. an invoice&lt;/li&gt;
+&lt;li&gt;send that document to a recipient&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The workflow view may contain many records which could theoretically have a document generated for them. When the button is pressed to run step 1, it will only run on the single record on screen.&lt;/p&gt;
+&lt;p&gt;agileBase will then pass the ID of that record through to the next workflow step to act as a filter. i.e. &amp;lsquo;send that document to a receipient&amp;rsquo; will only send the individual document which has just been created.&lt;/p&gt;
+&lt;p&gt;This mechanism works until any workflow step creates a new record. When that happens, it&amp;rsquo;s unclear whether subsequent steps should run on the original record or the newly created one, so the ID won&amp;rsquo;t be passed through to following steps and you&amp;rsquo;ll have to manage things manually, e.g. using flagging as below.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This behaviour can be manually disabled by un-ticking the option &lt;em&gt;Make subsequent workflow steps act on the same record as this one&lt;/em&gt;, which will then cause the next chained workflow to always act on all records in its view.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;using-hidden-flagging-fields&#34;&gt;Using hidden &amp;ldquo;flagging&amp;rdquo; fields&lt;/h2&gt;
+&lt;p&gt;It is sometimes necessary to &lt;strong&gt;find&lt;/strong&gt; the source record when chaining workflows.&lt;/p&gt;
+&lt;p&gt;A trick to allow you to find the appropriate record is to use and set a flag field in the source table.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Use an Update Workflow to set the flag to True&lt;/li&gt;
+&lt;li&gt;Other workflows can join to this table and filter by &lt;em&gt;flag=true&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Finally, remember to set the flag to false as the last step in the chain, so that it is not inadvertently included in the next run.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;visualising-linked-workflows&#34;&gt;Visualising linked workflows&lt;/h2&gt;
+&lt;p&gt;We’ve added one more thing to the system to make working with these multi-step workflows easier. When you click on a workflow step in the admin interface, it will colour all preceding steps (if any) in green, fading to lighter green the further back they go. Similarly all future chained steps are marked in blue, fading to light blue the further forward they are in the chain.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-recursive.png&#34; alt=&#34;Configuring the PULL API&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Recursive Workflows</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/advanced/recursive-workflows/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/advanced/recursive-workflows/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Recursion is a rather heavyweight feature of the workflow capabilities of the agileBase platform.&lt;/p&gt;
+&lt;p&gt;If you’re interested in a bit of maths and want to know what that means, there’s a great &lt;a href=&#34;https://www.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/recursion&#34;&gt;tutorial about the concept at the Khan Academy&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If not, never mind, the takeaway is it allows an administrator to set up workflows that weren’t possible before, particularly where you have networks of people or things. For example, if your CRM links people who know each other, you could create a list of all people 1 step removed, 2 steps etc.&lt;/p&gt;
+&lt;p&gt;More generally, any calculation with a repetitive step that depends on the results of the previous repetition is recursive. For example, solving sudokus or to some extent crosswords. In fact, we have a sudoku solver as one of our demos.&lt;/p&gt;
+&lt;h2 id=&#34;worked-example--an-ingredients-declaration&#34;&gt;Worked example – an ingredients declaration&lt;/h2&gt;
+&lt;p&gt;Here’s an example that may be a useful pattern for reference. We have a recipe with quantities of each ingredient. However, an ingredient may itself also be a recipe containing other ingredients. We wish to calculate an ‘ingredients declaration’ which has a list of all ‘raw ingredients’ at the end of the chain i.e. those with no recipe and their percentages in the initial recipe.&lt;/p&gt;
+&lt;p&gt;This can (and has) been done with a some linked workflows including a couple of recursive steps. Here’s the logic (not including technical implementation details).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Step 1&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Firstly, with for our main recipe (let’s call it Tom Yum Soup), look at all the direct ingredients and make a copy list, we’ll call it the &lt;em&gt;exploded ingredients&lt;/em&gt;. After this step it will just be exactly the same ingredients as the main list, but later on we’ll recurse and add ingredients of ingredients.&lt;/p&gt;
+&lt;p&gt;In agileBase parlance, a workflow will copy all the items from an &lt;em&gt;ingredient lines&lt;/em&gt; table to an &lt;em&gt;exploded ingredient lines&lt;/em&gt; table. Each exploded ingredient line will have&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a link to the main recipe, i.e. Tom Yum Soup&lt;/li&gt;
+&lt;li&gt;a link to it’s corresponding ingredient line e.g. 10 grams of chilli paste&lt;/li&gt;
+&lt;li&gt;a link to the ‘parent exploded line’, which will just be empty in this first step&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Step 2&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Go through each of the exploded ingredient lines. For each one, if the ingredient is itself a recipe, add lines for each of it’s ingredients, setting&lt;/p&gt;
+&lt;p&gt;main recipe = the same main recipe as the existing exploded line, i.e. Tom Yum Soup
+link to parent ingredient line = the line we’re looking at e.g. 10 grams chilli paste
+link to ingredient line = e.g. 7 grams crushed chillies
+Now recurse and do step 2 again, for any of the new exploded ingredient lines that are themselves recipes. Repeat 2 as many times as are necessary until there are no new lines which are recipes. &lt;strong&gt;This is the key step – after this you’ll have a complete list of raw ingredients.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To make agileBase do that, simply tick the &lt;em&gt;recursive&lt;/em&gt; checkbox in the view’s workflow section. It will repeat the step until the view contains no records.&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Step 3&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The only thing left is to fill in the percentages. This involves a similar logic – bootstrap by first filling in percentages copied from the direct ingredients of the main recipe, then in a new workflow calculate the percentage of sub-ingredients by multiplying the proportion of the main ingredient by the percentage in the sub-ingredient. So for example if our Tom Yum is 2% chilli paste, which contains 70% crushed chillies, the percentage of crushed chillies in the Tom Yum is 0.02 x 70 = 1.4%.&lt;/p&gt;
+&lt;p&gt;When implementing, there are a couple of other details to take into consideration, e.g. how to mark each exploded line as ‘processed’ so you don’t keep on re-calculating them. We do that with a counter. You also have to deal with the mechanics of things like what to do if a recipe changes e.g. an ingredient is deleted – another recursive workflow will go through and delete all exploded lines including sub-ingredients.&lt;/p&gt;
+&lt;p&gt;If you’d like to see a full implementation details for this example, please let us know and we can take you through it on our demo system.&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Step 4&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Finally, the ingredient declaration to e.g. go on a label can be calculated by joining together the names of all the raw ingredients i.e. the exploded ingredients that aren’t themselves recipes, along with their percentages.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Running on record creation or load</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-on-create/</link>
+      <pubDate>Tue, 31 Aug 2021 16:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-on-create/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This can be set up in the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/#when-a-records-created-run-this-workflow&#34;&gt;table options&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Workflows Buttons</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Some workflows need to be run on an adhoc basis, initiated by a user.
+In these instances it can be useful to assign the Workflow to run behind a Button.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;N.b. In both cases below it is necessary for the Workflow to marked as Manual.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;workflow-buttons-on-a-form&#34;&gt;Workflow Buttons on a Form&lt;/h2&gt;
+&lt;p&gt;To add the Workflow button to a Table&amp;rsquo;s form simply create a new field of type Cross Reference with the workflow as the source.
+When the Workflow is run, it will be filtered by the Id of the record. (You may wish read up about &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/&#34;&gt;Chaining Workflows&lt;/a&gt; )
+It is often necessary to put some thought in to the visibility of the button - it can be confusing to the user that a button is present when it does nothing due to filters they cann not know about.&lt;/p&gt;
+&lt;h2 id=&#34;workflow-buttons-on-views&#34;&gt;Workflow Buttons on Views&lt;/h2&gt;
+&lt;p&gt;Some Manual workflows are more appropriately run on a number of records. As such the ability to run them is likely to be associated to a list presented in a view.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create the workflow view&lt;/li&gt;
+&lt;li&gt;Find or create a view we&amp;rsquo;ll call &amp;lsquo;display view&amp;rsquo;, which displays an appropriate list of records - most likely this will show contain the same filters as the workflow view, so it shows the same records to the user.&lt;/li&gt;
+&lt;li&gt;In the display view, use the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/&#34;&gt;Chain Workflows&lt;/a&gt; functionality. Choose the workflow view.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When the user opens the display view, a workflow button will appear at the top of the screen. Pressing this will run the workflow.&lt;/p&gt;
+&lt;p&gt;On completion, the user will be shown the number of records that were affected by the workflow run e.g. created or updated, along with an option to see the any log messages, which can be useful to check for errors.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

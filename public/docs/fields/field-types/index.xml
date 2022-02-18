@@ -1,0 +1,94 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>agileBase docs – Field Types</title>
+    <link>https://docs.agilebase.co.uk/docs/fields/field-types/</link>
+    <description>Recent content in Field Types on agileBase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 24 Apr 2020 16:40:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/docs/fields/field-types/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Basic Field Types</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/</guid>
+      <description>
+        
+        
+        &lt;p&gt;These are the core types of fields by which data can be entered by users (or other sources such as the API or a workflow).&lt;/p&gt;
+&lt;h2 id=&#34;text&#34;&gt;Text&lt;/h2&gt;
+&lt;p&gt;Text fields are the most commonly used. Depending on &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/&#34;&gt;field options&lt;/a&gt;, text can be entered into a standard data entry control, a large box allowing rich formatting (bold, italic etc.), chosen from a dropdown of options or added as tags.&lt;/p&gt;
+&lt;h2 id=&#34;number&#34;&gt;Number&lt;/h2&gt;
+&lt;p&gt;When adding a number field, select a &lt;em&gt;precision&lt;/em&gt; from the dropdown. If &lt;code&gt;0&lt;/code&gt; is chosen, then it will be a whole number (integer) field. If any other value is chosen, it will be a decimal field. The decimal precision can be changed at any time in the field options, but a whole number can&amp;rsquo;t be converted to a decimal or vice versa via field options.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/#switching-a-field-from-one-type-to-another&#34;&gt;changing field types&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;date&#34;&gt;Date&lt;/h2&gt;
+&lt;p&gt;Represents a date or date/time, of any precision from year to second.&lt;/p&gt;
+&lt;h2 id=&#34;auto-generated-number-sequence&#34;&gt;Auto-generated number sequence&lt;/h2&gt;
+&lt;p&gt;The value of this field will be generated automatically, incremented by one each time a record is created.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Sequence numbers are never rolled back, even on the deletion of a record, so they can&amp;rsquo;t be used if a gapless assignment of numbers is required. To accomplish that, calculate a value with a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#set-from-previous-referenced-field&#34;&gt;cross-referenced field&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;relation&#34;&gt;Relation&lt;/h2&gt;
+&lt;p&gt;Adding a relation creates a link from one table to another. For example, a contacts table may contain a relation linking to an organisations table, to allow a person to belong to an organisation. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relational database concepts&lt;/a&gt; for further info.&lt;/p&gt;
+&lt;h2 id=&#34;checkbox&#34;&gt;Checkbox&lt;/h2&gt;
+&lt;p&gt;Represents a boolean (true or false) value.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Special Field Types</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/</guid>
+      <description>
+        
+        
+        &lt;p&gt;These special types of fields are useful beyond basic data entry, for creating rich application functionality and user experiences.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Changing Field Types</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/changing-field-types/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/changing-field-types/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Once a field has been created, the type can&amp;rsquo;t be changed with the flick of a switch. However there is an easy to follow process to accomplish this.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Rename the field to &lt;code&gt;[fieldname] old&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add a new field &lt;code&gt;[fieldname]&lt;/code&gt;. This means that any calculations that reference the field won&amp;rsquo;t have to be changed and won&amp;rsquo;t break due to mis-matching field names&lt;/li&gt;
+&lt;li&gt;Copy all values from one field to another. The easiest way is to use a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Try to delete the old field. If any views reference it, the delete will fail and a list of them will be shown&lt;/li&gt;
+&lt;li&gt;Edit all those views
+&lt;ul&gt;
+&lt;li&gt;remove the old field and add the new, to all fields, filters etc.&lt;/li&gt;
+&lt;li&gt;update all calculations that reference the field e.g. add a space to the end of all of them. That will refresh them to reference the new field rather than the old&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Finally, delete the old field&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Before starting, it will be worth ensuring that data won&amp;rsquo;t change during the process, for example by making the data read-only to all users, or requesting they don&amp;rsquo;t edit field values until finished.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

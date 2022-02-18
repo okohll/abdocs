@@ -1,0 +1,399 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>agileBase docs – Views</title>
+    <link>https://docs.agilebase.co.uk/docs/views/</link>
+    <description>Recent content in Views on agileBase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 24 Apr 2020 16:40:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/docs/views/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Creating a view</title>
+      <link>https://docs.agilebase.co.uk/docs/views/creating-a-view/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/creating-a-view/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In agileBase, a view &amp;lsquo;belongs to&amp;rsquo; a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;table&lt;/a&gt;. We&amp;rsquo;ll see what that means in more detail below, but for now, just choose a table to show data from to users. In examples on this section of the documentation we&amp;rsquo;ll assume we pick a contacts table.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ll also assume we already have some tables and some &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;tiles&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;to-create-a-view&#34;&gt;To create a view&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Expand the &lt;em&gt;Build Tables&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;
+&lt;li&gt;Click the table you want to create a view from&lt;/li&gt;
+&lt;li&gt;If necessary, click the pencil icon in the toolbar to edit the table and click the &lt;em&gt;manage&lt;/em&gt; tab at the bottom of the screen&lt;/li&gt;
+&lt;li&gt;Press the &amp;lsquo;Create new view&amp;rsquo; button at the top right. You&amp;rsquo;ll be prompted for a name.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There is an option &lt;strong&gt;Populate the view with fields from this table&lt;/strong&gt; next to the &lt;em&gt;Create new view&lt;/em&gt; button. This is a convenience feature, which is ticked by default. When it&amp;rsquo;s ticked, the view created will contain all fields from the table - you can then remove any you don&amp;rsquo;t need. When un-ticked, the view will start with no fields so you can add just those you wish.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;organising-into-a-navigation-structure&#34;&gt;Organising into a navigation structure&lt;/h2&gt;
+&lt;p&gt;On creating a view, its manage tab will appear. One of the first things it&amp;rsquo;s useful to do is put the field in a tile - use the &lt;em&gt;Tile&lt;/em&gt; dropdown option to do so.&lt;/p&gt;
+&lt;p&gt;Within a tile, the view can be added to a menu by editing the view name. Simply prefix the view name with a menu name and a dash. So for example, naming a view &lt;code&gt;contacts - all contacts&lt;/code&gt; will create a &amp;lsquo;contacts&amp;rsquo; menu containing the view &amp;lsquo;all contacts&amp;rsquo; visible to users.&lt;/p&gt;
+&lt;p&gt;Entering a view &lt;em&gt;Purpose&lt;/em&gt; in the space underneath the name will provide help text for the view. This will be displayed in the menu underneath the view name. Here&amp;rsquo;s a screenshot of a sample menu, each with purpose completed.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/menu.png&#34; alt=&#34;menu&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;using-a-view&#34;&gt;Using a view&lt;/h2&gt;
+&lt;p&gt;Once the view is created, how can someone use it? We won&amp;rsquo;t work through every possibility here as this documentation is for administrators rather than users, but here are some of the most important points in brief you may like to be aware of in order to support apps you build.&lt;/p&gt;
+&lt;h3 id=&#34;finding-data&#34;&gt;Finding data&lt;/h3&gt;
+&lt;p&gt;By default a search box appears under each column heading (the system can also be configured in a simplified way with a single search box to cover all fields).&lt;/p&gt;
+&lt;p&gt;The help icon (?) to the left of the search boxes details the types of search that can be performed. There are many, allowing for e.g. date-based searches, &lt;em&gt;and&lt;/em&gt; and &lt;em&gt;or&lt;/em&gt; searching, finding empty values etc. Helper features pop up for some field types, like date range pickers for example.&lt;/p&gt;
+&lt;h3 id=&#34;seeing-summary-stats&#34;&gt;Seeing summary stats&lt;/h3&gt;
+&lt;p&gt;Hovering over a column shows summary statistics, like a total and average (of all filtered records) for numeric fields, or a breakdown of dropdown/tags fields.&lt;/p&gt;
+&lt;h3 id=&#34;loading-a-record&#34;&gt;Loading a record&lt;/h3&gt;
+&lt;p&gt;Once a record has been found, click a row in the view to load that record for viewing or editing. The record loaded comes from the table that the view belongs to (as referenced at the start of this page), even though the view may contain fields from other tables as well.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also possible to use &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/options/#inline-editing&#34;&gt;inline editing&lt;/a&gt; to edit the contents of fields directly in the view.&lt;/p&gt;
+&lt;p&gt;Pressing the plus button to the left of the view contents will create a new record in the view&amp;rsquo;s parent table.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Joins</title>
+      <link>https://docs.agilebase.co.uk/docs/views/joins/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/joins/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Without any joins, you can only add &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/&#34;&gt;fields&lt;/a&gt;, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;filters&lt;/a&gt; and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/&#34;&gt;calculations&lt;/a&gt; (display data in other words), from a view&amp;rsquo;s parent table - the one it was created from. When joins are added to other tables or views, you can also bring in data from any table or view joined to.&lt;/p&gt;
+&lt;p&gt;For example, a view based on the contacts table could join to organisations (as long as there is a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation field&lt;/a&gt; from contacts to organisations). You could then add in organisation name to the view, as well as fields like contact name, phone number and email address.&lt;/p&gt;
+&lt;p&gt;Or for a more complex example, if you start with a view from a recipes table, you could potentially join down to ingredients, then on again to allergens of those ingredients, allowing you to work out with a calculation the complete list of allergens in any recipe.&lt;/p&gt;
+&lt;p&gt;Any number of joins to different tables or views can be added to a view.&lt;/p&gt;
+&lt;h2 id=&#34;adding-a-join&#34;&gt;Adding a join&lt;/h2&gt;
+&lt;p&gt;agileBase will automatically pick out the common tables you may wish to join to, by seeing which are related via &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation fields&lt;/a&gt;. Once you get used to the concepts, you may also wish sometimes to add joins manually to tables or views not automatically suggested. That will be covered at the end of this page.&lt;/p&gt;
+&lt;p&gt;To add a join&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the tiles interface, load the view you wish to edit (add a join to)&lt;/li&gt;
+&lt;li&gt;Click your user profile icon at the top right and select &lt;em&gt;admin - edit view&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Under &lt;em&gt;Joins&lt;/em&gt;, click the &lt;em&gt;Add Join&lt;/em&gt; button&lt;/li&gt;
+&lt;li&gt;A list of joins you can add will appear, each representing a link to a table with related data in it. Select one and the join will add&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;the-anatomy-of-a-join&#34;&gt;The anatomy of a join&lt;/h2&gt;
+&lt;p&gt;The added join will appear graphically above the &lt;em&gt;Add Join&lt;/em&gt; button. The lefthand &amp;lsquo;blob&amp;rsquo; or part represents the table being joined from, on the right is the one joined to. In the middle is a selector for the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/types-of-join/&#34;&gt;join type&lt;/a&gt;, which we will come to.&lt;/p&gt;
+&lt;p&gt;In each part, left or right, the name of the table being joined from (on the left) or to (on the right) is shown in bold.&lt;/p&gt;
+&lt;p&gt;Underneath the table name, the name of the field used to match records is shown. When an ID field is shown, this just refers to the internal ID agileBase uses automatically to make the match. It&amp;rsquo;s only of relevance if you&amp;rsquo;re creating advanced joins manually - see below, so can be ignored otherwise.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/example-join.png&#34; alt=&#34;example join&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In this example, we have a join from the &lt;strong&gt;contacts&lt;/strong&gt; table to &lt;strong&gt;companies&lt;/strong&gt;, to allow us to add company information into our view. The link was made based on the &lt;strong&gt;organisation&lt;/strong&gt; field in the contacts table, which lets a company be assigned to a contact.&lt;/p&gt;
+&lt;h2 id=&#34;upwards-and-downwards-joins&#34;&gt;Upwards and downwards joins&lt;/h2&gt;
+&lt;p&gt;You may notice when clicking &lt;em&gt;Add Join&lt;/em&gt; and looking at the list of potential joins available, that some of them show as joining &lt;strong&gt;up&lt;/strong&gt; and others &lt;strong&gt;down&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Joins up are from a &amp;lsquo;child&amp;rsquo; to a &amp;lsquo;parent&amp;rsquo;, i.e. you can think of a contact as belonging to a organisation, so a join from contacts to organisations is an upwards join. The other way round, it would be a downwards join.&lt;/p&gt;
+&lt;p&gt;What difference does this make? Well if you join down, then the view will contain one row for every child record, with repetitions in the parent data if the parent is the same. This is easier to see with a picture - here&amp;rsquo;s what a view from an organisations table looks like when it joins down to contacts - there are three contacts for the organisation TODO.&lt;/p&gt;
+&lt;p&gt;** TODO: screenshot **&lt;/p&gt;
+&lt;p&gt;However, joins down can be very useful when you want to aggregate child data, for example if you want to count the number of contacts each organisation has, you could add a join from organisations down to contacts, then add an &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/examples/#aggregate-calculations&#34;&gt;aggregate calculation&lt;/a&gt; to count the contacts. The system would then condense everything into one row per organisation, like so:&lt;/p&gt;
+&lt;p&gt;** TODO: screenshot **&lt;/p&gt;
+&lt;p&gt;So joins upwards are the more common case, but joins downward can be useful for particular purposes.&lt;/p&gt;
+&lt;h2 id=&#34;complex-joins&#34;&gt;Complex joins&lt;/h2&gt;
+&lt;p&gt;As above, agileBase automatically suggests joins to data that&amp;rsquo;s related to the current view&amp;rsquo;s parent table as well as any of the tables already joined to. It uses &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation fields&lt;/a&gt; to see what&amp;rsquo;s related.&lt;/p&gt;
+&lt;p&gt;However, sometimes you may want to join to a table or view that&amp;rsquo;s not automatically suggested. These examples may become increasingly &amp;lsquo;niche&amp;rsquo; but they are a useful reference for similar situations you may come across.&lt;/p&gt;
+&lt;h3 id=&#34;joining-to-a-view&#34;&gt;Joining to a view&lt;/h3&gt;
+&lt;p&gt;Joins to views aren&amp;rsquo;t automatically suggested, but you can still add them.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When might this be useful? Well one example is if you have a view containing a complex calculation and you wish to include the results of that calculation in lots of other views in different places.&lt;/p&gt;
+&lt;p&gt;Say you calculate various nutritional values of a recipe, such as the energy, salt and fats contents. You may wish to display that information in a few views for different people to query, as well as include them in product specification documents (which can be generated from a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow view&lt;/a&gt;) and perhaps product labels as well, using a view to send data to third party labelling equipment using an &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;API&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To add a join to a view:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the tiles interface, load the view you wish to edit (add a join to)&lt;/li&gt;
+&lt;li&gt;Click your user profile icon at the top right and select &lt;em&gt;admin - edit view&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Under &lt;em&gt;Joins&lt;/em&gt;, click the &lt;em&gt;Add Join&lt;/em&gt; button&lt;/li&gt;
+&lt;li&gt;Under &lt;em&gt;Advanced Add Join&lt;/em&gt;, select the left source and field, the right source and field, then press &lt;em&gt;Add&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The last step is the only one different to the normal join addition process, and the one that needs a little explanation&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;left&lt;/strong&gt; source is the table or view to join from. Often (and by default), this will be the view&amp;rsquo;s parent table&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;left field&lt;/strong&gt; is the view from the lefthand table to match on. Often (and by default) this is the table&amp;rsquo;s ID field. If you&amp;rsquo;re joining on a relation, choose the relation field&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;right&lt;/strong&gt; source is the table or view to join to&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;right field&lt;/strong&gt; is the field to match. This will usually be a table ID field. If you chose an ID field for the left field, then choose the same ID field in the target view. If the left field is a relation, choose the ID of the table it relates to on the right&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;example&#34;&gt;Example&lt;/h4&gt;
+&lt;p&gt;To take the example above of the nutritional calculations, assume we have a view called &amp;lsquo;nutritional values&amp;rsquo;, built from a &amp;lsquo;recipes&amp;rsquo; table. To include nutritional data in another view &amp;lsquo;recipe details&amp;rsquo;, also built from the recipes table, we would edit recipe details and add a join as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Left source: the recipes table&lt;/li&gt;
+&lt;li&gt;Left field: the ID:recipes field&lt;/li&gt;
+&lt;li&gt;Right source: the nutritional values view&lt;/li&gt;
+&lt;li&gt;Right field: the ID:recipes field&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;joining-on-a-field-other-than-the-id&#34;&gt;Joining on a field other than the ID&lt;/h3&gt;
+&lt;p&gt;On occasion, you may wish to join to another table on data that is present in this and the other.&lt;/p&gt;
+&lt;p&gt;For an example, imagine our business opens a series of restaurants - we have a table &amp;lsquo;restaurants&amp;rsquo; listing them. We may have a table of people who&amp;rsquo;ve signed up to our newsletter, called &amp;lsquo;newsletter signups&amp;rsquo;. Some of them may have provided a postcode.&lt;/p&gt;
+&lt;p&gt;To find a list of people in the same postcode areas as each restaurant (the first half of a postcode, e.g. BS1):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;in a view &amp;lsquo;restaurant locations&amp;rsquo;, built from the restaurants table, create a calculation &amp;lsquo;postcode area&amp;rsquo;, which picks out the first part of the restaurant&amp;rsquo;s postcode (see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/&#34;&gt;calculations&lt;/a&gt; for how to create a calculation)&lt;/li&gt;
+&lt;li&gt;in a view &amp;lsquo;all newsletter signups&amp;rsquo;, from the table newsletter signups, create a similar calculation, called &amp;lsquo;signup postcode area&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;from the view &amp;lsquo;all newsletter signups&amp;rsquo;, create a join with
+&lt;ul&gt;
+&lt;li&gt;left source: the &lt;strong&gt;all newsletter signups&lt;/strong&gt; view&lt;/li&gt;
+&lt;li&gt;left field: &lt;strong&gt;signup postcode area&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;right source: the &lt;strong&gt;restaurant locations&lt;/strong&gt; view&lt;/li&gt;
+&lt;li&gt;right field: &lt;strong&gt;postcode area&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You&amp;rsquo;ll then be able to add the name of the restaurant(s) in each signup&amp;rsquo;s area to the view. This could be to send them a special offer for their local restaurant for example.&lt;/p&gt;
+&lt;p&gt;As you can see, this also demonstrates creating a join on a calculation.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When you make a join on a field or calculation that isn&amp;rsquo;t an ID, be careful to ensure that the data is &lt;strong&gt;exactly the same&lt;/strong&gt; on both sides. In this example, the postcode fields on both sides must be the same case (e.g. uppercase). Otherwise they won&amp;rsquo;t be picked up in the match.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;joining-on-multiple-fields&#34;&gt;Joining on multiple fields&lt;/h3&gt;
+&lt;p&gt;Extending &amp;lsquo;creating a join on a calculation&amp;rsquo; from the above example, here we can use a calculation to create a &lt;strong&gt;composite field&lt;/strong&gt; to join on. This can be used when you want to join on a number of fields at once, not just one.&lt;/p&gt;
+&lt;p&gt;This can sometimes be useful in financial reporting. Our example here is creating a report totalling up sales by product by month. The twist is we also want to include product/month combinations in which there were no sales of a particular product for the month.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;d start by creating a view of all product/month combinations over the past 12 months. See the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/examples/#series-generation&#34;&gt;series generation&lt;/a&gt; example in the calculations section for how to do this.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;d then create a calculation &amp;lsquo;product month&amp;rsquo; which would merge the product code and the month name. A similar calculation would be created in a &amp;lsquo;sales&amp;rsquo; view, which shows individual sale lines, each with a product and month.&lt;/p&gt;
+&lt;p&gt;Finally, we&amp;rsquo;d join the two views together, the product/month combinations on the left, the sales view on the right, choosing the &amp;lsquo;product month&amp;rsquo; calculations from each as the fields to match on.&lt;/p&gt;
+&lt;p&gt;That would enable us to create a calculation totalling sales for each product/month, including zeros where there were no sales.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Calculations</title>
+      <link>https://docs.agilebase.co.uk/docs/views/calculations/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/calculations/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The ability to add calculations to a view opens up a world of possibilities. Within the confines of the SQL language, there&amp;rsquo;s no limit to what you can do, and those confines contain a pretty large space.&lt;/p&gt;
+&lt;p&gt;This is the only area of agileBase which requires some &amp;lsquo;semi-programming&amp;rsquo; to use - using snippets of SQL. SQL is a standard, widely popular and easy to learn language and there are lots of resources available on the internet.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ll start with some simple examples, then move on to some more advanced ones, but even then we won&amp;rsquo;t cover every capability so will point you to specific further resources and references.&lt;/p&gt;
+&lt;p&gt;But first, what are the mechanics of creating a calculation and adding it to a view?&lt;/p&gt;
+&lt;h2 id=&#34;adding-a-calculation&#34;&gt;Adding a calculation&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the tiles interface, open the view you want to edit&lt;/li&gt;
+&lt;li&gt;Click your user icon at the top right of the screen and select &lt;em&gt;admin - edit view&lt;/em&gt; from the menu. The view editing interface will open&lt;/li&gt;
+&lt;li&gt;Click the &lt;em&gt;Add Field&amp;hellip;&lt;/em&gt; button.&lt;/li&gt;
+&lt;li&gt;Under &lt;em&gt;Add Calculation&lt;/em&gt;, choose a type (text, number etc.), give it a name and press &lt;em&gt;Add&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The calculation editing screen panel now open to the right and you can type in your calculation.&lt;/p&gt;
+&lt;p&gt;Before doing that, we&amp;rsquo;ll quickly review the main areas of the calculation editing panel. There are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Name&lt;/strong&gt; - you can rename the calculation at any time&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Type&lt;/strong&gt; - as opposed to a standard field, you can change the type of a calculation at any time, e.g. from text to numeric or vice versa&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Calculation definition (SQL)&lt;/strong&gt; - the actual contents of the calculation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Comments or description&lt;/strong&gt; - a place for you to enter your own notes about the calculation, maybe as an explanation of how a particularly complex calculation works for example&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The other options available we will cover below.&lt;/p&gt;
+&lt;p&gt;Now we can get to the fun stuff and think of a calculation.&lt;/p&gt;
+&lt;h2 id=&#34;basic-examples&#34;&gt;Basic examples&lt;/h2&gt;
+&lt;p&gt;Firstly, we can of course do maths. So in the calculation definition, you can enter things like&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;1 + 2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;2 * 3&lt;/code&gt; (multiplication)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;10 / 2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;5 ^ 3&lt;/code&gt; (five to the power 3)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;referencing-fields&#34;&gt;Referencing fields&lt;/h2&gt;
+&lt;p&gt;Calculations normally need to act on existing data. We can included references to other fields, including other calculations, in the view by writing out the field name surrounded by curly brackets.&lt;/p&gt;
+&lt;p&gt;Some examples might be&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;{net price} * 0.2&lt;/code&gt; (calculate VAT amount)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;(({sale price} - {cost}) / {cost}) * 100&lt;/code&gt; (calculate the profit of an item as a percentage)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can reference not only other fields and calculations in the view, but also fields and calculations from any view or table joined to the view. The syntax for that is &lt;code&gt;{source name.field name}&lt;/code&gt;. Underneath the calculation editing space is a list of all fields that are available to be added, for reference. You can just copy and paste them into your calculation.&lt;/p&gt;
+&lt;h2 id=&#34;special-functions&#34;&gt;Special functions&lt;/h2&gt;
+&lt;p&gt;In the same way that you reference fields, you can also reference some special functions that output other information:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ab_tile()&lt;/code&gt; - the name of the tile the user has open (not necessarily the same as the tile the workflow view is in)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ab_view()&lt;/code&gt; - the name of the view the user has open (again, not the name of the workflow view that is running)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ab_userid()&lt;/code&gt; - the currently logged in user, in the format &amp;lsquo;Forename Surname (username)&amp;rsquo; i.e. the same format used for logging record creation metadata etc.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ab_userroles()&lt;/code&gt; - a comma separated list of rolenames the logged in user belongs to&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;colouring&#34;&gt;Colouring&lt;/h2&gt;
+&lt;p&gt;Text calculations can be coloured in the same way as text fields. Underneath the calculation definition and words, tick &lt;em&gt;colour words&lt;/em&gt;. If a calculation outputs one of the following words, they cell in the view be coloured.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/word-colours.png&#34; alt=&#34;Word Colours&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;best-practices&#34;&gt;Best practices&lt;/h2&gt;
+&lt;p&gt;A few tips for working with calculations.&lt;/p&gt;
+&lt;h3 id=&#34;centralise-calculations&#34;&gt;Centralise calculations&lt;/h3&gt;
+&lt;p&gt;If a particular calculation is used in a number of different views, then it&amp;rsquo;s a good idea to create it once in a &amp;lsquo;utility&amp;rsquo; view, then &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/#joining-to-a-view&#34;&gt;join to that view&lt;/a&gt; from any others that want to include it.&lt;/p&gt;
+&lt;p&gt;To take a simple example, a VAT calculation &lt;code&gt;{net price} * 0.2&lt;/code&gt; may be created in a &amp;lsquo;vat calculation&amp;rsquo; view. Then any view wanting to display the VAT can just join to it and include the field. If any changes to the calculation need to be made in future, they then only need to be done in one place. The benefits of this increase as calculations become more complex.&lt;/p&gt;
+&lt;h3 id=&#34;avoid-mixing-aggregates-and-non-aggregates&#34;&gt;Avoid mixing aggregates and non-aggregates&lt;/h3&gt;
+&lt;p&gt;Avoid mixing an &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/examples/#aggregate-calculations&#34;&gt;aggregate&lt;/a&gt; and non-aggrete parts in a single calculation. E.g. calculations of the form &lt;code&gt;sum({field 1}) + {field 2}&lt;/code&gt; should be avoided. You may find they cause errors.&lt;/p&gt;
+&lt;p&gt;The recommended way to create a calculation like this is to make the aggregate part in a separate view, then join to it, as described under &lt;a href=&#34;#centralise-calculations&#34;&gt;centralise calculations&lt;/a&gt; above.&lt;/p&gt;
+&lt;h3 id=&#34;splitting-complex-calculations-into-parts&#34;&gt;Splitting complex calculations into parts&lt;/h3&gt;
+&lt;p&gt;If a calculation is particularly complex, you can if you like split apart into multiple calculations, to improve readability. A final calculation can then reference the parts, like e.g.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;({really complex calculation 1} + {really complex calculation 2}) / {really complex calculation 3}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The rule not to mix aggregate parts and non-aggregate parts, as above, still holds.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Just be aware that if you update one of the composite parts, you then need to update any calculations that depend on it. The system won&amp;rsquo;t automatically update them to reference the new version. This is due to the way the database works under the hood - it doesn&amp;rsquo;t natively support referencing one calculation from another, so we add that layer in agileBase functionality.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;troubleshooting-errors&#34;&gt;Troubleshooting errors&lt;/h3&gt;
+&lt;p&gt;If there is an error in a view, it&amp;rsquo;s more than likely the culprit is a calculation, as they are one of the more complex facilities of agileBase and the only one where SQL can be entered by the user, as opposed to be automatically generated. You may see messages like &lt;strong&gt;view broken&lt;/strong&gt; or errors when you try to change a view e.g. move a field.&lt;/p&gt;
+&lt;p&gt;Errors can occur due to data changing. Division by zero errors are automatically handled by agileBase (null is returned), but other types of calculation can also cause errors in certain circumstances. For example if a calculation squares a field, if someone enters a really large number into that field in a particular record, then an overflow error may occur.&lt;/p&gt;
+&lt;p&gt;This can be resolved by temporarily filtering out the problem data, then the view can be edited to handle the issue, or perhaps a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/data-integrity-checks/&#34;&gt;data integrity check&lt;/a&gt; can be added to disallow problem data in future.&lt;/p&gt;
+&lt;p&gt;If there is a persistent issue, one way of dealing with it is to temporarily delete all the calculation definitions - you can copy and paste them somewhere else for record-keeping, perhaps into each calculation&amp;rsquo;s notes entry. Then once the view is working again, add the calculation definitions back one by one until you find the problem.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Filters</title>
+      <link>https://docs.agilebase.co.uk/docs/views/filters/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/filters/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Filters can be applied permanently to a view, allowing an administrator to specify the subset of records that should be displayed. This is often for convenience and to create more useful systems. For example, if you have a database of suppliers, you may want to create views showing those which are approved, those which aren&amp;rsquo;t, those which are local etc. Each view would have a different set of filters applied.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Remember people can apply additional &amp;lsquo;ad-hoc&amp;rsquo; or temporary filters to a view at any time using the filter boxes at the top of the screen, so it may not be necessary to create filtered views for every eventuality.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A filter can act on any field or calculation in the view, as well as on any in joined tables or views.&lt;/p&gt;
+&lt;p&gt;Multiple filters act like they have AND between them, i.e. they are applied additively. If you wish to apply a filters with OR between them, or if you wish to apply a filter on the reult of the comparison of fields, then simply create the relevant &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/&#34;&gt;calculation&lt;/a&gt;. For example, if you added two filters to a suppliers view&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;status equals approved&lt;/strong&gt; and &lt;strong&gt;status equals pending&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;then you would get no records showing - a status can&amp;rsquo;t be both one thing and another. However if you created a boolean calculation &amp;lsquo;pending or approved&amp;rsquo;, with definition&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;{status} like &#39;approved&#39; or {status} like &#39;pending&#39;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;you could then add a filter on that calculation&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;pending or approved equals true&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;adding-a-filter&#34;&gt;Adding a filter&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the tiles interface, load the view you wish to edit&lt;/li&gt;
+&lt;li&gt;Click your user profile icon at the top right and select &lt;em&gt;admin - edit view&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Under &lt;em&gt;Filters&lt;/em&gt;, click the &lt;em&gt;Add Filter&lt;/em&gt; button&lt;/li&gt;
+&lt;li&gt;Choose relevant options and press &lt;em&gt;Add&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There are 26 types of filter to choose from, from the simple &amp;lsquo;equals&amp;rsquo; and &amp;lsquo;not equal to&amp;rsquo;, to more complex pattern matching using &lt;a href=&#34;https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP&#34;&gt;regular expressions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Some filters apply to multiple data types, others only to specific types. For example, &amp;lsquo;newer than X days ago&amp;rsquo; only applies to date fields.&lt;/p&gt;
+&lt;p&gt;Once you&amp;rsquo;ve added a filter, you&amp;rsquo;ll be able to type in a description for it. If no description is entered, the system will automatically generate one, which you&amp;rsquo;ll be able to see.&lt;/p&gt;
+&lt;p&gt;This description is shown to users as help in particular circumstances, e.g. when the view is used as a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chaser&lt;/a&gt;, so it&amp;rsquo;s a good idea to check it makes sense.&lt;/p&gt;
+&lt;h3 id=&#34;including-blank-values&#34;&gt;Including blank values&lt;/h3&gt;
+&lt;p&gt;Once a filter has been created, when you hover over it you&amp;rsquo;ll see an option to tick &amp;lsquo;or is blank&amp;rsquo;. This is useful to ensure blank values aren&amp;rsquo;t excluded by your filter, which they typically would be otherwise.&lt;/p&gt;
+&lt;p&gt;For example, imaging you&amp;rsquo;re setting up an &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;email notification workflow&lt;/a&gt; to send a notification to people once a week of any outstanding tasks. You&amp;rsquo;d likely need two filters, the first to find any tasks with an &amp;lsquo;outstanding&amp;rsquo; status and the second to only include tasks for which no notifications have been sent within the last 7 days.&lt;/p&gt;
+&lt;p&gt;For that second filter, you would set it up as&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&#39;last notified&#39; is more than 7 days ago
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;However, as it stands, that would exclude any tasks which have &lt;strong&gt;never&lt;/strong&gt; had a notification sent for them, i.e. where the last notified field is blank.&lt;/p&gt;
+&lt;p&gt;To include those, just tick &amp;lsquo;or is blank&amp;rsquo; after creating the filter.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Special Uses</title>
+      <link>https://docs.agilebase.co.uk/docs/views/special-uses/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The primary purpose of a view is to show data to users. To let them see, search and report on it, or find individual records to edit.&lt;/p&gt;
+&lt;p&gt;However, some fundamental aspects of a view make it a very useful feature that can power many core capabilities of agileBase, such as &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chasers&lt;/a&gt;, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;APIs&lt;/a&gt;, as well as being useful to administrators in many more minor ways.&lt;/p&gt;
+&lt;p&gt;A view being a filtered list of records, it can be used to specify those records to act on, i.e. those representing emails to send, workflow actions or data to send to a third party system with an API.&lt;/p&gt;
+&lt;p&gt;A view is commonly created for the task you wish to accomplish, placing it in a System tile to hide it from users. Then it can be turned to the required purpose in any of the following ways.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Options</title>
+      <link>https://docs.agilebase.co.uk/docs/views/options/</link>
+      <pubDate>Thu, 28 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/options/</guid>
+      <description>
+        
+        
+        &lt;p&gt;These options can be seen and edited as follows&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the tiles interface, open a view&lt;/li&gt;
+&lt;li&gt;Click your user icon at the top right and select &lt;em&gt;admin - edit view&lt;/em&gt; from the menu&lt;/li&gt;
+&lt;li&gt;Some options are visible under &lt;em&gt;advanced options&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;group-by-all-non-aggregate-fields&#34;&gt;Group by all non-aggregate fields&lt;/h2&gt;
+&lt;p&gt;Affects how some calculation aggregates worked - documented in &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/examples/#aggregates-of-child-rows&#34;&gt;calculations -&amp;gt; aggregates of child rows&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;show-charts-by-default&#34;&gt;Show charts by default&lt;/h2&gt;
+&lt;p&gt;When a user opens this view, immediately show charts rather than data rows&lt;/p&gt;
+&lt;h2 id=&#34;allow-exports&#34;&gt;Allow exports&lt;/h2&gt;
+&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/exporting/&#34;&gt;Security And Compliance -&amp;gt; Exporting&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;inline-editing&#34;&gt;Inline editing&lt;/h2&gt;
+&lt;p&gt;The goal of this feature is to allow rapid and efficient editing of data when in the list view so there’s no need to drill down into a record to edit and back to the list again after each.&lt;/p&gt;
+&lt;p&gt;Some examples of where this might be useful would be when working through a list of milestones to update statuses, or when in a list of stock items to update quantities.&lt;/p&gt;
+&lt;p&gt;In inline editing mode, the list view changes from something like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/inline-editing-off.png&#34; alt=&#34;inline editing off&#34;&gt;&lt;/p&gt;
+&lt;p&gt;into this editable version:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/inline-editing-on.png&#34; alt=&#34;inline editing on&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Certain fields will be editable&lt;/strong&gt;, but others will be read-only. Fields that can be editable are all those which are from the view’s parent table, except for&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;large text fields: we want the UI to remain compact and it’s not usually required to edit large amounts of text in inline editing scenarios&lt;/li&gt;
+&lt;li&gt;calculations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The inline editing option has three states:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Disallow: the view can’t be inline edited&lt;/li&gt;
+&lt;li&gt;Allow but turn off by default&lt;/li&gt;
+&lt;li&gt;On by default&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;style-layout-options&#34;&gt;Style (layout options)&lt;/h2&gt;
+&lt;p&gt;The visual style affects whether the view is shown as&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;spreadsheet format - standard output in rows (the default option)&lt;/li&gt;
+&lt;li&gt;headings and rows&lt;/li&gt;
+&lt;li&gt;long headings and rows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When &lt;strong&gt;headings and rows&lt;/strong&gt; is selected, the first field in the view will be used as a heading for the rows below. A new heading appears every time the field value changes.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/headings.png&#34; alt=&#34;headings and rows&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;record-limit&#34;&gt;Record limit&lt;/h2&gt;
+&lt;p&gt;Only return the top N rows of data from the view, even if there are more available. This is equivalent to adding a &lt;a href=&#34;https://www.postgresql.org/docs/current/sql-select.html#SQL-LIMIT&#34;&gt;LIMIT clause&lt;/a&gt; in SQL.&lt;/p&gt;
+&lt;h2 id=&#34;distinct-fields&#34;&gt;Distinct fields&lt;/h2&gt;
+&lt;p&gt;If many rows in the view have the same values for a particular field, then reduce the number shown to only one row for every distinct (unique) value of that field. The top row is returned.&lt;/p&gt;
+&lt;p&gt;Multiple distinct fields can be added, in which case the rows reduce based on their values unique in combination.&lt;/p&gt;
+&lt;p&gt;For example, imagine you have a view showing countries, cities and populations, sorted by population descending, with data like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Japan, Tokyo, 13,515,271&lt;/li&gt;
+&lt;li&gt;Japan, Nagoya, 2,283,289&lt;/li&gt;
+&lt;li&gt;UK, London, 8,908,081&lt;/li&gt;
+&lt;li&gt;UK, Bristol, 463,400&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Adding a distinct field on the country would reduce this to the most populated city in each country, i.e.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Japan, Tokyo, 13,515,271&lt;/li&gt;
+&lt;li&gt;UK, London, 8,908,081&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;DISTINCT is an &lt;a href=&#34;https://www.postgresql.org/docs/current/sql-select.html#SQL-DISTINCT&#34;&gt;SQL feature&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;amalgamate-with&#34;&gt;Amalgamate with&lt;/h2&gt;
+&lt;p&gt;If you have two views with fields of the same type in the same order, then you can merge them together into one. The field names don&amp;rsquo;t necessarily need to be the same.&lt;/p&gt;
+&lt;p&gt;This is done using an &lt;a href=&#34;https://www.sqltutorial.org/sql-union/&#34;&gt;SQL UNION&lt;/a&gt; clause.&lt;/p&gt;
+&lt;h2 id=&#34;cache-view-rows&#34;&gt;Cache view rows&lt;/h2&gt;
+&lt;p&gt;Caching can speed up views. It doesn&amp;rsquo;t need to be used often a the underlying database PostgreSQL is great at dealing with large data problems, but when it is necessary it can significantly speed up access, allowing faster loading and searching. Caching works well when&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a view is complex and slow to load&lt;/li&gt;
+&lt;li&gt;it doesn&amp;rsquo;t contain a massive number of rows - in this case the issue is likely to be the raw volume of data, rather than the complexity of calculations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If both those criteria are met, then turning on caching can significantly speed a view up, allowing faster loading and searching. There are three options&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;no caching (the default)&lt;/li&gt;
+&lt;li&gt;cache view, update on record save
+&lt;ul&gt;
+&lt;li&gt;this means when a view is opened or searched, if there have been changes to data in any tables used by the view since it was last opened, then the cache will be updated&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;cache view, update once a day
+&lt;ul&gt;
+&lt;li&gt;useful for views that don&amp;rsquo;t need to be updated often, e.g. monthly reporting figures&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If a view is cached and other views reference it, those other views will also speed up too.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Caching is implemented using &lt;a href=&#34;https://en.wikipedia.org/wiki/Materialized_view&#34;&gt;materialized views&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you find a view is slow, feel free to &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; for support before trying options like caching, there are many other targetted options we can look at first, such as adding indexes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,393 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>agileBase docs – Field Options</title>
+    <link>https://docs.agilebase.co.uk/docs/fields/field-options/</link>
+    <description>Recent content in Field Options on agileBase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 24 Apr 2020 16:40:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/docs/fields/field-options/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Common Options</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-options/common-options/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/common-options/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;capitalise-field-name&#34;&gt;Capitalise field name&lt;/h2&gt;
+&lt;p&gt;By default agileBase displays field names in Title Case. Un-ticking this option disables that, which can be useful for special cases like e.g. &amp;lsquo;pH&amp;rsquo; or &amp;lsquo;Length (m)&amp;rsquo;, which would otherwise show as &amp;lsquo;PH&amp;rsquo; and &amp;lsquo;Length (M)&amp;rsquo;.&lt;/p&gt;
+&lt;h2 id=&#34;icon&#34;&gt;Icon&lt;/h2&gt;
+&lt;p&gt;Rather than displaying a field name, show an icon, chosen from &lt;a href=&#34;https://fontawesome.com/icons&#34;&gt;https://fontawesome.com/icons&lt;/a&gt;. For example, to show a phone icon for a phone number field, you could enter &lt;code&gt;phone&lt;/code&gt;, for an email field &lt;code&gt;envelope&lt;/code&gt; or a twitter handle &lt;code&gt;twitter&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;show-if-record-in-view&#34;&gt;Show if record in view&lt;/h2&gt;
+&lt;p&gt;Allow a field to be hidden or shown based on conditions. The conditions are specified by creating a view and adding filters. That view is then selected in this field option.&lt;/p&gt;
+&lt;p&gt;If a record appears in the view, the field will be visible, otherwise it won&amp;rsquo;t display to users.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As the conditions are created in a view, this mechanism is really powerful. You can create simple or very complex critera, including all of the filter options in a view, for example basing a filter on a calculation and combining multiple filters.&lt;/p&gt;
+&lt;p&gt;So you could make a field appear only when a particular point is reached in a process, or a status is changed elsewhere in a form, or perhaps it should only be visible to people who are &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/&#34;&gt;members of a certain role&lt;/a&gt;. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;view filters&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Two special options are available&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;show always - the default state&lt;/li&gt;
+&lt;li&gt;show never - useful for hiding fields used for internal purposes, e.g. which help the internal workings of a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;lock-when-value-set&#34;&gt;Lock when value set&lt;/h2&gt;
+&lt;p&gt;If the field is blank, allow a value to be entered, however as soon as it has a value, lock to prevent further editing. The user can manually unlock, but will be prompted for a reason for doing so, which will be logged against the field as a comment.&lt;/p&gt;
+&lt;p&gt;This can be used to prevent accidental editing of important fields which should not usually be changed, for example a product&amp;rsquo;s stock code.&lt;/p&gt;
+&lt;h2 id=&#34;unlock-if-record-in-view&#34;&gt;Unlock if record in view&lt;/h2&gt;
+&lt;p&gt;If &lt;strong&gt;Lock when value set&lt;/strong&gt; is ticked, unlock on certain criteria. Works the same way as &lt;a href=&#34;#show-if-record-in-view&#34;&gt;Show if record in view&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;required&#34;&gt;Required&lt;/h2&gt;
+&lt;p&gt;If ticked, prompt the user for a value when they try to leave a record without one. Note we can&amp;rsquo;t force the value, as the user could refresh the browser as a workaround.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For dropdown fields with the default value set to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/#lists-of-users&#34;&gt;Lists of users&lt;/a&gt;, this has the special effect of defaulting the field to the ID of the currently logged in user.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;prominent&#34;&gt;Prominent&lt;/h2&gt;
+&lt;p&gt;Prominently highlight the field on the screen, e.g. if it&amp;rsquo;s one that is important to fill out, without actually requiring a value to be supplied.&lt;/p&gt;
+&lt;h2 id=&#34;set-from-previous-referenced-field&#34;&gt;Set from previous referenced field&lt;/h2&gt;
+&lt;p&gt;Provides a way to calculate a default option for a field. Tick this option and place a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced field&lt;/a&gt; just before this field. The value of this field will be set from whatever value the referenced field outputs.&lt;/p&gt;
+&lt;p&gt;If the referenced field&amp;rsquo;s view has more than one field, the last one will be used, or if any have the same name as this field then that one will be.&lt;/p&gt;
+&lt;p&gt;To have a value set only at a certain point in a process, this option can be combined with the &lt;a href=&#34;#show-if-record-in-view&#34;&gt;Show if record in view&lt;/a&gt; option. When the field becomes visible, the value will be set.&lt;/p&gt;
+&lt;p&gt;Setting the value of a relation field is a special case because you need to set both the actual relation value, which is the numeric ID of the record you wish to relate to, and the display value i.e. what the user should see. The way to do this is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add a field or calculation with the same name as the display field for the relation. For example in a contact record, if you have a relation field &amp;lsquo;Company&amp;rsquo; with its display field set to &amp;lsquo;Company Name&amp;rsquo;, then you could create a calculation called Company Name and set it to output the name of the relevant company.&lt;/li&gt;
+&lt;li&gt;Add the internal row ID for the company to the referenced field&amp;rsquo;s view. This should be the &lt;strong&gt;last&lt;/strong&gt; field in the view&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note that another way of setting a value on record creation is to use a workflow set to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/#when-a-records-created-run-this-workflow &#34;&gt;run on record creation&lt;/a&gt;. If you need to set the value on record creation, using a workflow is the best way - it will seem slightly quicker to the user. However if you need to be able to wait a while before automatically setting the value of a field, perhaps until another field has been filled in, then using this referenced field option is the way to go.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;unique&#34;&gt;Unique&lt;/h2&gt;
+&lt;p&gt;Disallow any duplicate values from being entered. No records in the table can have the same value as each other.&lt;/p&gt;
+&lt;h2 id=&#34;change-causes-record-refresh&#34;&gt;Change causes record refresh&lt;/h2&gt;
+&lt;p&gt;Through the use of some field options like &lt;a href=&#34;#show-if-record-in-view&#34;&gt;Show if record in view&lt;/a&gt; above, the screen can change based on what&amp;rsquo;s entered into a form. This option can work as a switch to refresh the configuration of the screen if it does change as someone enters new data.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For example, if there is a table to store sales opportunities, one field may be the status. If the status changes to &lt;code&gt;won&lt;/code&gt; or &lt;code&gt;lost&lt;/code&gt;, then you may wish to show some extra fields like &amp;lsquo;date won&amp;rsquo; or &amp;lsquo;reason why lost&amp;rsquo; for example. To allow this, tick the &amp;lsquo;change causes record refresh&amp;rsquo; option on the status field. Then whenever the status changes, these fields will automatically appear if relevant.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Text Field Options</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;colour-words&#34;&gt;Colour words&lt;/h2&gt;
+&lt;p&gt;When this field is included in a view, highlight it with a colour if the content is one of a number of words. The most up-to-date values to be highlighted are shown in the administrator interface, but as of the latest update of this page, they are&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/word-colours.png&#34; alt=&#34;Word Colours&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Text calculations can also be coloured based on the same words - see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/#colouring&#34;&gt;calculation options&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;use-dropdown&#34;&gt;Use dropdown&lt;/h2&gt;
+&lt;p&gt;Rather than a simple text entry field, display a dropdown of choices from which one can be selected. If there are only a few values, then the user interface may display options in &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio&#34;&gt;radio button&lt;/a&gt; style, but the behaviour is exactly the same.&lt;/p&gt;
+&lt;p&gt;Options can be provided with the &lt;a href=&#34;#default-value&#34;&gt;default value&lt;/a&gt; setting as above. If no options are specified, then the list of options will be automatically generated from the set of unique values &lt;strong&gt;already entered&lt;/strong&gt; into records. In this way, a set of values will gradually grow as people enter new data.&lt;/p&gt;
+&lt;p&gt;See also the &lt;a href=&#34;#use-only-given-values&#34;&gt;Use only given values&lt;/a&gt; option below to enforce the use of provided values only.&lt;/p&gt;
+&lt;h2 id=&#34;use-tags&#34;&gt;Use tags&lt;/h2&gt;
+&lt;p&gt;Similar to Use dropdown, but rather than only letting the user select one value, multiple values can be chosen at once.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;An example use may be selecting countries of origin for an ingredient, where it may come from different countries (perhaps via different suppliers).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The list of available options is specified in exactly the same way as for dropdowns above.&lt;/p&gt;
+&lt;h2 id=&#34;use-only-given-values&#34;&gt;Use only given values&lt;/h2&gt;
+&lt;p&gt;If a dropdown or tags list is used as above, ticking this option enforces the use of one of the provided values.&lt;/p&gt;
+&lt;p&gt;If it&amp;rsquo;s un-ticked, then an &amp;lsquo;add new entry&amp;rsquo; option will be available for users to manually add values which aren&amp;rsquo;t yet in the list. Added values will be visible to all.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In some circumstances, it can be useful to leave this un-ticked and let options grow organically, until a certain point. Administrators can then rationalise and &amp;lsquo;hard-code&amp;rsquo; values from the most commonly entered. In other situations, it may be best to specify available options right from the start.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;default-value&#34;&gt;Default value&lt;/h2&gt;
+&lt;p&gt;For basic text fields, this simply provides a default value, which the field will have when a record&amp;rsquo;s created. If not provided, the field will be blank.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Field defaults can also be calculated, with a simple or arbitratily complex calculation. To do that, instead use the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#set-from-previous-referenced-field&#34;&gt;Set from previous referenced field&lt;/a&gt; option.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;specifying-dropdown-lists-and-tags-fields&#34;&gt;Specifying dropdown lists and tags fields&lt;/h3&gt;
+&lt;p&gt;If either &lt;a href=&#34;#use-dropdown&#34;&gt;Use dropdown&lt;/a&gt; or &lt;a href=&#34;#use-tags&#34;&gt;Use tags&lt;/a&gt; is selected, the default value option provides a &lt;strong&gt;list&lt;/strong&gt; of options with which to populate the dropdown, or a set of tags to choose from. Enter each option here separated by commas.&lt;/p&gt;
+&lt;p&gt;If the list &lt;strong&gt;starts with&lt;/strong&gt; a comma, that means the field should be blank by default when a record is created. If not, then the default will be the first value in the comma separated list.&lt;/p&gt;
+&lt;p&gt;In the dropdown/tags list, the options will be ordered alphabetically, not shown in the order they&amp;rsquo;re entered in. If you wish to give the values a particular order, you can prefix them with a number or letter followed by a closing bracket like so: &lt;code&gt;1) cold, 2) warm, 3) hot&lt;/code&gt;. The number prefixes won&amp;rsquo;t show to the user.&lt;/p&gt;
+&lt;h4 id=&#34;lists-of-users&#34;&gt;Lists of users&lt;/h4&gt;
+&lt;p&gt;Also for dropdown lists and tags fields, agileBase can generate dropdown contents based on a list of users and/or roles in the system. To do that, select &lt;code&gt;users&lt;/code&gt; or &lt;code&gt;users and roles&lt;/code&gt; from the &amp;lsquo;fill with&amp;rsquo; selector just below the default value input. The standard user ID format throughout the system is used, &amp;lsquo;Forename Surname (username)&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;Only users/roles which have privileges to view the data in this particular table will be shown in the list. That can keep things manageable if a system has hundreds or more users.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;An example use would be assigning an account manager to a customer, selecting from a list of staff members (who are users).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When a user is selected in this way, more options for use are opened up, such as automatically emailing the selected person when there&amp;rsquo;s a status change or something is overdue for example. agileBase can look up the user&amp;rsquo;s email address to accomplish this, See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;email workflows&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;When using &amp;lsquo;fill with users&amp;rsquo;, the list of users to appear in the dropdown can further be narrowed down by role if required. To do that, enter the text&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;_users|role1,role2,role3&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;i.e. &lt;code&gt;_users&lt;/code&gt; followed by a vertical bar and then a comma separated list of role names. Only users which appear in one or more of the named roles will appear.&lt;/p&gt;
+&lt;p&gt;If you want a field to auto-populate with the ID of the currently logged in user, enable both this option and the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#required&#34;&gt;required&lt;/a&gt; field option.&lt;/p&gt;
+&lt;h2 id=&#34;text-case&#34;&gt;Text case&lt;/h2&gt;
+&lt;p&gt;Convert people&amp;rsquo;s input into the required case as it&amp;rsquo;s entered - choose from&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;lowercase&lt;/li&gt;
+&lt;li&gt;UPPERCASE&lt;/li&gt;
+&lt;li&gt;Title Case&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;size&#34;&gt;Size&lt;/h2&gt;
+&lt;p&gt;If &amp;lsquo;short&amp;rsquo; is chosen, a standard single line input box is displayed.&lt;/p&gt;
+&lt;p&gt;If &amp;lsquo;large&amp;rsquo; is chosen, a multi-line text entry box is shown. This option also lets people format the text entered, such as using &lt;strong&gt;bold&lt;/strong&gt;, &lt;em&gt;italics&lt;/em&gt; or bullet points. For data security reasons, only certain formatting is allowed.&lt;/p&gt;
+&lt;h2 id=&#34;use-as-record-title&#34;&gt;Use as record title&lt;/h2&gt;
+&lt;p&gt;The user interface has the ability to highlight the importance of certain fields by showing their contents in large font at the top of the record data. For example, a Company Name field may be the record title for an organisation record.&lt;/p&gt;
+&lt;p&gt;This option can be selected for multiple fields in a table. In that case, the first field will be the main title, others will appear as subtitles.&lt;/p&gt;
+&lt;h3 id=&#34;preventing-duplicates&#34;&gt;Preventing duplicates&lt;/h3&gt;
+&lt;p&gt;Enabling the &amp;lsquo;use as record title&amp;rsquo; option also has the effect of enabling duplicate detection. The system will detect when a value is entered that is close to an existing value in the system. Any &amp;lsquo;close&amp;rsquo; values that are found are displayed as links to the relevant records.&lt;/p&gt;
+&lt;p&gt;This can be useful when e.g. entering company names. Although a field can be marked &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#unique&#34;&gt;unique&lt;/a&gt; to prevent exact duplicates, that won&amp;rsquo;t pick up near matches, which this duplicate detection will. For example, &amp;lsquo;The Universoty Of Bristol&amp;rsquo; and &amp;lsquo;University Of Bristol (UOB)&amp;rsquo; will be detected as close matches, or &amp;lsquo;agileBase&amp;rsquo; and &amp;lsquo;agileBase Ltd&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;The system uses &lt;a href=&#34;https://www.postgresql.org/docs/current/pgtrgm.html&#34;&gt;trigram matching&lt;/a&gt; to detect similar values.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Relation Field Options</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-options/relation-field-options/</link>
+      <pubDate>Tue, 12 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/relation-field-options/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Relations between tables are the &amp;lsquo;glue&amp;rsquo; that holds together an application build using agileBase. If you&amp;rsquo;d like to learn more about this fundamental concept, please check out the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relational database concepts&lt;/a&gt; page.&lt;/p&gt;
+&lt;p&gt;Some of the options for a relation field determine the nature of the links between tables, which can have a great effect on how an app works, so it&amp;rsquo;s very useful to know about them.&lt;/p&gt;
+&lt;h2 id=&#34;one-to-one-only&#34;&gt;One to one only&lt;/h2&gt;
+&lt;p&gt;By default, a relation is a &amp;lsquo;many to one&amp;rsquo;. For example if a relation field in a contacts table links to an organisation, that organisation can have many contacts linked. If an ingredient links to a recipe, that recipe can have many ingredients. One customer can have many orders - examples are numerous.&lt;/p&gt;
+&lt;p&gt;If a relation is marked as &amp;lsquo;one to one only&amp;rsquo;, then that behaviour is changed so that only one &amp;lsquo;child&amp;rsquo; record of this type is allowed for a particular &amp;lsquo;parent&amp;rsquo; record.&lt;/p&gt;
+&lt;p&gt;When is this useful?&lt;/p&gt;
+&lt;p&gt;Take the case of an ingredient record. You may want to record nutritional information, chemical composition and allergens for example. With each type of date stored in a separate table, linked by a one-to-one relation, these can be separated out on the screen into &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/&#34;&gt;tabs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The advantages of doing that, as opposed to just adding all the fields into different blocks in a single table are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The user interface becomes clearer to navigate, especially if you have dozens of fields in each section&lt;/li&gt;
+&lt;li&gt;Different privileges can easily be assigned to different tables. For example, you may want only certain people to be able to update allergen information, with others able to view but not edit the data.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;do-not-use-session-record-for-new-items&#34;&gt;Do not use session record for new items&lt;/h2&gt;
+&lt;p&gt;This is ticked by default. When un-ticked, this means that when you add a new record, the relation field will automatically be populated with a link to the last &amp;lsquo;parent&amp;rsquo; item you were looking at. For example, if you edit an organisation, then move away somewhere else in the system, finally load a contacts screen and create a new contact, that contact will link to the organisation you were editing (assuming there&amp;rsquo;s a relation field linking contacts and organisations).&lt;/p&gt;
+&lt;h2 id=&#34;on-parent-delete&#34;&gt;On parent delete&lt;/h2&gt;
+&lt;p&gt;This is an important option for controlling what happens when a parent record is deleted.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s assume we have a table of customers and one of invoices, each invoice linked to a customer by a relation field in the invoices table, so the invoice is a &amp;lsquo;child record&amp;rsquo; of the customer. What would happen if a customer is deleted? This setting controls that and there are three options.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;disallow deletion (the default)
+&lt;ul&gt;
+&lt;li&gt;the user is prevented from deleting the parent record. They have to manually delete the child record before being allowed to delete the parent.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is the safest option and the default&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;cascade delete
+&lt;ul&gt;
+&lt;li&gt;the user is allowed to delete the parent and when the parent is deleted, &lt;strong&gt;child records are deleted as well&lt;/strong&gt;. The user is still shown a prompt asking if they&amp;rsquo;re sure they want to do this.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;make orphan
+&lt;ul&gt;
+&lt;li&gt;when the parent is deleted, the child record is retained, but un-linked from the parent. In our invoice/customer example, we would be left with an invoice not linked to any particular customer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note that this option is set on the &lt;em&gt;child&lt;/em&gt; relation field, not on the parent side. Therefore you can have different rules for different child tables. A good practice is to set this to &lt;em&gt;disallow deletion&lt;/em&gt; for any important information in the system, that you wouldn&amp;rsquo;t want to be lost (like invoices) and for other tables choose one of the other options appropriately.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;value-to-display&#34;&gt;Value to display&lt;/h2&gt;
+&lt;p&gt;The field from the parent table that easily identified the record, to show in the child editing form. For example, for the &amp;lsquo;company&amp;rsquo; relation field in a contacts table, you might select &amp;lsquo;company name&amp;rsquo;.&lt;/p&gt;
+&lt;h2 id=&#34;secondary-value-to-display&#34;&gt;Secondary value to display&lt;/h2&gt;
+&lt;p&gt;For additional context, a secondary identifying field from the parent record can be chosen. For example, as well as the name of a company, you may want to show the city or country they&amp;rsquo;re in.&lt;/p&gt;
+&lt;p&gt;This field doesn&amp;rsquo;t have to be directly from the parent table, it can also be any field in the &lt;strong&gt;view to use&lt;/strong&gt; selected (the below option), including a calculation, which opens up more display possibilities, e.g. concatenating the values from multiple fields together.&lt;/p&gt;
+&lt;h2 id=&#34;view-to-use&#34;&gt;View to use&lt;/h2&gt;
+&lt;p&gt;When the user is selecting a parent record to link to a particular child, they will be able to use this view to show a list of parent records to choose from. Therefore the view must be created from the parent table.&lt;/p&gt;
+&lt;p&gt;They will be able to filter on any field in the view to search for a record.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Using pre-set &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;view filters&lt;/a&gt; to narrow down the list of relevant records can be helpful, e.g. if only records of a certain category are required.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;use-only-given-values&#34;&gt;Use only given values&lt;/h2&gt;
+&lt;p&gt;When this is un-ticked, allow the user to create a new parent record directly from the child record&amp;rsquo;s editing screen. Relation fields allow you to type the name of a parent record to find and select one. If no matches are found, a prompt will appear allowing the user to create one.&lt;/p&gt;
+&lt;h2 id=&#34;show-navigation-link&#34;&gt;Show navigation link&lt;/h2&gt;
+&lt;p&gt;When this is ticked (as it is by default), allow the user to navigate from a record containing this field to the one that the relation links to. For example, if a contacts table contains a relation to the organisations table, then when a user views a contact, allow them to navigate to the related organisation by clicking a navigation icon next to the field.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Date Field Options</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-options/date-field-options/</link>
+      <pubDate>Tue, 12 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/date-field-options/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;accuracy&#34;&gt;Accuracy&lt;/h2&gt;
+&lt;p&gt;Whether to record a date as just a year, year and month, year month and day, or with a time: hours, hh:mm, hh:mm:ss.&lt;/p&gt;
+&lt;h2 id=&#34;use-current-time-for-new-records&#34;&gt;Use current time for new records&lt;/h2&gt;
+&lt;p&gt;If ticked, set the value of this field to the current time when a record is created&lt;/p&gt;
+&lt;h2 id=&#34;date-format&#34;&gt;Date format&lt;/h2&gt;
+&lt;p&gt;The format to display in views. Note this doesn&amp;rsquo;t affect data entry screens, which use the browser&amp;rsquo;s standard date picker, which may customise to the user&amp;rsquo;s region.&lt;/p&gt;
+&lt;h2 id=&#34;min-years-age--max-years-age&#34;&gt;Min. years age / Max. years age&lt;/h2&gt;
+&lt;p&gt;These two options specify the valid range of allowable dates for the field. By default values up to 10 years in the future or 100 years in the past are allowed.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Other types of date check can be added using the &lt;a href=&#34;&#34;&gt;Advanced field checks&lt;/a&gt; options for a table&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Checkbox Field Options</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-options/checkbox-field-options/</link>
+      <pubDate>Tue, 12 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/checkbox-field-options/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;default-value&#34;&gt;Default value&lt;/h2&gt;
+&lt;p&gt;Simply whether the checkbox should default to ticked (true) or un-ticked (false) for new records.&lt;/p&gt;
+&lt;h2 id=&#34;dont-set-last-modified&#34;&gt;Don&amp;rsquo;t set last modified&lt;/h2&gt;
+&lt;p&gt;Whenever someone edits a record, agileBase automatically updates the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/#last-modified-auto&#34;&gt;Last Modified&lt;/a&gt; and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/#modified-by-auto&#34;&gt;Modified By&lt;/a&gt; fields of the table. This option prevents that happening when the checkbox field is ticked or un-ticked. There would not usually be a need for this but it may be useful in a minority of cases.&lt;/p&gt;
+&lt;h2 id=&#34;show-digital-signature&#34;&gt;Show digital signature&lt;/h2&gt;
+&lt;p&gt;Causes the user interface to show the name &amp;amp; username of the person who last ticked or un-ticked the checkbox, along with a timestamp.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note these can only be shown for the maximum time that record history (audit trail) data is stored for, by default 12 months. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#enhanced-audit-trail&#34;&gt;enhanced audit trail&lt;/a&gt; for details of extending this.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Number Field Options</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-options/number-field-options/</link>
+      <pubDate>Tue, 12 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/number-field-options/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;colour-outliers&#34;&gt;Colour outliers&lt;/h2&gt;
+&lt;p&gt;Automatically highlight &amp;lsquo;unusual&amp;rsquo; values of this field in views. This can help pick out values which are notable in some way, for example if a number has been entered without a decimal point by mistake (1253 instead of 12.53) or is a statistical outlier.&lt;/p&gt;
+&lt;p&gt;Specifically, if the value is more than 4 standard deviations away from the mean, it&amp;rsquo;s strongly highlighted in green (for values greater than the mean) or red (for values less). Values more than 2 standard deviations away are highlighted in a weaker shade.&lt;/p&gt;
+&lt;h2 id=&#34;separate-thousands-and-use-totals&#34;&gt;Separate thousands and use totals&lt;/h2&gt;
+&lt;p&gt;In views and data entry screens, show numbers as e.g. 31,141,592 rather than 31141592.&lt;/p&gt;
+&lt;p&gt;Also when the field is added to a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#tab-view&#34;&gt;tab view&lt;/a&gt;, a total is displayed at the bottom of the column of numbers for it.&lt;/p&gt;
+&lt;h2 id=&#34;use-duration&#34;&gt;Use duration&lt;/h2&gt;
+&lt;p&gt;The view displays the same in views, but in data entry forms, is entered as a time duration, specifically a number of hours. So for example the number 1.5 would be entered as 01:30 (1.5 hrs = 1 hr 30 minutes). This allows time durations to be entered into e.g. timesheets in a natural fashion, but also time to be totalled up easily.&lt;/p&gt;
+&lt;h2 id=&#34;precision&#34;&gt;Precision&lt;/h2&gt;
+&lt;p&gt;The number of decimal places to show numbers to.&lt;/p&gt;
+&lt;p&gt;his affects display only, so for example if 1.543 is entered into a field with 1 decimal place, it will display as 1.5 but will still be stored as 1.543 and any maths done on the field operate on the higher precision value.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note - integer and floating fields are actually different field types in the underlying database, so if a number is created with 0dp i.e. as a whole number, it can&amp;rsquo;t later be converted to floating point by changing the dp. There is a process that can be followed for &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/#switching-a-field-from-one-type-to-another&#34;&gt;converting fields from one type to another&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Whole number fields can store integer values from -2,147,483,648 to +2,147,483,647, i.e. approx. -2 billion to +2 billion. Decimal number fields have a range of around 1E-307 to 1E+308. See notes for &lt;em&gt;integer&lt;/em&gt; and &lt;em&gt;double precision&lt;/em&gt; types here: &lt;a href=&#34;https://www.postgresql.org/docs/current/datatype-numeric.html&#34;&gt;https://www.postgresql.org/docs/current/datatype-numeric.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you need to store values of greater range or accuracy, please let us know.&lt;/p&gt;
+&lt;h2 id=&#34;value&#34;&gt;Value&lt;/h2&gt;
+&lt;p&gt;Set a default value for the field, which will apply when a new record is created.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Separator Options</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-options/separator-options/</link>
+      <pubDate>Wed, 27 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/separator-options/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/separators/&#34;&gt;field separator&lt;/a&gt; creates a block of fields, starting with the separator and ending at the next one (or the last field in the table).&lt;/p&gt;
+&lt;p&gt;These blocks can either be initially contracted, or expanded. Here&amp;rsquo;s a screenshot showing a number of contracted blocks, with one expanded.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/blocks-one-expanded.png&#34; alt=&#34;blocks one expanded&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;to-program-the-initial-state-of-the-block&#34;&gt;To program the initial state of the block&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/creating-a-view/&#34;&gt;Create a view&lt;/a&gt; from the table the separator is in&lt;/li&gt;
+&lt;li&gt;Add &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;filters&lt;/a&gt; to that view that leave only records which the block should be expanded in present&lt;/li&gt;
+&lt;li&gt;In the &lt;em&gt;fields&lt;/em&gt; tab of the table, click &lt;em&gt;field options&lt;/em&gt; and select the view for the &lt;em&gt;expand if record in view&lt;/em&gt; option&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There are two other selections that can be made for the &lt;em&gt;expand if record in view&lt;/em&gt; option other than selecting a view.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;expand if under 10 blocks on the screen&lt;/li&gt;
+&lt;li&gt;expand never&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Remember, these just set the initial state of the block when a record is first opened, blocks can be expanded and contracted by the user at any time.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Cross Reference Field Options</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-options/referenced-field-options/</link>
+      <pubDate>Tue, 12 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/referenced-field-options/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;tabular-display&#34;&gt;Tabular display&lt;/h2&gt;
+&lt;p&gt;Rather than displaying rows from the referenced view as panels&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-panels.png&#34; alt=&#34;Panels screenshot&#34;&gt;&lt;/p&gt;
+&lt;p&gt;show a table&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-tabular.png&#34; alt=&#34;Table screenshot&#34;&gt;&lt;/p&gt;
+&lt;p&gt;which is a more compact form allowing a greater volume of data to be shown in a smaller area.&lt;/p&gt;
+&lt;h2 id=&#34;use-as-a-filter-for-relations&#34;&gt;Use as a filter for relations&lt;/h2&gt;
+&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/#custom-filtering-when-choosing-a-relation&#34;&gt;Common build patters - custom filtering when using a relation&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;prominent&#34;&gt;Prominent&lt;/h2&gt;
+&lt;p&gt;Make the background of the referenced panel bright red - useful for showing warnings on screen.&lt;/p&gt;
+&lt;h2 id=&#34;display-of-fields&#34;&gt;Display of fields&lt;/h2&gt;
+&lt;p&gt;Controls whether field names are displayed in the panel as well as values. Hiding the field name can be useful if for example you wish to create a referenced panel showing a warning message. You may want to just show the contents of the warning. In other cases, you may wish to hide the field if it&amp;rsquo;s not necessary as it&amp;rsquo;s obvious what the values are without additional context.&lt;/p&gt;
+&lt;p&gt;This option actually controls two types of field name, that of the referenced panel itself and also those of fields displayed inside the panel.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-panel-fields.png&#34; alt=&#34;Panel field names&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The options are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Content fieldnames - show the names of fields inside the panel, but not the fieldname of the panel itself (the default)&lt;/li&gt;
+&lt;li&gt;Panel fieldnames and content fieldnames - show all, as per the above screenshot&lt;/li&gt;
+&lt;li&gt;Panel fieldname, no content fieldnames&lt;/li&gt;
+&lt;li&gt;No fieldnames - show only the field values, useful particularly when there is only one value and when the context is obvious&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: File Field Options</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-options/file-field-options/</link>
+      <pubDate>Thu, 04 Jun 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/file-field-options/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;type&#34;&gt;Type&lt;/h2&gt;
+&lt;p&gt;The type of document typically stored by this field. Can be&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Document - such as a PDF file or spreadsheet for example&lt;/li&gt;
+&lt;li&gt;Image/photo&lt;/li&gt;
+&lt;li&gt;Profile photo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The selection affects the display in the user interface in some ways. In particular when a profile photo field is moved to the start of the record, it is displayed as part of the record header.&lt;/p&gt;
+&lt;h2 id=&#34;image-resolution&#34;&gt;Image resolution&lt;/h2&gt;
+&lt;p&gt;This option allows you to specify that the system should automatically down-size any large images uploaded. This could be to save storage space (for which there is a cost), or it may be appropriate if these files are going to be attached to emails sent by the system.&lt;/p&gt;
+&lt;h2 id=&#34;template&#34;&gt;Template&lt;/h2&gt;
+&lt;p&gt;Type the name of a template to be used for &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/&#34;&gt;generating PDF documents&lt;/a&gt; to be stored in this field.&lt;/p&gt;
+&lt;h2 id=&#34;view-to-use&#34;&gt;View to use&lt;/h2&gt;
+&lt;p&gt;The system will look in this view for a template with the name specified above.&lt;/p&gt;
+&lt;h2 id=&#34;paper-size&#34;&gt;Paper size&lt;/h2&gt;
+&lt;p&gt;When a PDF is generated, base it on this size of paper. The default is A4, changing this can be useful if e.g. you want to use the system to print labels.&lt;/p&gt;
+&lt;h2 id=&#34;footer&#34;&gt;Footer&lt;/h2&gt;
+&lt;p&gt;Optionally, add a footer to every page of a generated document, including the name of the document, page number and total number of pages.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The document name is set to be the contents of the first (non-ID) field in the &amp;lsquo;view to use&amp;rsquo; (see above), so you can set it to whatever you like. A calculation can be used if required.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

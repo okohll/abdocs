@@ -1,0 +1,186 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>agileBase docs – Calculations</title>
+    <link>https://docs.agilebase.co.uk/docs/views/calculations/</link>
+    <description>Recent content in Calculations on agileBase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 13 May 2020 16:40:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/docs/views/calculations/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Calculation Examples</title>
+      <link>https://docs.agilebase.co.uk/docs/views/calculations/examples/</link>
+      <pubDate>Tue, 19 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/calculations/examples/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The database which underpins agileBase is &lt;a href=&#34;https://www.postgresql.org&#34;&gt;PostgreSQL&lt;/a&gt; - &amp;lsquo;The World&amp;rsquo;s Most Advanced Open Source Relational Database&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;This page will just be an introduction to some of the things you can do with calculations.&lt;/p&gt;
+&lt;p&gt;A comprehensive definition and reference for all of the functions possible can be found here: &lt;a href=&#34;https://www.postgresql.org/docs/current/functions.html&#34;&gt;https://www.postgresql.org/docs/current/functions.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;example-functions-for-each-type-of-field&#34;&gt;Example functions for each type of field&lt;/h2&gt;
+&lt;p&gt;Here are some &amp;lsquo;starters for 10&amp;rsquo; that may be useful day to day.&lt;/p&gt;
+&lt;h3 id=&#34;general-functions&#34;&gt;General functions&lt;/h3&gt;
+&lt;p&gt;There are a couple of functions that are particularly useful to know about, to keep in your calculations toolkit. These are&lt;/p&gt;
+&lt;h4 id=&#34;coalesce&#34;&gt;Coalesce&lt;/h4&gt;
+&lt;p&gt;The coalesce function lets you deal sensibly with empty values, which we call &amp;lsquo;null&amp;rsquo; values. Normally, if any field you reference is null, then the result of the calculation is also null. Coalesce is a way to provide a default value. So for example, if a view of customer order lines has a quantity and a price field, but the quantity may be blank, then&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;coalesce({quantity}, 0) * {price}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;would calculate the line value, outputting zero if the quantity is not filled in.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Coalesce can be used with more than two arguments - the first non-null value it encounters, from left to right, will be output to be used in further calculation steps&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;case&#34;&gt;Case&lt;/h4&gt;
+&lt;p&gt;A case statement can be used to add &amp;lsquo;if/then/else&amp;rsquo; logic. An example is&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;case
+  when {due date} is null then &#39;unknown&#39;
+  when {due date} &amp;lt; now() then &#39;overdue&#39;
+  when {due date} &amp;lt; now() + interval &#39;7 days&#39; then &#39;due soon&#39;
+  else &#39;not due yet&#39;
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;(We&amp;rsquo;ll cover date calculations more below).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note the top clauses of a case statement are evaluated first, so put more specific things at the top if multiple lines may match.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;number-functions&#34;&gt;Number functions&lt;/h3&gt;
+&lt;p&gt;Common mathematical functions can be found here: &lt;a href=&#34;https://www.postgresql.org/docs/current/functions-math.html&#34;&gt;https://www.postgresql.org/docs/current/functions-math.html&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;text-functions&#34;&gt;Text functions&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;{field 1} || &#39; &#39; || {field 2}&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Two vertical bars are used to join bits of text together (this seems an odd choice to use rather than something like an ampersand or + sign, but there you go, that&amp;rsquo;s what it is). A literal piece of text is surrounded by single quotes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;substring({text field} FROM 1 FOR 1)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Extracts the first letter (or other character e.g. number) from some text.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;regexp_replace({full name}, &#39;\\s.*&#39;, &#39;&#39;)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A simplistic way of extracting a person&amp;rsquo;s first name from a full name - strip out everything from the first space onwards.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;regexp_replace(
+  {account owner},
+  &#39;.*\\((.*)\\).*&#39;,
+  &#39;\\1&#39;
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;A more complex example. Given an &amp;lsquo;account owner&amp;rsquo; value in the format &lt;strong&gt;Forename Surname (username)&lt;/strong&gt;, extract the username, i.e. everything between the brackets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The last two are slightly more complex because they use a powerful text matching/search and replace facility called &lt;strong&gt;regular expressions&lt;/strong&gt;, or regexes for short. Again, this is a standard facility and there&amp;rsquo;s lots of documentation available on the &lt;a href=&#34;https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP&#34;&gt;PostgreSQL website&lt;/a&gt; and elsewhere if you&amp;rsquo;d like to learn more.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The only difference from standard to be aware of is that when entering a regex into a calculation in agileBase, you must use two backslashes instead of one.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;like&lt;/code&gt; compares two elements of text and &lt;code&gt;ilike&lt;/code&gt; does so case-insensitively. A percentage sign means &amp;lsquo;match any text&amp;rsquo;. So for example:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;case
+  when {postcode} ilike &#39;bs%&#39; then &#39;Bristol&#39;
+  else &#39;elsewhere&#39;
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Outputs &amp;lsquo;Bristol&amp;rsquo; if the postcode field starts with &amp;lsquo;BS&amp;rsquo; (or &amp;lsquo;bs&amp;rsquo;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;date-functions&#34;&gt;Date functions&lt;/h3&gt;
+&lt;p&gt;The database has very strong support for working with dates and time - you can do many calculations on them. Here are a few examples.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;{date field} + &#39;1 year&#39;::interval&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;adds a year on to the given date&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can do the same with months, week, days etc. and combinations like &amp;lsquo;1 week 1 day&amp;rsquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;date_part(&#39;year&#39;, {date field})&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;date_part(&#39;dow&#39;, {date field})&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;These two extract different parts of the date - the first just the year, the second the day of the week as a number 0 - 6. More info is available in the &lt;a href=&#34;https://www.postgresql.org/docs/current/static/functions-datetime.html#FUNCTIONS-DATETIME-EXTRACT%22&#34;&gt;PostgreSQL documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;date_part(&#39;days&#39;, ((date_trunc(&#39;month&#39;, now()) + &#39;1 month&#39;::interval) - now()))&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Works out how many days are left in the current month. This example introduces a couple more date functions:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;now()&lt;/code&gt; gives the current date and time&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;date_trunc&lt;/code&gt; &amp;lsquo;truncates&amp;rsquo; a date to the month in this case (in other words rounding it down to the nearest month)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;to_char(&#39;19 May 2020&#39;::timestamp, &#39;Day&#39;)&lt;/code&gt; - outputs &amp;lsquo;Tuesday&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;to_char(&#39;19 May 2020&#39;::timestamp, &#39;Mon yyyy&#39;)&lt;/code&gt; - outputs &amp;lsquo;May 2020&amp;rsquo;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.postgresql.org/docs/current/functions-formatting.html&#34;&gt;to_char&lt;/a&gt; formats a date (it also works with numbers)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;date_part(&#39;weeks&#39;,{date field 1} - {date field 2})&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Counts the number of weeks between two dates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;aggregate-calculations&#34;&gt;Aggregate calculations&lt;/h2&gt;
+&lt;p&gt;All of the examples above work within one row, or record, of data. Aggregate calculations are different, the take many rows of data and condense them down into one result - one number, or piece of text, etc.&lt;/p&gt;
+&lt;p&gt;They&amp;rsquo;re very useful for creating summaries of data, such as total sales per product, counts of complaints per month per category, total value of an order (summing individual order lines) etc.&lt;/p&gt;
+&lt;h3 id=&#34;aggregates-of-child-rows&#34;&gt;Aggregates of child rows&lt;/h3&gt;
+&lt;p&gt;To make an aggregate you have to have something to summarise by and something to aggregate. The easiest way of doing this is to create a view with a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/#upwards-and-downwards-joins&#34;&gt;join down&lt;/a&gt; from a parent table to a child. You can then summarise, or group by each parent row and aggregate one (or more) of the fields in the child table.&lt;/p&gt;
+&lt;p&gt;For example, if we have an invoices table and an invoice lines table, assuming there is a relation linking each invoice line to its parent invoice:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/creating-a-view/&#34;&gt;create a view&lt;/a&gt; from the invoices table - we&amp;rsquo;ll call it &amp;lsquo;invoice totals&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/&#34;&gt;add a join&lt;/a&gt; down to invoice lines&lt;/li&gt;
+&lt;li&gt;Add the calculation &lt;code&gt;sum({line total})&lt;/code&gt; to the view&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You should then have a view with just one row per invoice line, showing the invoice total. &lt;strong&gt;sum&lt;/strong&gt; is an example of an aggregate calculation. Another common example is &lt;strong&gt;count&lt;/strong&gt;. If you replaced &lt;code&gt;sum({line total})&lt;/code&gt; with &lt;code&gt;count(*)&lt;/code&gt;, that would count the number of invoice lines in the invoice, instead of totalling the values up.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note - the aggregate calculation groups by all non-aggregate fields in a view. For example, if you added the product name into ou invoice totals view, you&amp;rsquo;d get a total per product per invoice, rather than a total for each whole invoice.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;aggregates-without-child-rows&#34;&gt;Aggregates without child rows&lt;/h3&gt;
+&lt;p&gt;There&amp;rsquo;s another way to create aggregates, which can be used without joining down to a child table or view.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the tiles interface, open the view you wish to edit&lt;/li&gt;
+&lt;li&gt;Click your user icon at the top right and select &lt;em&gt;admin - edit view&lt;/em&gt; from the menu&lt;/li&gt;
+&lt;li&gt;Tick &lt;em&gt;Group by all non-aggregate fields&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Add any fields you wish to group by to the view. Remove any you don&amp;rsquo;t wish to group by &lt;strong&gt;including any hidden fields&lt;/strong&gt; such as the IDs of joined tables&lt;/li&gt;
+&lt;li&gt;Add the aggregate calculation e.g. &lt;code&gt;sum({my field})&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;expanding-rows&#34;&gt;Expanding rows&lt;/h3&gt;
+&lt;p&gt;Some functions do the opposite of an aggregate function - rather than condensing and summarising many rows into one, they split one row up into many. For example, if one of your fields is a comma separated list, you could split that up into many rows, one per item in the list.&lt;/p&gt;
+&lt;p&gt;Say for example you import data from a form on a website which produces a comma separated list of products ordered.&lt;/p&gt;
+&lt;p&gt;Adding the calculation&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;regexp_split_to_table({products ordered}, &#39;,&#39;)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;would produce one output row per product in the list. That could then be joined to other data in the system such as pricing.&lt;/p&gt;
+&lt;h3 id=&#34;window-functions&#34;&gt;Window functions&lt;/h3&gt;
+&lt;p&gt;Window functions are somewhat like aggregate functions in that they can act on many rows, not just one. However, they don&amp;rsquo;t condense down into a single row. An example would be calculating a rolling average or cumulative total as each row is shown.&lt;/p&gt;
+&lt;p&gt;Effectively, they look at a &amp;lsquo;window&amp;rsquo;, also called a partition, of rows around the current row and calculate a result based on those. That could be for example&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the current row, the one before and the one after it&lt;/li&gt;
+&lt;li&gt;every row up to the current row&lt;/li&gt;
+&lt;li&gt;every row&lt;/li&gt;
+&lt;li&gt;every row which is similar in some way e.g. has the same value for a &amp;lsquo;category&amp;rsquo; field&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As an example,&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;{price} - avg({price}) over (partition by {category})&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;would calculate for each item, the difference from the average price of items with the same category.&lt;/p&gt;
+&lt;p&gt;This again is much too large a topic to cover in an introductory page, there&amp;rsquo;s plenty of documentation here: &lt;a href=&#34;https://www.postgresql.org/docs/current/tutorial-window.html&#34;&gt;https://www.postgresql.org/docs/current/tutorial-window.html&lt;/a&gt;
+and a video introduction to the concept here:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/blHEnrYwySE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;series-generation&#34;&gt;Series generation&lt;/h3&gt;
+&lt;p&gt;Sometimes you need to &lt;strong&gt;generate&lt;/strong&gt; a set of rows, as opposed to having the data stored in the database. Here are some quick examples:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;generate_series(1,10)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;generates the numbers 1 to 10, each one in a different row&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;generate_series(now() - &#39;10 years&#39;::interval, now(), &#39;1 month&#39;::interval)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;generates one row per month, from 10 years ago up until this month&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;The functions above highlight just a few of the many possibilities. Please feel free to read up on PostgreSQL some more and if you come up with any neat calculations yourself in your everyday work, please do send them to &lt;a href=&#34;mailto:support@agilebase.co.uk&#34;&gt;support@agilebase.co.uk&lt;/a&gt; so we can add them to this page (with credit).&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

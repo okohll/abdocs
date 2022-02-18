@@ -1,0 +1,118 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>agileBase docs – Developer</title>
+    <link>https://docs.agilebase.co.uk/tags/developer/</link>
+    <description>Recent content in Developer on agileBase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 18 Feb 2022 16:40:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/tags/developer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Developer Mode</title>
+      <link>https://docs.agilebase.co.uk/docs/developer-mode/</link>
+      <pubDate>Fri, 18 Feb 2022 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/developer-mode/</guid>
+      <description>
+        
+        
+        &lt;p&gt;As a no-code platform, agileBase allows you to easily build (and later un-build or &amp;lsquo;refactor&amp;rsquo;) and change your software.&lt;/p&gt;
+&lt;h2 id=&#34;toggling-build-mode-on-and-off&#34;&gt;Toggling build mode on and off&lt;/h2&gt;
+&lt;p&gt;To get started, you need to toggle from &amp;lsquo;normal&amp;rsquo; mode to &amp;lsquo;build&amp;rsquo; mode. You can do this wherever you are in the system and you will switch to building or developing the item you&amp;rsquo;re looking at. The three main areas this covers are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The homepage. Toggling to build mode on the homepage shows an overview of everything in the system - tables, views, tiles, roles and users can all be listed and edited. Further, the connections between different objects can be shown. More advanced users will typically use this area, when working on larger systems.&lt;/li&gt;
+&lt;li&gt;In a [view](. When a view is open, toggling to build will let you edit that view - to add or remove fields and calculations for example.&lt;/li&gt;
+&lt;li&gt;When viewing a record from a [table](&amp;gt;, toggling to build will let you edit that table, e.g. to add/remove fields.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When build mode is on, pencil icons will appear next to every object which can be edited, for example next to every field and tab in a table record.&lt;/p&gt;
+&lt;p&gt;When editing views and tables, the large pencil at the top left lets you edit the object as a whole, as opposed to a field or tab in it.&lt;/p&gt;
+&lt;p&gt;Build mode can easily be toggled off again when you&amp;rsquo;re done and the user interface will switch back to &amp;lsquo;normal&amp;rsquo; mode.&lt;/p&gt;
+&lt;h2 id=&#34;using-editing-panels&#34;&gt;Using editing panels&lt;/h2&gt;
+&lt;p&gt;When build mode is on, clicking any of the pencil icons on screen will open a panel allowing you to edit the item it&amp;rsquo;s next to. The panel can be dragged to move it around the screen if you want to see what&amp;rsquo;s underneath. Whenever you make a change using the panel, the display underneath will update, allowing you to see the effect your changes have in real time.&lt;/p&gt;
+&lt;h2 id=&#34;example-videos&#34;&gt;Example videos&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s an example of editing a table and view:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/mTOWsXDpQgo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;and here&amp;rsquo;s what the build mode looks like on the homepage:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Rojcf6OzdHw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Business Intelligence</title>
+      <link>https://docs.agilebase.co.uk/docs/charting/business-intelligence/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/charting/business-intelligence/</guid>
+      <description>
+        
+        
+        &lt;blockquote&gt;
+&lt;p&gt;Before setting up a BI connection, please be aware of the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting#privacy-and-data-security&#34;&gt;data privacy and security&lt;/a&gt; considerations.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;At agileBase we host an instance of &lt;a href=&#34;https://superset.apache.org&#34;&gt;Apache Superset&lt;/a&gt; which can be used by customers to create reporting dashboards.&lt;/p&gt;
+&lt;p&gt;However the setup processes below also applies to third party tools such as Power BI.&lt;/p&gt;
+&lt;h2 id=&#34;initial-setup&#34;&gt;Initial Setup&lt;/h2&gt;
+&lt;p&gt;The first step is to &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; to request we set up an Apache Superset account (this will also allow connections from other BI tools). We will then set up as many Superset users you require - there is no ongoing cost for these login accounts.&lt;/p&gt;
+&lt;p&gt;Note that Superset logins are separate from agileBase ones - the usernames and passwords can be different.&lt;/p&gt;
+&lt;h2 id=&#34;sending-data-to-superset&#34;&gt;Sending data to Superset&lt;/h2&gt;
+&lt;p&gt;A developer with MANAGE privileges on a view&amp;rsquo;s parent table can set this up.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In agileBase, open the view you wish to report on. Ensure it has all the necessary fields and calculations in it which you want to report on. If not, add them before continuing.&lt;/li&gt;
+&lt;li&gt;Click the charting icon to view the chart setup interface&lt;/li&gt;
+&lt;li&gt;At the bottom of the screen, tick &amp;lsquo;send data to a shareable dashboard&amp;rsquo;. As this makes data available &lt;a href=&#34;charting#privacy-and-data-security&#34;&gt;outside of agileBase&lt;/a&gt;, you will be asked to confirm you will treat the data in a way which maintains privacy and security before enabling the feature.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Within a few seconds, the data will then be available in Superset.&lt;/p&gt;
+&lt;h3 id=&#34;changes&#34;&gt;Changes&lt;/h3&gt;
+&lt;p&gt;It&amp;rsquo;s easy for developers to make changes to views in agileBase, for example adding / removing fields, changing calculations or just renaming a view.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;However, when the BI connection is active, bear in mind that certain changes will disable the connection. The reason is that once data is set up to transfer to a separate system, the other system typically expects it to remain in the same format.&lt;/p&gt;
+&lt;p&gt;That means that if you rename the view or move it, or rename/delete fields and calculations, you may afterwards need to re-connect BI by repeating step 3 above. Additionally, check your charts in Superset, to see if they need re-creating.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;creating-dashboards-in-superset&#34;&gt;Creating dashboards in Superset&lt;/h2&gt;
+&lt;p&gt;Now that you&amp;rsquo;ve set up agileBase to make data available to Superset, you can create charts and dashboards there.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a &amp;lsquo;dataset&amp;rsquo; in Superset, corresponding to the view you set up above
+&lt;ol&gt;
+&lt;li&gt;From the &lt;em&gt;Data&lt;/em&gt; menu at the top, select &lt;em&gt;datasets&lt;/em&gt;, then click the &lt;em&gt;+ dataset&lt;/em&gt; button&lt;/li&gt;
+&lt;li&gt;Under &lt;em&gt;Schema&lt;/em&gt;, select your company name&lt;/li&gt;
+&lt;li&gt;Under &lt;em&gt;Table&lt;/em&gt;, select the name of the view that you set up above&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;ADD&lt;/em&gt; at the bottom of the dialog (you may need to scroll down)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Create the chart
+&lt;ol&gt;
+&lt;li&gt;Click &lt;em&gt;Charts&lt;/em&gt; at the top, then &lt;em&gt;+ Chart&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Select the dataset created above&lt;/li&gt;
+&lt;li&gt;Choose a chart type, then &lt;em&gt;Create New Chart&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Drag metrics (e.g. &amp;lsquo;COUNT&amp;rsquo;) and fields from the left into the appropriate areas in the middle column&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;Save&lt;/em&gt; and Superset will prompt you to add the chart to a new or existing dashboard&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Access the dashboard from the &lt;em&gt;Dashboards&lt;/em&gt; menu at the top&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For more details on creating charts and editing dashboards, including video walkthroughs, see &lt;a href=&#34;https://docs.preset.io/docs/create-a-chart&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The first view sent to Superset is free, further views can be purchased in bundles.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

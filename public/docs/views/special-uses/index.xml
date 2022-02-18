@@ -1,0 +1,134 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>agileBase docs – Special Uses</title>
+    <link>https://docs.agilebase.co.uk/docs/views/special-uses/</link>
+    <description>Recent content in Special Uses on agileBase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 13 May 2020 16:40:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/docs/views/special-uses/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: APIs</title>
+      <link>https://docs.agilebase.co.uk/docs/views/special-uses/apis/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/apis/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Any view can be used to generate an API - a unique URL which third party services can call in order to extract data, or which can be used to push data to those services and applications.&lt;/p&gt;
+&lt;p&gt;The view created in this case is used to define the set of records to send and the fields to include.&lt;/p&gt;
+&lt;p&gt;For more information, see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;integrations&lt;/a&gt; topic, which contains full details of how to set up and use APIs.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This topic also includes information about APIs which receive data from third party systems, as opposed to sending to them, for which a view isn&amp;rsquo;t necessary.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Workflows</title>
+      <link>https://docs.agilebase.co.uk/docs/views/special-uses/workflows/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/workflows/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A workflow can be used to edit data in the system automatically.&lt;/p&gt;
+&lt;p&gt;The view created in this case is used to define the set of records to act on (others can be excluded via &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;view filters&lt;/a&gt; and also the data to use - each calculation or field in the view can be a source of data to create or update.&lt;/p&gt;
+&lt;p&gt;For more information, see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; topic, which contains full details of how to set up and use workflows.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Referenced Data Panels</title>
+      <link>https://docs.agilebase.co.uk/docs/views/special-uses/referenced-data-panels/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/referenced-data-panels/</guid>
+      <description>
+        
+        
+        &lt;p&gt;It can be useful to include calculations and data from other parts of the system in a form, to add context and optionally allow editing of that related data.&lt;/p&gt;
+&lt;p&gt;To do that, a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced data field&lt;/a&gt; can be &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/&#34;&gt;added to the form&lt;/a&gt;. When adding this field, the administrator can choose a view to reference, the data from which will display in the form.&lt;/p&gt;
+&lt;p&gt;The way it works that a when a particular record is shown on screen in a form, the row ID of the record being edited is used to filter the results of that view. Records from the view that include that ID are displayed in a panel.&lt;/p&gt;
+&lt;p&gt;Referenced data can also be used to&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;display charts&lt;/li&gt;
+&lt;li&gt;provide default values for form fields&lt;/li&gt;
+&lt;li&gt;show a workflow button - if the referenced view is a workflow, a button to run it will display&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Full details of all of these features can be found on the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced data panel&lt;/a&gt; page.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Tabs</title>
+      <link>https://docs.agilebase.co.uk/docs/views/special-uses/tabs/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/tabs/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Where there is &amp;lsquo;child&amp;rsquo; data related to a parent table, e.g. a contact belonging to an organisation, a list of child records can be shown in a tab in the parent record.&lt;/p&gt;
+&lt;p&gt;A view can specify which records are shown. Perhaps some should be filtered out, like e.g. contacts who no longer work at the organisation - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;view filters&lt;/a&gt; can accomplish that.&lt;/p&gt;
+&lt;p&gt;The fields of the view are what&amp;rsquo;s shown in data rows in the tab.&lt;/p&gt;
+&lt;p&gt;Additionally, a separate view can be set in the tab options, to allow for creating records to populate the tab with an initial set of data.&lt;/p&gt;
+&lt;p&gt;For more information on setting this all up, see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/&#34;&gt;table tabs&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Controlling Form User Interfaces</title>
+      <link>https://docs.agilebase.co.uk/docs/views/special-uses/controlling-form-user-interfaces/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/controlling-form-user-interfaces/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The record editing form on screen can be programatically controlled to hide or show various elements, like tabs and individual fields. Fields can also be locked for editing and tabs can be coloured.&lt;/p&gt;
+&lt;p&gt;This allows relevant information to be shown/highlighted on screen - what is shown at any one time can change depending on the state of the data in the system. As a brief example, when a sales opportunity is closed, additional fields could appear asking for the outcome details to be recorded.&lt;/p&gt;
+&lt;p&gt;In a similar way to most other view uses in this section, the ID of the record being edited is used to filter the view chosen for the form element. If that ID appears in the view, the element is shown/unlocked etc., if not it isn&amp;rsquo;t.&lt;/p&gt;
+&lt;p&gt;Here are some references for how to accomplish each feature:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#show-if-record-in-view&#34;&gt;Controlling field visibility&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#unlock-if-record-in-view&#34;&gt;Locking and unlocking fields&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/separator-options/&#34;&gt;Initially expanding or contracting blocks of fields&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#show-only-if-in-view&#34;&gt;Hiding or showing tabs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#colour-from-view&#34;&gt;Colouring tabs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Related Record Chooser</title>
+      <link>https://docs.agilebase.co.uk/docs/views/special-uses/related-record-pickers/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/related-record-pickers/</guid>
+      <description>
+        
+        
+        &lt;p&gt;When a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation field&lt;/a&gt; is part of a form, the user can choose a record to link to from a view of items in the related table.&lt;/p&gt;
+&lt;p&gt;That way, a subset of records can be shown relevant to the situation. For example, imagine there is a table of company records, which store customers and suppliers. When selecting a customer for a new invoice record, the user should be able to select only from companies which are customers, so a filtered view can be used.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/relation-field-options/#view-to-use&#34;&gt;view to use&lt;/a&gt; relation field option.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

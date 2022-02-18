@@ -1,0 +1,348 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>agileBase docs – Super User</title>
+    <link>https://docs.agilebase.co.uk/tags/super-user/</link>
+    <description>Recent content in Super User on agileBase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 05 Nov 2021 11:40:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/tags/super-user/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Tiles</title>
+      <link>https://docs.agilebase.co.uk/docs/tiles/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tiles/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A tile on a user&amp;rsquo;s home screen represents an application or module of an application - a collection of data and functionality that forms a coherent whole.&lt;/p&gt;
+&lt;p&gt;There are five types of tile, each of which present data in a different way.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Data tile
+&lt;ul&gt;
+&lt;li&gt;the most common tile type - from the administrator&amp;rsquo;s viewpoint this is a collection of &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;views&lt;/a&gt;. The user can navigate the views, search for data, edit records etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Image / document library
+&lt;ul&gt;
+&lt;li&gt;a type of data tile. Views which contain a document field can be displayed in &amp;lsquo;card&amp;rsquo; format to show large document previews, rather than the usual &amp;lsquo;rows&amp;rsquo; format&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Calendar
+&lt;ul&gt;
+&lt;li&gt;can display any views in the system containing date/time fields in calendar formats, such as a standard month layout, or gannt-like chart&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Visualisations
+&lt;ul&gt;
+&lt;li&gt;rather than a collection of views, displays a collection of charts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Comment stream
+&lt;ul&gt;
+&lt;li&gt;brings together everyone&amp;rsquo;s &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/&#34;&gt;comments&lt;/a&gt; (that a user has privileges to see) from everywhere in the system into one place. The newest comments are shown in the tile on the user&amp;rsquo;s homepage. Clicking on a comment loads the record it&amp;rsquo;s attached to&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Data tiles need to be created by an administrator. Once a data tile is created and filled with views, it can be added to a user&amp;rsquo;s screen either as a standard data tile or, if the views contain document fields, optionally as an image/document library tile.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Other types of tile i.e. calendar, visualisation and comment stream tiles need not be created by an administrator, they are built-in facilities of the platform. Each of these tile offers different ways of seeing data collected from across the system. As such they are automatically available to add to a user&amp;rsquo;s screen.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;creating-a-tile&#34;&gt;Creating a tile&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Expand the &lt;em&gt;Administration&lt;/em&gt; section in the lefthand navigation&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;tiles&lt;/em&gt;. You&amp;rsquo;ll see a list of existing tiles&lt;/li&gt;
+&lt;li&gt;Click the plus button in the toolbar at the top&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You should now see an editing screen with the details of the tile you just created.
+&lt;img src=&#34;https://docs.agilebase.co.uk/tile-details.png&#34; alt=&#34;Tile editing&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The available options are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Name - the tile name&lt;/li&gt;
+&lt;li&gt;Section - optional. If you have a large number of tiles, you can organise them into sections. This is an aid for administrators only, it doesn&amp;rsquo;t affect end users&lt;/li&gt;
+&lt;li&gt;Index - affects the order of tiles on screen, lower numbered tiles appear before higher&lt;/li&gt;
+&lt;li&gt;Purpose - can be used as help content to tell users about this tile&lt;/li&gt;
+&lt;li&gt;Colour - the colour will be automatically chosen to avoid as much colour duplication as possible, however you can manually change the colour if you like, e.g. to organise similarly themed or related tiles together visually&lt;/li&gt;
+&lt;li&gt;Icon - a tile icon can be chosen from the icon panel&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A multitude of icons are available, from &lt;a href=&#34;https://fontawesome.com&#34;&gt;Font Awesome&lt;/a&gt;. They are constantly adding more so if you see one that&amp;rsquo;s available on their website that&amp;rsquo;s not in our set yet then just let us know.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;adding-views-to-a-data-tile&#34;&gt;Adding views to a data tile&lt;/h2&gt;
+&lt;p&gt;Data tiles need to contain one or more views to be useful. If you have no tables or views yet, you may want to check out the &lt;a href=&#34;https://docs.agilebase.co.uk/quickstart/&#34;&gt;Quick Start&lt;/a&gt; guide, or see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;Views&lt;/a&gt; for full details on view creation.&lt;/p&gt;
+&lt;p&gt;In a view&amp;rsquo;s manage tab, choose the tile which you want to place it in from the &lt;em&gt;Tile&lt;/em&gt; dropdown.&lt;/p&gt;
+&lt;h2 id=&#34;adding-and-removing-tiles-from-users&#34;&gt;Adding and removing tiles from users&lt;/h2&gt;
+&lt;p&gt;Users can themselves add tiles to their own homepages (unless they have customised UI options to prevent this). However, administrators can also do this for them.&lt;/p&gt;
+&lt;p&gt;To add a tile to a user&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Expand the &lt;em&gt;Administration&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;users&lt;/em&gt;. Select the user you wish to edit&lt;/li&gt;
+&lt;li&gt;Click the &lt;em&gt;Tiles&lt;/em&gt; button&lt;/li&gt;
+&lt;li&gt;Select the type of tile to add.
+&lt;ul&gt;
+&lt;li&gt;If it&amp;rsquo;s a data tile or document / image library tile, then also select the primary view, which is the view that will load when the user first opens the tile&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;auto-adding-tiles&#34;&gt;Auto-adding tiles&lt;/h3&gt;
+&lt;p&gt;Tiles can also be added automatically in bulk by assigning a user role.&lt;/p&gt;
+&lt;p&gt;When editing a user, click the &lt;em&gt;Roles&lt;/em&gt; button. Next to each role listed is a list of tiles that will be added to their screen if that role is assigned to them. This is a convenience feature to speed up setting up their home screen. The tiles shown for a role are those which more than half of the members of that role have (tiles which the user already has aren&amp;rsquo;t listed).&lt;/p&gt;
+&lt;p&gt;After assigning a role, if any tiles aren&amp;rsquo;t needed for a particular user, they can be removed from the &lt;em&gt;Tiles&lt;/em&gt; panel for that user.&lt;/p&gt;
+&lt;h2 id=&#34;system-tiles&#34;&gt;System tiles&lt;/h2&gt;
+&lt;p&gt;As an administrator, you will likely create a number of views which aren&amp;rsquo;t meant to be directly visible by users, but which are for the internal workings of your applications. For example, workflows, tab views etc. - see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/special-uses/&#34;&gt;Views - Special Uses&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To prevent users seeing these, you can put then in system tiles. A system tile is simply one which has a name starting with the word &amp;lsquo;System&amp;rsquo;. These will only be visible to administrators. You may find it a good idea to create a number of System tiles for organisation purposes.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Tables</title>
+      <link>https://docs.agilebase.co.uk/docs/tables/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tables/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Creating a view</title>
+      <link>https://docs.agilebase.co.uk/docs/views/creating-a-view/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/creating-a-view/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In agileBase, a view &amp;lsquo;belongs to&amp;rsquo; a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;table&lt;/a&gt;. We&amp;rsquo;ll see what that means in more detail below, but for now, just choose a table to show data from to users. In examples on this section of the documentation we&amp;rsquo;ll assume we pick a contacts table.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ll also assume we already have some tables and some &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;tiles&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;to-create-a-view&#34;&gt;To create a view&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Expand the &lt;em&gt;Build Tables&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;
+&lt;li&gt;Click the table you want to create a view from&lt;/li&gt;
+&lt;li&gt;If necessary, click the pencil icon in the toolbar to edit the table and click the &lt;em&gt;manage&lt;/em&gt; tab at the bottom of the screen&lt;/li&gt;
+&lt;li&gt;Press the &amp;lsquo;Create new view&amp;rsquo; button at the top right. You&amp;rsquo;ll be prompted for a name.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There is an option &lt;strong&gt;Populate the view with fields from this table&lt;/strong&gt; next to the &lt;em&gt;Create new view&lt;/em&gt; button. This is a convenience feature, which is ticked by default. When it&amp;rsquo;s ticked, the view created will contain all fields from the table - you can then remove any you don&amp;rsquo;t need. When un-ticked, the view will start with no fields so you can add just those you wish.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;organising-into-a-navigation-structure&#34;&gt;Organising into a navigation structure&lt;/h2&gt;
+&lt;p&gt;On creating a view, its manage tab will appear. One of the first things it&amp;rsquo;s useful to do is put the field in a tile - use the &lt;em&gt;Tile&lt;/em&gt; dropdown option to do so.&lt;/p&gt;
+&lt;p&gt;Within a tile, the view can be added to a menu by editing the view name. Simply prefix the view name with a menu name and a dash. So for example, naming a view &lt;code&gt;contacts - all contacts&lt;/code&gt; will create a &amp;lsquo;contacts&amp;rsquo; menu containing the view &amp;lsquo;all contacts&amp;rsquo; visible to users.&lt;/p&gt;
+&lt;p&gt;Entering a view &lt;em&gt;Purpose&lt;/em&gt; in the space underneath the name will provide help text for the view. This will be displayed in the menu underneath the view name. Here&amp;rsquo;s a screenshot of a sample menu, each with purpose completed.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/menu.png&#34; alt=&#34;menu&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;using-a-view&#34;&gt;Using a view&lt;/h2&gt;
+&lt;p&gt;Once the view is created, how can someone use it? We won&amp;rsquo;t work through every possibility here as this documentation is for administrators rather than users, but here are some of the most important points in brief you may like to be aware of in order to support apps you build.&lt;/p&gt;
+&lt;h3 id=&#34;finding-data&#34;&gt;Finding data&lt;/h3&gt;
+&lt;p&gt;By default a search box appears under each column heading (the system can also be configured in a simplified way with a single search box to cover all fields).&lt;/p&gt;
+&lt;p&gt;The help icon (?) to the left of the search boxes details the types of search that can be performed. There are many, allowing for e.g. date-based searches, &lt;em&gt;and&lt;/em&gt; and &lt;em&gt;or&lt;/em&gt; searching, finding empty values etc. Helper features pop up for some field types, like date range pickers for example.&lt;/p&gt;
+&lt;h3 id=&#34;seeing-summary-stats&#34;&gt;Seeing summary stats&lt;/h3&gt;
+&lt;p&gt;Hovering over a column shows summary statistics, like a total and average (of all filtered records) for numeric fields, or a breakdown of dropdown/tags fields.&lt;/p&gt;
+&lt;h3 id=&#34;loading-a-record&#34;&gt;Loading a record&lt;/h3&gt;
+&lt;p&gt;Once a record has been found, click a row in the view to load that record for viewing or editing. The record loaded comes from the table that the view belongs to (as referenced at the start of this page), even though the view may contain fields from other tables as well.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also possible to use &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/options/#inline-editing&#34;&gt;inline editing&lt;/a&gt; to edit the contents of fields directly in the view.&lt;/p&gt;
+&lt;p&gt;Pressing the plus button to the left of the view contents will create a new record in the view&amp;rsquo;s parent table.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Charting</title>
+      <link>https://docs.agilebase.co.uk/docs/charting/</link>
+      <pubDate>Fri, 05 Nov 2021 11:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/charting/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In agileBase there are two mechanisms for charting and visualising data, each suited to a different purpose&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;our &lt;a href=&#34;built-in-charting&#34;&gt;built-in charting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;exporting data to third party business intelligence tools&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you&amp;rsquo;re starting out, we recommend beginning by looking at built-in charting.&lt;/p&gt;
+&lt;p&gt;For more advanced users, here&amp;rsquo;s a description of when each of the two options may be appropriate, with reasons why.&lt;/p&gt;
+&lt;h2 id=&#34;built-in-charting&#34;&gt;Built in charting&lt;/h2&gt;
+&lt;p&gt;This should be the default starting point. It&amp;rsquo;s great for ad-hoc charting, i.e. to get quick answers to questions you may have about the data in the view you&amp;rsquo;re looking at.&lt;/p&gt;
+&lt;p&gt;Charts can be easily created, modified and removed. People with MANAGE privileges on a table can create charts that all users will see, lower privileged users can create charts that only they see.&lt;/p&gt;
+&lt;p&gt;Creating charts can be used in conjunction with building views, in an agile fashion. For example, if you&amp;rsquo;re looking at a view of invoice and want to see a breakdown of totals for the year by customer type, but the customer type field isn&amp;rsquo;t in the view, no problem. Just&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;add the customer type field to the invoices view&lt;/li&gt;
+&lt;li&gt;create a chart to total up values by customer type&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Developers can also choose to have certain charts emailed to different groups of people on a regular basis. For example, [TODO]&lt;/p&gt;
+&lt;h2 id=&#34;exporting-to-business-intelligence&#34;&gt;Exporting to Business Intelligence&lt;/h2&gt;
+&lt;p&gt;We provide our own business intelligence tool, an instance of Apache Superset, which is available at &lt;a href=&#34;https://superset.agilebase.co.uk&#34;&gt;https://superset.agilebase.co.uk&lt;/a&gt; for easy setup &amp;lsquo;out of the box&amp;rsquo;, however any tool you wish such as Power BI can also be connected.&lt;/p&gt;
+&lt;p&gt;This may be useful when&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You want to report summary KPIs or trends upwards, to higher levels of management, so you need a dashboard
+&lt;ul&gt;
+&lt;li&gt;to include charts from different views in agileBase in one place&lt;/li&gt;
+&lt;li&gt;to present them in particular formats suitable for reporting, e.g. in particular sizes/layouts or using company colours&lt;/li&gt;
+&lt;li&gt;potentially to include data from additional sources in the one dashboard e.g. from accounting systems as well&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The source data views in agileBase are mature and aren&amp;rsquo;t likely to change. Changes can break any integration set up&lt;/li&gt;
+&lt;li&gt;You are happy with the privacy and data security implications - see below&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;privacy-and-data-security&#34;&gt;Privacy and data security&lt;/h3&gt;
+&lt;p&gt;When connecting a Business Intelligence tool, whether that&amp;rsquo;s the Superset instance we provide, or a third party tool, it&amp;rsquo;s important to realise that data &lt;em&gt;leaves agileBase&lt;/em&gt; and therefore is no longer protected by agileBase&amp;rsquo;s roles and privileges system.&lt;/p&gt;
+&lt;p&gt;You may have data in agileBase which is only accessible to certain members of staff, however when accessed outside of agileBase, those rules no longer apply. That doesn&amp;rsquo;t necessarily mean the data is accessible publicly, but it does mean it&amp;rsquo;s controlled by whatever privilege system the third party tool uses, which will be different to agileBase&amp;rsquo;s.&lt;/p&gt;
+&lt;p&gt;Therefore, from agileBase&amp;rsquo;s point of view, similar rules will apply when connecting a BI system as to when exporting data to spreadsheets. For example&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Any user connecting a BI tool will be shown a warning of these consequences, which they&amp;rsquo;ll need to accept prior to going ahead&lt;/li&gt;
+&lt;li&gt;agileBase system administrators will get email notifications every time data in a view is made available to BI tools, containing information on whether that data is marked as sensitive or private&lt;/li&gt;
+&lt;li&gt;Only people with MANAGE privileges on a table can connect BI tools. They also have to have two factor authentication enabled&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Built In Charting</title>
+      <link>https://docs.agilebase.co.uk/docs/charting/built-in-charting/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/charting/built-in-charting/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Charting is not strictly an administrator function, as any user can create charts and other data visualisations, such as maps and word clouds.&lt;/p&gt;
+&lt;p&gt;However, it&amp;rsquo;s useful for administrators to know how the system works in outline, so they can support users and also because creating charts may be a key part of building an application.&lt;/p&gt;
+&lt;p&gt;In agileBase, charts &amp;lsquo;belong to&amp;rsquo; a view. Each view can have a collection of charts. Users can toggle between viewing data rows and looking at charts based on those rows. When a user filters data using the quick filter boxes at the top of the screen, the data or charts (whichever is shown) will update to match the filtered results.&lt;/p&gt;
+&lt;h2 id=&#34;creating-a-chart&#34;&gt;Creating a chart&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the tiles interface, open the tile and view to use as a source of chart data&lt;/li&gt;
+&lt;li&gt;Click the charts button to the left of the data rows displayed&lt;/li&gt;
+&lt;li&gt;Click the &lt;em&gt;add/edit chart or map&lt;/em&gt; button&lt;/li&gt;
+&lt;li&gt;Follow each of the steps (1 - 3) on screen to build the chart&lt;/li&gt;
+&lt;li&gt;In the last step, give a name to the chart and press &lt;em&gt;save&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When choosing a type of chart in step 3, small previews will be displayed based on some of the chart data. However some chart types may display a message rather than a preview. In this case, the chart data selected in step 1 is not applicable for this chart type.&lt;/p&gt;
+&lt;p&gt;For example, if in step 1 we have a count of items per year:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/chart-1.png&#34; alt=&#34;Chart - step 1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;then the scatter diagram will work but the bubble chart won&amp;rsquo;t. For the bubble chart, &lt;strong&gt;two&lt;/strong&gt; y-axis measurements are required, one to specify the position of the bubble on the y-axis, plus another to determine the relative size of the bubble.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/chart-bubble.png&#34; alt=&#34;Chart - step 3&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;embedding-charts-in-forms&#34;&gt;Embedding charts in forms&lt;/h2&gt;
+&lt;p&gt;Charts can be embedded into tables. When the user opens a record, the chart will automatically filter to show data pertaining to that record only.&lt;/p&gt;
+&lt;p&gt;So for example if you have a chart of sales per month per customer, which you embed into a customer table, it will show as sales per month, only for the customer on screen.&lt;/p&gt;
+&lt;p&gt;This is accomplished by using a view with chart(s) as a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;cross-referenced panel&lt;/a&gt; - see that page for setup information.&lt;/p&gt;
+&lt;h2 id=&#34;embedding-charts-in-tabs&#34;&gt;Embedding charts in tabs&lt;/h2&gt;
+&lt;p&gt;When a tab contains many &amp;lsquo;child&amp;rsquo; records, e.g. an organisation may have a tab which contains financial data for the past 10 years, then charts can display above the rows of data when the tab&amp;rsquo;s opened.&lt;/p&gt;
+&lt;p&gt;To accomplish this, simply add a chart to the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#tab-view&#34;&gt;view used by the tab&lt;/a&gt;. When the tab is opened, the chart will automatically be filtered to only show data pertaining to the parent table, in a similar fashion to how charts embedded using cross-referenced panels are filtered, as above.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/endole-example.png&#34; alt=&#34;Endole example&#34; title=&#34;Example of a chart in a tab&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;subscribing-users-or-roles-to-charts&#34;&gt;Subscribing users or roles to charts&lt;/h2&gt;
+&lt;p&gt;Users can be subscribed to charts (or subscribe themselves) to receive them by email.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In a view with some charts, open the charts&lt;/li&gt;
+&lt;li&gt;Next to &amp;lsquo;Send these charts to me&amp;rsquo;, select a frequency, e.g. monthly.&lt;/li&gt;
+&lt;li&gt;Under &amp;lsquo;Include data too&amp;rsquo;, select tabular data to include in the email too - various options will be displayed e.g. all new rows since the last email&lt;/li&gt;
+&lt;li&gt;Next to &amp;lsquo;roles&amp;rsquo;, select a role to send the charts and data to. All users in the role will be subscribed. Multiple roles can be added&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If the view has no charts, this function can be used to send tabular data only&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;going-further&#34;&gt;Going further&lt;/h2&gt;
+&lt;p&gt;agileBase can also integrate with third party business intelligence and reporting tools, using the API Creator. A worked example is &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/pull-example-power-bi/&#34;&gt;here for Power BI&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Filters</title>
+      <link>https://docs.agilebase.co.uk/docs/views/filters/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/filters/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Filters can be applied permanently to a view, allowing an administrator to specify the subset of records that should be displayed. This is often for convenience and to create more useful systems. For example, if you have a database of suppliers, you may want to create views showing those which are approved, those which aren&amp;rsquo;t, those which are local etc. Each view would have a different set of filters applied.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Remember people can apply additional &amp;lsquo;ad-hoc&amp;rsquo; or temporary filters to a view at any time using the filter boxes at the top of the screen, so it may not be necessary to create filtered views for every eventuality.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A filter can act on any field or calculation in the view, as well as on any in joined tables or views.&lt;/p&gt;
+&lt;p&gt;Multiple filters act like they have AND between them, i.e. they are applied additively. If you wish to apply a filters with OR between them, or if you wish to apply a filter on the reult of the comparison of fields, then simply create the relevant &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/&#34;&gt;calculation&lt;/a&gt;. For example, if you added two filters to a suppliers view&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;status equals approved&lt;/strong&gt; and &lt;strong&gt;status equals pending&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;then you would get no records showing - a status can&amp;rsquo;t be both one thing and another. However if you created a boolean calculation &amp;lsquo;pending or approved&amp;rsquo;, with definition&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;{status} like &#39;approved&#39; or {status} like &#39;pending&#39;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;you could then add a filter on that calculation&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;pending or approved equals true&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;adding-a-filter&#34;&gt;Adding a filter&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the tiles interface, load the view you wish to edit&lt;/li&gt;
+&lt;li&gt;Click your user profile icon at the top right and select &lt;em&gt;admin - edit view&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Under &lt;em&gt;Filters&lt;/em&gt;, click the &lt;em&gt;Add Filter&lt;/em&gt; button&lt;/li&gt;
+&lt;li&gt;Choose relevant options and press &lt;em&gt;Add&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There are 26 types of filter to choose from, from the simple &amp;lsquo;equals&amp;rsquo; and &amp;lsquo;not equal to&amp;rsquo;, to more complex pattern matching using &lt;a href=&#34;https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP&#34;&gt;regular expressions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Some filters apply to multiple data types, others only to specific types. For example, &amp;lsquo;newer than X days ago&amp;rsquo; only applies to date fields.&lt;/p&gt;
+&lt;p&gt;Once you&amp;rsquo;ve added a filter, you&amp;rsquo;ll be able to type in a description for it. If no description is entered, the system will automatically generate one, which you&amp;rsquo;ll be able to see.&lt;/p&gt;
+&lt;p&gt;This description is shown to users as help in particular circumstances, e.g. when the view is used as a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chaser&lt;/a&gt;, so it&amp;rsquo;s a good idea to check it makes sense.&lt;/p&gt;
+&lt;h3 id=&#34;including-blank-values&#34;&gt;Including blank values&lt;/h3&gt;
+&lt;p&gt;Once a filter has been created, when you hover over it you&amp;rsquo;ll see an option to tick &amp;lsquo;or is blank&amp;rsquo;. This is useful to ensure blank values aren&amp;rsquo;t excluded by your filter, which they typically would be otherwise.&lt;/p&gt;
+&lt;p&gt;For example, imaging you&amp;rsquo;re setting up an &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;email notification workflow&lt;/a&gt; to send a notification to people once a week of any outstanding tasks. You&amp;rsquo;d likely need two filters, the first to find any tasks with an &amp;lsquo;outstanding&amp;rsquo; status and the second to only include tasks for which no notifications have been sent within the last 7 days.&lt;/p&gt;
+&lt;p&gt;For that second filter, you would set it up as&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&#39;last notified&#39; is more than 7 days ago
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;However, as it stands, that would exclude any tasks which have &lt;strong&gt;never&lt;/strong&gt; had a notification sent for them, i.e. where the last notified field is blank.&lt;/p&gt;
+&lt;p&gt;To include those, just tick &amp;lsquo;or is blank&amp;rsquo; after creating the filter.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Importing from spreadsheet</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/importing/</link>
+      <pubDate>Wed, 03 Jun 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/importing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;agileBase allows data to be imported from CSV (Comma Separated Variable) files. All popular spreadsheet software can save data in this format.&lt;/p&gt;
+&lt;p&gt;Anyone with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;&lt;strong&gt;manage&lt;/strong&gt; privileges&lt;/a&gt; on a table can import data into it.&lt;/p&gt;
+&lt;p&gt;In the tiles interface, load any view created from the table to import into. Scroll to the bottom of the rows and press the cloud import icon, then follow through the prompts.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/import-link.png&#34; alt=&#34;import link&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Data can be imported in two ways.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;insert all new records&lt;/li&gt;
+&lt;li&gt;update existing records&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Inserting new records will create a new record in the database for every line in the CSV file. Updating existing records will attempt to match each line in the file with an existing record and update all field values from the CSV. This can be useful when merging in data from an external source, or exporting, altering with a third party system and re-importing. Another use can be updating one field based on another - you can &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/exporting/&#34;&gt;export&lt;/a&gt;, update the fields as necessary and re-import.&lt;/p&gt;
+&lt;p&gt;In either case, the CSV file must contain fields in the same order as they are in the table being imported into. The column titles don’t need to be the same though, it’s the order which is important. The import screen will show you the column order which is necessary.&lt;/p&gt;
+&lt;h2 id=&#34;updating-existing-records&#34;&gt;Updating existing records&lt;/h2&gt;
+&lt;p&gt;When updating records, a key field must be selected to match records up. This can be any field that has the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#unique&#34;&gt;unique&lt;/a&gt; property set. Alternatively the internal agileBase rowID can be used. This field is included as the first field in any data export.&lt;/p&gt;
+&lt;p&gt;Sometimes, admins will want to do an export -&amp;gt; modify spreadsheet -&amp;gt; re-import workflow. This is straightforward:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Export from the admin interface by clicking the table containing the data you want to modify and clicking the &lt;em&gt;export&lt;/em&gt; button in the top toolbar.&lt;/li&gt;
+&lt;li&gt;Open the spreadsheet, making any modifications you need. The first column will be the internal ID for each record, keep this, it will be needed when re-importing.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note it will be hidden - you can un-hide it in the spreadsheet for clarity&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Blank out (remove content from) any columns which you haven’t updated. Otherwise if people have updated them since your export, you will overwrite their changes.&lt;/li&gt;
+&lt;li&gt;Re-import using an ‘update’ type import as above. Select &lt;em&gt;use internal agileBase row IDs to identify records&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;notes-on-special-fields&#34;&gt;Notes on special fields&lt;/h2&gt;
+&lt;p&gt;For a file field, please leave an empty column in the spreadsheet in that position. If you wish to do a bulk upload of many images or documents, please contact &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;support&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Columns for &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/separators/&#34;&gt;separator&lt;/a&gt; and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced data&lt;/a&gt; fields should not be included in the import spreadsheet as these field types don&amp;rsquo;t store data.&lt;/p&gt;
+&lt;p&gt;Data can be imported into &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/&#34;&gt;comment fields&lt;/a&gt; as per any other field.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

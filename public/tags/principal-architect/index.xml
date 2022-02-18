@@ -1,0 +1,458 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>agileBase docs – Principal Architect</title>
+    <link>https://docs.agilebase.co.uk/tags/principal-architect/</link>
+    <description>Recent content in Principal Architect on agileBase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 20 Jun 2021 09:20:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/tags/principal-architect/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Logging in from an app</title>
+      <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/app_login/</link>
+      <pubDate>Sun, 20 Jun 2021 09:20:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/app_login/</guid>
+      <description>
+        
+        
+        &lt;p&gt;It&amp;rsquo;s possible for a developer to create a third party application, for example a phone or tablet app, that communicates with agileBase via the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations&#34;&gt;API&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now to use the API, you don&amp;rsquo;t need to authenticate as a user, as long as the app has the correct Authorization key(s), it can read and write data to agileBase.&lt;/p&gt;
+&lt;p&gt;However, in some cases the app may need to confirm that someone has a valid agileBase account before allowing them to use the app. This may or may not be necessary depending on the use case, for example depending on whether the app is free to use for anyone, or must be limited to paying customers.&lt;/p&gt;
+&lt;p&gt;To validate a user, the app must redirect them to the agileBase login page, let them log in and confirm that was successful. Therefore, a HTTP client is necessary - this can be a &amp;lsquo;web view component&amp;rsquo; or a programmatic client such as the &lt;a href=&#34;https://hc.apache.org/&#34;&gt;Apache HTTP Client&lt;/a&gt; for &lt;a href=&#34;https://en.wikipedia.org/wiki/Java_%28programming_language%29&#34;&gt;Java&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In this example, we&amp;rsquo;ll use the &lt;a href=&#34;https://reactjs.org/&#34;&gt;React&lt;/a&gt; &lt;a href=&#34;https://www.npmjs.com/package/react-native-webview&#34;&gt;Native Web View&lt;/a&gt; but the principle is the same for any programming language or library.&lt;/p&gt;
+&lt;h2 id=&#34;general-principle&#34;&gt;General Principle&lt;/h2&gt;
+&lt;p&gt;The application must reproduce the same login process as a human would, using a HTTP client. Importantly, the HTTP client must support cookies, as the login process depends on them, in particular setting a &lt;code&gt;JSESSIONID&lt;/code&gt; cookie.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Make a request to load the page &lt;a href=&#34;https://appserver.gtportalbase.com/agileBase/AppController.servlet?return=user_details&#34;&gt;https://appserver.gtportalbase.com/agileBase/AppController.servlet?return=user_details&lt;/a&gt;. This will return the login page and set the cookie value.&lt;/li&gt;
+&lt;li&gt;Submit the login form using the user&amp;rsquo;s username and password. If using a programattic process i.e. making the calls from code rather than using a web view, this means making a form POST to &lt;code&gt;/agileBase/j_security_check&lt;/code&gt; with the parameters &lt;code&gt;j_username&lt;/code&gt; and &lt;code&gt;j_password&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Detect whether the login&amp;rsquo;s successful. If not, the standard agileBase login failure page will be returned&lt;/li&gt;
+&lt;li&gt;If successful, a HTML page will be returned containing three hidden input fields, &lt;code&gt;username&lt;/code&gt;, &lt;code&gt;forename&lt;/code&gt;, &lt;code&gt;surname&lt;/code&gt; containing relevant details for the logged in user. If being called from a React Native Web View, the page will also post back messages to React using this JavaScript:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if (window.ReactNativeWebView) {
+    window.ReactNativeWebView.postMessage(&amp;quot;username:&amp;quot; + username);
+    window.ReactNativeWebView.postMessage(&amp;quot;forename:&amp;quot; + forename);
+    window.ReactNativeWebView.postMessage(&amp;quot;surname:&amp;quot; + surname);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s a full example of a login.js page using the React Native Web View. NB this is an example taken from a full application, so you will need to modify it / strip it back to suit your needs, before it can be run.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;//Node imports
+import React, {useEffect, useRef, useState} from &#39;react&#39;;
+import {View, StatusBar, Image, ImageBackground, ScrollView} from &#39;react-native&#39;;
+
+//Local imports
+import {styles} from &#39;../../../styles/loginStyles&#39;;
+import {Images, Colors, Constants, Language} from &#39;../../../common&#39;;
+import {useNetInfo} from &amp;quot;@react-native-community/netinfo&amp;quot;;
+import { WebView } from &#39;react-native-webview&#39;;
+import {useDispatch, useSelector} from &#39;react-redux&#39;;
+import {updateUserData} from &#39;../../../redux/actions/commonAction&#39;;
+import commonFunctions from &#39;../../../common/commonFunctions&#39;;
+import SplashScreen from &#39;react-native-splash-screen&#39;
+const {fontSize, fontFamily, Window} = Constants;
+
+const LoginScreen = (props) =&amp;gt; {
+    const dispatch = useDispatch();
+    const {user_data} = useSelector(state =&amp;gt; state);
+    const netInfo = useNetInfo();
+
+    useEffect(function () {
+        SplashScreen.hide();
+        console.log(&#39;netInfo==============&#39;, netInfo)
+        if(netInfo?.isInternetReachable || netInfo?.details != null){
+            checkUser();
+        }
+    }, [netInfo, user_data]);
+
+    const checkUser = () =&amp;gt; {
+        if(user_data &amp;amp;&amp;amp; user_data?.forename &amp;amp;&amp;amp; user_data?.surname &amp;amp;&amp;amp; user_data?.username){
+            goToNextPage();
+        }
+        console.log(&#39;user_data&#39;, user_data)
+    }
+
+    const goToNextPage = async () =&amp;gt; {
+        await commonFunctions.removeTimeStamp();
+        navigateToNextPage();
+    }
+
+    const onResponseFromWebView = (event) =&amp;gt; {
+        const eventData = event.nativeEvent.data;
+        console.log(&#39;eventData&#39;, eventData);
+        if (eventData.includes(&#39;username&#39;)) {
+            dispatch(updateUserData({username: eventData.split(&#39;username:&#39;)[1]}));
+        } else if (eventData.includes(&#39;forename&#39;)) {
+            dispatch(updateUserData({forename: eventData.split(&#39;forename:&#39;)[1]}));
+        } else if (eventData.includes(&#39;surname&#39;)) {
+            dispatch(updateUserData({surname: eventData.split(&#39;surname:&#39;)[1]}));
+        }
+    }
+
+    const navigateToNextPage = () =&amp;gt; {
+        if (netInfo?.isInternetReachable) {
+            return props.navigation.navigate(&#39;Loading&#39;);
+        }
+        return props.navigation.navigate(&#39;MyApplicationPage&#39;);
+    }
+
+    return (
+        &amp;lt;View style={styles.container}&amp;gt;
+            &amp;lt;StatusBar backgroundColor={Colors.black} barStyle={&#39;dark-content&#39;}/&amp;gt;
+            {(netInfo?.isInternetReachable &amp;amp;&amp;amp; !user_data?.surname) ?
+                &amp;lt;WebView
+                    source={{uri: &#39;https://appserver.gtportalbase.com/agileBase/AppController.servlet?return=user_details&#39;}}
+                    onMessage={onResponseFromWebView}
+                    textZoom={100}
+                    sharedCookiesEnabled={true}
+                /&amp;gt; :
+                &amp;lt;View style={styles.loadingImage}&amp;gt;
+                    &amp;lt;Image source={Images.logo}/&amp;gt;
+                &amp;lt;/View&amp;gt;
+            }
+        &amp;lt;/View&amp;gt;
+    );
+};
+
+export default LoginScreen;
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Changing Field Types</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/changing-field-types/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/changing-field-types/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Once a field has been created, the type can&amp;rsquo;t be changed with the flick of a switch. However there is an easy to follow process to accomplish this.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Rename the field to &lt;code&gt;[fieldname] old&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add a new field &lt;code&gt;[fieldname]&lt;/code&gt;. This means that any calculations that reference the field won&amp;rsquo;t have to be changed and won&amp;rsquo;t break due to mis-matching field names&lt;/li&gt;
+&lt;li&gt;Copy all values from one field to another. The easiest way is to use a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Try to delete the old field. If any views reference it, the delete will fail and a list of them will be shown&lt;/li&gt;
+&lt;li&gt;Edit all those views
+&lt;ul&gt;
+&lt;li&gt;remove the old field and add the new, to all fields, filters etc.&lt;/li&gt;
+&lt;li&gt;update all calculations that reference the field e.g. add a space to the end of all of them. That will refresh them to reference the new field rather than the old&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Finally, delete the old field&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Before starting, it will be worth ensuring that data won&amp;rsquo;t change during the process, for example by making the data read-only to all users, or requesting they don&amp;rsquo;t edit field values until finished.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Advanced Usage</title>
+      <link>https://docs.agilebase.co.uk/docs/advanced-usage/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/advanced-usage/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Also, new features, news and tips and tricks are posted on &lt;a href=&#34;https://blog.agilebase.co.uk&#34;&gt;https://blog.agilebase.co.uk&lt;/a&gt;. Please subscribe on that page to receive any updates.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Company Settings</title>
+      <link>https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/</guid>
+      <description>
+        
+        
+        &lt;p&gt;To access them:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the administration interface, expand the &lt;em&gt;Administration&lt;/em&gt; section at the bottom left&lt;/li&gt;
+&lt;li&gt;Select &lt;em&gt;company&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Click the pencil icon in the top toolbar to edit&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;mandate-2fa&#34;&gt;Mandate 2FA&lt;/h3&gt;
+&lt;p&gt;When this is ticked, all users in the organisation will be required to set up &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/2fa-setup/&#34;&gt;Two Factor Authentication&lt;/a&gt; before they can see or use any features of the application.&lt;/p&gt;
+&lt;p&gt;We recommend that all administrators enable this if possible. Even when 2FA is mandated, admins can still &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/#two-factor-authentication&#34;&gt;disable it temporarily&lt;/a&gt; on a per-user basis. The next time they log in they will be prompted to set it up again.&lt;/p&gt;
+&lt;p&gt;When this is off, users will still be prompted to set up 2FA, it just won&amp;rsquo;t be mandatory.&lt;/p&gt;
+&lt;h3 id=&#34;smtp-server&#34;&gt;SMTP server&lt;/h3&gt;
+&lt;p&gt;agileBase &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;workflows&lt;/a&gt; and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chasers&lt;/a&gt; that send emails use an @notifications.agilebase.co.uk email address by default.&lt;/p&gt;
+&lt;p&gt;You may wish to instead use email addresses from your own domain name, especially if the system sends emails to people outside your organisation, like customers or suppliers.&lt;/p&gt;
+&lt;p&gt;To allow this, you will need to use your own SMTP server, or a third party trusted system authenticated against your domain name. Using a service like &lt;a href=&#34;http://www.authsmtp.com/&#34;&gt;AuthSmtp&lt;/a&gt;, &lt;a href=&#34;http://www.sendgrid.com/&#34;&gt;SendGrid&lt;/a&gt; or &lt;a href=&#34;https://aws.amazon.com/ses/&#34;&gt;Amazon Simple Email Service&lt;/a&gt; is probably the most straightforward way of setting this up - their instructions will tell you how to set up facilities such as Sender Policy Framework and DomainKeys in order to increase email deliverability.&lt;/p&gt;
+&lt;p&gt;Once you have the SMTP server address, username and password from your service, enter them into the details in this section in agileBase.&lt;/p&gt;
+&lt;h3 id=&#34;slack-webhook-url&#34;&gt;Slack Webhook URL&lt;/h3&gt;
+&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/slack-integration/&#34;&gt;Integrations - Slack&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;send-chart-subscriptions-from&#34;&gt;Send chart subscriptions from&lt;/h3&gt;
+&lt;p&gt;Users can opt to have daily, weekly or monthly emails sent to them containing all the charts they&amp;rsquo;ve subscribed to for that period. The emails will come from an email address @notifications.agilebase.co.uk by default, this option will allow you to specify your own address.&lt;/p&gt;
+&lt;p&gt;If used, then the SMTP details above also need to be completed.&lt;/p&gt;
+&lt;h3 id=&#34;export-message&#34;&gt;Export message&lt;/h3&gt;
+&lt;p&gt;As you will know, your organisation is required to protect personal data, as per the GDPR. One thing to watch out for is what happens to data that is exported to spreadsheet?&lt;/p&gt;
+&lt;p&gt;There are various &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/exporting/&#34;&gt;rules&lt;/a&gt; you can set up to control exports that are well worth familiarising yourself with, as an administrator. These control who can export, what they can export and how much can be exported. Once data is in a spreadsheet of course, the system no longer has any control over it. It can be emailed, shared etc. as the spreadsheet owner wishes.&lt;/p&gt;
+&lt;p&gt;This option allows you to set the text of a prompt that users see before exporting. It can be used to remind people of their obligations and point them to any further information provided by your organisation. They will need to tick to accept before performing the export.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Send Data to a third party via API</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/send-data-to-a-third-party-via-api/</link>
+      <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/send-data-to-a-third-party-via-api/</guid>
+      <description>
+        
+        
+        &lt;p&gt;When integrating agileBase with third party systems, the API is really useful. Programmers can use it to send data to websites, to other software such as PowerBI, a  Business Intelligence tool, or to external systems such as label/barcode printers for example. The opportunities are endless.&lt;/p&gt;
+&lt;p&gt;agileBase can either ‘push’ data to a third party system, or have the third party system ‘pull’ it out.&lt;/p&gt;
+&lt;p&gt;What’s the difference? Simply put, if pulling, a third party system has to regularly ask, or &amp;lsquo;poll&amp;rsquo;, agileBase whether there’s any new data. It may do this once an hour, once every few minutes or however often it needs. That means extra work for both systems. New data may be reasonably infrequent but when it is there you want it to be transferred quickly, which means polling often even when there’s nothing to send.&lt;/p&gt;
+&lt;p&gt;Conversely, with ‘push’, agileBase sends a message to the third party system &lt;strong&gt;only when there’s relevant data to send&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;push&#34;&gt;PUSH&lt;/h2&gt;
+&lt;p&gt;When using push, calls are made only when necessary. Further, you can specify in the settings the maximum number of calls to make per day, so you can control the maximum possible cost. You can set it to anything from once every 5 minutes to once a day. Different integrations may require more or less timely data. For example invoice totals may be ok to push to an accounting system once a day but individual customer orders may be best sent as soon as they’re received.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/&#34;&gt;More detail about setting up a PUSH API can be found here&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;pull&#34;&gt;Pull&lt;/h2&gt;
+&lt;p&gt;Connections to agileBase are made using standard HTTP calls. This makes it easy for developers in any language, so PHP, Java, even JavaScript in a browser can be used.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/setting-up-the-pull-api/&#34;&gt;More detail about setting up a PULL API can be found here&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Build Patterns</title>
+      <link>https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Some of these are just useful ideas, some are tips and tricks and some are larger-scale build patterns for more complex tasks commonly undertaken by customers.&lt;/p&gt;
+&lt;p&gt;These tips will link to various other places in the documentation, but it will still be useful to have some experience of building in agileBase before reading.&lt;/p&gt;
+&lt;h2 id=&#34;settings-table-idea&#34;&gt;Settings table idea&lt;/h2&gt;
+&lt;p&gt;To use a single store of a common setting throughout the application. When a setting is changed it will then automatically take effect throught the whole application.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Example: VAT rate&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;snapshots-idea&#34;&gt;Snapshots idea&lt;/h2&gt;
+&lt;p&gt;Taking snapshots of a set of rows from a table at a point in time allows a comparison of earlier snapshots with later ones, or the current state, to show differences.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Example: delivery van loading reports. An initial snapshot of tomorrow’s orders shows what product quantities to load onto the vans. Later snapshots, taken at any point, will show any additions/removals needed at that time, by subtracting the current order lines from previous ones.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;gap-filling-in-monthly-or-other-period-reporting&#34;&gt;Gap filling in monthly (or other period) reporting&lt;/h2&gt;
+&lt;p&gt;When reporting monthly figures in a view (e.g. quantities sold per product per month), if there may be some gaps, they can be filled with zeros.&lt;/p&gt;
+&lt;p&gt;In outline, the solution is to&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a table containing one and only one record. Once a record has been created, disallow adding or removing records using &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/&#34;&gt;table options&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;From that table create a view called e.g. &amp;lsquo;month series&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;Add a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/examples/#series-generation&#34;&gt;&lt;code&gt;generate_series&lt;/code&gt;&lt;/a&gt; calculation to that view to generate the list of months required.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A report can then be created by joining from &amp;lsquo;month series&amp;rsquo; to the actual data you want to report. You may need to join on a calculation, e.g. a text representation of the month (using the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/examples/#date-functions&#34;&gt;&lt;code&gt;to_char&lt;/code&gt;&lt;/a&gt; function) or an amalgamation of a month and product code.&lt;/p&gt;
+&lt;h2 id=&#34;joining-on-compound-keys&#34;&gt;Joining on compound keys&lt;/h2&gt;
+&lt;p&gt;Extending the above, what about when you want to summarise by two factors, e.g. ‘by customer by product’. In that case create calculations to make a unique key per combination e.g.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;{customers.id:customers} || ‘_’ || {products.id:products}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Use the same calculation in views you want to join to and join on it.&lt;/p&gt;
+&lt;p&gt;This is much better than the &amp;lsquo;naive&amp;rsquo; idea of creating separate joins to each table, which won’t work.&lt;/p&gt;
+&lt;h2 id=&#34;including-multiple-aggregates-from-different-sources&#34;&gt;Including multiple aggregates from different sources&lt;/h2&gt;
+&lt;p&gt;Joining from one table down to multiple child tables in order to perform aggregates will not work - you&amp;rsquo;ll experience double counting.&lt;/p&gt;
+&lt;p&gt;For example, if a customers table joins down to both &amp;lsquo;customer invoices&amp;rsquo; and &amp;lsquo;customer complaints&amp;rsquo;, then a &lt;code&gt;count(*)&lt;/code&gt; calculation will return neither the number of invoices or complaints, but the product of the two i.e. the number of invoices times the number of complaints.&lt;/p&gt;
+&lt;p&gt;To solve this,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create one view dedicated to each aggregate calculation, created from the parent table. The view will then have one row per parent record i.e. customer in this case&lt;/li&gt;
+&lt;li&gt;From a final view created from the parent table, join to these views in order to include the results&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;calculating-the-number-of-weekdays-or-weekends-between-two-dates&#34;&gt;Calculating the number of weekdays or weekends between two dates&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Generate a series of all the dates between two dates, calculate the day of the week for each&lt;/li&gt;
+&lt;li&gt;From a separate view, join to this series and count up all the cases where it&amp;rsquo;s not a weekend&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is necessary as calculations on the results of a generate_series often need to be done from a separate view&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;outputting-a-pivoted-view-in-a-printout&#34;&gt;Outputting a ‘pivoted’ view in a printout&lt;/h2&gt;
+&lt;p&gt;In a template, &lt;code&gt;$view.htmlTable(“table name”, “view name”)&lt;/code&gt; outputs the contents of the view.&lt;/p&gt;
+&lt;p&gt;Use &lt;code&gt;$view.htmlTableTransverse(“table name”, “view name”)&lt;/code&gt; instead for a pivoted version with columns and rows swapped.&lt;/p&gt;
+&lt;h2 id=&#34;capturing-dates-of-status-changes-on-lookup-list&#34;&gt;Capturing dates of status changes on lookup list&lt;/h2&gt;
+&lt;p&gt;Show a date field only when the dropdown reaches the desired status, using &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#show-if-record-in-view&#34;&gt;field options&lt;/a&gt;. Use a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#set-from-previous-referenced-field&#34;&gt;referenced data field&lt;/a&gt; to populate it with the current time.&lt;/p&gt;
+&lt;h2 id=&#34;record-builder&#34;&gt;Record Builder&lt;/h2&gt;
+&lt;p&gt;Scenario: A customer tends to order the same products every time. Have an option for the system to auto fill the “standard” order every time an order is placed.&lt;/p&gt;
+&lt;p&gt;Use the tab option &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#populate-from-template&#34;&gt;Populate from template&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;de-duplicating-a-comma-separated-list&#34;&gt;De-duplicating a comma separated list&lt;/h2&gt;
+&lt;p&gt;Calculation template:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;array_to_string(
+  array(select distinct unnest(
+    regexp_split_to_array(‘my,comma,separated,list’, &#39;,&#39;)
+  ))
+,&#39;,&#39;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;array_to_string(
+  array(select distinct unnest(
+    regexp_split_to_array(
+      string_agg({b2.2) ingredient suppliers.ingredient supplier&#39;s countries of origin}, &#39;,&#39;)
+    ,&#39;,&#39;)
+  ))
+,&#39;,&#39;)
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;custom-filtering-when-choosing-a-relation&#34;&gt;Custom filtering when choosing a relation&lt;/h2&gt;
+&lt;p&gt;When choosing a relation, either in a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;junction table&lt;/a&gt; or otherwise, the system will automatically filter on the ID of any related parent record. For example, when adding order lines to a customer order, if each product is related to a customer, then the system will automatically only let the user choose products for that customer.&lt;/p&gt;
+&lt;p&gt;However it won’t filter on anything that’s more than one direct relationship away. If you want to do that, or indeed filter on anything else at all, you can create a filter calculation.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the relation chooser view, create a calculation e.g. ‘my relation filter’ and set it to contain the contents of what you want to filter on e.g. some other field. The calculation can be hidden.&lt;/li&gt;
+&lt;li&gt;From the main table, create a new view. In that view, create a calculation with the same name and contents.&lt;/li&gt;
+&lt;li&gt;Add that a cross-reference field into the main table, utilising that view. In the field options, tick &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/referenced-field-options/#use-as-a-filter-for-relations&#34;&gt;use as filter&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;switching-a-field-from-one-type-to-another&#34;&gt;Switching a field from one type to another&lt;/h2&gt;
+&lt;p&gt;For example, converting a whole number field into a decimal number&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Rename the field to &amp;lsquo;{fieldname} old&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;Add a new field &amp;lsquo;{fieldname}&amp;rsquo;. This means that any calcs updated won&amp;rsquo;t have to be changed and won&amp;rsquo;t break due to mis-matching field names&lt;/li&gt;
+&lt;li&gt;Copy all values from one field to another. The easiest way to do that is to use a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Try to delete the old field. It will show a list of views that contain it&lt;/li&gt;
+&lt;li&gt;Edit all those views to remove references to the field and add the new field. That includes updating all calculations that reference the field to trigger the system to realise that the calc. no longer references eht old field&lt;/li&gt;
+&lt;li&gt;Remove the old field&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;finding-the-latest-child-record&#34;&gt;Finding the &amp;lsquo;latest&amp;rsquo; child record&lt;/h2&gt;
+&lt;p&gt;A common scenario occurs when you have a one to many relationship. You want a view which shows precise info from the &amp;lsquo;latest&amp;rsquo; child record.&lt;/p&gt;
+&lt;p&gt;Start with parent table and join to child, add the controlling field and set the correct order. For example, sorting by &amp;lsquo;created on [auto]&amp;rsquo; descending will give you the newest child record. Then go to &lt;em&gt;manage&lt;/em&gt; tab of the view and set the &lt;em&gt;Distinct Field&lt;/em&gt; option to the Parent table’s ID field.&lt;/p&gt;
+&lt;p&gt;You can now freely add what ever fields from the child record happy in the knowledge you’ll only have the one line per parent.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Performance Optimisation</title>
+      <link>https://docs.agilebase.co.uk/docs/advanced-usage/performance-optimisation/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/advanced-usage/performance-optimisation/</guid>
+      <description>
+        
+        
+        &lt;p&gt;agileBase automatically takes some measures behind the scenes to maintain high performance as data volumes grow.&lt;/p&gt;
+&lt;p&gt;There are other mechanisms that can be manually enabled such as &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/options/#cache-view-rows&#34;&gt;caching&lt;/a&gt; and increasing the memory assigned to particular views.&lt;/p&gt;
+&lt;p&gt;Finally, we will be happy to to do all we can to speed up any parts of your application that require it if you &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt;. Often, a solution as simple as manually adding an index to a particular field can speed up requests by multiple orders of magnitude.&lt;/p&gt;
+&lt;p&gt;For really big data projects, there&amp;rsquo;s also the option of utilising PostgreSQL-compatible database services designed for such tasks, like &lt;a href=&#34;https://www.citusdata.com/&#34;&gt;Citus Data&lt;/a&gt;, which we will be happy to provision.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Authenticating users via the API</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/testing-a-login/</link>
+      <pubDate>Tue, 19 Jan 2021 12:41:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/testing-a-login/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Sometimes when developing an app that integrates with agileBase, you may want to allow it to query the system to check the login details a user provides. In other words, let a user &amp;lsquo;log in&amp;rsquo; via your app.&lt;/p&gt;
+&lt;p&gt;The API mechanisms described in this section (push, pull etc.) don&amp;rsquo;t require a login to use, they work only via the API keys as described, however your app may still wish to test a users login to ensure they are a valid user.&lt;/p&gt;
+&lt;p&gt;To do that, the third party app must act exactly as if it were a web browser allowing the user to log in. In other words it must follow this process:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Visit &lt;a href=&#34;https://appserver.gtportalbase.com/agileBase/AppController.servlet?return=user_details&#34;&gt;https://appserver.gtportalbase.com/agileBase/AppController.servlet?return=user_details&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The page will return a login form and a cookie JSESSIONID&lt;/li&gt;
+&lt;li&gt;Post the form i.e. submit values j_username and j_password, along with the cookie&lt;/li&gt;
+&lt;li&gt;If the username and password are correct, a JSON object will be returned in the response, containing the user&amp;rsquo;s details. If not, an error page will be returned&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;resources--examples&#34;&gt;Resources / Examples&lt;/h2&gt;
+&lt;h3 id=&#34;java&#34;&gt;Java&lt;/h3&gt;
+&lt;p&gt;See section &lt;strong&gt;Form Login with Cookies&lt;/strong&gt; of &lt;a href=&#34;https://www.tutorialspoint.com/apache_httpclient/apache_httpclient_form_based_login.htm&#34;&gt;https://www.tutorialspoint.com/apache_httpclient/apache_httpclient_form_based_login.htm&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;react&#34;&gt;React&lt;/h3&gt;
+&lt;p&gt;Use the &amp;lsquo;react-cookie&amp;rsquo; package: &lt;a href=&#34;https://www.npmjs.com/package/react-cookies&#34;&gt;https://www.npmjs.com/package/react-cookies&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;python&#34;&gt;Python&lt;/h3&gt;
+&lt;p&gt;Use the &amp;lsquo;urllib2&amp;rsquo; library: &lt;a href=&#34;https://stackoverflow.com/questions/301924/python-urllib-urllib2-httplib-confusion&#39;&#34;&gt;https://stackoverflow.com/questions/301924/python-urllib-urllib2-httplib-confusion&#39;&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Creating user accounts with the API</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/creating-user-accounts/</link>
+      <pubDate>Wed, 14 Apr 2021 10:41:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/creating-user-accounts/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Normally, a user account can only be created by a system administrator - see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/#adding-a-user&#34;&gt;adding a user&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;However there&amp;rsquo;s one special case in which the organisation runs a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanted&lt;/a&gt; agileBase account. In that case, you can use an API call to create a new tenant in the account and new user(s) for that tenant.&lt;/p&gt;
+&lt;p&gt;For example, imagine your organisation is a body for football clubs around the country, where each club was a tenant, i.e. each club had users who could log in, but only see data from their own club. In that case, the user creation API could be called to&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;create a new club&lt;/li&gt;
+&lt;li&gt;create an initial user (or users) for that club&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
+&lt;p&gt;Before calling the API, you have to configure the system to allow it to be used. In the administrator user interface:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Expand the &lt;em&gt;Administration&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;company&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Click your company name then the pencil icon in the toolbar to edit the details&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In &lt;em&gt;Multi-tenanting field name (optional)&lt;/em&gt;, type in the field name that your system uses to differentiate tenants, e.g. &amp;ldquo;account name&amp;rdquo;. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Refresh the page and an API key will appear. We will need this to call the API as below.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To disable the API at any point, just delete the value you entered into &lt;em&gt;Multi-tenanting field name (optional)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;calling-the-api&#34;&gt;Calling the API&lt;/h2&gt;
+&lt;p&gt;Use URL &lt;a href=&#34;https://ab.agilechilli.com/agileBase/Public.ab&#34;&gt;https://ab.agilechilli.com/agileBase/Public.ab&lt;/a&gt;. You should make a &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST&#34;&gt;POST&lt;/a&gt; request with encoding &lt;code&gt;application/x-www-form-urlencoded&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;Authorization&lt;/code&gt; header needs to be set to the API key as above.&lt;/p&gt;
+&lt;p&gt;The following paramaters are required&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;c: this identifies your company account and will always be the same. It will be shown in the company editing screen used in preparation, above&lt;/li&gt;
+&lt;li&gt;create_tenant: true&lt;/li&gt;
+&lt;li&gt;json&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The value of the json parameter is a JSON object, defined below.&lt;/p&gt;
+&lt;p&gt;In the below format, &lt;code&gt;multi-tenanting fieldname&lt;/code&gt; is the name of the field used to differentiate tenants with spaces replaced with underscores, e.g. &amp;lsquo;account_name&amp;rsquo;. The &lt;code&gt;multi-tenanting value&lt;/code&gt; is the name of the tenant you wish to create with this particular API call. A multi-tenanting role will be created named &amp;lsquo;cust &lt;code&gt;multi-tenanting value&lt;/code&gt;&amp;rsquo;. E.g. if the value is &amp;lsquo;spurs&amp;rsquo;, the role will be named &amp;lsquo;cust spurs&amp;rsquo;. The value should be a lowercase string consisting only of letters from a through to z and numbers.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;users&lt;/code&gt; property is an array of users. Each user will be created and assigned to the above multi-tenanting role, so they can only see data belonging to them and other users of that role. The user will need a valid &lt;code&gt;email address&lt;/code&gt; in order to perform a password reset so they can log in.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;customui&lt;/code&gt; property refers to the option to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/#use-the-custom-agilechilli-ui-rather-than-agilebases&#34;&gt;apply a custom logo and login screen&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For each user, the &lt;code&gt;roles&lt;/code&gt; parameter is a comma separated list of internal role IDs, or role names. In addition to the multi-tenanting role, they will also be assigned these roles. They could be e.g. &amp;lsquo;manager&amp;rsquo;, &amp;lsquo;sales rep&amp;rsquo; or &amp;lsquo;accounts dept&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;For each user, &lt;code&gt;tiles&lt;/code&gt; is an array of the tiles the user should see on screen when they log in.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
+  &amp;quot;[multi-tenanting fieldname]&amp;quot;: &amp;quot;[multi-tenanting value]&amp;quot;,
+  &amp;quot;users&amp;quot;: [
+    {
+      &amp;quot;username&amp;quot;: &amp;quot;[username&amp;quot;,
+      &amp;quot;forename&amp;quot;: &amp;quot;[forename]&amp;quot;,
+      &amp;quot;surname&amp;quot;: &amp;quot;[surname]&amp;quot;,
+      &amp;quot;email&amp;quot;: &amp;quot;[email address]&amp;quot;,
+      &amp;quot;customui&amp;quot;: [true/false],
+      &amp;quot;roles&amp;quot;: &amp;quot;[comma separated list of role names]&amp;quot;,
+      &amp;quot;tiles&amp;quot;: [
+        {
+          &amp;quot;tiletype&amp;quot;: &amp;quot;comment_stream / calendar / data_link / files&amp;quot;,
+          &amp;quot;colour&amp;quot;: &amp;quot;blue / yellow / green / purple / pink / turquoise / blue2 / yellow2 / green2 / purple2 / pink2 / turquoise2&amp;quot;,
+          &amp;quot;internaltilename&amp;quot;: &amp;quot;[for data_link or files tiles, identifies the tile to add]&amp;quot;
+        },
+        { ... }
+      ]
+    }
+  ]
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;On a successful call, the JSON&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
+&amp;quot;result&amp;quot;: &amp;quot;ok&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;will be returned, with a 200 HTTP status code. If there is an error,&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
+&amp;quot;error&amp;quot;: true,
+&amp;quot;type&amp;quot;: &amp;quot;[class of error]&amp;quot;,
+&amp;quot;message&amp;quot;: &amp;quot;[error message]&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;will be returned and the HTTP status code will reflect the error.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
