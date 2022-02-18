@@ -19,7 +19,7 @@ No more than a minute or two. It’s a really simple set up process. Here's a 60
 
 {{< youtube lGqp6oDVUF4 >}}
 
-This example shows an iPhone but it’s the same process with an Android phone - just install the Authenticator app from the Google Play store..
+This example shows an iPhone but it’s the same process with an Android phone - just install the Authenticator app from the Google Play store.
 
 Setup only needs to be done once. From then on you don’t need to do anything apart from open the app when asked. The app will automatically generate and display a code without any need for you to do anything.
 
