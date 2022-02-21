@@ -12,7 +12,7 @@ For each table, agileBase will automatically build a data entry form for users t
 The layout of this form can be controlled by selecting a layout option and adding separators to create blocks i.e. groups of fields which go together. This will create a more pleasant and usable system.
 
 ## Layout
-The layout option is the main control. There are three options
+The layout option is the main control. There are three options:
 1. **single column** - a simple vertical list of fields
 2. **blocks in two columns** - makes the best use of screen space for large forms. Also allows tabs
     - All fields before the first separator are displayed in a section at the top of the screen, in two columns

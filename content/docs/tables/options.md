@@ -8,10 +8,10 @@ tags:
 - Architect
 ---
 To access these options
-1. Expand the _Build Tables_ menu in the lefthand sidebar
-2. Select the table you wish to edit
-3. Click the pencil icon in the toolbar to edit the table, then select the table's _manage_ tab
-4. Click the _Options_ button
+1. Enable developer mode with the toggle switch in the top-right of the screen (if it is not already enabled)
+2. Select the table you wish to edit (in the _list_ view)
+3. Click the pencil icon on the left of the screen to edit the table, then select _tags and options_ in the floating sidebar
+4. Edit the fields as described below
 
 ## Allow add
 If this is ticked (it is by default), users can add records to the table. Anyone with manage privileges on the table can add tables regardless.

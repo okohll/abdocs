@@ -32,6 +32,7 @@ Data tiles need to be created by an administrator. Once a data tile is created a
 
 You should now see an editing screen with the details of the tile you just created.
 ![Tile editing](/tile-details.png)
+TODO: update this image
 
 The available options are
 * Name - the tile name

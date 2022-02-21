@@ -12,10 +12,11 @@ In agileBase, a view 'belongs to' a [table]({{<relref "/docs/tables">}}). We'll 
 We'll also assume we already have some tables and some [tiles]({{<relref "/docs/tiles">}}).
 
 ## To create a view
-1. Expand the _Build Tables_ menu in the lefthand sidebar
+1. Select (or [create]({{<relref "/docs/tables">}}) a new) table.
 2. Click the table you want to create a view from
-3. If necessary, click the pencil icon in the toolbar to edit the table and click the _manage_ tab at the bottom of the screen
-4. Press the 'Create new view' button at the top right. You'll be prompted for a name.
+3. Once the table has been selected, click _name and views_ on the floating sidebar
+4. Click _Add View..._
+5. You should now see your freshly created view
 
 > There is an option **Populate the view with fields from this table** next to the _Create new view_ button. This is a convenience feature, which is ticked by default. When it's ticked, the view created will contain all fields from the table - you can then remove any you don't need. When un-ticked, the view will start with no fields so you can add just those you wish.
 
@@ -24,7 +25,7 @@ On creating a view, its manage tab will appear. One of the first things it's use
 
 Within a tile, the view can be added to a menu by editing the view name. Simply prefix the view name with a menu name and a dash. So for example, naming a view `contacts - all contacts` will create a 'contacts' menu containing the view 'all contacts' visible to users.
 
-Entering a view _Purpose_ in the space underneath the name will provide help text for the view. This will be displayed in the menu underneath the view name. Here's a screenshot of a sample menu, each with purpose completed.
+Entering a view _Help_ in the space underneath the name will provide help text for the view. This will be displayed in the menu underneath the view name. Here's a screenshot of a sample menu, each with purpose completed.
 
 ![menu](/menu.png)
 

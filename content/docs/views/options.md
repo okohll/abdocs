@@ -97,5 +97,5 @@ If both those criteria are met, then turning on caching can significantly speed 
 
 Caching is implemented using [materialized views](https://en.wikipedia.org/wiki/Materialized_view).
 
-> If you find a view is slow, feel free to [contact us](https://agilechilli.com/contact-us/) for support before trying options like caching, there are many other targetted options we can look at first, such as adding indexes.
+> If you find a view is slow, feel free to [contact us](https://agilechilli.com/contact-us/) for support before trying options like caching, there are many other targeted options we can look at first, such as adding indexes.
 
