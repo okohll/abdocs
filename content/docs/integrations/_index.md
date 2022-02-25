@@ -27,6 +27,9 @@ Third parties can access data via an API, either:
 There is also dedicated facility for integrating data with a Calendar
 * Calendar Integration
 
+Finally, data can be sent to third party reporting tools like Power BI or Apache Superset, Excel or anything which can use [ODBC](https://en.wikipedia.org/wiki/Open_Database_Connectivity)
+* [External reporting (read-only access to data)]({{<relref "/docs/charting/business-intelligence">}})
+
 ## Incoming Data
 
 Users are ablle to add data:
