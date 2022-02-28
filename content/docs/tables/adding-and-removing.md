@@ -1,5 +1,5 @@
 ---
-title: "Adding and removing"
+title: "Adding, editing and removing"
 date: 2020-04-24T16:40:00+01:00
 type: docs
 weight: 40
@@ -11,8 +11,7 @@ A table is a store of data of a particular type e.g. a company, contact, product
 
 ## Adding a table
 1. On the homepage, click the 'toggle' button in the top-right of the screen to enable dev mode (if it is not enabled already)
-2. Click _list_ in the top centre of the screen (next to _connections_) to select the list view
-3. Click _+ Add Table_, choosing a name for the new table
+2. Click _+ Add Table_, choosing a name for the new table
 
 **TODO: images**
 
@@ -30,6 +29,20 @@ If you build a large system with lots of tables, you may find it a good idea to 
 In the administrator interface, tables are listed alphabetically, so you can arrange the tables into a logical order with this method.
 
 The user interface will strip out any prefixes when displaying names to users, if they end with a closing bracket `)`. 
+
+## Editing a table
+There are two ways to edit a table: from the homepage, or from editing a record.
+
+### From the homepage
+When you toggle build mode with the toggle in the top right corner of the screen, you can see a _connections_ mode and a _list_ mode: these two views show the tables in the system. The _connections_ mode shows the relations between entities whilst the _list_ mode presents the same data in tabular form.
+
+![Connections mode](/homepage-connections-mode.png)
+![List mode](/homepage-list-mode.png)
+
+### From editing a record
+When build mode is enabled, if you are viewing an individual record then clicking the big pencil at the top left of the screen lets you edit the underlying table.
+
+![Editing a record](/editing-a-record.png)
 
 ## Removing a table
 Before removing a table, you first need to remove all views and fields.

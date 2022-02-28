@@ -26,8 +26,6 @@ On the screen, a view is most usually output as a series of rows of data, with f
 
 ![view](/view.png)
 
-TODO: updated UI screenshot
-
 There are also other ways of displaying the output, such as in a [calendar]({{<relref "/docs/calendar">}}) or [document library]({{<relref "/docs/tiles">}}) interface.
 
 Views are organised into [tiles]({{<relref "/docs/tiles">}}). Each tile contains a collection of views, organised into a menu system within it. Administrators can hence organise the display of data in a logical fashion.
