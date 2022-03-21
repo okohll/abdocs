@@ -35,7 +35,7 @@ Within a few seconds, the data will then be visible to your external application
 ### Changes
 It's easy for developers to make changes to views in agileBase, for example adding / removing fields, changing calculations or just renaming a view.
 
-> However, when the BI connection is active, bear in mind that certain changes will disable the connection. The reason is that once data is set up to transfer to a separate system, the other system typically expects it to remain in the same format.
+> However, when the BI connection is active, bear in mind that certain changes could break it. The reason is that once data is set up to transfer to a separate system, the other system typically expects it to remain in the same format.
 >
 > That means that if you rename the view or move it, or rename/delete fields and calculations, you may afterwards need to check your charts in Superset / Power BI, to see if they need re-creating.
 
