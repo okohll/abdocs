@@ -8,9 +8,11 @@ tags:
 - Architect
 - System Owner
 ---
-In a table's _manage_ tab, there are two options which are worth considering if the data is storing commercially sensitive information (plenty of information in most customer systems falls under this category!) or personal information as defined by EU General Data Protection Regulations (GDPR).
+In a table's _privacy and security_ tab, there are two options which are worth considering if the data is storing commercially sensitive information (plenty of information in most customer systems falls under this category!) or personal information as defined by EU General Data Protection Regulations (GDPR).
 
 When either option is ticked, two controls appear.
+
+![Privacy and security](/privacy-and-security.png)
 
 ## Notify administrators on export
 Here you can enter a number. When a user exports more than that number of records at once to spreadsheet, all administrators (users with the [administrator]({{<relref "/docs/security-and-compliance/security-features/privileges#assigning-the-administrator-privilege">}}) privilege) are notified by email.

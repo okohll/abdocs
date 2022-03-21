@@ -21,7 +21,7 @@ It can be important to ensure that certain rules are followed when data is enter
 That said, these are the ways in which you can strictly enforce data integrity.
 
 ## At an individual field level
-Basic rules can be applied with [field options]({{<relref "/docs/fields/field-options/common-options">}}). for example a field may be set as mandatory, or it must contain unique values (no duplicates).
+Basic rules can be applied with [field options]({{<relref "/docs/fields/field-options/common-options">}}). For example a field may be set as mandatory, or it must contain unique values (no duplicates).
 
 ## Advanced field checks
 1. Expand the _Build Tables_ menu in the lefthand sidebar
@@ -31,6 +31,8 @@ Basic rules can be applied with [field options]({{<relref "/docs/fields/field-op
 
 Here you can add more complex checks, such as the value must be longer or shorter than a certain length, be within a date range or match a [regular expression](https://en.wikipedia.org/wiki/Regular_expression). The list of checks available is the same as that used in [view filters]({{<relref "/docs/views/filters">}}).
 
+![Field checks](/field-checks.png)
+
 ## Multi-field unique constraints
 Access these with the _Unique_ button under the _Checks_ button.
 
@@ -39,3 +41,4 @@ Sometimes, fields must be unique **in combination**. For example, imagine you ha
 You want to avoid duplicates being entered, so could make the customer reference number unique. However it could be that two different customers could use the same reference number independently, so that wouldn't really work.
 
 The solution is to add a multi-field unique constraint on customer and customer reference number. That way, a reference number won't be able to be re-used for a complaint from the same customer, but more than one customer is allowed to use the same reference.
+

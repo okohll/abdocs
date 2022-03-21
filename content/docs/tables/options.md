@@ -37,7 +37,7 @@ Run a [workflow]({{<relref "/docs/workflows">}}) immediately after the creation 
 As well as running the workflow on record creation, also run it whenever a user views a record in this table. Be aware this may have a performance impact for users, if the workflow is resource intensive and/or multi-step.
 
 ## Data entry from external sources
-The options in this section are for configuring the table to allow an API request from an external source to create and edit records. See [API use]({{<relref "/docs/integrations">}})for more information.
+The options in this section are for configuring the table to allow an API request from an external source to create and edit records. See [API use]({{<relref "/docs/integrations">}}) for more information.
 
 ## Other options
 ### Records lockable

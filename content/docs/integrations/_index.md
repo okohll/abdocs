@@ -32,9 +32,9 @@ Finally, data can be sent to third party reporting tools like Power BI or Apache
 
 ## Incoming Data
 
-Users are ablle to add data:
+Users are able to add data:
 * Via the User Interface
 * Import CSV files
 
-Third parties can save data in to agilebase 
+Third parties can save data into agilebase:
 * Via the POST API

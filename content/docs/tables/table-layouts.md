@@ -20,6 +20,8 @@ The layout option is the main control. There are three options:
     - If the table has tabs, they are displayed below the top section
 3. **process flow** - blocks of fields are arranged vertically one after each other, works well when there the data entry form maps to a set process
 
+![Tags and options](/tags-and-options.png)
+
 Here's what the same data entry form looks like in each of the three configurations
 
 ![single column layout](/layout-single.png) "single column"

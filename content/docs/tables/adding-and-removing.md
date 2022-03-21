@@ -14,6 +14,7 @@ A table is a store of data of a particular type e.g. a company, contact, product
 2. Click _+ Add Table_, choosing a name for the new table
 
 **TODO: images**
+![Add Table Button](/add-table-button.png)
 
 You can change the table's name and add a longer description under **Help**. This description will be used as help text in the user interface.
 
