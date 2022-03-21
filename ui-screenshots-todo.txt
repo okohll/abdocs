@@ -2,9 +2,9 @@ TODO
 
 Images to be updated with the new UI:
 
-https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/
-https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/
-https://docs.agilebase.co.uk/docs/tiles/
+https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/ - come back to
+https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/ - come back to
+https://docs.agilebase.co.uk/docs/tiles/ - come back to
 https://docs.agilebase.co.uk/docs/tables/table-layouts/
 https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/
 https://docs.agilebase.co.uk/docs/tables/usage/
