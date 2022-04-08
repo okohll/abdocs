@@ -27,7 +27,7 @@ The advantages of doing that, as opposed to just adding all the fields into diff
 ## Do not auto-populate
 This is ticked by default. When un-ticked, this means that when you add a new record, the relation field will automatically be populated with a link to the last 'parent' item you were looking at. For example, if you edit an organisation, then move away somewhere else in the system, finally load a contacts screen and create a new contact, that contact will link to the organisation you were editing (assuming there's a relation field linking contacts and organisations).
 
-> A [similarly named option]({{<relref "sequence-field-options" />}}) exists for sequence fields, to prevent auto-population of sequence numbers
+> A [similarly named option]({{<relref "sequence-field-options">}}) exists for sequence fields, to prevent auto-population of sequence numbers
 
 ## On parent delete
 This is an important option for controlling what happens when a parent record is deleted.
