@@ -82,7 +82,7 @@ If you have two views with fields of the same type in the same order, then you c
 This is done using an [SQL UNION](https://www.sqltutorial.org/sql-union/) clause.
 
 ## Cache view rows
-Caching can speed up views. It doesn't need to be used often a the underlying database PostgreSQL is great at dealing with large data problems, but when it is necessary it can significantly speed up access, allowing faster loading and searching. Caching works well when
+Caching can speed up views. It doesn't need to be used often as the underlying database PostgreSQL is great at dealing with large data problems, but when it is necessary it can significantly speed up access, allowing faster loading and searching. Caching works well when
 * a view is complex and slow to load
 * it doesn't contain a massive number of rows - in this case the issue is likely to be the raw volume of data, rather than the complexity of calculations
 
