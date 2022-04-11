@@ -17,7 +17,7 @@ When this field is included in a view, highlight it with a colour if the content
 ## Use dropdown
 Rather than a simple text entry field, display a dropdown of choices from which one can be selected. If there are only a few values, then the user interface may display options in [radio button](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio) style, but the behaviour is exactly the same.
 
-Options can be provided with the [default value]({{<relref "#default-value">}}) setting as above. If no options are specified, then the list of options will be automatically generated from the set of unique values **already entered** into records. In this way, a set of values will gradually grow as people enter new data.
+Options can be provided by entering a comma separated list into the [default value]({{<relref "#default-value">}}) setting as below. If no options are specified, then the list of options will be automatically generated from the set of unique values **already entered** into records. In this way, a set of values will gradually grow as people enter new data.
 
 See also the [Use only given values]({{<relref "#use-only-given-values">}}) option below to enforce the use of provided values only.
 
@@ -36,7 +36,7 @@ If it's un-ticked, then an 'add new entry' option will be available for users to
 > In some circumstances, it can be useful to leave this un-ticked and let options grow organically, until a certain point. Administrators can then rationalise and 'hard-code' values from the most commonly entered. In other situations, it may be best to specify available options right from the start.
 
 ## Default value
-For basic text fields, this simply provides a default value, which the field will have when a record's created. If not provided, the field will be blank.
+For basic text fields, i.e. not those which display as dropdowns or tag lists (see below), this simply provides a default value to set the field to when a new record's created. If not provided, the field value will be blank on creation.
 
 > Field defaults can also be calculated, with a simple or arbitratily complex calculation. To do that, instead use the [Set from previous referenced field]({{<relref "common-options#set-from-previous-referenced-field">}}) option.
 
@@ -46,6 +46,17 @@ If either [Use dropdown]({{<relref "#use-dropdown">}}) or [Use tags]({{<relref "
 If the list **starts with** a comma, that means the field should be blank by default when a record is created. If not, then the default will be the first value in the comma separated list.
 
 In the dropdown/tags list, the options will be ordered alphabetically, not shown in the order they're entered in. If you wish to give the values a particular order, you can prefix them with a number or letter followed by a closing bracket like so: `1) cold, 2) warm, 3) hot`. The number prefixes won't show to the user.
+
+#### Customising the list of options per user
+As well as entering a default set of options for dropdowns and tags fields as above, it's possible to add options which will only be visible to certain users, specifically those in a certain role.
+
+The way to add an option which will only be visible to users of a role is to add `|rolename` after the option, that is a vertical bar followed by the name of the role.
+
+For example, setting the list of options to
+
+`1) not billed, 2) awaiting payment, 3) paid|finance`
+
+will mean that anyone will be able to set the field to `1) not billed` or `2) awaiting payment` but only members of the finance role will be able to see and set the `3) paid` option (once it has been set, it will be visible to everyone).
 
 #### Lists of users
 Also for dropdown lists and tags fields, agileBase can generate dropdown contents based on a list of users and/or roles in the system. To do that, select `users` or `users and roles` from the 'fill with' selector just below the default value input. The standard user ID format throughout the system is used, 'Forename Surname (username)'.
