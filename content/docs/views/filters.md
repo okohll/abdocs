@@ -5,7 +5,7 @@ type: docs
 weight: 90
 description: Adding filters to a view
 tags:
-- Super User
+- Citizen Developer
 ---
 Filters can be applied permanently to a view, allowing an administrator to specify the subset of records that should be displayed. This is often for convenience and to create more useful systems. For example, if you have a database of suppliers, you may want to create views showing those which are approved, those which aren't, those which are local etc. Each view would have a different set of filters applied.
 

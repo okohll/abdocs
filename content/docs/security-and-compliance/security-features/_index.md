@@ -8,3 +8,4 @@ tags:
 - System Owner
 - Architect
 ---
+In these pages you can find details of how to set up users, roles, and privileges in agileBase. agileBase has an extensive role-based permissions system that enables fine-grained permissions and roles to be used.

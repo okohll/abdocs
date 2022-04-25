@@ -5,7 +5,7 @@ type: docs
 weight: 70
 description: Data visualisation options
 tags:
-- Super User
+- Citizen Developer
 ---
 In agileBase there are two mechanisms for charting and visualising data, each suited to a different purpose
 1) our [built-in charting](built-in-charting)

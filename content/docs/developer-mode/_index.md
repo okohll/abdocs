@@ -5,7 +5,7 @@ type: docs
 weight: 5
 description: Introducing agileBase's build mode and how to toggle it on and off
 tags:
-- Developer
+- System Builder
 ---
 As a no-code platform, agileBase allows you to easily build (and later un-build or 'refactor') and change your software.
 

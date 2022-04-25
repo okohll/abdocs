@@ -5,3 +5,4 @@ type: docs
 weight: 120
 description: Changes per release
 ---
+Here is the change log documenting changes per release.

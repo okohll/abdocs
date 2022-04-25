@@ -5,7 +5,7 @@ type: docs
 weight: 80
 description: Visualising data in third party Business Intelligence tools
 tags:
-- Developer
+- System Builder
 ---
 
 > Before setting up a BI connection, please be aware of the [data privacy and security](/docs/charting#privacy-and-data-security) considerations.

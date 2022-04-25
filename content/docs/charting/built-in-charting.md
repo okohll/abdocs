@@ -5,7 +5,7 @@ type: docs
 weight: 80
 description: Building and working with charts
 tags:
-- Super User
+- Citizen Developer
 ---
 Charting is not strictly an administrator function, as any user can create charts and other data visualisations, such as maps and word clouds.
 

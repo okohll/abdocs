@@ -5,7 +5,7 @@ type: docs
 weight: 20
 description: Tiles on the homepage are the entry point for the user to agileBase applications
 tags:
-- Super User
+- Citizen Developer
 ---
 A tile on a user's home screen represents an application or module of an application - a collection of data and functionality that forms a coherent whole.
 
@@ -26,13 +26,12 @@ Data tiles need to be created by an administrator. Once a data tile is created a
 > Other types of tile i.e. calendar, visualisation and comment stream tiles need not be created by an administrator, they are built-in facilities of the platform. Each of these tile offers different ways of seeing data collected from across the system. As such they are automatically available to add to a user's screen.
 
 ## Creating a tile
-1. Expand the _Administration_ section in the lefthand navigation
-2. Click _tiles_. You'll see a list of existing tiles
-3. Click the plus button in the toolbar at the top
+1. Go to the homepage and enable build mode and switch to 'list' mode
+2. In the dropdown above the table select _tiles_. You'll see a list of existing tiles
+3. Click '+ Add Tile' in the button at the top right of the screen
 
 You should now see an editing screen with the details of the tile you just created.
 ![Tile editing](/tile-details.png)
-TODO: update this image
 
 The available options are
 * Name - the tile name
