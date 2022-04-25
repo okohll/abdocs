@@ -35,9 +35,9 @@ into this editable version:
 
 ![inline editing on](/inline-editing-on.png)
 
-**Certain fields will be editable**, but others will be read-only. Fields that can be editable are all those which are from the view’s parent table, except for
-* large text fields: we want the UI to remain compact and it’s not usually required to edit large amounts of text in inline editing scenarios
+**Certain fields will be editable**, but others will be read-only. Fields that can be editable are all those which are from the view’s parent table. Fields that will not be editable are
 * calculations
+* fields from other tables joined to the view. E.g. if an 'all contacts' view joins from a contacts table to an organisation table (to show the parent organisation), then only contacts fields will be editable, not organisation fields like 'organisation name' for example.
 
 The inline editing option has three states:
 * Disallow: the view can’t be inline edited
