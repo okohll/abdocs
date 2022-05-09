@@ -29,11 +29,11 @@ Some examples of where this might be useful would be when working through a list
 
 In inline editing mode, the list view changes from something like this:
 
-![inline editing off](/inline-editing-off.png)
+![inline editing off](/inline-editing-off-new.png)
 
 into this editable version:
 
-![inline editing on](/inline-editing-on.png)
+![inline editing on](/inline-editing-on-new.png)
 
 **Certain fields will be editable**, but others will be read-only. Fields that can be editable are all those which are from the view’s parent table. Fields that will not be editable are
 * calculations
@@ -52,7 +52,7 @@ The visual style affects whether the view is shown as
 
 When **headings and rows** is selected, the first field in the view will be used as a heading for the rows below. A new heading appears every time the field value changes.
 
-![headings and rows](/headings.png)
+![headings and rows](/headings-new.png)
 
 
 

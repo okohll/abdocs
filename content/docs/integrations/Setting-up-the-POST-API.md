@@ -14,7 +14,7 @@ To protect the system from spam input, we also suggest you tick 'Require API key
 
 Optionally, you can add an email address to notify when a new item is added and an autoresponse text which will be sent to any email addresses found in the posted data.
 
-![Configuring the POST API](/incoming-data-api.png)
+![Configuring the POST API](/incoming-data-api-new.png)
 
 ## Creating new records
 

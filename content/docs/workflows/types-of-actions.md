@@ -23,7 +23,7 @@ Options are:
 3) Lock record - This will apply a record level lock on the item.
 4) Delete record - This will totally remove the record.
 
-![Workflow actions that alter data](/workflow-manage.png)
+![Workflow actions that alter data](/workflow-manage-new.png)
 
 #### Creating records
 
@@ -42,4 +42,4 @@ The options to send data are contained within the _send_ section of the _workflo
 9) [Send to document generator]({{<relref "/docs/workflows/send-document-generator">}})
 10) RSS feed - See facility with [PULL API]({{<relref "/docs/integrations/setting-up-the-pull-api">}})
 
-![Workflow functions that send data](/workflow-send.png)
+![Workflow functions that send data](/workflow-send-new.png)

@@ -34,7 +34,7 @@ If you have any difficulty thinking up what criteria you need for your purpose, 
 
 In the view’s _manage_ tab, under _send_, fill in the subject, to and body of the email. To merge in data from the view, use field names in lowercase surrounded by curly brackets. A typical template would look something like this:
  
-![Workflow actions that alter data](/send-email.png)
+![Workflow actions that alter data](/send-email-new.png)
 
 You can attach documents to the email by including the field name for a file in the message.
 

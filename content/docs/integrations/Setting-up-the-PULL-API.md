@@ -18,7 +18,7 @@ Connections to agileBase are made using standard HTTP calls. This makes it easy 
 
 The remainder of this article explains how to PULL the data.
 
-![Configuring the PULL API](/workflow-pull.png)
+![Configuring the PULL API](/workflow-pull-new.png)
 
 The most important piece of information is the URL that the third party will access your data via. This will be:
 
@@ -130,9 +130,3 @@ Just make a POST request to
 and the ‘Authorization’ header set to the API key (if the table requires one).
 
 This also makes testing with [Postman](https://www.postman.com/) easier, since Postman can import a Swagger API description – so you don’t have to write a single line of code to test out an API.
-
-## RSS Feed
-
-If your PULL API has been enabled for Public access then you can offer 3rd parties the option of accessing the feed via an RSS feed. The link is visible just below the tick box for public access.
-
-![Configuring the PULL API](/workflow-send-rss.png)
