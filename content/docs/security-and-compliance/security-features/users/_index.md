@@ -9,12 +9,14 @@ tags:
 - Architect
 ---
 ## Adding a user
-1. Expand the _Administration_ menu in the lefthand sidebar
-2. Click _users_. You'll see a list of existing users
-3. Click the plus button in the toolbar at the top
+1. Go to the homepage and toggle build mode on
+2. Select 'list' mode
+3. Select 'users' from the dropdown at the top centre of the screen
+4. Click the Add User button at the top right of the screen
 
 You should now see an editing screen with the details of the user you just created.
-![User editing](/user-details.png)
+![Add user][/add-user.png]
+![User editing](/new-user-details.png)
 
 You can enter the user's name and username. If the username isn't their email address, enter their email address in the field provided too. This is useful
 * to allow them to reset their own password by receiving a link by email

@@ -12,4 +12,4 @@ This panel shows a list of views that contain data from the table. Any view with
 
 See [usage reporting]({{<relref "/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting">}}) for more info.
 
-![table usage](/table-usage.png)
+![table usage](/new-table-usage.png)

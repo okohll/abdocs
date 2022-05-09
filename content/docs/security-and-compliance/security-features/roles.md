@@ -13,12 +13,15 @@ The primary purpose of roles is to apply privileges to groups of users, rather t
 Roles have some other important uses, such as multi-tenanting, described below.
 
 ## Creating a role
-1. Expand the _Administration_ menu in the lefthand sidebar
-2. Click _roles_. You'll see a list of existing roles
-3. Click the plus button in the toolbar at the top
+1. Go to the homepage and toggle build mode on
+2. Select 'list' mode
+3. Select 'roles' from the dropdown at the top centre of the screen
+4. Click the Add Role button at the top right of the screen
+
+![Add Role](/add-role.png)
 
 You should now see an editing screen with the details of the role you just created. You can give it a name and there are a few options:
-![Role details](/role-details.png)
+![Role details](/new-role-details.png)
 
 **Allow Export**  
 Referrs to exporting to spreadsheet - see [spreadsheet exports]({{<relref "/docs/integrations/exporting-to-spreadsheet">}})
