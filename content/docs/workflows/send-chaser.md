@@ -48,6 +48,18 @@ That will be enough to get emails sending out. What about receiving the informat
 
 If you want the content that the chaser sends out to be visible to users, add the chaser view into a form as a [referenced data field]({{<relref "/docs/fields/field-types/special-field-types/referenced-data">}}). The panel displayed to users will show information such as the email to be sent, how many times the record’s been chased, when the last time was etc. If the record doesn’t need to be chased it will instead show the reasons why (the filters from the view).
 
+### Including attachments
+If you add a file field to the view and a row being chased has a file uploaded to that field, it will be added to the outgoing email as an attachment.
+
+Note if you add a file field from the view's parent table to the view and a particular record *doesn't* have a file uploaded, the chaser will request the recipient uploads one, when completing the form. In other words it will request a document.
+
+#### Multiple attachments
+Sometimes there may be a set of files you wish to attach to a single email, where the files are all stored in a child table. To accomplish this, join down to the child table and add the file field in that child table to the view.
+
+Then, when there are multiple child records, each containing a file, those files will all be added to the outgoing email.
+
+> Don't worry that the view then contains multiple rows per email. The chaser is clever enough to only send one email, but merge in all the files from the multiple rows.
+
 ### Receiving a response
 When a response is received to a chaser, as well as saving the documents / fields the chaser asked for, a comment will be logged to the first comment field in the parent table (if there is a comment field).
 
@@ -55,11 +67,17 @@ An email will also be sent to a user notifying them of the response. The logic f
 1) If there are any dropdown fields in the table with the option [fill with users]({{<relref "/docs/fields/field-options/text-field-options#lists-of-users">}}) then send the email to the user selected in that field. If there's more than one field with that option, use the first one.
 2) If there are no fields with 'fill with users' selected, fall back to notifying the user who last updated or created the record being chased.
 
+### Sending thank you emails
+When someone completes the chaser form and provides the information requested, a thank you page will be shown. If the value of the *send thanks* calculation in the chaser form is *true* for a row, then the recipient will be sent a thank you email as well.
+
 #### Optional response fields
 
 The following fields can optionally be added to the table. If they are found, they will be populated by the chaser system when a chaser response is received.
 1. **chaser response received**: if a *date* field with this name exists, the value will be set to the date and time of the response
 2. **chaser response needs checking**: if a *checkbox* field with this name exists, it will be ticked when the response is received
+
+### Errors
+If an email can't be sent because of an invalid address in the 'To' field, then the address specified in the 'Escalate To' field will be notified.
 
 ### Using multiple chasers on the same table
 
