@@ -28,14 +28,6 @@ If this is ticked, users can add records but only when accessing this table's fo
 ## Allow share
 Showa button which allows links to individual records to be shared between users using email. Note - recipients still need a login and relevant privileges to see the record.
 
-## When a record's created, run this workflow
-Run a [workflow]({{<relref "/docs/workflows">}}) immediately after the creation of a record. The workflow runs after any field default values have been set.
-
-> The workflow 'knows' metadata such as which user is logged in, which tile is open etc., so if you want to [use those in a calculation]({{<relref "/docs/views/calculations#special-functions">}}) in the workflow, you can do.
-
-### Run this workflow whenever each record is viewed
-As well as running the workflow on record creation, also run it whenever a user views a record in this table. Be aware this may have a performance impact for users, if the workflow is resource intensive and/or multi-step.
-
 ## Data entry from external sources
 The options in this section are for configuring the table to allow an API request from an external source to create and edit records. See [API use]({{<relref "/docs/integrations">}}) for more information.
 
