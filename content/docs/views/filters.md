@@ -26,10 +26,10 @@ you could then add a filter on that calculation
 **pending or approved equals true**
 
 ## Adding a filter
-1) In the tiles interface, load the view you wish to edit
-2) Click your user profile icon at the top right and select _admin - edit view_
-3) Under _Filters_, click the _Add Filter_ button
-4) Choose relevant options and press _Add_
+1. Open the view you want to edit
+2. Toggle development mode on and click the big pencil at the top left of the screen
+3. Under _filters_, choose a type, give it a name and press _Add_
+
 
 There are 26 types of filter to choose from, from the simple 'equals' and 'not equal to', to more complex pattern matching using [regular expressions](https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP).
 

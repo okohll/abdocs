@@ -9,8 +9,8 @@ tags:
 ---
 These options can be seen and edited as follows
 
-1. In the tiles interface, open a view
-2. Click your user icon at the top right and select _admin - edit view_ from the menu
+1. In development mode, open a view
+2. Click the big pencil icon at the top left and select _properties and options_ from the menu
 3. Some options are visible under _advanced options_
 
 ## Group by all non-aggregate fields

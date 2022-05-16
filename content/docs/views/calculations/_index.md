@@ -16,10 +16,9 @@ We'll start with some simple examples, then move on to some more advanced ones, 
 But first, what are the mechanics of creating a calculation and adding it to a view?
 
 ## Adding a calculation
-1. In the tiles interface, open the view you want to edit
-2. Click your user icon at the top right of the screen and select _admin - edit view_ from the menu. The view editing interface will open
-3. Click the _Add Field..._ button.
-4. Under _Add Calculation_, choose a type (text, number etc.), give it a name and press _Add_
+1. Open the view you want to edit
+2. Toggle development mode on and click the big pencil at the top left of the screen
+3. Under _fields_, from _Add Calculation_ choose a type (text, number etc.), give it a name and press _Add_
 
 The calculation editing screen panel now open to the right and you can type in your calculation.
 

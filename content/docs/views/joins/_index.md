@@ -19,10 +19,9 @@ Any number of joins to different tables or views can be added to a view.
 agileBase will automatically pick out the common tables you may wish to join to, by seeing which are related via [relation fields]({{<relref "/docs/fields/field-types/basic-field-types#relation">}}). Once you get used to the concepts, you may also wish sometimes to add joins manually to tables or views not automatically suggested. That will be covered at the end of this page.
 
 To add a join
-1) In the tiles interface, load the view you wish to edit (add a join to)
-2) Click your user profile icon at the top right and select _admin - edit view_
-3) Under _Joins_, click the _Add Join_ button
-4) A list of joins you can add will appear, each representing a link to a table with related data in it. Select one and the join will add
+1) Load the view you wish to add a join to and enable development mode
+2) Click the big pencil icon at the top left of the screen to bring up the 'Edit view' panel
+3) A list of joins you can add will appear, each representing a link to a table with related data in it. Select one and the join will add
 
 ## The anatomy of a join
 The added join will appear graphically above the _Add Join_ button. The lefthand 'blob' or part represents the table being joined from, on the right is the one joined to. In the middle is a selector for the [join type]({{<relref "types-of-join">}}), which we will come to.
