@@ -43,6 +43,6 @@ Hovering over a column shows summary statistics, like a total and average (of al
 ### Loading a record
 Once a record has been found, click a row in the view to load that record for viewing or editing. The record loaded comes from the table that the view belongs to (as referenced at the start of this page), even though the view may contain fields from other tables as well.
 
-It's also possible to use [inline editing]({{<relref "/docs/views/options#inline-editing">}}) to edit the contents of fields directly in the view.
+It's also possible to use [inline editing]({{<relref "/docs/views/options/display-options#interface-inline-editing">}}) to edit the contents of fields directly in the view.
 
 Pressing the plus button to the left of the view contents will create a new record in the view's parent table.

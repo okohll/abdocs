@@ -9,7 +9,7 @@ tags:
 ---
 agileBase automatically takes some measures behind the scenes to maintain high performance as data volumes grow.
 
-There are other mechanisms that can be manually enabled such as [caching]({{<relref "/docs/views/options#cache-view-rows">}}) and increasing the memory assigned to particular views.
+There are other mechanisms that can be manually enabled such as [caching]({{<relref "/docs/views/options/behaviour-options#cache-view-rows">}}) and increasing the memory assigned to particular views.
 
 Finally, we will be happy to to do all we can to speed up any parts of your application that require it if you [contact us](https://agilechilli.com/contact-us/). Often, a solution as simple as manually adding an index to a particular field can speed up requests by multiple orders of magnitude.
 
