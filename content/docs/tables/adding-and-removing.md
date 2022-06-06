@@ -31,7 +31,7 @@ In the administrator interface, tables are listed alphabetically, so you can arr
 
 The user interface will strip out any prefixes when displaying names to users, if they end with a closing bracket `)`. 
 
-## Editing a table
+## Editing a table
 There are two ways to edit a table: from the homepage, or from editing a record.
 
 ### From the homepage

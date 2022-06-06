@@ -13,7 +13,7 @@ The primary purpose of roles is to apply privileges to groups of users, rather t
 Roles have some other important uses, such as multi-tenanting, described below.
 
 ## Creating a role
-1. Go to the homepage and toggle build mode on
+1. Go to the homepage and toggle development mode on
 2. Select 'list' mode
 3. Select 'roles' from the dropdown at the top centre of the screen
 4. Click the Add Role button at the top right of the screen
