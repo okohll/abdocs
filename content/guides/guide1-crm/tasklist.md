@@ -29,7 +29,7 @@ tags:
 {{<youtube id="GN7685gOnQ0">}}
            
 ## Add a filter to a View to show only those tasks that are marked as completed  [guide 1 - video 7]
-{{<youtube id="nBL2oFPTRfo">}}
+{{<youtube id="wvlUpjFhxJg">}}
            
 ## Add a Comments field to a table! [guide 1 - video 8 *]
 {{<youtube id="nBL2oFPTRfo">}}           
