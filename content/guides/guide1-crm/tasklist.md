@@ -23,7 +23,7 @@ tags:
 {{<youtube id="7hA7-VzX_A8">}} 
            
 ## Create a view to show all the tasks we will be creating [guide 1 - video 5] 
-{{<youtube id="nBL2oFPTRfo">}}           
+{{<youtube id="P4FnZIYmAIo">}}           
 
 ## Create a number of tasks [Guide1 - Video 1A] 
 {{<youtube id="nBL2oFPTRfo">}}   
