@@ -24,12 +24,9 @@ tags:
            
 ## Create a view to show all the tasks we will be creating [guide 1 - video 5] 
 {{<youtube id="P4FnZIYmAIo">}}           
-
-## Create a number of tasks [Guide1 - Video 1A] 
-{{<youtube id="nBL2oFPTRfo">}}   
            
 ## Create better way of looking at data [guide 1 - video 6] 
-{{<youtube id="nBL2oFPTRfo">}}
+{{<youtube id="GN7685gOnQ0">}}
            
 ## Add a filter to a View to show only those tasks that are marked as completed  [guide 1 - video 7]
 {{<youtube id="nBL2oFPTRfo">}}
