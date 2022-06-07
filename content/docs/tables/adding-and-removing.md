@@ -46,7 +46,7 @@ When build mode is enabled, if you are viewing an individual record then clickin
 ![Editing a record](/editing-a-record.png)
 
 ## Removing a table
-Before removing a table, you first need to remove all views and fields.
+Before removing a table, you first need to remove all views and [fields]({{<relref "/docs/fields/#removing-a-field">}}).
 
 It's not necessary to remove actual data records from the table first.
 
