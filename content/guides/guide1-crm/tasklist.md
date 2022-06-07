@@ -14,7 +14,7 @@ tags:
 {{<youtube id="r7nkYcnjyeQ&t">}}
            
 ## Add fields to the "Tasks" table [guide 1 - video 2] 
-{{<youtube id="nBL2oFPTRfo">}}           
+{{<youtube id="QgKRVSMM07Y">}}           
 
 ## Make the form easier to understand by breaking it into sections [guide 1 - video 3]
 {{<youtube id="nBL2oFPTRfo">}}   
