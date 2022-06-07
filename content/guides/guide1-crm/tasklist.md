@@ -11,7 +11,7 @@ tags:
 **Prerequisites:** User to have watched “How to use agileBase”
 
 ## Create a table called "Tasks"  [guide 1 - video 1] 
-{{<youtube id="nBL2oFPTRfo">}}
+{{<youtube id="r7nkYcnjyeQ&t">}}
            
 ## Add fields to the "Tasks" table [guide 1 - video 2] 
 {{<youtube id="nBL2oFPTRfo">}}           
