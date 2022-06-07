@@ -17,7 +17,7 @@ tags:
 {{<youtube id="QgKRVSMM07Y">}}           
 
 ## Make the form easier to understand by breaking it into sections [guide 1 - video 3]
-{{<youtube id="nBL2oFPTRfo">}}   
+{{<youtube id="YwthqTiTroM">}}   
            
 ## Make the table available via the homepage by creating a tile called Tasks [guide 1 - video 4]
 {{<youtube id="nBL2oFPTRfo">}} 
