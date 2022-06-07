@@ -50,7 +50,7 @@ Before removing a table, you first need to remove all views and [fields]({{<relr
 
 It's not necessary to remove actual data records from the table first.
 
-A list of existing views is visible in the _name and views_ section of the sidebar. Visit each view and delete it.
+A list of existing views is visible in the _name and views_ section of the panel sidebar. Visit each view and delete it.
 
 Then below to the table's _name and views_ section is the _fields_ section. Delete all the existing fields from here.
 
