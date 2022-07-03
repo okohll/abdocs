@@ -16,9 +16,13 @@ However the setup processes below also applies to third party tools such as Powe
 
 ## Initial Setup
 
-The first step is to [contact us](https://agilechilli.com/contact-us/) to request we set up an Apache Superset account (this will also allow connections from other BI tools). We will then set up as many Superset users you require - there is no ongoing cost for these login accounts.
+The first step is to [contact us](https://agilechilli.com/contact-us/) to request we prepare your account. This will also allow connections from Apache Superset, Power BI or any other tool which can connect to ODBC).
 
-Note that Superset logins are separate from agileBase ones - the usernames and passwords can be different.
+If you wish to use our supplied instance of Superset, we will then set up as many Superset users you require - there is no ongoing cost for these login accounts. Note that Superset logins are separate from agileBase ones - the usernames and passwords can be different.
+
+If you use Power BI, then the process is as follows
+1) Install the PostgreSQL ODBC driver from https://odbc.postgresql.org/. Use the Downloads link and if running on Windows, use the newest driver from the **msi** folder. When setting up the driver, use the login details we supply. Ensure the SSL mode is set to 'require'.
+2) From Power BI, add a connection using the PostgreSQL ODBC driver, *not* the built-in Power BI PostgreSQL driver.
 
 ## Sending data to Superset or Power BI
 
