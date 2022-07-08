@@ -18,10 +18,17 @@ Templates can be created using the built-in WYSIWYG editor, which allows simple 
 
 Alternatively and for complex needs, templates can be created manually. The templating language is [Apache Velocity](https://velocity.apache.org/), which allows concepts such as variables, loops etc. to be used, i.e. simple programming features. The output format is HTML.
 
-1. Find or create a [view]({{<relref "/docs/views">}}) which contains the data to be included in your output document. The idea is that each row in the view will correspond to one document, with the data from that row being merged in.
-2. Press the _Print_ button in the toolbar, then the _manage_ button
-3. You will then be prompted to create a template using the WYSIWIG editor, or upload one created outside the system.
+1. Find or create a [view]({{<relref "/docs/views">}}) which contains the data to be included in your output document. The idea is that each row in the view will correspond to one document, with the data from that row being merged in. The view needs to be created from the parent table of the file field created for the output document
+2. Toggle to development mode and click the top left pencil icon to edit the view
+3. Load the 'workflow - generate PDFs' panel
+4. Click CREATE to create a new blank template, then EDIT to edit it
+5. Tick a file field to assign the template to that file
+
+Then a user will see a 'generate document' button when they edit a record from the table, allowing them to generate a PDF from the template.
+
 > Existing templates can also be edited or downloaded. Manually created templates with complex features such as variable setting and looping can't be edited using the WYSIWYG editor
+
+![Template creation](/document_generation.png)
 
 ## Including data
 Each field in the view (included calculations), or parent table, can be merged in to the template by referencing the field name, preceded by a dollar sign. For convenience, a list of available fields is listed below the WYSIWYG editor, for easy copying and pasting into the template.
@@ -89,4 +96,4 @@ The entire templating API is beyond the scope of this documentation but if you d
 
 ### Using Apache Velocity features
 
-In the examples above are some uses of simple programming code. A full reference for what you can do with the Apache Velocity language is here: https://velocity.apache.org/engine/2.2/user-guide.html
+In the examples above are some uses of simple programming code. A full reference for what you can do with the Apache Velocity language is here: https://velocity.apache.org/engine/2.3/user-guide.html

@@ -2,7 +2,7 @@
 title: "Testing"
 date: 2022-07-07T12:15:00+01:00
 type: docs
-weight: 190
+weight: 105
 description: Using a test server to dry-run integrations
 tags:
 - Principal Architect
