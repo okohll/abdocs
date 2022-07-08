@@ -23,6 +23,7 @@ In summary, when your system is
 * mature
 * mission critical
 * integrating with third party systems
+
 then you will most likely benefit from requesting a test server setup.
 
 The test server will be an exact copy of your live system. The application structure (table, views etc.) will be the same as will the data itself in the database. All users and roles will also be the same, so people can log in using their existing username and passwords to test changes.
@@ -36,7 +37,7 @@ The test server will be an exact copy of your live system. The application struc
     * Use the [enhanced audit trail]({{<relref "/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting#enhanced-audit-trail">}}) to see changes like field addition/removals or view alterations
     * If you don't already have the advanced audit trail, it will be set up as part of the test server commisioning process
 4) Re-create those changes in the live system
-    * This is currently a manual process, though the audit trail above helps ensure you've not missed everything
+    * This is currently a manual process, though the audit trail above helps ensure you've not missed anything
     * Internal IDs for tables, fields and views are deterministic. That means if you create them with the same names in the same order on the live system, they will get the same internal IDs. Therefore APIs using them won't need changing
     * API Authorization keys however will be different, so will need updating in any system that calls a new API
     
