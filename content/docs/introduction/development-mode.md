@@ -2,8 +2,8 @@
 title: "Development Mode"
 date: 2022-02-18T16:40:00+01:00
 type: docs
-weight: 5
-description: Introducing agileBase's development mode and how to toggle it on and off
+weight: 7
+description: How to toggle between development and standard user modes
 tags:
 - Developer
 ---
