@@ -67,7 +67,7 @@ At that point, the user is automatically assigned Citizen Developer level 3.
 
 ## Junior Software Architect
 A junior software architect can use practically all of the application building functionality of agileBase. For example
-* Create [workflows]({{<relref "/docs/wokflows">}}) (including chasers, document generation)
+* Create [workflows]({{<relref "/docs/workflows">}}) (including chasers, document generation)
 * Set up [APIs]({{<relref "/docs/integrations">}})
 * Add complex [joins]({{<relref "/docs/views/joins">}}) to views
 * Create, edit and delete [roles]({{<relref "/docs/security-and-compliance/security-features/roles">}})
