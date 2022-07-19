@@ -9,14 +9,14 @@ tags:
 ---
 **Learning Aim:** Create a Table and associated Views to use it!
 
-**Prerequisites:** User to have watched “How to use agileBase”
+**Prerequisites:** User to have watched "How to use agileBase"
 
 ### Introduction
 This stage of the guide will introduce you to the basic activities required to build a simple application. We will start by creating a table with different types of fields in order to store a variety of data. We will then show you how to create and control tiles, views and forms which are the interfaces that your users will use to enter and consume this data.
 Let us start by building a simple task list.
 
 
-## Create a table called "Tasks"  
+## Create a table called "Tasks"
 Our simple application will need to store information about the tasks our users create. This is done by creating a database table. In agileBase this is achieved by navigating to the developer interface and pressing the “add new table button”. 
 [guide 1 - video 1]{{<youtube id="r7nkYcnjyeQ">}}
            
@@ -46,20 +46,21 @@ Tiles are a way of grouping functionality together. Specifically, a data tile is
 For this guide, we need a tile and collection of views dedicated to helping us create and manage our “Tasks”
 
            
-## Make the table available for use! Adding a tile to the homepage
+## Make the table available for use!
+### Adding a tile to the homepage
 The homepage of agilebase is made up of data tiles. We need to create a new tile to hold all the views of our taks data
 [guide 1 - video 4]{{<youtube id="7hA7-VzX_A8">}} 
            
-## Make the table available for use! Adding views that show all the tasks that have been created
+### Adding views that show all the tasks that have been created
 To provide the user access to a list of Task records we need to create a View. To start with we will create a view that will list ALL the data.      
 [guide 1 - video 5]{{<youtube id="P4FnZIYmAIo">}}           
            
-## Make the table available for use! Better way of looking at data
+### A better way of looking at data
 Many users will be familiar with a card or kanban style interface (such as Trello). Agilebase has a similar style of view that can often be useful.  
 Within a views “options” tab you can set its interface stylle to be “Cards in Columns”
 [guide 1 - video 6]{{<youtube id="GN7685gOnQ0">}}
            
-## Make the table available for use! Making views for a specific job
+### Making views for a specific job
 Whilst users can apply their own filters and re-order data in a view, it is often a better user experience if there are dedicated views setup that match a particular job. For this example we want to create a list of all the completed tasks with the most recent at the top of the list.
 For more information on applying filters - https://docs.agilebase.co.uk/docs/views/filters/ 
 [guide 1 - video 7]{{<youtube id="wvlUpjFhxJg">}}
@@ -70,7 +71,7 @@ However, we can quickly see that we have missed implementing a key feature - col
 For more information on the comments field and its associated comment feed - https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/
 
            
-## Add a Comments field to a table! 
+## Add a Comments field to a table!
 Adding new fields to an existing table is no different to when creating from scratch. Simply add via the table edit screen.
 Adding collaboration functionality to an agileB\se application is as easy as adding any other field! Just add a field of type Comments as shown in the video below
 [guide 1 - video 8 *]{{<youtube id="d57CDMWmUW4">}}    
