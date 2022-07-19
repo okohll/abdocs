@@ -48,4 +48,4 @@ Third parties can save data into agilebase:
 The most recent API actions and any errors which may have occurred will be shown
 
 ### Showing the internal ID of each record
-Sometimes it can be useful to see the internal ID (primary key value) of each record the API acts on, to match up with info from the third party system you're integrating with. To do this, see [Accessing additional debugging information]({{<relref "/docs/development-mode#accessing-additional-debugging-information">}})
+Sometimes it can be useful to see the internal ID (primary key value) of each record the API acts on, to match up with info from the third party system you're integrating with. To do this, see [Accessing additional debugging information]({{<relref "/docs/introduction/development-mode#accessing-additional-debugging-information">}})

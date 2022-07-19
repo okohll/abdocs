@@ -12,7 +12,7 @@ Adding fields to a table creates a form by which people (and other sources such 
 There are various types of fields and field options which this section will cover.
 
 ## Adding a field
-1. Ensure [development mode]({{<relref "/docs/development-mode">}}) is toggled on
+1. Ensure [development mode]({{<relref "/docs/introduction/development-mode">}}) is toggled on
 2. Select the table to add a field to
 3. Click on the pencil icon in the toolbar, if necessary, to edit the table
 4. Click the _fields_ tab
