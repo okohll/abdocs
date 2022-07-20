@@ -76,7 +76,8 @@ Adding new fields to an existing table is no different to when creating from scr
 Adding collaboration functionality to an agileB\se application is as easy as adding any other field! Just add a field of type Comments as shown in the video below
 [guide 1 - video 8 *]{{<youtube id="d57CDMWmUW4">}}    
         
-### For completeness the remainder of this stage of the guide covers removing items and functionality that are no longer needed.
+
+> For completeness the remainder of this stage of the guide covers removing items and functionality that are no longer needed.
            
 ## Deleting Views 
 Eventually you will want to remove unused views in order to reduce clutter and streamline the user experience. To do this go to the Properties and Options tab when editing the view and press Delete view 

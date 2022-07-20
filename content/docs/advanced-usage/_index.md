@@ -8,3 +8,5 @@ tags:
 - Principal Architect
 ---
 Also, new features, news and tips and tricks are posted on https://blog.agilebase.co.uk. Please subscribe on that page to receive any updates.
+
+> When carrying out changes to critical systems which the business relies on, you may wish to take advantage of a [test server]({{<relref "/docs/integrations/test-server">}})
