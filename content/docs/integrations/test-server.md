@@ -35,7 +35,7 @@ The test server will be an exact copy of your live system. The application struc
 2) Make and test any changes on the test server
 3) View a summary list of changes you've made
     * Use the [enhanced audit trail]({{<relref "/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting#enhanced-audit-trail">}}) to see changes like field addition/removals or view alterations
-    * If you don't already have the advanced audit trail, it will be set up as part of the test server commisioning process
+    * If you don't already have the enhanced audit trail, it will be set up as part of the test server commisioning process
 4) Re-create those changes in the live system
     * This is currently a manual process, though the audit trail above helps ensure you've not missed anything
     * Internal IDs for tables, fields and views are deterministic. That means if you create them with the same names in the same order on the live system, they will get the same internal IDs. Therefore APIs using them won't need changing
