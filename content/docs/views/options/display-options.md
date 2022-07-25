@@ -69,3 +69,13 @@ The visual style affects whether a list of rows is shown with headings or not. T
 When **headings and rows** is selected, the first field in the view will be used as a heading for the rows below. A new heading appears every time the field value changes.
 
 ![headings and rows](/headings-new.png)
+
+When **long headings and rows** is selected, an amalgamation of content from the first fields in the view that all belong to the view's parent table will be used as a heading. As soon as a field is encountered that is from a different table, heading text generation stops. Calculations that are added to the view can also form part of a heading, as long as they are placed next to (before, after or within) that first set of fields from the view's parent table.
+
+For example, if the fields in a view of organisations and contacts are
+1) Organisation name (from the organisations table)
+2) Website address (from the organisations table)
+3) Contact Name (from the contacts table)
+4) Email address (from the contacts table)
+
+then a heading would be generated consisting of organisation and website address. Each time a row where one of these is different is encountered, a new heading row will be shown.
