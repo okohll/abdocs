@@ -34,6 +34,8 @@ Specifically, an agileBase citizen developer can
 	- add filters or remove filters (except on 'confidential' fields)
 * add and remove [charts]({{<relref "/docs/charting">}}) from their version of the view
 
+> A confidential field is one that has a [visibility]({{<relref "/docs/fields/field-options/common-options#show-if-record-in-view">}}) rule, or is used for [multi-tenanting]({{<relref "/docs/security-and-compliance/security-features/roles/#multi-tenanting">}}).
+
 The altered version of the view is seen only by them. Everyone else sees the original view. They can revert to the original (losing their changes) at any time.
 
 For example, a citizen developer may want to create a list of records which is filtered to only show ones assigned to them.
@@ -57,13 +59,15 @@ A citizen developer level 2 can
 * create [tiles]({{<relref "/docs/tiles">}}) and delete tiles they've added themselves
 
 ## Citizen Developer Level 3
-A Software Architect (see below) can, at their discretion, assign a citizen developer 'manage' privileges on a table (or tables). That allows them to
-* add [fields]({{<relref "/docs/fields">}}) to a table
-* remove fields that they themselves have added (not others)
-* edit basic properties of any field, e.g. the list of options in a dropdown box
-* edit basic properties of any regular view. Workflow and API views will be read-only
+A Software Architect (see below) can, at their discretion, assign a citizen developer 'manage' privileges on a table (or tables). At that point, the user is automatically assigned Citizen Developer level 3.
 
-At that point, the user is automatically assigned Citizen Developer level 3.
+That allows them to
+* add [fields]({{<relref "/docs/fields">}}) to those table
+* remove fields that they themselves have added (not others)
+* edit the basic properties of any field in those tables, e.g. the list of options in a dropdown box
+
+Additionally, actions not related to having manage privileges on a particular table are
+* edit the basic properties of any regular view. Workflow, API and some other types of system view will be read-only
 
 ## Junior Software Architect
 A junior software architect can use practically all of the application building functionality of agileBase. For example
@@ -73,7 +77,7 @@ A junior software architect can use practically all of the application building 
 * Create, edit and delete [roles]({{<relref "/docs/security-and-compliance/security-features/roles">}})
 * Assign [privileges]({{<relref "/docs/security-and-compliance/security-features/privileges">}}) to roles or users up to the 'edit' level
 * Remove fields, views etc. created by anyone
-* Edit the advanced properties of fields and views, including field visibility rules for example
+* Edit the advanced properties of fields and views, including field visibility rules (confidentiality rules) for example
 
 Their only limitations are to do with managing the organisation as a whole, including other users.
 
