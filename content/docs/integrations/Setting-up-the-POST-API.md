@@ -49,6 +49,8 @@ Then _[internalfieldname]_ can be replaced by _[friendlyfieldname]_ which is the
 
 For example, the field 'Discount Approved?' would have the friendly name _discount_approved_.
 
+We suggest you only use friendly fieldnames if you're confident the field name isn't going to change. Internal fieldnames are constant and never change, whereas friendly names can easily change if the field is renamed.
+
 > The API can be tested using a tool such as [Postman](https://www.postman.com).
 
 ## Updating existing records
