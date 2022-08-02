@@ -34,7 +34,7 @@ Specifically, an agileBase citizen developer can
 	- add filters or remove filters (except on 'confidential' fields)
 * add and remove [charts]({{<relref "/docs/charting">}}) from their version of the view
 
-> A confidential field is one that has a [visibility]({{<relref "/docs/fields/field-options/common-options#show-if-record-in-view">}}) rule, or is used for [multi-tenanting]({{<relref "/docs/security-and-compliance/security-features/roles/#multi-tenanting">}}).
+> A confidential field is one that has a [visibility]({{<relref "/docs/fields/field-options/common-options#show-if-record-in-view">}}) rule, or is used for [multi-tenanting]({{<relref "/docs/security-and-compliance/security-features/roles#multi-tenanting">}}).
 
 The altered version of the view is seen only by them. Everyone else sees the original view. They can revert to the original (losing their changes) at any time.
 
