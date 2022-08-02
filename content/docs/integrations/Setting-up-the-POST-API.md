@@ -23,8 +23,8 @@ Clicking the ‘sample form’ link will then show a sample form which can be us
 If you want to submit data directly from an app rather than a web form, simply prepare a HTTP POST request that mimics the form. Again, use the source code of the form as a reference. Note the form contains three hidden fields that need to be included. They are listed at the start of the sample form, for reference they are:
 
 * _save_new_record = true_
-* _c = [internalcompanyid]__
-* _t = [internaltableid]__
+* _c = [internalcompanyid]_
+* _t = [internaltableid]_
 
 The post URL is
 
@@ -45,7 +45,7 @@ The internal field names necessary will be shown on screen when API use is enabl
 Alternatively, friendly field name parameters can be used, with the addition of the parameter
 * _allow_friendly_fieldnames = true_
 
-Then [internalfieldname] can be replaced by [friendlyfieldname] which is the lowercase version of the field name, with spaces replaced by underscores and all other special (i.e. not a letter or a number) characters removed.
+Then _[internalfieldname]_ can be replaced by _[friendlyfieldname]_ which is the lowercase version of the field name, with spaces replaced by underscores and all other special (i.e. not a letter or a number) characters removed.
 
 For example, the field 'Discount Approved?' would have the friendly name _discount_approved_.
 
