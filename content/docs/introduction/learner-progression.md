@@ -9,38 +9,31 @@ tags:
 ---
 > Note: this page describes features which are coming soon but which are not currently available.
 
-agileBase's unique learner progression pathway allows people to be supported on the path to becoming a no-code software architect. Beginners need no technical knowledge at all and typically come from a diverse range of non-IT backgrounds.
-
-Those that wish to can proceed to become software architects who can build complex applications to support their organisations, including powerful workflow features and integrations with other applications. The only prerequisite skills needed are the ability to think rationally, be willing to learn and be able to plan.
-
-There will be help along the way and people can stop at whatever level seems most useful.
-
-The five stages of 'seniority' that learners can progress through are
+Agilebase's learner progression pathway enables you to transform your career. You can go from  a citizen developer to a no-code software architect. 
+ 
+Citizen developers can create their own applications using no code. Software architects can build complex applications, including powerful workflow features and integrations with other applications.
+ 
+To go on this journey requires no technical knowledge. Beginners - "citizen developers" - come from a diverse range of non-IT backgrounds. The only skills you need are the ability to think, be willing to learn, and be able to plan.
+ 
+Agilebase will help you every step of the way. And you can stop at the level that is useful to you.
+ 
+Agilebase enables citizen developers to pass through five stages on their way to becoming software architects:
 
 ## Citizen Developer Level 1
-The term 'Citizen Developer' is widely used in the no-code world. The most concise definition is someone who creates their own applications, using no coding ([more info](https://research.aimultiple.com/citizen-developer/).
-
-Citizen Developer level 1 is the start of the agileBase learner progression journey. An employee can alter parts of the system to suit their own needs, without needing to bother anyone else further up the organisation hierarchy.
-
-Importantly, the changes they make can only be seen by them - no one else in the organisation is affected, so they can do no harm!
-
-In this way they can accomplish something useful for themselves while getting a taste for development, without worrying that they're going to mess up anything important.
-
-### Details
-Specifically, an agileBase citizen developer can
-* make simple changes to a [view]({{<relref "/docs/views">}}), i.e.
-	- remove or add fields, excepting any that are marked 'confidential' (only higher level developers can access those fields)
-	- rearrange fields
-	- add filters or remove filters (except on 'confidential' fields)
-* add and remove [charts]({{<relref "/docs/charting">}}) from their version of the view
+This is the start of the agileBase journey. At this level you can create your own applications, using no coding. 
+ 
+An agileBase citizen developer can create 'peronal copies' of any [view]({{<relref "/docs/views">}}) and edit those copies
+* remove or add fields, excepting any that are marked 'confidential' (only higher level developers can access those fields)
+* rearrange fields
+* change field sorting
+* add filters or remove filters (except on 'confidential' fields)
+* add and remove [charts]({{<relref "/docs/charting">}})
 
 > A confidential field is one that has a [visibility]({{<relref "/docs/fields/field-options/common-options#show-if-record-in-view">}}) rule, or is used for [multi-tenanting]({{<relref "/docs/security-and-compliance/security-features/roles#multi-tenanting">}}).
 
-The altered version of the view is seen only by them. Everyone else sees the original view. They can revert to the original (losing their changes) at any time.
+The personal copy of the view is seen only by them. For example, a citizen developer may create a list of records filtered to show ones assigned to them. Everyone else in the organisation sees only the original view.
 
-For example, a citizen developer may want to create a list of records which is filtered to only show ones assigned to them.
-
-The Citizen Developer role is automatically assigned once a user has used the system for a certain period of time and got used to it by carrying out standard functions like adding and editing records. It's assigned internal staff only though, not to [community users]({{<relref "/docs/security-and-compliance/security-features/users/community-users">}})
+You earn the Citizen Developer title once you have carried out standard functions. These include adding and editing records. The title is assigned to internal staff not to [community users]({{<relref "/docs/security-and-compliance/security-features/users/community-users">}}).
 
 ## Citizen Developer Level 2
 This level is suggested or 'unlocked' once a citizen developer has carried out a certain number of citizen development functions and has therefore started to learn how no code development works in a safe environment.
@@ -59,15 +52,15 @@ A citizen developer level 2 can
 * create [tiles]({{<relref "/docs/tiles">}}) and delete tiles they've added themselves
 
 ## Citizen Developer Level 3
-A Software Architect (see below) can, at their discretion, assign a citizen developer 'manage' privileges on a table (or tables). At that point, the user is automatically assigned Citizen Developer level 3.
+A Software Architect (see below) can, at their discretion, assign a citizen developer 3 'manage' privileges on a table (or tables).
 
 That allows them to
-* add [fields]({{<relref "/docs/fields">}}) to those table
+* add [fields]({{<relref "/docs/fields">}}) to those table, excluding referenced fields
 * remove fields that they themselves have added (not others)
 * edit the basic properties of any field in those tables, e.g. the list of options in a dropdown box
 
 Additionally, actions not related to having manage privileges on a particular table are
-* edit the basic properties of any regular view. Workflow, API and some other types of system view will be read-only
+* edit the basic properties of any regular view. However, workflow, API and some other types of system view will be read-only
 
 ## Junior Software Architect
 A junior software architect can use practically all of the application building functionality of agileBase. For example
