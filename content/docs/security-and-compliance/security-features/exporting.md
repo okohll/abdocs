@@ -13,23 +13,25 @@ Exporting to spreadsheet is only one way of getting data out of agileBase, but i
 In order for a user to be allowed to export to spreadsheet, a number of critieria have to be matched, to suitably protect your organisation's data.
 1. The user must have [Two Factor Authentication]({{<relref "users#two-factor-authentication">}}) enabled
 2. The view to export from must have exporting enabled (it's enabled by default). To do this
-    - in the tiles interface, open the view in question, click your user icon at the top right and select _admin - edit view_
-    - tick _allow exports_
+    - [edit the view]({{<relref "docs/introduction/development-mode">}})
+    - under _properties and options_, tick _allow exports_
 3. The user must also be a member of a [role]({{<relref "roles">}}) that allows exporting (disabled by default). To allow exporting for a role,
-    - in the admin interface, expand the _Administration_ menu in the lefthand sidebar
+    - on the homepage, toggle [development mode]({{<relref "docs/introduction/development-mode">}}) on
     - click _roles_ and select the role you want
     - tick _allow exports_
 
 A user with [manage privileges]({{<relref "privileges">}}) on the view's parent table can bypass criteria 2 and 3. This privilege is not commonly applied to normal users.
 
 ## Exporting
-A user with the ability to export can do so by opening the view, clicking the print icon to the left and selecting _export to spreadsheet_ from the options at the top of the screen.
+A user with the ability to export can do so by opening the view, clicking the export icon near the top right and selecting _export_ from the options in the menu.
+
+![exporting](/export.png)
 
 > If the user [filters]({{<relref "/docs/views/filters">}}) the data on screen before doing this, only the filtered data will be exported.
 
 The resulting spreadsheet will be in Microsoft Excel format. The first sheet will be some metadata about the export, such as a timestamp, the name of the exporter and any filters applied. The second sheet will be the actual data.
 
-Column A in the data sheet will be hidden. It holds the internal row ID of each record. This is useful for matching purposes if you're going to be modifying then re-importing the data.
+Column A in the data sheet holds the internal row ID of each record. This is useful for matching purposes if you're going to be modifying then re-importing the data.
 
 ### Charts
 If the view has [charts]({{<relref "/docs/charting">}}) attached, one sheet per chart will also be included in the spreadsheet. The contents will be the chart data, not the chart visualisation itself, but the visualisation can easily be re-created in the spreadsheet from the data if necessary.
