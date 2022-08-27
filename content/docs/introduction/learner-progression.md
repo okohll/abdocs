@@ -22,7 +22,7 @@ Agilebase enables citizen developers to pass through five stages on their way to
 ## Citizen Developer Level 1
 This is the start of the agileBase journey. At this level you can create your own applications, using no coding. 
  
-An agileBase citizen developer can create 'peronal copies' of any [view]({{<relref "/docs/views">}}) and edit those copies
+An agileBase citizen developer can create 'personal copies' of any [view]({{<relref "/docs/views">}}) and edit those copies
 * remove or add fields, excepting any that are marked 'confidential' (only higher level developers can access those fields)
 * rearrange fields
 * change field sorting
@@ -48,7 +48,7 @@ A citizen developer level 2 can
 * create their own [tables]({{<relref "/docs/tables">}})
 	- add, edit and remove fields and tabs from those tables
 	- edit basic properties of the fields
-	- assign privileges (up to edit) on those tables, using existing roles
+	- assign privileges (up to edit) on those tables, using existing roles or direct user privileges
 * create [tiles]({{<relref "/docs/tiles">}}) and delete tiles they've added themselves
 
 ## Citizen Developer Level 3

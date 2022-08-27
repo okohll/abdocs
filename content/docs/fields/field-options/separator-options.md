@@ -23,3 +23,8 @@ There are two other selections that can be made for the _expand if record in vie
 * expand never
 
 Remember, these just set the initial state of the block when a record is first opened, blocks can be expanded and contracted by the user at any time.
+
+## Place tabs here
+Normally, the first time a separator is encountered, as well as starting a block, any tabs which the table has will be shown in a row just before the block.
+
+To prevent that, un-tick this option. Then the block will be created but the tabs row won't be displayed until another separator is encountered, with _place tabs here_ ticked.
