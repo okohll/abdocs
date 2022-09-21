@@ -34,7 +34,9 @@ The test server will be an exact copy of your live system. The application struc
     * Click your test server name, then the 'Launch LISH Console' button at the top right
     * Enter your username, then password at the prompts
     * Type `sudo ./reload.sh` and enter your password again
-    * The system will now update from the latest snapshot. Please wait around 5 minutes then you'll be able to log in to it
+    * The system will now update from the latest snapshot.
+    * Type 'logout' and press Enter
+    * Please wait around 5 minutes then you'll be able to log in to it
 2) Make and test any changes on the test server
 3) View a summary list of changes you've made
     * Use the [enhanced audit trail]({{<relref "/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting#enhanced-audit-trail">}}) to see changes like field addition/removals or view alterations
