@@ -37,6 +37,8 @@ Typically, these options are only needed to finnesse an application. They can be
 ### Tab view
 For one to many tabs, which [view]({{<relref "/docs/views">}}) to use to show items. By creating a specific view to use for the tab, you can control which fields are displayed in which order, add calculations, filter those which are shown etc.
 
+To use a view as a tab view, it must contain the row ID field of the parent table i.e. the table the tab is present in.
+
 If the view contains one or more charts, those charts will also be shown when opening the tab, filtered to show only data for the parent record containing the tab (in the same way that the records to display in the tab are filtered).
 
 ### Populate from template
