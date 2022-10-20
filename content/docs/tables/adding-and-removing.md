@@ -36,7 +36,7 @@ The user interface will strip out any prefixes when displaying names to users, i
 There are two ways to edit a table: from the homepage, or from editing a record.
 
 ### From the homepage
-When you toggle build mode with the toggle in the top right corner of the screen, you can see a _Map_ and _List_ items: the Map shows tables and relations between them, the List can show tables and also other entities, like views or users.
+When you toggle development mode with the toggle in the top right corner of the screen, you can see a _Map_ and _List_ items: the Map shows tables and relations between them, the List can show tables and also other entities, like views or users.
 
 From either display, you can click a table to edit it. Once open, you can also pin tables with the pin icon at the top left of the editing panel. The table will then appear 'pinned' to the lefthand side of the development homepage and will remain there until unpinned, or you log out. This can be useful when working with a number of different tables.
 
