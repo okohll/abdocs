@@ -48,7 +48,7 @@ Changes to schemas (e.g. tables and views) can be seen in the editing panels for
 
 Changes to an individual record can be seen from the 'history' link at the bottom left of any editing screen.
 
-If the account has the [enhanced audit trail]({{<relref "/security-and-compliance/security-features/usage-monitoring/usage-reporting#enhanced-audit-trail">}}) then all data can be queried using agileBase views.
+If the account has the [enhanced audit trail]({{<relref "/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting#enhanced-audit-trail">}}) then all data can be queried using agileBase views.
 
 ## Retention periods
 Data is retained for 12 months as standard. The enhanced audit trail allows customers to define their own retention period, the maximum being unlimited.
