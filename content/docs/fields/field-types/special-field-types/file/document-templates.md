@@ -26,9 +26,16 @@ Alternatively and for complex needs, templates can be created manually. The temp
 
 Then a user will see a 'generate document' button when they edit a record from the table, allowing them to generate a PDF from the template.
 
-> Existing templates can also be edited or downloaded. Manually created templates with complex features such as variable setting and looping can't be edited using the WYSIWYG editor
+> Existing templates can also be edited or downloaded. Manually created templates with complex features such as variable setting and looping can't be edited using the WYSIWYG editor, but can be downloaded, edited manually then re-uploaded.
 
 ![Template creation](/document_generation.png)
+
+### Filename
+The filename of the generated document will be comprised of two parts, separated by a dash:
+a) the name of the template which you created as above
+b) the value of the first field in the view above
+
+Additionally if multi-tenanting is active, then the name of the tenant associated with the record the document is being generated in will also be added, preceded by a dash.
 
 ## Including data
 Each field in the view (included calculations), or parent table, can be merged in to the template by referencing the field name, preceded by a dollar sign. For convenience, a list of available fields is listed below the WYSIWYG editor, for easy copying and pasting into the template.
