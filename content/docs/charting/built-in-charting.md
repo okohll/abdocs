@@ -11,7 +11,7 @@ Charting is not strictly an administrator function, as any user can create chart
 
 However, it's useful for administrators to know how the system works in outline, so they can support users and also because creating charts may be a key part of building an application.
 
-In agileBase, charts 'belong to' a view. Each view can have a collection of charts. Users can toggle between viewing data rows and looking at charts based on those rows. When a user filters data using the quick filter boxes at the top of the screen, the data or charts (whichever is shown) will update to match the filtered results.
+In Agilebase, charts 'belong to' a view. Each view can have a collection of charts. Users can toggle between viewing data rows and looking at charts based on those rows. When a user filters data using the quick filter boxes at the top of the screen, the data or charts (whichever is shown) will update to match the filtered results.
 
 ## Creating a chart
 1. In the tiles interface, open the tile and view to use as a source of chart data

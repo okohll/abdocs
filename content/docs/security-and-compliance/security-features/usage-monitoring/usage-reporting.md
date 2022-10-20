@@ -11,7 +11,7 @@ tags:
 Log data reporting provides a rich view of system usage.
 
 ## Enhanced audit trail
-For organisations who have activated the enhanced audit trail, all logs are stored in user-accessible tables which are just like any other tables in the system, the only difference being the data is read only. This means an administrator can use the full power of the built in agileBase reporting features, to create views, add calculations, charts etc., even export via the API.
+For organisations who have activated the enhanced audit trail, all logs are stored in user-accessible tables which are just like any other tables in the system, the only difference being the data is read only. This means an administrator can use the full power of the built in Agilebase reporting features, to create views, add calculations, charts etc., even export via the API.
 
 So for example, you could analyse how many changes were made per month by each user, count the volume of logins from various locations or see what the most common fields are to search on. All actions listed on the [usage monitoring]({{<relref "usage-monitoring">}}) page are available to query.
 
@@ -46,7 +46,7 @@ This covers any time a view is opened or filtered, either by a user, or an API c
 * Details - any filters and row limit applied
 * Rows - the number of records returned to the user or API
 * Processing time - the total server-side processing time in milliseconds needed to retrieve the data, and if for an API, transform it into JSON format
-* Of which Q time **(API calls only)** - to achieve a fair level of load balancing, agileBase operates a separate API request queue for each customer. If a request arrives and the system is still busy processing a previous request, the new one gets held in a queue. This field shows how much of the total processing time, in ms was spent waiting for previous requests to complete
+* Of which Q time **(API calls only)** - to achieve a fair level of load balancing, Agilebase operates a separate API request queue for each customer. If a request arrives and the system is still busy processing a previous request, the new one gets held in a queue. This field shows how much of the total processing time, in ms was spent waiting for previous requests to complete
 * Bytes **(API calls only)** - the number of bytes of JSON data returned via the API
 * Count - if many similar requests or API calls (to a particular view) reach the server in quick succession, they will be amalgamated together into one log line. The count then shows the number of requests the log line refers to, otherwise it will be 1. If more than one, then the *rows*, *processing time*, *of which q time* and *bytes* will represent the totals for all requests
 

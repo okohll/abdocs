@@ -9,7 +9,7 @@ tags:
 ---
 Adding a comment feed to a table adds a discussion area to a form, transforming its usefulness.
 
-Comment feeds in agileBase are quite a large topic, as one of the most often used features central to the platform. It's common for at least one comment feed to be added to every table in the system, allowing users to collaborate and discuss data wherever they are.
+Comment feeds in Agilebase are quite a large topic, as one of the most often used features central to the platform. It's common for at least one comment feed to be added to every table in the system, allowing users to collaborate and discuss data wherever they are.
 
 The ability to discuss and comment on data can be one of the most important mechanisms used to break down silo thinking and help organisations that wish to adopt a more systematic or process orientated view of things.
 

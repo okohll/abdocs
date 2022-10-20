@@ -2,15 +2,15 @@
 title: "Docs"
 date: 2020-04-18T16:57:55+01:00
 type: docs
-description: Reference documentation for business software development using agileBase
+description: Reference documentation for business software development using Agilebase
 weight: 1
 menu:
   main:
     weight: 4
 ---
-The sections to the left cover the full range of functionality of agileBase. Concepts are covered roughly in the order in which they are useful, from top to bottom, but if you want a guided tour to get started, then a quick start guides section is coming soon.
+The sections to the left cover the full range of functionality of Agilebase. Concepts are covered roughly in the order in which they are useful, from top to bottom, but if you want a guided tour to get started, then a quick start guides section is coming soon.
 
-When developing applications using agileBase itself, you'll frequently see question mark icons on screen. These directly link to the relevant pages of this documentation.
+When developing applications using Agilebase itself, you'll frequently see question mark icons on screen. These directly link to the relevant pages of this documentation.
 
 ## Further support
 If there's an area you find the documentation doesn't cover sufficiently, please let us know at support@agilechilli.com. We'll try to improve it and answer your question.

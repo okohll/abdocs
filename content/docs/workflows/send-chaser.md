@@ -29,7 +29,7 @@ Whenever a non-conformance is raised against a supplier, whether as a result of 
 
 ## Setup
 
-As an agileBase administrator, if you want to set up your own chaser, here’s how to do so. 
+As an Agilebase administrator, if you want to set up your own chaser, here’s how to do so. 
 
 1) Create a view with a list of people to chase. In the view’s _manage_ tab, under _Send_, choose _send email chasers_
 

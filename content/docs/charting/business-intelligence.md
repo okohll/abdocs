@@ -10,7 +10,7 @@ tags:
 
 > Before setting up a BI connection, please be aware of the [data privacy and security](/docs/charting#privacy-and-data-security) considerations.
 
-At agileBase we host an instance of [Apache Superset](https://superset.apache.org) which can be used by customers to create reporting dashboards.
+At Agilebase we host an instance of [Apache Superset](https://superset.apache.org) which can be used by customers to create reporting dashboards.
 
 However the setup processes below also applies to third party tools such as Power BI. In fact, any tool which utilises [ODBC](https://en.wikipedia.org/wiki/Open_Database_Connectivity) can be used, such as Excel for example.
 
@@ -18,7 +18,7 @@ However the setup processes below also applies to third party tools such as Powe
 
 The first step is to [contact us](https://agilechilli.com/contact-us/) to request we prepare your account. This will also allow connections from Apache Superset, Power BI or any other tool which can connect to ODBC).
 
-If you wish to use our supplied instance of Superset, we will then set up as many Superset users you require - there is no ongoing cost for these login accounts. Note that Superset logins are separate from agileBase ones - the usernames and passwords can be different.
+If you wish to use our supplied instance of Superset, we will then set up as many Superset users you require - there is no ongoing cost for these login accounts. Note that Superset logins are separate from Agilebase ones - the usernames and passwords can be different.
 
 If you use Power BI, then the process is as follows
 1) Install the PostgreSQL ODBC driver from https://odbc.postgresql.org/. Use the Downloads link and if running on Windows, use the newest driver from the **msi** folder.
@@ -29,16 +29,16 @@ If you use Power BI, then the process is as follows
 
 A developer with MANAGE privileges on a view's parent table can set this up.
 
-1) In agileBase, open the view you wish to report on. Ensure it has all the necessary fields and calculations in it which you want to report on. If not, add them before continuing.
+1) In Agilebase, open the view you wish to report on. Ensure it has all the necessary fields and calculations in it which you want to report on. If not, add them before continuing.
 2) Click the charting icon to view the chart setup interface
-3) At the bottom of the screen, tick 'send data to a shareable dashboard'. As this makes data available [outside of agileBase](charting#privacy-and-data-security), you will be asked to confirm you will treat the data in a way which maintains privacy and security before enabling the feature.
+3) At the bottom of the screen, tick 'send data to a shareable dashboard'. As this makes data available [outside of Agilebase](charting#privacy-and-data-security), you will be asked to confirm you will treat the data in a way which maintains privacy and security before enabling the feature.
 
 Within a few seconds, the data will then be visible to your external application.
 
 > The first view set up in this way is free, further views can be purchased in bundles.
 
 ### Changes
-It's easy for developers to make changes to views in agileBase, for example adding / removing fields, changing calculations or just renaming a view.
+It's easy for developers to make changes to views in Agilebase, for example adding / removing fields, changing calculations or just renaming a view.
 
 > However, when the BI connection is active, bear in mind that certain changes could break it. The reason is that once data is set up to transfer to a separate system, the other system typically expects it to remain in the same format.
 >
@@ -57,7 +57,7 @@ Then, when a user opens view B, they will see a button at the top of the screen 
 
 > This section applies to Superset only, for Power BI or other instructions please contact us.
 
-Now that you've set up agileBase to make data available to Superset, you can create charts and dashboards there.
+Now that you've set up Agilebase to make data available to Superset, you can create charts and dashboards there.
 
 1) Create a 'dataset' in Superset, corresponding to the view you set up above
     1) From the *Data* menu at the top, select *datasets*, then click the *+ dataset* button

@@ -12,12 +12,12 @@ If a view contains a date field, the data in it can by synchronised with an exte
 
 If it contains two date fields, the first will be used for the start date/time, the second for the finish.
 
-Once set up, the link will be maintained and the calendar will update whenever the data in agileBase is updated, or vice versa. The synchonisation can be set up to be two-way (to and from agileBase), or just one way (either two or from agileBase)
+Once set up, the link will be maintained and the calendar will update whenever the data in Agilebase is updated, or vice versa. The synchonisation can be set up to be two-way (to and from Agilebase), or just one way (either two or from Agilebase)
 
 ## Pre-requisites
-agileBase uses [OAuth](https://oauth.net/), an industry standard protocol, to synchronize with your calendar system of choice.
+Agilebase uses [OAuth](https://oauth.net/), an industry standard protocol, to synchronize with your calendar system of choice.
 
-Under this protocol, each person will need to individually grant agileBase permission to send data to, and view events in their calendar. This is a straightforward process: as a user,
+Under this protocol, each person will need to individually grant Agilebase permission to send data to, and view events in their calendar. This is a straightforward process: as a user,
 1. Click on your user icon at the top right of the screen
 2. Select _edit profile_
 3. Click the _connect calendar_ link
@@ -29,9 +29,9 @@ You will see a calendar selector screen like this:
 Choose the calendar system you use and follow through the prompt to allow access.
 
 ## Incoming data
-Once users have connected their calendars, data can be received into agileBase whenever an event is created, edited or deleted in the external calendar. We need to set up two new tables so the system can receive these events. One is a table for the event data itself, the other stores the list of calendars in the user's account. One calendar account may contain multiple calendars, e.g. a user may have separate calendars set up for bookings, sales visits, holidays etc. - typically they display in different colours on the screen.
+Once users have connected their calendars, data can be received into Agilebase whenever an event is created, edited or deleted in the external calendar. We need to set up two new tables so the system can receive these events. One is a table for the event data itself, the other stores the list of calendars in the user's account. One calendar account may contain multiple calendars, e.g. a user may have separate calendars set up for bookings, sales visits, holidays etc. - typically they display in different colours on the screen.
 
-The main reason for recording the calendar list is so that the correct calendar can be chosen to send events to, when we come to send events from agileBase (see below).
+The main reason for recording the calendar list is so that the correct calendar can be chosen to send events to, when we come to send events from Agilebase (see below).
 
 To set up these tables, follow this process:
 
@@ -56,12 +56,12 @@ You can use [automated worflows]({{<relref "/docs/workflows">}}) to copy data fr
 
 However, you could also simply create views from the 'ab calendar intray' table to allow users to view these events directly. Adding a filter to the user on the 'person' field will ensure a user will only see their own events -see [users - restrict data access]({{relref "/docs/security-and-compliance/security-features/users#restrict-data-access"}})
 
-> Please be aware of potential data privacy concerns when setting up calendar synchronisation. All events a user creates or modifies in any of the calendars in their connected account will send to agileBase. As an administrator, you may wish to set up specific work calendar accounts for your users, distinct from any personal accounts they may use.
+> Please be aware of potential data privacy concerns when setting up calendar synchronisation. All events a user creates or modifies in any of the calendars in their connected account will send to Agilebase. As an administrator, you may wish to set up specific work calendar accounts for your users, distinct from any personal accounts they may use.
 
 ## Outgoing data
-As well as receiving data in, you can send either new or modified events from agileBase to users' connected calendars.
+As well as receiving data in, you can send either new or modified events from Agilebase to users' connected calendars.
 
-New events are those created in agileBase, modified events are those created externally which have come into the system via the incoming data method above, but which have then been updated in agileBase.
+New events are those created in Agilebase, modified events are those created externally which have come into the system via the incoming data method above, but which have then been updated in Agilebase.
 
 To set this up
 1. [Create a view]({{<relref "/docs/views">}}) to show the events to send to the calendar.
@@ -75,6 +75,6 @@ To set this up
 Some of these fields deserve additional explanations:
 * **calendar id**: identifies the particular calendar within the user's connected account to send events to. This is the same calendar ID used in the 'ab calendar mapping' table above, so can be looked up from there, perhaps by joining to the table.
 * **event id**: if you're creating a new event, leave this blank. If the event was created externally, or you're updating an existing event, use the event ID as listed in the 'ab calendar intray' record for it.
-* **calendar owner**: the ID of the agileBase user - this will be used to determine the person who'se linked calendar the event should be sent to. The standard agileBase format is used 'Forename Surname (username)', so you can use the automatic field 'Created By [auto]' if you like.
+* **calendar owner**: the ID of the Agilebase user - this will be used to determine the person who'se linked calendar the event should be sent to. The standard Agilebase format is used 'Forename Surname (username)', so you can use the automatic field 'Created By [auto]' if you like.
 * **attendees**: a comma separated list of email addresses of people who should be invited
 

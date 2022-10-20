@@ -7,6 +7,6 @@ description: The data in each view can be exported when the requisite privileges
 tags:
 - Architect
 ---
-A spreadsheet export is the simplest way for everyday users to get data out of agileBase without requiring that an administrator sets up an integration.
+A spreadsheet export is the simplest way for everyday users to get data out of Agilebase without requiring that an administrator sets up an integration.
 
 Details of how to allow this are in the [security and compliance]({{<relref "/docs/security-and-compliance/security-features/exporting">}}) section.

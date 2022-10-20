@@ -16,7 +16,7 @@ Or for a more complex example, if you start with a view from a recipes table, yo
 Any number of joins to different tables or views can be added to a view.
 
 ## Adding a join
-agileBase will automatically pick out the common tables you may wish to join to, by seeing which are related via [relation fields]({{<relref "/docs/fields/field-types/basic-field-types#relation">}}). Once you get used to the concepts, you may also wish sometimes to add joins manually to tables or views not automatically suggested. That will be covered at the end of this page.
+Agilebase will automatically pick out the common tables you may wish to join to, by seeing which are related via [relation fields]({{<relref "/docs/fields/field-types/basic-field-types#relation">}}). Once you get used to the concepts, you may also wish sometimes to add joins manually to tables or views not automatically suggested. That will be covered at the end of this page.
 
 To add a join
 1) Load the view you wish to add a join to and enable development mode
@@ -28,7 +28,7 @@ The added join will appear graphically above the _Add Join_ button. The lefthand
 
 In each part, left or right, the name of the table being joined from (on the left) or to (on the right) is shown in bold.
 
-Underneath the table name, the name of the field used to match records is shown. When an ID field is shown, this just refers to the internal ID agileBase uses automatically to make the match. It's only of relevance if you're creating advanced joins manually - see below, so can be ignored otherwise.
+Underneath the table name, the name of the field used to match records is shown. When an ID field is shown, this just refers to the internal ID Agilebase uses automatically to make the match. It's only of relevance if you're creating advanced joins manually - see below, so can be ignored otherwise.
 
 ![example join](/example-join.png)
 
@@ -50,7 +50,7 @@ However, joins down can be very useful when you want to aggregate child data, fo
 So joins upwards are the more common case, but joins downward can be useful for particular purposes.
 
 ## Complex joins
-As above, agileBase automatically suggests joins to data that's related to the current view's parent table as well as any of the tables already joined to. It uses [relation fields]({{<relref "/docs/fields/field-types/basic-field-types#relation">}}) to see what's related.
+As above, Agilebase automatically suggests joins to data that's related to the current view's parent table as well as any of the tables already joined to. It uses [relation fields]({{<relref "/docs/fields/field-types/basic-field-types#relation">}}) to see what's related.
 
 However, sometimes you may want to join to a table or view that's not automatically suggested. These examples may become increasingly 'niche' but they are a useful reference for similar situations you may come across.
 

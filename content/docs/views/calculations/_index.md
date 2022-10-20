@@ -9,7 +9,7 @@ tags:
 ---
 The ability to add calculations to a view opens up a world of possibilities. Within the confines of the SQL language, there's no limit to what you can do, and those confines contain a pretty large space.
 
-This is the only area of agileBase which requires some 'semi-programming' to use - using snippets of SQL. SQL is a standard, widely popular and easy to learn language and there are lots of resources available on the internet.
+This is the only area of Agilebase which requires some 'semi-programming' to use - using snippets of SQL. SQL is a standard, widely popular and easy to learn language and there are lots of resources available on the internet.
 
 We'll start with some simple examples, then move on to some more advanced ones, but even then we won't cover every capability so will point you to specific further resources and references.
 
@@ -80,12 +80,12 @@ If a calculation is particularly complex, you can if you like split apart into m
 
 The rule not to mix aggregate parts and non-aggregate parts, as above, still holds.
 
-> Just be aware that if you update one of the composite parts, you then need to update any calculations that depend on it. The system won't automatically update them to reference the new version. This is due to the way the database works under the hood - it doesn't natively support referencing one calculation from another, so we add that layer in agileBase functionality.
+> Just be aware that if you update one of the composite parts, you then need to update any calculations that depend on it. The system won't automatically update them to reference the new version. This is due to the way the database works under the hood - it doesn't natively support referencing one calculation from another, so we add that layer in Agilebase functionality.
 
 ### Troubleshooting errors
-If there is an error in a view, it's more than likely the culprit is a calculation, as they are one of the more complex facilities of agileBase and the only one where SQL can be entered by the user, as opposed to be automatically generated. You may see messages like **view broken** or errors when you try to change a view e.g. move a field.
+If there is an error in a view, it's more than likely the culprit is a calculation, as they are one of the more complex facilities of Agilebase and the only one where SQL can be entered by the user, as opposed to be automatically generated. You may see messages like **view broken** or errors when you try to change a view e.g. move a field.
 
-Errors can occur due to data changing. Division by zero errors are automatically handled by agileBase (null is returned), but other types of calculation can also cause errors in certain circumstances. For example if a calculation squares a field, if someone enters a really large number into that field in a particular record, then an overflow error may occur.
+Errors can occur due to data changing. Division by zero errors are automatically handled by Agilebase (null is returned), but other types of calculation can also cause errors in certain circumstances. For example if a calculation squares a field, if someone enters a really large number into that field in a particular record, then an overflow error may occur.
 
 This can be resolved by temporarily filtering out the problem data, then the view can be edited to handle the issue, or perhaps a [data integrity check]({{<relref "/docs/tables/data-integrity-checks">}}) can be added to disallow problem data in future.
 

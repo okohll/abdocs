@@ -7,7 +7,7 @@ description: Working with big data and complex views
 tags:
 - Principal Architect
 ---
-agileBase automatically takes some measures behind the scenes to maintain high performance as data volumes grow.
+Agilebase automatically takes some measures behind the scenes to maintain high performance as data volumes grow.
 
 There are other mechanisms that can be manually enabled such as [caching]({{<relref "/docs/views/options/behaviour-options#cache-view-rows">}}) and increasing the memory assigned to particular views.
 

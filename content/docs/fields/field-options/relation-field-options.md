@@ -7,7 +7,7 @@ description: Options specific to relation fields, which determine how tables lin
 tags:
 - Architect
 ---
-Relations between tables are the 'glue' that holds together an application built using agileBase. If you'd like to learn more about this fundamental concept, please check out the [relational database concepts]({{<relref "/docs/tables/relational-database-concepts">}}) page.
+Relations between tables are the 'glue' that holds together an application built using Agilebase. If you'd like to learn more about this fundamental concept, please check out the [relational database concepts]({{<relref "/docs/tables/relational-database-concepts">}}) page.
 
 Some of the options for a relation field determine the nature of the links between tables, which can have a great effect on how an app works, so it's very useful to know about them.
 

@@ -9,7 +9,7 @@ tags:
 ---
 **Learning Aim:** Create a Table and associated Views to use it!
 
-**Prerequisites:** User to have watched "How to use agileBase"
+**Prerequisites:** User to have watched "How to use Agilebase"
 
 ### Introduction
 This stage of the guide will introduce you to the basic activities required to build a simple application. We will start by creating a table with different types of fields in order to store a variety of data. We will then show you how to create and control tiles, views and forms which are the interfaces that your users will use to enter and consume this data.
@@ -17,7 +17,7 @@ Let us start by building a simple task list.
 
 
 ## Create a table called "Tasks"
-Our simple application will need to store information about the tasks our users create. This is done by creating a database table. In agileBase this is achieved by navigating to the developer interface and pressing the “add new table button”. 
+Our simple application will need to store information about the tasks our users create. This is done by creating a database table. In Agilebase this is achieved by navigating to the developer interface and pressing the “add new table button”. 
 [guide 1 - video 1]{{<youtube id="-kY2RRzKqxQ">}}
            
 ## Add fields to the "Tasks" table
@@ -29,7 +29,7 @@ In the following video we add the fields needed to for a simple Task
 [guide 1 - video 2]{{<youtube id="SannBQNKlKk">}}           
 
 ## Make the form easier to understand. Break it into sections
-Now we have the data structure required to capture a simple task we can think about how it would be used. The user interface within agileBase is controlled by the list of fields and their options. It is a simple task to reorder fields, just use the drag and drop facility when looking at the list of fields. 
+Now we have the data structure required to capture a simple task we can think about how it would be used. The user interface within Agilebase is controlled by the list of fields and their options. It is a simple task to reorder fields, just use the drag and drop facility when looking at the list of fields. 
 Use a field of type separator to create sections within the user interface
 [guide 1 - video 3]{{<youtube id="c8XMlhoiuSM">}}   
 

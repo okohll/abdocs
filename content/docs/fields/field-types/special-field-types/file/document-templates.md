@@ -7,7 +7,7 @@ description: Templates allow the automatic generation of PDF documents, or print
 tags:
 - Architect
 ---
-Document templates in agileBase are typically used to create output that needs to be printed or emailed, for example form letters and especially anything that needs to be branded. They can be used for some quite complex and large documents, for example one customer uses them to create branded multi-page reports that are sold to customers, complete with custom fonts, layouts, images and colours.
+Document templates in Agilebase are typically used to create output that needs to be printed or emailed, for example form letters and especially anything that needs to be branded. They can be used for some quite complex and large documents, for example one customer uses them to create branded multi-page reports that are sold to customers, complete with custom fonts, layouts, images and colours.
 
 The same templating system is used for both generating documents (which can be done automatically with a [workflow]({{<relref "/docs/workflows/send-document-generator">}}) or manually) and displaying output to be printed.
 
@@ -97,7 +97,7 @@ Here are some of the most commonly used data retrieval / formatting functions.
 | $sessionData.getRowId()              | Return the ID of the record last loaded |
 | $sessionData.getTile()               | Return the open tile |
 
-There are many more functions than these available, indeed the whole of the agileBase user interface is created with templates including functions of these three types.
+There are many more functions than these available, indeed the whole of the Agilebase user interface is created with templates including functions of these three types.
 
 The entire templating API is beyond the scope of this documentation but if you do wish to create any template functionality not covered by the above, it's probably possible. Please get in touch with us to discuss your needs and be pointed in the right direction.
 

@@ -7,7 +7,7 @@ description: Adding to or updating existing data in a table using a spreadsheet 
 tags:
 - Citizen Developer
 ---
-agileBase allows data to be imported from CSV (Comma Separated Variable) files. All popular spreadsheet software can save data in this format.
+Agilebase allows data to be imported from CSV (Comma Separated Variable) files. All popular spreadsheet software can save data in this format.
 
 Anyone with [**manage** privileges]({{<relref "/docs/security-and-compliance/security-features/privileges">}}) on a table can import data into it.
 
@@ -25,7 +25,7 @@ Inserting new records will create a new record in the database for every line in
 In either case, the CSV file must contain fields in the same order as they are in the table being imported into. The column titles don’t need to be the same though, it’s the order which is important. The import screen will show you the column order which is necessary.
 
 ## Updating existing records
-When updating records, a key field must be selected to match records up. This can be any field that has the [unique]({{<relref "/docs/fields/field-options/common-options#unique">}}) property set. Alternatively the internal agileBase rowID can be used. This field is included as the first field in any data export.
+When updating records, a key field must be selected to match records up. This can be any field that has the [unique]({{<relref "/docs/fields/field-options/common-options#unique">}}) property set. Alternatively the internal Agilebase rowID can be used. This field is included as the first field in any data export.
 
 Sometimes, admins will want to do an export -> modify spreadsheet -> re-import workflow. This is straightforward:
 
@@ -33,7 +33,7 @@ Sometimes, admins will want to do an export -> modify spreadsheet -> re-import w
 2. Open the spreadsheet, making any modifications you need. The first column will be the internal ID for each record, keep this, it will be needed when re-importing.  
 > Note it will be hidden - you can un-hide it in the spreadsheet for clarity
 3. Blank out (remove content from) any columns which you haven’t updated. Otherwise if people have updated them since your export, you will overwrite their changes.
-4. Re-import using an ‘update’ type import as above. Select _use internal agileBase row IDs to identify records_
+4. Re-import using an ‘update’ type import as above. Select _use internal Agilebase row IDs to identify records_
 
 ## Notes on special fields
 For a file field, please leave an empty column in the spreadsheet in that position. If you wish to do a bulk upload of many images or documents, please contact [support](https://agilechilli.com/contact-us/).

@@ -3,7 +3,7 @@ title: "Creating a POST API"
 date: 2020-04-24T16:40:00+01:00
 type: docs
 weight: 120
-description: A powerful automation feature that can allow a third party system to POST data in to agileBase.
+description: A powerful automation feature that can allow a third party system to POST data in to Agilebase.
 tags:
 - Architect
 ---
@@ -28,7 +28,7 @@ If you want to submit data directly from an app rather than a web form, simply p
 
 The post URL is
 
-https://appserver.gtportalbase.com/agileBase/Public.ab
+https://appserver.gtportalbase.com/Agilebase/Public.ab
 
 The form needs to be posted using the method POST.
 
@@ -63,10 +63,10 @@ The process is similar, but instead of _save_new_record=true_, supply
 The internal record ID can be got from a JSON feed or by using the _return=posted_json_ as above if editing a record previously created using the API.
 
 ## Uploading files
-As well as 'standard' data, agileBase can accept documents posted into a [file field]({{<relref "/docs/fields/field-types/special-field-types/file">}}). This can be done in two ways:
+As well as 'standard' data, Agilebase can accept documents posted into a [file field]({{<relref "/docs/fields/field-types/special-field-types/file">}}). This can be done in two ways:
 
 1) Make sure the form is posted with encoding type [multipart/form-data](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST). Then simply post the contents of the file with the form parameter specifying the internal name of the file field.
-2) Post the form normally (not as multipart/form-data), and provide a URL value for the file field. That URL will be downloaded by agileBase and the contents saved as a file.
+2) Post the form normally (not as multipart/form-data), and provide a URL value for the file field. That URL will be downloaded by Agilebase and the contents saved as a file.
 > Method 2 is [Zapier](https://www.zapier.com)-compatible.
 
 ## Response

@@ -9,9 +9,9 @@ tags:
 ---
 Before diving into the details of building applications, starting with tables, let's take a step back and learn some background information about databases, including what a table is. If you're familiar with these concepts, feel free to skip this section.
 
-When building back office software with agileBase, a large amount of what we'll be doing is building database structures, to store user-entered data. agileBase takes care of creating the user interface to allow users to use these structures automatically, e.g. to search for data, add and edit it.
+When building back office software with Agilebase, a large amount of what we'll be doing is building database structures, to store user-entered data. Agilebase takes care of creating the user interface to allow users to use these structures automatically, e.g. to search for data, add and edit it.
 
-You will find many articles explaining relational databases if you look for them on the internet. Most will introduce SQL, the language used to work with databases. It's not necessary to learn that as agileBase generates it automatically behind the scenes, but the higher level concepts are useful to grasp.
+You will find many articles explaining relational databases if you look for them on the internet. Most will introduce SQL, the language used to work with databases. It's not necessary to learn that as Agilebase generates it automatically behind the scenes, but the higher level concepts are useful to grasp.
 
 Here's a YouTube video with a good introduction.
 
@@ -83,7 +83,7 @@ The video above also explains this type of relation if you've not already watche
 ### When to use the many to many
 You may have a niggling thought at the back of your mind: how do I know whether it's best to use a simple one to many relation, or a more complex many to many setup? Surely I could use many to many for contacts and suppliers too? A single contact may be associated with more than one supplier, for example if they're a contractor, or if they move jobs.
 
-The answer to that just comes down to your judgement. Although agileBase creates a friendly, easy to use interface on top of the data structure, the many to many does add complexity. So it's a bit of a trade-off. However the advantage of a no-code system like agileBase is that you can rapidly try out ideas and see which one works best. As time goes on you'll get a sense of what works best in which situation.
+The answer to that just comes down to your judgement. Although Agilebase creates a friendly, easy to use interface on top of the data structure, the many to many does add complexity. So it's a bit of a trade-off. However the advantage of a no-code system like Agilebase is that you can rapidly try out ideas and see which one works best. As time goes on you'll get a sense of what works best in which situation.
 
 > If you do want to learn more about this topic, it's called 'database normalisation' and there's plenty written about it!
 

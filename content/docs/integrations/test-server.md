@@ -15,7 +15,7 @@ In cases like that, you don't want potentially large quantities of test data pol
 
 People from the traditional IT world will be familiar with the concept of testing changes during the development process, before deploying them live.
 
-As agileBase is a no-code platform, the processes are slightly different - there are no 'code' changes to deploy. But here's how we achieve the same.
+As Agilebase is a no-code platform, the processes are slightly different - there are no 'code' changes to deploy. But here's how we achieve the same.
 
 ## Commissioning a test server
 
@@ -48,9 +48,9 @@ The test server will be an exact copy of your live system. The application struc
     
 > By default, a new snapshot will be made available every 24hrs, at around 7am. However, if you wish, you can ask us to set up a different timing or frequency of snapshots, just let us know.
 
-## Testing agileBase platform updates
+## Testing Agilebase platform updates
 
-As well as testing your own changes, the test server comes with the added benefit that you can access pre-release versions of new versions of the agileBase platform itself.
+As well as testing your own changes, the test server comes with the added benefit that you can access pre-release versions of new versions of the Agilebase platform itself.
 
 That means you can test out new features before they're released and if you like run your own API tests against it.
 

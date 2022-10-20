@@ -87,12 +87,12 @@ In a multi-tenanting account, it's possible to create new tenants, with users, b
 
 ## Role properties
 ### Brand name and domain
-These two options allow system emails (password reset notification etc.) to come from a domain name of your choice and be branded with a particular 'app' name. This can be useful if you're creating a public-facing app using agileBase, rather than applications for your own staff.
+These two options allow system emails (password reset notification etc.) to come from a domain name of your choice and be branded with a particular 'app' name. This can be useful if you're creating a public-facing app using Agilebase, rather than applications for your own staff.
 
 To allow the domain name to work, you'll need to contact us to set it up - our server will need to be authorised to send email from your domain.
 
 ### Custom menus
-It’s possible to add custom menu items into the user menu (the one at the top right that appears if you click your user icon). That means if your company has specific help pages or process documentation relevant to your organisation or application, you can make them available from within agileBase.
+It’s possible to add custom menu items into the user menu (the one at the top right that appears if you click your user icon). That means if your company has specific help pages or process documentation relevant to your organisation or application, you can make them available from within Agilebase.
 
 Each custom menu has a title, description and URL, which will be opened in a new tab when the menu item’s chosen.
 

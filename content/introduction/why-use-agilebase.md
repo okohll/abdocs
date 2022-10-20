@@ -1,13 +1,13 @@
 ---
-title: "Why use agileBase?"
+title: "Why use Agilebase?"
 date: 2020-06-22T09:57:55+01:00
 type: docs
 weight: 20
-description: Why use agileBase as your no code development platform?
+description: Why use Agilebase as your no code development platform?
 ---
-![agileBase banner](/platform.jpg)
+![Agilebase banner](/platform.jpg)
 
-agileBase has been created with some important aims in mind
+Agilebase has been created with some important aims in mind
 
 * to create software that people find enjoyable to use, which manifests in many ways, most obviously the attractive and colourful user interface, but also because it can match user's requirements exactly
 * to support the full ambitions of business owners. It's simple to get started but the platform has a very high *technical ceiling* - there's not much you can't accomplish

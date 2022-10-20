@@ -3,14 +3,14 @@ title: "Integrations"
 date: 2020-04-24T16:40:00+01:00
 type: docs
 weight: 100
-description: Using the API and other data IO options to extract data from agileBase and/or connect with third party systems
+description: Using the API and other data IO options to extract data from Agilebase and/or connect with third party systems
 tags:
 - Certified Architect
 ---
 
-There are a number of ways to extract data from agileBase, whether manually for an individual's use or programatically for integration with other systems. 
+There are a number of ways to extract data from Agilebase, whether manually for an individual's use or programatically for integration with other systems. 
 
-There are also multiple ways other than the user interface to enter data into agileBase.
+There are also multiple ways other than the user interface to enter data into Agilebase.
 
 ## Outgoing Data
 

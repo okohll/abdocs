@@ -10,7 +10,7 @@ tags:
 
 Agilebase can be used to send emails. This facility should **NOT** be used for marketing purposes, rather as a method to notify people about data associated to the system.
 
-> Note: When setting up an email alert, the system needs to know the email address of the recipient. Sometimes this may be very simple, when you always want to send the alert to the same person. For some alerts though you may wish to change who gets it depending on the data, e.g. each salesperson may get the leads assigned to them. In this case, the system will need to know the email address, so it needs to be stored somewhere. For agileBase users, if they use their email address as their username, the system can pick this up when a user’s assigned to a record, either manually or as part of the automatic ‘created by’ and ‘modified by’ fields
+> Note: When setting up an email alert, the system needs to know the email address of the recipient. Sometimes this may be very simple, when you always want to send the alert to the same person. For some alerts though you may wish to change who gets it depending on the data, e.g. each salesperson may get the leads assigned to them. In this case, the system will need to know the email address, so it needs to be stored somewhere. For Agilebase users, if they use their email address as their username, the system can pick this up when a user’s assigned to a record, either manually or as part of the automatic ‘created by’ and ‘modified by’ fields
 
 ## Step 1: add a necessary field
 
@@ -40,12 +40,12 @@ You can attach documents to the email by including the field name for a file in 
 
 Under the email template, set “Notification time field” to the field that you created in step 1, e.g. “Last notified”
 
-Note in the To: field, you can include email addresses manually, or merge them in from the view. If you are assigning records to users in agileBase, you can use that field and the system will automatically pick out the email address for them.
+Note in the To: field, you can include email addresses manually, or merge them in from the view. If you are assigning records to users in Agilebase, you can use that field and the system will automatically pick out the email address for them.
 
 > That’s it! Note when testing, we recommend setting the “To:” value to your own email address, just until you’re sure everything’s working properly.
 
 ## Rich text (HTML) emails
-HTML emails can now be sent by apps built on the agileBase platform.
+HTML emails can now be sent by apps built on the Agilebase platform.
 That means that your company can send out branded, rich-text emails (with attachments) to customers, suppliers and anyone else you deal with.
 
 ### Setting up

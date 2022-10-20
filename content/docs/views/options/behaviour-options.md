@@ -62,9 +62,9 @@ The majority of the time you will not need to change this setting. However here'
 
 When getting data from a view (the list of rows), the database internally uses a [query planner](https://www.postgresql.org/docs/current/planner-optimizer.html). The planner works out the quickest way to return the results, as for complex queries there may be many possible ways.
 
-Most of the time that works very well, in fact increasingly well with each new release of the PostgreSQL database. However sometimes a sub-optimal plan can be used, resulting in a slow view. agileBase then automatically tries out an alternative (specifically, disabling the use of '[nested loops](https://www.postgresql.org/docs/14/runtime-config-query.html') to see if that's faster and sets this option if so.
+Most of the time that works very well, in fact increasingly well with each new release of the PostgreSQL database. However sometimes a sub-optimal plan can be used, resulting in a slow view. Agilebase then automatically tries out an alternative (specifically, disabling the use of '[nested loops](https://www.postgresql.org/docs/14/runtime-config-query.html') to see if that's faster and sets this option if so.
 
-This option only needs to be changed if the agileBase detection fails (which is possible, query timing can depend on many factors, such as how many other queries the database is running at the time), resulting in a slower view rather than a faster one.
+This option only needs to be changed if the Agilebase detection fails (which is possible, query timing can depend on many factors, such as how many other queries the database is running at the time), resulting in a slower view rather than a faster one.
 
 In that case, you can experiment by changing the setting from 'default' to 'alternative' or vice versa.
 

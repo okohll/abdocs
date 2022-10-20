@@ -3,7 +3,7 @@ title: "Advanced information on Workflows"
 date: 2020-04-24T16:40:00+01:00
 type: docs
 weight: 200
-description: Further information about agileBase automation features
+description: Further information about Agilebase automation features
 tags:
 - Certified Architect
 ---

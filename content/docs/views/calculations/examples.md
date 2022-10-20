@@ -7,7 +7,7 @@ description: Some examples of useful calculations for each type of field (text, 
 tags:
 - Architect
 ---
-The database which underpins agileBase is [PostgreSQL](https://www.postgresql.org) - 'The World's Most Advanced Open Source Relational Database'.
+The database which underpins Agilebase is [PostgreSQL](https://www.postgresql.org) - 'The World's Most Advanced Open Source Relational Database'.
 
 This page will just be an introduction to some of the things you can do with calculations.
 
@@ -72,7 +72,7 @@ regexp_replace(
 
 The last two are slightly more complex because they use a powerful text matching/search and replace facility called **regular expressions**, or regexes for short. Again, this is a standard facility and there's lots of documentation available on the [PostgreSQL website](https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP) and elsewhere if you'd like to learn more.
 
-> The only difference from standard to be aware of is that when entering a regex into a calculation in agileBase, you must use two backslashes instead of one.
+> The only difference from standard to be aware of is that when entering a regex into a calculation in Agilebase, you must use two backslashes instead of one.
 
 `like` compares two elements of text and `ilike` does so case-insensitively. A percentage sign means 'match any text'. So for example:
 

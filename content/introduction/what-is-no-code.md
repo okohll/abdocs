@@ -15,6 +15,6 @@ Business teams can build solutions that actually work, that are the right size f
 
 Low code / no code platforms come in many flavours and have been designed to tackle different problems.
 
-agileBase has been specifically designed to build back offices for ambitious businesses. 
+Agilebase has been specifically designed to build back offices for ambitious businesses. 
 
 You can start small with a quick prototype, build this over the years into a full blown [ERP](https://en.wikipedia.org/wiki/Enterprise_resource_planning) system and even use it to act as the hub for all your software via its built in [API Creator]({{<relref "/docs/integrations">}}).

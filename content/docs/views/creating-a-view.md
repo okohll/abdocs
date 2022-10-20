@@ -7,7 +7,7 @@ description: How to create a new view and place it in a navigation structure
 tags:
 - Citizen Developer
 ---
-In agileBase, a view 'belongs to' a [table]({{<relref "/docs/tables">}}). We'll see what that means in more detail below, but for now, just choose a table to show data from to users. In examples on this section of the documentation we'll assume we pick a contacts table.
+In Agilebase, a view 'belongs to' a [table]({{<relref "/docs/tables">}}). We'll see what that means in more detail below, but for now, just choose a table to show data from to users. In examples on this section of the documentation we'll assume we pick a contacts table.
 
 We'll also assume we already have some tables and some [tiles]({{<relref "/docs/tiles">}}).
 

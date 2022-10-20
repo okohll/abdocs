@@ -20,13 +20,13 @@ We need to [create a table]({{<relref "/docs/tables">}}) to store the figures. W
 
 The first field is a link to the organisation we're looking up financial data about.
 
-The second is a text field which stores the date that figures are reported for. The reason that it's a text field is that our service, Endole, uses the format YYYYMM to represent the date, e.g. 202110 for October 2021. agileBase doesn't recognise this date format for incoming data via the API but not to worry, we can save it as text, then create a workflow in agileBase to transform it into an actual date as the data comes in. That's the next field and we'll cover the process below. This being a real example, we get to show this type of thing, which would be left out of a more theoretical case.
+The second is a text field which stores the date that figures are reported for. The reason that it's a text field is that our service, Endole, uses the format YYYYMM to represent the date, e.g. 202110 for October 2021. Agilebase doesn't recognise this date format for incoming data via the API but not to worry, we can save it as text, then create a workflow in Agilebase to transform it into an actual date as the data comes in. That's the next field and we'll cover the process below. This being a real example, we get to show this type of thing, which would be left out of a more theoretical case.
 
 The bulk of the remaining fields are to store the particular figures we're most interested in and wish to receive from Endole.
 
 Once that's there, we can add the financial data [as a tab]({{<relref "/docs/tables/hierarchy-navigation/tabs">}}) under the organisation.
 
-So now we have the data structure fully set up in agileBase, but no figures to see. Let's get on and set up the integration with some API work.
+So now we have the data structure fully set up in Agilebase, but no figures to see. Let's get on and set up the integration with some API work.
 
 This integration will comprise a three step process.
 1. Send the company number for the organisation we're interested in to Endole
@@ -41,7 +41,7 @@ The integration is relatively easy to set up using [Zapier](https://zapier.com).
 
 Each step is created using Zapier's Webhooks integration - this is a flexible, general purpose integration suitable for communicating with many different companies' APIs.
 
-**Step 1** is what Zapier calls a 'catch hook'. It's a single purpose URL they will generate to allow you to push data to them. Once that step is created, we can create a matching workflow view in agileBase which contains the company number we wish to query Endole for. We created a simple view with just one field, the company number. We then turned on a [PUSH API]({{<relref "Setting-up-the-PUSH-API">}}) using the URL Zapier provided. That's as simple as pasting in the URL into the provided space in the agileBase view:
+**Step 1** is what Zapier calls a 'catch hook'. It's a single purpose URL they will generate to allow you to push data to them. Once that step is created, we can create a matching workflow view in Agilebase which contains the company number we wish to query Endole for. We created a simple view with just one field, the company number. We then turned on a [PUSH API]({{<relref "Setting-up-the-PUSH-API">}}) using the URL Zapier provided. That's as simple as pasting in the URL into the provided space in the Agilebase view:
 
 ![Endole Zapier push link](/endole-push-url.png)
 
@@ -49,14 +49,14 @@ Each step is created using Zapier's Webhooks integration - this is a flexible, g
 
 ![Endole Zapier query](/endole-zapier-query.png)
 
-Endole will come back with the figures for that company and in **step 3** we can send them to agileBase as a new 'financial data' record attached to the organisation, using a [POST API]({{<relref "Setting-up-the-POST-API">}})
+Endole will come back with the figures for that company and in **step 3** we can send them to Agilebase as a new 'financial data' record attached to the organisation, using a [POST API]({{<relref "Setting-up-the-POST-API">}})
 
 ![Endole Zapier details](/endole-zapier-details.png)
 
-Note that the value for the Organisation relation field we mentioned in the start is given as an ID. This is the internal ID of the organisation which the company number belongs to. Zapier can find this as agileBase includes it in every push or pull API request as the 'id' parameter, whether we ask for it or not. It can be really useful for linking data in different tables together, as we're doing here.
+Note that the value for the Organisation relation field we mentioned in the start is given as an ID. This is the internal ID of the organisation which the company number belongs to. Zapier can find this as Agilebase includes it in every push or pull API request as the 'id' parameter, whether we ask for it or not. It can be really useful for linking data in different tables together, as we're doing here.
 
 > You may be thinking that this data looks like it represents one year's worth of financial data, but we want a full history covering multiple years. How do we get that?
-> In short, we don't need to worry about it. Endole provides the data to Zapier as an array, one entry for each year. Zapier transparenty handles that, sending one PUSH request to agileBase per entry.
+> In short, we don't need to worry about it. Endole provides the data to Zapier as an array, one entry for each year. Zapier transparenty handles that, sending one PUSH request to Agilebase per entry.
 
 Now we have everything we need regarding the integration! We could set the workflow to run in the background, so whenever a new organisation with a company number is entered into the CRM, the integration goes off and finds the financial data. However, because we have many thousands of organistions in our database, we want to be a bit more judicious about our use. Each API request to Endole costs only a small amount, but costs could add up if we were to automatically run it for every organisation, particularly if we include historical records.
 

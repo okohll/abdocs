@@ -7,7 +7,7 @@ description: Allowing users to export data to spreadsheet
 tags:
 - Architect
 ---
-Exporting to spreadsheet is only one way of getting data out of agileBase, but it is the most commonly used amongst everyday users. For less ad-hoc data transfers, such as integrations with third party systems involving incoming and/or outgoing data, the [API]({{<relref "/docs/integrations">}}) can be used.
+Exporting to spreadsheet is only one way of getting data out of Agilebase, but it is the most commonly used amongst everyday users. For less ad-hoc data transfers, such as integrations with third party systems involving incoming and/or outgoing data, the [API]({{<relref "/docs/integrations">}}) can be used.
 
 ## Allowing exports
 In order for a user to be allowed to export to spreadsheet, a number of critieria have to be matched, to suitably protect your organisation's data.

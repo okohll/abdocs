@@ -43,7 +43,7 @@ For example, imagine a workflow is made up of two chained steps
 
 The workflow view may contain many records which could theoretically have a document generated for them. When the button is pressed to run step 1, it will only run on the single record on screen.
 
-agileBase will then pass the ID of that record through to the next workflow step to act as a filter. i.e. 'send that document to a receipient' will only send the individual document which has just been created.
+Agilebase will then pass the ID of that record through to the next workflow step to act as a filter. i.e. 'send that document to a receipient' will only send the individual document which has just been created.
 
 This mechanism works until any workflow step creates a new record. When that happens, it's unclear whether subsequent steps should run on the original record or the newly created one, so the ID won't be passed through to following steps and you'll have to manage things manually, e.g. using flagging as below.
 

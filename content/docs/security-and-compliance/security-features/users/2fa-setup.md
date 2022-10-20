@@ -34,6 +34,6 @@ If you don’t use a smartphone at work, that’s no problem. You can use an app
 ## When should I set this up?
 Now!
 
-It’s never a bad time to upgrade your data security and privacy protection measures. If you’ve not already set up 2FA, agileBase will prompt you to do so once a week. 
+It’s never a bad time to upgrade your data security and privacy protection measures. If you’ve not already set up 2FA, Agilebase will prompt you to do so once a week. 
 
 However, you can do so at any time: click your user icon at the top right of the screen, select 'edit profile' and tick 'enable two factor authentication'.

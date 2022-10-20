@@ -7,4 +7,4 @@ description: A list of field types, the purposes and options of each
 tags:
 - Architect
 ---
-These pages describe the various types of fields it is possible to have in an agileBase application. It is recommended to begin with the basic field types before moving on to dealing with special field types.
+These pages describe the various types of fields it is possible to have in an Agilebase application. It is recommended to begin with the basic field types before moving on to dealing with special field types.

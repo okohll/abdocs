@@ -8,6 +8,6 @@ tags:
 - System Owner
 - Architect
 ---
-In these pages you can find details of how to set up users, roles, and privileges in agileBase. agileBase has an extensive role-based permissions system that enables fine-grained permissions and roles to be used.
+In these pages you can find details of how to set up users, roles, and privileges in Agilebase. Agilebase has an extensive role-based permissions system that enables fine-grained permissions and roles to be used.
 
 Tables of data can also be marked as containing [commercially sensitive or personal data]({{<relref "/docs/tables/sensitive-data">}}), relevant to GDPR and affecting application behaviour.

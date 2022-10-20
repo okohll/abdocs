@@ -5,7 +5,7 @@ type: docs
 weight: 60
 description: Costing structure
 ---
-A large variety of applications can be built using the agileBase platform. Customers can start small (perhaps in one team or department, or a new startup business) and build apps iteratively to encompass a constantly widening range of business requirements.
+A large variety of applications can be built using the Agilebase platform. Customers can start small (perhaps in one team or department, or a new startup business) and build apps iteratively to encompass a constantly widening range of business requirements.
 
 Our costing structure has been developed to ensure fairness and affordability however far along an organisation is in their growth.
 

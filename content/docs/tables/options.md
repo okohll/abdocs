@@ -62,9 +62,9 @@ Emails are matched by creating a view containing the email addresses of potentia
 
 #### Configuring the email address used
 An email address of the form viewname@accountname.domainname will be set up, e.g. contacts@mycompany.agilebase.co.uk
-* *viewname* determines the view which agileBase queries to find the recipient email address. The comment will be added to the matching record in the view's parent table, or a tab of the table, if [Accept emails from parent table]({{<relref "hierarchy-navigation/tabs#accept-emails-from-parent-table">}}) is enabled in a tab. If multiple tabs have this option enabled, then the tab with a name also matching *viewname* is used
+* *viewname* determines the view which Agilebase queries to find the recipient email address. The comment will be added to the matching record in the view's parent table, or a tab of the table, if [Accept emails from parent table]({{<relref "hierarchy-navigation/tabs#accept-emails-from-parent-table">}}) is enabled in a tab. If multiple tabs have this option enabled, then the tab with a name also matching *viewname* is used
 * *accountname* determines the company account to look in
-* *domainname* is the domain name of the agileBase server
+* *domainname* is the domain name of the Agilebase server
 
 ## Information
 After the options, some structural information is shown, such as which tables depend on this one i.e. have a [relation]({{<relref "/docs/fields/field-types/basic-field-types#relation">}}) to it, how many fields and views per tile there are. See also the [usage dashboard]({{<relref "/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting#the-dashboard">}})

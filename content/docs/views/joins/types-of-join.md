@@ -11,10 +11,10 @@ Here's a Youtube video explaining the concept of joins and running through the v
 
 {{< youtube 9yeOJ0ZMUYw >}}
 
-Just remember, when using third party resources to learn about joins (or other SQL features), you don't need to write the SQL code in agileBase, it's generated for you behind the scenes.
+Just remember, when using third party resources to learn about joins (or other SQL features), you don't need to write the SQL code in Agilebase, it's generated for you behind the scenes.
 
 ## Left outer and inner joins
-The left outer join is the default type used when a join is added to a view in agileBase. It suits most cases, but can be changed after join creation if needed.
+The left outer join is the default type used when a join is added to a view in Agilebase. It suits most cases, but can be changed after join creation if needed.
 
 A left outer join type will ensure that every row from the left source (table or view) is visible in output, whether or not the data links to a row on the right side. Conversely, when an inner join's used, data from the left will be hidden unless it links to data on the right.
 
@@ -43,7 +43,7 @@ Sometimes of course, inner joins are very useful - but it makes sense that there
 ## Right outer and full outer
 You may think, if there's a left outer, is there also a right outer? There is, it means all data from the right side is always visible, whether or not there's a match on the left. So in our contacts/organisations example, all organisations would be visible, whether or not any contacts belonged to them.
 
-Practically, this isn't used much, as a right outer join is just the same as a left outer join started from the other table. There's no difference in the data visible, but using a left outer works better in agileBase because you can be guaranteed that clicking on a row will load a record (with a right outer, if there's no data on the left side, then no record can be loaded when the row's clicked).
+Practically, this isn't used much, as a right outer join is just the same as a left outer join started from the other table. There's no difference in the data visible, but using a left outer works better in Agilebase because you can be guaranteed that clicking on a row will load a record (with a right outer, if there's no data on the left side, then no record can be loaded when the row's clicked).
 
 You may also hear of a full outer join - this again has a very small number of useful cases, but you can [read about them online](https://stackoverflow.com/questions/2094793/when-is-a-good-situation-to-use-a-full-outer-join) if interested.
 
@@ -53,7 +53,7 @@ Joins are often represented visually with Venn diagrams. Here's one, showing tha
 ![Joins Venn diagram](/joins-venn.png)
 
 ## Cross join
-There's one final type to consider that can be used in agileBase. Strictly speaking, it isn't a join at all, but it does bring together data from left and right sides in a particular way, so we'll think of it as a join here and it's treated as such in agileBase.
+There's one final type to consider that can be used in Agilebase. Strictly speaking, it isn't a join at all, but it does bring together data from left and right sides in a particular way, so we'll think of it as a join here and it's treated as such in Agilebase.
 
 If you have a mathematical background, it may help to know that it produces a cartesian product, or cross product, of all rows in the left and right sides.
 

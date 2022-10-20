@@ -9,7 +9,7 @@ tags:
 ---
 Some of these are just useful ideas, some are tips and tricks and some are larger-scale build patterns for more complex tasks commonly undertaken by customers.
 
-These tips will link to various other places in the documentation, but it will still be useful to have some experience of building in agileBase before reading.
+These tips will link to various other places in the documentation, but it will still be useful to have some experience of building in Agilebase before reading.
 
 ## Settings table idea
 To use a single store of a common setting throughout the application. When a setting is changed it will then automatically take effect throught the whole application.
@@ -63,7 +63,7 @@ Use `$view.htmlTableTransverse(“table name”, “view name”)` instead for a
 ## Capturing dates of status changes on lookup list
 Show a date field only when the dropdown reaches the desired status, using [field options]({{<relref "/docs/fields/field-options/common-options#show-if-record-in-view">}}). Use a [referenced data field]({{<relref "/docs/fields/field-options/common-options#set-from-previous-referenced-field">}}) to populate it with the current time.
 
-## Record Builder 
+## Record Builder
 Scenario: A customer tends to order the same products every time. Have an option for the system to auto fill the “standard” order every time an order is placed.
 
 Use the tab option [Populate from template]({{<relref "/docs/tables/hierarchy-navigation/tabs#populate-from-template">}}).

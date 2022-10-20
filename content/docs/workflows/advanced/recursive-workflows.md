@@ -8,7 +8,7 @@ tags:
 - Certified Architect
 ---
 
-Recursion is a rather heavyweight feature of the workflow capabilities of the agileBase platform.
+Recursion is a rather heavyweight feature of the workflow capabilities of the Agilebase platform.
 
 If you’re interested in a bit of maths and want to know what that means, there’s a great [tutorial about the concept at the Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/recursion).
 
@@ -25,7 +25,7 @@ This can (and has) been done with a some linked workflows including a couple of 
 
 Firstly, with for our main recipe (let’s call it Tom Yum Soup), look at all the direct ingredients and make a copy list, we’ll call it the _exploded ingredients_. After this step it will just be exactly the same ingredients as the main list, but later on we’ll recurse and add ingredients of ingredients.
 
-In agileBase parlance, a workflow will copy all the items from an _ingredient lines_ table to an _exploded ingredient lines_ table. Each exploded ingredient line will have
+In Agilebase parlance, a workflow will copy all the items from an _ingredient lines_ table to an _exploded ingredient lines_ table. Each exploded ingredient line will have
 
 * a link to the main recipe, i.e. Tom Yum Soup
 * a link to it’s corresponding ingredient line e.g. 10 grams of chilli paste
@@ -40,7 +40,7 @@ link to parent ingredient line = the line we’re looking at e.g. 10 grams chill
 link to ingredient line = e.g. 7 grams crushed chillies
 Now recurse and do step 2 again, for any of the new exploded ingredient lines that are themselves recipes. Repeat 2 as many times as are necessary until there are no new lines which are recipes. **This is the key step – after this you’ll have a complete list of raw ingredients.**
 
-To make agileBase do that, simply tick the _recursive_ checkbox in the view’s workflow section. It will repeat the step until the view contains no records.
+To make Agilebase do that, simply tick the _recursive_ checkbox in the view’s workflow section. It will repeat the step until the view contains no records.
 
 3) Step 3
 

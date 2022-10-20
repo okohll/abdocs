@@ -9,7 +9,7 @@ tags:
 ---
 
 1) Firstly, set up a view to operate as a standard ‘pull’ API
-2) Enter a URL into the _Push URL (optional)_ area below the other details on that screen. This is the URL that agileBase will POST to when there’s new data.
+2) Enter a URL into the _Push URL (optional)_ area below the other details on that screen. This is the URL that Agilebase will POST to when there’s new data.
 3) In the table that the API view was created from, add a new date/time field, accurate to the second, for the system to record when the API push was last used
 4) Go to the ‘workflow’ section under the view’s ‘manage’ tab.
 for ‘workflow action’, select ‘send data to a third party system using the API’
@@ -43,4 +43,4 @@ Then add a filter on the view ‘needs pushing equals true’.
 For this scenario, simply add a filter to the view ‘last pushed is empty’.
 
 #### Pushing only rows not yet marked as received
-In some cases, you may want to be even more prudent than using the internal timestamp. The third party system could make a separate API call to agileBase for every row that’s received, telling it to update the row with an ID to prove receipt. That’s more API calls of course, but some situations may warrant it.
+In some cases, you may want to be even more prudent than using the internal timestamp. The third party system could make a separate API call to Agilebase for every row that’s received, telling it to update the row with an ID to prove receipt. That’s more API calls of course, but some situations may warrant it.

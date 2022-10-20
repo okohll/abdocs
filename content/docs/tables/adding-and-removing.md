@@ -7,7 +7,7 @@ description: The basics of working with tables
 tags:
 - Architect
 ---
-A table is a store of data of a particular type e.g. a company, contact, product or invoice. Tables are the fundamental building blocks of an agileBase application.
+A table is a store of data of a particular type e.g. a company, contact, product or invoice. Tables are the fundamental building blocks of an Agilebase application.
 
 ## Adding a table
 1. On the homepage, click the 'toggle' button in the top-right of the screen to enable dev mode (if it is not enabled already)

@@ -3,7 +3,7 @@ title: "To grandchild records"
 date: 2020-05-04T16:40:00+01:00
 type: docs
 weight: 70
-description: agileBase automatically exposes three-tier navigation structures
+description: Agilebase automatically exposes three-tier navigation structures
 tags:
 - Architect
 ---
@@ -11,7 +11,7 @@ tags:
 
 Of course, that child record may itself have subsidiary records of its own, e.g. a contact may have a tab for their training records.
 
-When that's the case, agileBase exposes both tiers of data on screen so the user can jump from the top level, in this example the organisation, directly to a contact's training records.
+When that's the case, Agilebase exposes both tiers of data on screen so the user can jump from the top level, in this example the organisation, directly to a contact's training records.
 
 This type of navigation manifests in different ways according to the setup.
 

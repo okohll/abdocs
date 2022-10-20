@@ -13,7 +13,7 @@ It can be important to ensure that certain rules are followed when data is enter
 > 
 > For example, you may like to force users to always provide an email address for contacts but in a small minority of cases, they may not have that available.
 > 
-> agileBase has options for handling soft validation (highlighting errors or notifying someone) as well as the hard validation (disallowing invalid data entry) options discussed here. For example, you could
+> Agilebase has options for handling soft validation (highlighting errors or notifying someone) as well as the hard validation (disallowing invalid data entry) options discussed here. For example, you could
 > * [Create a view]({{<relref "/docs/views">}})to show all records with errors, for later checking
 > * Set up a workflow or chaser to [chase someone]({{<relref "/docs/workflows/send-chaser">}}) when errors are found
 > * Use the [API]({{<relref "/docs/integrations">}}) to send a message to your internal messaging system e.g. Slack

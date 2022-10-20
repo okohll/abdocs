@@ -9,7 +9,7 @@ tags:
 ---
 The primary purpose of a view is to show data to users. To let them see, search and report on it, or find individual records to edit.
 
-However, some fundamental aspects of a view make it a very useful feature that can power many core capabilities of agileBase, such as [chasers]({{<relref "/docs/workflows/send-chaser">}}), [workflows]({{<relref "/docs/workflows">}}) and [APIs]({{<relref "/docs/integrations">}}), as well as being useful to administrators in many more minor ways.
+However, some fundamental aspects of a view make it a very useful feature that can power many core capabilities of Agilebase, such as [chasers]({{<relref "/docs/workflows/send-chaser">}}), [workflows]({{<relref "/docs/workflows">}}) and [APIs]({{<relref "/docs/integrations">}}), as well as being useful to administrators in many more minor ways.
 
 A view being a filtered list of records, it can be used to specify those records to act on, i.e. those representing emails to send, workflow actions or data to send to a third party system with an API.
 

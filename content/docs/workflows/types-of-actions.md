@@ -12,7 +12,7 @@ tags:
 
 Actions fall in to two types:
 
-* Those that effect data held within agileBase tables 
+* Those that effect data held within Agilebase tables 
 * Those that send data to another system. 
 
 ### Alter Data

@@ -7,7 +7,7 @@ description: How to toggle between development and standard user modes
 tags:
 - Developer
 ---
-As a no-code platform, agileBase allows you to easily construct (and later de-construct or 'refactor') and change your software.
+As a no-code platform, Agilebase allows you to easily construct (and later de-construct or 'refactor') and change your software.
 
 ## Toggling development mode on and off
 ![Toggle development mode](/toggle-build-mode.png)

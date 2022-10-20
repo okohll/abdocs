@@ -3,7 +3,7 @@ title: "Company Settings"
 date: 2020-04-24T16:40:00+01:00
 type: docs
 weight: 120
-description: These settings apply to the whole agileBase account
+description: These settings apply to the whole Agilebase account
 tags:
 - Principal Architect
 ---
@@ -20,13 +20,13 @@ We recommend that all administrators enable this if possible. Even when 2FA is m
 When this is off, users will still be prompted to set up 2FA, it just won't be mandatory.
 
 ### SMTP server
-agileBase [workflows]({{<relref "/docs/workflows/send-email">}}) and [chasers]({{<relref "/docs/workflows/send-chaser">}}) that send emails use an @notifications.agilebase.co.uk email address by default.
+Agilebase [workflows]({{<relref "/docs/workflows/send-email">}}) and [chasers]({{<relref "/docs/workflows/send-chaser">}}) that send emails use an @notifications.agilebase.co.uk email address by default.
 
 You may wish to instead use email addresses from your own domain name, especially if the system sends emails to people outside your organisation, like customers or suppliers.
 
 To allow this, you will need to use your own SMTP server, or a third party trusted system authenticated against your domain name. Using a service like [AuthSmtp](http://www.authsmtp.com/), [SendGrid](http://www.sendgrid.com/) or [Amazon Simple Email Service](https://aws.amazon.com/ses/) is probably the most straightforward way of setting this up - their instructions will tell you how to set up facilities such as Sender Policy Framework and DomainKeys in order to increase email deliverability.
 
-Once you have the SMTP server address, username and password from your service, enter them into the details in this section in agileBase.
+Once you have the SMTP server address, username and password from your service, enter them into the details in this section in Agilebase.
 
 ### Slack Webhook URL
 See [Integrations - Slack]({{<relref "/docs/integrations/slack-integration">}})

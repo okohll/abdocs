@@ -9,7 +9,7 @@ tags:
 ---
 Normally, a user account can only be created by a system administrator - see [adding a user]({{<relref "/docs/security-and-compliance/security-features/users#adding-a-user">}}).
 
-However there's one special case in which the organisation runs a [multi-tenanted]({{<relref "/docs/security-and-compliance/security-features/roles#multi-tenanting">}}) agileBase account. In that case, you can use an API call to create a new tenant in the account and new user(s) for that tenant.
+However there's one special case in which the organisation runs a [multi-tenanted]({{<relref "/docs/security-and-compliance/security-features/roles#multi-tenanting">}}) Agilebase account. In that case, you can use an API call to create a new tenant in the account and new user(s) for that tenant.
 
 For example, imagine your organisation is a body for football clubs around the country, where each club was a tenant, i.e. each club had users who could log in, but only see data from their own club. In that case, the user creation API could be called to 
 1) create a new club
@@ -28,7 +28,7 @@ Refresh the page and an API key will appear. We will need this to call the API a
 
 ## Calling the API
 
-Use URL https://ab.agilechilli.com/agileBase/Public.ab. You should make a [POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) request with encoding `application/x-www-form-urlencoded`.
+Use URL https://ab.agilechilli.com/Agilebase/Public.ab. You should make a [POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) request with encoding `application/x-www-form-urlencoded`.
 
 The `Authorization` header needs to be set to the API key as above.
 

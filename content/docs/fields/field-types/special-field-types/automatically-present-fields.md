@@ -12,7 +12,7 @@ When every [table]({{<relref "/docs/tables">}}) is created, a series of fields a
 ## ID field
 In database parlance, the table's [primary key](https://en.wikipedia.org/wiki/Primary_key) - providing a unique ID to identify each record. Values are generated in sequence.
 
-agileBase creates and manages primary keys, using them to link related tables together automatically, however it's useful for administrators to understand the concept and implementation. Many platform features depending on including the ID field for a particular table in a view, such as [referenced fields]({{<relref "referenced-data">}}).
+Agilebase creates and manages primary keys, using them to link related tables together automatically, however it's useful for administrators to understand the concept and implementation. Many platform features depending on including the ID field for a particular table in a view, such as [referenced fields]({{<relref "referenced-data">}}).
 
 ## Creation Time [Auto]
 The record's creation time, accurate to the ms and displayed to the second by default.
@@ -20,7 +20,7 @@ The record's creation time, accurate to the ms and displayed to the second by de
 ## Created By [Auto]
 The user ID of the person who created the record, in the form `Forename Surname (username)`. 
 
-> This format is used to identify a user everywhere in agileBase, for example when assigning a record to a user. When a user ID identifies a person in a [chaser]({{<relref "/docs/workflows/send-chaser">}}) or [email workflow]({{<relref "/docs/workflows/send-email">}}), agileBase will look up and use their email address, from their account details.
+> This format is used to identify a user everywhere in Agilebase, for example when assigning a record to a user. When a user ID identifies a person in a [chaser]({{<relref "/docs/workflows/send-chaser">}}) or [email workflow]({{<relref "/docs/workflows/send-email">}}), Agilebase will look up and use their email address, from their account details.
 
 When a record is created by a workflow, the Created By will be `System User (system)`.
 

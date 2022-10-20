@@ -59,13 +59,13 @@ For example, setting the list of options to
 will mean that anyone will be able to set the field to `1) not billed` or `2) awaiting payment` but only members of the finance role will be able to see and set the `3) paid` option (once it has been set, it will be visible to everyone).
 
 #### Lists of users
-Also for dropdown lists and tags fields, agileBase can generate dropdown contents based on a list of users and/or roles in the system. To do that, select `users` or `users and roles` from the 'fill with' selector just below the value(s) input. The standard user ID format throughout the system is used, 'Forename Surname (username)'.
+Also for dropdown lists and tags fields, Agilebase can generate dropdown contents based on a list of users and/or roles in the system. To do that, select `users` or `users and roles` from the 'fill with' selector just below the value(s) input. The standard user ID format throughout the system is used, 'Forename Surname (username)'.
 
 Only users/roles which have privileges to view the data in this particular table will be shown in the list. That can keep things manageable if a system has hundreds or more users.
 
 > An example use would be assigning an account manager to a customer, selecting from a list of staff members (who are users).
 
-When a user is selected in this way, more options for use are opened up, such as automatically emailing the selected person when there's a status change or something is overdue for example. agileBase can look up the user's email address to accomplish this, See [email workflows]({{<relref "/docs/workflows/send-email">}}) for details.
+When a user is selected in this way, more options for use are opened up, such as automatically emailing the selected person when there's a status change or something is overdue for example. Agilebase can look up the user's email address to accomplish this, See [email workflows]({{<relref "/docs/workflows/send-email">}}) for details.
 
 When using 'fill with users', the list of users to appear in the dropdown can further be narrowed down by role if required. To do that, enter the text
 
@@ -94,6 +94,6 @@ This option can be selected for multiple fields in a table. In that case, the fi
 ### Preventing duplicates
 Enabling the 'use as record title' option also has the effect of enabling duplicate detection. The system will detect when a value is entered that is close to an existing value in the system. Any 'close' values that are found are displayed as links to the relevant records. 
 
-This can be useful when e.g. entering company names. Although a field can be marked [unique]({{<relref "common-options#unique">}}) to prevent exact duplicates, that won't pick up near matches, which this duplicate detection will. For example, 'The Universoty Of Bristol' and 'University Of Bristol (UOB)' will be detected as close matches, or 'agileBase' and 'agileBase Ltd'.
+This can be useful when e.g. entering company names. Although a field can be marked [unique]({{<relref "common-options#unique">}}) to prevent exact duplicates, that won't pick up near matches, which this duplicate detection will. For example, 'The Universoty Of Bristol' and 'University Of Bristol (UOB)' will be detected as close matches, or 'Agilebase' and 'Agilebase Ltd'.
 
 The system uses [trigram matching](https://www.postgresql.org/docs/current/pgtrgm.html) to detect similar values.

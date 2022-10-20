@@ -20,9 +20,9 @@ Agilebase will help you every step of the way. And you can stop at the level tha
 Agilebase enables citizen developers to pass through five stages on their way to becoming software architects:
 
 ## Citizen Developer Level 1
-This is the start of the agileBase journey. At this level you can create your own applications, using no coding. 
+This is the start of the Agilebase journey. At this level you can create your own applications, using no coding. 
  
-An agileBase citizen developer can create 'personal copies' of any [view]({{<relref "/docs/views">}}) and edit those copies
+An Agilebase citizen developer can create 'personal copies' of any [view]({{<relref "/docs/views">}}) and edit those copies
 * remove or add fields, excepting any that are marked 'confidential' (only higher level developers can access those fields)
 * rearrange fields
 * change field sorting
@@ -63,7 +63,7 @@ Additionally, actions not related to having manage privileges on a particular ta
 * edit the basic properties of any regular view. However, workflow, API and some other types of system view will be read-only
 
 ## Junior Software Architect
-A junior software architect can use practically all of the application building functionality of agileBase. For example
+A junior software architect can use practically all of the application building functionality of Agilebase. For example
 * Create [workflows]({{<relref "/docs/workflows">}}) (including chasers, document generation)
 * Set up [APIs]({{<relref "/docs/integrations">}})
 * Add complex [joins]({{<relref "/docs/views/joins">}}) to views

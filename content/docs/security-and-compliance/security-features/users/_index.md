@@ -54,7 +54,7 @@ If a user encounters any problems with 2FA, e.g. they lose the device for genera
 This can be done in the [company settings]({{<relref "/docs/advanced-usage/company-settings#mandate-2fa" >}})
 
 ### Other options
-#### Use the custom AgileChilli UI rather than agileBase's
+#### Use the custom AgileChilli UI rather than Agilebase's
 It's possible for companies to apply their logo and custom login screen to the system. Please contact us if you'd like to set this up.
 
 #### Logout after

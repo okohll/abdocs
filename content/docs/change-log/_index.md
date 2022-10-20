@@ -5,6 +5,6 @@ type: docs
 weight: 120
 description: Changes per release
 ---
-Posts about each new agileBase release can be seen here:
+Posts about each new Agilebase release can be seen here:
 
 https://blog.agilebase.co.uk

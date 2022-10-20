@@ -8,7 +8,7 @@ tags:
 - System Owner
 - Architect
 ---
-In agileBase, there are three privilege levels, as well as a special ‘administrator’ privilege.
+In Agilebase, there are three privilege levels, as well as a special ‘administrator’ privilege.
 
 The three privileges take effect per table, i.e. a user/role can have certain privileges on one table and different ones on another.
 
@@ -18,7 +18,7 @@ Privileges are additive - if a user is a member of multiple roles, they gain all
 
 * **View**: ability to see data in a table
 * **Edit**: ability to create, edit and delete data in a table (create and delete subject to various table options)
-* **Manage**: the privilege that allows you to use the 'application building' features of agileBase, relating to a table. Namely the ability to
+* **Manage**: the privilege that allows you to use the 'application building' features of Agilebase, relating to a table. Namely the ability to
     * modify the structure, i.e. create/delete fields, tabs, change options etc.
     * create, edit and delete views from the table, including creating charts, maps and word clouds.
     * upload or create printout templates for views
@@ -67,6 +67,6 @@ To assign one or more table privileges to a particular role or user:
 
 ## Related to privileges
 
-Database systems often have the concept of row level privileges. The equivalent in agileBase is the [multi-tenanting]({{<relref "roles#multi-tenanting">}}) system.
+Database systems often have the concept of row level privileges. The equivalent in Agilebase is the [multi-tenanting]({{<relref "roles#multi-tenanting">}}) system.
 
 Individual fields in a table can be locked or hidden, see the [field options]({{<relref "/docs/fields/field-options/common-options#show-if-record-in-view">}})

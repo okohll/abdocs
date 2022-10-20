@@ -8,7 +8,7 @@ tags:
 - Architect
 ---
 ## Capitalise field name
-By default agileBase displays field names in Title Case. Un-ticking this option disables that, which can be useful for special cases like e.g. 'pH' or 'Length (m)', which would otherwise show as 'PH' and 'Length (M)'.
+By default Agilebase displays field names in Title Case. Un-ticking this option disables that, which can be useful for special cases like e.g. 'pH' or 'Length (m)', which would otherwise show as 'PH' and 'Length (M)'.
 
 ## Icon
 Rather than displaying a field name, show an icon, chosen from https://fontawesome.com/icons. For example, to show a phone icon for a phone number field, you could enter `phone`, for an email field `envelope` or a twitter handle `twitter`.

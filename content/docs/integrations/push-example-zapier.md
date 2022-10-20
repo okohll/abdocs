@@ -3,22 +3,22 @@ title: "PUSH API worked example - Zapier"
 date: 2020-06-02T16:40:00+01:00
 type: docs
 weight: 150
-description: A worked example to send agileBase data to a third party text messaging service using Zapier
+description: A worked example to send Agilebase data to a third party text messaging service using Zapier
 tags:
 - Architect
 ---
-One of the most common methods of pushing data into other systems is to use [Zapier](https://zapier.com), which is a ‘drag and drop’ integration tool that requires no programming (just like agileBase itself).
+One of the most common methods of pushing data into other systems is to use [Zapier](https://zapier.com), which is a ‘drag and drop’ integration tool that requires no programming (just like Agilebase itself).
 
 We will use a worked example: building a system to send a ‘hello’ SMS message whenever a new contact is added to our database. In real life, you may send appointment reminders or other notifications by text. Of course Zapier integrations aren't limited to sending text messages, there are tons of third party systems you can use, under many different categories, but text messages are a nice simple example to work through.
 
 For this example we’ll use
 
-* [agileBase](https://agilebase.co.uk) as a source of data
+* [Agilebase](https://agilebase.co.uk) as a source of data
 * [Zapier](https://zapier.com) to collect the data and send it to…
 * [Twilio](https://twilio.com) to send the text messages
 
-## agileBase setup
-First, some preparatory work in agileBase. Assuming we already have a contacts database, each person with a name and mobile phone number, there’s just one extra thing we need to do.
+## Agilebase setup
+First, some preparatory work in Agilebase. Assuming we already have a contacts database, each person with a name and mobile phone number, there’s just one extra thing we need to do.
 
 The system will need to know when a contact has been sent a text, so it can filter them out and prevent them being repeatedly texted. To allow this, we need to add a field, call it `intro text sent`. Make it a date and time field, accurate to the second.
 
@@ -36,20 +36,20 @@ We’ve added a couple of [filters](({{<relref "/docs/views/filters">}}), firstl
 
 > One small note to do with this specific example only – Twilio likes to receive phone numbers in international format but without the leading +, i.e. rather than “07891 123456”, use “447891123456”. In real life we’d probably create a calculation field to format them this way, for now we’ll just make sure to enter test numbers like that.
 
-## Zapier Setup - receiving data from agileBase
-That’s the agileBase side of things prepared, now to Zapier.
+## Zapier Setup - receiving data from Agilebase
+That’s the Agilebase side of things prepared, now to Zapier.
 
 Log into your Zapier account and press the _Make a Zap!_ button.
 
-Under _choose app_, select _Webhooks by Zapier_. Webhooks are the way to communicate with agileBase. At the time of writing you’ll need a paid Zapier account to use them.
+Under _choose app_, select _Webhooks by Zapier_. Webhooks are the way to communicate with Agilebase. At the time of writing you’ll need a paid Zapier account to use them.
 
-Under _choose trigger event_ two options will be shown - _Retrieve Poll_ and _Catch Hook_. In brief, if you select _Retrieve Poll_, Zapier will regularly poll agileBase (say every 5 minutes) to check if there’s any new data to retrieve. If you select _Catch Hook_, communication will instead be started by agileBase, which will ‘push’ data to Zapier only when there is something new to send.
+Under _choose trigger event_ two options will be shown - _Retrieve Poll_ and _Catch Hook_. In brief, if you select _Retrieve Poll_, Zapier will regularly poll Agilebase (say every 5 minutes) to check if there’s any new data to retrieve. If you select _Catch Hook_, communication will instead be started by Agilebase, which will ‘push’ data to Zapier only when there is something new to send.
 
-Here, we’ll use Catch Hook, which is generally recommended. It’s more efficient and a bit easier to set up, as agileBase will automatically record the time each record is sent to Zapier. Otherwise, you’ll have to set up additional steps in Zapier to send this information back.
+Here, we’ll use Catch Hook, which is generally recommended. It’s more efficient and a bit easier to set up, as Agilebase will automatically record the time each record is sent to Zapier. Otherwise, you’ll have to set up additional steps in Zapier to send this information back.
 
 ![Zapier catch hook](/zapier-catch-hook.png)
 
-When you press Continue, Zapier will provide you with a custom URL and some additional options which can be left unchanged. Copy this URL and record it in agileBase: go to the view’s _manage_ tab, show the _Send_ panel and select _send data to a third party system using the API_. Paste the Zapier URL into the space provided:
+When you press Continue, Zapier will provide you with a custom URL and some additional options which can be left unchanged. Copy this URL and record it in Agilebase: go to the view’s _manage_ tab, show the _Send_ panel and select _send data to a third party system using the API_. Paste the Zapier URL into the space provided:
 
 ![Zapier aB push](/zapier-ab-push.png)
 
@@ -69,8 +69,8 @@ There are dozens of Zapier-compatible services that can send text messages. We u
 When you press Continue, you’ll be asked to sign into Twilio (in this example). Do that as prompted, then you’ll be able to set the options below. The important ones are
 
 * **From Number**: just select, this will automatically show any phone numbers you’ve set up in Twilio
-* **To Number**: here, click the selector on the right and select the phone number field from agileBase. By this stage, Zapier, knows which fields are in agileBase
-* **Message**: similarly, click the selctor and choose the message field from agileBase
+* **To Number**: here, click the selector on the right and select the phone number field from Agilebase. By this stage, Zapier, knows which fields are in Agilebase
+* **Message**: similarly, click the selctor and choose the message field from Agilebase
 
 ![Zapier send SMS](/zapier-send-sms.png)
 
@@ -78,7 +78,7 @@ Press _Test and Continue_. If all goes well, a text message will be sent and you
 
 ![Zapier success](/zapier-success.png)
 
-Then, you can remove the test filters from the view in agileBase and everything will be live.
+Then, you can remove the test filters from the view in Agilebase and everything will be live.
 
 Although today we used the example of sending a text message, the process is very similar whichever service you decide to connect to with Zapier - you should be able to follow along the example replacing the SMS-specific steps with your own.
 

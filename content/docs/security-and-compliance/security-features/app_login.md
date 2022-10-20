@@ -7,22 +7,22 @@ description: Validating logins from a third party app
 tags:
 - Principal Architect
 ---
-It's possible for a developer to create a third party application, for example a phone or tablet app, that communicates with agileBase via the [API](/docs/integrations).
+It's possible for a developer to create a third party application, for example a phone or tablet app, that communicates with Agilebase via the [API](/docs/integrations).
 
-Now to use the API, you don't need to authenticate as a user, as long as the app has the correct Authorization key(s), it can read and write data to agileBase.
+Now to use the API, you don't need to authenticate as a user, as long as the app has the correct Authorization key(s), it can read and write data to Agilebase.
 
-However, in some cases the app may need to confirm that someone has a valid agileBase account before allowing them to use the app. This may or may not be necessary depending on the use case, for example depending on whether the app is free to use for anyone, or must be limited to paying customers.
+However, in some cases the app may need to confirm that someone has a valid Agilebase account before allowing them to use the app. This may or may not be necessary depending on the use case, for example depending on whether the app is free to use for anyone, or must be limited to paying customers.
 
-To validate a user, the app must redirect them to the agileBase login page, let them log in and confirm that was successful. Therefore, a HTTP client is necessary - this can be a 'web view component' or a programmatic client such as the [Apache HTTP Client](https://hc.apache.org/) for [Java](https://en.wikipedia.org/wiki/Java_%28programming_language%29).
+To validate a user, the app must redirect them to the Agilebase login page, let them log in and confirm that was successful. Therefore, a HTTP client is necessary - this can be a 'web view component' or a programmatic client such as the [Apache HTTP Client](https://hc.apache.org/) for [Java](https://en.wikipedia.org/wiki/Java_%28programming_language%29).
 
 In this example, we'll use the [React](https://reactjs.org/) [Native Web View](https://www.npmjs.com/package/react-native-webview) but the principle is the same for any programming language or library.
 
 ## General Principle
 The application must reproduce the same login process as a human would, using a HTTP client. Importantly, the HTTP client must support cookies, as the login process depends on them, in particular setting a `JSESSIONID` cookie.
 
-1. Make a request to load the page https://appserver.gtportalbase.com/agileBase/AppController.servlet?return=user_details. This will return the login page and set the cookie value.
-2. Submit the login form using the user's username and password. If using a programattic process i.e. making the calls from code rather than using a web view, this means making a form POST to `/agileBase/j_security_check` with the parameters `j_username` and `j_password`
-3. Detect whether the login's successful. If not, the standard agileBase login failure page will be returned
+1. Make a request to load the page https://appserver.gtportalbase.com/Agilebase/AppController.servlet?return=user_details. This will return the login page and set the cookie value.
+2. Submit the login form using the user's username and password. If using a programattic process i.e. making the calls from code rather than using a web view, this means making a form POST to `/Agilebase/j_security_check` with the parameters `j_username` and `j_password`
+3. Detect whether the login's successful. If not, the standard Agilebase login failure page will be returned
 4. If successful, a HTML page will be returned containing three hidden input fields, `username`, `forename`, `surname` containing relevant details for the logged in user. If being called from a React Native Web View, the page will also post back messages to React using this JavaScript:
 ```
 if (window.ReactNativeWebView) {
@@ -100,7 +100,7 @@ const LoginScreen = (props) => {
             <StatusBar backgroundColor={Colors.black} barStyle={'dark-content'}/>
             {(netInfo?.isInternetReachable && !user_data?.surname) ?
                 <WebView
-                    source={{uri: 'https://appserver.gtportalbase.com/agileBase/AppController.servlet?return=user_details'}}
+                    source={{uri: 'https://appserver.gtportalbase.com/Agilebase/AppController.servlet?return=user_details'}}
                     onMessage={onResponseFromWebView}
                     textZoom={100}
                     sharedCookiesEnabled={true}

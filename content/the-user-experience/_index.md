@@ -11,17 +11,17 @@ These days, the majority of many people's time at work consists of interacting w
 
 Our team has used their expertise and research to develop interfaces that are not only effective and efficient but a joy to use.
 
-This documentation site is about use agileBase to build software as opposed to use it, but to give a flavour of how user interfaces feel to users, here are a couple of examples of built applications.
+This documentation site is about use Agilebase to build software as opposed to use it, but to give a flavour of how user interfaces feel to users, here are a couple of examples of built applications.
 
 ## Video
 
-agile:NPDtech is a software application for food manufacturers built using the agileBase platform. Here's a quick video of some of the user interface.
+agile:NPDtech is a software application for food manufacturers built using the Agilebase platform. Here's a quick video of some of the user interface.
 
 {{< youtube e5yAWgTTInM >}}
 
 ## Screenshots
 
-Here are some example screenshots from a CRM system built with agileBase
+Here are some example screenshots from a CRM system built with Agilebase
 
 ### Management reporting
 

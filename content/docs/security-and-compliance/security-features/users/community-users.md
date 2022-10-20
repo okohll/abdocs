@@ -7,11 +7,11 @@ description: Allowing access to people outside the organisation
 tags:
 - System Owner
 ---
-agileBase is primarily a platform for building back office systems for employees (or members of the organisation) to use.
+Agilebase is primarily a platform for building back office systems for employees (or members of the organisation) to use.
 
 However, it's common to allow access to people outside the organisation to perform limited data entry tasks. For example, you may wish your suppliers to be able to upload certificates of conformances to items they sell you, or you may have a large workforce of contractors who you require to fill in timesheets.
 
-It may be that you don't wish to supply each person a full agileBase license because
+It may be that you don't wish to supply each person a full Agilebase license because
 * there will be a large number of them, so there'll be management and cost issues
 * you wish to restrict what they can do in the system further than can be accomplished with roles and privileges
 

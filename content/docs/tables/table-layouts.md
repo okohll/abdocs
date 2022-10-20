@@ -7,7 +7,7 @@ description: Customise a table's form on-screen
 tags:
 - Architect
 ---
-For each table, agileBase will automatically build a data entry form for users to view, add and edit records with.
+For each table, Agilebase will automatically build a data entry form for users to view, add and edit records with.
 
 The layout of this form can be controlled by selecting a layout option and adding separators to create blocks i.e. groups of fields which go together. This will create a more pleasant and usable system.
 
