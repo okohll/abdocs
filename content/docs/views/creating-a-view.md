@@ -5,7 +5,8 @@ type: docs
 weight: 60
 description: How to create a new view and place it in a navigation structure
 tags:
-- Citizen Developer
+- Citizen Developer level 2
+- v6
 ---
 In Agilebase, a view 'belongs to' a [table]({{<relref "/docs/tables">}}). We'll see what that means in more detail below, but for now, just choose a table to show data from to users. In examples on this section of the documentation we'll assume we pick a contacts table.
 
@@ -15,10 +16,10 @@ We'll also assume we already have some tables and some [tiles]({{<relref "/docs/
 1. Select (or [create]({{<relref "/docs/tables">}}) a new) table.
 2. Click the table you want to create a view from
 3. Once the table has been selected, click _name and views_ on the floating sidebar
-4. Click _Add View..._
+4. Click _Add View_
 5. You should now see your freshly created view
 
-> There is an option **Populate the view with fields from this table** next to the _Create new view_ button. This is a convenience feature, which is ticked by default. When it's ticked, the view created will contain all fields from the table - you can then remove any you don't need. When un-ticked, the view will start with no fields so you can add just those you wish.
+> There is an option **Populate the view with fields from this table** next to the _Add View_ button. This is a convenience feature, which is ticked by default. When it's ticked, the view created will contain the first 10 fields from the table - you can then remove any you don't need or add more. When un-ticked, the view will start with no fields so you can add just those you wish.
 
 ## Organising into a navigation structure
 On creating a view, its manage tab will appear. One of the first things it's useful to do is put the field in a tile - use the _Tile_ dropdown option to do so.

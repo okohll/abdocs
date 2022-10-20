@@ -5,14 +5,15 @@ type: docs
 weight: 140
 description: Control how third party systems read data from Agilebase
 tags:
-- Architect
+- Junior Software Architect
+- v6
 ---
 
 Connections to Agilebase are made using standard HTTP calls. This makes it easy for developers in any language, so PHP, Java, even JavaScript in a browser can be used.
 
 1) The first step is to create a view in Agilebase that contains the data you want to make available to other apps. You can use the standard view creation features of the administrator interface, including adding fields and calculations, sorts and filters.
 
-2) Secondly, turn on the ability for the view to be accessed via a PULL API by going to the _manage_ tab,and within the _send_ section choosing _Send data to a third party system using the API_.
+2) Secondly, turn on the ability for the view to be accessed via a PULL API by going to the _use API_ panel, and ticking _Send data to a third party system using the API_.
 
 3) Finally Tick the _Allow access from third party software using an API key_. 
 

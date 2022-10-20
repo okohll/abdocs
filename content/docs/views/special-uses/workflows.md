@@ -5,7 +5,8 @@ type: docs
 weight: 110
 description: Using a view to create a workflow
 tags:
-- Certified Architect
+- Junior Software Architect
+- v6
 ---
 A workflow can be used to edit data in the system automatically.
 

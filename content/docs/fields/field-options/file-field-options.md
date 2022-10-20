@@ -5,7 +5,7 @@ type: docs
 weight: 130
 description: Options specific to file fields, including for generating documents
 tags:
-- Architect
+- Junior Software Architect
 ---
 ## Type
 The type of document typically stored by this field. Can be

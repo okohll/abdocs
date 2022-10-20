@@ -5,7 +5,7 @@ type: docs
 weight: 70
 description: Using joins to merge data from multiple sources into one view
 tags:
-- Architect
+- Citizen Developer level 2
 ---
 Without any joins, you can only add [fields]({{<relref "/docs/fields">}}), [filters]({{<relref "/docs/views/filters">}}) and [calculations]({{<relref "/docs/views/calculations">}}) (display data in other words), from a view's parent table - the one it was created from. When joins are added to other tables or views, you can also bring in data from any table or view joined to.
 
@@ -21,7 +21,8 @@ Agilebase will automatically pick out the common tables you may wish to join to,
 To add a join
 1) Load the view you wish to add a join to and enable development mode
 2) Click the big pencil icon at the top left of the screen to bring up the 'Edit view' panel
-3) A list of joins you can add will appear, each representing a link to a table with related data in it. Select one and the join will add
+3) Click 'joins'
+4) A list of joins you can add will appear, each representing a link to a table with related data in it. Select one and the join will add
 
 ## The anatomy of a join
 The added join will appear graphically above the _Add Join_ button. The lefthand 'blob' or part represents the table being joined from, on the right is the one joined to. In the middle is a selector for the [join type]({{<relref "types-of-join">}}), which we will come to.
@@ -62,9 +63,7 @@ Joins to views aren't automatically suggested, but you can still add them.
 > Say you calculate various nutritional values of a recipe, such as the energy, salt and fats contents. You may wish to display that information in a few views for different people to query, as well as include them in product specification documents (which can be generated from a [workflow view]({{<relref "/docs/workflows">}})) and perhaps product labels as well, using a view to send data to third party labelling equipment using an [API]({{<relref "/docs/integrations">}}).
 
 To add a join to a view:
-1) In the tiles interface, load the view you wish to edit (add a join to)
-2) Click your user profile icon at the top right and select _admin - edit view_
-3) Under _Joins_, click the _Add Join_ button
+1) Edit the view and open the _Joins_ panel as above
 4) Under _Advanced Add Join_, select the left source and field, the right source and field, then press _Add_
 
 The last step is the only one different to the normal join addition process, and the one that needs a little explanation

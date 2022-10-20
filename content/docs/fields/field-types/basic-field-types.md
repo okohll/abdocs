@@ -5,7 +5,8 @@ type: docs
 weight: 60
 description: Text, number, date/time, auto-generated number sequence and checkbox fields
 tags:
-- Architect
+- Citizen Developer level 2
+- v6
 ---
 These are the core types of fields by which data can be entered by users (or other sources such as the API or a workflow).
 

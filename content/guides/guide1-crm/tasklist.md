@@ -5,7 +5,8 @@ type: docs
 weight: 20
 description: "Demonstrates the basic processes of building a simple application, a good starting point"
 tags:
-- System Builder
+- Citizen Developer level 2
+- v6
 ---
 **Learning Aim:** Create a Table and associated Views to use it!
 

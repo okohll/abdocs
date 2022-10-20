@@ -5,7 +5,8 @@ type: docs
 weight: 150
 description: A worked example to send Agilebase data to a third party text messaging service using Zapier
 tags:
-- Architect
+- Software Architect
+- v6
 ---
 One of the most common methods of pushing data into other systems is to use [Zapier](https://zapier.com), which is a ‘drag and drop’ integration tool that requires no programming (just like Agilebase itself).
 

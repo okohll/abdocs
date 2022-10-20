@@ -5,7 +5,8 @@ type: docs
 weight: 50
 description: Customise a table's form on-screen
 tags:
-- Architect
+- Citizen Developer level 2
+- v6
 ---
 For each table, Agilebase will automatically build a data entry form for users to view, add and edit records with.
 

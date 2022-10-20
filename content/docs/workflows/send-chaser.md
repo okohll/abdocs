@@ -5,7 +5,7 @@ type: docs
 weight: 140
 description: Chasers are dedicated functionality that use email to ask third parties for relevant information
 tags:
-- Certified Architect
+- Junior Software Architect
 ---
 
 The Chaser email facility is often used to remind people to send information. This facility is a dedicated tool, optimised to this purpose.

@@ -5,7 +5,8 @@ type: docs
 weight: 90
 description: Some examples of useful calculations for each type of field (text, number etc.)
 tags:
-- Architect
+- Software Architect
+- v6
 ---
 The database which underpins Agilebase is [PostgreSQL](https://www.postgresql.org) - 'The World's Most Advanced Open Source Relational Database'.
 

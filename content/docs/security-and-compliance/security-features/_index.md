@@ -5,8 +5,8 @@ type: docs
 weight: 1
 description: Setting up users, roles, privileges and related considerations
 tags:
-- System Owner
-- Architect
+- Software Architect
+- v6
 ---
 In these pages you can find details of how to set up users, roles, and privileges in Agilebase. Agilebase has an extensive role-based permissions system that enables fine-grained permissions and roles to be used.
 

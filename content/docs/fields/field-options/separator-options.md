@@ -5,7 +5,8 @@ type: docs
 weight: 110
 description: Options specific to separators, which form groups of fields into blocks
 tags:
-- Architect
+- Citizen Developer level 2
+- v6
 ---
 A [field separator]({{<relref "/docs/fields/field-types/special-field-types/separators">}}) creates a block of fields, starting with the separator and ending at the next one (or the last field in the table).
 

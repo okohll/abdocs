@@ -5,7 +5,8 @@ type: docs
 weight: 80
 description: Separators are used to group fields into blocks
 tags:
-- Architect
+- Citizen Developer level 2
+- v6
 ---
 A separator field doesn't actually store any data, but is used as a marker of the start of a block of fields. Create a separator  and move it to just before the field which should be the first in a block.
 

@@ -5,7 +5,8 @@ type: docs
 weight: 100
 description: Using the API and other data IO options to extract data from Agilebase and/or connect with third party systems
 tags:
-- Certified Architect
+- Junior Software Architect
+- v6
 ---
 
 There are a number of ways to extract data from Agilebase, whether manually for an individual's use or programatically for integration with other systems. 
@@ -27,7 +28,7 @@ Third parties can access data via an API, either:
 There is also dedicated facility for integrating data with a Calendar
 * Calendar Integration
 
-Finally, data can be sent to third party reporting tools like Power BI or Apache Superset, Excel or anything which can use [ODBC](https://en.wikipedia.org/wiki/Open_Database_Connectivity)
+Finally, data can be sent to third party reporting tools like Power BI, Tableau, Excel or anything which can use [ODBC](https://en.wikipedia.org/wiki/Open_Database_Connectivity)
 * [External reporting (read-only access to data)]({{<relref "/docs/charting/business-intelligence">}})
 
 ## Incoming Data

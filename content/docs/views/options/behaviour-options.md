@@ -5,7 +5,8 @@ type: docs
 weight: 114
 description: These options affect the behaviour of a view
 tags:
-- Architect
+- Citizen Developer level 3
+- v6
 ---
 ## Group by all non-aggregate fields
 Affects how some calculation aggregates worked - documented in [calculations -> aggregates of child rows]({{<relref "/docs/views/calculations/examples#aggregates-of-child-rows">}})

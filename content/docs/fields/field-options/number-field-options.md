@@ -5,7 +5,8 @@ type: docs
 weight: 100
 description: Options specific to numeric fields
 tags:
-- Architect
+- Citizen Developer level 2
+- v6
 ---
 ## Colour outliers
 Automatically highlight 'unusual' values of this field in views. This can help pick out values which are notable in some way, for example if a number has been entered without a decimal point by mistake (1253 instead of 12.53) or is a statistical outlier.

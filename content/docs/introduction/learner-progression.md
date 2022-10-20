@@ -5,10 +5,9 @@ type: docs
 weight: 6
 description: The journey from citizen developer to software architect
 tags:
-- Developer
+- Citizen Developer level 1
+- v6
 ---
-> Note: this page describes features which are coming soon but which are not currently available.
-
 Agilebase's learner progression pathway enables you to transform your career. You can go from  a citizen developer to a no-code software architect. 
  
 Citizen developers can create their own applications using no code. Software architects can build complex applications, including powerful workflow features and integrations with other applications.

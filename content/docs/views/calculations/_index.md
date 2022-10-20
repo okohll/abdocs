@@ -5,7 +5,8 @@ type: docs
 weight: 80
 description: Adding calculations to a view
 tags:
-- Architect
+- Citizen Developer level 3
+- v6
 ---
 The ability to add calculations to a view opens up a world of possibilities. Within the confines of the SQL language, there's no limit to what you can do, and those confines contain a pretty large space.
 

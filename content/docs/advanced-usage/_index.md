@@ -5,7 +5,8 @@ type: docs
 weight: 110
 description: Resources typically useful in the later stages of development
 tags:
-- Principal Architect
+- Software Architect
+- v6
 ---
 Also, new features, news and tips and tricks are posted on https://blog.agilebase.co.uk. Please subscribe on that page to receive any updates.
 

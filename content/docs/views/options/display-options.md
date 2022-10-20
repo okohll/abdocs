@@ -5,7 +5,8 @@ type: docs
 weight: 112
 description: These options control how data is displayed
 tags:
-- Architect
+- Citizen Developer level 3
+- v6
 ---
 ## Show charts by default
 When a user opens this view, immediately show charts rather than data rows

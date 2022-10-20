@@ -5,7 +5,8 @@ type: docs
 weight: 100
 description: Allow people to upload or generate documents, images and other file types
 tags:
-- Architect
+- Citizen Developer level 2
+- v6
 ---
 By default, a file field added to a table will let users upload files. 
 

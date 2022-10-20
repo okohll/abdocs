@@ -5,7 +5,8 @@ type: docs
 weight: 50
 description: Views allow the user to search and manipulate data
 tags:
-- Architect
+- Citizen Developer level 2
+- v6
 ---
 Along with [tables]({{<relref "docs/tables/relational-database-concepts">}}), views are one of the two foundational concepts used when building applications with Agilebase.
 

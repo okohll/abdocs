@@ -5,7 +5,7 @@ type: docs
 weight: 105
 description: Options specific to auto-generated numeric sequence fields
 tags:
-- Architect
+- Citizen Developer level 3
 ---
 ## Do not auto-populate
 When this is un-ticked, the next number in the sequence will always be generated and saved for this field, whenever a new record is created.

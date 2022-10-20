@@ -5,7 +5,7 @@ type: docs
 weight: 170
 description: The data in each view can be exported when the requisite privileges are granted
 tags:
-- Architect
+- Junior Software Architect
 ---
 A spreadsheet export is the simplest way for everyday users to get data out of Agilebase without requiring that an administrator sets up an integration.
 

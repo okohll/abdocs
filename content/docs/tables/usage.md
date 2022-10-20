@@ -5,8 +5,8 @@ type: docs
 weight: 90
 description: Shows which users are viewing data from this table
 tags:
-- System Owner
-- Architect
+- Software Architect
+- v6
 ---
 This panel shows a list of views that contain data from the table. Any view with data is included, not just those directly created from the table.
 

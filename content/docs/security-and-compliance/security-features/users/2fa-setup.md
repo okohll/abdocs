@@ -6,6 +6,7 @@ weight: 10
 description: Setting up two factor authentication - a guide for all users
 tags:
 - Core User
+- v6
 ---
 ## What is two factor authentication?
 Simply put, it helps to keep your company’s data more secure, to stop outsiders stealing it, editing or even deleting it.

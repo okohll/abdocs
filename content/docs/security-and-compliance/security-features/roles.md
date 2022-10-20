@@ -5,8 +5,8 @@ type: docs
 weight: 20
 description: Organising users into groups for better management
 tags:
-- System Owner
-- Architect
+- Software Architect
+- v6
 ---
 The primary purpose of roles is to apply privileges to groups of users, rather than applying them individually. That makes managing large numbers of users easier and also more secure as it's easy to see which privileges each type of user has and which they don't.
 
@@ -14,9 +14,7 @@ Roles have some other important uses, such as multi-tenanting, described below.
 
 ## Creating a role
 1. Go to the homepage and toggle development mode on
-2. Select 'list' mode
-3. Select 'roles' from the dropdown at the top centre of the screen
-4. Click the Add Role button at the top right of the screen
+42 Click the '+ ROLE' button at the top right of the screen
 
 ![Add Role](/add-role.png)
 

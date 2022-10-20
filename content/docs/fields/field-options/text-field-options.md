@@ -5,7 +5,8 @@ type: docs
 weight: 60
 description: Options specific to text fields
 tags:
-- Architect
+- Citizen Developer level 2
+- v6
 ---
 ## Colour words
 When this field is included in a view, highlight it with a colour if the content is one of a number of words. The most up-to-date values to be highlighted are shown in the administrator interface, but as of the latest update of this page, they are

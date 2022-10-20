@@ -5,7 +5,8 @@ type: docs
 weight: 100
 description: Creating application functionality using views
 tags:
-- Architect
+- Junior Software Architect
+- v6
 ---
 The primary purpose of a view is to show data to users. To let them see, search and report on it, or find individual records to edit.
 

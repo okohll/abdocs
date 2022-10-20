@@ -5,7 +5,8 @@ type: docs
 weight: 70
 description: Data visualisation options
 tags:
-- Citizen Developer
+- Citizen Developer level 1
+- v6
 ---
 In Agilebase there are two mechanisms for charting and visualising data, each suited to a different purpose
 1) our [built-in charting](built-in-charting)
@@ -27,7 +28,7 @@ Creating charts can be used in conjunction with building views, in an agile fash
 Developers can also choose to have certain charts emailed to different groups of people on a regular basis. For example, [TODO]
 
 ## Exporting to Business Intelligence
-We provide our own business intelligence tool, an instance of Apache Superset, which is available at https://superset.agilebase.co.uk for easy setup 'out of the box', however any tool you wish such as Power BI can also be connected.
+Any tool you wish such as Power BI or Tableau for example can be connected.
 
 This may be useful when
 * You want to report summary KPIs or trends upwards, to higher levels of management, so you need a dashboard
@@ -38,7 +39,7 @@ This may be useful when
 * You are happy with the privacy and data security implications - see below
 
 ### Privacy and data security
-When connecting a Business Intelligence tool, whether that's the Superset instance we provide, or a third party tool, it's important to realise that data *leaves Agilebase* and therefore is no longer protected by Agilebase's roles and privileges system.
+When connecting a Business Intelligence tool, it's important to realise that data *leaves Agilebase* and therefore is no longer protected by Agilebase's roles and privileges system.
 
 You may have data in Agilebase which is only accessible to certain members of staff, however when accessed outside of Agilebase, those rules no longer apply. That doesn't necessarily mean the data is accessible publicly, but it does mean it's controlled by whatever privilege system the third party tool uses, which will be different to Agilebase's.
 

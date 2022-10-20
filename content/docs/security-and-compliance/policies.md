@@ -5,7 +5,8 @@ type: docs
 weight: 20
 description: Policies and further information
 tags:
-- System Owner
+- Software Architect
+- v6
 ---
 ## Backups
 Data backups are performed across the stack of technology, from server down to databases and file storage.

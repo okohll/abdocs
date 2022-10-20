@@ -5,7 +5,8 @@ type: docs
 weight: 200
 description: Creating a user account in a multi-tenanted system with an API request
 tags:
-- Principal Architect
+- Software Architect
+- requires update
 ---
 Normally, a user account can only be created by a system administrator - see [adding a user]({{<relref "/docs/security-and-compliance/security-features/users#adding-a-user">}}).
 
@@ -16,6 +17,9 @@ For example, imagine your organisation is a body for football clubs around the c
 2) create an initial user (or users) for that club
 
 ## Preparation
+
+> Note: these instructions need updating for the newest release, please contact support if you wish to use this functionality.
+
 Before calling the API, you have to configure the system to allow it to be used. In the administrator user interface:
 1) Expand the _Administration_ menu in the lefthand sidebar
 2) Click _company_

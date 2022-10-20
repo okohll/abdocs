@@ -5,7 +5,8 @@ type: docs
 weight: 60
 description: Validating logins from a third party app
 tags:
-- Principal Architect
+- Software Architect
+- v6
 ---
 It's possible for a developer to create a third party application, for example a phone or tablet app, that communicates with Agilebase via the [API](/docs/integrations).
 

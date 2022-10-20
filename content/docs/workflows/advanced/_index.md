@@ -5,7 +5,8 @@ type: docs
 weight: 200
 description: Further information about Agilebase automation features
 tags:
-- Certified Architect
+- Junior Software Architect
+- v6
 ---
 
 ## Logging

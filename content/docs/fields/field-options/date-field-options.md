@@ -5,7 +5,8 @@ type: docs
 weight: 80
 description: Options specific to date fields
 tags:
-- Architect
+- Citizen Developer level 2
+- v6
 ---
 ## Accuracy
 Whether to record a date as just a year, year and month, year month and day, or with a time: hours, hh:mm, hh:mm:ss.

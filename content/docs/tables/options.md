@@ -5,13 +5,10 @@ type: docs
 weight: 80
 description: Options which alter table behaviour
 tags:
-- Architect
+- Software Architect
+- v6
 ---
-To access these options
-1. Enable developer mode with the toggle switch in the top-right of the screen (if it is not already enabled)
-2. Select the table you wish to edit (in the _list_ view)
-3. Click the pencil icon on the left of the screen to edit the table, then select _tags and options_ in the floating sidebar
-4. Edit the fields as described below
+To access these options, [edit a table]({{<relref "/docs/tables/adding-and-removing/#editing-a-table">}}) and select 'tags and options'.
 
 ## Allow add
 If this is ticked (it is by default), users can add records to the table. Anyone with manage privileges on the table can add tables regardless.

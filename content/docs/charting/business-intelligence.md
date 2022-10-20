@@ -5,27 +5,24 @@ type: docs
 weight: 80
 description: Visualising data in third party Business Intelligence tools
 tags:
-- System Builder
+- Junior Software Architect
+- v6
 ---
 
 > Before setting up a BI connection, please be aware of the [data privacy and security](/docs/charting#privacy-and-data-security) considerations.
 
-At Agilebase we host an instance of [Apache Superset](https://superset.apache.org) which can be used by customers to create reporting dashboards.
-
-However the setup processes below also applies to third party tools such as Power BI. In fact, any tool which utilises [ODBC](https://en.wikipedia.org/wiki/Open_Database_Connectivity) can be used, such as Excel for example.
+Any tool which utilises [ODBC](https://en.wikipedia.org/wiki/Open_Database_Connectivity) can be used, such as Excel for example. Power BI is a common one.
 
 ## Initial Setup
 
-The first step is to [contact us](https://agilechilli.com/contact-us/) to request we prepare your account. This will also allow connections from Apache Superset, Power BI or any other tool which can connect to ODBC).
-
-If you wish to use our supplied instance of Superset, we will then set up as many Superset users you require - there is no ongoing cost for these login accounts. Note that Superset logins are separate from Agilebase ones - the usernames and passwords can be different.
+The first step is to [contact us](https://agilechilli.com/contact-us/) to request we prepare your account. This will also allow connections from Power BI or any other tool which can connect to ODBC).
 
 If you use Power BI, then the process is as follows
 1) Install the PostgreSQL ODBC driver from https://odbc.postgresql.org/. Use the Downloads link and if running on Windows, use the newest driver from the **msi** folder.
 2) Use your operating system's control panel to set up the ODBC driver, using the login details we supply. Ensure the SSL mode is set to 'require'.
 3) From Power BI, add a connection using the PostgreSQL ODBC driver, *not* the built-in Power BI PostgreSQL driver.
 
-## Sending data to Superset or Power BI
+## Sending data to Power BI
 
 A developer with MANAGE privileges on a view's parent table can set this up.
 
@@ -52,31 +49,3 @@ Once the view has been set up, external applications will see a new read-only sn
 3) Under 'chain workflow', select the reporting view A
 
 Then, when a user opens view B, they will see a button at the top of the screen with the button text set to the name of view A. Pressing it will refresh the view A data sent to external applications.
-
-## Creating dashboards in Superset
-
-> This section applies to Superset only, for Power BI or other instructions please contact us.
-
-Now that you've set up Agilebase to make data available to Superset, you can create charts and dashboards there.
-
-1) Create a 'dataset' in Superset, corresponding to the view you set up above
-    1) From the *Data* menu at the top, select *datasets*, then click the *+ dataset* button
-    2) Under *Schema*, select your company name
-    3) Under *Table*, select the name of the view that you set up above
-    4) Click *ADD* at the bottom of the dialog (you may need to scroll down)
-2) Create the chart
-    1) Click *Charts* at the top, then *+ Chart*
-    2) Select the dataset created above
-    3) Choose a chart type, then *Create New Chart*
-    4) Drag metrics (e.g. 'COUNT') and fields from the left into the appropriate areas in the middle column
-    5) Click *Save* and Superset will prompt you to add the chart to a new or existing dashboard
-2) Access the dashboard from the *Dashboards* menu at the top
-
-For more details on creating charts and editing dashboards, including video walkthroughs, see [here](https://docs.preset.io/docs/create-a-chart)
-
-
-
-
-
-
-

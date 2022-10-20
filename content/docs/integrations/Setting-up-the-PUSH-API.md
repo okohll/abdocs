@@ -5,17 +5,14 @@ type: docs
 weight: 130
 description: A powerful automation feature that can send data to third party systems.
 tags:
-- Architect
+- Junior Software Architect
+- v6
 ---
 
-1) Firstly, set up a view to operate as a standard ‘pull’ API
-2) Enter a URL into the _Push URL (optional)_ area below the other details on that screen. This is the URL that Agilebase will POST to when there’s new data.
+1) Firstly, create a a view which contains the data you wish to send
+2) In the 'Use API' panel, enter a URL into the _Push URL_ field. This is the URL that Agilebase will POST to when there’s new data.
 3) In the table that the API view was created from, add a new date/time field, accurate to the second, for the system to record when the API push was last used
-4) Go to the ‘workflow’ section under the view’s ‘manage’ tab.
-for ‘workflow action’, select ‘send data to a third party system using the API’
-for ‘recording the time of the last action’, choose the date/time field created above
-choose a minimum interval to wait between pushes
-
+4) Go back to the view and the 'Use API' panel and select the field you just created for the 'Log Time Of Push To' field.
 The system will now make a POST to the URL specified in step 2 whenever there’s new data to send. It will contain one parameter, ‘json’, which is a JSON representation of all the data in the view.
 
 ![Configuring the PUSH API](/workflow-push-new.png)

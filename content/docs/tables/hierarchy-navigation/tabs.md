@@ -5,18 +5,16 @@ type: docs
 weight: 70
 description: Tabs allow navigation from a parent record to a related child record
 tags:
-- Architect
+- Citizen Developer level 2
+- v6
 ---
 Tabs are one way of exposing relationships between tables, to allow the user to navigate the structure of an application. For example, in a companies table, a contacts tab may show all the people employed at that particular company.
 
 > The user interface can display more than two levels of structure on screen in other ways (e.g. showing a menu in a tab) and wherever the user is, they can navigate up or down the hierarchy of data.
 
 ## Adding a tab
-1. Expand the _Build Tables_ menu in the lefthand sidebar
-2. Select the table you wish to add a tab to
-3. Click the pencil icon in the toolbar to edit the table, then select the table's _manage_ tab
-4. Scroll down to the bottom of the form
-5. Under 'Choose child tabs for the form', select an option in the _Add a tab_ dropdown
+1. [Edit the table]({{<relref "/docs/tables/adding-and-removing/#editing-a-table">}}) you wish to add a tab to
+5. In the 'tabs' panel, select a 'child table' in the _Add a tab_ dropdown
 
 ## Tab types
 There are two types of tab, those which show a **single record** and those which show **multiple records**.
@@ -85,8 +83,3 @@ In this case, you may want to add two tabs to the organisations table, one to sh
 You can do that - just add two tabs for the same table. The system will use the first relation it finds for the first tab, the second for the next.
 
 Another example is a recursive Bill Of Materials (BOM) system where a join table may link to a parent item and a child item.
-
-
-
-
-

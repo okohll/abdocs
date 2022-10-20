@@ -5,8 +5,8 @@ type: docs
 weight: 50
 description: Viewing usage statistics relating to users, tables and views
 tags:
-- System Owner
-- Architect
+- Software Architect
+- v6
 ---
 Agilebase comprehensively logs changes to data in the system as well as changes to the structure of the system. Powerful [reporting facilities]({{<relref "usage-reporting">}}) allow the generation of audit trails, trend monitoring, customer success monitoring etc.
 
@@ -43,7 +43,12 @@ All significant actions are recorded, in summary
 * view additions, updates and removals
 * chart edits
 
+## Viewing logs
+Changes to schemas (e.g. tables and views) can be seen in the editing panels for those objects. On the development homepage, a history of recent changes can be seen.
+
+Changes to an individual record can be seen from the 'history' link at the bottom left of any editing screen.
+
+If the account has the [enhanced audit trail]({{<relref "/security-and-compliance/security-features/usage-monitoring/usage-reporting/#enhanced-audit-trail" />}}) then all data can be queried using agileBase views.
+
 ## Retention periods
 Data is retained for 12 months as standard. The enhanced audit trail allows customers to define their own retention period, the maximum being unlimited.
-
-

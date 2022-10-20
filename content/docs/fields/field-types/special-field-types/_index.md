@@ -5,6 +5,7 @@ type: docs
 weight: 70
 description: Separators, comment feeds, referenced data, file uploads, automatic fields
 tags:
-- Architect
+- Junior Software Architect
+- v6
 ---
 These special types of fields are useful beyond basic data entry, for creating rich application functionality and user experiences.

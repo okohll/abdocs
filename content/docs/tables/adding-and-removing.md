@@ -5,13 +5,14 @@ type: docs
 weight: 40
 description: The basics of working with tables
 tags:
-- Architect
+- Citizen Developer level 2
+- v6
 ---
 A table is a store of data of a particular type e.g. a company, contact, product or invoice. Tables are the fundamental building blocks of an Agilebase application.
 
 ## Adding a table
 1. On the homepage, click the 'toggle' button in the top-right of the screen to enable dev mode (if it is not enabled already)
-2. Click _+ Add Table_, choosing a name for the new table
+2. Click _+ Table_, choosing a name for the new table
 
 **TODO: images**
 ![Add Table Button](/add-table-button.png)
@@ -35,7 +36,9 @@ The user interface will strip out any prefixes when displaying names to users, i
 There are two ways to edit a table: from the homepage, or from editing a record.
 
 ### From the homepage
-When you toggle build mode with the toggle in the top right corner of the screen, you can see a _connections_ mode and a _list_ mode: these two views show the tables in the system. The _connections_ mode shows the relations between entities whilst the _list_ mode presents the same data in tabular form.
+When you toggle build mode with the toggle in the top right corner of the screen, you can see a _Map_ and _List_ items: the Map shows tables and relations between them, the List can show tables and also other entities, like views or users.
+
+From either display, you can click a table to edit it. Once open, you can also pin tables with the pin icon at the top left of the editing panel. The table will then appear 'pinned' to the lefthand side of the development homepage and will remain there until unpinned, or you log out. This can be useful when working with a number of different tables.
 
 ![Connections mode](/homepage-connections-mode.png)
 ![List mode](/homepage-list-mode.png)

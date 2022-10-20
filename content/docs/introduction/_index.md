@@ -5,7 +5,8 @@ type: docs
 weight: 5
 description: Introducing the Agilebase as a no-code software development platform
 tags:
-- Developer
+- Citizen Developer level 1
+- v6
 ---
 People from many different backgrounds use Agilebase to create software that solves problems for them and their organisations. Some are seasoned IT professionals, who are able to code but are new to the no-code world. Some have used tools like Microsoft Access or newer no-code tools and many if not most are from outside of the IT world completely.
 

@@ -5,7 +5,8 @@ type: docs
 weight: 110
 description: Each workflow can perform a single specific action
 tags:
-- Certified Architect
+- Junior Software Architect
+- v6
 ---
 
 ## Types of Action

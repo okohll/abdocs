@@ -5,7 +5,8 @@ type: docs
 weight: 105
 description: Using a test server to dry-run integrations
 tags:
-- Principal Architect
+- Software Architect
+- v6
 ---
 When systems get to a certain size, in particular when you start integrating with apps representing other parts of the business, then it can be beneficial to be able to test new developments and changes before putting them live.
 

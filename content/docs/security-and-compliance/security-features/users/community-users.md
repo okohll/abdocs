@@ -5,7 +5,8 @@ type: docs
 weight: 15
 description: Allowing access to people outside the organisation
 tags:
-- System Owner
+- Software Architect
+- v6
 ---
 Agilebase is primarily a platform for building back office systems for employees (or members of the organisation) to use.
 

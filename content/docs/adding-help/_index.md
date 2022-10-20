@@ -5,7 +5,8 @@ type: docs
 weight: 90
 description: "How to add inline help to aid users of your applications"
 tags:
-- Architect
+- Citizen Developer level 2
+- v6
 ---
 Help for the application you build can be added in at many levels of the user interface
 * at the individual field level

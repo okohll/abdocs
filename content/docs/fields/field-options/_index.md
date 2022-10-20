@@ -5,7 +5,7 @@ type: docs
 weight: 55
 description: Customise the behaviour and display of fields
 tags:
-- Architect
+- Citizen Developer level 2
 ---
 Choosing suitable options helps make the user experience friendly, and extends the capabilities of applications.
 

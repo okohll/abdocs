@@ -5,7 +5,8 @@ type: docs
 weight: 7
 description: How to toggle between development and standard user modes
 tags:
-- Developer
+- Citizen Developer level 2
+- v6
 ---
 As a no-code platform, Agilebase allows you to easily construct (and later de-construct or 'refactor') and change your software.
 

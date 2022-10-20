@@ -5,7 +5,8 @@ type: docs
 weight: 120
 description: These settings apply to the whole Agilebase account
 tags:
-- Principal Architect
+- Software Architect
+- v6
 ---
 To access them:
 1. In the administration interface, expand the _Administration_ section at the bottom left

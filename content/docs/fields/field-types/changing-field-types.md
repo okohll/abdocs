@@ -5,7 +5,8 @@ type: docs
 weight: 80
 description: How to change a field from one type to another
 tags:
-- Principal Architect
+- Software Architect
+- v6
 ---
 Once a field has been created, the type can't be changed with the flick of a switch. However there is an easy to follow process to accomplish this.
 

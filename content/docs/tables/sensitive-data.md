@@ -5,10 +5,10 @@ type: docs
 weight: 70
 description: Options relevant to storing commerically sensitive or personal data
 tags:
-- Architect
-- System Owner
+- Software Architect
+- v6
 ---
-In a table's _privacy and security_ tab, there are two options which are worth considering if the data is storing commercially sensitive information (plenty of information in most customer systems falls under this category!) or personal information as defined by EU General Data Protection Regulations (GDPR).
+In a table's _privacy and security_ panel, there are two options which are worth considering if the data is storing commercially sensitive information (plenty of information in most customer systems falls under this category!) or personal information as defined by EU General Data Protection Regulations (GDPR).
 
 When either option is ticked, two controls appear.
 

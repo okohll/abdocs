@@ -5,7 +5,8 @@ type: docs
 weight: 70
 description: Options specific to relation fields, which determine how tables link together
 tags:
-- Architect
+- Citizen Developer level 3
+- v6
 ---
 Relations between tables are the 'glue' that holds together an application built using Agilebase. If you'd like to learn more about this fundamental concept, please check out the [relational database concepts]({{<relref "/docs/tables/relational-database-concepts">}}) page.
 

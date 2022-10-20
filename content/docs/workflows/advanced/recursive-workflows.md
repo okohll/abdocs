@@ -5,7 +5,7 @@ type: docs
 weight: 220
 description: Recursively Firing Workflows
 tags:
-- Certified Architect
+- Junior Software Architect
 ---
 
 Recursion is a rather heavyweight feature of the workflow capabilities of the Agilebase platform.

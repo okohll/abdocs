@@ -5,6 +5,7 @@ type: docs
 weight: 50
 description: A list of field types, the purposes and options of each
 tags:
-- Architect
+- Citizen Developer level 2
+- v6
 ---
 These pages describe the various types of fields it is possible to have in an Agilebase application. It is recommended to begin with the basic field types before moving on to dealing with special field types.

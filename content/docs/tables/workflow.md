@@ -5,7 +5,7 @@ type: docs
 weight: 85
 description: Running a workflow whenever a record is added
 tags:
-- Architect
+- Software Architect
 ---
 The workflow panel of a table shows any [workflows]({{<relref "/docs/workflows">}}) which act on data in that table. In other words, any workflow that updates records, creates new records in the table, or deletes records from it.
 

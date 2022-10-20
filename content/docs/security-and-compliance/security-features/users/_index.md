@@ -5,14 +5,14 @@ type: docs
 weight: 10
 description: Adding, viewing and removing users
 tags:
-- System Owner
-- Architect
+- Software Architect
+- v6
 ---
 ## Adding a user
-1. Go to the homepage and toggle build mode on
-2. Select 'list' mode
-3. Select 'users' from the dropdown at the top centre of the screen
-4. Click the Add User button at the top right of the screen
+1. Go to the homepage and toggle development mode on
+2. Click the '+ USER' button under Lists at the top of the screen
+
+If a cost is to be applied, this will be shown to you.
 
 You should now see an editing screen with the details of the user you just created.
 ![Add user][/add-user.png]

@@ -5,7 +5,8 @@ type: docs
 weight: 90
 description: Left outer, inner and cross joins
 tags:
-- Architect
+- Junior Software Architect
+- v6
 ---
 Here's a Youtube video explaining the concept of joins and running through the various types.
 

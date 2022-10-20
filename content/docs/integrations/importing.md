@@ -5,7 +5,8 @@ type: docs
 weight: 180
 description: Adding to or updating existing data in a table using a spreadsheet import
 tags:
-- Citizen Developer
+- Citizen Developer level 3
+- v6
 ---
 Agilebase allows data to be imported from CSV (Comma Separated Variable) files. All popular spreadsheet software can save data in this format.
 

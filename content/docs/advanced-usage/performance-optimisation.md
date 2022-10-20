@@ -5,7 +5,8 @@ type: docs
 weight: 130
 description: Working with big data and complex views
 tags:
-- Principal Architect
+- Software Architect
+- v6
 ---
 Agilebase automatically takes some measures behind the scenes to maintain high performance as data volumes grow.
 

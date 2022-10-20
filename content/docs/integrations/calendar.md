@@ -5,7 +5,8 @@ type: docs
 weight: 110
 description: A powerful automation feature that can synchronise data with a third party calendar.
 tags:
-- Certified Architect
+- Software Architect
+- v6
 ---
 
 If a view contains a date field, the data in it can by synchronised with an external calendar application, e.g. Google Calendar, Microsoft Office 365, Apple calendars etc.

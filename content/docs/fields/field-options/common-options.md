@@ -5,7 +5,8 @@ type: docs
 weight: 50
 description: Options common to all fields of any type
 tags:
-- Architect
+- Citizen Developer level 3
+- v6
 ---
 ## Capitalise field name
 By default Agilebase displays field names in Title Case. Un-ticking this option disables that, which can be useful for special cases like e.g. 'pH' or 'Length (m)', which would otherwise show as 'PH' and 'Length (M)'.
@@ -25,6 +26,8 @@ If a record appears in the view, the field will be visible, otherwise it won't d
 Two special options are available
 * show always - the default state
 * show never - useful for hiding fields used for internal purposes, e.g. which help the internal workings of a [workflow]({{<relref "/docs/workflows">}})
+
+> If this option is used on a [separator]({{<relref "/docs/fields/field-types/special-field-types/separators">}}) field, then the visibility rule will apply to the entire block of fields under that separator.
 
 ## Lock when value set
 If the field is blank, allow a value to be entered, however as soon as it has a value, lock to prevent further editing. The user can manually unlock, but will be prompted for a reason for doing so, which will be logged against the field as a comment.

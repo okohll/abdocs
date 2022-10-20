@@ -5,7 +5,8 @@ type: docs
 weight: 40
 description: Allowing users to export data to spreadsheet
 tags:
-- Architect
+- Software Architect
+- v6
 ---
 Exporting to spreadsheet is only one way of getting data out of Agilebase, but it is the most commonly used amongst everyday users. For less ad-hoc data transfers, such as integrations with third party systems involving incoming and/or outgoing data, the [API]({{<relref "/docs/integrations">}}) can be used.
 

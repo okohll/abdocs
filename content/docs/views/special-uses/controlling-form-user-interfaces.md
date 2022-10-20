@@ -5,7 +5,8 @@ type: docs
 weight: 140
 description: Using a view to control a form - hiding/showing different areas, locking data and expanding/contracting blocks of fields on screen
 tags:
-- Architect
+- Junior Software Architect
+- v6
 ---
 The record editing form on screen can be programatically controlled to hide or show various elements, like tabs and individual fields. Fields can also be locked for editing and tabs can be coloured.
 

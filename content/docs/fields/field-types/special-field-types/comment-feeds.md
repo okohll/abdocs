@@ -5,7 +5,8 @@ type: docs
 weight: 90
 description: Comment feeds allow collaboration between users of a system
 tags:
-- Architect
+- Citizen Developer level 2
+- v6
 ---
 Adding a comment feed to a table adds a discussion area to a form, transforming its usefulness.
 

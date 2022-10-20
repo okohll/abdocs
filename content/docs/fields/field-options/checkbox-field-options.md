@@ -5,7 +5,8 @@ type: docs
 weight: 90
 description: Options specific to checkbox (true/false) fields
 tags:
-- Architect
+- Citizen Developer level 2
+- v6
 ---
 ## Default value
 Simply whether the checkbox should default to ticked (true) or un-ticked (false) for new records.

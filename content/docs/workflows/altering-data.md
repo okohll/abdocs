@@ -5,7 +5,7 @@ type: docs
 weight: 120
 description: Workflows can be used to alter data within the system
 tags:
-- Certified Architect
+- Junior Software Architect
 ---
 
 The following Workflows alter data within the system

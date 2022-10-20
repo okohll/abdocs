@@ -5,7 +5,8 @@ type: docs
 weight: 110
 description: Using a view to create an API
 tags:
-- Architect
+- Junior Software Architect
+- v6
 ---
 Any view can be used to generate an API - a unique URL which third party services can call in order to extract data, or which can be used to push data to those services and applications.
 

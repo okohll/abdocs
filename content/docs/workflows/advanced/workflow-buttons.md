@@ -5,7 +5,7 @@ type: docs
 weight: 230
 description: How to setup a Workflow to fire from a Button
 tags:
-- Certified Architect
+- Junior Software Architect
 ---
 
 Some workflows need to be run on an adhoc basis, initiated by a user.

@@ -5,7 +5,7 @@ type: docs
 weight: 210
 description: Chaining Workflows
 tags:
-- Certified Architect
+- Junior Software Architect
 ---
 
 ## How to chain Workflows

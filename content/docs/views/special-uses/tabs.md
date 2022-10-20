@@ -5,7 +5,8 @@ type: docs
 weight: 130
 description: Showing data in a form tab
 tags:
-- Architect
+- Citizen Developer level 3
+- v6
 ---
 Where there is 'child' data related to a parent table, e.g. a contact belonging to an organisation, a list of child records can be shown in a tab in the parent record. 
 

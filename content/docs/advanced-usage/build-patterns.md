@@ -5,7 +5,8 @@ type: docs
 weight: 130
 description: Common patterns, or recipes for accomplishing useful tasks
 tags:
-- Principal Architect
+- Software Architect
+- v6
 ---
 Some of these are just useful ideas, some are tips and tricks and some are larger-scale build patterns for more complex tasks commonly undertaken by customers.
 

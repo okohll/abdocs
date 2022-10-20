@@ -5,7 +5,8 @@ type: docs
 weight: 80
 description: Building and working with charts
 tags:
-- Citizen Developer
+- Citizen Developer level 1
+- v6
 ---
 Charting is not strictly an administrator function, as any user can create charts and other data visualisations, such as maps and word clouds.
 
@@ -15,7 +16,7 @@ In Agilebase, charts 'belong to' a view. Each view can have a collection of char
 
 ## Creating a chart
 1. In the tiles interface, open the tile and view to use as a source of chart data
-2. Click the charts button to the left of the data rows displayed
+2. Click the charts button at the top right of the screen
 3. Click the _add/edit chart or map_ button
 4. Follow each of the steps (1 - 3) on screen to build the chart
 5. In the last step, give a name to the chart and press _save_
@@ -35,7 +36,7 @@ Charts can be embedded into tables. When the user opens a record, the chart will
 
 So for example if you have a chart of sales per month per customer, which you embed into a customer table, it will show as sales per month, only for the customer on screen.
 
-This is accomplished by using a view with chart(s) as a [cross-referenced panel]({{<relref "/docs/fields/field-types/special-field-types/referenced-data">}}) - see that page for setup information.
+This is accomplished by using a view with chart(s) as a [referenced data field]({{<relref "/docs/fields/field-types/special-field-types/referenced-data">}}) - see that page for setup information.
 
 ## Embedding charts in tabs
 When a tab contains many 'child' records, e.g. an organisation may have a tab which contains financial data for the past 10 years, then charts can display above the rows of data when the tab's opened.

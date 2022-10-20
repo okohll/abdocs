@@ -5,7 +5,8 @@ type: docs
 weight: 120
 description: Options specific to cross-reference panel fields
 tags:
-- Architect
+- Citizen Developer level 2
+- v6
 ---
 ## Tabular display
 Rather than displaying rows from the referenced view as panels

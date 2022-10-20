@@ -5,7 +5,8 @@ type: docs
 weight: 165
 description: A more complex API example showing a real world integration consisting of multiple steps
 tags:
-- Architect
+- Software Architect
+- v6
 ---
 
 Here's a great example of using an API to provide business benefits, that we use ourselves here at agileChilli. As well as outlining the steps necessary to set up the API, with links to other documentation pages where relevant, we also include other elements of the solution, like workflows and charting, which often form a part of integrations.
