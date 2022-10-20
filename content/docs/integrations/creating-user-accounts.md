@@ -48,7 +48,7 @@ In the below format, `multi-tenanting fieldname` is the name of the field used t
 
 The `users` property is an array of users. Each user will be created and assigned to the above multi-tenanting role, so they can only see data belonging to them and other users of that role. The user will need a valid `email address` in order to perform a password reset so they can log in.
 
-The `customui` property refers to the option to [apply a custom logo and login screen]({{<relref "/docs/security-and-compliance/security-features/users/#use-the-custom-agilechilli-ui-rather-than-agilebases">}})
+The `customui` property refers to the option to [apply a custom logo and login screen]({{<relref "/docs/security-and-compliance/security-features/users#use-the-custom-agilechilli-ui-rather-than-agilebases">}})
 
 For each user, the `roles` parameter is a comma separated list of internal role IDs, or role names. In addition to the multi-tenanting role, they will also be assigned these roles. They could be e.g. 'manager', 'sales rep' or 'accounts dept'.
 

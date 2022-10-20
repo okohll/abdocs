@@ -25,7 +25,7 @@ That said, these are the ways in which you can strictly enforce data integrity.
 Basic rules can be applied with [field options]({{<relref "/docs/fields/field-options/common-options">}}). For example a field may be set as mandatory, or it must contain unique values (no duplicates).
 
 ## Data integrity checks (advanced)
-1. [Edit a table]({{<relref "/docs/tables/adding-and-removing/#editing-a-table">}})
+1. [Edit a table]({{<relref "/docs/tables/adding-and-removing#editing-a-table">}})
 2. Click _Data Integrity Checks
 3. Click 'Add Single-Field Check'
 
@@ -34,7 +34,7 @@ Here you can add more complex checks, such as the value must be longer or shorte
 ![Field checks](/field-checks.png)
 
 ## Multi-field unique constraints
-1. [Edit a table]({{<relref "/docs/tables/adding-and-removing/#editing-a-table">}})
+1. [Edit a table]({{<relref "/docs/tables/adding-and-removing#editing-a-table">}})
 2. Click _Data Integrity Checks
 3. Click 'Add Multi-Field Unique Check'
 

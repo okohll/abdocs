@@ -8,7 +8,7 @@ tags:
 - Software Architect
 - v6
 ---
-To access these options, [edit a table]({{<relref "/docs/tables/adding-and-removing/#editing-a-table">}}) and select 'tags and options'.
+To access these options, [edit a table]({{<relref "/docs/tables/adding-and-removing#editing-a-table">}}) and select 'tags and options'.
 
 ## Allow add
 If this is ticked (it is by default), users can add records to the table. Anyone with manage privileges on the table can add tables regardless.

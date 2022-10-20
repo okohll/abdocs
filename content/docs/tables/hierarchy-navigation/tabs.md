@@ -13,7 +13,7 @@ Tabs are one way of exposing relationships between tables, to allow the user to 
 > The user interface can display more than two levels of structure on screen in other ways (e.g. showing a menu in a tab) and wherever the user is, they can navigate up or down the hierarchy of data.
 
 ## Adding a tab
-1. [Edit the table]({{<relref "/docs/tables/adding-and-removing/#editing-a-table">}}) you wish to add a tab to
+1. [Edit the table]({{<relref "/docs/tables/adding-and-removing#editing-a-table">}}) you wish to add a tab to
 5. In the 'tabs' panel, select a 'child table' in the _Add a tab_ dropdown
 
 ## Tab types
