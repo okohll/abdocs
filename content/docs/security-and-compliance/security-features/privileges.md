@@ -45,7 +45,7 @@ The two methods are equivalent, whichever is the most convenient for a given pur
 Managing privileges by role rather than by individual user is recommended. That makes managing large numbers of users easier and also more secure as it's easy to see which privileges each type of user has and which they don't.
 
 To assign one or more role or user privileges to a table:
-1. [Edit a table]({{<relref "/docs/tables/adding-and-removing/#editing-a-table" />}})
+1. [Edit a table]({{<relref "/docs/tables/adding-and-removing/#editing-a-table">}})
 2. Open the _roles and privileges_ panel, then select or un-select any privileges required
 
 To assign one or more table privileges to a particular role or user:
