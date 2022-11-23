@@ -50,7 +50,7 @@ When editing a field, press 'add to pinned views'. The field will then be added 
 
 ![adding a field to pinned views](/add-to-pinned-views.png)
 
-This can be particularly useful when introducing a [multi-tenanting]({{<relref "/docs/security-and-compliance/security-features/roles#multi-tenanting" />}}) feature. Multi-tenanting means allowing different customers to access the same system, segregating their data so they each see only their own data. Part of the setup requires adding a new field to all (or most) of the views in the system.
+This can be particularly useful when introducing a [multi-tenanting]({{<relref "/docs/security-and-compliance/security-features/roles#multi-tenanting">}}) feature. Multi-tenanting means allowing different customers to access the same system, segregating their data so they each see only their own data. Part of the setup requires adding a new field to all (or most) of the views in the system.
 
 
 
