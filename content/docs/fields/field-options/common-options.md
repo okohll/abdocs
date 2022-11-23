@@ -14,10 +14,16 @@ By default Agilebase displays field names in Title Case. Un-ticking this option 
 ## Icon
 Rather than displaying a field name, show an icon, chosen from https://fontawesome.com/icons. For example, to show a phone icon for a phone number field, you could enter `phone`, for an email field `envelope` or a twitter handle `twitter`.
 
-## Show if record in view
-Allow a field to be hidden or shown based on conditions. The conditions are specified by creating a view and adding filters. That view is then selected in this field option.
+## Field visibility
+Allow a field to be hidden or shown based on conditions.
 
-If a record appears in the view, the field will be visible, otherwise it won't display to users.
+You can either select a view containing the conditions to use or just create conditions directly under the Field Visibility heading. In either case, the conditions in use will be shown.
+
+![field visibility conditions](/field-visibility.png)
+
+Behind the scenes, the conditions are saved by creating a view (if none is selected already) and adding each condition as a filter. If a record appears in the view, the field will be visible, otherwise it won't display to users.
+
+You can click the 'visibility view' link to go to that view and edit it to add more complex conditions if you wish.
 
 > As the conditions are created in a view, this mechanism is really powerful. You can create simple or very complex critera, including all of the filter options in a view, for example basing a filter on a calculation and combining multiple filters.
 > 

@@ -41,6 +41,17 @@ You can also see where fields are used by scrolling to the bottom of the field e
 
 ![Removing a table field](/removing-a-table-field.png)
 
+## Adding a field to multiple views
+First 'pin' all the views to which you want to add a field. You can pin a single view by clicking on the pushpin icon when editing it, or multiple ones at once from the 'name and views' panel of a table when editing it.
+
+![pinning views](/pin-views.png)
+
+When editing a field, press 'add to pinned views'. The field will then be added to all pinned views which don't already contain it.
+
+![adding a field to pinned views](/add-to-pinned-views.png)
+
+This can be particularly useful when introducing a multi-tenanting feature. Multi-tenanting means allowing different customers to access the same system, segregating their data so they each see only their own data. Part of the setup requires adding a new field to all (or most) of the views in the system.
+
 
 
 
