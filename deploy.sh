@@ -3,6 +3,9 @@
 # If a command fails then the deploy stops
 set -e
 
+# Upgrade Docsy template
+# hugo mod get -u github.com/google/docsy
+
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
 # Build the project.
