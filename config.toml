@@ -96,7 +96,7 @@ github_repo = "https://github.com/okohll/abdocs"
 # github_subdir = ""
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "d5e9aafa505a540f9"
+# gcs_engine_id = "d5e9aafa505a540f9"
 
 # Enable Algolia DocSearch
 algolia_docsearch = false
