@@ -44,6 +44,9 @@ Note in the To: field, you can include email addresses manually, or merge them i
 
 > That’s it! Note when testing, we recommend setting the “To:” value to your own email address, just until you’re sure everything’s working properly.
 
+### Including attachments
+If you add a file field to the view, it will be added to the outgoing email as an attachment. Note the ID field for the file field's parent table also needs to be present, which should happen automatically.
+
 ## Rich text (HTML) emails
 HTML emails can now be sent by apps built on the Agilebase platform.
 That means that your company can send out branded, rich-text emails (with attachments) to customers, suppliers and anyone else you deal with.
