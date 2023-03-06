@@ -112,3 +112,12 @@ We'd then create a calculation 'product month' which would merge the product cod
 Finally, we'd join the two views together, the product/month combinations on the left, the sales view on the right, choosing the 'product month' calculations from each as the fields to match on.
 
 That would enable us to create a calculation totalling sales for each product/month, including zeros where there were no sales.
+
+## Removing joins
+Before removing a join, you first need to remove any uses of the joined object (table or view) from the view. To do that
+1) In the 'fields' panel of the view, remove any fields which are from the joined object. The source of each field is shown to the right of the field name. That includes any dimmed 'Link to...' fields, which are primary keys.
+2) Still in the 'field' panel, check if any fields from the joined object are referenced from any calculations (shown in purple in the fields list). If so, remove those calculations or edit them to remove the reference
+3) Check the [filters]({{<relref "/docs/views/filters">}}) panel to see if any joined objects are used in a filter. If so, remove that filter
+4) It's also possible a join may be there as an intermediate to another join. In that case, you need to work backwards removing any dependent joins first.
+
+If you still can't remove a join, it may be that a field from the joined object is referenced elsewhere in the view setup - you can check other view panels like 'properties and options' or the 'workflow' panels.
