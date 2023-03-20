@@ -3,6 +3,8 @@
 # If a command fails then the deploy stops
 set -e
 
+git pull
+
 # Upgrade Docsy template
 # hugo mod get -u github.com/google/docsy
 
