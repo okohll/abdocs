@@ -13,6 +13,7 @@ Most fields in a table allow data entry into that table, but referenced data fie
 Optionally, the embedded data can be editable.
 
 This can be used for many purposes, such as
+* showing warning or information messages in a form, based on criteria
 * showing calculations, e.g. when editing a recipe, you may want to show the total cost/kg of all ingredients and packaging in that recipe
 * embedding charts, e.g. in the record for a customer, you may want to show the last 12 months of sales data
 * allowing quick editing of related data, e.g. after selecting a customer contact for a sales opportunity, allow quick editing of their contact details without having to navigate away from the opportunity record

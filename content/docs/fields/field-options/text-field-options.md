@@ -15,6 +15,21 @@ When this field is included in a view, highlight it with a colour if the content
 
 > Text calculations can also be coloured based on the same words - see the [calculation options]({{<relref "/docs/views/calculations#colouring">}})
 
+> Words will also automatically be coloured when a 'radio button' style is used for a field, i.e. when
+> * 'use dropdown' is ticked
+> * 'use only given values' is ticked
+> * there are three or fewer values to choose from
+
+## Swap colours
+When words are coloured (see above), 'yes' will usually be coloured green and 'no' red etc. However depending on the field name or question being asked, you may want to swap the colours.
+
+For example, for a field 'Passport Checked', you might want yes to be green, but for a field 'Dangerous Substances Detected', yes should be red and no should be green. In that case, use this option to swap the colours.
+
+The words that will have colours swapped by this option are:
+* yes / no
+* true / false
+* low / high
+
 ## Use dropdown
 Rather than a simple text entry field, display a dropdown of choices from which one can be selected. If there are only a few values, then the user interface may display options in [radio button](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio) style, but the behaviour is exactly the same.
 
