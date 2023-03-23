@@ -37,8 +37,8 @@ and here's what the development mode looks like on the homepage:
 ## The development homepage
 When development mode is toggled on from the homepage, the development homepage will show. There are three main areas:
 1. **The lefthand sidebar**: this shows any objects (tables, views etc.) you've been working on recently, for quick access, or any that you have 'pinned' (see below)
-2. **The map**: clicking this diagram shows the connections between tables in the system, i.e. the [relations]({{<relref "/docs/tables/relational-database-concepts/">}}) between them. Clicking a table opens it for editing.
-3. **Lists**: to the right of the map, at the top, is a set of boxes which each load a different type of object, i.e. [tables]({{<relref "/docs/tables/">}}), [tiles]({{<relref "/docs/tiles/">}}), [roles]({{<relref "/docs/security-and-compliance/security-features/roles/">}}), [users]({{<relref "/docs/security-and-compliance/security-features/users/">}}) and different categories of [view]({{<relref "/docs/views/">}}). Clicking on each will load a list of objects, so you can see full details, edit and delete them.
+2. **The map**: clicking this diagram shows the connections between tables in the system, i.e. the [relations]({{<relref "/docs/tables/relational-database-concepts">}}) between them. Clicking a table opens it for editing.
+3. **Lists**: to the right of the map, at the top, is a set of boxes which each load a different type of object, i.e. [tables]({{<relref "/docs/tables">}}), [tiles]({{<relref "/docs/tiles">}}), [roles]({{<relref "/docs/security-and-compliance/security-features/roles">}}), [users]({{<relref "/docs/security-and-compliance/security-features/users">}}) and different categories of [view]({{<relref "/docs/views">}}). Clicking on each will load a list of objects, so you can see full details, edit and delete them.
 
 ### Pinning objects
 When you have an editing panel open, e.g. by clicking on an object from a list (see above), you can 'pin' it by clicking the pushpin icon at the top left of the panel.
