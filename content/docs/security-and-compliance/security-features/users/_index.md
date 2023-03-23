@@ -102,6 +102,8 @@ Each user's roles are shown. Any [multi-tenanting]({{<relref "roles#multi-tenant
 
 > The list of users can be exported to spreadsheet by clicking again on the 'users' box at the top right of the screen. 
 
+Note that if you want to see a full audit trail of what each user has done (editing, searching, exporting etc.), then you can use the optional [enhanced audit trail]({{<relref "/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting#enhanced-audit-trail">}}) feature (only available on certain plans). 
+
 ## Removing users
 To remove a user, click one in the list (see above) to open the user editing panel. At the bottom, click the Remove button.
 

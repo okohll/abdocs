@@ -30,11 +30,27 @@ Entering a view _Help_ in the space underneath the name will provide help text f
 
 ![menu](/menu.png)
 
+## Adding and removing fields
+The core function of a view is usually to display a set of fields to people, as columns, so they can see data and search it.
+
+When you create a view, the first dozen or so fields in the table it was created from will be added automatically. You can hover over a field and click the cross icon to remove it from the view.
+
+To add a new field, make sure you're in the 'fields' panel (the default). An 'Add Field' section will be visible, with two selectors.
+The first on the left selects the source of data. This is typically a table, but can also be a view.
+
+The default source is the view's parent table. The system also intelligently presents any tables which are related - for example, when editing a view based on contacts, 'organisations' may be available if each contact belongs to an organisation.
+Finally, any tables or views which are [joined]({{<relref "docs/views/joins">}}) to this view are available as sources.
+
+Once you've selected a source (if not the default), you can choose a field to add.
+
+When you press the Add button you'll be prompted to edit the field name if you like. You can just press OK to accept the name of the field as it is, but if you like you can edit it first. That doesn't change the field name in its underlying table, but it does allow you to name the field something specific just for this view.
+For example, in your organisations table, you may have a field 'Organisation Name'. In a view of invoices to customers, you may want to name this 'Customer Name', just for that view.
+
 ## Using a view
 Once the view is created, how can someone use it? We won't work through every possibility here as this documentation is for administrators rather than users, but here are some of the most important points in brief you may like to be aware of in order to support apps you build.
 
 ### Finding data
-By default a search box appears under each column heading (the system can also be configured in a simplified way with a single search box to cover all fields).
+By default, a search box appears under each column heading (the system can also be configured in a simplified way with a single search box to cover all fields).
 
 The help icon (?) to the left of the search boxes details the types of search that can be performed. There are many, allowing for e.g. date-based searches, _and_ and _or_ searching, finding empty values etc. Helper features pop up for some field types, like date range pickers for example.
 

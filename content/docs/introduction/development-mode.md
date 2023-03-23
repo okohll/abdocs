@@ -43,6 +43,8 @@ When development mode is toggled on from the homepage, the development homepage 
 ### Pinning objects
 When you have an editing panel open, e.g. by clicking on an object from a list (see above), you can 'pin' it by clicking the pushpin icon at the top left of the panel.
 
+![Pinning a view](/pinning.png)
+
 Pinned objects remain on screen for quick access at the top of the lefthand sidebar. They will also be remembered if you log out, for the next time you log in.
 
 Pinned objects can also be quickly accessed at any time, even if the development homepage is not open, using the history menu in Agilebase's top toolbar which is always present. The history icon is just to the right of the 'back (&lt;)' button.
