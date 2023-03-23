@@ -46,6 +46,13 @@ Once you've selected a source (if not the default), you can choose a field to ad
 When you press the Add button you'll be prompted to edit the field name if you like. You can just press OK to accept the name of the field as it is, but if you like you can edit it first. That doesn't change the field name in its underlying table, but it does allow you to name the field something specific just for this view.
 For example, in your organisations table, you may have a field 'Organisation Name'. In a view of invoices to customers, you may want to name this 'Customer Name', just for that view.
 
+### Applying sorts
+When someone opens a view, they can sort it by any column they like by clicking the column header. However when building a view, you may want to set a default sort order.
+
+To do that, when looking at the list of fields in a view, click the little up/down icon to the left of the fieldname. That will apply a sort to that field. Clicking it again will change the direction of the sort.
+
+You can add sorts to multiple fields, they will take effect from the top down, i.e. the data will be sorted by the top field with a sort, then by the next one down etc.
+
 ## Using a view
 Once the view is created, how can someone use it? We won't work through every possibility here as this documentation is for administrators rather than users, but here are some of the most important points in brief you may like to be aware of in order to support apps you build.
 
