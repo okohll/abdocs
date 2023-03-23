@@ -9,8 +9,16 @@ tags:
 - v6
 ---
 ## Adding a user
-1. Go to the homepage and toggle development mode on
+
+You can add a new user from scratch, or clone an existing one. To add:
+1. Go to the homepage and [toggle development mode on]({{<relref "/docs/introduction/development-mode/">}})
 2. Click the '+ USER' button under Lists at the top of the screen
+
+To clone:
+1. Go to the homepage and [toggle development mode on]({{<relref "/docs/introduction/development-mode/">}})
+2. Click the Users box at the top right to load a list of existing users
+3. Click a user to clone to open up their editing panel
+4. At the bottom, press the Clone button
 
 If a cost is to be applied, this will be shown to you.
 
@@ -88,12 +96,14 @@ If a user has a privilege due to being a member of a role, that privilege is sho
 Allows an admin to add/remove [tiles]({{<relref "/docs/tiles">}}) for a user. By default users can add/remove tiles themselves too, although this can be disabled through the use of a [custom UI]({{<relref "#other-options">}}).
 
 ## Viewing users
-Expand the _Administration_ menu in the lefthand sidebar and click users. You'll see a list of existing user accounts. Their details are listed including 2FA status (whether they're using app-based 2FA or not) and when they last logged in.
+From the homepage, [toggle development mode on]({{<relref "/docs/introduction/development-mode/">}}) and click the 'users' box at the top right. You'll see a list of existing user accounts. Their details are listed including 2FA status (whether they're using app-based 2FA or not) and when they last logged in.
 
-Each user's roles are shown. Any [multi-tenanting]({{<relref "roles#multi-tenanting">}}) roles are marked in bold.
+Each user's roles are shown. Any [multi-tenanting]({{<relref "roles#multi-tenanting">}}) roles are also included.
+
+> The list of users can be exported to spreadsheet by clicking again on the 'users' box at the top right of the screen. 
 
 ## Removing users
-To remove users, when viewing the list of users, tick those to remove and press the delete (cross) button in the top toolbar.
+To remove a user, click one in the list (see above) to open the user editing panel. At the bottom, click the Remove button.
 
 A user removal will have no effect on any data stored in the system. The user's previous comments will still be visible for example and their username will still be logged against any records they're marked as owner of. Their changes will still be in the audit trail and they will be marked as the creator/last editor of records where relevant.
 

@@ -34,6 +34,19 @@ and here's what the development mode looks like on the homepage:
 
 {{< youtube id="Rojcf6OzdHw" >}}
 
+## The development homepage
+When development mode is toggled on from the homepage, the development homepage will show. There are three main areas:
+1. **The lefthand sidebar**: this shows any objects (tables, views etc.) you've been working on recently, for quick access, or any that you have 'pinned' (see below)
+2. **The map**: clicking this diagram shows the connections between tables in the system, i.e. the [relations]({{<relref "/docs/tables/relational-database-concepts/">}}) between them. Clicking a table opens it for editing.
+3. **Lists**: to the right of the map, at the top, is a set of boxes which each load a different type of object, i.e. [tables]({{<relref "/docs/tables/">}}), [tiles]({{<relref "/docs/tiles/">}}), [roles]({{<relref "/docs/security-and-compliance/security-features/roles/">}}), [users]({{<relref "/docs/security-and-compliance/security-features/users/">}}) and different categories of [view]({{<relref "/docs/views/">}}). Clicking on each will load a list of objects, so you can see full details, edit and delete them.
+
+### Pinning objects
+When you have an editing panel open, e.g. by clicking on an object from a list (see above), you can 'pin' it by clicking the pushpin icon at the top left of the panel.
+
+Pinned objects remain on screen for quick access at the top of the lefthand sidebar. They will also be remembered if you log out, for the next time you log in.
+
+Pinned objects can also be quickly accessed at any time, even if the development homepage is not open, using the history menu in Agilebase's top toolbar which is always present. The history icon is just to the right of the 'back (&lt;)' button.
+
 ## Accessing additional debugging information
 
 Later on down the route of creating applications, you may wish the user interface to show additional information, specifically in views, to show the primary key values for each record - the internal row identifiers - which are normally hidden.
