@@ -27,7 +27,7 @@ To create from scratch
 
 To clone an existing view
 1. Open a view
-2. Toggle on the [development mode]({{<relref "/docs/introduction/development-mode>}}) and click 'edit view' at the top left
+2. Toggle on the [development mode]({{<relref "/docs/introduction/development-mode">}}) and click 'edit view' at the top left
 3. Open the 'properties and options'
 4. Scroll down to the bottom of the panel and press the 'clone view' button
 
