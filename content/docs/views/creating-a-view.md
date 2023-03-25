@@ -13,6 +13,10 @@ In Agilebase, a view 'belongs to' a [table]({{<relref "/docs/tables">}}). We'll 
 We'll also assume we already have some tables and some [tiles]({{<relref "/docs/tiles">}}).
 
 ## To create a view
+
+You can create a view from scratch, or clone an existing one then edit it.
+
+To create from scratch
 1. Select (or [create]({{<relref "/docs/tables">}}) a new) table.
 2. Click the table you want to create a view from
 3. Once the table has been selected, click _name and views_ on the floating sidebar
@@ -20,6 +24,12 @@ We'll also assume we already have some tables and some [tiles]({{<relref "/docs/
 5. You should now see your freshly created view
 
 > There is an option **Populate the view with fields from this table** next to the _Add View_ button. This is a convenience feature, which is ticked by default. When it's ticked, the view created will contain the first 10 fields from the table - you can then remove any you don't need or add more. When un-ticked, the view will start with no fields so you can add just those you wish.
+
+To clone an existing view
+1. Open a view
+2. Toggle on the [development mode]({{<relref "/docs/introduction/development-mode>}}) and click 'edit view' at the top left
+3. Open the 'properties and options'
+4. Scroll down to the bottom of the panel and press the 'clone view' button
 
 ## Organising into a navigation structure
 On creating a view, its manage tab will appear. One of the first things it's useful to do is put the field in a tile - use the _Tile_ dropdown option to do so.

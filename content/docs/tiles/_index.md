@@ -52,11 +52,11 @@ In a view's manage tab, choose the tile which you want to place it in from the _
 Users can themselves add tiles to their own homepages (unless they have customised UI options to prevent this). However, administrators can also do this for them.
 
 To add a tile to a user
-1. Expand the _Administration_ menu in the lefthand sidebar
+1. Go to the homepage and toggle development mode
 2. Click _users_. Select the user you wish to edit
-3. Click the _Tiles_ button
-4. Select the type of tile to add.
-    - If it's a data tile or document / image library tile, then also select the primary view, which is the view that will load when the user first opens the tile
+3. Open the _Tiles_ panel
+4. Click the tile you want to add
+    - If it's a data tile or document / image library tile, you'll be prompted for the primary view, which is the view that will load when the user first opens the tile. The most commonly used view for the tile is the default.
 
 ### Auto-adding tiles
 Tiles can also be added automatically in bulk by assigning a user role.

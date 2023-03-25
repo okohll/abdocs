@@ -16,8 +16,12 @@ If this is ticked (it is by default), users can add records to the table. Anyone
 ### Only from within tab
 If this is ticked, users can add records but only when accessing this table's form from within a tab of a parent record. This can help ensure that child records are always connected to a parent and aren't created as 'orphans'.
 
-## Allow clone
-(Off by default). Show a clone record button when a user is viewing a record. This makes a simple copy of all data in the record. The contents of tabs are not cloned. A more advanced clone facility can be created with a [workflow]({{<relref "/docs/workflows">}}) if desired.
+## Allow clone and merge
+(Off by default). Show a clone/merge record button when a user is viewing a record.
+
+Cloning makes a simple copy of all data in the record. The contents of tabs are not cloned. A more advanced clone facility can be created with a [workflow]({{<relref "/docs/workflows">}}) if desired.
+
+Merging allows the user to select another record to merge with this one. This is commonly use to resolve a situation where there are duplicate records. The contents of one are merged into the other, then the first deleted. A wizard will guide the user through selecting which data to keep from each record. Child records from the deleted record will be re-attached to the one remaining. So for example if Organisation 1 containing two contacts is merged with Organisation 2 containing 3, a single organisation with five contacts will result.
 
 ## Allow remove
 (On by default). Allow records to be deleted by people with EDIT privileges as well as people with MANAGE privileges, who can always delete.

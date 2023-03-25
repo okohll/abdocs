@@ -8,7 +8,7 @@ tags:
 - Junior Software Architect
 ---
 
-Some workflows need to be run on an adhoc basis, initiated by a user.
+Some [workflows]({{<relref "docs/workflows">}}) need to be run on an adhoc basis, initiated by a user.
 In these instances it can be useful to assign the Workflow to run behind a Button.
 
 > N.b. In both cases below it is necessary for the Workflow to marked as Manual. 
