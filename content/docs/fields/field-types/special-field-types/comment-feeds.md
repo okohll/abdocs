@@ -23,6 +23,8 @@ The available recipients are those people who have privileges to view data in th
 
 The user interface intelligently selects an initial list of recipients from those available, but they can be added or removed by the user.
 
+> To add a user, type '@' then start typing their name. A dropdown list will appear from which you can pick the person.
+
 In this example, Cliff, Gemma and Mark have been set to receive email notifications as well. The email they receive will contain a link to take them directly to the record the comment was added to. They can reply to the email to log an additional comment.
 
 People who aren't recipients of a comment will still see the comment when they visit the record it's been added to, they just won't get a notification in their comments stream or elsewhere.
