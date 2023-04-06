@@ -24,9 +24,8 @@ The Community Users mechanism allows this.
 For a Community User subscription to apply, a person must be one of
 * a *supplier*
 * a *contractor*
+* an *app* user i.e. someone who utilises Agilebase functions via the API, using a third party app or website
 * or a *member of the public*
-
-So this mechanism is not applicable to employees of the company (or a parent company or subsidiary).
 
 ## Setup
 ### Configuring a community of users
