@@ -39,7 +39,7 @@ As an administrator, you can also manually reset someone's password by clicking 
 > We recommend the adoption of a password wallet service like [1Password](https://1password.com/), [LastPass](https://lastpass.com) or built-in browser features to generate and store passwords. That lets passwords become much more secure and harder to guess whilst not requiring users to remember them.
 >
 
-### Notes about password security
+#### Notes about password security
 
 Passwords must be a minimum of 8 characters.
 
@@ -62,6 +62,11 @@ If a user encounters any problems with 2FA, e.g. they lose the device for genera
 This can be done in the [company settings]({{<relref "/docs/advanced-usage/company-settings#mandate-2fa" >}})
 
 ### Other options
+#### Learner Progression Level
+When created, the level defaults to being a 'core user', i.e. a standard user who has no special development privileges.
+
+A software architect can change this to move any user up (or down) in learner development progress. Please see [learner progression]({{<relref "/docs/introduction/learner-progression">}}) for more information on what abilities each level confers.
+
 #### Use the custom AgileChilli UI rather than Agilebase's
 It's possible for companies to apply their logo and custom login screen to the system. Please contact us if you'd like to set this up.
 
