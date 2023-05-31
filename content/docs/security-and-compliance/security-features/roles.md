@@ -33,8 +33,8 @@ To perform a global edit, the user should
 3) click the 'edit filtered' button which appears
 4) type in the value you want to apply and follow through the prompts
 
-**User Visibility** and **Restrict Data Access**  
-These are used to set up [multi-tenanting](#multi-tenanting)
+**User Visibility** and **Allow only multi-tenanting views to be seen**
+Used to configure [multi-tenanting](#multi-tenanting)
 
 ### Members
 Tick each user to add them to the role. Users will gain all the privileges defined by the role.
@@ -56,7 +56,7 @@ To set up multi-tenanting:
 1. first [add a text field]({{<relref "/docs/fields">}}) to all tables in the system for which you want data to be segragated. The field must be named the same in every table, for example's sake here let's assume it's called 'account name'.
 2. Then create one role for each set of users who you want to segregate. We'll assume there's one called 'Customer A'.
 3. In the role details screen for the Customer A role, tick _user visibility_. That means that users in this role won't see users in other roles with the same option ticked. In other words, users from Customer A won't be able to select Customer B or Customer C users when doing things like adding comments or assigning users to records.
-4.  Under _restrict data access_ in the role details, enter `account name = Customer A`
+4.  Under _restrict data access_ in the role details, enter `account name = Customer A`, i.e. _Filter Field Name_ = 'account name', _Filter Value_ = 'Customer A'
 5.  Finally, ensure the account name field is present in all views based on the table. When creating a view, any fields used for multi-tenanting will automatically be added but you may need to retro-fit any existing views.
 
 This has two effects -
@@ -66,6 +66,11 @@ This has two effects -
 Users who **aren't** a member of the role will see the account name field in the data editing form and in views. This can be useful for allowing e.g. group managers to see all data.
 
 If any multi-tenanting roles are set up, then views which **don't** contain a multi-tenanting field will be marked in red in the administration interface, as a warning. If a multi-tenanting user loads one of these views, they will see all records. Typically, practically all views will need the multi-tenanting field to be present.
+
+#### Allow only multi-tenanting views to be seen
+Optionally, this can be ticked. If ticked, user's will only be shown views which contain the multi-tenanting field, 'Account Name' in the example above.
+
+This is an added protection - if the multi-tenanting field is removed from a view, the user won't see it any more. Otherwise they'd be able to see all data in the view, even that which they shouldn't. This can also be useful to set when there is partial multi-tenanting set up, i.e. some views are multi-tenanted but others aren't and you only want certain groups (e.g. people outside the organisation) to see the multi-tenanted parts, not everything.
 
 ### Complex multi-tenanting
 
