@@ -14,7 +14,7 @@ Workflows can automatically edit records and create new records, saving a lot of
 
 Workflows can also send email notifications, generate documents and push data to 3rd parties. Importantly steps can be [chained together]({{<relref "advanced/chaining-workflows">}}). Many business processes can therefore be fully automated. As an example if the system stores recipes, whenever an allergen is changed, a product specification doc can be generated and emailed to significant customers.
 
-![Workflow](/workflow.png)
+![Workflow](/workflow-edit.png)
 
 ## Creating a rule
 
