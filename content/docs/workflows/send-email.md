@@ -47,6 +47,13 @@ Note in the To: field, you can include email addresses manually, or merge them i
 ### Including attachments
 If you add a file field to the view, it will be added to the outgoing email as an attachment. Note the ID field for the file field's parent table also needs to be present, which should happen automatically.
 
+### Including record history
+To include a log of recent updates to a record (since the last notification was sent), just add the line
+
+`ab_record_history`
+
+to the body of the email.
+
 ## Rich text (HTML) emails
 HTML emails can now be sent by apps built on the Agilebase platform.
 That means that your company can send out branded, rich-text emails (with attachments) to customers, suppliers and anyone else you deal with.

@@ -9,6 +9,8 @@ tags:
 ---
 The workflow panel of a table shows any [workflows]({{<relref "/docs/workflows">}}) which act on data in that table. In other words, any workflow that updates records, creates new records in the table, or deletes records from it.
 
+![Workflow tab](/workflow-tab.png)
+
 Additionally, this panel allows you to choose a workflow to run whenever a new record is created, or (less frequently used) whenever a record is opened.
 
 That can be very useful for setting initial values for fields, where those values may be more complex calculations than just a static default value.

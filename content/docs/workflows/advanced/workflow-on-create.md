@@ -7,4 +7,4 @@ description: How to run a workflow every time a new record is created, or option
 tags:
 - Junior Software Architect
 ---
-This can be set up in the [table options]({{<relref "/docs/tables/options#when-a-records-created-run-this-workflow">}}).
+This can be set up in the [table's workflow options]({{<relref "/docs/tables/workflow">}}).

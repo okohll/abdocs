@@ -71,7 +71,7 @@ A software architect can change this to move any user up (or down) in learner de
 It's possible for companies to apply their logo and custom login screen to the system. Please contact us if you'd like to set this up.
 
 #### Logout after
-Automatically end the user's session after after this many minutes of inactivity. The user themselves can also change this setting.
+Automatically end the user's session after this many minutes of inactivity. The user themselves can also change this setting.
 
 #### Restrict data access
 Here, you can specify a field name, either an equals or a contains filter and a value. The button _set to user ID_ will set the value to the user's ID.
