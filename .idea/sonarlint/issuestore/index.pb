@@ -21,5 +21,3 @@ $layouts/partials/hooks/head-end.html,5/f/5f7151666b4110be0d2a7a73f4fdb8c727bd4
 Ocontent/docs/security-and-compliance/security-features/users/community-users.md,6/1/611ef7df5feddcbfa75d9fbf5e425a6702bba14b
 t
 Dcontent/docs/fields/field-types/special-field-types/comment-feeds.md,7/0/70669330311915544e4febbd5a4ef58fecfca3d1
-U
-%content/docs/views/creating-a-view.md,1/9/196705bc766e62b6b8a98be8e83f48a819bc226a

@@ -13,8 +13,6 @@ L
 -content/docs/introduction/development-mode.md,5/4/545ae1937e61b617b9305d231781703344049fcd
 C
 content/_index.html,6/7/677474fa6727c0479c458e13aa5a562c324b6a0f
-U
-%content/docs/views/creating-a-view.md,1/9/196705bc766e62b6b8a98be8e83f48a819bc226a
 ;
 config.toml,c/2/c2996dfd59d9c152da4b8148714e209d60f21ffa
 t

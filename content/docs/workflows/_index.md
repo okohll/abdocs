@@ -16,7 +16,7 @@ Workflows can also send email notifications, generate documents and push data to
 
 ![Workflow](/workflow-edit.png)
 
-## Creating a rule
+## Creating a workflow
 
 Here are the basics.
 

@@ -63,6 +63,15 @@ To do that, when looking at the list of fields in a view, click the little up/do
 
 You can add sorts to multiple fields, they will take effect from the top down, i.e. the data will be sorted by the top field with a sort, then by the next one down etc.
 
+### Adding sections
+If a view has many fields, it can be beneficial to organise them into sections, just like you organise table fields into sections using [separators]({{<relref "/docs/fields/field-types/special-field-types/separators">}}).
+
+To create a section, edit the field or calculation which should form the start of a section and enter some text describing the section into the *Section Name* box.
+
+When a user hovers over a column name which is the start of a section (identified by the vertical bar on screen), the section name is displayed. Here's an example where the field Distinct Wish Count is the start of an 'Actions' section.
+
+![view section](/view-section.png)
+
 ## Using a view
 Once the view is created, how can someone use it? We won't work through every possibility here as this documentation is for administrators rather than users, but here are some of the most important points in brief you may like to be aware of in order to support apps you build.
 
