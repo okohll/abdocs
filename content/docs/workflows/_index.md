@@ -34,5 +34,3 @@ Here are the basics.
 
 For 24hr workflows you can optionally set a specific time of day for them to run.
 
-![Screenshot of workflow action](/workflow.png)
-
