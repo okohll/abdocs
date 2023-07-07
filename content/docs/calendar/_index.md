@@ -10,7 +10,7 @@ tags:
 ---
 Any view with one or more date/time fields can have its data displayed in calendar form. If there are two date/time fields, the first will be the start time, the second the end time. If there's only one, events will last 1 hour by default, unless the field is a date only, in which case they will be all day.
 
-Data can also [sync to and from external calendars]({{<relref "/docs/integrations/calendar">}}).
+Data can also sync to and from external calendars using the [API]({{<relref "/docs/integrations">}}).
 
 Any user can add the calendar tile to their homepage, then select views containing dates to display in it. Data can be displayed in a number of formats, like standard month/week/day views but also timeline views for a gantt-style format, with each view in its own swim-lane.
 

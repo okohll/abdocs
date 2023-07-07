@@ -39,8 +39,7 @@ The options to send data are contained within the _send_ section of the _workflo
 5) [Send data to a third party via API]({{<relref "/docs/workflows/send-data-to-a-third-party-via-API">}})
 6) [Send an email]({{<relref "/docs/workflows/send-email">}})
 7) [Send an email Chaser]({{<relref "/docs/workflows/send-chaser">}})
-8) [Send data to a calendar]({{<relref "/docs/integrations/calendar">}})
-9) [Send to document generator]({{<relref "/docs/workflows/send-document-generator">}})
-10) RSS feed - See facility with [PULL API]({{<relref "/docs/integrations/setting-up-the-pull-api">}})
+8) [Send to document generator]({{<relref "/docs/workflows/send-document-generator">}})
+9) RSS feed - See facility with [PULL API]({{<relref "/docs/integrations/setting-up-the-pull-api">}})
 
 ![Workflow functions that send data](/workflow-send-new.png)

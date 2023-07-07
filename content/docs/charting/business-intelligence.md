@@ -26,7 +26,7 @@ If you use Power BI, then the process is as follows
 
 A developer with DEVELOP privileges on a view's parent table can set this up.
 
-> Before continuing, please also note that only users without any [multi-tenanting]({{<relref "/docs/security-and-compliance/security-features/roles/#multi-tenanting">}}) roles will be able to turn on external reporting.
+> Before continuing, please also note that only users without any [multi-tenanting]({{<relref "/docs/security-and-compliance/security-features/roles#multi-tenanting">}}) roles will be able to turn on external reporting.
 > That's because data sent this way doesn't take account of multi-tenanting. Rather all data is sent, whatever the tenant. 
 
 1) In Agilebase, open the view you wish to report on. Ensure it has all the necessary fields and calculations in it which you want to report on. If not, add them before continuing.
