@@ -39,17 +39,3 @@ f
 6content/docs/workflows/advanced/recursive-workflows.md,4/c/4c51cf81623cbfb44a7cc79ed68aec87672b5dd5
 U
 %content/docs/views/creating-a-view.md,1/9/196705bc766e62b6b8a98be8e83f48a819bc226a
-^
-.content/docs/charting/business-intelligence.md,1/7/17f401ec06cf2992b06d200e626aef70a76086d5
-R
-"content/docs/adding-help/_index.md,3/6/3626816e749c15ed82de9ca7790b5a411f97572c
-]
--content/docs/advanced-usage/build-patterns.md,5/4/546bcf42337031c8d1c6b6896336dcc9567a0cb6
-g
-7content/docs/fields/field-options/text-field-options.md,4/f/4fa78011f0d8d6fc1cc899dede7cffadcadfc895
-\
-,content/docs/integrations/complex-example.md,1/1/119fe282ab945cde84ec7018e5cee2a951ad1e19
-O
-content/docs/charting/_index.md,1/5/158ea33851954bebe0c3e0c9a8dcbd00f1737592
-_
-/content/docs/integrations/external-reporting.md,d/f/dfddb571357981e38c409e75dd822b30c8728342
