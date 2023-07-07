@@ -10,5 +10,5 @@ tags:
 ---
 As well as using the REST API, an ODBC database link can send data to external tools such as Power BI, Tableau, Apache Superset or preset.io or even just Excel.
 
-Please see [Business Intelligence]({{<relref "/docs/charting/business-intelligence/">}}) for full details.
+Please see [Business Intelligence]({{<relref "/docs/charting/business-intelligence">}}) for full details.
 
