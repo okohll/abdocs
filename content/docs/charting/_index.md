@@ -19,8 +19,6 @@ For more advanced users, here's a description of when each of the two options ma
 ## Built in charting
 This should be the default starting point. It's great for ad-hoc charting, i.e. to get quick answers to questions you may have about the data in the view you're looking at.
 
-Charts can be easily created, modified and removed. People with MANAGE privileges on a table can create charts that all users will see, lower privileged users can create charts that only they see.
-
 Creating charts can be used in conjunction with building views, in an agile fashion. For example, if you're looking at a view of invoice and want to see a breakdown of totals for the year by customer type, but the customer type field isn't in the view, no problem. Just
 1) add the customer type field to the invoices view
 2) create a chart to total up values by customer type
@@ -46,5 +44,5 @@ You may have data in Agilebase which is only accessible to certain members of st
 Therefore, from Agilebase's point of view, similar rules will apply when connecting a BI system as to when exporting data to spreadsheets. For example
 * Any user connecting a BI tool will be shown a warning of these consequences, which they'll need to accept prior to going ahead
 * Agilebase system administrators will get email notifications every time data in a view is made available to BI tools, containing information on whether that data is marked as sensitive or private
-* Only people with MANAGE privileges on a table can connect BI tools. They also have to have two factor authentication enabled
+* Only people with DEVELOP privileges on a table can connect BI tools. They also have to have two factor authentication enabled.
 

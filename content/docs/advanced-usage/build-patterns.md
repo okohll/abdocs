@@ -113,7 +113,7 @@ For example, converting a whole number field into a decimal number
 ## Finding the 'latest' child record
 A common scenario occurs when you have a one to many relationship. You want a view which shows precise info from the 'latest' child record.
 
-Start with parent table and join to child, add the controlling field and set the correct order. For example, sorting by 'created on [auto]' descending will give you the newest child record. Then go to _manage_ tab of the view and set the _Distinct Field_ option to the Parent table’s ID field.
+Start with parent table and join to child, add the controlling field and set the correct order. For example, sorting by 'created on [auto]' descending will give you the newest child record. Then go to _properties and options_ panel when editing the view and set the _Distinct Field_ option to the Parent table’s ID field.
 
 You can now freely add what ever fields from the child record happy in the knowledge you’ll only have the one line per parent.
 
