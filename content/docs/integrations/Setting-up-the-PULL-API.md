@@ -115,6 +115,11 @@ Standard Agilebase quick filters can be used for preparing complex criteria on m
 
 When there is an error, the X-AB-error header will be set and JSON returned representing the error, as happens with the [POST API]({{<relref "Setting-up-the-POST-API#response">}}).
 
+> To ensure one customer's use doesn't consume an inordinate amount of resources, each customer can only process one pull API request at a time. Whilst a request is processing, any further incoming requests are held in a queue, then processed in order as the previous one finishes.
+> If at any time, a request has been held up for 60 seconds, further requests result in the 429 error and they are discarded.
+> 
+> If this occurs, there are a number of tactics you can use to shorten individual response times or make less requests - please get in touch if you need help.
+
 ### Generate API descriptions
 For developers who use the Agilebase API to create and update data within Agilebase from a third party product, there’s now a way to further automate the process.
 
