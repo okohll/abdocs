@@ -11,7 +11,7 @@ tags:
 To access these options, [edit a table]({{<relref "/docs/tables/adding-and-removing#editing-a-table">}}) and select 'tags and options'.
 
 ## Allow add
-If this is ticked (it is by default), users can add records to the table. Anyone with manage privileges on the table can add tables regardless.
+If this is ticked (it is by default), users can add records to the table. Anyone with develop privileges on the table can add tables regardless.
 
 ### Only from within tab
 If this is ticked, users can add records but only when accessing this table's form from within a tab of a parent record. This can help ensure that child records are always connected to a parent and aren't created as 'orphans'.
@@ -24,7 +24,7 @@ Cloning makes a simple copy of all data in the record. The contents of tabs are 
 Merging allows the user to select another record to merge with this one. This is commonly use to resolve a situation where there are duplicate records. The contents of one are merged into the other, then the first deleted. A wizard will guide the user through selecting which data to keep from each record. Child records from the deleted record will be re-attached to the one remaining. So for example if Organisation 1 containing two contacts is merged with Organisation 2 containing 3, a single organisation with five contacts will result.
 
 ## Allow remove
-(On by default). Allow records to be deleted by people with EDIT privileges as well as people with MANAGE privileges, who can always delete.
+(On by default). Allow records to be deleted by people with EDIT privileges as well as people with develop privileges, who can always delete.
 
 ## Allow share
 Showa button which allows links to individual records to be shared between users using email. Note - recipients still need a login and relevant privileges to see the record.
@@ -38,7 +38,7 @@ Records can be locked to prevent editing. You may like to do this based on crite
 
 To actually lock the record, a [workflow]({{<relref "/docs/workflows">}}) can be used.
 
-Locked records can be manually unlocked by someone with manage privileges on the table, but only one at a time.
+Locked records can be manually unlocked by someone with develop privileges on the table, but only one at a time.
 
 ### Email notifications
 When someone adds a comment to a record, when selecting recipients, they have the option to email those recipients, as well as adding the comment to the [comment stream]({{<relref "/docs/tiles">}}). Ticking this table option sets the default to send emails for any comment added to this table. Users can override this on an individual comment basis and recipients can override in their notification preferences.

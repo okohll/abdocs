@@ -51,7 +51,7 @@ This covers any time a view is opened or filtered, either by a user, or an API c
 * Count - if many similar requests or API calls (to a particular view) reach the server in quick succession, they will be amalgamated together into one log line. The count then shows the number of requests the log line refers to, otherwise it will be 1. If more than one, then the *rows*, *processing time*, *of which q time* and *bytes* will represent the totals for all requests
 
 #### Table schema changes
-These are changes made to a table structure by someone with [manage]({{<relref "../privileges">}}) privileges, such as adding or removing a field.
+These are changes made to a table structure by someone with [develop]({{<relref "../privileges">}}) privileges, such as adding or removing a field.
 * Date and time
 * Username
 * Table name
@@ -100,14 +100,14 @@ Finally, for background on what the data structure looks like and how tables are
 A quick overview of who is viewing data is shown in the administration interface for both tables and views.
 
 For a table
-1. Open a table, under the _Build Tables_ section of the lefthand navigation
-2. Go the the manage tab and click the _Usage_ icon
+1. Edit the table
+2. Open the _Recent Changes_ panel
 
 The report shows the number of times each user has viewed data from the table, per view. All views which contain any data from the table are included.
 
 For a view
-1. Open a view from the lefthand navigation
-2. Go to the manage tab and click the _Usage_ icon
+1. Edit the view
+2. Open to the _Recent Changes_ panel
 
 Similar data is show as for tables, but limited to the selected view.
 

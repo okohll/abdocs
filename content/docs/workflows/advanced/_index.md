@@ -11,9 +11,9 @@ tags:
 
 ## Logging
 
-If you are using the more advanced features of agilebase workflows then knowing where to look for logging information will become important. At the bottom fo the _workflow_ page of the _manage_ tab of a view is Logging information.
+If you are using the more advanced features of agilebase workflows then knowing where to look for logging information will become important. At the bottom fo the _workflow - edit records_ panel when editing a view, recent logs are shown.
 
-It will list the success and failures of past runs as well as the next time the workflow is scheduled to be run.  
+They will contain success and failures of past runs as well as the next time the workflow is scheduled to be run.  
 
 ![Viewing the logging history of a Workflow](/workflow-history.png)
 

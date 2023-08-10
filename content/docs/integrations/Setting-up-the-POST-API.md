@@ -9,7 +9,7 @@ tags:
 - v6
 ---
 
-Firstly, identify the table into which you wish to recieve incoming data. Go to that table's manage taband press 'options’. Tick 'Public form or API data entry’, which will create an API for the table.
+Firstly, identify the table into which you wish to receive incoming data. Edit that table and open the _API_ panel. Tick 'Public form or API data entry’, which will create an API for the table.
 
 To protect the system from spam input, we also suggest you tick 'Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.
 

@@ -52,7 +52,7 @@ Users are strongly encouraged to set up two factor authentication (2FA) using an
 
 Users without 2FA will be prompted to do so in the user interface and by email.
 
-2FA is mandatory for [administrators]({{<relref "#roles">}}) and necessary for a user to have before [manage]({{<relref "/docs/security-and-compliance/security-features/privileges">}}) privileges can be assigned to them. Users also need to have 2FA enabled in order to perform certain functions such as exporting to spreadsheet.
+2FA is mandatory for [administrators]({{<relref "#roles">}}) and necessary for a user to have before [develop]({{<relref "/docs/security-and-compliance/security-features/privileges">}}) privileges can be assigned to them. Users also need to have 2FA enabled in order to perform certain functions such as exporting to spreadsheet.
 
 When enabled, a user will be prompted for the 2FA code as well as their password when they log in from a device or location they haven't used in the past 30 days.
 

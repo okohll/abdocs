@@ -10,7 +10,7 @@ tags:
 ---
 Agilebase allows data to be imported from CSV (Comma Separated Variable) files. All popular spreadsheet software can save data in this format.
 
-Anyone with [**manage** privileges]({{<relref "/docs/security-and-compliance/security-features/privileges">}}) on a table can import data into it.
+Anyone with [**develop** privileges]({{<relref "/docs/security-and-compliance/security-features/privileges">}}) on a table can import data into it.
 
 In the tiles interface, load any view created from the table to import into. Scroll to the bottom of the rows and press the cloud import icon, then follow through the prompts.
 

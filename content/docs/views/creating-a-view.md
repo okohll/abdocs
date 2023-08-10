@@ -32,7 +32,7 @@ To clone an existing view
 4. Scroll down to the bottom of the panel and press the 'clone view' button
 
 ## Organising into a navigation structure
-On creating a view, its manage tab will appear. One of the first things it's useful to do is put the field in a tile - use the _Tile_ dropdown option to do so.
+On creating a view, its editing panel will open. One of the first things it's useful to do is put the field in a tile - use the _Tile_ dropdown option, under _properties_ to do so.
 
 Within a tile, the view can be added to a menu by editing the view name. Simply prefix the view name with a menu name and a dash. So for example, naming a view `contacts - all contacts` will create a 'contacts' menu containing the view 'all contacts' visible to users.
 

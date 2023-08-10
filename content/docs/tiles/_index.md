@@ -46,7 +46,7 @@ The available options are
 ## Adding views to a data tile
 Data tiles need to contain one or more views to be useful. If you have no tables or views yet, you may want to check out the [Quick Start Guides]({{<relref "guides">}}), or see [Views]({{<relref "/docs/views">}}) for full details on view creation.
 
-In a view's manage tab, choose the tile which you want to place it in from the _Tile_ dropdown.
+When editing a view, in the _properties_ panel, choose the tile which you want to place it in from the _Tile_ dropdown.
 
 ## Adding and removing tiles from users
 Users can themselves add tiles to their own homepages (unless they have customised UI options to prevent this). However, administrators can also do this for them.

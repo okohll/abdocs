@@ -31,7 +31,7 @@ Whenever a non-conformance is raised against a supplier, whether as a result of 
 
 As an Agilebase administrator, if you want to set up your own chaser, here’s how to do so. 
 
-1) Create a view with a list of people to chase. In the view’s _manage_ tab, under _Send_, choose _send email chasers_
+1) Create a view with a list of people to chase. When editing the view, open the _workflow - send emails_ panel. _email chaser_ should be selected by default
 
 2) Tick 'enable this chaser'
 

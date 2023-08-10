@@ -50,7 +50,7 @@ Here, we’ll use Catch Hook, which is generally recommended. It’s more effici
 
 ![Zapier catch hook](/zapier-catch-hook.png)
 
-When you press Continue, Zapier will provide you with a custom URL and some additional options which can be left unchanged. Copy this URL and record it in Agilebase: go to the view’s _manage_ tab, show the _Send_ panel and select _send data to a third party system using the API_. Paste the Zapier URL into the space provided:
+When you press Continue, Zapier will provide you with a custom URL and some additional options which can be left unchanged. Copy this URL and record it in Agilebase: edit the view and open the _Use API_ panel. Paste the Zapier URL into the _Push URL_ space provided:
 
 ![Zapier aB push](/zapier-ab-push.png)
 

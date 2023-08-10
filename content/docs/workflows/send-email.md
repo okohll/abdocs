@@ -32,7 +32,9 @@ If you have any difficulty thinking up what criteria you need for your purpose, 
 
 ## Step 4: fill in an email template
 
-In the view’s _manage_ tab, under _send_, fill in the subject, to and body of the email. To merge in data from the view, use field names in lowercase surrounded by curly brackets. A typical template would look something like this:
+1) Edit the view and open the _workflow - send emails_ panel
+2) Select _email notification_
+3) Fill in the subject, to and body of the email. To merge in data from the view, use field names in lowercase surrounded by curly brackets. A typical template would look something like this:
  
 ![Workflow actions that alter data](/send-email-new.png)
 
@@ -59,7 +61,7 @@ HTML emails can now be sent by apps built on the Agilebase platform.
 That means that your company can send out branded, rich-text emails (with attachments) to customers, suppliers and anyone else you deal with.
 
 ### Setting up
-Set up an email notification workflow as normal (in a view, use the manage -> send tab).
+Set up an email notification workflow as normal (when editing a view, use the _workflow - send emails_ panel).
 
 Start the body of the email with `<html>` and end with `</html>`.
 

@@ -87,9 +87,6 @@ With this option, just the JSON will be returned. This is the usual case require
 #### return=posted_json
 Optional, if this is included, the return content will be JSON including the ID of the record as well as the full content of the data.
 
-#### cache_seconds=[seconds]
-How long to cache the results for (default 600 seconds i.e 10 minutes). Only un-filtered results are cached.
-
 #### unencode_html=true
 Causes characters which would normally be encoded as HTML entities (e.g. `&` -> `&amp;`) to be returned unencoded
 

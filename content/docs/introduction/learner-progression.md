@@ -51,14 +51,14 @@ A citizen developer level 2 can
 * create [tiles]({{<relref "/docs/tiles">}}) and delete tiles they've added themselves
 
 ## Citizen Developer Level 3
-A Software Architect (see below) can, at their discretion, assign a citizen developer 3 'manage' privileges on a table (or tables).
+A Software Architect (see below) can, at their discretion, assign a citizen developer 3 'develop' privileges on a table (or tables).
 
 That allows them to
 * add [fields]({{<relref "/docs/fields">}}) to those table, excluding referenced fields
 * remove fields that they themselves have added (not others)
 * edit the basic properties of any field in those tables, e.g. the list of options in a dropdown box
 
-Additionally, actions not related to having manage privileges on a particular table are
+Additionally, actions not related to having develop privileges on a particular table are
 * edit the basic properties of any regular view. However, workflow, API and some other types of system view will be read-only
 
 ## Junior Software Architect
@@ -79,7 +79,7 @@ As well as building and disassembling applications, software architects can set 
 * Edit company level settings (e.g. whether to enforce 2FA)
 * Change table [sensitive and personal data]({{<relref "/docs/tables/sensitive-data">}}) settings (GDPR)
 * View and controls users' learner progression levels and 'budget' limits
-* Assign any privileges up to the highest 'manage' level
+* Assign any privileges up to the highest 'develop' level
 
 
 

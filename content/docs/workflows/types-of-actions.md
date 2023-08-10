@@ -17,7 +17,7 @@ Actions fall in to two types:
 * Those that send data to another system. 
 
 ### Alter Data
-Use the dropdown within the _workflow_ section of the _manage_ tab of the view to control the action that will be applied to every record in the view.
+Use the dropdown within the _workflow - edit records_ panel when editing the view to control the action that will be applied to every record in the view.
 Options are:
 1) Create record - This will create a new item in the nominated table
 2) Update record - This will alter the values of the record.

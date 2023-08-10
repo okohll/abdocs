@@ -10,7 +10,7 @@ tags:
 
 ## How to chain Workflows
 
-To set the next workflow in a chain, simply set the appropriate view in the Chain workflow section of the _workflow_ page of the _manage_ tab. The next workflow in the chain will run as soon as the previous finishes.
+To set the next workflow in a chain, simply set the appropriate view in the Chain workflow section of the _workflow - edit records_ panel when editing a view. The next workflow in the chain will run as soon as the previous finishes.
 
 ![Configuring the PULL API](/workflow-chain.png)
 

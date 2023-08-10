@@ -21,7 +21,7 @@ In order for a user to be allowed to export to spreadsheet, a number of critieri
     - click _roles_ and select the role you want
     - tick _allow exports_
 
-A user with [manage privileges]({{<relref "privileges">}}) on the view's parent table can bypass criteria 2 and 3. This privilege is not commonly applied to normal users.
+A user with [develop privileges]({{<relref "privileges">}}) on the view's parent table can bypass criteria 2 and 3. This privilege is not commonly applied to normal users.
 
 ## Exporting
 A user with the ability to export can do so by opening the view, clicking the export icon near the top right and selecting _export_ from the options in the menu.
