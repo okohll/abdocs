@@ -28,4 +28,6 @@ Finally, in the special case when a grandchild tab's tab view contains the ID of
 
 * supplier approval -> risk assessment -> risk assessment scores.
 
+![grandchild rows](/grandchild-table.png)
+
 When the user looks at a supplier approval record, the risk assessment summary and scores can both be seen at the same time.

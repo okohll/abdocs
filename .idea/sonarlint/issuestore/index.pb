@@ -29,3 +29,33 @@ e
 5content/docs/workflows/advanced/workflow-on-create.md,c/5/c558ef707381b2aac9b11ca8ec609308c00b76f8
 f
 6content/docs/workflows/advanced/recursive-workflows.md,4/c/4c51cf81623cbfb44a7cc79ed68aec87672b5dd5
+]
+-content/docs/advanced-usage/build-patterns.md,5/4/546bcf42337031c8d1c6b6896336dcc9567a0cb6
+\
+,content/docs/integrations/complex-example.md,1/1/119fe282ab945cde84ec7018e5cee2a951ad1e19
+g
+7content/docs/fields/field-options/text-field-options.md,4/f/4fa78011f0d8d6fc1cc899dede7cffadcadfc895
+^
+.content/docs/charting/business-intelligence.md,1/7/17f401ec06cf2992b06d200e626aef70a76086d5
+O
+content/docs/calendar/_index.md,b/7/b7a2dc5ec65e676438b079b3f6c239435b5db8ab
+R
+"content/docs/adding-help/_index.md,3/6/3626816e749c15ed82de9ca7790b5a411f97572c
+_
+/content/docs/integrations/external-reporting.md,d/f/dfddb571357981e38c409e75dd822b30c8728342
+d
+4content/docs/integrations/Setting-up-the-PULL-API.md,a/d/ade355bc618d80162e77f37205716b26d733376c
+O
+content/docs/charting/_index.md,1/5/158ea33851954bebe0c3e0c9a8dcbd00f1737592
+V
+&content/docs/integrations/importing.md,7/8/781b4b63d1f6f2b56622e52c00ad5da18850ac4d
+`
+0content/docs/integrations/push-example-zapier.md,9/8/989eafc7d7e9e805b222a6e4e5162cc88e0df162
+d
+4content/docs/integrations/Setting-up-the-POST-API.md,3/2/3297d41e563b4ab3982c676f4a1977bfb8d26315
+`
+0content/docs/introduction/learner-progression.md,f/f/ff1a692dfa34e194eef924c85375e3d832808070
+s
+Ccontent/docs/security-and-compliance/security-features/exporting.md,a/3/a331329c8df8e915bc803773eb3eec212fa2b165
+Š
+Zcontent/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting.md,f/1/f1724d61c55b6f062827786dac51a8a87a7210f8
