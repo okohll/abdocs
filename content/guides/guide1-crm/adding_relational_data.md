@@ -37,7 +37,7 @@ We will link to two tables, the organisation they work for and the site they pri
 
 ## Adding tabs
 Viewing and adding data in isolation doesn’t feel very natural. What we want to do is look at an organisation’s records and see its list of contacts there and then. One way Agilebase does this is through adding ‘Tabs’ to a record.
- If you want to know more visit or documentation about [tabs]({{<relref "docs/tables/hierarchy-navigation/tabs/ ">}})
+ If you want to know more visit or documentation about [tabs]({{<relref "docs/tables/hierarchy-navigation/tabs">}})
 
  [guide 2 - video 4]{{<youtube id="nRSQ3IARLVI">}}
 
