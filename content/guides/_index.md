@@ -9,7 +9,9 @@ menu:
 ---
 There's lots to get your teeth into with Agilebase, but this guide will give you a quick start.
 
-This section is being revised, new content will be released shortly
+
+
+
 
 
 

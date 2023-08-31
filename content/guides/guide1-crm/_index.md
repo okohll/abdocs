@@ -5,5 +5,6 @@ type: docs
 weight: 10
 description: "Building a number of applications to form a CRM system"
 tags:
-- Citizen Developer level 2
+- Junior Software Architect
+- Software Architect
 ---

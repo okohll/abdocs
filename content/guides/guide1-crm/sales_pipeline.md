@@ -31,7 +31,7 @@ A dropdown field is as simple to add as any other field type. However there are 
 3. Autofilling with a list of users. [Click here for more info]({{<relref "/docs/fields/field-options/text-field-options/#lists-of-users">}})
 
 In this stage of our guide we are going to add the stages a typical Sales opportunity will pass through.
-[step 3 - video 1]{{<youtube id="1PzY64hPWlE">}}
+[Guide 1.3 - video 1]{{<youtube id="1PzY64hPWlE">}}
 
 ## Creating a Kanban view
 We can now create a view to show all the Sales Opportunities we will be mansaging.
@@ -39,7 +39,7 @@ This is the basically the same as we’ve done before
 [Click here to see how add a view]({{<relref "/guides/guide1-crm/tasklist/#adding-views-that-show-all-the-tasks-that-have-been-createds">}})
 Before We set the interface option to be "Cards in Column" its important to move the controlling field to the top of the list. In this case we want ther Kanban board to be controlled by Status, therefore it should be the first DropDown field in the view. 
 
-[step 3 - video 2]{{<youtube id="ydCtGAdgqjk">}}
+[Guide 1.3 - video 2]{{<youtube id="ydCtGAdgqjk">}}
 
 ## Adding Graphs!
 Sales teams love graphs. After all, a picture says a thousand words, and agileBase has an easy to use graphing facility to help you show off the insights your data contains.
@@ -47,4 +47,4 @@ Creating graphs can be done by any user, but it usually helps if the developers 
 
 This video demonstrates adding a pie chart to show the number of Sales Opportunites by Source, and also a column graph to show volume of sales enquires over time. It also shows the advanced option of using Stcaking to add more insights.
 
-[step 3 - video 3]{{<youtube id="3FOOk8QS5RE">}}
+[Guide 1.3 - video 3]{{<youtube id="3FOOk8QS5RE">}}
