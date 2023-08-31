@@ -28,7 +28,7 @@ Fields we will need: Organisation(relation to Organisation) Title (text), Detail
 A dropdown field is as simple to add as any other field type. However there are some considerations about how it is configured to help the user experience. 
 1. Having an initial comma in the list means the default value will be blank. 
 2. Adding an initial number to each option in the list is very useful to imply an order (an override the default alphabetical ordering).
-3. Autofilling with a list of users. [Click here for more info]({{<relref "/docs/fields/field-options/text-field-options/#lists-of-users">}})
+3. Autofilling with a list of users. [Click here for more info]({{<relref "/docs/fields/field-options/text-field-options#lists-of-users">}})
 
 In this stage of our guide we are going to add the stages a typical Sales opportunity will pass through.
 [Guide 1.3 - video 1]{{<youtube id="1PzY64hPWlE">}}
@@ -36,7 +36,7 @@ In this stage of our guide we are going to add the stages a typical Sales opport
 ## Creating a Kanban view
 We can now create a view to show all the Sales Opportunities we will be mansaging.
 This is the basically the same as we’ve done before
-[Click here to see how add a view]({{<relref "/guides/guide1-crm/tasklist/#adding-views-that-show-all-the-tasks-that-have-been-createds">}})
+[Click here to see how add a view]({{<relref "/guides/guide1-crm/tasklist#adding-views-that-show-all-the-tasks-that-have-been-createds">}})
 Before We set the interface option to be "Cards in Column" its important to move the controlling field to the top of the list. In this case we want ther Kanban board to be controlled by Status, therefore it should be the first DropDown field in the view. 
 
 [Guide 1.3 - video 2]{{<youtube id="ydCtGAdgqjk">}}
