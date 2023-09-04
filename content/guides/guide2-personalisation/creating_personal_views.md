@@ -21,7 +21,7 @@ A good example would be making your own view of a list of organisations that is 
 Navigate to the view you wish to personalise
 Then simply toggle the development mode icon that you’ll find top left of the page.
 You can see some new icons on the user interface.
-![Edit mode enabled - new icons now visible](/view-edit-mode)
+![Edit mode enabled - new icons now visible](/view-edit-mode.png)
 
 ### Adding a field
 Look at the far right of the table headers, there should now be a plus button.

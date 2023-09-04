@@ -20,7 +20,7 @@ This short guide is going to introduce to you graphing features that becomes ava
 Navigate to the view containing the data for your chart
 As a Citizen Developer level 1 you are able to add charts to your own views. 
 You don’t need to be in developer mode, simply click the graph icon top right.
-![Location of the graph button](/graph-button)
+![Location of the graph button](/graph-button.png)
 
 ### Setting up the chart
 Press ‘add chart or map’ and work your way through the steps.

@@ -125,7 +125,7 @@ Go to the send emails option and choose the chaser option.
 Click the first tickbox and enable the chaser.
 The system does a lot of the heavy lifting for you, adding fields, and creating the calcs and views needed for it to work, but dont forget to check what time of day you wish the chaser to run.
 
-![List of fields created and added by the chaser](/workflow_chaser)
+![List of fields created and added by the chaser](/workflow_chaser.png)
 
 You can see in the screeshot above how the system has created several calculations setting things like ‘Chase every’ and ‘escalate after’ and ‘escalate to’ which the system references to control the way the chaser works. 
 For more information please visit [docs sending a chaser]({{<relref "/docs/workflows/send-chaser/">}}) 
@@ -160,7 +160,7 @@ The correct way to write SQL for Text fields involves using single quotes to hol
 We also want to set WHO closed the Sales Op. This is another text field but this time the destination field is called ‘closed by’.”
 We can use a special bit of SQL called a variable to find out who is logged in.
 
-![List of variables avaialble to a calculation](/calculation_variables)
+![List of variables avaialble to a calculation](/calculation_variables.png)
 
 From the list above we can see we need our calculation text to be 
  ```
@@ -181,13 +181,13 @@ Table to Use: Sales Opportunities
 View to use:  ‘Sales Op WON’
 Move it to right place, probably near the bottom, and see how it looks
 
-### Hiding the butotn when we dont want it!!!
+### Hiding the button when we dont want it!!!
 First of all try pressing the button
 You can see that the status is now Won
 However, at the moment, even though the button has been pressed and we’ve set the status to Won we can still press the button again!!!
 To stop this we need to apply a visibility rule to that Button to hide it. In this case we want the button to be hidden if the Sales opportunity is already marked as Won. 
 
-![Visibility rule added to the field](/button_visibility_rule)
+![Visibility rule added to the field](/button_visibility_rule.png)
 
 Go back to Edit Sales opportunity table, show the list of fields and click to edit the BTN field
 Scroll down a little and you can see the section about Field Visibility.
