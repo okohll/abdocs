@@ -7,6 +7,8 @@ menu:
   main:
     weight: 100
 ---
+**MORE COMING SOON
+
 If you just want to watch the full videos of our guides...
 
 
@@ -16,6 +18,7 @@ If you just want to watch the full videos of our guides...
 [guide 1.4]{{<youtube id="k74Jh8Jdx60">}}
 
 ## Guide 2 - Personalisation
+
 
 
 
