@@ -3,9 +3,6 @@ title: "Full Video Guides"
 date: 2023-09-12T13:00:00+01:00
 type: docs
 weight: 100
-menu:
-  main:
-    weight: 100
 ---
 **MORE COMING SOON
 
