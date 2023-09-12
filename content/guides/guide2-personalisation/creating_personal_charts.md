@@ -33,5 +33,5 @@ For the Y-axis we want to know how many, which is a ‘Count’ of each Organisa
 We can skip advanced settings and choose an appropriate Chart type. In this example ‘Packed Columns”
 Finally we can change the name of the chart, and press save. 
 Hopefully a picture says a thousand words as we look at the graph!
-For more information about graphs in agilebase please have a look at [docs charting]({{<relref "/docs/charting/">}}) 
+For more information about graphs in agilebase please have a look at [docs charting]({{<relref "/docs/charting">}}) 
 
