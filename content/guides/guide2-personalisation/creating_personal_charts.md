@@ -37,7 +37,7 @@ Press ‘add chart or map’ and work your way through the steps.
 5) We can skip advanced settings and choose an appropriate Chart type. In this example ‘Packed Columns”
 6) Finally we can change the name of the chart, and press save. 
 
-7) Hopefully a picture says a thousand words as we look at the graph!
+Hopefully a picture says a thousand words as we look at the graph!
 
 For more information about graphs in agilebase please have a look at [docs charting]({{<relref "/docs/charting">}}) 
 
