@@ -17,6 +17,8 @@ tags:
 The guide is going to introduce to you some of the features that become available to you once you’ve been given the role of Citizen Developer. In essence, you now have the power to make small tweaks to the system that just affect yourself, helping you customise how it works and hopefully making it a more efficient and enjoyable process.
 A good example would be making your own view of a list of organisations that is focused on the ones where you are the owner
 
+[guide 2 - video 1]{{<youtube id="D_400LI_O_g">}}
+
 ## Introducing Devloper Mode 
 Navigate to the view you wish to personalise
 Then simply toggle the development mode icon that you’ll find top left of the page.
@@ -55,3 +57,10 @@ Now click on "Properties and Options"
 Simply enter your new title in the "view name" input box.
 **TIP** You can use a " - " to help organise how the views are diaplyed in the menu.
 So it may make sense to rename this view to "Organisations - MY", to have our view appear in the existing Organisations menu item.
+
+### Changing the Default View of a tile
+Rather than having to swap to “my” view everytime I click in to the tile, it wuld be more efficient if changed the default to be My personal view.
+On the front screen, click your avatar and choose tile settings.
+Each of the tiles will now have a cog on it.
+On the CRM tile we can click it and change our default view to be my personalised one.
+From now on, when you click on the CRM tile it goes straight to the most useful view!

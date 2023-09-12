@@ -22,6 +22,8 @@ tags:
 ### Introduction
 This part of the guide starts to introduce some more powerful and advanced features of the agileBase system. It looks at how we can give users of our basic CRM some power ups that make it a better user experience. Let’s continue with our Sales Opportunities and introduce the concept of cross referencing data before adding an automated email ‘reminder’ and a button to the user interface…
 
+[guide 1.5 - video 1]{{<youtube id="2fCRaTfsE60">}}
+
 ## Getting things ready
 As a system starts to get bigger it helps to organise the "behind the scenes" views as much as the tiles and views that out users interact with. It is good practice to create a collection of System Tiles where you can file the "behind the scenes" work.
 We would suggest the following tiles: 
@@ -55,7 +57,6 @@ Close the edit, navigate to a Sales opportunity record and see how it looks
 **TIPS** You have a little bit of control how it appears on the form, by choosing ‘Tabular display’ and or the drop down ‘display of fields’
 
 
-[guide 1.5 - video 1]{{<youtube id="?????">}}
 
 ## Automations - sending an email
 Our second example is going to demonstrate the power of Workflows. We can configure the system to be working when we’re not! We will now add an internal ‘Reminder’ email that will prompt the owner of our Sales opportunities to update their progress.
@@ -64,6 +65,8 @@ You can read about this facility at [docs workflows - sending an email]({{<relre
 $$
 IMPORTANT NOTE - Whilst Agilebase can be used to send emails, it should NOT be used for marketing purposes. Rather it should be used as a method to notify people about data associated to the system. In this instance we are going to remind people that they have ‘Sales opportunities requiring updates’
 $$
+
+[guide 1.5 - video 2]{{<youtube id="CG4y7jclRK8">}}
 
 ### 1. Starting from the view of Tiles, enter the build interface.
 We first need to create the Workflow that will do all the work for us.
@@ -111,12 +114,13 @@ We can also see evidence of the email being sent in the Logs, recent messages se
 
 Now don't forget to go back and remove the Row limit!!!”
 
-[guide 1.5 - video 2]{{<youtube id="????">}}
 
 
 ## A look at the "Chaser"
 The email notification option usually sends a single email per record. The Chaser is a built in feature that is preconfigured to send repeat emails. This is a bigger, more feature rich version of what we just setup. Again, it’s something that runs in the background.
 It’s specifically aimed at automating those emails you send to 3rd parties chasing for specific information. But can also be used for internal chasers... which is what we are going to demonstrate with a chaser for Outstanding Tasks”
+
+[guide 1.5 - video 2a]{{<youtube id="bAF7T_Ip2eA">}}
 
 ### Setting Up a chaser
 Go in to development mode and find the Tasks table.
@@ -137,7 +141,7 @@ And add the appropriate filters which in this case are when the “Due” date h
 Sepping back and looking at the data returned by the view we can see in its current form the chaser will send an email every 8 days, and after 5 attempts will stop but as we have NOT set the escalate to field no one will be notified that this task has failed to be completed!!!
 
 
-[guide 1.5 - video 3]{{<youtube id="????">}}
+
 
 ## Adding a button to a form
 In this third example we want to add a button to the user interface so that when the Sales Opportunity is won, we want that button to set the status AND log who did it AND when!
@@ -146,6 +150,8 @@ Start from the Tiles interface, and enter the build interface.
 We first need to build a Workflow that will do the actual work of setting the data for us.
 Find the Sales Opportunity table, click to Edit, navigate to Names and Views, and Create a new view (with out all fields) in the Tile called ‘System - Workflows’. We suggest a name like “Sales opportunity WON”
 N.b. We have NOT prefixed this workflow ad the Name of the view will what the User sees on the form's interface
+
+[guide 1.5 - video 3]{{<youtube id="QkkFtW2CpuU">}}
 
 ### 1. Setting DATA 
 For our workflow to set data we need to create a calculation. 
@@ -193,7 +199,6 @@ Go back to Edit Sales opportunity table, show the list of fields and click to ed
 Scroll down a little and you can see the section about Field Visibility.
 Simply set the filter required - In our case this means the status value is less than 4 as seen in the screenshot above.
 
-[guide 1.5 - video 4]{{<youtube id="????">}}
 
 
 ## Other types of Automations

@@ -16,6 +16,8 @@ tags:
 ### Introduction
 This short guide is going to introduce to you graphing features that becomes available to you once you’ve been given the role of Citizen Developer.
 
+[guide 2 - video 2]{{<youtube id="wxbsluxCkCU">}}
+
 ## Adding a Chart 
 Navigate to the view containing the data for your chart
 As a Citizen Developer level 1 you are able to add charts to your own views. 

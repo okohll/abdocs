@@ -17,6 +17,7 @@ tags:
 AgileBase uses the classic concept of Roles to help you control the access users have to the system you are building.
 A classic metaphor would be the manager of an office has the keys to the building, whilst the staff do not. The person acting as the manager may change overtime, but the permission and privileges (in this case having keys) does not!
 
+[guide 1.6 - video 1]{{<youtube id="ybixmV1TdVA">}}
 
 ## Creating Roles
 For our scenario of a Basic CRM we will model the simple situation that all users will need to access contact information, but only some users will log tasks. Similarly, only some users will access sales opportunities.
@@ -46,6 +47,8 @@ When you add a tile you are prompted to choose the default view. It is an import
 ## Advanced Access Control
 Sometimes we may find a situation where access control can not be broken down to complete tables, but instead we want to have control on a field by field basis. In this instance we can use field visibility rules combined with the roles system. 
 In our example scenario we have a role called “HR” and we only want ONLY users with this role to see a Date of Birth field on the Contact record.
+
+[guide 1.6 - video 1]{{<youtube id="MEFep-NFl1o">}}
 
 We need to create a view that will control the visibility of the field, so we create a view in the "System Visibility Tile”
 ### Field Visibility and User Roles
