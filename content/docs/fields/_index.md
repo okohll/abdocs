@@ -17,7 +17,7 @@ There are various types of fields and field options which this section will cove
 2. Select the table to add a field to
 3. Click on the pencil icon above the record, if necessary, to edit the table
 4. From the controls at the top of the list of existing fields:
-    - Type in a field name, optional description, choose a type and press the _Create Field_ button
+    - Type in a field name, optional description, choose a type and press the _Add_ button
 6. Optionally, drag and drop the field to a desired location relevant to other fields
 
 ![Adding a table field](/adding-a-table-field.png)

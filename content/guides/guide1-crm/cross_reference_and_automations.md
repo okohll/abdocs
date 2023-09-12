@@ -60,7 +60,7 @@ Close the edit, navigate to a Sales opportunity record and see how it looks
 
 ## Automations - sending an email
 Our second example is going to demonstrate the power of Workflows. We can configure the system to be working when we’re not! We will now add an internal ‘Reminder’ email that will prompt the owner of our Sales opportunities to update their progress.
-You can read about this facility at [docs workflows - sending an email]({{<relref "/docs/workflows/send-email/">}})  
+You can read about this facility at [docs workflows - sending an email]({{<relref "/docs/workflows/send-email">}})  
 
 $$
 IMPORTANT NOTE - Whilst Agilebase can be used to send emails, it should NOT be used for marketing purposes. Rather it should be used as a method to notify people about data associated to the system. In this instance we are going to remind people that they have ‘Sales opportunities requiring updates’
@@ -132,7 +132,7 @@ The system does a lot of the heavy lifting for you, adding fields, and creating 
 ![List of fields created and added by the chaser](/workflow_chaser.png)
 
 You can see in the screeshot above how the system has created several calculations setting things like ‘Chase every’ and ‘escalate after’ and ‘escalate to’ which the system references to control the way the chaser works. 
-For more information please visit [docs sending a chaser]({{<relref "/docs/workflows/send-chaser/">}}) 
+For more information please visit [docs sending a chaser]({{<relref "/docs/workflows/send-chaser">}}) 
 
 At a bare minimum you will need to change who we are sending the email to.
 Edit the “To” calculation and change it to be the “assigned to” user.
@@ -204,6 +204,6 @@ Simply set the filter required - In our case this means the status value is less
 ## Other types of Automations
 There are several other types of automations... we’ve already seen sending emails in this guide, but you can also create new records and generate PDFs. If you are interested please take a look at our other guides linked below and the associated documentation
 
-[List of differnt types of workflows]({{<relref "/docs/workflows/send-chaser/">}}) 
+[List of different types of workflows]({{<relref "/docs/workflows/send-chaser">}}) 
 
 

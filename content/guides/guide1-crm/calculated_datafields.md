@@ -37,7 +37,7 @@ As you can see the system has correctly identified that count is something known
 If you click back on Fields you should see the list and how calculations are highlighted in purple to distinguish from regular fields taken from a table definition. Lets drag our calculation near the front”
 Move the calc.
 Closing the edit allows us to see our results.
-This is a very simple example of an SQL calculation. For more examples as well as a link to the underlying Postgres documentation visit - [docs- calculation]({{<relref "/docs/views/calculations/examples/">}})
+This is a very simple example of an SQL calculation. For more examples as well as a link to the underlying Postgres documentation visit - [docs- calculation]({{<relref "/docs/views/calculations/examples">}})
 
 [guide 1.4 - video 1]{{<youtube id="kxsIr6yHlNg">}}
 

@@ -55,3 +55,23 @@ s
 Ccontent/docs/security-and-compliance/security-features/exporting.md,a/3/a331329c8df8e915bc803773eb3eec212fa2b165
 Š
 Zcontent/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting.md,f/1/f1724d61c55b6f062827786dac51a8a87a7210f8
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+N
+content/docs/tables/options.md,9/1/9193be03e1acf177d580f468a128af53a83cdb0d
+S
+#assets/scss/_variables_project.scss,7/8/78a22fd6edee9064f0b473df1378389f9f90a3a2
+_
+/content/guides/guide2-personalisation/_index.md,4/b/4bcc42ffcd9744c18888057ad5269b7c1c4526c2
+[
++content/guides/guide1-crm/sales_pipeline.md,f/b/fb3c60032c9c53f47c2841a0c0998c33dc8606f3
+C
+content/_index.html,6/7/677474fa6727c0479c458e13aa5a562c324b6a0f
+c
+3content/guides/guide1-crm/adding_relational_data.md,9/7/9744a12c4a899a6130bad73ccc83d5b6571dad12
+T
+$layouts/partials/hooks/head-end.html,5/f/5f7151666b4110be0d2a7a73f4fdb8c727bd4684
+S
+#content/guides/guide1-crm/_index.md,a/3/a33a0c27cac0025c468cc9be8b7ca4aae75f4aae
+M
+content/docs/fields/_index.md,c/f/cf1854eb0ba65e3361f7182da4a40574ecbb5a02
