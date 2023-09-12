@@ -31,6 +31,8 @@ To clone an existing view
 3. Open the 'properties and options'
 4. Scroll down to the bottom of the panel and press the 'clone view' button
 
+[snippet video  - cloning a view]{{<youtube id="zA2EEW7YLsA">}}
+
 ## Organising into a navigation structure
 On creating a view, its editing panel will open. One of the first things it's useful to do is put the field in a tile - use the _Tile_ dropdown option, under _properties_ to do so.
 
