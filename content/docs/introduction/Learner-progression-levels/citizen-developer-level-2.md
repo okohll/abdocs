@@ -27,11 +27,11 @@ A citizen developer level 2 can
 * create [tiles]({{<relref "/docs/tiles">}}) and delete tiles they've added themselves
 
 ## Useful Links
-Learn how to add functionality by watching our guide [Creating a basic task list]({{<relref "guides/guide1-crm/tasklist/">}})
+Learn how to add functionality by watching our guide [Creating a basic task list]({{<relref "guides/guide1-crm/tasklist">}})
 
 For more information about:
-1. [Relational Database Concepts]({{<relref "/docs/tables/relational-database-concepts/	">}})	
-2. [Adding and editing tables]({{<relref "/docs/tables/adding-and-removing/">}})
-3. [What is a view]({{<relref "docs/views/">}})	
+1. [Relational Database Concepts]({{<relref "/docs/tables/relational-database-concepts">}})	
+2. [Adding and editing tables]({{<relref "/docs/tables/adding-and-removing">}})
+3. [What is a view]({{<relref "docs/views">}})	
 
 COMING SOON How to control the Interface
