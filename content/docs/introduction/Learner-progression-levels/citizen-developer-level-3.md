@@ -1,5 +1,5 @@
 ---
-title: "Citizen Developer Level 2"
+title: "Citizen Developer Level 3"
 date: 2023-10-03T13:00:00+01:00
 type: docs
 weight: 40
