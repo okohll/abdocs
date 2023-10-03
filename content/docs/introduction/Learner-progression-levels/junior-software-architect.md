@@ -1,5 +1,5 @@
 ---
-title: "Citizen Developer Level 2"
+title: "Junior Software Architect"
 date: 2023-10-03T13:00:00+01:00
 type: docs
 weight: 50
