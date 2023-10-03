@@ -1,0 +1,58 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agilebase docs – charts</title>
+    <link>https://docs.agilebase.co.uk/tags/charts/</link>
+    <description>Recent content in charts on Agilebase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 31 Aug 2023 13:00:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/tags/charts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Guides: 2. Personalising our CRM by adding charts</title>
+      <link>https://docs.agilebase.co.uk/guides/guide2-personalisation/creating_personal_charts/</link>
+      <pubDate>Thu, 31 Aug 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide2-personalisation/creating_personal_charts/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;  Introducing building new charts&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; To be a competent user of agilebase, with Citizen Developer level 1 (or higher) enabled&lt;/p&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;This short guide is going to introduce to you graphing features that becomes available to you once you’ve been given the role of Citizen Developer.&lt;/p&gt;
+&lt;p&gt;[guide 2 - video 2]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/wxbsluxCkCU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;adding-a-chart&#34;&gt;Adding a Chart&lt;/h2&gt;
+&lt;p&gt;Navigate to the view containing the data for your chart&lt;/p&gt;
+&lt;p&gt;As a Citizen Developer level 1 you are able to add charts to your own views.&lt;/p&gt;
+&lt;p&gt;You don’t need to be in developer mode, simply click the graph icon top right.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/graph-button.png&#34; alt=&#34;Location of the graph button&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;setting-up-the-chart&#34;&gt;Setting up the chart&lt;/h3&gt;
+&lt;p&gt;Press ‘add chart or map’ and work your way through the steps.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Add data for the x-axis&lt;/li&gt;
+&lt;li&gt;For this example we can show the distribution in age of the Organisation records.&lt;/li&gt;
+&lt;li&gt;We can therefore choose Incorporation Date for the X axis, specifically &amp;lsquo;by Year&amp;rsquo;.&lt;/li&gt;
+&lt;li&gt;For the Y-axis we want to know how many, which is a ‘Count’ of each Organisation record.&lt;/li&gt;
+&lt;li&gt;We can skip advanced settings and choose an appropriate Chart type. In this example ‘Packed Columns”&lt;/li&gt;
+&lt;li&gt;Finally we can change the name of the chart, and press save.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Hopefully a picture says a thousand words as we look at the graph!&lt;/p&gt;
+&lt;p&gt;For more information about graphs in agilebase please have a look at &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting/&#34;&gt;docs charting&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

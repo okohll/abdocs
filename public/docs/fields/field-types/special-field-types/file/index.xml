@@ -1,0 +1,197 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agilebase docs – File fields</title>
+    <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/</link>
+    <description>Recent content in File fields on Agilebase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 08 May 2020 16:40:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Document templates</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/</link>
+      <pubDate>Fri, 08 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Document templates in Agilebase are typically used to create output that needs to be printed or emailed, for example form letters and especially anything that needs to be branded. They can be used for some quite complex and large documents, for example one customer uses them to create branded multi-page reports that are sold to customers, complete with custom fonts, layouts, images and colours.&lt;/p&gt;
+&lt;p&gt;The same templating system is used for both generating documents (which can be done automatically with a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-document-generator/&#34;&gt;workflow&lt;/a&gt; or manually) and displaying output to be printed.&lt;/p&gt;
+&lt;p&gt;Each template is attached to a view and given a name.&lt;/p&gt;
+&lt;h2 id=&#34;creating-a-template&#34;&gt;Creating a template&lt;/h2&gt;
+&lt;p&gt;Templates can be created using the built-in WYSIWYG editor, which allows simple presentation controls, like adding tables, headings and text formatting.&lt;/p&gt;
+&lt;p&gt;Alternatively and for complex needs, templates can be created manually. The templating language is &lt;a href=&#34;https://velocity.apache.org/&#34;&gt;Apache Velocity&lt;/a&gt;, which allows concepts such as variables, loops etc. to be used, i.e. simple programming features. The output format is HTML.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Find or create a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt; which contains the data to be included in your output document. The idea is that each row in the view will correspond to one document, with the data from that row being merged in. The view needs to be created from the parent table of the file field created for the output document&lt;/li&gt;
+&lt;li&gt;Toggle to development mode and click the top left pencil icon to edit the view&lt;/li&gt;
+&lt;li&gt;Load the &amp;lsquo;workflow - generate PDFs&amp;rsquo; panel&lt;/li&gt;
+&lt;li&gt;Click CREATE to create a new blank template, then EDIT to edit it&lt;/li&gt;
+&lt;li&gt;Tick a file field to assign the template to that file&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Then a user will see a &amp;lsquo;generate document&amp;rsquo; button when they edit a record from the table, allowing them to generate a PDF from the template.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Existing templates can also be edited or downloaded. Manually created templates with complex features such as variable setting and looping can&amp;rsquo;t be edited using the WYSIWYG editor, but can be downloaded, edited manually then re-uploaded.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/document_generation.png&#34; alt=&#34;Template creation&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;filename&#34;&gt;Filename&lt;/h3&gt;
+&lt;p&gt;The filename of the generated document will be comprised of two parts, separated by a dash:
+a) the name of the template which you created as above
+b) the value of the first field in the view above&lt;/p&gt;
+&lt;p&gt;Additionally if multi-tenanting is active, then the name of the tenant associated with the record the document is being generated in will also be added, preceded by a dash.&lt;/p&gt;
+&lt;h2 id=&#34;including-data&#34;&gt;Including data&lt;/h2&gt;
+&lt;p&gt;Each field in the view (included calculations), or parent table, can be merged in to the template by referencing the field name, preceded by a dollar sign. For convenience, a list of available fields is listed below the WYSIWYG editor, for easy copying and pasting into the template.&lt;/p&gt;
+&lt;p&gt;For those manually creating templates, a field name becomes a variable to reference by&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;writing it in lower case&lt;/li&gt;
+&lt;li&gt;replacing spaces with underscores (_)&lt;/li&gt;
+&lt;li&gt;removing all characters that are neither letters nor numbers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here&amp;rsquo;s an example of a template being updated in the WYSYWIG editor:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/template-editor.png&#34; alt=&#34;Template editing&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;using-templates&#34;&gt;Using templates&lt;/h3&gt;
+&lt;p&gt;Templates can be used when generating documents, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/file-field-options/#template&#34;&gt;manually&lt;/a&gt; or using an &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-document-generator/&#34;&gt;automated workflow&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;They can also be used as printout templates to let users print data from the system formatted as you wish.&lt;/p&gt;
+&lt;h2 id=&#34;advanced-templating&#34;&gt;Advanced templating&lt;/h2&gt;
+&lt;h3 id=&#34;convenience-features&#34;&gt;Convenience features&lt;/h3&gt;
+&lt;p&gt;As well as data, various convenience features are available for insertion into a template.&lt;/p&gt;
+&lt;p&gt;Here are some of the most commonly used utility functions.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.getCalendar()&lt;/td&gt;
+&lt;td&gt;Return a Java &lt;a href=&#34;https://docs.oracle.com/javase/10/docs/api/java/util/Calendar.html&#34;&gt;Calendar&lt;/a&gt; object representing the current date and time&lt;br/&gt;Also useful: $viewTools.getCalendarConstant(String name), e.g.&lt;br&gt;&lt;code&gt;#set($dayOfWeek = $viewTools.getCalendar().get($viewTools.getCalendarConstant(&amp;quot;DAY_OF_WEEK&amp;quot;)))&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.getDatestampString()&lt;/td&gt;
+&lt;td&gt;Output the current date in the format 31/01/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.getDatestampString(&amp;ldquo;format&amp;rdquo;)&lt;/td&gt;
+&lt;td&gt;Output the current date/time in a &lt;a href=&#34;https://docs.oracle.com/javase/10/docs/api/java/text/SimpleDateFormat.html&#34;&gt;custom format&lt;/a&gt; e.g. &lt;code&gt;$viewTools.getDatestampString(&amp;quot;EEE, d MMM yyyy HH:mm:ss&amp;quot;)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.getDatestampString(calendar, &amp;ldquo;format&amp;rdquo;)&lt;/td&gt;
+&lt;td&gt;Output the given date/time (as returned by $viewTools.getCalendar() in a custom format&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.getMathTool()&lt;/td&gt;
+&lt;td&gt;Return a &lt;a href=&#34;https://velocity.apache.org/tools/3.0/apidocs/org/apache/velocity/tools/generic/MathTool.html&#34;&gt;MathTool&lt;/a&gt; for doing maths&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.getNumberTool()&lt;/td&gt;
+&lt;td&gt;Return a &lt;a href=&#34;https://velocity.apache.org/tools/3.0/apidocs/org/apache/velocity/tools/generic/NumberTool.html&#34;&gt;NumberTool&lt;/a&gt; for formatting and converting numbers&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.getRandomInt(bound)&lt;/td&gt;
+&lt;td&gt;Return a random number &amp;gt;=0 and &amp;lt;bound&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.spelloutCurrencyFromString(&amp;ldquo;number&amp;rdquo;)&lt;/td&gt;
+&lt;td&gt;Convert e.g. &amp;ldquo;12.50&amp;rdquo; into &amp;ldquo;Twelve pounds 50 pence&amp;rdquo;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.spelloutNumber(number)&lt;/td&gt;
+&lt;td&gt;Convert e.g. 1,200 into &amp;ldquo;One thousand, two hundred&amp;rdquo;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;complex-data-merging&#34;&gt;Complex data merging&lt;/h3&gt;
+&lt;p&gt;Here are some of the most commonly used data retrieval / formatting functions.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.getReportDataRows()&lt;/td&gt;
+&lt;td&gt;Return all rows in the current view e.g.&lt;br /&gt;&lt;code&gt;#set($rows = $view.getReportDataRows())&lt;/code&gt;&lt;br&gt;&lt;code&gt;#foreach($row in $rows)&lt;/code&gt;&lt;br&gt;&lt;code&gt;  $row.getValue(&amp;quot;name&amp;quot;)&amp;lt;br&amp;gt;&lt;/code&gt;&lt;br&gt;&lt;code&gt;#end&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.getReportDataRows(view)&lt;/td&gt;
+&lt;td&gt;Return all rows in the specified view e.g.&lt;br /&gt;&lt;code&gt;#set($myView = $view.getReport(&amp;quot;my view&amp;quot;))&lt;/code&gt;&lt;br&gt;&lt;code&gt;#set($rows = $view.getReportDataRows($myView))&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.getReportDataRows(view, n)&lt;/td&gt;
+&lt;td&gt;Return the top n rows in the specified view&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.htmlTable()&lt;/td&gt;
+&lt;td&gt;Output a HTML table containing the rows of the current session view (the last one the user opened), with session filters applied&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.htmlTable(view, rows)&lt;/td&gt;
+&lt;td&gt;Given a list of rows as returned by getReportDataRows, from the specified view, format them as a HTML table e.g.&lt;br&gt;&lt;code&gt;#set($myView = $view.getReport(&amp;quot;my view&amp;quot;))&lt;/code&gt;&lt;br&gt;&lt;code&gt;#set($rows = $view.getReportDataRows($myView))&lt;/code&gt;&lt;br&gt;&lt;code&gt;$view.htmlTable($myView, $rows)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.htmlTable(&amp;ldquo;table name&amp;rdquo;, &amp;ldquo;child view name&amp;rdquo;)&lt;/td&gt;
+&lt;td&gt;For the given table, find the record being edited by the user. Filter the given view (which must contain the ID field for the table) by the ID of that record and output the rows as a HTML table. e.g.&lt;br&gt;&lt;code&gt;$view.htmlTable(&amp;quot;organisations&amp;quot;, &amp;quot;all contacts&amp;quot;)&lt;/code&gt;&lt;br&gt;might output the contacts belonging to the current organisation in the user&amp;rsquo;s session&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.htmlTable(&amp;ldquo;table name&amp;rdquo;, &amp;ldquo;child view name&amp;rdquo;, true/false)&lt;/td&gt;
+&lt;td&gt;As above, but if true is added, include any columns which are empty for all records (they are excluded by default)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.htmlTableTransverse(view, rows)&lt;/td&gt;
+&lt;td&gt;As per $view.htmlTable(view, rows) above, but swap the axes in the table, i.e. field names will appear down the left, each row will be output as a column&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.htmlTableTransverse(&amp;ldquo;table name&amp;rdquo;, &amp;ldquo;child view name&amp;rdquo;)&lt;/td&gt;
+&lt;td&gt;As per $view.htmlTable(&amp;ldquo;table name&amp;rdquo;, &amp;ldquo;child view name&amp;rdquo;) but again with swapped axes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&amp;hellip;and here are some of the most commonly used session functions. Each user gets a new session when they log in, it stores information about the system&amp;rsquo;s current state for them.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$sessionData.getReport()&lt;/td&gt;
+&lt;td&gt;Return the last view the user looked at&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$sessionData.getTable()&lt;/td&gt;
+&lt;td&gt;Return the last table the user looked at&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$sessionData.getRowId()&lt;/td&gt;
+&lt;td&gt;Return the ID of the record last loaded&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$sessionData.getTile()&lt;/td&gt;
+&lt;td&gt;Return the open tile&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;There are many more functions than these available, indeed the whole of the Agilebase user interface is created with templates including functions of these three types.&lt;/p&gt;
+&lt;p&gt;The entire templating API is beyond the scope of this documentation but if you do wish to create any template functionality not covered by the above, it&amp;rsquo;s probably possible. Please get in touch with us to discuss your needs and be pointed in the right direction.&lt;/p&gt;
+&lt;h3 id=&#34;using-apache-velocity-features&#34;&gt;Using Apache Velocity features&lt;/h3&gt;
+&lt;p&gt;In the examples above are some uses of simple programming code. A full reference for what you can do with the Apache Velocity language is here: &lt;a href=&#34;https://velocity.apache.org/engine/2.3/user-guide.html&#34;&gt;https://velocity.apache.org/engine/2.3/user-guide.html&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

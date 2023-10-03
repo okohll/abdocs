@@ -1,0 +1,180 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agilebase docs – Introduction</title>
+    <link>https://docs.agilebase.co.uk/docs/introduction/</link>
+    <description>Recent content in Introduction on Agilebase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 18 Feb 2022 16:40:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/docs/introduction/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Development Mode</title>
+      <link>https://docs.agilebase.co.uk/docs/introduction/development-mode/</link>
+      <pubDate>Fri, 18 Feb 2022 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/introduction/development-mode/</guid>
+      <description>
+        
+        
+        &lt;p&gt;As a no-code platform, Agilebase allows you to easily construct (and later de-construct or &amp;lsquo;refactor&amp;rsquo;) and change your software.&lt;/p&gt;
+&lt;h2 id=&#34;toggling-development-mode-on-and-off&#34;&gt;Toggling development mode on and off&lt;/h2&gt;
+&lt;p&gt;To get started, you need to toggle from &amp;rsquo;normal&amp;rsquo; mode to &amp;lsquo;development&amp;rsquo; mode.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/toggle-build-mode.png&#34; alt=&#34;Toggle development mode&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You can do this wherever you are in the system and you will switch to building or developing the item you&amp;rsquo;re looking at. The three main areas this covers are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The homepage. Toggling to development mode on the homepage shows an overview of everything in the system - tables, views, tiles, roles and users can all be listed and edited. Furthermore, the connections between different objects can be shown. More advanced users will typically use this area, when working on larger systems. 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/A_OYbB9wR6c&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;In a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt;. When a view is open, toggling development on will let you edit that view - to add or remove fields and calculations for example.&lt;/li&gt;
+&lt;li&gt;When viewing a record from a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/%3E&#34;&gt;table&lt;/a&gt;, toggling development on will let you edit that table, e.g. to add/remove fields.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When development mode is on, pencil icons will appear next to every object which can be edited: for example, next to every field and tab in a table record.&lt;/p&gt;
+&lt;p&gt;When editing views and tables, the large pencil at the top left lets you edit the object as a whole, as opposed to a field or a tab in it.&lt;/p&gt;
+&lt;p&gt;Development mode can easily be toggled off again when you&amp;rsquo;re done and the user interface will switch back to &amp;rsquo;normal&amp;rsquo; mode.&lt;/p&gt;
+&lt;h2 id=&#34;using-editing-panels&#34;&gt;Using editing panels&lt;/h2&gt;
+&lt;p&gt;When development mode is on, clicking any of the pencil icons on screen will open a panel allowing you to edit the item it&amp;rsquo;s next to. The panel can be dragged to move it around the screen if you want to see what&amp;rsquo;s underneath. Whenever you make a change using the panel, the display underneath will update, allowing you to see the effect your changes have in real time.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s an example of editing a table and view:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/mTOWsXDpQgo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;and here&amp;rsquo;s what the development mode looks like on the homepage:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Rojcf6OzdHw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;the-development-homepage&#34;&gt;The development homepage&lt;/h2&gt;
+&lt;p&gt;When development mode is toggled on from the homepage, the development homepage will show. There are three main areas:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;The lefthand sidebar&lt;/strong&gt;: this shows any objects (tables, views etc.) you&amp;rsquo;ve been working on recently, for quick access, or any that you have &amp;lsquo;pinned&amp;rsquo; (see below)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The map&lt;/strong&gt;: clicking this diagram shows the connections between tables in the system, i.e. the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relations&lt;/a&gt; between them. Clicking a table opens it for editing.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lists&lt;/strong&gt;: to the right of the map, at the top, is a set of boxes which each load a different type of object, i.e. &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;tables&lt;/a&gt;, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;tiles&lt;/a&gt;, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/&#34;&gt;roles&lt;/a&gt;, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/&#34;&gt;users&lt;/a&gt; and different categories of &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt;. Clicking on each will load a list of objects, so you can see full details, edit and delete them.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;pinning-objects&#34;&gt;Pinning objects&lt;/h3&gt;
+&lt;p&gt;When you have an editing panel open, e.g. by clicking on an object from a list (see above), you can &amp;lsquo;pin&amp;rsquo; it by clicking the pushpin icon at the top left of the panel.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/pinning.png&#34; alt=&#34;Pinning a view&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Pinned objects remain on screen for quick access at the top of the lefthand sidebar. They will also be remembered if you log out, for the next time you log in.&lt;/p&gt;
+&lt;p&gt;Pinned objects can also be quickly accessed at any time, even if the development homepage is not open, using the history menu in Agilebase&amp;rsquo;s top toolbar which is always present. The history icon is just to the right of the &amp;lsquo;back (&amp;lt;)&amp;rsquo; button.&lt;/p&gt;
+&lt;h2 id=&#34;accessing-additional-debugging-information&#34;&gt;Accessing additional debugging information&lt;/h2&gt;
+&lt;p&gt;Later on down the route of creating applications, you may wish the user interface to show additional information, specifically in views, to show the primary key values for each record - the internal row identifiers - which are normally hidden.&lt;/p&gt;
+&lt;p&gt;This can be useful when testing and debugging &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;APIs&lt;/a&gt; for example.&lt;/p&gt;
+&lt;p&gt;To enable this, add &lt;code&gt;&amp;amp;set_context=systadmin&lt;/code&gt; to the URL in the browser. To revert to normal mode, replace it with &lt;code&gt;&amp;amp;set_context=business&lt;/code&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Learner Progression</title>
+      <link>https://docs.agilebase.co.uk/docs/introduction/learner-progression/</link>
+      <pubDate>Fri, 18 Feb 2022 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/introduction/learner-progression/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Agilebase&amp;rsquo;s learner progression pathway enables you to transform your career. You can go from  a citizen developer to a no-code software architect.&lt;/p&gt;
+&lt;p&gt;Citizen developers can create their own applications using no code. Software architects can build complex applications, including powerful workflow features and integrations with other applications.&lt;/p&gt;
+&lt;p&gt;To go on this journey requires no technical knowledge. Beginners - &amp;ldquo;citizen developers&amp;rdquo; - come from a diverse range of non-IT backgrounds. The only skills you need are the ability to think, be willing to learn, and be able to plan.&lt;/p&gt;
+&lt;p&gt;Agilebase will help you every step of the way. And you can stop at the level that is useful to you.&lt;/p&gt;
+&lt;p&gt;Agilebase enables citizen developers to pass through five stages on their way to becoming software architects:&lt;/p&gt;
+&lt;h2 id=&#34;citizen-developer-level-1&#34;&gt;Citizen Developer Level 1&lt;/h2&gt;
+&lt;p&gt;This is the start of the Agilebase journey. At this level you can create your own applications, using no coding.&lt;/p&gt;
+&lt;p&gt;An Agilebase citizen developer can create &amp;lsquo;personal copies&amp;rsquo; of any &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt; and edit those copies&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;remove or add fields, excepting any that are marked &amp;lsquo;confidential&amp;rsquo; (only higher level developers can access those fields)&lt;/li&gt;
+&lt;li&gt;rearrange fields&lt;/li&gt;
+&lt;li&gt;change field sorting&lt;/li&gt;
+&lt;li&gt;add filters or remove filters (except on &amp;lsquo;confidential&amp;rsquo; fields)&lt;/li&gt;
+&lt;li&gt;add and remove &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting/&#34;&gt;charts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A confidential field is one that has a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#show-if-record-in-view&#34;&gt;visibility&lt;/a&gt; rule, or is used for &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The personal copy of the view is seen only by them. For example, a citizen developer may create a list of records filtered to show ones assigned to them. Everyone else in the organisation sees only the original view.&lt;/p&gt;
+&lt;p&gt;You earn the Citizen Developer title once you have carried out standard functions. These include adding and editing records. The title is assigned to internal staff not to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/community-users/&#34;&gt;community users&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;citizen-developer-level-2&#34;&gt;Citizen Developer Level 2&lt;/h2&gt;
+&lt;p&gt;This level is suggested or &amp;lsquo;unlocked&amp;rsquo; once a citizen developer has carried out a certain number of citizen development functions and has therefore started to learn how no code development works in a safe environment.&lt;/p&gt;
+&lt;p&gt;However to activate the level, it must be manually assigned by a Software Architect level user, as it allows changes to the system which can affect other users.&lt;/p&gt;
+&lt;p&gt;A citizen developer level 2 can&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;create new views that everyone can see, from any table
+&lt;ul&gt;
+&lt;li&gt;edit them as per the citizen developer functionality above&lt;/li&gt;
+&lt;li&gt;additionally they can add and remove simple joins, to include data from other tables in a view&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;remove views that they themselves have created (not those that others have)&lt;/li&gt;
+&lt;li&gt;create their own &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;tables&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;add, edit and remove fields and tabs from those tables&lt;/li&gt;
+&lt;li&gt;edit basic properties of the fields&lt;/li&gt;
+&lt;li&gt;assign privileges (up to edit) on those tables, using existing roles or direct user privileges&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;create &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;tiles&lt;/a&gt; and delete tiles they&amp;rsquo;ve added themselves&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;citizen-developer-level-3&#34;&gt;Citizen Developer Level 3&lt;/h2&gt;
+&lt;p&gt;A Software Architect (see below) can, at their discretion, assign a citizen developer 3 &amp;lsquo;develop&amp;rsquo; privileges on a table (or tables).&lt;/p&gt;
+&lt;p&gt;That allows them to&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;add &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/&#34;&gt;fields&lt;/a&gt; to those table, excluding referenced fields&lt;/li&gt;
+&lt;li&gt;remove fields that they themselves have added (not others)&lt;/li&gt;
+&lt;li&gt;edit the basic properties of any field in those tables, e.g. the list of options in a dropdown box&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Additionally, actions not related to having develop privileges on a particular table are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;edit the basic properties of any regular view. However, workflow, API and some other types of system view will be read-only&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;junior-software-architect&#34;&gt;Junior Software Architect&lt;/h2&gt;
+&lt;p&gt;A junior software architect can use practically all of the application building functionality of Agilebase. For example&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; (including chasers, document generation)&lt;/li&gt;
+&lt;li&gt;Set up &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;APIs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add complex &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/&#34;&gt;joins&lt;/a&gt; to views&lt;/li&gt;
+&lt;li&gt;Create, edit and delete &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/&#34;&gt;roles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Assign &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;privileges&lt;/a&gt; to roles or users up to the &amp;rsquo;edit&amp;rsquo; level&lt;/li&gt;
+&lt;li&gt;Remove fields, views etc. created by anyone&lt;/li&gt;
+&lt;li&gt;Edit the advanced properties of fields and views, including field visibility rules (confidentiality rules) for example&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Their only limitations are to do with managing the organisation as a whole, including other users.&lt;/p&gt;
+&lt;h2 id=&#34;software-architect&#34;&gt;Software Architect&lt;/h2&gt;
+&lt;p&gt;As well as building and disassembling applications, software architects can set company-wide settings and manage the account as a whole. They have full discretionary spend and can&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add and remove &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/&#34;&gt;users&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Edit company level settings (e.g. whether to enforce 2FA)&lt;/li&gt;
+&lt;li&gt;Change table &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/sensitive-data/&#34;&gt;sensitive and personal data&lt;/a&gt; settings (GDPR)&lt;/li&gt;
+&lt;li&gt;View and controls users&amp;rsquo; learner progression levels and &amp;lsquo;budget&amp;rsquo; limits&lt;/li&gt;
+&lt;li&gt;Assign any privileges up to the highest &amp;lsquo;develop&amp;rsquo; level&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Learner Progression Levels</title>
+      <link>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/</link>
+      <pubDate>Tue, 12 Sep 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Agilebase’s learner progression pathway enables you to transform your career. You can go from a citizen developer to a no-code software architect.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

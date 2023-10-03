@@ -1,0 +1,1399 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agilebase docs – Citizen Developer level 2</title>
+    <link>https://docs.agilebase.co.uk/tags/citizen-developer-level-2/</link>
+    <description>Recent content in Citizen Developer level 2 on Agilebase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 12 Sep 2023 13:00:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/tags/citizen-developer-level-2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Development Mode</title>
+      <link>https://docs.agilebase.co.uk/docs/introduction/development-mode/</link>
+      <pubDate>Fri, 18 Feb 2022 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/introduction/development-mode/</guid>
+      <description>
+        
+        
+        &lt;p&gt;As a no-code platform, Agilebase allows you to easily construct (and later de-construct or &amp;lsquo;refactor&amp;rsquo;) and change your software.&lt;/p&gt;
+&lt;h2 id=&#34;toggling-development-mode-on-and-off&#34;&gt;Toggling development mode on and off&lt;/h2&gt;
+&lt;p&gt;To get started, you need to toggle from &amp;rsquo;normal&amp;rsquo; mode to &amp;lsquo;development&amp;rsquo; mode.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/toggle-build-mode.png&#34; alt=&#34;Toggle development mode&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You can do this wherever you are in the system and you will switch to building or developing the item you&amp;rsquo;re looking at. The three main areas this covers are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The homepage. Toggling to development mode on the homepage shows an overview of everything in the system - tables, views, tiles, roles and users can all be listed and edited. Furthermore, the connections between different objects can be shown. More advanced users will typically use this area, when working on larger systems. 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/A_OYbB9wR6c&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;In a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt;. When a view is open, toggling development on will let you edit that view - to add or remove fields and calculations for example.&lt;/li&gt;
+&lt;li&gt;When viewing a record from a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/%3E&#34;&gt;table&lt;/a&gt;, toggling development on will let you edit that table, e.g. to add/remove fields.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When development mode is on, pencil icons will appear next to every object which can be edited: for example, next to every field and tab in a table record.&lt;/p&gt;
+&lt;p&gt;When editing views and tables, the large pencil at the top left lets you edit the object as a whole, as opposed to a field or a tab in it.&lt;/p&gt;
+&lt;p&gt;Development mode can easily be toggled off again when you&amp;rsquo;re done and the user interface will switch back to &amp;rsquo;normal&amp;rsquo; mode.&lt;/p&gt;
+&lt;h2 id=&#34;using-editing-panels&#34;&gt;Using editing panels&lt;/h2&gt;
+&lt;p&gt;When development mode is on, clicking any of the pencil icons on screen will open a panel allowing you to edit the item it&amp;rsquo;s next to. The panel can be dragged to move it around the screen if you want to see what&amp;rsquo;s underneath. Whenever you make a change using the panel, the display underneath will update, allowing you to see the effect your changes have in real time.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s an example of editing a table and view:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/mTOWsXDpQgo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;and here&amp;rsquo;s what the development mode looks like on the homepage:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Rojcf6OzdHw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;the-development-homepage&#34;&gt;The development homepage&lt;/h2&gt;
+&lt;p&gt;When development mode is toggled on from the homepage, the development homepage will show. There are three main areas:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;The lefthand sidebar&lt;/strong&gt;: this shows any objects (tables, views etc.) you&amp;rsquo;ve been working on recently, for quick access, or any that you have &amp;lsquo;pinned&amp;rsquo; (see below)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The map&lt;/strong&gt;: clicking this diagram shows the connections between tables in the system, i.e. the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relations&lt;/a&gt; between them. Clicking a table opens it for editing.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lists&lt;/strong&gt;: to the right of the map, at the top, is a set of boxes which each load a different type of object, i.e. &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;tables&lt;/a&gt;, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;tiles&lt;/a&gt;, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/&#34;&gt;roles&lt;/a&gt;, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/&#34;&gt;users&lt;/a&gt; and different categories of &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt;. Clicking on each will load a list of objects, so you can see full details, edit and delete them.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;pinning-objects&#34;&gt;Pinning objects&lt;/h3&gt;
+&lt;p&gt;When you have an editing panel open, e.g. by clicking on an object from a list (see above), you can &amp;lsquo;pin&amp;rsquo; it by clicking the pushpin icon at the top left of the panel.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/pinning.png&#34; alt=&#34;Pinning a view&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Pinned objects remain on screen for quick access at the top of the lefthand sidebar. They will also be remembered if you log out, for the next time you log in.&lt;/p&gt;
+&lt;p&gt;Pinned objects can also be quickly accessed at any time, even if the development homepage is not open, using the history menu in Agilebase&amp;rsquo;s top toolbar which is always present. The history icon is just to the right of the &amp;lsquo;back (&amp;lt;)&amp;rsquo; button.&lt;/p&gt;
+&lt;h2 id=&#34;accessing-additional-debugging-information&#34;&gt;Accessing additional debugging information&lt;/h2&gt;
+&lt;p&gt;Later on down the route of creating applications, you may wish the user interface to show additional information, specifically in views, to show the primary key values for each record - the internal row identifiers - which are normally hidden.&lt;/p&gt;
+&lt;p&gt;This can be useful when testing and debugging &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;APIs&lt;/a&gt; for example.&lt;/p&gt;
+&lt;p&gt;To enable this, add &lt;code&gt;&amp;amp;set_context=systadmin&lt;/code&gt; to the URL in the browser. To revert to normal mode, replace it with &lt;code&gt;&amp;amp;set_context=business&lt;/code&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Guides: 1. Creating a basic task list</title>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/</link>
+      <pubDate>Fri, 22 Apr 2022 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt; Create a Table and associated Views to use it!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched &amp;ldquo;How to use Agilebase&amp;rdquo;&lt;/p&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;This stage of the guide will introduce you to the basic activities required to build a simple application. We will start by creating a table with different types of fields in order to store a variety of data. We will then show you how to create and control tiles, views and forms which are the interfaces that your users will use to enter and consume this data.
+Let us start by building a simple task list.&lt;/p&gt;
+&lt;h2 id=&#34;create-a-table-called-tasks&#34;&gt;Create a table called &amp;ldquo;Tasks&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;Our simple application will need to store information about the tasks our users create. This is done by creating a database table. In Agilebase this is achieved by navigating to the developer interface and pressing the “add new table button”.
+[guide 1.1 - video 1]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/-kY2RRzKqxQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;add-fields-to-the-tasks-table&#34;&gt;Add fields to the &amp;ldquo;Tasks&amp;rdquo; table&lt;/h2&gt;
+&lt;p&gt;A table of data is nothing without its list of fields. Each field stores a single piece of information. It is simple to add fields to an existing table within agilebase.
+Edit the table, type in the name of the field and choose the appropriate type. On creation of the field you will be able to set further options.
+For more detail visit - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/&#34;&gt;https://docs.agilebase.co.uk/docs/fields/field-types/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In the following video we add the fields needed to for a simple Task
+[guide 1.1 - video 2]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/SannBQNKlKk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;make-the-form-easier-to-understand-break-it-into-sections&#34;&gt;Make the form easier to understand. Break it into sections&lt;/h2&gt;
+&lt;p&gt;Now we have the data structure required to capture a simple task we can think about how it would be used. The user interface within Agilebase is controlled by the list of fields and their options. It is a simple task to reorder fields, just use the drag and drop facility when looking at the list of fields.
+Use a field of type separator to create sections within the user interface
+[guide 1.1 - video 3]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/c8XMlhoiuSM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;We now need to provide the user with a way of accessing our “tasks” table and using it!!! This is achieved by a combination of Tiles and Views.&lt;/p&gt;
+&lt;p&gt;For more info on Tiles - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;https://docs.agilebase.co.uk/docs/tiles/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For more info on Views - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;https://docs.agilebase.co.uk/docs/views/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In summary:
+A view generally provides abbreviated data in the form of a list of records. It also provides the ability to drill through to see the full record details.
+Tiles are a way of grouping functionality together. Specifically, a data tile is a way of grouping a collection of views that all share some common theme.&lt;/p&gt;
+&lt;p&gt;For this guide, we need a tile and collection of views dedicated to helping us create and manage our “Tasks”&lt;/p&gt;
+&lt;h2 id=&#34;make-the-table-available-for-use&#34;&gt;Make the table available for use!&lt;/h2&gt;
+&lt;h3 id=&#34;adding-a-tile-to-the-homepage&#34;&gt;Adding a tile to the homepage&lt;/h3&gt;
+&lt;p&gt;The homepage of agilebase is made up of data tiles. We need to create a new tile to hold all the views of our taks data
+[guide 1.1 - video 4]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/7hA7-VzX_A8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;adding-views-that-show-all-the-tasks-that-have-been-created&#34;&gt;Adding views that show all the tasks that have been created&lt;/h3&gt;
+&lt;p&gt;To provide the user access to a list of Task records we need to create a View. To start with we will create a view that will list ALL the data.   &lt;br&gt;
+[guide 1.1 - video 5]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ZwAcJz3jBhs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;a-better-way-of-looking-at-data&#34;&gt;A better way of looking at data&lt;/h3&gt;
+&lt;p&gt;Many users will be familiar with a card or kanban style interface (such as Trello). Agilebase has a similar style of view that can often be useful.&lt;br&gt;
+Within a views “options” tab you can set its interface stylle to be “Cards in Columns”
+[guide 1.1 - video 6]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/HeZxfiLZR_k&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;making-views-for-a-specific-job&#34;&gt;Making views for a specific job&lt;/h3&gt;
+&lt;p&gt;Whilst users can apply their own filters and re-order data in a view, it is often a better user experience if there are dedicated views setup that match a particular job. For this example we want to create a list of all the completed tasks with the most recent at the top of the list.
+For more information on applying filters - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;https://docs.agilebase.co.uk/docs/views/filters/&lt;/a&gt;
+[guide 1.1 - video 7]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/2755kBKLKzk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;our-simple-application-is-complete&#34;&gt;Our simple application is complete!&lt;/h3&gt;
+&lt;p&gt;However, we can quickly see that we have missed implementing a key feature - collaboration. We should add another field to this table - a comments field!&lt;/p&gt;
+&lt;p&gt;For more information on the comments field and its associated comment feed - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/&#34;&gt;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;add-a-comments-field-to-a-table&#34;&gt;Add a Comments field to a table!&lt;/h2&gt;
+&lt;p&gt;Adding new fields to an existing table is no different to when creating from scratch. Simply add via the table edit screen.
+Adding collaboration functionality to an agileB\se application is as easy as adding any other field! Just add a field of type Comments as shown in the video below
+[guide 1.1 - video 8 *]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/VqpAmdVJiVc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For completeness the remainder of this stage of the guide covers removing items and functionality that are no longer needed.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;deleting-views&#34;&gt;Deleting Views&lt;/h2&gt;
+&lt;p&gt;Eventually you will want to remove unused views in order to reduce clutter and streamline the user experience. To do this go to the Properties and Options tab when editing the view and press Delete view
+[guide 1.1 - video 9 *]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/YfCz-9Fjt7g&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;delete-fields-and-tables&#34;&gt;Delete Fields and Tables&lt;/h2&gt;
+&lt;p&gt;Keeping the user interface streamlined and uncluttered also includes the removal of unwanted or old data fields.
+It is straightforward to delete a field from a table. Either clicking the X icon on the RHS of the list of fields, or use the Remove field button on the fields definition. However, extra care needs to be taken as the field may be in use as the following video demonstrates.&lt;/p&gt;
+&lt;p&gt;N.b. to completely remove a table you are first required to delete ALL the fields it contains.
+[guide 1.1 - video 10 *]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/5ExSypK06W8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Relational Database Concepts</title>
+      <link>https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Before diving into the details of building applications, starting with tables, let&amp;rsquo;s take a step back and learn some background information about databases, including what a table is. If you&amp;rsquo;re familiar with these concepts, feel free to skip this section.&lt;/p&gt;
+&lt;p&gt;When building back office software with Agilebase, a large amount of what we&amp;rsquo;ll be doing is building database structures, to store user-entered data. Agilebase takes care of creating the user interface to allow users to use these structures automatically, e.g. to search for data, add and edit it.&lt;/p&gt;
+&lt;p&gt;You will find many articles explaining relational databases if you look for them on the internet. Most will introduce SQL, the language used to work with databases. It&amp;rsquo;s not necessary to learn that as Agilebase generates it automatically behind the scenes, but the higher level concepts are useful to grasp.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a YouTube video with a good introduction.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/NvrpuBAMddw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If you prefer reading, here are a couple of examples.&lt;/p&gt;
+&lt;h2 id=&#34;simple-example---what-is-a-relation&#34;&gt;Simple example - what is a relation?&lt;/h2&gt;
+&lt;p&gt;Imagine we want a place to store records of suppliers to our business. This could be the start of a supplier management system to compare companies based on quality, accreditation levels and price for example, or to carry out supplier approval processes.&lt;/p&gt;
+&lt;p&gt;To do this we need just one table &amp;lsquo;suppliers&amp;rsquo; which would have fields in such as&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;company name&lt;/li&gt;
+&lt;li&gt;a few address fields&lt;/li&gt;
+&lt;li&gt;phone number&lt;/li&gt;
+&lt;li&gt;website&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;etc.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s just like creating a spreadsheet with column headings across the top for those fields. You can then add a row for each supplier you record.&lt;/p&gt;
+&lt;p&gt;Now, if we communicate with our suppliers, we may want to store the contact details of a few key people at each supplier.&lt;/p&gt;
+&lt;p&gt;Typically, a naive spreadsheet user would add a few more columns (fields in database parlance), things like Contact Name 1, Phone 1, Email 1, Contact Name 2, Phone 2, Email 2. As you can imagine if there are more than one or two contacts, it would become pretty cumbersome and difficult to maintain.&lt;/p&gt;
+&lt;p&gt;With our database we can easily do a lot better and create a separate table of contacts that links to the suppliers table - in fact it &lt;strong&gt;relates&lt;/strong&gt; to it. That&amp;rsquo;s why relational databases are so called, just because they&amp;rsquo;re very good at dealing with relations between tables.&lt;/p&gt;
+&lt;p&gt;So we have our contact table, maybe with fields&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Contact name&lt;/li&gt;
+&lt;li&gt;Role&lt;/li&gt;
+&lt;li&gt;Direct Line number&lt;/li&gt;
+&lt;li&gt;Email address&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;etc.&lt;/p&gt;
+&lt;p&gt;To connect them we add another field of a special type, called a &lt;em&gt;relation&lt;/em&gt;. It can be called Company, but rather than storing the company name again (we already have stored the company name in the suppliers table), it will be a link to a particular company. Don&amp;rsquo;t worry about how that works behind the scenes, just know that the Company relation links to a supplier.&lt;/p&gt;
+&lt;p&gt;So now we have&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/join.png&#34; alt=&#34;join&#34;&gt;&lt;/p&gt;
+&lt;p&gt;We can now add as many contacts as we like to a supplier. And if we decide to store some more data about each contact, maybe a link to their LinkedIn profile for example, we can add that field to the contacts table and it will automatically be there for all contacts (as opposed to our naive spreadsheet example).&lt;/p&gt;
+&lt;h2 id=&#34;a-more-complex-example&#34;&gt;A more complex example&lt;/h2&gt;
+&lt;p&gt;That&amp;rsquo;s a good start. Moving on, there&amp;rsquo;s one more type of relation it&amp;rsquo;s useful to understand - the &amp;lsquo;many to many&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;Our link between contacts and suppliers above is called a &amp;lsquo;one to many&amp;rsquo; (or sometimes many to one) relationship. The reason is simply that one supplier can have many contacts attached.&lt;/p&gt;
+&lt;p&gt;What happens if we think about a more complex case? Suppose our suppliers supply us with raw materials, for example ingredients and packaging. We may want to record which materials each supplier supplies.&lt;/p&gt;
+&lt;p&gt;We could set it up as above, where we have a raw materials table. A raw material has a relation field linking it to a supplier, so one supplier can supply many materials.&lt;/p&gt;
+&lt;p&gt;However, what happens if a particular raw material is supplied by more than one company? You may have a primary supplier, then various fallbacks for example.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;d have to create a new raw material record for each supplier. That would be ok if our raw material record consisted of nothing more than a name and maybe a price, but there could be dozens or hundreds of fields added as we build up our system - to store nutritional information, chemical properties, allergens, etc. etc. That would mean lots of duplication to keep track of. And if we want to later build recipes which use our raw materials, we&amp;rsquo;d probably just want a recipe to refer to &amp;lsquo;flour&amp;rsquo;, not &amp;lsquo;flour from Supplier X&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;The solution is to create a &lt;strong&gt;many to many&lt;/strong&gt; relation, where one supplier can provide many raw materials but also a single raw material can be linked to many different suppliers.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s no new field type to get to know, we just use the standard one to many relation we&amp;rsquo;ve already learned about in a clever new way - we use two of them, plus a join table. The structure looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/junction-table.png&#34; alt=&#34;junction table&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The table in the middle, Links, is called a join table, or junction table.&lt;/p&gt;
+&lt;p&gt;It has a normal relation field linking it to suppliers, and also one linking to raw materials. By adding a record to the links table, we can join any raw material to any supplier. A supplier can then have lots of raw materials, but an raw material can also have lots of suppliers.&lt;/p&gt;
+&lt;p&gt;The video above also explains this type of relation if you&amp;rsquo;ve not already watched it.&lt;/p&gt;
+&lt;h3 id=&#34;when-to-use-the-many-to-many&#34;&gt;When to use the many to many&lt;/h3&gt;
+&lt;p&gt;You may have a niggling thought at the back of your mind: how do I know whether it&amp;rsquo;s best to use a simple one to many relation, or a more complex many to many setup? Surely I could use many to many for contacts and suppliers too? A single contact may be associated with more than one supplier, for example if they&amp;rsquo;re a contractor, or if they move jobs.&lt;/p&gt;
+&lt;p&gt;The answer to that just comes down to your judgement. Although Agilebase creates a friendly, easy to use interface on top of the data structure, the many to many does add complexity. So it&amp;rsquo;s a bit of a trade-off. However the advantage of a no-code system like Agilebase is that you can rapidly try out ideas and see which one works best. As time goes on you&amp;rsquo;ll get a sense of what works best in which situation.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you do want to learn more about this topic, it&amp;rsquo;s called &amp;lsquo;database normalisation&amp;rsquo; and there&amp;rsquo;s plenty written about it!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;I hope that gives you a bit of background about what a table is, what a relation is and how they work together.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A table is a store of data about a single concept e.g. a company or contact&lt;/li&gt;
+&lt;li&gt;A relation field links tables together e.g. a contact belongs to a company&lt;/li&gt;
+&lt;li&gt;Many to many relations (created with a join table) are sometimes useful. They allow us to link many records of one table to many of another.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That&amp;rsquo;s pretty much all of the most important information you&amp;rsquo;ll need to know about data structures. The rest of the documentation will show you how to create applications practically. Have fun!&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Tiles</title>
+      <link>https://docs.agilebase.co.uk/docs/tiles/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tiles/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A tile on a user&amp;rsquo;s home screen represents an application or module of an application - a collection of data and functionality that forms a coherent whole.&lt;/p&gt;
+&lt;p&gt;There are five types of tile, each of which present data in a different way.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Data tile
+&lt;ul&gt;
+&lt;li&gt;the most common tile type - from the administrator&amp;rsquo;s viewpoint this is a collection of &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;views&lt;/a&gt;. The user can navigate the views, search for data, edit records etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Image / document library
+&lt;ul&gt;
+&lt;li&gt;a type of data tile. Views which contain a document field can be displayed in &amp;lsquo;card&amp;rsquo; format to show large document previews, rather than the usual &amp;lsquo;rows&amp;rsquo; format&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Calendar
+&lt;ul&gt;
+&lt;li&gt;can display any views in the system containing date/time fields in calendar formats, such as a standard month layout, or gannt-like chart&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Visualisations
+&lt;ul&gt;
+&lt;li&gt;rather than a collection of views, displays a collection of charts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Comment stream
+&lt;ul&gt;
+&lt;li&gt;brings together everyone&amp;rsquo;s &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/&#34;&gt;comments&lt;/a&gt; (that a user has privileges to see) from everywhere in the system into one place. The newest comments are shown in the tile on the user&amp;rsquo;s homepage. Clicking on a comment loads the record it&amp;rsquo;s attached to&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Data tiles need to be created by an administrator. Once a data tile is created and filled with views, it can be added to a user&amp;rsquo;s screen either as a standard data tile or, if the views contain document fields, optionally as an image/document library tile.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Other types of tile i.e. calendar, visualisation and comment stream tiles need not be created by an administrator, they are built-in facilities of the platform. Each of these tile offers different ways of seeing data collected from across the system. As such they are automatically available to add to a user&amp;rsquo;s screen.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;creating-a-tile&#34;&gt;Creating a tile&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to the homepage and toggle development mode&lt;/li&gt;
+&lt;li&gt;Click the &amp;lsquo;+ TILE&amp;rsquo; near the top right of the screen&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You should now see an editing screen with the details of the tile you just created.
+&lt;img src=&#34;https://docs.agilebase.co.uk/tile-details.png&#34; alt=&#34;Tile editing&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The available options are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Name - the tile name&lt;/li&gt;
+&lt;li&gt;Section - optional. If you have a large number of tiles, you can organise them into sections. This is an aid for administrators only, it doesn&amp;rsquo;t affect end users&lt;/li&gt;
+&lt;li&gt;Index - affects the order of tiles on screen, lower numbered tiles appear before higher&lt;/li&gt;
+&lt;li&gt;Purpose - can be used as help content to tell users about this tile&lt;/li&gt;
+&lt;li&gt;Colour - the colour will be automatically chosen to avoid as much colour duplication as possible, however you can manually change the colour if you like, e.g. to organise similarly themed or related tiles together visually&lt;/li&gt;
+&lt;li&gt;Icon - a tile icon can be chosen from the icon panel&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A multitude of icons are available, from &lt;a href=&#34;https://fontawesome.com&#34;&gt;Font Awesome&lt;/a&gt;. They are constantly adding more so if you see one that&amp;rsquo;s available on their website that&amp;rsquo;s not in our set yet then just let us know.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;adding-views-to-a-data-tile&#34;&gt;Adding views to a data tile&lt;/h2&gt;
+&lt;p&gt;Data tiles need to contain one or more views to be useful. If you have no tables or views yet, you may want to check out the &lt;a href=&#34;https://docs.agilebase.co.uk/guides/&#34;&gt;Quick Start Guides&lt;/a&gt;, or see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;Views&lt;/a&gt; for full details on view creation.&lt;/p&gt;
+&lt;p&gt;When editing a view, in the &lt;em&gt;properties&lt;/em&gt; panel, choose the tile which you want to place it in from the &lt;em&gt;Tile&lt;/em&gt; dropdown.&lt;/p&gt;
+&lt;h2 id=&#34;adding-and-removing-tiles-from-users&#34;&gt;Adding and removing tiles from users&lt;/h2&gt;
+&lt;p&gt;Users can themselves add tiles to their own homepages (unless they have customised UI options to prevent this). However, administrators can also do this for them.&lt;/p&gt;
+&lt;p&gt;To add a tile to a user&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to the homepage and toggle development mode&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;users&lt;/em&gt;. Select the user you wish to edit&lt;/li&gt;
+&lt;li&gt;Open the &lt;em&gt;Tiles&lt;/em&gt; panel&lt;/li&gt;
+&lt;li&gt;Click the tile you want to add
+&lt;ul&gt;
+&lt;li&gt;If it&amp;rsquo;s a data tile or document / image library tile, you&amp;rsquo;ll be prompted for the primary view, which is the view that will load when the user first opens the tile. The most commonly used view for the tile is the default.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;auto-adding-tiles&#34;&gt;Auto-adding tiles&lt;/h3&gt;
+&lt;p&gt;Tiles can also be added automatically in bulk by assigning a user role.&lt;/p&gt;
+&lt;p&gt;When editing a user, click the &lt;em&gt;Roles&lt;/em&gt; button. Next to each role listed is a list of tiles that will be added to their screen if that role is assigned to them. This is a convenience feature to speed up setting up their home screen. The tiles shown for a role are those which more than half of the members of that role have (tiles which the user already has aren&amp;rsquo;t listed).&lt;/p&gt;
+&lt;p&gt;After assigning a role, if any tiles aren&amp;rsquo;t needed for a particular user, they can be removed from the &lt;em&gt;Tiles&lt;/em&gt; panel for that user.&lt;/p&gt;
+&lt;h2 id=&#34;system-tiles&#34;&gt;System tiles&lt;/h2&gt;
+&lt;p&gt;As an administrator, you will likely create a number of views which aren&amp;rsquo;t meant to be directly visible by users, but which are for the internal workings of your applications. For example, workflows, tab views etc. - see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/special-uses/&#34;&gt;Views - Special Uses&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To prevent users seeing these, you can put then in system tiles. A system tile is simply one which has a name starting with the word &amp;lsquo;System&amp;rsquo;. These will only be visible to administrators. You may find it a good idea to create a number of System tiles for organisation purposes.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Citizen Developer Level 2</title>
+      <link>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-2/</link>
+      <pubDate>Tue, 12 Sep 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-2/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;You are now well on your way through the Agilebase journey.&lt;/p&gt;
+&lt;p&gt;This level is suggested or &amp;lsquo;unlocked&amp;rsquo; once a citizen developer has carried out a certain number of citizen development functions and has therefore started to learn how no code development works in a safe environment.&lt;/p&gt;
+&lt;p&gt;However to activate the level, it must be manually assigned by a Software Architect level user, as it allows changes to the system which can affect other users.&lt;/p&gt;
+&lt;p&gt;A citizen developer level 2 can&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;create new views that everyone can see, from any table
+&lt;ul&gt;
+&lt;li&gt;edit them as per the citizen developer functionality above&lt;/li&gt;
+&lt;li&gt;additionally they can add and remove simple joins, to include data from other tables in a view&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;remove views that they themselves have created (not those that others have)&lt;/li&gt;
+&lt;li&gt;create their own &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;tables&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;add, edit and remove fields and tabs from those tables&lt;/li&gt;
+&lt;li&gt;edit basic properties of the fields&lt;/li&gt;
+&lt;li&gt;assign privileges (up to edit) on those tables, using existing roles or direct user privileges&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;create &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;tiles&lt;/a&gt; and delete tiles they&amp;rsquo;ve added themselves&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;useful-links&#34;&gt;Useful Links&lt;/h2&gt;
+&lt;p&gt;Learn how to add functionality by watching our guide &lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/&#34;&gt;Creating a basic task list&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For more information about:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;Relational Database Concepts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/adding-and-removing/&#34;&gt;Adding and editing tables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;What is a view&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Guides: 2. Capturing Company and Contact data (Introducing Relational Databases)</title>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/adding_relational_data/</link>
+      <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/adding_relational_data/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt; Create related Tables to demonstrate the power of relational databases&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched “Creating a basic task list” video&amp;quot;&lt;/p&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;In this step of the guide we will build the engine of our CRM and in doing so start to introduce the concept of a relational database. We will do this as a practical example and you’ll see how agilebase makes this straight forward. We will be building a bigger system, but for the most part it’s simply reusing things we’ve already covered.. Let’s start with building a table called ‘Organisations’&lt;/p&gt;
+&lt;h2 id=&#34;create-a-table-called-organisations&#34;&gt;Create a table called &amp;ldquo;Organisations&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;To get our CRM going we need somewhere to store information about the organisations we will interact with. This can easily be achieved by adding a new table, a tile and an initial view. If you need a quick refresher watch the video below, or if you need more detail go back to &lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/&#34;&gt;step 1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[guide 1.2 - video 1]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/F-4Qp-5udsU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;create-a-table-called-sites&#34;&gt;Create a table called &amp;ldquo;Sites&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;A company might have more than one location, so we will need a table to hold information about the various addresses they might have - &amp;lsquo;Sites&amp;rsquo;. This is the first example we have of adding a Relation field.
+If you want to learn more then please visit &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relational database concepts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[guide 1.2 - video 2]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/psJRDyW3RMs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;create-a-table-called-contacts&#34;&gt;Create a table called &amp;lsquo;Contacts&amp;rsquo;&lt;/h2&gt;
+&lt;p&gt;Let’s add another table of data that is related to an Organisation, the people who work there - &amp;lsquo;Contacts&amp;rsquo;.
+We will link to two tables, the organisation they work for and the site they primarily work from.&lt;/p&gt;
+&lt;p&gt;[guide 1.2 - video 3]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Mrj6Iu7fxmg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;adding-tabs&#34;&gt;Adding tabs&lt;/h2&gt;
+&lt;p&gt;Viewing and adding data in isolation doesn’t feel very natural. What we want to do is look at an organisation’s records and see its list of contacts there and then. One way Agilebase does this is through adding ‘Tabs’ to a record.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you want to know more visit or documentation about &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/&#34;&gt;tabs&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;[guide 1.2 - video 4]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/nRSQ3IARLVI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;optional---linking-tasks-to-organisations&#34;&gt;OPTIONAL - Linking Tasks to Organisations&lt;/h2&gt;
+&lt;p&gt;At this point you may decide to upgrade the Task system we created previously. If you want to do this you will need to update the Tasks table to have a Parent Org, adding a Relation field (to organisation) and then adding the new Tab to the Organisation table just as we’ve done before.&lt;/p&gt;
+&lt;p&gt;You might also want to go back in to some of the views people use to access tasks and add a field so they know which organisation it&amp;rsquo;s for.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Tables</title>
+      <link>https://docs.agilebase.co.uk/docs/tables/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tables/</guid>
+      <description>
+        
+        
+        &lt;p&gt;These pages provide a guide to using tables, which are the backbone of data storage in Agilebase. Agilebase offers rich table functionality so that data can be processed in the optimal way for your application.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Guides: 3. Adding a Sales Pipeline - Kanban</title>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/sales_pipeline/</link>
+      <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/sales_pipeline/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;  Introduce Kanban / Card view. Power of dropdowns on fields. Show how easy to add graphs. Show off the advanced UI elements of aB&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched “Capturing Company and Contact details” video. Understand relational data&lt;/p&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;In this step of our guide we going to look at adding a dropdown field to &amp;ldquo;control&amp;rdquo; data input as we want to set up a Kanban board approach to managing Sales Opportunities.
+This video assumes you are happy creating tables so jumps to the point of adding the Dropdown field.
+If you are following along and want to build this table please copy the following table structure&lt;/p&gt;
+&lt;p&gt;Fields we will need: Organisation(relation to Organisation) Title (text), Detail (text large), Date of Enquiry (date), Source (text), Main Contact (relation to contact), Opp. Owner (text), Demo-Meeting (Separator), Date of Demo (date), Meeting Notes (text large), Quote (Separator), Quote Amount (number), Quote notes (text large), Outcome (Separator), Date Won (date), Date lost (date), Lost reason (text), closed by (text), closed date (date)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/Sales_Opportunity_pre_dropdown&#34; alt=&#34;Sales Opprtunity Fields before Status DropDown has been added&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;adding-a-dropdown-field&#34;&gt;Adding a dropdown field&lt;/h2&gt;
+&lt;p&gt;A dropdown field is as simple to add as any other field type. However there are some considerations about how it is configured to help the user experience.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Having an initial comma in the list means the default value will be blank.&lt;/li&gt;
+&lt;li&gt;Adding an initial number to each option in the list is very useful to imply an order (an override the default alphabetical ordering).&lt;/li&gt;
+&lt;li&gt;Autofilling with a list of users. &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/#lists-of-users&#34;&gt;Click here for more info&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In this stage of our guide we are going to add the stages a typical Sales opportunity will pass through.
+[Guide 1.3 - video 1]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1PzY64hPWlE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;creating-a-kanban-view&#34;&gt;Creating a Kanban view&lt;/h2&gt;
+&lt;p&gt;We can now create a view to show all the Sales Opportunities we will be mansaging.
+This is the basically the same as we’ve done before
+&lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/#adding-views-that-show-all-the-tasks-that-have-been-createds&#34;&gt;Click here to see how add a view&lt;/a&gt;
+Before We set the interface option to be &amp;ldquo;Cards in Column&amp;rdquo; its important to move the controlling field to the top of the list. In this case we want ther Kanban board to be controlled by Status, therefore it should be the first DropDown field in the view.&lt;/p&gt;
+&lt;p&gt;[Guide 1.3 - video 2]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ydCtGAdgqjk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;adding-graphs&#34;&gt;Adding Graphs!&lt;/h2&gt;
+&lt;p&gt;Sales teams love graphs. After all, a picture says a thousand words, and agileBase has an easy to use graphing facility to help you show off the insights your data contains.
+Creating graphs can be done by any user, but it usually helps if the developers take the lead and build the obvious ones.&lt;/p&gt;
+&lt;p&gt;This video demonstrates adding a pie chart to show the number of Sales Opportunites by Source, and also a column graph to show volume of sales enquires over time. It also shows the advanced option of using Stcaking to add more insights.&lt;/p&gt;
+&lt;p&gt;[Guide 1.3 - video 3]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/3FOOk8QS5RE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Adding, editing and removing</title>
+      <link>https://docs.agilebase.co.uk/docs/tables/adding-and-removing/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tables/adding-and-removing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A table is a store of data of a particular type e.g. a company, contact, product or invoice. Tables are the fundamental building blocks of an Agilebase application.&lt;/p&gt;
+&lt;h2 id=&#34;adding-a-table&#34;&gt;Adding a table&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;On the homepage, click the &amp;rsquo;toggle&amp;rsquo; button in the top-right of the screen to enable dev mode (if it is not enabled already)&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;+ Table&lt;/em&gt;, choosing a name for the new table&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;TODO: images&lt;/strong&gt;
+&lt;img src=&#34;https://docs.agilebase.co.uk/add-table-button.png&#34; alt=&#34;Add Table Button&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You can change the table&amp;rsquo;s name and add a longer description under &lt;strong&gt;Help&lt;/strong&gt;. This description will be used as help text in the user interface.&lt;/p&gt;
+&lt;h3 id=&#34;naming-tables&#34;&gt;Naming tables&lt;/h3&gt;
+&lt;p&gt;When naming a table, it&amp;rsquo;s best to use a plural form. Also avoid filler endings like &amp;lsquo;info&amp;rsquo; or &amp;lsquo;details&amp;rsquo;. So rather than &amp;lsquo;company info&amp;rsquo;, you might call a table &amp;lsquo;companies&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;The reason for this is that the user interface will automatically convert plural names into singular forms where appropriate. So for example if there&amp;rsquo;s a plus button on the screen to allow the user to add a new record in the table, it will automatically recognise the table and title the button Add Company.&lt;/p&gt;
+&lt;p&gt;If you build a large system with lots of tables, you may find it a good idea to prefix table names using a numbering/lettering system e.g.
+&lt;code&gt;a) table 1&lt;/code&gt;
+&lt;code&gt;b) table 2&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;In the administrator interface, tables are listed alphabetically, so you can arrange the tables into a logical order with this method.&lt;/p&gt;
+&lt;p&gt;The user interface will strip out any prefixes when displaying names to users, if they end with a closing bracket &lt;code&gt;)&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;editing-a-table&#34;&gt;Editing a table&lt;/h2&gt;
+&lt;p&gt;There are two ways to edit a table: from the homepage, or from editing a record.&lt;/p&gt;
+&lt;h3 id=&#34;from-the-homepage&#34;&gt;From the homepage&lt;/h3&gt;
+&lt;p&gt;When you toggle development mode with the toggle in the top right corner of the screen, you can see a &lt;em&gt;Map&lt;/em&gt; and &lt;em&gt;List&lt;/em&gt; items: the Map shows tables and relations between them, the List can show tables and also other entities, like views or users.&lt;/p&gt;
+&lt;p&gt;From either display, you can click a table to edit it. Once open, you can also pin tables with the pin icon at the top left of the editing panel. The table will then appear &amp;lsquo;pinned&amp;rsquo; to the lefthand side of the development homepage and will remain there until unpinned, or you log out. This can be useful when working with a number of different tables.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/homepage-connections-mode.png&#34; alt=&#34;Connections mode&#34;&gt;
+&lt;img src=&#34;https://docs.agilebase.co.uk/homepage-list-mode.png&#34; alt=&#34;List mode&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;from-editing-a-record&#34;&gt;From editing a record&lt;/h3&gt;
+&lt;p&gt;When build mode is enabled, if you are viewing an individual record then clicking the big pencil at the top left of the screen lets you edit the underlying table.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/editing-a-record.png&#34; alt=&#34;Editing a record&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;removing-a-table&#34;&gt;Removing a table&lt;/h2&gt;
+&lt;p&gt;Before removing a table, you first need to remove all views and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/#removing-a-field&#34;&gt;fields&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s not necessary to remove actual data records from the table first.&lt;/p&gt;
+&lt;p&gt;A list of existing views is visible in the &lt;em&gt;name and views&lt;/em&gt; section of the panel sidebar. Visit each view and delete it.&lt;/p&gt;
+&lt;p&gt;Then below to the table&amp;rsquo;s &lt;em&gt;name and views&lt;/em&gt; section is the &lt;em&gt;fields&lt;/em&gt; section. Delete all the existing fields from here.&lt;/p&gt;
+&lt;p&gt;When you&amp;rsquo;re done, you can click the &lt;em&gt;Remove table&lt;/em&gt; button in &lt;em&gt;name and views&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;When deleting views and fields, you may find you have to first delete other views or fields they depend on. In complex systems there can be chains of objects that need to be deleted in order.&lt;/p&gt;
+&lt;p&gt;Deleting is a destructive process so is not highly automated on purpose, to avoid accidental deletion. However at each stage you&amp;rsquo;ll be shown any dependencies which have to be removed first, so you can follow through the chain.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Fields</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Adding fields to a table creates a form by which people (and other sources such as the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;API&lt;/a&gt; or &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt;) can enter data.&lt;/p&gt;
+&lt;p&gt;There are various types of fields and field options which this section will cover.&lt;/p&gt;
+&lt;h2 id=&#34;adding-a-field&#34;&gt;Adding a field&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Ensure &lt;a href=&#34;https://docs.agilebase.co.uk/docs/introduction/development-mode/&#34;&gt;development mode&lt;/a&gt; is toggled on&lt;/li&gt;
+&lt;li&gt;Select the table to add a field to&lt;/li&gt;
+&lt;li&gt;Click on the pencil icon above the record, if necessary, to edit the table&lt;/li&gt;
+&lt;li&gt;From the controls at the top of the list of existing fields:
+&lt;ul&gt;
+&lt;li&gt;Type in a field name, optional description, choose a type and press the &lt;em&gt;Add&lt;/em&gt; button&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Optionally, drag and drop the field to a desired location relevant to other fields&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/adding-a-table-field.png&#34; alt=&#34;Adding a table field&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;field-level-help&#34;&gt;Field level help&lt;/h2&gt;
+&lt;p&gt;Any description added to the field will be used as inline help. URLs can be included and will be turned into clickable links. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/adding-help/&#34;&gt;help&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;h2 id=&#34;editing-a-field&#34;&gt;Editing a field&lt;/h2&gt;
+&lt;p&gt;Field name and description (help text) as well as field options can be altered at any time by clicking a field. Fields can be moved on screen by dragging.&lt;/p&gt;
+&lt;p&gt;However, once set, the field type can&amp;rsquo;t be changed. A number field can&amp;rsquo;t be converted to a text field for example. In particular, a decimal number can&amp;rsquo;t be converted to a whole number field and vice versa, as integers and floating point numbers are different data types.&lt;/p&gt;
+&lt;p&gt;There is a process available for changing field types, please see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/#switching-a-field-from-one-type-to-another&#34;&gt;changing field types&lt;/a&gt; if you need to do that.&lt;/p&gt;
+&lt;h2 id=&#34;removing-a-field&#34;&gt;Removing a field&lt;/h2&gt;
+&lt;p&gt;In the &lt;em&gt;fields&lt;/em&gt; panel, click the &lt;em&gt;x&lt;/em&gt; button to the right of a field.&lt;/p&gt;
+&lt;p&gt;If the field is used in any other locations in your application, such as a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt;, you&amp;rsquo;ll be alerted to the fact. You&amp;rsquo;ll need to first remove the field from those locations before being able to remove it.&lt;/p&gt;
+&lt;p&gt;You can also see where fields are used by scrolling to the bottom of the field editing panel and looking under &amp;lsquo;Field Uses&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/removing-a-table-field.png&#34; alt=&#34;Removing a table field&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;adding-a-field-to-multiple-views&#34;&gt;Adding a field to multiple views&lt;/h2&gt;
+&lt;p&gt;First &amp;lsquo;pin&amp;rsquo; all the views to which you want to add a field. You can pin a single view by clicking on the pushpin icon when editing it, or multiple ones at once from the &amp;rsquo;name and views&amp;rsquo; panel of a table when editing it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/pin-views.png&#34; alt=&#34;pinning views&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When editing a field, press &amp;lsquo;add to pinned views&amp;rsquo;. The field will then be added to all pinned views which don&amp;rsquo;t already contain it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/add-to-pinned-views.png&#34; alt=&#34;adding a field to pinned views&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This can be particularly useful when introducing a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt; feature. Multi-tenanting means allowing different customers to access the same system, segregating their data so they each see only their own data. Part of the setup requires adding a new field to all (or most) of the views in the system.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Field Types</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/</guid>
+      <description>
+        
+        
+        &lt;p&gt;These pages describe the various types of fields it is possible to have in an Agilebase application. It is recommended to begin with the basic field types before moving on to dealing with special field types.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Table layouts</title>
+      <link>https://docs.agilebase.co.uk/docs/tables/table-layouts/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tables/table-layouts/</guid>
+      <description>
+        
+        
+        &lt;p&gt;For each table, Agilebase will automatically build a data entry form for users to view, add and edit records with.&lt;/p&gt;
+&lt;p&gt;The layout of this form can be controlled by selecting a layout option and adding separators to create blocks i.e. groups of fields which go together. This will create a more pleasant and usable system.&lt;/p&gt;
+&lt;h2 id=&#34;layout&#34;&gt;Layout&lt;/h2&gt;
+&lt;p&gt;The layout option is the main control. There are three options:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;single column&lt;/strong&gt; - a simple vertical list of fields&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;blocks in two columns&lt;/strong&gt; - makes the best use of screen space for large forms. Also allows tabs
+&lt;ul&gt;
+&lt;li&gt;All fields before the first separator are displayed in a section at the top of the screen, in two columns&lt;/li&gt;
+&lt;li&gt;After that, each separator added creates a new block of fields. Blocks are arranged in two &amp;rsquo;newspaper&amp;rsquo; style columns which are displayed below the top section&lt;/li&gt;
+&lt;li&gt;If the table has tabs, they are displayed below the top section&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;process flow&lt;/strong&gt; - blocks of fields are arranged vertically one after each other, works well when there the data entry form maps to a set process&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/tags-and-options.png&#34; alt=&#34;Tags and options&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s what the same data entry form looks like in each of the three configurations&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/layout-single.png&#34; alt=&#34;single column layout&#34;&gt; &amp;ldquo;single column&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/layout-two-columns.png&#34; alt=&#34;two column layout&#34;&gt; &amp;ldquo;two columns&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/layout-process.png&#34; alt=&#34;process flow layout&#34;&gt; &amp;ldquo;process flow&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;and here&amp;rsquo;s an example of &lt;strong&gt;2. blocks in two columns&lt;/strong&gt; with tabs.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/layout-tabs.png&#34; alt=&#34;form with tabs&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;separators&#34;&gt;Separators&lt;/h2&gt;
+&lt;p&gt;To form a block, click on the &lt;em&gt;fields&lt;/em&gt; tab of a table and add a field of type &amp;lsquo;separator&amp;rsquo; - see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/separators/&#34;&gt;fields reference&lt;/a&gt;. Move it to where the start of the block should be i.e. before the first field in the block.&lt;/p&gt;
+&lt;h2 id=&#34;record-titles&#34;&gt;Record titles&lt;/h2&gt;
+&lt;p&gt;In the screenshots above, you can see that each record has a heading, or title. drawn from the data.&lt;/p&gt;
+&lt;p&gt;To set one or more fields to include in the title, use the field option &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/#use-as-record-title&#34;&gt;use as record title&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;see-also&#34;&gt;See also&lt;/h2&gt;
+&lt;p&gt;When a relation field is near the top of the form, it&amp;rsquo;s also moved to the record title level to become a title link, allowing navigation upwards to the &amp;lsquo;parent&amp;rsquo; record. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/&#34;&gt;hierarchy navigation&lt;/a&gt; for info about upwards, and downwards, navigation.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Views</title>
+      <link>https://docs.agilebase.co.uk/docs/views/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Along with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;tables&lt;/a&gt;, views are one of the two foundational concepts used when building applications with Agilebase.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-a-view&#34;&gt;What is a view?&lt;/h2&gt;
+&lt;p&gt;In fact, the concept of a view is not unique to Agilebase, it is a core part of any database system, including the &lt;a href=&#34;https://www.postgresql.org&#34;&gt;PostgreSQL&lt;/a&gt; database that Agilebase uses to store, manipulate and report on data.&lt;/p&gt;
+&lt;p&gt;Here are some of the advantages a view can offer, as explained by the &lt;a href=&#34;https://en.wikipedia.org/wiki/View_(SQL)&#34;&gt;Wikipedia Article on database views&lt;/a&gt;, slightly shortened.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Views can represent a subset of the data contained in a table.&lt;/li&gt;
+&lt;li&gt;Views can join and simplify multiple tables into a single virtual table.&lt;/li&gt;
+&lt;li&gt;Views can act as aggregated tables, where the database engine aggregates data (sum, average, etc.) and presents the calculated results as part of the data.&lt;/li&gt;
+&lt;li&gt;Views can hide the complexity of data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In a nutshell, creating a view in Agilebase allows you to display information to the user in an easily searchable format. A single view of data can contain fields from many different places placed alongside each other. It can be filtered down to a subset, and/or contain summarising data like counts, totals or averages.&lt;/p&gt;
+&lt;p&gt;Views can utilise the full power of the SQL language (mostly behind the scenes with complexity hidden from administrators) to create useful and advanced reports where necessary.&lt;/p&gt;
+&lt;p&gt;On the screen, a view is most usually output as a series of rows of data, with field names as column headings - like a spreadsheet.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/view.png&#34; alt=&#34;view&#34;&gt;&lt;/p&gt;
+&lt;p&gt;There are also other ways of displaying the output, such as in a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/calendar/&#34;&gt;calendar&lt;/a&gt; or &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;document library&lt;/a&gt; interface.&lt;/p&gt;
+&lt;p&gt;Views are organised into &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;tiles&lt;/a&gt;. Each tile contains a collection of views, organised into a menu system within it. Administrators can hence organise the display of data in a logical fashion.&lt;/p&gt;
+&lt;h3 id=&#34;behind-the-scenes-uses&#34;&gt;Behind the scenes uses&lt;/h3&gt;
+&lt;p&gt;As well as showing data to users, the power and flexibility of views allows them to be used in a multitude of different ways useful for administrators. For example, in &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt; automations, to create &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;APIs&lt;/a&gt; to allow third party systems to query the data, or to control &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#show-if-record-in-view&#34;&gt;hiding and showing fields&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There are many other uses we&amp;rsquo;ll come across throughout this documentation, in fact almost every major feature depends on views in some way.&lt;/p&gt;
+&lt;p&gt;So it&amp;rsquo;s a useful topic to understand.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Field Options</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-options/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Choosing suitable options helps make the user experience friendly, and extends the capabilities of applications.&lt;/p&gt;
+&lt;p&gt;Some options apply to all fields and others are specific to the type.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Creating a view</title>
+      <link>https://docs.agilebase.co.uk/docs/views/creating-a-view/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/creating-a-view/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In Agilebase, a view &amp;lsquo;belongs to&amp;rsquo; a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;table&lt;/a&gt;. We&amp;rsquo;ll see what that means in more detail below, but for now, just choose a table to show data from to users. In examples on this section of the documentation we&amp;rsquo;ll assume we pick a contacts table.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ll also assume we already have some tables and some &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;tiles&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;to-create-a-view&#34;&gt;To create a view&lt;/h2&gt;
+&lt;p&gt;You can create a view from scratch, or clone an existing one then edit it.&lt;/p&gt;
+&lt;p&gt;To create from scratch&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Select (or &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;create&lt;/a&gt; a new) table.&lt;/li&gt;
+&lt;li&gt;Click the table you want to create a view from&lt;/li&gt;
+&lt;li&gt;Once the table has been selected, click &lt;em&gt;name and views&lt;/em&gt; on the floating sidebar&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;Add View&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;You should now see your freshly created view&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There is an option &lt;strong&gt;Populate the view with fields from this table&lt;/strong&gt; next to the &lt;em&gt;Add View&lt;/em&gt; button. This is a convenience feature, which is ticked by default. When it&amp;rsquo;s ticked, the view created will contain the first 10 fields from the table - you can then remove any you don&amp;rsquo;t need or add more. When un-ticked, the view will start with no fields so you can add just those you wish.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To clone an existing view&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open a view&lt;/li&gt;
+&lt;li&gt;Toggle on the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/introduction/development-mode/&#34;&gt;development mode&lt;/a&gt; and click &amp;rsquo;edit view&amp;rsquo; at the top left&lt;/li&gt;
+&lt;li&gt;Open the &amp;lsquo;properties and options&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;Scroll down to the bottom of the panel and press the &amp;lsquo;clone view&amp;rsquo; button&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;[snippet video  - cloning a view]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/zA2EEW7YLsA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;organising-into-a-navigation-structure&#34;&gt;Organising into a navigation structure&lt;/h2&gt;
+&lt;p&gt;On creating a view, its editing panel will open. One of the first things it&amp;rsquo;s useful to do is put the field in a tile - use the &lt;em&gt;Tile&lt;/em&gt; dropdown option, under &lt;em&gt;properties&lt;/em&gt; to do so.&lt;/p&gt;
+&lt;p&gt;Within a tile, the view can be added to a menu by editing the view name. Simply prefix the view name with a menu name and a dash. So for example, naming a view &lt;code&gt;contacts - all contacts&lt;/code&gt; will create a &amp;lsquo;contacts&amp;rsquo; menu containing the view &amp;lsquo;all contacts&amp;rsquo; visible to users.&lt;/p&gt;
+&lt;p&gt;Entering a view &lt;em&gt;Help&lt;/em&gt; in the space underneath the name will provide help text for the view. This will be displayed in the menu underneath the view name. Here&amp;rsquo;s a screenshot of a sample menu, each with purpose completed.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/menu.png&#34; alt=&#34;menu&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;adding-and-removing-fields&#34;&gt;Adding and removing fields&lt;/h2&gt;
+&lt;p&gt;The core function of a view is usually to display a set of fields to people, as columns, so they can see data and search it.&lt;/p&gt;
+&lt;p&gt;When you create a view, the first dozen or so fields in the table it was created from will be added automatically. You can hover over a field and click the cross icon to remove it from the view.&lt;/p&gt;
+&lt;p&gt;To add a new field, make sure you&amp;rsquo;re in the &amp;lsquo;fields&amp;rsquo; panel (the default). An &amp;lsquo;Add Field&amp;rsquo; section will be visible, with two selectors.
+The first on the left selects the source of data. This is typically a table, but can also be a view.&lt;/p&gt;
+&lt;p&gt;The default source is the view&amp;rsquo;s parent table. The system also intelligently presents any tables which are related - for example, when editing a view based on contacts, &amp;lsquo;organisations&amp;rsquo; may be available if each contact belongs to an organisation.
+Finally, any tables or views which are &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/&#34;&gt;joined&lt;/a&gt; to this view are available as sources.&lt;/p&gt;
+&lt;p&gt;Once you&amp;rsquo;ve selected a source (if not the default), you can choose a field to add.&lt;/p&gt;
+&lt;p&gt;When you press the Add button you&amp;rsquo;ll be prompted to edit the field name if you like. You can just press OK to accept the name of the field as it is, but if you like you can edit it first. That doesn&amp;rsquo;t change the field name in its underlying table, but it does allow you to name the field something specific just for this view.
+For example, in your organisations table, you may have a field &amp;lsquo;Organisation Name&amp;rsquo;. In a view of invoices to customers, you may want to name this &amp;lsquo;Customer Name&amp;rsquo;, just for that view.&lt;/p&gt;
+&lt;h3 id=&#34;applying-sorts&#34;&gt;Applying sorts&lt;/h3&gt;
+&lt;p&gt;When someone opens a view, they can sort it by any column they like by clicking the column header. However when building a view, you may want to set a default sort order.&lt;/p&gt;
+&lt;p&gt;To do that, when looking at the list of fields in a view, click the little up/down icon to the left of the fieldname. That will apply a sort to that field. Clicking it again will change the direction of the sort.&lt;/p&gt;
+&lt;p&gt;You can add sorts to multiple fields, they will take effect from the top down, i.e. the data will be sorted by the top field with a sort, then by the next one down etc.&lt;/p&gt;
+&lt;h3 id=&#34;adding-sections&#34;&gt;Adding sections&lt;/h3&gt;
+&lt;p&gt;If a view has many fields, it can be beneficial to organise them into sections, just like you organise table fields into sections using &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/separators/&#34;&gt;separators&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To create a section, edit the field or calculation which should form the start of a section and enter some text describing the section into the &lt;em&gt;Section Name&lt;/em&gt; box.&lt;/p&gt;
+&lt;p&gt;When a user hovers over a column name which is the start of a section (identified by the vertical bar on screen), the section name is displayed. Here&amp;rsquo;s an example where the field Distinct Wish Count is the start of an &amp;lsquo;Actions&amp;rsquo; section.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/view-section.png&#34; alt=&#34;view section&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;using-a-view&#34;&gt;Using a view&lt;/h2&gt;
+&lt;p&gt;Once the view is created, how can someone use it? We won&amp;rsquo;t work through every possibility here as this documentation is for administrators rather than users, but here are some of the most important points in brief you may like to be aware of in order to support apps you build.&lt;/p&gt;
+&lt;h3 id=&#34;finding-data&#34;&gt;Finding data&lt;/h3&gt;
+&lt;p&gt;By default, a search box appears under each column heading (the system can also be configured in a simplified way with a single search box to cover all fields).&lt;/p&gt;
+&lt;p&gt;The help icon (?) to the left of the search boxes details the types of search that can be performed. There are many, allowing for e.g. date-based searches, &lt;em&gt;and&lt;/em&gt; and &lt;em&gt;or&lt;/em&gt; searching, finding empty values etc. Helper features pop up for some field types, like date range pickers for example.&lt;/p&gt;
+&lt;h3 id=&#34;seeing-summary-stats&#34;&gt;Seeing summary stats&lt;/h3&gt;
+&lt;p&gt;Hovering over a column shows summary statistics, like a total and average (of all filtered records) for numeric fields, or a breakdown of dropdown/tags fields.&lt;/p&gt;
+&lt;h3 id=&#34;loading-a-record&#34;&gt;Loading a record&lt;/h3&gt;
+&lt;p&gt;Once a record has been found, click a row in the view to load that record for viewing or editing. The record loaded comes from the table that the view belongs to (as referenced at the start of this page), even though the view may contain fields from other tables as well.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also possible to use &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/options/display-options/#interface-inline-editing&#34;&gt;inline editing&lt;/a&gt; to edit the contents of fields directly in the view.&lt;/p&gt;
+&lt;p&gt;Pressing the plus button to the left of the view contents will create a new record in the view&amp;rsquo;s parent table.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Basic Field Types</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/</guid>
+      <description>
+        
+        
+        &lt;p&gt;These are the core types of fields by which data can be entered by users (or other sources such as the API or a workflow).&lt;/p&gt;
+&lt;h2 id=&#34;text&#34;&gt;Text&lt;/h2&gt;
+&lt;p&gt;Text fields are the most commonly used. Depending on &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/&#34;&gt;field options&lt;/a&gt;, text can be entered into a standard data entry control, a large box allowing rich formatting (bold, italic etc.), chosen from a dropdown of options or added as tags.&lt;/p&gt;
+&lt;h2 id=&#34;number&#34;&gt;Number&lt;/h2&gt;
+&lt;p&gt;When adding a number field, select a &lt;em&gt;precision&lt;/em&gt; from the dropdown. If &lt;code&gt;0&lt;/code&gt; is chosen, then it will be a whole number (integer) field. If any other value is chosen, it will be a decimal field. The decimal precision can be changed at any time in the field options, but a whole number can&amp;rsquo;t be converted to a decimal or vice versa via field options.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/#switching-a-field-from-one-type-to-another&#34;&gt;changing field types&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;date&#34;&gt;Date&lt;/h2&gt;
+&lt;p&gt;Represents a date or date/time, of any precision from year to second.&lt;/p&gt;
+&lt;h2 id=&#34;auto-generated-number-sequence&#34;&gt;Auto-generated number sequence&lt;/h2&gt;
+&lt;p&gt;The value of this field will be generated automatically, incremented by one each time a record is created.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Sequence numbers are never rolled back, even on the deletion of a record, so they can&amp;rsquo;t be used if a gapless assignment of numbers is required. To accomplish that, calculate a value with a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#set-from-previous-referenced-field&#34;&gt;cross-referenced field&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;relation&#34;&gt;Relation&lt;/h2&gt;
+&lt;p&gt;Adding a relation creates a link from one table to another. For example, a contacts table may contain a relation linking to an organisations table, to allow a person to belong to an organisation. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relational database concepts&lt;/a&gt; for further info.&lt;/p&gt;
+&lt;h2 id=&#34;checkbox&#34;&gt;Checkbox&lt;/h2&gt;
+&lt;p&gt;Represents a boolean (true or false) value.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Text Field Options</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;colour-words&#34;&gt;Colour words&lt;/h2&gt;
+&lt;p&gt;When this field is included in a view, highlight it with a colour if the content is one of a number of words. The most up-to-date values to be highlighted are shown in the administrator interface, but as of the latest update of this page, they are&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/word-colours.png&#34; alt=&#34;Word Colours&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Text calculations can also be coloured based on the same words - see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/#colouring&#34;&gt;calculation options&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Words will also automatically be coloured when a &amp;lsquo;radio button&amp;rsquo; style is used for a field, i.e. when&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;lsquo;use dropdown&amp;rsquo; is ticked&lt;/li&gt;
+&lt;li&gt;&amp;lsquo;use only given values&amp;rsquo; is ticked&lt;/li&gt;
+&lt;li&gt;there are three or fewer values to choose from&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;swap-colours&#34;&gt;Swap colours&lt;/h2&gt;
+&lt;p&gt;When words are coloured (see above), &amp;lsquo;yes&amp;rsquo; will usually be coloured green and &amp;rsquo;no&amp;rsquo; red etc. However depending on the field name or question being asked, you may want to swap the colours.&lt;/p&gt;
+&lt;p&gt;For example, for a field &amp;lsquo;Passport Checked&amp;rsquo;, you might want yes to be green, but for a field &amp;lsquo;Dangerous Substances Detected&amp;rsquo;, yes should be red and no should be green. In that case, use this option to swap the colours.&lt;/p&gt;
+&lt;p&gt;The words that will have colours swapped by this option are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;yes / no&lt;/li&gt;
+&lt;li&gt;true / false&lt;/li&gt;
+&lt;li&gt;low / high&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;use-dropdown&#34;&gt;Use dropdown&lt;/h2&gt;
+&lt;p&gt;Rather than a simple text entry field, display a dropdown of choices from which one can be selected. If there are only a few values, then the user interface may display options in &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio&#34;&gt;radio button&lt;/a&gt; style, but the behaviour is exactly the same.&lt;/p&gt;
+&lt;p&gt;Options can be provided by entering a comma separated list into the &lt;a href=&#34;#values&#34;&gt;value(s)&lt;/a&gt; setting as below. If no options are specified, then the list of options will be automatically generated from the set of unique values &lt;strong&gt;already entered&lt;/strong&gt; into records. In this way, a set of values will gradually grow as people enter new data.&lt;/p&gt;
+&lt;p&gt;See also the &lt;a href=&#34;#use-only-given-values&#34;&gt;Use only given values&lt;/a&gt; option below to enforce the use of provided values only.&lt;/p&gt;
+&lt;h2 id=&#34;use-tags&#34;&gt;Use tags&lt;/h2&gt;
+&lt;p&gt;Similar to Use dropdown, but rather than only letting the user select one value, multiple values can be chosen at once.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;An example use may be selecting countries of origin for an ingredient, where it may come from different countries (perhaps via different suppliers).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The list of available options is specified in exactly the same way as for dropdowns above.&lt;/p&gt;
+&lt;h2 id=&#34;use-only-given-values&#34;&gt;Use only given values&lt;/h2&gt;
+&lt;p&gt;If a dropdown or tags list is used as above, ticking this option enforces the use of one of the provided values.&lt;/p&gt;
+&lt;p&gt;If it&amp;rsquo;s un-ticked, then an &amp;lsquo;add new entry&amp;rsquo; option will be available for users to manually add values which aren&amp;rsquo;t yet in the list. Added values will be visible to all.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In some circumstances, it can be useful to leave this un-ticked and let options grow organically, until a certain point. Administrators can then rationalise and &amp;lsquo;hard-code&amp;rsquo; values from the most commonly entered. In other situations, it may be best to specify available options right from the start.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;values&#34;&gt;Value(s)&lt;/h2&gt;
+&lt;p&gt;For basic text fields, i.e. not those which display as dropdowns or tag lists (see below), this simply provides a default value to set the field to when a new record&amp;rsquo;s created. If not provided, the field value will be blank on creation.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Field defaults can also be calculated, with a simple or arbitratily complex calculation. To do that, instead use the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#set-from-previous-referenced-field&#34;&gt;Set from previous referenced field&lt;/a&gt; option.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;specifying-dropdown-lists-and-tags-fields&#34;&gt;Specifying dropdown lists and tags fields&lt;/h3&gt;
+&lt;p&gt;If either &lt;a href=&#34;#use-dropdown&#34;&gt;Use dropdown&lt;/a&gt; or &lt;a href=&#34;#use-tags&#34;&gt;Use tags&lt;/a&gt; is selected, the value(s) option provides a &lt;strong&gt;list&lt;/strong&gt; of options with which to populate the dropdown, or a set of tags to choose from. Enter each option here separated by commas.&lt;/p&gt;
+&lt;p&gt;If the list &lt;strong&gt;starts with&lt;/strong&gt; a comma, that means the field should be blank by default when a record is created. If not, then the default will be the first value in the comma separated list.&lt;/p&gt;
+&lt;p&gt;In the dropdown/tags list, the options will be ordered alphabetically, not shown in the order they&amp;rsquo;re entered in. If you wish to give the values a particular order, you can prefix them with a number or letter followed by a closing bracket like so: &lt;code&gt;1) cold, 2) warm, 3) hot&lt;/code&gt;. The number prefixes won&amp;rsquo;t show to the user.&lt;/p&gt;
+&lt;h4 id=&#34;customising-the-list-of-options-per-user&#34;&gt;Customising the list of options per user&lt;/h4&gt;
+&lt;p&gt;As well as entering a default set of options for dropdowns and tags fields as above, it&amp;rsquo;s possible to add options which will only be visible to certain users, specifically those in a certain role.&lt;/p&gt;
+&lt;p&gt;The way to add an option which will only be visible to users of a role is to add &lt;code&gt;|rolename&lt;/code&gt; after the option, that is a vertical bar followed by the name of the role.&lt;/p&gt;
+&lt;p&gt;For example, setting the list of options to&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;1) not billed, 2) awaiting payment, 3) paid|finance&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;will mean that anyone will be able to set the field to &lt;code&gt;1) not billed&lt;/code&gt; or &lt;code&gt;2) awaiting payment&lt;/code&gt; but only members of the finance role will be able to see and set the &lt;code&gt;3) paid&lt;/code&gt; option (once it has been set, it will be visible to everyone).&lt;/p&gt;
+&lt;h4 id=&#34;lists-of-users&#34;&gt;Lists of users&lt;/h4&gt;
+&lt;p&gt;Also for dropdown lists and tags fields, Agilebase can generate dropdown contents based on a list of users and/or roles in the system. To do that, select &lt;code&gt;users&lt;/code&gt; or &lt;code&gt;users and roles&lt;/code&gt; from the &amp;lsquo;fill with&amp;rsquo; selector just below the value(s) input. The standard user ID format throughout the system is used, &amp;lsquo;Forename Surname (username)&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;Only users/roles which have privileges to view the data in this particular table will be shown in the list. That can keep things manageable if a system has hundreds or more users.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;An example use would be assigning an account manager to a customer, selecting from a list of staff members (who are users).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When a user is selected in this way, more options for use are opened up, such as automatically emailing the selected person when there&amp;rsquo;s a status change or something is overdue for example. Agilebase can look up the user&amp;rsquo;s email address to accomplish this, See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;email workflows&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;When using &amp;lsquo;fill with users&amp;rsquo;, the list of users to appear in the dropdown can further be narrowed down by role if required. To do that, enter the text&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;_users|role1,role2,role3&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;i.e. &lt;code&gt;_users&lt;/code&gt; followed by a vertical bar and then a comma separated list of role names. Only users which appear in one or more of the named roles will appear.&lt;/p&gt;
+&lt;p&gt;If you want a field to auto-populate with the ID of the currently logged in user, enable both this option and the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#required&#34;&gt;required&lt;/a&gt; field option.&lt;/p&gt;
+&lt;h2 id=&#34;text-case&#34;&gt;Text case&lt;/h2&gt;
+&lt;p&gt;Convert people&amp;rsquo;s input into the required case as it&amp;rsquo;s entered - choose from&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;lowercase&lt;/li&gt;
+&lt;li&gt;UPPERCASE&lt;/li&gt;
+&lt;li&gt;Title Case&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;size&#34;&gt;Size&lt;/h2&gt;
+&lt;p&gt;If &amp;lsquo;short&amp;rsquo; is chosen, a standard single line input box is displayed.&lt;/p&gt;
+&lt;p&gt;If &amp;rsquo;large&amp;rsquo; is chosen, a multi-line text entry box is shown. This option also lets people format the text entered, such as using &lt;strong&gt;bold&lt;/strong&gt;, &lt;em&gt;italics&lt;/em&gt; or bullet points. For data security reasons, only certain formatting is allowed.&lt;/p&gt;
+&lt;h2 id=&#34;use-as-record-title&#34;&gt;Use as record title&lt;/h2&gt;
+&lt;p&gt;The user interface has the ability to highlight the importance of certain fields by showing their contents in large font at the top of the record data. For example, a Company Name field may be the record title for an organisation record.&lt;/p&gt;
+&lt;p&gt;This option can be selected for multiple fields in a table. In that case, the first field will be the main title, others will appear as subtitles.&lt;/p&gt;
+&lt;h3 id=&#34;preventing-duplicates&#34;&gt;Preventing duplicates&lt;/h3&gt;
+&lt;p&gt;Enabling the &amp;lsquo;use as record title&amp;rsquo; option also has the effect of enabling duplicate detection. The system will detect when a value is entered that is close to an existing value in the system. Any &amp;lsquo;close&amp;rsquo; values that are found are displayed as links to the relevant records.&lt;/p&gt;
+&lt;p&gt;This can be useful when e.g. entering company names. Although a field can be marked &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#unique&#34;&gt;unique&lt;/a&gt; to prevent exact duplicates, that won&amp;rsquo;t pick up near matches, which this duplicate detection will. For example, &amp;lsquo;The Universoty Of Bristol&amp;rsquo; and &amp;lsquo;University Of Bristol (UOB)&amp;rsquo; will be detected as close matches, or &amp;lsquo;Agilebase&amp;rsquo; and &amp;lsquo;Agilebase Ltd&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;The system uses &lt;a href=&#34;https://www.postgresql.org/docs/current/pgtrgm.html&#34;&gt;trigram matching&lt;/a&gt; to detect similar values.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Joins</title>
+      <link>https://docs.agilebase.co.uk/docs/views/joins/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/joins/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Without any joins, you can only add &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/&#34;&gt;fields&lt;/a&gt;, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;filters&lt;/a&gt; and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/&#34;&gt;calculations&lt;/a&gt; (display data in other words), from a view&amp;rsquo;s parent table - the one it was created from. When joins are added to other tables or views, you can also bring in data from any table or view joined to.&lt;/p&gt;
+&lt;p&gt;For example, a view based on the contacts table could join to organisations (as long as there is a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation field&lt;/a&gt; from contacts to organisations). You could then add in organisation name to the view, as well as fields like contact name, phone number and email address.&lt;/p&gt;
+&lt;p&gt;Or for a more complex example, if you start with a view from a recipes table, you could potentially join down to ingredients, then on again to allergens of those ingredients, allowing you to work out with a calculation the complete list of allergens in any recipe.&lt;/p&gt;
+&lt;p&gt;Any number of joins to different tables or views can be added to a view.&lt;/p&gt;
+&lt;h2 id=&#34;adding-a-join&#34;&gt;Adding a join&lt;/h2&gt;
+&lt;p&gt;Agilebase will automatically pick out the common tables you may wish to join to, by seeing which are related via &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation fields&lt;/a&gt;. Once you get used to the concepts, you may also wish sometimes to add joins manually to tables or views not automatically suggested. That will be covered at the end of this page.&lt;/p&gt;
+&lt;p&gt;To add a join&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Load the view you wish to add a join to and toggle on development mode&lt;/li&gt;
+&lt;li&gt;Click the big pencil icon at the top left of the screen to bring up the &amp;lsquo;Edit view&amp;rsquo; panel&lt;/li&gt;
+&lt;li&gt;Click &amp;lsquo;joins&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;A list of joins you can add will appear, each representing a link to a table with related data in it. Select one and the join will add&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;the-anatomy-of-a-join&#34;&gt;The anatomy of a join&lt;/h2&gt;
+&lt;p&gt;The added join will appear graphically above the &lt;em&gt;Add Join&lt;/em&gt; button. The lefthand &amp;lsquo;blob&amp;rsquo; or part represents the table being joined from, on the right is the one joined to. In the middle is a selector for the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/types-of-join/&#34;&gt;join type&lt;/a&gt;, which we will come to.&lt;/p&gt;
+&lt;p&gt;In each part, left or right, the name of the table being joined from (on the left) or to (on the right) is shown in bold.&lt;/p&gt;
+&lt;p&gt;Underneath the table name, the name of the field used to match records is shown. When an ID field is shown, this just refers to the internal ID Agilebase uses automatically to make the match. It&amp;rsquo;s only of relevance if you&amp;rsquo;re creating advanced joins manually - see below, so can be ignored otherwise.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/example-join.png&#34; alt=&#34;example join&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In this example, we have a join from the &lt;strong&gt;contacts&lt;/strong&gt; table to &lt;strong&gt;companies&lt;/strong&gt;, to allow us to add company information into our view. The link was made based on the &lt;strong&gt;organisation&lt;/strong&gt; field in the contacts table, which lets a company be assigned to a contact.&lt;/p&gt;
+&lt;h2 id=&#34;upwards-and-downwards-joins&#34;&gt;Upwards and downwards joins&lt;/h2&gt;
+&lt;p&gt;You may notice when clicking &lt;em&gt;Add Join&lt;/em&gt; and looking at the list of potential joins available, that some of them show as joining &lt;strong&gt;up&lt;/strong&gt; and others &lt;strong&gt;down&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Joins up are from a &amp;lsquo;child&amp;rsquo; to a &amp;lsquo;parent&amp;rsquo;, i.e. you can think of a contact as belonging to a organisation, so a join from contacts to organisations is an upwards join. The other way round, it would be a downwards join.&lt;/p&gt;
+&lt;p&gt;What difference does this make? Well if you join down, then the view will contain one row for every child record, with repetitions in the parent data if the parent is the same. This is easier to see with a picture - here&amp;rsquo;s what a view from an organisations table looks like when it joins down to contacts - there are three contacts for the organisation TODO.&lt;/p&gt;
+&lt;p&gt;** TODO: screenshot **&lt;/p&gt;
+&lt;p&gt;However, joins down can be very useful when you want to aggregate child data, for example if you want to count the number of contacts each organisation has, you could add a join from organisations down to contacts, then add an &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/examples/#aggregate-calculations&#34;&gt;aggregate calculation&lt;/a&gt; to count the contacts. The system would then condense everything into one row per organisation, like so:&lt;/p&gt;
+&lt;p&gt;** TODO: screenshot **&lt;/p&gt;
+&lt;p&gt;So joins upwards are the more common case, but joins downward can be useful for particular purposes.&lt;/p&gt;
+&lt;h2 id=&#34;complex-joins&#34;&gt;Complex joins&lt;/h2&gt;
+&lt;p&gt;As above, Agilebase automatically suggests joins to data that&amp;rsquo;s related to the current view&amp;rsquo;s parent table as well as any of the tables already joined to. It uses &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation fields&lt;/a&gt; to see what&amp;rsquo;s related.&lt;/p&gt;
+&lt;p&gt;However, sometimes you may want to join to a table or view that&amp;rsquo;s not automatically suggested. These examples may become increasingly &amp;rsquo;niche&amp;rsquo; but they are a useful reference for similar situations you may come across.&lt;/p&gt;
+&lt;h3 id=&#34;joining-to-a-view&#34;&gt;Joining to a view&lt;/h3&gt;
+&lt;p&gt;Joins to views aren&amp;rsquo;t automatically suggested, but you can still add them.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When might this be useful? Well one example is if you have a view containing a complex calculation and you wish to include the results of that calculation in lots of other views in different places.&lt;/p&gt;
+&lt;p&gt;Say you calculate various nutritional values of a recipe, such as the energy, salt and fats contents. You may wish to display that information in a few views for different people to query, as well as include them in product specification documents (which can be generated from a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow view&lt;/a&gt;) and perhaps product labels as well, using a view to send data to third party labelling equipment using an &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;API&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To add a join to a view:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Edit the view and open the &lt;em&gt;Joins&lt;/em&gt; panel as above&lt;/li&gt;
+&lt;li&gt;Under &lt;em&gt;Advanced Add Join&lt;/em&gt;, select the left source and field, the right source and field, then press &lt;em&gt;Add&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The last step is the only one different to the normal join addition process, and the one that needs a little explanation&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;left&lt;/strong&gt; source is the table or view to join from. Often (and by default), this will be the view&amp;rsquo;s parent table&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;left field&lt;/strong&gt; is the view from the lefthand table to match on. Often (and by default) this is the table&amp;rsquo;s ID field. If you&amp;rsquo;re joining on a relation, choose the relation field&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;right&lt;/strong&gt; source is the table or view to join to&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;right field&lt;/strong&gt; is the field to match. This will usually be a table ID field. If you chose an ID field for the left field, then choose the same ID field in the target view. If the left field is a relation, choose the ID of the table it relates to on the right&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;example&#34;&gt;Example&lt;/h4&gt;
+&lt;p&gt;To take the example above of the nutritional calculations, assume we have a view called &amp;rsquo;nutritional values&amp;rsquo;, built from a &amp;lsquo;recipes&amp;rsquo; table. To include nutritional data in another view &amp;lsquo;recipe details&amp;rsquo;, also built from the recipes table, we would edit recipe details and add a join as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Left source: the recipes table&lt;/li&gt;
+&lt;li&gt;Left field: the ID:recipes field&lt;/li&gt;
+&lt;li&gt;Right source: the nutritional values view&lt;/li&gt;
+&lt;li&gt;Right field: the ID:recipes field&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;joining-on-a-field-other-than-the-id&#34;&gt;Joining on a field other than the ID&lt;/h3&gt;
+&lt;p&gt;On occasion, you may wish to join to another table on data that is present in this and the other.&lt;/p&gt;
+&lt;p&gt;For an example, imagine our business opens a series of restaurants - we have a table &amp;lsquo;restaurants&amp;rsquo; listing them. We may have a table of people who&amp;rsquo;ve signed up to our newsletter, called &amp;rsquo;newsletter signups&amp;rsquo;. Some of them may have provided a postcode.&lt;/p&gt;
+&lt;p&gt;To find a list of people in the same postcode areas as each restaurant (the first half of a postcode, e.g. BS1):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;in a view &amp;lsquo;restaurant locations&amp;rsquo;, built from the restaurants table, create a calculation &amp;lsquo;postcode area&amp;rsquo;, which picks out the first part of the restaurant&amp;rsquo;s postcode (see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/&#34;&gt;calculations&lt;/a&gt; for how to create a calculation)&lt;/li&gt;
+&lt;li&gt;in a view &amp;lsquo;all newsletter signups&amp;rsquo;, from the table newsletter signups, create a similar calculation, called &amp;lsquo;signup postcode area&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;from the view &amp;lsquo;all newsletter signups&amp;rsquo;, create a join with
+&lt;ul&gt;
+&lt;li&gt;left source: the &lt;strong&gt;all newsletter signups&lt;/strong&gt; view&lt;/li&gt;
+&lt;li&gt;left field: &lt;strong&gt;signup postcode area&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;right source: the &lt;strong&gt;restaurant locations&lt;/strong&gt; view&lt;/li&gt;
+&lt;li&gt;right field: &lt;strong&gt;postcode area&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You&amp;rsquo;ll then be able to add the name of the restaurant(s) in each signup&amp;rsquo;s area to the view. This could be to send them a special offer for their local restaurant for example.&lt;/p&gt;
+&lt;p&gt;As you can see, this also demonstrates creating a join on a calculation.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When you make a join on a field or calculation that isn&amp;rsquo;t an ID, be careful to ensure that the data is &lt;strong&gt;exactly the same&lt;/strong&gt; on both sides. In this example, the postcode fields on both sides must be the same case (e.g. uppercase). Otherwise they won&amp;rsquo;t be picked up in the match.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;joining-on-multiple-fields&#34;&gt;Joining on multiple fields&lt;/h3&gt;
+&lt;p&gt;Extending &amp;lsquo;creating a join on a calculation&amp;rsquo; from the above example, here we can use a calculation to create a &lt;strong&gt;composite field&lt;/strong&gt; to join on. This can be used when you want to join on a number of fields at once, not just one.&lt;/p&gt;
+&lt;p&gt;This can sometimes be useful in financial reporting. Our example here is creating a report totalling up sales by product by month. The twist is we also want to include product/month combinations in which there were no sales of a particular product for the month.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;d start by creating a view of all product/month combinations over the past 12 months. See the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/examples/#series-generation&#34;&gt;series generation&lt;/a&gt; example in the calculations section for how to do this.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;d then create a calculation &amp;lsquo;product month&amp;rsquo; which would merge the product code and the month name. A similar calculation would be created in a &amp;lsquo;sales&amp;rsquo; view, which shows individual sale lines, each with a product and month.&lt;/p&gt;
+&lt;p&gt;Finally, we&amp;rsquo;d join the two views together, the product/month combinations on the left, the sales view on the right, choosing the &amp;lsquo;product month&amp;rsquo; calculations from each as the fields to match on.&lt;/p&gt;
+&lt;p&gt;That would enable us to create a calculation totalling sales for each product/month, including zeros where there were no sales.&lt;/p&gt;
+&lt;h2 id=&#34;removing-joins&#34;&gt;Removing joins&lt;/h2&gt;
+&lt;p&gt;Before removing a join, you first need to remove any uses of the joined object (table or view) from the view. To do that&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the &amp;lsquo;fields&amp;rsquo; panel of the view, remove any fields which are from the joined object. The source of each field is shown to the right of the field name. That includes any dimmed &amp;lsquo;Link to&amp;hellip;&amp;rsquo; fields, which are primary keys.&lt;/li&gt;
+&lt;li&gt;Still in the &amp;lsquo;field&amp;rsquo; panel, check if any fields from the joined object are referenced from any calculations (shown in purple in the fields list). If so, remove those calculations or edit them to remove the reference&lt;/li&gt;
+&lt;li&gt;Check the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;filters&lt;/a&gt; panel to see if any joined objects are used in a filter. If so, remove that filter&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s also possible a join may be there as an intermediate to another join. In that case, you need to work backwards removing any dependent joins first.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you still can&amp;rsquo;t remove a join, it may be that a field from the joined object is referenced elsewhere in the view setup - you can check other view panels like &amp;lsquo;properties and options&amp;rsquo; or the &amp;lsquo;workflow&amp;rsquo; panels.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Tabs</title>
+      <link>https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/</link>
+      <pubDate>Mon, 04 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Tabs are one way of exposing relationships between tables, to allow the user to navigate the structure of an application. For example, in a companies table, a contacts tab may show all the people employed at that particular company.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The user interface can display more than two levels of structure on screen in other ways (e.g. showing a menu in a tab) and wherever the user is, they can navigate up or down the hierarchy of data.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;adding-a-tab&#34;&gt;Adding a tab&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/adding-and-removing/#editing-a-table&#34;&gt;Edit the table&lt;/a&gt; you wish to add a tab to&lt;/li&gt;
+&lt;li&gt;In the &amp;rsquo;tabs&amp;rsquo; panel, select a &amp;lsquo;child table&amp;rsquo; in the &lt;em&gt;Add a tab&lt;/em&gt; dropdown&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;tab-types&#34;&gt;Tab types&lt;/h2&gt;
+&lt;p&gt;There are two types of tab, those which show a &lt;strong&gt;single record&lt;/strong&gt; and those which show &lt;strong&gt;multiple records&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The type used depends on the relation field in the child table used in the tab, which links to the main table. If it is &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/relation-field-options/#one-to-one-only&#34;&gt;one-to-one&lt;/a&gt;, then a single record is shown in the tab. If it&amp;rsquo;s &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/table-layouts/&#34;&gt;one to many&lt;/a&gt;, then a view appears embedded in the tab, with which the user can choose a record to edit.&lt;/p&gt;
+&lt;p&gt;A one to one example may be showing a tab of specification information against an ingredient for example.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/tab-one-to-one.png&#34; alt=&#34;one to one tab&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A one to many may be a list of suppliers who supply that ingredient.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/tab-one-to-many.png&#34; alt=&#34;one to many tab&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tab-options&#34;&gt;Tab options&lt;/h2&gt;
+&lt;p&gt;Typically, these options are only needed to finnesse an application. They can be useful to look at once the core of the structure is built.&lt;/p&gt;
+&lt;h3 id=&#34;tab-view&#34;&gt;Tab view&lt;/h3&gt;
+&lt;p&gt;For one to many tabs, which &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt; to use to show items. By creating a specific view to use for the tab, you can control which fields are displayed in which order, add calculations, filter those which are shown etc.&lt;/p&gt;
+&lt;p&gt;To use a view as a tab view, it must contain the row ID field of the parent table i.e. the table the tab is present in.&lt;/p&gt;
+&lt;p&gt;If the view contains one or more charts, those charts will also be shown when opening the tab, filtered to show only data for the parent record containing the tab (in the same way that the records to display in the tab are filtered).&lt;/p&gt;
+&lt;h3 id=&#34;populate-from-template&#34;&gt;Populate from template&lt;/h3&gt;
+&lt;p&gt;Under a tab, a button allows the user to add records. For example in the contacts tab of an organisation, they would be able to add a new contact.&lt;/p&gt;
+&lt;p&gt;However, in some situations you want to pre-populate the tab with records, rather than make the user create each one manually. An example might be order lines for a customer order in a telesales system. The order lines could be initially pre-populated with regular items the customer orders.&lt;/p&gt;
+&lt;p&gt;One way of doing that is to use the &amp;lsquo;Populate from template&amp;rsquo; view, first creating a new view to use for this purpose. The view must contain the record ID field of the parent table (e.g. customer orders in our example). When the user clicks on the tab, if there are no records present yet, it will prompt to populate the tab. Each row from the view where the record ID matches that of the parent record (cutomer order) will be used to create a record in the tab.&lt;/p&gt;
+&lt;p&gt;Any calculations in the view &lt;strong&gt;with the same name&lt;/strong&gt; as a field in the tab table will be used to populate values in the records.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Another way of auto-populating data is to use a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/#when-a-records-created-run-this-workflow&#34;&gt;workflow which runs on record creation&lt;/a&gt; or in the background. You can choose whichever method works best for a particular purpose.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;show-only-if-in-view&#34;&gt;Show only if in view&lt;/h3&gt;
+&lt;p&gt;This option allows you to control tab visibility - whether the tab is visible on screen or not at any time depends on whether the main record appears in the view chosen. This works exactly the same way as &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#show-if-record-in-view&#34;&gt;field visibility&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;colour-from-view&#34;&gt;Colour from view&lt;/h3&gt;
+&lt;p&gt;The colour of each tab can be chosen. For example, different steps of a process may each be represented by a tab. Once a step is complete, the tab may be coloured green.&lt;/p&gt;
+&lt;p&gt;To set this up, create a view from the main (parent) table. It should contain a text calculation called &amp;lsquo;colour&amp;rsquo; which outputs the name of a colour e.g. green, or a blank value for no colour. The colour names are the same as those for &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/#flag-records-with-colour&#34;&gt;record flagging&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;name&#34;&gt;Name&lt;/h3&gt;
+&lt;p&gt;By default the tab is named the same as the table used. However, you can override that here.&lt;/p&gt;
+&lt;h3 id=&#34;use-inline-editing&#34;&gt;Use inline editing&lt;/h3&gt;
+&lt;p&gt;Speed up intensive data entry by allowing each field in the tab view to be edited inline. Here&amp;rsquo;s an example using an order processing system.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/tab-inline-edit.png&#34; alt=&#34;tab inline editing&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;show-relation-fields&#34;&gt;Show relation fields&lt;/h3&gt;
+&lt;p&gt;If this is un-ticked (which it is by default), any relation fields in the tab table will be hidden. This can be useful if you want to reduce the complexity exposed to the user. They can load all data including relations by navigating to the full record.&lt;/p&gt;
+&lt;h3 id=&#34;choose-a-record-when-a-new-item-is-added&#34;&gt;Choose a record when a new item is added&lt;/h3&gt;
+&lt;p&gt;Used when a tab shows a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/#a-more-complex-example&#34;&gt;join (also called a junction) table&lt;/a&gt;. To continue the example from that page, when adding a link between supplier and raw materials, if the raw materials table had a tab showing links, this option would cause the user to be immediately prompted for a supplier when adding a link.&lt;/p&gt;
+&lt;h3 id=&#34;accept-emails-from-parent-table&#34;&gt;Accept emails from parent table&lt;/h3&gt;
+&lt;p&gt;Redirect any incoming emails to the parent table to be stored in this tab. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/#accept-emails-to-this-address&#34;&gt;table options&lt;/a&gt; for details of receiving emails.&lt;/p&gt;
+&lt;h2 id=&#34;multiple-tabs-for-the-same-table&#34;&gt;Multiple tabs for the same table&lt;/h2&gt;
+&lt;p&gt;A final note about tabs. In a small number of cases, one table A may have two relations to the &lt;strong&gt;same&lt;/strong&gt; table B. For example, a record of a contract between two parties may have a relation to the customer and supplier, both of which are records in an organisations table.&lt;/p&gt;
+&lt;p&gt;In this case, you may want to add two tabs to the organisations table, one to show contracts for which a particular organisation is a customer, another for which they are a supplier.&lt;/p&gt;
+&lt;p&gt;You can do that - just add two tabs for the same table. The system will use the first relation it finds for the first tab, the second for the next.&lt;/p&gt;
+&lt;p&gt;Another example is a recursive Bill Of Materials (BOM) system where a join table may link to a parent item and a child item.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: To grandchild records</title>
+      <link>https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/to-grandchild-records/</link>
+      <pubDate>Mon, 04 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/to-grandchild-records/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/&#34;&gt;Tabs&lt;/a&gt; allow navigation from a parent record to a child, e.g. an organisation to a contact, order to order line, recipe to ingredient etc.&lt;/p&gt;
+&lt;p&gt;Of course, that child record may itself have subsidiary records of its own, e.g. a contact may have a tab for their training records.&lt;/p&gt;
+&lt;p&gt;When that&amp;rsquo;s the case, Agilebase exposes both tiers of data on screen so the user can jump from the top level, in this example the organisation, directly to a contact&amp;rsquo;s training records.&lt;/p&gt;
+&lt;p&gt;This type of navigation manifests in different ways according to the setup.&lt;/p&gt;
+&lt;p&gt;If a child links to the parent with a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/relation-field-options/#one-to-one-only&#34;&gt;one-to-one relation&lt;/a&gt; then links to &amp;lsquo;grandchildren&amp;rsquo; are displayed by a menu in a tab. Here&amp;rsquo;s a menu showing the various grandchild items under a product&amp;rsquo;s specification.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/tab-menu.png&#34; alt=&#34;tab menu&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If it&amp;rsquo;s a many-to-one, then grandchildren are represented by blocks at the end of the record.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/grandchild-blocks.png&#34; alt=&#34;grandchild blocks&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Finally, in the special case when a grandchild tab&amp;rsquo;s tab view contains the ID of both its immediate parent and the parent above that, then the grandchild contents are shown directly, underneath the child record. Here&amp;rsquo;s an example where there&amp;rsquo;s a three tier structure of&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;supplier approval -&amp;gt; risk assessment -&amp;gt; risk assessment scores.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/grandchild-table.png&#34; alt=&#34;grandchild rows&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When the user looks at a supplier approval record, the risk assessment summary and scores can both be seen at the same time.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Date Field Options</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-options/date-field-options/</link>
+      <pubDate>Tue, 12 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/date-field-options/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;accuracy&#34;&gt;Accuracy&lt;/h2&gt;
+&lt;p&gt;Whether to record a date as just a year, year and month, year month and day, or with a time: hours, hh:mm, hh:mm:ss.&lt;/p&gt;
+&lt;h2 id=&#34;use-current-time-for-new-records&#34;&gt;Use current time for new records&lt;/h2&gt;
+&lt;p&gt;If ticked, set the value of this field to the current time when a record is created&lt;/p&gt;
+&lt;h2 id=&#34;date-format&#34;&gt;Date format&lt;/h2&gt;
+&lt;p&gt;The format to display in views. Note this doesn&amp;rsquo;t affect data entry screens, which use the browser&amp;rsquo;s standard date picker, which may customise to the user&amp;rsquo;s region.&lt;/p&gt;
+&lt;h2 id=&#34;min-years-age--max-years-age&#34;&gt;Min. years age / Max. years age&lt;/h2&gt;
+&lt;p&gt;These two options specify the valid range of allowable dates for the field. By default values up to 10 years in the future or 100 years in the past are allowed.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Other types of date check can be added using the &lt;a href=&#34;&#34;&gt;Advanced field checks&lt;/a&gt; options for a table&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Separators</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/separators/</link>
+      <pubDate>Thu, 07 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/separators/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A separator field doesn&amp;rsquo;t actually store any data, but is used as a marker of the start of a block of fields. Create a separator  and move it to just before the field which should be the first in a block.&lt;/p&gt;
+&lt;p&gt;Depending on the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/table-layouts/&#34;&gt;table layout&lt;/a&gt;, these blocks will be displayed in different ways, but in all cases will form a distinct group of fields.&lt;/p&gt;
+&lt;p&gt;Inline help can be added for separators in the same way as for normal fields, by adding a field description. This help text will apply to the whole block of fields created by a separator.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a system with several&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/blocks-one-expanded.png&#34; alt=&#34;blocks&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Upwards Navigation</title>
+      <link>https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/upwards-navigation/</link>
+      <pubDate>Mon, 04 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/upwards-navigation/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Whenever a relation field is used in a table, the user has the option to navigate to the related record by clicking a link next to the relation.&lt;/p&gt;
+&lt;p&gt;However its useful to know that if the relation is one of the &lt;strong&gt;first fields&lt;/strong&gt; in the table, i.e. at the top of the form, then it will be treated as having greater importance by the user interface. In this case, the relation will appear as a relation heading, making it clear the &amp;lsquo;parent-child&amp;rsquo; relationship i.e. that one record &amp;lsquo;belongs&amp;rsquo; to another.&lt;/p&gt;
+&lt;p&gt;For example, in a contacts table, if the relation to a contact&amp;rsquo;s organisation is one of the first fields in the form, the organisation name will appear as a heading for the contact record. It will be a hyperlink so can be used to navigate to the parent organisation easily.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A record can have multiple &amp;lsquo;parents&amp;rsquo; of different types, e.g. a contact may belong to both an organisation and a site or department within that organisation.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Checkbox Field Options</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-options/checkbox-field-options/</link>
+      <pubDate>Tue, 12 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/checkbox-field-options/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;default-value&#34;&gt;Default value&lt;/h2&gt;
+&lt;p&gt;Simply whether the checkbox should default to ticked (true) or un-ticked (false) for new records.&lt;/p&gt;
+&lt;h2 id=&#34;dont-set-last-modified&#34;&gt;Don&amp;rsquo;t set last modified&lt;/h2&gt;
+&lt;p&gt;Whenever someone edits a record, Agilebase automatically updates the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/#last-modified-auto&#34;&gt;Last Modified&lt;/a&gt; and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/#modified-by-auto&#34;&gt;Modified By&lt;/a&gt; fields of the table. This option prevents that happening when the checkbox field is ticked or un-ticked. There would not usually be a need for this but it may be useful in a minority of cases.&lt;/p&gt;
+&lt;h2 id=&#34;show-digital-signature&#34;&gt;Show digital signature&lt;/h2&gt;
+&lt;p&gt;Causes the user interface to show the name &amp;amp; username of the person who last ticked or un-ticked the checkbox, along with a timestamp.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note these can only be shown for the maximum time that record history (audit trail) data is stored for, by default 12 months. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#enhanced-audit-trail&#34;&gt;enhanced audit trail&lt;/a&gt; for details of extending this.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Comment Feeds</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/</link>
+      <pubDate>Thu, 07 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Adding a comment feed to a table adds a discussion area to a form, transforming its usefulness.&lt;/p&gt;
+&lt;p&gt;Comment feeds in Agilebase are quite a large topic, as one of the most often used features central to the platform. It&amp;rsquo;s common for at least one comment feed to be added to every table in the system, allowing users to collaborate and discuss data wherever they are.&lt;/p&gt;
+&lt;p&gt;The ability to discuss and comment on data can be one of the most important mechanisms used to break down silo thinking and help organisations that wish to adopt a more systematic or process orientated view of things.&lt;/p&gt;
+&lt;h2 id=&#34;comment-feeds-in-action&#34;&gt;Comment feeds in action&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s an example of a comment feed in a table, being used to add a new comment. Previous comments can be seen underneath, with the user and date/time of each.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/add-comment.png&#34; alt=&#34;add comment&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The available recipients are those people who have privileges to view data in the table (it&amp;rsquo;s no use sending a comment to someone who can&amp;rsquo;t see the data being discussed).&lt;/p&gt;
+&lt;p&gt;The user interface intelligently selects an initial list of recipients from those available, but they can be added or removed by the user.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To add a user, type &amp;lsquo;@&amp;rsquo; then start typing their name. A dropdown list will appear from which you can pick the person.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In this example, Cliff, Gemma and Mark have been set to receive email notifications as well. The email they receive will contain a link to take them directly to the record the comment was added to. They can reply to the email to log an additional comment.&lt;/p&gt;
+&lt;p&gt;People who aren&amp;rsquo;t recipients of a comment will still see the comment when they visit the record it&amp;rsquo;s been added to, they just won&amp;rsquo;t get a notification in their comments stream or elsewhere.&lt;/p&gt;
+&lt;p&gt;People who are mentioned by name in a comment (Mark in this example) will get an in-app alert as well as the comment appearing in their comment stream.&lt;/p&gt;
+&lt;p&gt;A user&amp;rsquo;s notification options affect whether they receive comments from a particular table or person by default, and how they receive those comments. The table option &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/#accept-emails-to-this-address&#34;&gt;email notifications&lt;/a&gt; also affects this.&lt;/p&gt;
+&lt;h3 id=&#34;comments-to-other-fields&#34;&gt;Comments to other fields&lt;/h3&gt;
+&lt;p&gt;Although adding a comments feed field is the easiest way of allowing people to comment on data, users can at any time add a comment to &lt;strong&gt;any&lt;/strong&gt; field on the screen, by hovering over the field until an &amp;lsquo;add comment&amp;rsquo; icon appears. This opens a smaller, basic comment adding interface, without the options for choosing recipients above, rather the default set of recipients is always used.&lt;/p&gt;
+&lt;h2 id=&#34;the-comments-stream-tile&#34;&gt;The comments stream tile&lt;/h2&gt;
+&lt;p&gt;When someone&amp;rsquo;s the receipient of a comment, they&amp;rsquo;ll be able to see it in the comments stream tile on their homepage. Clicking on it will navigate to the related record. We won&amp;rsquo;t go into every detail of the user interface in this administrator documentation, but comments can be searched and the comments tile can be expanded to full screen like any other tile.&lt;/p&gt;
+&lt;h2 id=&#34;email-integration&#34;&gt;Email integration&lt;/h2&gt;
+&lt;p&gt;As above, anyone who receives a comment notification can reply to the email to add another comment (their email address must be their username or recorded in their user defailt), or they can click on a link to view the related record including previous comments.&lt;/p&gt;
+&lt;p&gt;However, comments are also the mechanism by which emails from external parties can be logged - see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/#accept-emails-to-this-address&#34;&gt;accept emails to this address&lt;/a&gt; table option.&lt;/p&gt;
+&lt;p&gt;When a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;workflow&lt;/a&gt; or &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chaser&lt;/a&gt; sends an outgoing email, that is logged as a comment (including any attachments) too.&lt;/p&gt;
+&lt;h2 id=&#34;slack-integration&#34;&gt;Slack integration&lt;/h2&gt;
+&lt;p&gt;If &lt;a href=&#34;https://www.slack.com&#34;&gt;Slack&lt;/a&gt; is integrated via &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/&#34;&gt;company options&lt;/a&gt;, every comment added will also be sent to your Slack workspace.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Adding Help</title>
+      <link>https://docs.agilebase.co.uk/docs/adding-help/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/adding-help/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Help for the application you build can be added in at many levels of the user interface&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;at the individual field level
+&lt;ul&gt;
+&lt;li&gt;add the help for each field when &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/#adding-a-field&#34;&gt;adding or editing a field&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;for a block of fields
+&lt;ul&gt;
+&lt;li&gt;add the help for the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/separators/&#34;&gt;separator&lt;/a&gt; field marking the start of the block&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;for a table
+&lt;ul&gt;
+&lt;li&gt;add the help in the &lt;em&gt;name and views&lt;/em&gt; panel when &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/adding-and-removing/#editing-a-table&#34;&gt;editing a table&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;for a tab within a table
+&lt;ul&gt;
+&lt;li&gt;the help for the tab view is used, falling back to the help for the tab table&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;for a view
+&lt;ul&gt;
+&lt;li&gt;add the help when &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/creating-a-view/&#34;&gt;creating or editing&lt;/a&gt; a view&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;for a tile
+&lt;ul&gt;
+&lt;li&gt;add the help when &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/#creating-a-tile&#34;&gt;creating or editing&lt;/a&gt; a tile&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If help exists for a particular area, a link is generally displayed on screen as a question mark icon. Users can click on this to show the help content. Where an icon is less appropriate, it is shown in other ways, for example on hover-over of an element. In the case of views, help is shown in the menu item for each view.&lt;/p&gt;
+&lt;p&gt;Help content can contain URLs, which are converted into links. Links to &lt;a href=&#34;https://www.youtube.com&#34;&gt;YouTube&lt;/a&gt; URLs are shown as videos in place.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Number Field Options</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-options/number-field-options/</link>
+      <pubDate>Tue, 12 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/number-field-options/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;colour-outliers&#34;&gt;Colour outliers&lt;/h2&gt;
+&lt;p&gt;Automatically highlight &amp;lsquo;unusual&amp;rsquo; values of this field in views. This can help pick out values which are notable in some way, for example if a number has been entered without a decimal point by mistake (1253 instead of 12.53) or is a statistical outlier.&lt;/p&gt;
+&lt;p&gt;Specifically, if the value is more than 4 standard deviations away from the mean, it&amp;rsquo;s strongly highlighted in green (for values greater than the mean) or red (for values less). Values more than 2 standard deviations away are highlighted in a weaker shade.&lt;/p&gt;
+&lt;h2 id=&#34;separate-thousands-and-use-totals&#34;&gt;Separate thousands and use totals&lt;/h2&gt;
+&lt;p&gt;In views and data entry screens, show numbers as e.g. 31,141,592 rather than 31141592.&lt;/p&gt;
+&lt;p&gt;Also when the field is added to a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#tab-view&#34;&gt;tab view&lt;/a&gt;, a total is displayed at the bottom of the column of numbers for it.&lt;/p&gt;
+&lt;h2 id=&#34;use-duration&#34;&gt;Use duration&lt;/h2&gt;
+&lt;p&gt;The view displays the same in views, but in data entry forms, is entered as a time duration, specifically a number of hours. So for example the number 1.5 would be entered as 01:30 (1.5 hrs = 1 hr 30 minutes). This allows time durations to be entered into e.g. timesheets in a natural fashion, but also time to be totalled up easily.&lt;/p&gt;
+&lt;h2 id=&#34;precision&#34;&gt;Precision&lt;/h2&gt;
+&lt;p&gt;The number of decimal places to show numbers to.&lt;/p&gt;
+&lt;p&gt;his affects display only, so for example if 1.543 is entered into a field with 1 decimal place, it will display as 1.5 but will still be stored as 1.543 and any maths done on the field operate on the higher precision value.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note - integer and floating fields are actually different field types in the underlying database, so if a number is created with 0dp i.e. as a whole number, it can&amp;rsquo;t later be converted to floating point by changing the dp. There is a process that can be followed for &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/#switching-a-field-from-one-type-to-another&#34;&gt;converting fields from one type to another&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Whole number fields can store integer values from -2,147,483,648 to +2,147,483,647, i.e. approx. -2 billion to +2 billion. Decimal number fields have a range of around 1E-307 to 1E+308. See notes for &lt;em&gt;integer&lt;/em&gt; and &lt;em&gt;double precision&lt;/em&gt; types here: &lt;a href=&#34;https://www.postgresql.org/docs/current/datatype-numeric.html&#34;&gt;https://www.postgresql.org/docs/current/datatype-numeric.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you need to store values of greater range or accuracy, please let us know.&lt;/p&gt;
+&lt;h2 id=&#34;value&#34;&gt;Value&lt;/h2&gt;
+&lt;p&gt;Set a default value for the field, which will apply when a new record is created.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: File fields</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/</link>
+      <pubDate>Fri, 08 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/</guid>
+      <description>
+        
+        
+        &lt;p&gt;By default, a file field added to a table will let users upload files.&lt;/p&gt;
+&lt;p&gt;When a file field is added to a view, a link to download the file is included.&lt;/p&gt;
+&lt;p&gt;Files previews can be displayed in an &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;image/document library&lt;/a&gt; tile.&lt;/p&gt;
+&lt;h2 id=&#34;version-history&#34;&gt;Version history&lt;/h2&gt;
+&lt;p&gt;When a new file is uploaded (or generated), any previous file is kept as a previous version, displayed with a timestamp, for download by users.&lt;/p&gt;
+&lt;h2 id=&#34;generating-pdf-documents&#34;&gt;Generating PDF documents&lt;/h2&gt;
+&lt;p&gt;If a template is uploaded using the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/file-field-options/#template&#34;&gt;file field options&lt;/a&gt;, the file upload button in the user interface will be replaced by a generate button.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/&#34;&gt;document templates&lt;/a&gt; for more information.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Separator Options</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-options/separator-options/</link>
+      <pubDate>Wed, 27 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/separator-options/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/separators/&#34;&gt;field separator&lt;/a&gt; creates a block of fields, starting with the separator and ending at the next one (or the last field in the table).&lt;/p&gt;
+&lt;p&gt;These blocks can either be initially contracted, or expanded. Here&amp;rsquo;s a screenshot showing a number of contracted blocks, with one expanded.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/blocks-one-expanded.png&#34; alt=&#34;blocks one expanded&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;to-program-the-initial-state-of-the-block&#34;&gt;To program the initial state of the block&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/creating-a-view/&#34;&gt;Create a view&lt;/a&gt; from the table the separator is in&lt;/li&gt;
+&lt;li&gt;Add &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;filters&lt;/a&gt; to that view that leave only records which the block should be expanded in present&lt;/li&gt;
+&lt;li&gt;In the &lt;em&gt;fields&lt;/em&gt; tab of the table, click &lt;em&gt;field options&lt;/em&gt; and select the view for the &lt;em&gt;expand if record in view&lt;/em&gt; option&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There are two other selections that can be made for the &lt;em&gt;expand if record in view&lt;/em&gt; option other than selecting a view.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;expand if under 10 blocks on the screen&lt;/li&gt;
+&lt;li&gt;expand never&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Remember, these just set the initial state of the block when a record is first opened, blocks can be expanded and contracted by the user at any time.&lt;/p&gt;
+&lt;h2 id=&#34;place-tabs-here&#34;&gt;Place tabs here&lt;/h2&gt;
+&lt;p&gt;Normally, the first time a separator is encountered, as well as starting a block, any tabs which the table has will be shown in a row just before the block.&lt;/p&gt;
+&lt;p&gt;To prevent that, un-tick this option. Then the block will be created but the tabs row won&amp;rsquo;t be displayed until another separator is encountered, with &lt;em&gt;place tabs here&lt;/em&gt; ticked.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Cross Reference Field Options</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-options/referenced-field-options/</link>
+      <pubDate>Tue, 12 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/referenced-field-options/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;tabular-display&#34;&gt;Tabular display&lt;/h2&gt;
+&lt;p&gt;Rather than displaying rows from the referenced view as panels&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-panels.png&#34; alt=&#34;Panels screenshot&#34;&gt;&lt;/p&gt;
+&lt;p&gt;show a table&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-tabular.png&#34; alt=&#34;Table screenshot&#34;&gt;&lt;/p&gt;
+&lt;p&gt;which is a more compact form allowing a greater volume of data to be shown in a smaller area.&lt;/p&gt;
+&lt;h2 id=&#34;use-as-a-filter-for-relations&#34;&gt;Use as a filter for relations&lt;/h2&gt;
+&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/#custom-filtering-when-choosing-a-relation&#34;&gt;Common build patters - custom filtering when using a relation&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;prominent&#34;&gt;Prominent&lt;/h2&gt;
+&lt;p&gt;Make the background of the referenced panel bright red - useful for showing warnings on screen.&lt;/p&gt;
+&lt;h2 id=&#34;display-of-fields&#34;&gt;Display of fields&lt;/h2&gt;
+&lt;p&gt;Controls whether field names are displayed in the panel as well as values. Hiding the field name can be useful if for example you wish to create a referenced panel showing a warning message. You may want to just show the contents of the warning. In other cases, you may wish to hide the field if it&amp;rsquo;s not necessary as it&amp;rsquo;s obvious what the values are without additional context.&lt;/p&gt;
+&lt;p&gt;This option actually controls two types of field name, that of the referenced panel itself and also those of fields displayed inside the panel.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-panel-fields.png&#34; alt=&#34;Panel field names&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The options are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Content fieldnames - show the names of fields inside the panel, but not the fieldname of the panel itself (the default)&lt;/li&gt;
+&lt;li&gt;Panel fieldnames and content fieldnames - show all, as per the above screenshot&lt;/li&gt;
+&lt;li&gt;Panel fieldname, no content fieldnames&lt;/li&gt;
+&lt;li&gt;No fieldnames - show only the field values, useful particularly when there is only one value and when the context is obvious&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

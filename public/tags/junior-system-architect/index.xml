@@ -1,0 +1,32 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agilebase docs – Junior System Architect</title>
+    <link>https://docs.agilebase.co.uk/tags/junior-system-architect/</link>
+    <description>Recent content in Junior System Architect on Agilebase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 03 Oct 2023 13:00:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/tags/junior-system-architect/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Guides: Guide 3 - Advanced Usage</title>
+      <link>https://docs.agilebase.co.uk/guides/guide3-advanced-usage/</link>
+      <pubDate>Tue, 03 Oct 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide3-advanced-usage/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

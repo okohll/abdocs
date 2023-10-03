@@ -1,0 +1,534 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agilebase docs – Guide 1 - Build a CRM</title>
+    <link>https://docs.agilebase.co.uk/guides/guide1-crm/</link>
+    <description>Recent content in Guide 1 - Build a CRM on Agilebase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 22 Apr 2022 13:00:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/guides/guide1-crm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Guides: 1. Creating a basic task list</title>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/</link>
+      <pubDate>Fri, 22 Apr 2022 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt; Create a Table and associated Views to use it!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched &amp;ldquo;How to use Agilebase&amp;rdquo;&lt;/p&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;This stage of the guide will introduce you to the basic activities required to build a simple application. We will start by creating a table with different types of fields in order to store a variety of data. We will then show you how to create and control tiles, views and forms which are the interfaces that your users will use to enter and consume this data.
+Let us start by building a simple task list.&lt;/p&gt;
+&lt;h2 id=&#34;create-a-table-called-tasks&#34;&gt;Create a table called &amp;ldquo;Tasks&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;Our simple application will need to store information about the tasks our users create. This is done by creating a database table. In Agilebase this is achieved by navigating to the developer interface and pressing the “add new table button”.
+[guide 1.1 - video 1]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/-kY2RRzKqxQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;add-fields-to-the-tasks-table&#34;&gt;Add fields to the &amp;ldquo;Tasks&amp;rdquo; table&lt;/h2&gt;
+&lt;p&gt;A table of data is nothing without its list of fields. Each field stores a single piece of information. It is simple to add fields to an existing table within agilebase.
+Edit the table, type in the name of the field and choose the appropriate type. On creation of the field you will be able to set further options.
+For more detail visit - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/&#34;&gt;https://docs.agilebase.co.uk/docs/fields/field-types/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In the following video we add the fields needed to for a simple Task
+[guide 1.1 - video 2]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/SannBQNKlKk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;make-the-form-easier-to-understand-break-it-into-sections&#34;&gt;Make the form easier to understand. Break it into sections&lt;/h2&gt;
+&lt;p&gt;Now we have the data structure required to capture a simple task we can think about how it would be used. The user interface within Agilebase is controlled by the list of fields and their options. It is a simple task to reorder fields, just use the drag and drop facility when looking at the list of fields.
+Use a field of type separator to create sections within the user interface
+[guide 1.1 - video 3]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/c8XMlhoiuSM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;We now need to provide the user with a way of accessing our “tasks” table and using it!!! This is achieved by a combination of Tiles and Views.&lt;/p&gt;
+&lt;p&gt;For more info on Tiles - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;https://docs.agilebase.co.uk/docs/tiles/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For more info on Views - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;https://docs.agilebase.co.uk/docs/views/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In summary:
+A view generally provides abbreviated data in the form of a list of records. It also provides the ability to drill through to see the full record details.
+Tiles are a way of grouping functionality together. Specifically, a data tile is a way of grouping a collection of views that all share some common theme.&lt;/p&gt;
+&lt;p&gt;For this guide, we need a tile and collection of views dedicated to helping us create and manage our “Tasks”&lt;/p&gt;
+&lt;h2 id=&#34;make-the-table-available-for-use&#34;&gt;Make the table available for use!&lt;/h2&gt;
+&lt;h3 id=&#34;adding-a-tile-to-the-homepage&#34;&gt;Adding a tile to the homepage&lt;/h3&gt;
+&lt;p&gt;The homepage of agilebase is made up of data tiles. We need to create a new tile to hold all the views of our taks data
+[guide 1.1 - video 4]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/7hA7-VzX_A8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;adding-views-that-show-all-the-tasks-that-have-been-created&#34;&gt;Adding views that show all the tasks that have been created&lt;/h3&gt;
+&lt;p&gt;To provide the user access to a list of Task records we need to create a View. To start with we will create a view that will list ALL the data.   &lt;br&gt;
+[guide 1.1 - video 5]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ZwAcJz3jBhs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;a-better-way-of-looking-at-data&#34;&gt;A better way of looking at data&lt;/h3&gt;
+&lt;p&gt;Many users will be familiar with a card or kanban style interface (such as Trello). Agilebase has a similar style of view that can often be useful.&lt;br&gt;
+Within a views “options” tab you can set its interface stylle to be “Cards in Columns”
+[guide 1.1 - video 6]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/HeZxfiLZR_k&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;making-views-for-a-specific-job&#34;&gt;Making views for a specific job&lt;/h3&gt;
+&lt;p&gt;Whilst users can apply their own filters and re-order data in a view, it is often a better user experience if there are dedicated views setup that match a particular job. For this example we want to create a list of all the completed tasks with the most recent at the top of the list.
+For more information on applying filters - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;https://docs.agilebase.co.uk/docs/views/filters/&lt;/a&gt;
+[guide 1.1 - video 7]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/2755kBKLKzk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;our-simple-application-is-complete&#34;&gt;Our simple application is complete!&lt;/h3&gt;
+&lt;p&gt;However, we can quickly see that we have missed implementing a key feature - collaboration. We should add another field to this table - a comments field!&lt;/p&gt;
+&lt;p&gt;For more information on the comments field and its associated comment feed - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/&#34;&gt;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;add-a-comments-field-to-a-table&#34;&gt;Add a Comments field to a table!&lt;/h2&gt;
+&lt;p&gt;Adding new fields to an existing table is no different to when creating from scratch. Simply add via the table edit screen.
+Adding collaboration functionality to an agileB\se application is as easy as adding any other field! Just add a field of type Comments as shown in the video below
+[guide 1.1 - video 8 *]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/VqpAmdVJiVc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For completeness the remainder of this stage of the guide covers removing items and functionality that are no longer needed.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;deleting-views&#34;&gt;Deleting Views&lt;/h2&gt;
+&lt;p&gt;Eventually you will want to remove unused views in order to reduce clutter and streamline the user experience. To do this go to the Properties and Options tab when editing the view and press Delete view
+[guide 1.1 - video 9 *]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/YfCz-9Fjt7g&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;delete-fields-and-tables&#34;&gt;Delete Fields and Tables&lt;/h2&gt;
+&lt;p&gt;Keeping the user interface streamlined and uncluttered also includes the removal of unwanted or old data fields.
+It is straightforward to delete a field from a table. Either clicking the X icon on the RHS of the list of fields, or use the Remove field button on the fields definition. However, extra care needs to be taken as the field may be in use as the following video demonstrates.&lt;/p&gt;
+&lt;p&gt;N.b. to completely remove a table you are first required to delete ALL the fields it contains.
+[guide 1.1 - video 10 *]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/5ExSypK06W8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Guides: 2. Capturing Company and Contact data (Introducing Relational Databases)</title>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/adding_relational_data/</link>
+      <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/adding_relational_data/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt; Create related Tables to demonstrate the power of relational databases&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched “Creating a basic task list” video&amp;quot;&lt;/p&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;In this step of the guide we will build the engine of our CRM and in doing so start to introduce the concept of a relational database. We will do this as a practical example and you’ll see how agilebase makes this straight forward. We will be building a bigger system, but for the most part it’s simply reusing things we’ve already covered.. Let’s start with building a table called ‘Organisations’&lt;/p&gt;
+&lt;h2 id=&#34;create-a-table-called-organisations&#34;&gt;Create a table called &amp;ldquo;Organisations&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;To get our CRM going we need somewhere to store information about the organisations we will interact with. This can easily be achieved by adding a new table, a tile and an initial view. If you need a quick refresher watch the video below, or if you need more detail go back to &lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/&#34;&gt;step 1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[guide 1.2 - video 1]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/F-4Qp-5udsU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;create-a-table-called-sites&#34;&gt;Create a table called &amp;ldquo;Sites&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;A company might have more than one location, so we will need a table to hold information about the various addresses they might have - &amp;lsquo;Sites&amp;rsquo;. This is the first example we have of adding a Relation field.
+If you want to learn more then please visit &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relational database concepts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[guide 1.2 - video 2]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/psJRDyW3RMs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;create-a-table-called-contacts&#34;&gt;Create a table called &amp;lsquo;Contacts&amp;rsquo;&lt;/h2&gt;
+&lt;p&gt;Let’s add another table of data that is related to an Organisation, the people who work there - &amp;lsquo;Contacts&amp;rsquo;.
+We will link to two tables, the organisation they work for and the site they primarily work from.&lt;/p&gt;
+&lt;p&gt;[guide 1.2 - video 3]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Mrj6Iu7fxmg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;adding-tabs&#34;&gt;Adding tabs&lt;/h2&gt;
+&lt;p&gt;Viewing and adding data in isolation doesn’t feel very natural. What we want to do is look at an organisation’s records and see its list of contacts there and then. One way Agilebase does this is through adding ‘Tabs’ to a record.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you want to know more visit or documentation about &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/&#34;&gt;tabs&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;[guide 1.2 - video 4]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/nRSQ3IARLVI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;optional---linking-tasks-to-organisations&#34;&gt;OPTIONAL - Linking Tasks to Organisations&lt;/h2&gt;
+&lt;p&gt;At this point you may decide to upgrade the Task system we created previously. If you want to do this you will need to update the Tasks table to have a Parent Org, adding a Relation field (to organisation) and then adding the new Tab to the Organisation table just as we’ve done before.&lt;/p&gt;
+&lt;p&gt;You might also want to go back in to some of the views people use to access tasks and add a field so they know which organisation it&amp;rsquo;s for.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Guides: 3. Adding a Sales Pipeline - Kanban</title>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/sales_pipeline/</link>
+      <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/sales_pipeline/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;  Introduce Kanban / Card view. Power of dropdowns on fields. Show how easy to add graphs. Show off the advanced UI elements of aB&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched “Capturing Company and Contact details” video. Understand relational data&lt;/p&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;In this step of our guide we going to look at adding a dropdown field to &amp;ldquo;control&amp;rdquo; data input as we want to set up a Kanban board approach to managing Sales Opportunities.
+This video assumes you are happy creating tables so jumps to the point of adding the Dropdown field.
+If you are following along and want to build this table please copy the following table structure&lt;/p&gt;
+&lt;p&gt;Fields we will need: Organisation(relation to Organisation) Title (text), Detail (text large), Date of Enquiry (date), Source (text), Main Contact (relation to contact), Opp. Owner (text), Demo-Meeting (Separator), Date of Demo (date), Meeting Notes (text large), Quote (Separator), Quote Amount (number), Quote notes (text large), Outcome (Separator), Date Won (date), Date lost (date), Lost reason (text), closed by (text), closed date (date)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/Sales_Opportunity_pre_dropdown&#34; alt=&#34;Sales Opprtunity Fields before Status DropDown has been added&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;adding-a-dropdown-field&#34;&gt;Adding a dropdown field&lt;/h2&gt;
+&lt;p&gt;A dropdown field is as simple to add as any other field type. However there are some considerations about how it is configured to help the user experience.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Having an initial comma in the list means the default value will be blank.&lt;/li&gt;
+&lt;li&gt;Adding an initial number to each option in the list is very useful to imply an order (an override the default alphabetical ordering).&lt;/li&gt;
+&lt;li&gt;Autofilling with a list of users. &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/#lists-of-users&#34;&gt;Click here for more info&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In this stage of our guide we are going to add the stages a typical Sales opportunity will pass through.
+[Guide 1.3 - video 1]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1PzY64hPWlE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;creating-a-kanban-view&#34;&gt;Creating a Kanban view&lt;/h2&gt;
+&lt;p&gt;We can now create a view to show all the Sales Opportunities we will be mansaging.
+This is the basically the same as we’ve done before
+&lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/#adding-views-that-show-all-the-tasks-that-have-been-createds&#34;&gt;Click here to see how add a view&lt;/a&gt;
+Before We set the interface option to be &amp;ldquo;Cards in Column&amp;rdquo; its important to move the controlling field to the top of the list. In this case we want ther Kanban board to be controlled by Status, therefore it should be the first DropDown field in the view.&lt;/p&gt;
+&lt;p&gt;[Guide 1.3 - video 2]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ydCtGAdgqjk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;adding-graphs&#34;&gt;Adding Graphs!&lt;/h2&gt;
+&lt;p&gt;Sales teams love graphs. After all, a picture says a thousand words, and agileBase has an easy to use graphing facility to help you show off the insights your data contains.
+Creating graphs can be done by any user, but it usually helps if the developers take the lead and build the obvious ones.&lt;/p&gt;
+&lt;p&gt;This video demonstrates adding a pie chart to show the number of Sales Opportunites by Source, and also a column graph to show volume of sales enquires over time. It also shows the advanced option of using Stcaking to add more insights.&lt;/p&gt;
+&lt;p&gt;[Guide 1.3 - video 3]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/3FOOk8QS5RE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Guides: 4. Calculated Datafields</title>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/calculated_datafields/</link>
+      <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/calculated_datafields/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;   Introduce calculations and basic SQL&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have understanding of relational data&lt;/p&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;The ability to use your existing data to calculate new information will dramatically enhance the user interface, and lead your users to create new data!&lt;/p&gt;
+&lt;p&gt;In this step fo the guide we&amp;rsquo;ll start with something simple, expanding the data we know about Organisations.&lt;/p&gt;
+&lt;h2 id=&#34;calculating-the-number-of-contacts-belonging-to-an-organisation&#34;&gt;Calculating the number of contacts belonging to an Organisation&lt;/h2&gt;
+&lt;p&gt;Using the All Organisations view as a starting point, clone it and rename it &amp;ldquo;Organisation - Calculations.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;We will need to join down to the Contacts table, before we create our calculation field.&lt;/li&gt;
+&lt;li&gt;Go to “fields”, highlight the add a calculation section&lt;/li&gt;
+&lt;li&gt;Add a calculation called “Number of Contacts”, of type ‘Whole number’.&lt;/li&gt;
+&lt;li&gt;Press Add&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The important area is the ‘Calculation Definition’. In this example we want to count the number of contacts each organisation has. We can do this by using a SQL statement called Count.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;count()
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Between the brackets we choose which field we want to count. In this case the contact record&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;count({contacts.id:contacts})
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We now need to press update to tell agileBase we have finished editing our calculation. Press Update.&lt;/p&gt;
+&lt;p&gt;As you can see the system has correctly identified that count is something known as an aggregate field and ticked the box for us.&lt;/p&gt;
+&lt;p&gt;If you click back on Fields you should see the list and how calculations are highlighted in purple to distinguish from regular fields taken from a table definition. Lets drag our calculation near the front”&lt;/p&gt;
+&lt;p&gt;Move the calc.&lt;/p&gt;
+&lt;p&gt;Closing the edit allows us to see our results.&lt;/p&gt;
+&lt;p&gt;This is a very simple example of an SQL calculation. For more examples as well as a link to the underlying Postgres documentation visit - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/examples/&#34;&gt;docs- calculation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[guide 1.4 - video 1]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/kxsIr6yHlNg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;calculating-the-date-of-our-latest-sale-to-create-a-our-customers-list&#34;&gt;Calculating the Date of our Latest Sale to create a &amp;ldquo;Our Customers&amp;rdquo; list&lt;/h2&gt;
+&lt;p&gt;A further useful example is to show how we can use the results of a calculation to create a Live view, for example &amp;ldquo;Our Customers&amp;rdquo;.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Start by adding a join down to Sales opportunities&lt;/li&gt;
+&lt;li&gt;Instead of adding an existing Sales opportunity field let’s add a calculation&lt;/li&gt;
+&lt;li&gt;Go to list of fields and add a calculation called “Latest Sale”, which of course will be a ‘Date’ field.&lt;/li&gt;
+&lt;li&gt;Press Add&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This time our SQL looks like&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; max({sales opportunities.date won})
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The same aggregate field option should be ticked for us.&lt;/p&gt;
+&lt;p&gt;We can add a filter based on the values in the calculation e.g. where ‘Latest Sale’ is not blank!&lt;/p&gt;
+&lt;p&gt;You should now see your list of Organisations has dramatically shrunk&lt;/p&gt;
+&lt;p&gt;If you are following along, it makes sense for a Quick name change to make it “All customers”&lt;/p&gt;
+&lt;p&gt;[guide 1.4 - video 2]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/tGIsw4uhYZQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Guides: 5. Cross References and Automations</title>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/cross_reference_and_automations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/cross_reference_and_automations/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;   Using Cross Reference (Xref) fields in a table definition to display related info. Introduce WorkFlows (Buttons, sending emails, document generation). Being organised by using a naming convention!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched “Add a Sales Pipeline” and “Introducing calculated” video. Understand how to create calculations in views.&lt;/p&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;This part of the guide starts to introduce some more powerful and advanced features of the agileBase system. It looks at how we can give users of our basic CRM some power ups that make it a better user experience. Let’s continue with our Sales Opportunities and introduce the concept of cross referencing data before adding an automated email ‘reminder’ and a button to the user interface…&lt;/p&gt;
+&lt;p&gt;[guide 1.5 - video 1]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/2fCRaTfsE60&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;getting-things-ready&#34;&gt;Getting things ready&lt;/h2&gt;
+&lt;p&gt;As a system starts to get bigger it helps to organise the &amp;ldquo;behind the scenes&amp;rdquo; views as much as the tiles and views that out users interact with. It is good practice to create a collection of System Tiles where you can file the &amp;ldquo;behind the scenes&amp;rdquo; work.&lt;/p&gt;
+&lt;p&gt;We would suggest the following tiles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;System - Cross Reference&amp;rdquo; for the lookup style views that will add data to our forms&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;System - Workflow&amp;rdquo; for the automations&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;System - Visibility&amp;rdquo; for the rules that control the visibility of specific User Interface items&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;System - Tabs&amp;rdquo; for the views that control the list of child items seen on a forms tab&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;System - General&amp;rdquo; for everything else&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;adding-look-up-data-to-a-form&#34;&gt;Adding Look Up data to a Form&lt;/h2&gt;
+&lt;p&gt;In this first example we want to show the user who the owner of the company is rather than letting the user set it.&lt;/p&gt;
+&lt;p&gt;Start from the Tiles interface, and enter the build interface.&lt;/p&gt;
+&lt;p&gt;We first need to build a view that will look up the data for us.&lt;/p&gt;
+&lt;p&gt;Find the Sales Opportunity table, click to Edit, navigate to Names and Views, and Create a new view (with out all fields) in the Tile called ‘System - Cross Referenced’&amp;hellip; Try using the name “xref - Sales Opportunity Organisation Owner”&lt;/p&gt;
+&lt;p&gt;To find out who the company owner is we need to navigate the relational database. In this case, UP to the organisation, then DOWN to contacts.&lt;/p&gt;
+&lt;p&gt;Add the joins!!!&lt;/p&gt;
+&lt;p&gt;Typically, Cross reference views only have a few key fields of information&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Add Name, tel and email&lt;/p&gt;
+&lt;p&gt;However, we only want contacts that we know are the Owners, so add a filter on the contact role where Role contains &amp;ldquo;Owner&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;At this point it&amp;rsquo;s useful to look at the data and judge whether it seems about right&lt;/p&gt;
+&lt;p&gt;Now we need to add this data to the Sales Opportunity.&lt;/p&gt;
+&lt;p&gt;Go back and Edit the Sales Opportunity table and show the list of fields.&lt;/p&gt;
+&lt;p&gt;Add a Cross reference field. This is just a special type of field that needs a little bit more setting up than a regular field.&lt;/p&gt;
+&lt;p&gt;Add the new field, name “Company Owner(s)”,  set the type to &amp;lsquo;cross referenced data&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;Table to Use: Sales Opportunities&lt;/p&gt;
+&lt;p&gt;View to use:  ‘xref - Sales Opportunity Organisation Owner’&lt;/p&gt;
+&lt;p&gt;Move it to right place (probably near the top)&lt;/p&gt;
+&lt;p&gt;Close the edit, navigate to a Sales opportunity record and see how it looks&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You have a little bit of control how it appears on the form, by choosing ‘Tabular display’ and or the drop down ‘display of fields’&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;automations---sending-an-email&#34;&gt;Automations - sending an email&lt;/h2&gt;
+&lt;p&gt;Our second example is going to demonstrate the power of Workflows. We can configure the system to be working when we’re not! We will now add an internal ‘Reminder’ email that will prompt the owner of our Sales opportunities to update their progress.
+You can read about this facility at &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;docs workflows - sending an email&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;IMPORTANT NOTE - Whilst Agilebase can be used to send emails, it should NOT be used for marketing purposes. Rather it should be used as a method to notify people about data associated to the system. In this instance we are going to remind people that they have ‘Sales opportunities requiring updates’&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;[guide 1.5 - video 2]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/CG4y7jclRK8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;1-starting-from-the-view-of-tiles-enter-the-build-interface&#34;&gt;1. Starting from the view of Tiles, enter the build interface.&lt;/h3&gt;
+&lt;p&gt;We first need to create the Workflow that will do all the work for us.&lt;/p&gt;
+&lt;p&gt;Find the Sales Opportunity table, click to Edit, navigate to Names and Views, and Create a new view (without all fields) in the Tile called ‘System - Workflows’. We suggest a name like “WF email - Sales opportunities requiring updates”&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Prefixing with WF, along with some text, makes it clear to future developers what action the Workflow performs.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;2-our-intial-task-is-to-add-all-the-fields-we-wish-to-use-in-the-email&#34;&gt;2. Our intial task is to add all the fields we wish to use in the email&lt;/h3&gt;
+&lt;p&gt;Add the join to get the Main contact’s full name&lt;/p&gt;
+&lt;p&gt;Add Title, Date of Enquiry, Main Contact, Owner, Last updated&lt;/p&gt;
+&lt;h3 id=&#34;3-now-add-the-filters-so-we-only-get-the-records-that-need-chasing&#34;&gt;3. Now Add the filters so we only get the records that need chasing.&lt;/h3&gt;
+&lt;p&gt;Obviously we only want to chase Opportunities that have not been updated recently&lt;/p&gt;
+&lt;p&gt;Add a filter for Last Updated that is older than 1 week&lt;/p&gt;
+&lt;p&gt;We also only want to chase Opportunities that are ‘In Progress’. Our Status field uses a number prefix to make this easy&amp;hellip; Opportunities that still need to be progressed have a prefix number lower than 4, therefore add a second filter for Status Less Than 4&lt;/p&gt;
+&lt;h3 id=&#34;4-setup-the-email&#34;&gt;4. Setup the email&lt;/h3&gt;
+&lt;p&gt;Click on the &amp;ldquo;Workflow - send emails&amp;rdquo; option on the Left hand Side of the Edit pop-up.&lt;/p&gt;
+&lt;p&gt;We are sending an internal ‘email notification’, so click the right hand option&lt;/p&gt;
+&lt;p&gt;Set the options much like you would a mailmerge in Word. In agileBase you use the Curly brackets to let the system know where to insert the data (notice the list of fields available to you above the To input field.&lt;/p&gt;
+&lt;p&gt;For example we want the &amp;ldquo;To&amp;rdquo; field to be set to {owner}&lt;/p&gt;
+&lt;p&gt;Subject can be set to ‘Sales Opp Update needed for {title}‘&lt;/p&gt;
+&lt;p&gt;And the Body of the email can be set to&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;‘&lt;/span&gt;Hi {owner}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;You have a Sales opportunity called &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; {Title} &lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; {Date of Enquiry} that has &lt;span style=&#34;color:#f92672&#34;&gt;not&lt;/span&gt; been updated since {Last updated}&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; Please contact {full name} &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; do what a good salesperson does &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; close the deal&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;!!!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Regards
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Agilebase&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;’&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The system will colour the text red if you get any of the merge fields incorrect&lt;/p&gt;
+&lt;h3 id=&#34;5-setting-up-the-workflow&#34;&gt;5. Setting up the workflow&lt;/h3&gt;
+&lt;p&gt;Set the Workflow to run everyday&lt;/p&gt;
+&lt;p&gt;Set the Log send time and choose every 24 hours. Once set to 24hours you can specify a time the workflow should run. Dont forget to log when it sends to a new field called ‘wf_SalesOpDateChaseSent’&lt;/p&gt;
+&lt;p&gt;Behind the scenes agileBase has automatically added a filter that means this Workflow will only ever chase once. Whilst this is probably the case in 90% of cases when we chase things by email, in this example we want to chase every 7 days. So we can alter the Filter.&lt;/p&gt;
+&lt;p&gt;Navigate to the filters option&lt;/p&gt;
+&lt;p&gt;Remove the automatically created filter on ‘wf_SalesOpDateChaseSent’.&lt;/p&gt;
+&lt;p&gt;Now, add one back in with ‘wf_SalesOpDateChaseSent’ must be older than a week, and then click the ‘or blank’.&lt;/p&gt;
+&lt;p&gt;Finally, if you click on the view title, the display will load in the list of records that the system will email next time the Workflow runs - which should be tomorrow at your specified time.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TIPS&lt;/strong&gt;
+Go to ‘Properties and options’, and set the ‘Row limit’ to 1&lt;/p&gt;
+&lt;p&gt;You’ll see the view only has one item in it.&lt;/p&gt;
+&lt;p&gt;If we now go to ‘workflow - edit records’, we can press ‘Run Workflow Now’, and it will only send the one email!&lt;/p&gt;
+&lt;p&gt;We can also see evidence of the email being sent in the Logs, recent messages section.&lt;/p&gt;
+&lt;p&gt;Now don&amp;rsquo;t forget to go back and remove the Row limit!”&lt;/p&gt;
+&lt;h2 id=&#34;a-look-at-the-chaser&#34;&gt;A look at the &amp;ldquo;Chaser&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;The email notification option usually sends a single email per record. The Chaser is a built in feature that is preconfigured to send repeat emails. This is a bigger, more feature rich version of what we just setup. Again, it’s something that runs in the background.&lt;/p&gt;
+&lt;p&gt;It’s specifically aimed at automating those emails you send to 3rd parties chasing for specific information. But can also be used for internal chasers&amp;hellip; which is what we are going to demonstrate with a chaser for Outstanding Tasks”&lt;/p&gt;
+&lt;p&gt;[guide 1.5 - video 2a]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/bAF7T_Ip2eA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;setting-up-a-chaser&#34;&gt;Setting Up a chaser&lt;/h3&gt;
+&lt;p&gt;Go in to development mode and find the Tasks table.&lt;/p&gt;
+&lt;p&gt;As we’ve done before add a new view to the workflow tile and call it ‘wf chaser - outstanding tasks’.&lt;/p&gt;
+&lt;p&gt;Go to the send emails option and choose the chaser option.&lt;/p&gt;
+&lt;p&gt;Click the first tickbox and enable the chaser.&lt;/p&gt;
+&lt;p&gt;The system does a lot of the heavy lifting for you, adding fields, and creating the calcs and views needed for it to work, but dont forget to check what time of day you wish the chaser to run.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow_chaser.png&#34; alt=&#34;List of fields created and added by the chaser&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You can see in the screeshot above how the system has created several calculations setting things like ‘Chase every’ and ‘escalate after’ and ‘escalate to’ which the system references to control the way the chaser works.&lt;/p&gt;
+&lt;p&gt;For more information please visit &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;docs sending a chaser&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;At a bare minimum you will need to change who we are sending the email to.&lt;/p&gt;
+&lt;p&gt;Edit the “To” calculation and change it to be the “assigned to” user.&lt;/p&gt;
+&lt;p&gt;And add the appropriate filters which in this case are when the “Due” date has passed (older than 1 day). And the status is not equal to completed.&lt;/p&gt;
+&lt;p&gt;Sepping back and looking at the data returned by the view we can see in its current form the chaser will send an email every 8 days, and after 5 attempts will stop but as we have NOT set the escalate to field no one will be notified that this task has failed to be completed!!!&lt;/p&gt;
+&lt;h2 id=&#34;adding-a-button-to-a-form&#34;&gt;Adding a button to a form&lt;/h2&gt;
+&lt;p&gt;In this third example we want to add a button to the user interface so that when the Sales Opportunity is won, we want that button to set the status AND log who did it AND when!&lt;/p&gt;
+&lt;p&gt;Start from the Tiles interface, and enter the build interface.&lt;/p&gt;
+&lt;p&gt;We first need to build a Workflow that will do the actual work of setting the data for us.&lt;/p&gt;
+&lt;p&gt;Find the Sales Opportunity table, click to Edit, navigate to Names and Views, and Create a new view (without all fields) in the Tile called ‘System - Workflows’. We suggest a name like “Sales opportunity WON”&lt;/p&gt;
+&lt;p&gt;N.b. We have NOT prefixed this workflow and the name of the view will be what the user sees on the form&amp;rsquo;s interface&lt;/p&gt;
+&lt;p&gt;[guide 1.5 - video 3]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/QkkFtW2CpuU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;1-setting-data&#34;&gt;1. Setting DATA&lt;/h3&gt;
+&lt;p&gt;For our workflow to set data we need to create a calculation.&lt;/p&gt;
+&lt;p&gt;We learnt how to create calculations in a previous video&lt;/p&gt;
+&lt;p&gt;In this case we want a ‘text’ calculation.&lt;/p&gt;
+&lt;p&gt;It is essential that we use the same name as the field we wish to set. In this case ‘Status’.&lt;/p&gt;
+&lt;p&gt;The correct way to write SQL for Text fields involves using single quotes to hold our value. It is also important that we set the field to be the right option in our Status drop down -  in this case it must include the number prefix. Set the calculation value to be&amp;hellip;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;‘4) Won’ 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We also want to set WHO closed the Sales Op. This is another text field but this time the destination field is called ‘closed by’.”&lt;/p&gt;
+&lt;p&gt;We can use a special bit of SQL called a variable to find out who is logged in.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/calculation_variables.png&#34; alt=&#34;List of variables avaialble to a calculation&#34;&gt;&lt;/p&gt;
+&lt;p&gt;From the list above we can see we need our calculation text to be&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ab_userid()
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;3-setting-up-the-workflow&#34;&gt;3. Setting up the WORKFLOW&lt;/h3&gt;
+&lt;p&gt;Finally we need to turn this view into a Workflow that does something!&lt;/p&gt;
+&lt;p&gt;If we choose the workflow - edit records section we can change the Action to ‘Update the Matching Sales Opportunity’&lt;/p&gt;
+&lt;p&gt;We can use the fact that the system needs to store the date it perfomed the action by setting &amp;ldquo;log update to&amp;rdquo; to the exisitng &amp;ldquo;Closed date” field&lt;/p&gt;
+&lt;p&gt;We will leave Frequency as ‘Manual’ as we want the user to use a button to fire this workflow&lt;/p&gt;
+&lt;h3 id=&#34;adding-the-button-to-the-ui&#34;&gt;Adding the Button to the UI&lt;/h3&gt;
+&lt;p&gt;At last we are ready to add the button to the user interface&lt;/p&gt;
+&lt;p&gt;Go back to Edit Sales opportunity table and show the list of fields&lt;/p&gt;
+&lt;p&gt;Buttons are just Cross reference Fields that are setup to be workflows&lt;/p&gt;
+&lt;p&gt;Add the new field to the table&amp;hellip; name “BTN - Sales Op WON”,  type cross referenced data&lt;/p&gt;
+&lt;p&gt;Table to Use: Sales Opportunities&lt;/p&gt;
+&lt;p&gt;View to use:  ‘Sales Op WON’&lt;/p&gt;
+&lt;p&gt;Move it to right place, probably near the bottom, and see how it looks&lt;/p&gt;
+&lt;h3 id=&#34;hiding-the-button-when-we-dont-want-it&#34;&gt;Hiding the button when we dont want it!!!&lt;/h3&gt;
+&lt;p&gt;First of all try pressing the button&lt;/p&gt;
+&lt;p&gt;You can see that the status is now Won&lt;/p&gt;
+&lt;p&gt;However, at the moment, even though the button has been pressed and we’ve set the status to Won we can still press the button again!!!&lt;/p&gt;
+&lt;p&gt;To stop this we need to apply a visibility rule to that button to hide it. In this case we want the button to be hidden if the sales opportunity is already marked as Won.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/button_visibility_rule.png&#34; alt=&#34;Visibility rule added to the field&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Go back to Edit Sales opportunity table, show the list of fields and click to edit the BTN field&lt;/p&gt;
+&lt;p&gt;Scroll down a little and you can see the section about Field Visibility.&lt;/p&gt;
+&lt;p&gt;Simply set the filter required - In our case this means the status value is less than 4 as seen in the screenshot above.&lt;/p&gt;
+&lt;h2 id=&#34;other-types-of-automations&#34;&gt;Other types of Automations&lt;/h2&gt;
+&lt;p&gt;There are several other types of automations&amp;hellip; we’ve already seen sending emails in this guide, but you can also create new records and generate PDFs. If you are interested please take a look at our other guides linked below and the associated documentation&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;List of different types of workflows&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Guides: 6. Security and Access Control</title>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/security-and-access-control/</link>
+      <pubDate>Thu, 31 Aug 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/security-and-access-control/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;   Understand basic database privileges&amp;hellip; Roles and giving them to Users!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; To have built a multi table system, to have more than themselves as users.&lt;/p&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;AgileBase uses the classic concept of Roles to help you control the access users have to the system you are building.
+A classic metaphor would be the manager of an office has the keys to the building, whilst the staff do not. The person acting as the manager may change overtime, but the permission and privileges (in this case having keys) does not!&lt;/p&gt;
+&lt;p&gt;[guide 1.6 - video 1]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ybixmV1TdVA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;creating-roles&#34;&gt;Creating Roles&lt;/h2&gt;
+&lt;p&gt;For our scenario of a Basic CRM we will model the simple situation that all users will need to access contact information, but only some users will log tasks. Similarly, only some users will access sales opportunities.
+We can start by creating a Role called ‘Orgs and Contacts’
+Press Add Role and name it ‘Orgs and Contacts’
+Start by looking at the Privileges list. As you can see this shows you a list of ALL the tables in the system. We want users with this role to be able to read and importantly WRITE any organisation info.
+Set the radio button Edit on Organisations, Sites and Contacts
+&lt;img src=&#34;https://docs.agilebase.co.uk/roles-privileges.png&#34; alt=&#34;The Roles privilege list&#34;&gt;
+Now look at the Members option. We can give this permission to all our users.&lt;/p&gt;
+&lt;p&gt;For our Basic CRM we will need to do the same for a role to use Tasks and another for Sales Opportunites&lt;/p&gt;
+&lt;h3 id=&#34;user-roles-permissions-and-tiles&#34;&gt;User Roles, Permissions and Tiles&lt;/h3&gt;
+&lt;p&gt;Now to take a look from a User&amp;rsquo;s perspective.
+Back to the starting page of Development mode and click Users to show ALL users
+Click on a user&amp;rsquo;s record
+If we click on the Roles option, we can see any roles the user may be missing.
+Simple click to add
+&lt;img src=&#34;https://docs.agilebase.co.uk/user-roles.png&#34; alt=&#34;The Roles privilege list&#34;&gt;
+Sometimes it&amp;rsquo;s useful to see an individual’s permissions. This can be done by looking at the Privileges tab on their user record.&lt;/p&gt;
+&lt;p&gt;Perhaps, more useful is ensuring they have the tile to access the functionality!!!
+Click on Tiles and you can see whether they have our Sales opportunity tile.
+When you add a tile you are prompted to choose the default view. It is an important consideration to choose the most appropriate view for your users.
+&lt;img src=&#34;https://docs.agilebase.co.uk/user-adding-tile.png&#34; alt=&#34;The Roles privilege list&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;advanced-access-control&#34;&gt;Advanced Access Control&lt;/h2&gt;
+&lt;p&gt;Sometimes we may find a situation where access control can not be broken down to complete tables, but instead we want to have control on a field by field basis. In this instance we can use field visibility rules combined with the roles system.
+In our example scenario we have a role called “HR” and we only want ONLY users with this role to see a Date of Birth field on the Contact record.&lt;/p&gt;
+&lt;p&gt;[guide 1.6 - video 1]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/MEFep-NFl1o&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;We need to create a view that will control the visibility of the field, so we create a view in the &amp;ldquo;System Visibility Tile”&lt;/p&gt;
+&lt;h3 id=&#34;field-visibility-and-user-roles&#34;&gt;Field Visibility and User Roles&lt;/h3&gt;
+&lt;p&gt;We have already had an exmaple of using a visibility rule to hide a button. In this case we are going a step further and controlling visibility based on the logged in User&amp;rsquo;s roles.
+To start we will need a view called ‘vis - Contact HR only’ built rom the Contacts table.
+Since Field Visibility rules work by only showing the field if the record exists in a specified view we don’t need loads of columns, we just need to concentrate on filtering. For this example we need to filter by the Role the user has, and we can do this by using a calculation.
+Add a Calculation field of type boolean called ‘is in HR’. The SQL you need is&amp;hellip;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  ab_userroles() ilike &amp;#39;%HR%&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;It is easy to follow if you have an understanding of SQL, if not there is plenty of help and tutorials on the internet. However, as a brief explanation, aB_userroles() is a variable that will return the list of roles that the logged in user is a member of. Ilike is a text match that looks for in this case the letters HR. In otherwords, this query will let us know is the user is a member of the HR role.
+Dont forget to apply the filter by going to the fiter option and adding where &amp;ldquo;is in HR&amp;rdquo; equals True&lt;/p&gt;
+&lt;p&gt;All that&amp;rsquo;s left to do is apply the visibilty rule to the chosen field. In this example, navigate to edit the Contacts table, Click on the DOB field.
+Scroll down to Field Visibility, show choosing the view ‘vis - Contact HR only’&lt;/p&gt;
+&lt;h2 id=&#34;success---a-basic-crm&#34;&gt;SUCCESS - A basic CRM&lt;/h2&gt;
+&lt;p&gt;If you have been following along and building your own system then congratulations you have a fledging CRM system for your business. You now have knowledge of the all the building blocks needed to extend this tool and turn it into a powerful back office system to help your colleagues manage their work.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

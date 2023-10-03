@@ -1,0 +1,303 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agilebase docs – Workflows</title>
+    <link>https://docs.agilebase.co.uk/docs/workflows/</link>
+    <description>Recent content in Workflows on Agilebase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 24 Apr 2020 16:40:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/docs/workflows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Types of Workflow Actions</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/types-of-actions/</link>
+      <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/types-of-actions/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;types-of-action&#34;&gt;Types of Action&lt;/h2&gt;
+&lt;p&gt;Actions fall in to two types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Those that effect data held within Agilebase tables&lt;/li&gt;
+&lt;li&gt;Those that send data to another system.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;alter-data&#34;&gt;Alter Data&lt;/h3&gt;
+&lt;p&gt;Use the dropdown within the &lt;em&gt;workflow - edit records&lt;/em&gt; panel when editing the view to control the action that will be applied to every record in the view.
+Options are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create record - This will create a new item in the nominated table&lt;/li&gt;
+&lt;li&gt;Update record - This will alter the values of the record.&lt;/li&gt;
+&lt;li&gt;Lock record - This will apply a record level lock on the item.&lt;/li&gt;
+&lt;li&gt;Delete record - This will totally remove the record.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-manage-new.png&#34; alt=&#34;Workflow actions that alter data&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;creating-records&#34;&gt;Creating records&lt;/h4&gt;
+&lt;p&gt;If &amp;lsquo;create record&amp;rsquo; is chosen, a couple of other options appear.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You can select which table the new record should be created in&lt;/li&gt;
+&lt;li&gt;&amp;lsquo;Auto-connect new records&amp;rsquo; can be used when &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/&#34;&gt;chaining workflows&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;sending-data&#34;&gt;Sending Data&lt;/h3&gt;
+&lt;p&gt;The options to send data are contained within the &lt;em&gt;send&lt;/em&gt; section of the &lt;em&gt;workflow&lt;/em&gt; tab. Matching records will be sent to the appropriate &lt;strong&gt;function&lt;/strong&gt;.&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-data-to-a-third-party-via-api/&#34;&gt;Send data to a third party via API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;Send an email&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;Send an email Chaser&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-document-generator/&#34;&gt;Send to document generator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RSS feed - See facility with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/setting-up-the-pull-api/&#34;&gt;PULL API&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-send-new.png&#34; alt=&#34;Workflow functions that send data&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Altering Data</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/altering-data/</link>
+      <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/altering-data/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The following Workflows alter data within the system&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create record - This will create a new item in the nominated table&lt;/li&gt;
+&lt;li&gt;Update record - This will alter the values of the record.&lt;/li&gt;
+&lt;li&gt;Lock record - This will apply a record level lock on the item.&lt;/li&gt;
+&lt;li&gt;Delete record - This will totally remove the record.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When creating or editing a record, the fields in the view will populate the new or existing record. Any fields in the view with the same name as a field in the table will populate that field with its data. The view field can be a calculation as well as a standard field.&lt;/p&gt;
+&lt;h3 id=&#34;relation-fields&#34;&gt;Relation fields&lt;/h3&gt;
+&lt;p&gt;If you want your workflow to set the value of a relation find, i.e. link to a particular record, there’s no need to create a calculation for it, just include the ID field for the record you want to link to in the view.&lt;/p&gt;
+&lt;p&gt;If creating a calculation is easier, you can still do that. Either create a numeric calculation which outputs the internal row ID of the record to link to, or the text of the primary value for the relation. If the latter case, the field for the primary value in the related table should be unique and marked as such in the field options.&lt;/p&gt;
+&lt;p&gt;To set a relation field to blank, add a numeric calculation with the name of the field as normal, but set it to output the value -1.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Deleting records is not reversible. Please use with caution.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Send Data to a third party via API</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/send-data-to-a-third-party-via-api/</link>
+      <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/send-data-to-a-third-party-via-api/</guid>
+      <description>
+        
+        
+        &lt;p&gt;When integrating Agilebase with third party systems, the API is really useful. Programmers can use it to send data to websites, to other software such as PowerBI, a  Business Intelligence tool, or to external systems such as label/barcode printers for example. The opportunities are endless.&lt;/p&gt;
+&lt;p&gt;Agilebase can either ‘push’ data to a third party system, or have the third party system ‘pull’ it out.&lt;/p&gt;
+&lt;p&gt;What’s the difference? Simply put, if pulling, a third party system has to regularly ask, or &amp;lsquo;poll&amp;rsquo;, Agilebase whether there’s any new data. It may do this once an hour, once every few minutes or however often it needs. That means extra work for both systems. New data may be reasonably infrequent but when it is there you want it to be transferred quickly, which means polling often even when there’s nothing to send.&lt;/p&gt;
+&lt;p&gt;Conversely, with ‘push’, Agilebase sends a message to the third party system &lt;strong&gt;only when there’s relevant data to send&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;push&#34;&gt;PUSH&lt;/h2&gt;
+&lt;p&gt;When using push, calls are made only when necessary. Further, you can specify in the settings the maximum number of calls to make per day, so you can control the maximum possible cost. You can set it to anything from once every 5 minutes to once a day. Different integrations may require more or less timely data. For example invoice totals may be ok to push to an accounting system once a day but individual customer orders may be best sent as soon as they’re received.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/&#34;&gt;More detail about setting up a PUSH API can be found here&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;pull&#34;&gt;Pull&lt;/h2&gt;
+&lt;p&gt;Connections to Agilebase are made using standard HTTP calls. This makes it easy for developers in any language, so PHP, Java, even JavaScript in a browser can be used.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/setting-up-the-pull-api/&#34;&gt;More detail about setting up a PULL API can be found here&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Send an email</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/send-email/</link>
+      <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/send-email/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Agilebase can be used to send emails. This facility should &lt;strong&gt;NOT&lt;/strong&gt; be used for marketing purposes, rather as a method to notify people about data associated to the system.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: When setting up an email alert, the system needs to know the email address of the recipient. Sometimes this may be very simple, when you always want to send the alert to the same person. For some alerts though you may wish to change who gets it depending on the data, e.g. each salesperson may get the leads assigned to them. In this case, the system will need to know the email address, so it needs to be stored somewhere. For Agilebase users, if they use their email address as their username, the system can pick this up when a user’s assigned to a record, either manually or as part of the automatic ‘created by’ and ‘modified by’ fields&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;step-1-add-a-necessary-field&#34;&gt;Step 1: add a necessary field&lt;/h2&gt;
+&lt;p&gt;Select the table which has the alert data in it and add a date/time field with SECOND accuracy called e.g. “Last notified”. This will be used by the system to store when the last notification was sent for each record.&lt;/p&gt;
+&lt;h2 id=&#34;step-2-create-a-new-view&#34;&gt;Step 2: create a new view&lt;/h2&gt;
+&lt;p&gt;Create a view from the table above, containing all the information you want to send in the email. Sort it by “last modified [auto]” descending, so new items appear at the top.&lt;/p&gt;
+&lt;h2 id=&#34;step-3-add-filters&#34;&gt;Step 3: add filters&lt;/h2&gt;
+&lt;p&gt;Add filters so that only records that need an email notification to be sent appear. It’s important that records must disappear once a notification’s been sent otherwise the recipient will be bombarded with repeat alerts.&lt;/p&gt;
+&lt;p&gt;For simple alerts of new items, add a filter “Last notified IS NULL”. That way, a notification will only ever be sent once for a record.&lt;/p&gt;
+&lt;p&gt;To set up a repeating monthly alert, you could add a filter &amp;ldquo;last notified is more than 1 month ago&amp;rdquo;, with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/#including-blank-values&#34;&gt;or is blank&lt;/a&gt; ticked:&lt;/p&gt;
+&lt;p&gt;If you have any difficulty thinking up what criteria you need for your purpose, please get in touch.&lt;/p&gt;
+&lt;h2 id=&#34;step-4-fill-in-an-email-template&#34;&gt;Step 4: fill in an email template&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Edit the view and open the &lt;em&gt;workflow - send emails&lt;/em&gt; panel&lt;/li&gt;
+&lt;li&gt;Select &lt;em&gt;email notification&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Fill in the subject, to and body of the email. To merge in data from the view, use field names in lowercase surrounded by curly brackets. A typical template would look something like this:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/send-email-new.png&#34; alt=&#34;Workflow actions that alter data&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You can attach documents to the email by including the field name for a file in the message.&lt;/p&gt;
+&lt;p&gt;Under the email template, set “Notification time field” to the field that you created in step 1, e.g. “Last notified”&lt;/p&gt;
+&lt;p&gt;Note in the To: field, you can include email addresses manually, or merge them in from the view. If you are assigning records to users in Agilebase, you can use that field and the system will automatically pick out the email address for them.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;That’s it! Note when testing, we recommend setting the “To:” value to your own email address, just until you’re sure everything’s working properly.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;including-attachments&#34;&gt;Including attachments&lt;/h3&gt;
+&lt;p&gt;If you add a file field to the view, it will be added to the outgoing email as an attachment. Note the ID field for the file field&amp;rsquo;s parent table also needs to be present, which should happen automatically.&lt;/p&gt;
+&lt;h3 id=&#34;including-record-history&#34;&gt;Including record history&lt;/h3&gt;
+&lt;p&gt;To include a log of recent updates to a record (since the last notification was sent), just add the line&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ab_record_history&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;to the body of the email.&lt;/p&gt;
+&lt;h2 id=&#34;rich-text-html-emails&#34;&gt;Rich text (HTML) emails&lt;/h2&gt;
+&lt;p&gt;HTML emails can now be sent by apps built on the Agilebase platform.
+That means that your company can send out branded, rich-text emails (with attachments) to customers, suppliers and anyone else you deal with.&lt;/p&gt;
+&lt;h3 id=&#34;setting-up&#34;&gt;Setting up&lt;/h3&gt;
+&lt;p&gt;Set up an email notification workflow as normal (when editing a view, use the &lt;em&gt;workflow - send emails&lt;/em&gt; panel).&lt;/p&gt;
+&lt;p&gt;Start the body of the email with &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt; and end with &lt;code&gt;&amp;lt;/html&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The email will then be interpreted as HTML, i.e. formatted.&lt;/p&gt;
+&lt;p&gt;You do need to know some basic HTML. If you’d like to get started there are plenty of great tutorials on the web - here’s an example: &lt;a href=&#34;http://www.htmldog.com&#34;&gt;www.htmldog.com&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Send a Chaser email</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/send-chaser/</link>
+      <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/send-chaser/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Chaser email facility is often used to remind people to send information. This facility is a dedicated tool, optimised to this purpose.&lt;/p&gt;
+&lt;p&gt;In a nutshell, the system comprises three parts&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;checking when something’s due and emailing the person who needs to supply it&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;allowing the recipient to easily provide the data by following a link in the email to an online form. Documents can be uploaded and other information filled in&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;if no response is received, re-sending a number of times, finally escalating to someone else (usually someone internal)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/chaser2.png&#34; alt=&#34;Screenshot of Chaser user interface&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+&lt;p&gt;The system can be applied whenever you need a third party to supply you with information or documents of a known type.&lt;/p&gt;
+&lt;p&gt;For example, a food manufacturer who receives ingredients from suppliers may occasionally need to raise a non-conformance where something isn&amp;rsquo;t up to standard.&lt;/p&gt;
+&lt;p&gt;Whenever a non-conformance is raised against a supplier, whether as a result of an audit or ad hoc, the supplier can be chased for information about a resolution of the issue. Likewise, staff can be chased if an internal non-conformance is not resolved.&lt;/p&gt;
+&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
+&lt;p&gt;As an Agilebase administrator, if you want to set up your own chaser, here’s how to do so.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Create a view with a list of people to chase. When editing the view, open the &lt;em&gt;workflow - send emails&lt;/em&gt; panel. &lt;em&gt;email chaser&lt;/em&gt; should be selected by default&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tick &amp;rsquo;enable this chaser&#39;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The system will add a number of calculations to the view and a couple of fields to the underlying table, to help manage chasing. These will be listed on the screen after ticking &amp;rsquo;enable this chaser&#39;.&lt;/p&gt;
+&lt;p&gt;Please edit the calculations to fill in the details required, such as the email address to send messages to, the frequency with which to send messages etc.&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Now make sure that only things you want to chase are chased, by adding any relevant filters to the view. e.g. to show anything out of date&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That will be enough to get emails sending out. What about receiving the information back?&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Simply add any fields you want the recipient to supply to the view, from the parent table.
+The system will automatically create a form containing these fields (excluding any of the chaser fields above such as ‘to’ and ‘subject’). When the recipient receives an email, it will have a link in it that takes them to this form.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you want the content that the chaser sends out to be visible to users, add the chaser view into a form as a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced data field&lt;/a&gt;. The panel displayed to users will show information such as the email to be sent, how many times the record’s been chased, when the last time was etc. If the record doesn’t need to be chased it will instead show the reasons why (the filters from the view).&lt;/p&gt;
+&lt;h3 id=&#34;including-attachments&#34;&gt;Including attachments&lt;/h3&gt;
+&lt;p&gt;If you add a file field to the view and a row being chased has a file uploaded to that field, it will be added to the outgoing email as an attachment.&lt;/p&gt;
+&lt;p&gt;Note if you add a file field from the view&amp;rsquo;s parent table to the view and a particular record &lt;em&gt;doesn&amp;rsquo;t&lt;/em&gt; have a file uploaded, the chaser will request the recipient uploads one, when completing the form. In other words it will request a document.&lt;/p&gt;
+&lt;h4 id=&#34;multiple-attachments&#34;&gt;Multiple attachments&lt;/h4&gt;
+&lt;p&gt;Sometimes there may be a set of files you wish to attach to a single email, where the files are all stored in a child table. To accomplish this, join down to the child table and add the file field in that child table to the view.&lt;/p&gt;
+&lt;p&gt;Then, when there are multiple child records, each containing a file, those files will all be added to the outgoing email.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Don&amp;rsquo;t worry that the view then contains multiple rows per email. The chaser is clever enough to only send one email, but merge in all the files from the multiple rows.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;receiving-a-response&#34;&gt;Receiving a response&lt;/h3&gt;
+&lt;p&gt;When a response is received to a chaser, as well as saving the documents / fields the chaser asked for, a comment will be logged to the first comment field in the parent table (if there is a comment field).&lt;/p&gt;
+&lt;p&gt;An email will also be sent to a user notifying them of the response. The logic for who to send that notification to is:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;If there are any dropdown fields in the table with the option &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/#lists-of-users&#34;&gt;fill with users&lt;/a&gt; then send the email to the user selected in that field. If there&amp;rsquo;s more than one field with that option, use the first one.&lt;/li&gt;
+&lt;li&gt;If there are no fields with &amp;lsquo;fill with users&amp;rsquo; selected, fall back to notifying the user who last updated or created the record being chased.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;sending-thank-you-emails&#34;&gt;Sending thank you emails&lt;/h3&gt;
+&lt;p&gt;When someone completes the chaser form and provides the information requested, a thank you page will be shown. If the value of the &lt;em&gt;send thanks&lt;/em&gt; calculation in the chaser form is &lt;em&gt;true&lt;/em&gt; for a row, then the recipient will be sent a thank you email as well.&lt;/p&gt;
+&lt;h4 id=&#34;optional-response-fields&#34;&gt;Optional response fields&lt;/h4&gt;
+&lt;p&gt;The following fields can optionally be added to the table. If they are found, they will be populated by the chaser system when a chaser response is received.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;chaser response received&lt;/strong&gt;: if a &lt;em&gt;date&lt;/em&gt; field with this name exists, the value will be set to the date and time of the response&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;chaser response needs checking&lt;/strong&gt;: if a &lt;em&gt;checkbox&lt;/em&gt; field with this name exists, it will be ticked when the response is received&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;errors&#34;&gt;Errors&lt;/h3&gt;
+&lt;p&gt;If an email can&amp;rsquo;t be sent because of an invalid address in the &amp;lsquo;To&amp;rsquo; field, then the address specified in the &amp;lsquo;Escalate To&amp;rsquo; field will be notified.&lt;/p&gt;
+&lt;h3 id=&#34;using-multiple-chasers-on-the-same-table&#34;&gt;Using multiple chasers on the same table&lt;/h3&gt;
+&lt;p&gt;[TODO]&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Send to Document Generator</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/send-document-generator/</link>
+      <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/send-document-generator/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;automated-bulk-document-generation&#34;&gt;Automated bulk document generation&lt;/h2&gt;
+&lt;p&gt;Automatically generating PDF documents based on criteria you specify is a powerful feature.
+For example, if your system tracks exam marks, you may wish to automatically generate a certificate whenever someone passes. Another more common example might be generating invoices for all the work carried out each month.&lt;/p&gt;
+&lt;h2 id=&#34;setting-up&#34;&gt;Setting up&lt;/h2&gt;
+&lt;p&gt;The concept works much like email notifications or syncing events to Google calendar. A view must be set up that contains the records that you want to generate documents for.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The first step is to set up and upload a template as per &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/&#34;&gt;generating PDF documents&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;In the same screen, choose a date field to log the time of each document generation. If no suitable date field exists in the table yet, you can add one by selecting &amp;lsquo;create new field&amp;rsquo;.&lt;/li&gt;
+&lt;li&gt;Choose a frequency to run the workflow at, e.g. every hour&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That’s it. Now whenever a record appears in the view, a document will be generated.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/document_generation.png&#34; alt=&#34;Workflow setup to generate a PDF document&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;automatically-emailing-documents-as-attachments&#34;&gt;Automatically emailing documents as attachments&lt;/h2&gt;
+&lt;p&gt;Once your system is generating documents automatically, you can set it up to email those out to people as attachments, also automatically without any user input. That’s great if you’re processing a large number of documents, for example invoicing hundreds or thousands of people per invoice run, it could be quite a time saver.&lt;/p&gt;
+&lt;p&gt;To set this up, create an automated notification as normal, to send an email to the intended document recipient. Just make sure that the body ‘template’ contains a reference to the field name of the document that you want to attach the document field must be in the table that the notification view’s based on.&lt;/p&gt;
+&lt;p&gt;e.g. your template body could be
+`Dear {forename},&lt;/p&gt;
+&lt;p&gt;Many thanks for your custom with us this month. Your invoice {invoice number} is attached.&lt;/p&gt;
+&lt;p&gt;Regards
+XYZ&lt;/p&gt;
+&lt;p&gt;{invoice file}
+`&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note – we recommend setting it up to send to someone within your organisation as a test, before switching to the actual recipient.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Advanced information on Workflows</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/advanced/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/advanced/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;logging&#34;&gt;Logging&lt;/h2&gt;
+&lt;p&gt;If you are using the more advanced features of agilebase workflows then knowing where to look for logging information will become important. At the bottom fo the &lt;em&gt;workflow - edit records&lt;/em&gt; panel when editing a view, recent logs are shown.&lt;/p&gt;
+&lt;p&gt;They will contain success and failures of past runs as well as the next time the workflow is scheduled to be run.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-history.png&#34; alt=&#34;Viewing the logging history of a Workflow&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

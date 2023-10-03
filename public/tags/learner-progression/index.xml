@@ -1,0 +1,33 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agilebase docs – Learner Progression</title>
+    <link>https://docs.agilebase.co.uk/tags/learner-progression/</link>
+    <description>Recent content in Learner Progression on Agilebase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 12 Sep 2023 13:00:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/tags/learner-progression/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Learner Progression Levels</title>
+      <link>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/</link>
+      <pubDate>Tue, 12 Sep 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Agilebase’s learner progression pathway enables you to transform your career. You can go from a citizen developer to a no-code software architect.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

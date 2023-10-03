@@ -1,0 +1,165 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agilebase docs – requires update</title>
+    <link>https://docs.agilebase.co.uk/tags/requires-update/</link>
+    <description>Recent content in requires update on Agilebase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 14 Apr 2021 10:41:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/tags/requires-update/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Privileges</title>
+      <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In Agilebase, there are three privilege levels, as well as a special &amp;lsquo;develop&amp;rsquo; privilege.&lt;/p&gt;
+&lt;p&gt;The three privileges take effect per table, i.e. a user/role can have certain privileges on one table and different ones on another.&lt;/p&gt;
+&lt;p&gt;Privileges are additive - if a user is a member of multiple roles, they gain all the privileges from each of those roles added together, plus any they may have individually assigned.&lt;/p&gt;
+&lt;h2 id=&#34;privilege-levels&#34;&gt;Privilege levels&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;View&lt;/strong&gt;: ability to see data in a table&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Edit&lt;/strong&gt;: ability to create, edit and delete data in a table (create and delete subject to various table options)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Develop&lt;/strong&gt;: the privilege that allows you to use the &amp;lsquo;application building&amp;rsquo; features of Agilebase, relating to a table. Namely the ability to
+&lt;ul&gt;
+&lt;li&gt;modify the structure, i.e. create/delete fields, tabs, change options etc.&lt;/li&gt;
+&lt;li&gt;create, edit and delete views from the table, including creating charts, maps and word clouds.&lt;/li&gt;
+&lt;li&gt;upload or create printout templates for views&lt;/li&gt;
+&lt;li&gt;view usage statistics about a table&lt;/li&gt;
+&lt;li&gt;Develop also allows some extended user features
+&lt;ul&gt;
+&lt;li&gt;delete any user&amp;rsquo;s comments from a table&lt;/li&gt;
+&lt;li&gt;unlock locked records to allow editing (one at a time)&lt;/li&gt;
+&lt;li&gt;override table options which would normally disallow adding/removing records from a table&lt;/li&gt;
+&lt;li&gt;override options which would normally disallow exporting data to a spreadsheet&lt;/li&gt;
+&lt;li&gt;import data from spreadsheet&lt;/li&gt;
+&lt;li&gt;override options which would normally disallow global editing of data in the table&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Privilege levels work in conjunction with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/introduction/learner-progression/&#34;&gt;Learner Progression levels&lt;/a&gt;, for example, only someone at level Citizen Developer level 3 can have Develop privileges assigned to them.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Two Factor Authentication is required for any user with any Citizen Developer or Software Architect role.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;assigning-table-privileges&#34;&gt;Assigning table privileges&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Table privileges can be assigned to one or more users or roles from that table&amp;rsquo;s editing screen.&lt;/li&gt;
+&lt;li&gt;From a user or role editing screen, privileges on one or more tables can be assigned&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The two methods are equivalent, whichever is the most convenient for a given purpose can be used.&lt;/p&gt;
+&lt;p&gt;Managing privileges by role rather than by individual user is recommended. That makes managing large numbers of users easier and also more secure as it&amp;rsquo;s easy to see which privileges each type of user has and which they don&amp;rsquo;t.&lt;/p&gt;
+&lt;p&gt;To assign one or more role or user privileges to a table:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/adding-and-removing/#editing-a-table&#34;&gt;Edit a table&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Open the &lt;em&gt;roles and privileges&lt;/em&gt; panel, then select or un-select any privileges required&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To assign one or more table privileges to a particular role or user:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;On the homepage, toggle on development mode&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;roles&lt;/em&gt; or &lt;em&gt;users&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Select the role or user to assign privileges to, then select or un-select any privileges required&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;related-to-privileges&#34;&gt;Related to privileges&lt;/h2&gt;
+&lt;p&gt;Database systems often have the concept of row level privileges. The equivalent in Agilebase is the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt; system.&lt;/p&gt;
+&lt;p&gt;Individual fields in a table can be locked or hidden, see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#show-if-record-in-view&#34;&gt;field options&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Creating user accounts with the API</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/creating-user-accounts/</link>
+      <pubDate>Wed, 14 Apr 2021 10:41:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/creating-user-accounts/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Normally, a user account can only be created by a system administrator - see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/#adding-a-user&#34;&gt;adding a user&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;However there&amp;rsquo;s one special case in which the organisation runs a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanted&lt;/a&gt; Agilebase account. In that case, you can use an API call to create a new tenant in the account and new user(s) for that tenant.&lt;/p&gt;
+&lt;p&gt;For example, imagine your organisation is a body for football clubs around the country, where each club was a tenant, i.e. each club had users who could log in, but only see data from their own club. In that case, the user creation API could be called to&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;create a new club&lt;/li&gt;
+&lt;li&gt;create an initial user (or users) for that club&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: these instructions need updating for the newest release, please contact support if you wish to use this functionality.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Before calling the API, you have to configure the system to allow it to be used. In the administrator user interface:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Expand the &lt;em&gt;Administration&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;company&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Click your company name then the pencil icon in the toolbar to edit the details&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In &lt;em&gt;Multi-tenanting field name (optional)&lt;/em&gt;, type in the field name that your system uses to differentiate tenants, e.g. &amp;ldquo;account name&amp;rdquo;. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Refresh the page and an API key will appear. We will need this to call the API as below.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To disable the API at any point, just delete the value you entered into &lt;em&gt;Multi-tenanting field name (optional)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;calling-the-api&#34;&gt;Calling the API&lt;/h2&gt;
+&lt;p&gt;Use URL &lt;a href=&#34;https://ab.agilechilli.com/Agilebase/Public.ab&#34;&gt;https://ab.agilechilli.com/Agilebase/Public.ab&lt;/a&gt;. You should make a &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST&#34;&gt;POST&lt;/a&gt; request with encoding &lt;code&gt;application/x-www-form-urlencoded&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;Authorization&lt;/code&gt; header needs to be set to the API key as above.&lt;/p&gt;
+&lt;p&gt;The following paramaters are required&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;c: this identifies your company account and will always be the same. It will be shown in the company editing screen used in preparation, above&lt;/li&gt;
+&lt;li&gt;create_tenant: true&lt;/li&gt;
+&lt;li&gt;json&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The value of the json parameter is a JSON object, defined below.&lt;/p&gt;
+&lt;p&gt;In the below format, &lt;code&gt;multi-tenanting fieldname&lt;/code&gt; is the name of the field used to differentiate tenants with spaces replaced with underscores, e.g. &amp;lsquo;account_name&amp;rsquo;. The &lt;code&gt;multi-tenanting value&lt;/code&gt; is the name of the tenant you wish to create with this particular API call. A multi-tenanting role will be created named &amp;lsquo;cust &lt;code&gt;multi-tenanting value&lt;/code&gt;&amp;rsquo;. E.g. if the value is &amp;lsquo;spurs&amp;rsquo;, the role will be named &amp;lsquo;cust spurs&amp;rsquo;. The value should be a lowercase string consisting only of letters from a through to z and numbers.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;users&lt;/code&gt; property is an array of users. Each user will be created and assigned to the above multi-tenanting role, so they can only see data belonging to them and other users of that role. The user will need a valid &lt;code&gt;email address&lt;/code&gt; in order to perform a password reset so they can log in.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;customui&lt;/code&gt; property refers to the option to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/#use-the-custom-agilechilli-ui-rather-than-agilebases&#34;&gt;apply a custom logo and login screen&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For each user, the &lt;code&gt;roles&lt;/code&gt; parameter is a comma separated list of internal role IDs, or role names. In addition to the multi-tenanting role, they will also be assigned these roles. They could be e.g. &amp;lsquo;manager&amp;rsquo;, &amp;lsquo;sales rep&amp;rsquo; or &amp;lsquo;accounts dept&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;For each user, &lt;code&gt;tiles&lt;/code&gt; is an array of the tiles the user should see on screen when they log in.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
+  &amp;#34;[multi-tenanting fieldname]&amp;#34;: &amp;#34;[multi-tenanting value]&amp;#34;,
+  &amp;#34;users&amp;#34;: [
+    {
+      &amp;#34;username&amp;#34;: &amp;#34;[username&amp;#34;,
+      &amp;#34;forename&amp;#34;: &amp;#34;[forename]&amp;#34;,
+      &amp;#34;surname&amp;#34;: &amp;#34;[surname]&amp;#34;,
+      &amp;#34;email&amp;#34;: &amp;#34;[email address]&amp;#34;,
+      &amp;#34;customui&amp;#34;: [true/false],
+      &amp;#34;roles&amp;#34;: &amp;#34;[comma separated list of role names]&amp;#34;,
+      &amp;#34;tiles&amp;#34;: [
+        {
+          &amp;#34;tiletype&amp;#34;: &amp;#34;comment_stream / calendar / data_link / files&amp;#34;,
+          &amp;#34;colour&amp;#34;: &amp;#34;blue / yellow / green / purple / pink / turquoise / blue2 / yellow2 / green2 / purple2 / pink2 / turquoise2&amp;#34;,
+          &amp;#34;internaltilename&amp;#34;: &amp;#34;[for data_link or files tiles, identifies the tile to add]&amp;#34;
+        },
+        { ... }
+      ]
+    }
+  ]
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;On a successful call, the JSON&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
+&amp;#34;result&amp;#34;: &amp;#34;ok&amp;#34;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;will be returned, with a 200 HTTP status code. If there is an error,&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
+&amp;#34;error&amp;#34;: true,
+&amp;#34;type&amp;#34;: &amp;#34;[class of error]&amp;#34;,
+&amp;#34;message&amp;#34;: &amp;#34;[error message]&amp;#34;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;will be returned and the HTTP status code will reflect the error.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

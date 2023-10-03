@@ -1,0 +1,1662 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agilebase docs – Junior Software Architect</title>
+    <link>https://docs.agilebase.co.uk/tags/junior-software-architect/</link>
+    <description>Recent content in Junior Software Architect on Agilebase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 03 Oct 2023 13:00:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/tags/junior-software-architect/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Guides: Guide 1 - Build a CRM</title>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/</link>
+      <pubDate>Fri, 22 Apr 2022 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Junior Software Architect</title>
+      <link>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/junior-software-architect/</link>
+      <pubDate>Tue, 03 Oct 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/junior-software-architect/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;A junior software architect can use practically all of the application building functionality of Agilebase. For example&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; (including chasers, document generation)&lt;/li&gt;
+&lt;li&gt;Set up &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;APIs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add complex &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/&#34;&gt;joins&lt;/a&gt; to views&lt;/li&gt;
+&lt;li&gt;Create, edit and delete &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/&#34;&gt;roles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Assign &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;privileges&lt;/a&gt; to roles or users up to the &amp;rsquo;edit&amp;rsquo; level&lt;/li&gt;
+&lt;li&gt;Remove fields, views etc. created by anyone&lt;/li&gt;
+&lt;li&gt;Edit the advanced properties of fields and views, including field visibility rules (confidentiality rules) for example&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Their only limitations are to do with managing the organisation as a whole, including other users.&lt;/p&gt;
+&lt;h2 id=&#34;useful-links&#34;&gt;Useful Links&lt;/h2&gt;
+&lt;p&gt;Boost your learning by watching our more advanced guides:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide1-crm/cross_reference_and_automations/&#34;&gt;Cross Refereances and Automations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;Security and Access Control&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more information about:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/&#34;&gt;Security Features&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/altering-data/&#34;&gt;Workflows - Altering Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-document-generator/&#34;&gt;Workflows - Doc Gen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;Workflows - Sending an email&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;Workflows - Using the email chaser&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Guides: 5. Cross References and Automations</title>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/cross_reference_and_automations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/cross_reference_and_automations/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;   Using Cross Reference (Xref) fields in a table definition to display related info. Introduce WorkFlows (Buttons, sending emails, document generation). Being organised by using a naming convention!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched “Add a Sales Pipeline” and “Introducing calculated” video. Understand how to create calculations in views.&lt;/p&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;This part of the guide starts to introduce some more powerful and advanced features of the agileBase system. It looks at how we can give users of our basic CRM some power ups that make it a better user experience. Let’s continue with our Sales Opportunities and introduce the concept of cross referencing data before adding an automated email ‘reminder’ and a button to the user interface…&lt;/p&gt;
+&lt;p&gt;[guide 1.5 - video 1]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/2fCRaTfsE60&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;getting-things-ready&#34;&gt;Getting things ready&lt;/h2&gt;
+&lt;p&gt;As a system starts to get bigger it helps to organise the &amp;ldquo;behind the scenes&amp;rdquo; views as much as the tiles and views that out users interact with. It is good practice to create a collection of System Tiles where you can file the &amp;ldquo;behind the scenes&amp;rdquo; work.&lt;/p&gt;
+&lt;p&gt;We would suggest the following tiles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;System - Cross Reference&amp;rdquo; for the lookup style views that will add data to our forms&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;System - Workflow&amp;rdquo; for the automations&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;System - Visibility&amp;rdquo; for the rules that control the visibility of specific User Interface items&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;System - Tabs&amp;rdquo; for the views that control the list of child items seen on a forms tab&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;System - General&amp;rdquo; for everything else&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;adding-look-up-data-to-a-form&#34;&gt;Adding Look Up data to a Form&lt;/h2&gt;
+&lt;p&gt;In this first example we want to show the user who the owner of the company is rather than letting the user set it.&lt;/p&gt;
+&lt;p&gt;Start from the Tiles interface, and enter the build interface.&lt;/p&gt;
+&lt;p&gt;We first need to build a view that will look up the data for us.&lt;/p&gt;
+&lt;p&gt;Find the Sales Opportunity table, click to Edit, navigate to Names and Views, and Create a new view (with out all fields) in the Tile called ‘System - Cross Referenced’&amp;hellip; Try using the name “xref - Sales Opportunity Organisation Owner”&lt;/p&gt;
+&lt;p&gt;To find out who the company owner is we need to navigate the relational database. In this case, UP to the organisation, then DOWN to contacts.&lt;/p&gt;
+&lt;p&gt;Add the joins!!!&lt;/p&gt;
+&lt;p&gt;Typically, Cross reference views only have a few key fields of information&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Add Name, tel and email&lt;/p&gt;
+&lt;p&gt;However, we only want contacts that we know are the Owners, so add a filter on the contact role where Role contains &amp;ldquo;Owner&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;At this point it&amp;rsquo;s useful to look at the data and judge whether it seems about right&lt;/p&gt;
+&lt;p&gt;Now we need to add this data to the Sales Opportunity.&lt;/p&gt;
+&lt;p&gt;Go back and Edit the Sales Opportunity table and show the list of fields.&lt;/p&gt;
+&lt;p&gt;Add a Cross reference field. This is just a special type of field that needs a little bit more setting up than a regular field.&lt;/p&gt;
+&lt;p&gt;Add the new field, name “Company Owner(s)”,  set the type to &amp;lsquo;cross referenced data&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;Table to Use: Sales Opportunities&lt;/p&gt;
+&lt;p&gt;View to use:  ‘xref - Sales Opportunity Organisation Owner’&lt;/p&gt;
+&lt;p&gt;Move it to right place (probably near the top)&lt;/p&gt;
+&lt;p&gt;Close the edit, navigate to a Sales opportunity record and see how it looks&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You have a little bit of control how it appears on the form, by choosing ‘Tabular display’ and or the drop down ‘display of fields’&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;automations---sending-an-email&#34;&gt;Automations - sending an email&lt;/h2&gt;
+&lt;p&gt;Our second example is going to demonstrate the power of Workflows. We can configure the system to be working when we’re not! We will now add an internal ‘Reminder’ email that will prompt the owner of our Sales opportunities to update their progress.
+You can read about this facility at &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;docs workflows - sending an email&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;IMPORTANT NOTE - Whilst Agilebase can be used to send emails, it should NOT be used for marketing purposes. Rather it should be used as a method to notify people about data associated to the system. In this instance we are going to remind people that they have ‘Sales opportunities requiring updates’&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;[guide 1.5 - video 2]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/CG4y7jclRK8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;1-starting-from-the-view-of-tiles-enter-the-build-interface&#34;&gt;1. Starting from the view of Tiles, enter the build interface.&lt;/h3&gt;
+&lt;p&gt;We first need to create the Workflow that will do all the work for us.&lt;/p&gt;
+&lt;p&gt;Find the Sales Opportunity table, click to Edit, navigate to Names and Views, and Create a new view (without all fields) in the Tile called ‘System - Workflows’. We suggest a name like “WF email - Sales opportunities requiring updates”&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Prefixing with WF, along with some text, makes it clear to future developers what action the Workflow performs.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;2-our-intial-task-is-to-add-all-the-fields-we-wish-to-use-in-the-email&#34;&gt;2. Our intial task is to add all the fields we wish to use in the email&lt;/h3&gt;
+&lt;p&gt;Add the join to get the Main contact’s full name&lt;/p&gt;
+&lt;p&gt;Add Title, Date of Enquiry, Main Contact, Owner, Last updated&lt;/p&gt;
+&lt;h3 id=&#34;3-now-add-the-filters-so-we-only-get-the-records-that-need-chasing&#34;&gt;3. Now Add the filters so we only get the records that need chasing.&lt;/h3&gt;
+&lt;p&gt;Obviously we only want to chase Opportunities that have not been updated recently&lt;/p&gt;
+&lt;p&gt;Add a filter for Last Updated that is older than 1 week&lt;/p&gt;
+&lt;p&gt;We also only want to chase Opportunities that are ‘In Progress’. Our Status field uses a number prefix to make this easy&amp;hellip; Opportunities that still need to be progressed have a prefix number lower than 4, therefore add a second filter for Status Less Than 4&lt;/p&gt;
+&lt;h3 id=&#34;4-setup-the-email&#34;&gt;4. Setup the email&lt;/h3&gt;
+&lt;p&gt;Click on the &amp;ldquo;Workflow - send emails&amp;rdquo; option on the Left hand Side of the Edit pop-up.&lt;/p&gt;
+&lt;p&gt;We are sending an internal ‘email notification’, so click the right hand option&lt;/p&gt;
+&lt;p&gt;Set the options much like you would a mailmerge in Word. In agileBase you use the Curly brackets to let the system know where to insert the data (notice the list of fields available to you above the To input field.&lt;/p&gt;
+&lt;p&gt;For example we want the &amp;ldquo;To&amp;rdquo; field to be set to {owner}&lt;/p&gt;
+&lt;p&gt;Subject can be set to ‘Sales Opp Update needed for {title}‘&lt;/p&gt;
+&lt;p&gt;And the Body of the email can be set to&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;‘&lt;/span&gt;Hi {owner}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;You have a Sales opportunity called &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; {Title} &lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; {Date of Enquiry} that has &lt;span style=&#34;color:#f92672&#34;&gt;not&lt;/span&gt; been updated since {Last updated}&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; Please contact {full name} &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; do what a good salesperson does &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; close the deal&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;!!!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Regards
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Agilebase&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;’&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The system will colour the text red if you get any of the merge fields incorrect&lt;/p&gt;
+&lt;h3 id=&#34;5-setting-up-the-workflow&#34;&gt;5. Setting up the workflow&lt;/h3&gt;
+&lt;p&gt;Set the Workflow to run everyday&lt;/p&gt;
+&lt;p&gt;Set the Log send time and choose every 24 hours. Once set to 24hours you can specify a time the workflow should run. Dont forget to log when it sends to a new field called ‘wf_SalesOpDateChaseSent’&lt;/p&gt;
+&lt;p&gt;Behind the scenes agileBase has automatically added a filter that means this Workflow will only ever chase once. Whilst this is probably the case in 90% of cases when we chase things by email, in this example we want to chase every 7 days. So we can alter the Filter.&lt;/p&gt;
+&lt;p&gt;Navigate to the filters option&lt;/p&gt;
+&lt;p&gt;Remove the automatically created filter on ‘wf_SalesOpDateChaseSent’.&lt;/p&gt;
+&lt;p&gt;Now, add one back in with ‘wf_SalesOpDateChaseSent’ must be older than a week, and then click the ‘or blank’.&lt;/p&gt;
+&lt;p&gt;Finally, if you click on the view title, the display will load in the list of records that the system will email next time the Workflow runs - which should be tomorrow at your specified time.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TIPS&lt;/strong&gt;
+Go to ‘Properties and options’, and set the ‘Row limit’ to 1&lt;/p&gt;
+&lt;p&gt;You’ll see the view only has one item in it.&lt;/p&gt;
+&lt;p&gt;If we now go to ‘workflow - edit records’, we can press ‘Run Workflow Now’, and it will only send the one email!&lt;/p&gt;
+&lt;p&gt;We can also see evidence of the email being sent in the Logs, recent messages section.&lt;/p&gt;
+&lt;p&gt;Now don&amp;rsquo;t forget to go back and remove the Row limit!”&lt;/p&gt;
+&lt;h2 id=&#34;a-look-at-the-chaser&#34;&gt;A look at the &amp;ldquo;Chaser&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;The email notification option usually sends a single email per record. The Chaser is a built in feature that is preconfigured to send repeat emails. This is a bigger, more feature rich version of what we just setup. Again, it’s something that runs in the background.&lt;/p&gt;
+&lt;p&gt;It’s specifically aimed at automating those emails you send to 3rd parties chasing for specific information. But can also be used for internal chasers&amp;hellip; which is what we are going to demonstrate with a chaser for Outstanding Tasks”&lt;/p&gt;
+&lt;p&gt;[guide 1.5 - video 2a]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/bAF7T_Ip2eA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;setting-up-a-chaser&#34;&gt;Setting Up a chaser&lt;/h3&gt;
+&lt;p&gt;Go in to development mode and find the Tasks table.&lt;/p&gt;
+&lt;p&gt;As we’ve done before add a new view to the workflow tile and call it ‘wf chaser - outstanding tasks’.&lt;/p&gt;
+&lt;p&gt;Go to the send emails option and choose the chaser option.&lt;/p&gt;
+&lt;p&gt;Click the first tickbox and enable the chaser.&lt;/p&gt;
+&lt;p&gt;The system does a lot of the heavy lifting for you, adding fields, and creating the calcs and views needed for it to work, but dont forget to check what time of day you wish the chaser to run.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow_chaser.png&#34; alt=&#34;List of fields created and added by the chaser&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You can see in the screeshot above how the system has created several calculations setting things like ‘Chase every’ and ‘escalate after’ and ‘escalate to’ which the system references to control the way the chaser works.&lt;/p&gt;
+&lt;p&gt;For more information please visit &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;docs sending a chaser&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;At a bare minimum you will need to change who we are sending the email to.&lt;/p&gt;
+&lt;p&gt;Edit the “To” calculation and change it to be the “assigned to” user.&lt;/p&gt;
+&lt;p&gt;And add the appropriate filters which in this case are when the “Due” date has passed (older than 1 day). And the status is not equal to completed.&lt;/p&gt;
+&lt;p&gt;Sepping back and looking at the data returned by the view we can see in its current form the chaser will send an email every 8 days, and after 5 attempts will stop but as we have NOT set the escalate to field no one will be notified that this task has failed to be completed!!!&lt;/p&gt;
+&lt;h2 id=&#34;adding-a-button-to-a-form&#34;&gt;Adding a button to a form&lt;/h2&gt;
+&lt;p&gt;In this third example we want to add a button to the user interface so that when the Sales Opportunity is won, we want that button to set the status AND log who did it AND when!&lt;/p&gt;
+&lt;p&gt;Start from the Tiles interface, and enter the build interface.&lt;/p&gt;
+&lt;p&gt;We first need to build a Workflow that will do the actual work of setting the data for us.&lt;/p&gt;
+&lt;p&gt;Find the Sales Opportunity table, click to Edit, navigate to Names and Views, and Create a new view (without all fields) in the Tile called ‘System - Workflows’. We suggest a name like “Sales opportunity WON”&lt;/p&gt;
+&lt;p&gt;N.b. We have NOT prefixed this workflow and the name of the view will be what the user sees on the form&amp;rsquo;s interface&lt;/p&gt;
+&lt;p&gt;[guide 1.5 - video 3]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/QkkFtW2CpuU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;1-setting-data&#34;&gt;1. Setting DATA&lt;/h3&gt;
+&lt;p&gt;For our workflow to set data we need to create a calculation.&lt;/p&gt;
+&lt;p&gt;We learnt how to create calculations in a previous video&lt;/p&gt;
+&lt;p&gt;In this case we want a ‘text’ calculation.&lt;/p&gt;
+&lt;p&gt;It is essential that we use the same name as the field we wish to set. In this case ‘Status’.&lt;/p&gt;
+&lt;p&gt;The correct way to write SQL for Text fields involves using single quotes to hold our value. It is also important that we set the field to be the right option in our Status drop down -  in this case it must include the number prefix. Set the calculation value to be&amp;hellip;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;‘4) Won’ 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We also want to set WHO closed the Sales Op. This is another text field but this time the destination field is called ‘closed by’.”&lt;/p&gt;
+&lt;p&gt;We can use a special bit of SQL called a variable to find out who is logged in.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/calculation_variables.png&#34; alt=&#34;List of variables avaialble to a calculation&#34;&gt;&lt;/p&gt;
+&lt;p&gt;From the list above we can see we need our calculation text to be&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ab_userid()
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;3-setting-up-the-workflow&#34;&gt;3. Setting up the WORKFLOW&lt;/h3&gt;
+&lt;p&gt;Finally we need to turn this view into a Workflow that does something!&lt;/p&gt;
+&lt;p&gt;If we choose the workflow - edit records section we can change the Action to ‘Update the Matching Sales Opportunity’&lt;/p&gt;
+&lt;p&gt;We can use the fact that the system needs to store the date it perfomed the action by setting &amp;ldquo;log update to&amp;rdquo; to the exisitng &amp;ldquo;Closed date” field&lt;/p&gt;
+&lt;p&gt;We will leave Frequency as ‘Manual’ as we want the user to use a button to fire this workflow&lt;/p&gt;
+&lt;h3 id=&#34;adding-the-button-to-the-ui&#34;&gt;Adding the Button to the UI&lt;/h3&gt;
+&lt;p&gt;At last we are ready to add the button to the user interface&lt;/p&gt;
+&lt;p&gt;Go back to Edit Sales opportunity table and show the list of fields&lt;/p&gt;
+&lt;p&gt;Buttons are just Cross reference Fields that are setup to be workflows&lt;/p&gt;
+&lt;p&gt;Add the new field to the table&amp;hellip; name “BTN - Sales Op WON”,  type cross referenced data&lt;/p&gt;
+&lt;p&gt;Table to Use: Sales Opportunities&lt;/p&gt;
+&lt;p&gt;View to use:  ‘Sales Op WON’&lt;/p&gt;
+&lt;p&gt;Move it to right place, probably near the bottom, and see how it looks&lt;/p&gt;
+&lt;h3 id=&#34;hiding-the-button-when-we-dont-want-it&#34;&gt;Hiding the button when we dont want it!!!&lt;/h3&gt;
+&lt;p&gt;First of all try pressing the button&lt;/p&gt;
+&lt;p&gt;You can see that the status is now Won&lt;/p&gt;
+&lt;p&gt;However, at the moment, even though the button has been pressed and we’ve set the status to Won we can still press the button again!!!&lt;/p&gt;
+&lt;p&gt;To stop this we need to apply a visibility rule to that button to hide it. In this case we want the button to be hidden if the sales opportunity is already marked as Won.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/button_visibility_rule.png&#34; alt=&#34;Visibility rule added to the field&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Go back to Edit Sales opportunity table, show the list of fields and click to edit the BTN field&lt;/p&gt;
+&lt;p&gt;Scroll down a little and you can see the section about Field Visibility.&lt;/p&gt;
+&lt;p&gt;Simply set the filter required - In our case this means the status value is less than 4 as seen in the screenshot above.&lt;/p&gt;
+&lt;h2 id=&#34;other-types-of-automations&#34;&gt;Other types of Automations&lt;/h2&gt;
+&lt;p&gt;There are several other types of automations&amp;hellip; we’ve already seen sending emails in this guide, but you can also create new records and generate PDFs. If you are interested please take a look at our other guides linked below and the associated documentation&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;List of different types of workflows&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Guides: 6. Security and Access Control</title>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/security-and-access-control/</link>
+      <pubDate>Thu, 31 Aug 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/security-and-access-control/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;   Understand basic database privileges&amp;hellip; Roles and giving them to Users!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; To have built a multi table system, to have more than themselves as users.&lt;/p&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;AgileBase uses the classic concept of Roles to help you control the access users have to the system you are building.
+A classic metaphor would be the manager of an office has the keys to the building, whilst the staff do not. The person acting as the manager may change overtime, but the permission and privileges (in this case having keys) does not!&lt;/p&gt;
+&lt;p&gt;[guide 1.6 - video 1]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ybixmV1TdVA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;creating-roles&#34;&gt;Creating Roles&lt;/h2&gt;
+&lt;p&gt;For our scenario of a Basic CRM we will model the simple situation that all users will need to access contact information, but only some users will log tasks. Similarly, only some users will access sales opportunities.
+We can start by creating a Role called ‘Orgs and Contacts’
+Press Add Role and name it ‘Orgs and Contacts’
+Start by looking at the Privileges list. As you can see this shows you a list of ALL the tables in the system. We want users with this role to be able to read and importantly WRITE any organisation info.
+Set the radio button Edit on Organisations, Sites and Contacts
+&lt;img src=&#34;https://docs.agilebase.co.uk/roles-privileges.png&#34; alt=&#34;The Roles privilege list&#34;&gt;
+Now look at the Members option. We can give this permission to all our users.&lt;/p&gt;
+&lt;p&gt;For our Basic CRM we will need to do the same for a role to use Tasks and another for Sales Opportunites&lt;/p&gt;
+&lt;h3 id=&#34;user-roles-permissions-and-tiles&#34;&gt;User Roles, Permissions and Tiles&lt;/h3&gt;
+&lt;p&gt;Now to take a look from a User&amp;rsquo;s perspective.
+Back to the starting page of Development mode and click Users to show ALL users
+Click on a user&amp;rsquo;s record
+If we click on the Roles option, we can see any roles the user may be missing.
+Simple click to add
+&lt;img src=&#34;https://docs.agilebase.co.uk/user-roles.png&#34; alt=&#34;The Roles privilege list&#34;&gt;
+Sometimes it&amp;rsquo;s useful to see an individual’s permissions. This can be done by looking at the Privileges tab on their user record.&lt;/p&gt;
+&lt;p&gt;Perhaps, more useful is ensuring they have the tile to access the functionality!!!
+Click on Tiles and you can see whether they have our Sales opportunity tile.
+When you add a tile you are prompted to choose the default view. It is an important consideration to choose the most appropriate view for your users.
+&lt;img src=&#34;https://docs.agilebase.co.uk/user-adding-tile.png&#34; alt=&#34;The Roles privilege list&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;advanced-access-control&#34;&gt;Advanced Access Control&lt;/h2&gt;
+&lt;p&gt;Sometimes we may find a situation where access control can not be broken down to complete tables, but instead we want to have control on a field by field basis. In this instance we can use field visibility rules combined with the roles system.
+In our example scenario we have a role called “HR” and we only want ONLY users with this role to see a Date of Birth field on the Contact record.&lt;/p&gt;
+&lt;p&gt;[guide 1.6 - video 1]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/MEFep-NFl1o&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;We need to create a view that will control the visibility of the field, so we create a view in the &amp;ldquo;System Visibility Tile”&lt;/p&gt;
+&lt;h3 id=&#34;field-visibility-and-user-roles&#34;&gt;Field Visibility and User Roles&lt;/h3&gt;
+&lt;p&gt;We have already had an exmaple of using a visibility rule to hide a button. In this case we are going a step further and controlling visibility based on the logged in User&amp;rsquo;s roles.
+To start we will need a view called ‘vis - Contact HR only’ built rom the Contacts table.
+Since Field Visibility rules work by only showing the field if the record exists in a specified view we don’t need loads of columns, we just need to concentrate on filtering. For this example we need to filter by the Role the user has, and we can do this by using a calculation.
+Add a Calculation field of type boolean called ‘is in HR’. The SQL you need is&amp;hellip;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  ab_userroles() ilike &amp;#39;%HR%&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;It is easy to follow if you have an understanding of SQL, if not there is plenty of help and tutorials on the internet. However, as a brief explanation, aB_userroles() is a variable that will return the list of roles that the logged in user is a member of. Ilike is a text match that looks for in this case the letters HR. In otherwords, this query will let us know is the user is a member of the HR role.
+Dont forget to apply the filter by going to the fiter option and adding where &amp;ldquo;is in HR&amp;rdquo; equals True&lt;/p&gt;
+&lt;p&gt;All that&amp;rsquo;s left to do is apply the visibilty rule to the chosen field. In this example, navigate to edit the Contacts table, Click on the DOB field.
+Scroll down to Field Visibility, show choosing the view ‘vis - Contact HR only’&lt;/p&gt;
+&lt;h2 id=&#34;success---a-basic-crm&#34;&gt;SUCCESS - A basic CRM&lt;/h2&gt;
+&lt;p&gt;If you have been following along and building your own system then congratulations you have a fledging CRM system for your business. You now have knowledge of the all the building blocks needed to extend this tool and turn it into a powerful back office system to help your colleagues manage their work.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Special Field Types</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/</guid>
+      <description>
+        
+        
+        &lt;p&gt;These special types of fields are useful beyond basic data entry, for creating rich application functionality and user experiences.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Business Intelligence</title>
+      <link>https://docs.agilebase.co.uk/docs/charting/business-intelligence/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/charting/business-intelligence/</guid>
+      <description>
+        
+        
+        &lt;blockquote&gt;
+&lt;p&gt;Before setting up a BI connection, please be aware of the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting#privacy-and-data-security&#34;&gt;data privacy and security&lt;/a&gt; considerations.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Any tool which utilises &lt;a href=&#34;https://en.wikipedia.org/wiki/Open_Database_Connectivity&#34;&gt;ODBC&lt;/a&gt; can be used, such as Excel for example. Power BI is a common one.&lt;/p&gt;
+&lt;h2 id=&#34;initial-setup&#34;&gt;Initial Setup&lt;/h2&gt;
+&lt;p&gt;The first step is to &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; to request we prepare your account. This will also allow connections from Power BI or any other tool which can connect to ODBC).&lt;/p&gt;
+&lt;p&gt;If you use Power BI, then the process is as follows&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install the PostgreSQL ODBC driver from &lt;a href=&#34;https://odbc.postgresql.org/&#34;&gt;https://odbc.postgresql.org/&lt;/a&gt;. Use the Downloads link and if running on Windows, use the newest driver from the &lt;strong&gt;msi&lt;/strong&gt; folder.&lt;/li&gt;
+&lt;li&gt;Use your operating system&amp;rsquo;s control panel to set up the ODBC driver, using the login details we supply. Ensure the SSL mode is set to &amp;lsquo;require&amp;rsquo;.&lt;/li&gt;
+&lt;li&gt;From Power BI, add a connection using the PostgreSQL ODBC driver, &lt;em&gt;not&lt;/em&gt; the built-in Power BI PostgreSQL driver.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;sending-data-to-your-external-reporting-tool&#34;&gt;Sending data to your external reporting tool&lt;/h2&gt;
+&lt;p&gt;A developer with DEVELOP privileges on a view&amp;rsquo;s parent table can set this up.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Before continuing, please also note that only users without any &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt; roles will be able to turn on external reporting.
+That&amp;rsquo;s because data sent this way doesn&amp;rsquo;t take account of multi-tenanting. Rather all data is sent, whatever the tenant.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;In Agilebase, open the view you wish to report on. Ensure it has all the necessary fields and calculations in it which you want to report on. If not, add them before continuing.&lt;/li&gt;
+&lt;li&gt;Click the charting icon to view the chart setup interface&lt;/li&gt;
+&lt;li&gt;At the bottom of the screen, tick &amp;lsquo;send data to a shareable dashboard&amp;rsquo;. As this makes data available &lt;a href=&#34;charting#privacy-and-data-security&#34;&gt;outside of Agilebase&lt;/a&gt;, you will be asked to confirm you will treat the data in a way which maintains privacy and security before enabling the feature.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Within a few seconds, the data will then be visible to your external application.&lt;/p&gt;
+&lt;h3 id=&#34;changes&#34;&gt;Changes&lt;/h3&gt;
+&lt;p&gt;It&amp;rsquo;s easy for developers to make changes to views in Agilebase, for example adding / removing fields, changing calculations or just renaming a view.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;However, when the BI connection is active, bear in mind that certain changes could break it. The reason is that once data is set up to transfer to a separate system, the other system typically expects it to remain in the same format.&lt;/p&gt;
+&lt;p&gt;That means that if you rename the view or move it, or rename/delete fields and calculations, you may afterwards need to check your charts in Superset / Power BI, to see if they need re-creating.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;daily-updates&#34;&gt;Daily updates&lt;/h3&gt;
+&lt;p&gt;Once the view has been set up, external applications will see a new read-only snapshot of data once a day at a time you can specify on screen. If your data needs to be updated more often, you can add a workflow button to accomplish that:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Ensure that the view A is used for reporting only, in particular it doesn&amp;rsquo;t have any &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt; set up.&lt;/li&gt;
+&lt;li&gt;From another view B, edit the view and go to the &amp;lsquo;workflow - edit records&amp;rsquo; panel&lt;/li&gt;
+&lt;li&gt;Under &amp;lsquo;chain workflow&amp;rsquo;, select the reporting view A&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Then, when a user opens view B, they will see a button at the top of the screen with the button text set to the name of view A. Pressing it will refresh the view A data sent to external applications.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Calendar</title>
+      <link>https://docs.agilebase.co.uk/docs/calendar/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/calendar/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Any view with one or more date/time fields can have its data displayed in calendar form. If there are two date/time fields, the first will be the start time, the second the end time. If there&amp;rsquo;s only one, events will last 1 hour by default, unless the field is a date only, in which case they will be all day.&lt;/p&gt;
+&lt;p&gt;Data can also sync to and from external calendars using the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;API&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Any user can add the calendar tile to their homepage, then select views containing dates to display in it. Data can be displayed in a number of formats, like standard month/week/day views but also timeline views for a gantt-style format, with each view in its own swim-lane.&lt;/p&gt;
+&lt;h2 id=&#34;default-views&#34;&gt;Default views&lt;/h2&gt;
+&lt;p&gt;Any views which are in a tile with the word &amp;lsquo;calendar&amp;rsquo; in the name will show by default when a user first opens the calendar tile.&lt;/p&gt;
+&lt;h2 id=&#34;splitting-a-view-into-tracks&#34;&gt;Splitting a view into tracks&lt;/h2&gt;
+&lt;p&gt;In a timeline grid display, each view will become a swim-lane or track down the left hand side of the screen. However it&amp;rsquo;s also possible to create multiple tracks from a single view, choosing a field to split on. Each distinct value of that field will become a separate track.&lt;/p&gt;
+&lt;p&gt;For example, here&amp;rsquo;s a view of recipe development milestones split on the product name:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/calendar-timeline.png&#34; alt=&#34;calendar timeline&#34;&gt;&lt;/p&gt;
+&lt;p&gt;To set this up, add a text calculation to the view called &amp;lsquo;calendar splitter&amp;rsquo;. The calculation should output the value to split on, in this case the product name.&lt;/p&gt;
+&lt;h2 id=&#34;colouring-events&#34;&gt;Colouring events&lt;/h2&gt;
+&lt;p&gt;By default, each view used in the calendar will be assigned a different colour.&lt;/p&gt;
+&lt;p&gt;Alternatively, you can choose to colour individual events, for example based on whether they&amp;rsquo;re overdue or not.&lt;/p&gt;
+&lt;p&gt;To do this, add a text field to the view which has the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/#colour-words&#34;&gt;colour words&lt;/a&gt; option set, or a calculation with the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/#colouring&#34;&gt;colour words&lt;/a&gt; option.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Types of Join</title>
+      <link>https://docs.agilebase.co.uk/docs/views/joins/types-of-join/</link>
+      <pubDate>Fri, 15 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/joins/types-of-join/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Here&amp;rsquo;s a Youtube video explaining the concept of joins and running through the various types.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/9yeOJ0ZMUYw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Just remember, when using third party resources to learn about joins (or other SQL features), you don&amp;rsquo;t need to write the SQL code in Agilebase, it&amp;rsquo;s generated for you behind the scenes.&lt;/p&gt;
+&lt;h2 id=&#34;left-outer-and-inner-joins&#34;&gt;Left outer and inner joins&lt;/h2&gt;
+&lt;p&gt;The left outer join is the default type used when a join is added to a view in Agilebase. It suits most cases, but can be changed after join creation if needed.&lt;/p&gt;
+&lt;p&gt;A left outer join type will ensure that every row from the left source (table or view) is visible in output, whether or not the data links to a row on the right side. Conversely, when an inner join&amp;rsquo;s used, data from the left will be hidden unless it links to data on the right.&lt;/p&gt;
+&lt;p&gt;That may sound rather abstract: working with an example, we can see what it means in practice.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s take the common and straightforward example of linking contacts to organisations. We start by creating a view from the contacts table, so that&amp;rsquo;s on the left side. We then join from contacts to an organisations table, on the right. This join looks as follows:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/example-join.png&#34; alt=&#34;example join&#34;&gt;&lt;/p&gt;
+&lt;p&gt;That gives us a view where we can add fields from the organisation table into the view of contacts data. The output may look something like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/view-contacts.png&#34; alt=&#34;contacts view&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Each row representing a contact, has the contact details (name, email address etc.) and from the organisations table, you can see the name and website of the organisation they belong to.&lt;/p&gt;
+&lt;p&gt;But wait a minute, what&amp;rsquo;s that contact with blank spaces for the organisation name and website? That represents a &lt;strong&gt;contact which is not yet linked to an organisation&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;I guess to be nit-picky, it could represent a contact joined to an organisation without a name or website address added, but here we&amp;rsquo;ll assume all organisations have those details filled in.&lt;/p&gt;
+&lt;p&gt;When the join type is &lt;strong&gt;left outer&lt;/strong&gt;, then this row will be shown, as seen. However, if it&amp;rsquo;s changed to an &lt;strong&gt;inner&lt;/strong&gt; join, then it will be hidden.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s why left outer is the safest type to use by default. Otherwise with an inner, if a user adds a new contact, fills in all their basic details but doesn&amp;rsquo;t link her or him to an organisation (perhaps they don&amp;rsquo;t know the organisation or it doesn&amp;rsquo;t exist in the system yet), then they won&amp;rsquo;t be able to see that contact in the view. And if they can&amp;rsquo;t see it, then they can&amp;rsquo;t click on it to load it - it will have vanished for good (well, until the join is changed back to a left outer).&lt;/p&gt;
+&lt;p&gt;Sometimes of course, inner joins are very useful - but it makes sense that there must be a conscious decision to change a join to that type.&lt;/p&gt;
+&lt;h2 id=&#34;right-outer-and-full-outer&#34;&gt;Right outer and full outer&lt;/h2&gt;
+&lt;p&gt;You may think, if there&amp;rsquo;s a left outer, is there also a right outer? There is, it means all data from the right side is always visible, whether or not there&amp;rsquo;s a match on the left. So in our contacts/organisations example, all organisations would be visible, whether or not any contacts belonged to them.&lt;/p&gt;
+&lt;p&gt;Practically, this isn&amp;rsquo;t used much, as a right outer join is just the same as a left outer join started from the other table. There&amp;rsquo;s no difference in the data visible, but using a left outer works better in Agilebase because you can be guaranteed that clicking on a row will load a record (with a right outer, if there&amp;rsquo;s no data on the left side, then no record can be loaded when the row&amp;rsquo;s clicked).&lt;/p&gt;
+&lt;p&gt;You may also hear of a full outer join - this again has a very small number of useful cases, but you can &lt;a href=&#34;https://stackoverflow.com/questions/2094793/when-is-a-good-situation-to-use-a-full-outer-join&#34;&gt;read about them online&lt;/a&gt; if interested.&lt;/p&gt;
+&lt;h2 id=&#34;venn-diagram&#34;&gt;Venn diagram&lt;/h2&gt;
+&lt;p&gt;Joins are often represented visually with Venn diagrams. Here&amp;rsquo;s one, showing that for a left outer join, all the data from the left side is visible, whether or not a matching row exists on the right, and for an inner join, data from the left is excluded without a match. The results of right outer and full outer are also visualised.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/joins-venn.png&#34; alt=&#34;Joins Venn diagram&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;cross-join&#34;&gt;Cross join&lt;/h2&gt;
+&lt;p&gt;There&amp;rsquo;s one final type to consider that can be used in Agilebase. Strictly speaking, it isn&amp;rsquo;t a join at all, but it does bring together data from left and right sides in a particular way, so we&amp;rsquo;ll think of it as a join here and it&amp;rsquo;s treated as such in Agilebase.&lt;/p&gt;
+&lt;p&gt;If you have a mathematical background, it may help to know that it produces a cartesian product, or cross product, of all rows in the left and right sides.&lt;/p&gt;
+&lt;p&gt;However if you don&amp;rsquo;t, not to worry, it can be easily explained without maths. Basically, every combination of each row on the left with each row on the right is output. So if you have three rows, A, B and C on the left and another three X, Y and Z on the right, then you would get as output: data from&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Row A with row X&lt;/li&gt;
+&lt;li&gt;Row A with row Y&lt;/li&gt;
+&lt;li&gt;Row A with row Z&lt;/li&gt;
+&lt;li&gt;Row B with row X&lt;/li&gt;
+&lt;li&gt;Row B with row Y&lt;/li&gt;
+&lt;li&gt;Row B with row Z&lt;/li&gt;
+&lt;li&gt;Row C with row X&lt;/li&gt;
+&lt;li&gt;Row C with row Y&lt;/li&gt;
+&lt;li&gt;Row C with row Z&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can see that you need to be careful when creating cross joins that results won&amp;rsquo;t balloon up into massive numbers of rows that are hard to deal with. For example, if two tables, each with a hundred thousand rows in, are joined by cross join, then 100,000 x 100,000 = 10,000,000,000 (ten billion) rows would output.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Once again, potential uses may be most easily explained by a real world example.&lt;/p&gt;
+&lt;p&gt;Cross joins can be used when reporting, to find data that&amp;rsquo;s &lt;strong&gt;not&lt;/strong&gt; there (to get a bit Zen). For example, say we have two tables&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;customers&lt;/li&gt;
+&lt;li&gt;products&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We may want to create output representing the combination of every customer with every product - we could then further join this to sales data to find which products a customer isn&amp;rsquo;t buying, or which products are being bought by most and fewest customers.&lt;/p&gt;
+&lt;p&gt;Firstly, we need all combinations. Create a cross join between customers and products, in a &amp;lsquo;customer products&amp;rsquo; view.&lt;/p&gt;
+&lt;p&gt;The next step is similar to our reporting example of &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/#joining-on-multiple-fields&#34;&gt;joining on multiple fields&lt;/a&gt;. Create a calculation &amp;lsquo;customer product&amp;rsquo; which concatenates together customer ID and product ID. Create the same calculation in a view of sales (each sale of a product to a customer). Then join this sales view into our customer products view and bingo, we can display the total sales, whether zero or more, of each product to each customer.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you haven&amp;rsquo;t yet read up on &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/&#34;&gt;calculations&lt;/a&gt;, you may need to do that in order to accomplish everything above&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;adding-a-cross-join&#34;&gt;Adding a cross join&lt;/h3&gt;
+&lt;p&gt;Adding a cross join is a little different to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/#adding-a-join&#34;&gt;adding a normal join&lt;/a&gt;. The left and right fields don&amp;rsquo;t matter (as we want to apply any exclusion rules, we just want every combination of rows possible).&lt;/p&gt;
+&lt;p&gt;So follow the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/#complex-joins&#34;&gt;normal process for a complex join&lt;/a&gt;, but just select the left and right tables (or views), leave the fields at their default values.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Referenced data</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/</link>
+      <pubDate>Thu, 07 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Most fields in a table allow data entry into that table, but referenced data fields allow data from &lt;strong&gt;other&lt;/strong&gt; places to be embedded, specifically &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;views&lt;/a&gt;, created from any table.&lt;/p&gt;
+&lt;p&gt;Optionally, the embedded data can be editable.&lt;/p&gt;
+&lt;p&gt;This can be used for many purposes, such as&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;showing warning or information messages in a form, based on criteria&lt;/li&gt;
+&lt;li&gt;showing calculations, e.g. when editing a recipe, you may want to show the total cost/kg of all ingredients and packaging in that recipe&lt;/li&gt;
+&lt;li&gt;embedding charts, e.g. in the record for a customer, you may want to show the last 12 months of sales data&lt;/li&gt;
+&lt;li&gt;allowing quick editing of related data, e.g. after selecting a customer contact for a sales opportunity, allow quick editing of their contact details without having to navigate away from the opportunity record&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some more esoteric uses are also possible&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;referenced data can be used as a source of data to populate standard fields in the form, i.e. to provide default values for fields - see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#set-from-previous-referenced-field&#34;&gt;relation field options&lt;/a&gt; for more information&lt;/li&gt;
+&lt;li&gt;a referenced data field can be displayed as a button to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/&#34;&gt;manually run a workflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;adding-a-referenced-field&#34;&gt;Adding a referenced field&lt;/h2&gt;
+&lt;p&gt;Referenced fields are based on views. The contents of a view will be displayed in the form where a field referencing data from that view is added.&lt;/p&gt;
+&lt;p&gt;The way it works is that the chosen view must contain the ID field of the table the referenced field is added to. When displaying data, the view is filtered to only show records where the ID matches that of the record being edited.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s take an example - you wish to include details of any ingredients supplied by a company in a supplier details screen.&lt;/p&gt;
+&lt;p&gt;First, create a view of ingredients linked to each supplier. It may have data in it such as the following:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-source-view.png&#34; alt=&#34;referenced source view&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There is some repetition in this view because each ingredient can be supplied by more than one supplier. Each line represents an ingredient/supplier combination. The supplier names aren&amp;rsquo;t included in this particular view.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When a field referencing this view is added to the suppliers table, the output may display like this, when editing a particular supplier:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-panels.png&#34; alt=&#34;referenced panels&#34;&gt;&lt;/p&gt;
+&lt;p&gt;So to summarise, the steps are&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/creating-a-view/&#34;&gt;Create&lt;/a&gt; or find a view containing the data you wish to embed. It must contain the ID field of the table the data is embedded in (in this case &amp;lsquo;opportunities&amp;rsquo;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/#adding-a-field&#34;&gt;Add a field&lt;/a&gt; of type &lt;em&gt;referenced data&lt;/em&gt;. Select the table your target view was created from, then the target view itself, before pressing &lt;em&gt;create field&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Actually, there is one case in which the rule that the view must contain the ID of the table the referenced data is being added to. That&amp;rsquo;s when you want to show &lt;strong&gt;all&lt;/strong&gt; rows from the view, without filtering.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is typically used in a minority of cases, but can be useful when you want to embed data that isn&amp;rsquo;t related to the target table. For example, showing some global settings that may affect the functionality of a system.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;showing-one-or-more-rows&#34;&gt;Showing one or more rows&lt;/h2&gt;
+&lt;p&gt;If more than one row in the view has an ID matching the ID of the table being added to, all will be shown. There is limited space in a form, so if there are lots, then a &amp;lsquo;see more&amp;rsquo; option will appear after the first few rows. For a more compact view, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/referenced-field-options/#tabular-display&#34;&gt;tabular display&lt;/a&gt; can be chosen in the referenced field options.&lt;/p&gt;
+&lt;h2 id=&#34;showing-charts&#34;&gt;Showing charts&lt;/h2&gt;
+&lt;p&gt;If the view used has one or more &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting/&#34;&gt;charts&lt;/a&gt;, they will be shown instead of the data rows. The filtering acts exactly the same way, only data matching the containing table&amp;rsquo;s ID is used as the source of the chart data.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/embedded-chart.png&#34; alt=&#34;embedded chart&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;showing-images-and-documents&#34;&gt;Showing images and documents&lt;/h2&gt;
+&lt;p&gt;Images and documents can be included in referenced panels too. Just include a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/&#34;&gt;file field&lt;/a&gt; in the view used for the panel.&lt;/p&gt;
+&lt;h2 id=&#34;making-referenced-data-editable&#34;&gt;Making referenced data editable&lt;/h2&gt;
+&lt;p&gt;Optionally, referenced data can be made editable by clicking on it.&lt;/p&gt;
+&lt;p&gt;A view containing the containing table&amp;rsquo;s ID can be created one of two ways.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a view from the containing table, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/&#34;&gt;joining&lt;/a&gt; to other tables&lt;/li&gt;
+&lt;li&gt;Create a view from another table, joining it to the containing table&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If a view is built the second way and embedded into the table via a referenced field, the data will be editable: clicking on an element of referenced data will turn it into a data entry form.&lt;/p&gt;
+&lt;p&gt;If it&amp;rsquo;s built the first way, data will not be editable.&lt;/p&gt;
+&lt;p&gt;In an editable referenced field, only fields directly from the table made to create the view will be editable. Other fields will be read-only.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Special Uses</title>
+      <link>https://docs.agilebase.co.uk/docs/views/special-uses/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The primary purpose of a view is to show data to users. To let them see, search and report on it, or find individual records to edit.&lt;/p&gt;
+&lt;p&gt;However, some fundamental aspects of a view make it a very useful feature that can power many core capabilities of Agilebase, such as &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chasers&lt;/a&gt;, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;APIs&lt;/a&gt;, as well as being useful to administrators in many more minor ways.&lt;/p&gt;
+&lt;p&gt;A view being a filtered list of records, it can be used to specify those records to act on, i.e. those representing emails to send, workflow actions or data to send to a third party system with an API.&lt;/p&gt;
+&lt;p&gt;A view is commonly created for the task you wish to accomplish, placing it in a System tile to hide it from users. Then it can be turned to the required purpose in any of the following ways.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Automatically present fields</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/</link>
+      <pubDate>Fri, 08 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/</guid>
+      <description>
+        
+        
+        &lt;p&gt;When every &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;table&lt;/a&gt; is created, a series of fields are automatically added. These aren&amp;rsquo;t displayed in the data entry form of a table, but are available to be added into views.&lt;/p&gt;
+&lt;h2 id=&#34;id-field&#34;&gt;ID field&lt;/h2&gt;
+&lt;p&gt;In database parlance, the table&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Primary_key&#34;&gt;primary key&lt;/a&gt; - providing a unique ID to identify each record. Values are generated in sequence.&lt;/p&gt;
+&lt;p&gt;Agilebase creates and manages primary keys, using them to link related tables together automatically, however it&amp;rsquo;s useful for administrators to understand the concept and implementation. Many platform features depending on including the ID field for a particular table in a view, such as &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced fields&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;creation-time-auto&#34;&gt;Creation Time [Auto]&lt;/h2&gt;
+&lt;p&gt;The record&amp;rsquo;s creation time, accurate to the ms and displayed to the second by default.&lt;/p&gt;
+&lt;h2 id=&#34;created-by-auto&#34;&gt;Created By [Auto]&lt;/h2&gt;
+&lt;p&gt;The user ID of the person who created the record, in the form &lt;code&gt;Forename Surname (username)&lt;/code&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This format is used to identify a user everywhere in Agilebase, for example when assigning a record to a user. When a user ID identifies a person in a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chaser&lt;/a&gt; or &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;email workflow&lt;/a&gt;, Agilebase will look up and use their email address, from their account details.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When a record is created by a workflow, the Created By will be &lt;code&gt;System User (system)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;When created by an API call, it will be &lt;code&gt;Public API (IP Address) (public api&lt;/code&gt;, where the IP address of the calling system is recorded.&lt;/p&gt;
+&lt;h2 id=&#34;last-modified-auto&#34;&gt;Last Modified [Auto]&lt;/h2&gt;
+&lt;p&gt;The record&amp;rsquo;s last modification time. Behaviour is similar to Creation Time [Auto], above.&lt;/p&gt;
+&lt;h2 id=&#34;modified-by-auto&#34;&gt;Modified By [Auto]&lt;/h2&gt;
+&lt;p&gt;The user ID of the person who last updated the record. Behaviour is the same as Created By [Auto].&lt;/p&gt;
+&lt;h2 id=&#34;locked-auto&#34;&gt;Locked [Auto]&lt;/h2&gt;
+&lt;p&gt;A boolean value which is true if the record has been &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/#records-lockable&#34;&gt;locked&lt;/a&gt; by a workflow, to disallow further editing.&lt;/p&gt;
+&lt;h2 id=&#34;view-count-auto&#34;&gt;View Count [Auto]&lt;/h2&gt;
+&lt;p&gt;How many times a particular record has been opened or viewed by a user. A measure of popularity if you like.&lt;/p&gt;
+&lt;h2 id=&#34;activity-histogram-auto&#34;&gt;Activity Histogram [Auto]&lt;/h2&gt;
+&lt;p&gt;The activity histogram of a record shows the relative activity of each record, i.e. the number of record edits that have occurred, over a period of time. It&amp;rsquo;s displayed as a small &lt;a href=&#34;https://en.wikipedia.org/wiki/Sparkline&#34;&gt;sparkline&lt;/a&gt; chart.&lt;/p&gt;
+&lt;p&gt;The activity over the past six months is shown, one point, or &amp;lsquo;spike&amp;rsquo; per week. The more edits in a week there are, the higher the spike. Edits to &amp;lsquo;child&amp;rsquo; records in a tab of a main record are also counted, but contribute relatively less.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As an example of use, in a display of sales opportunities, you want to know which opps. are being actively worked and which haven’t had any activity for some time. The activity histogram shows the ‘shape’ of activity over a period of time, at a glance.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;With sparklines next to every record on screen, you can quickly get an idea of the relative activity of each.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/activity-histogram.png&#34; alt=&#34;activity histogram&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;comments-feed-auto&#34;&gt;Comments Feed [Auto]&lt;/h2&gt;
+&lt;p&gt;This field contains an amalagamation of all &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/&#34;&gt;comments&lt;/a&gt; added to a record, newest at the top. Adding this field to a view allows recent comments to be seen for many records at once and is an easy way of making record comments searchable. As opposed to the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;comments tile&lt;/a&gt;, the user sees all record comments, not just those they are a recipient for, but only those for the table in question.&lt;/p&gt;
+&lt;p&gt;Note - the Comments Feed [Auto] field combines comments from all comment fields in the table, if there&amp;rsquo;s more than one, as well as any comments added to other fields.&lt;/p&gt;
+&lt;h2 id=&#34;document-storage-mb-auto&#34;&gt;Document Storage (MB) [Auto]&lt;/h2&gt;
+&lt;p&gt;Shows the amount of storage used for all documents attached to a record (uploaded or generated), including previous versions. Adding this field to a view allows you to total up storage across all (or a subset of) records.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Document templates</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/</link>
+      <pubDate>Fri, 08 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Document templates in Agilebase are typically used to create output that needs to be printed or emailed, for example form letters and especially anything that needs to be branded. They can be used for some quite complex and large documents, for example one customer uses them to create branded multi-page reports that are sold to customers, complete with custom fonts, layouts, images and colours.&lt;/p&gt;
+&lt;p&gt;The same templating system is used for both generating documents (which can be done automatically with a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-document-generator/&#34;&gt;workflow&lt;/a&gt; or manually) and displaying output to be printed.&lt;/p&gt;
+&lt;p&gt;Each template is attached to a view and given a name.&lt;/p&gt;
+&lt;h2 id=&#34;creating-a-template&#34;&gt;Creating a template&lt;/h2&gt;
+&lt;p&gt;Templates can be created using the built-in WYSIWYG editor, which allows simple presentation controls, like adding tables, headings and text formatting.&lt;/p&gt;
+&lt;p&gt;Alternatively and for complex needs, templates can be created manually. The templating language is &lt;a href=&#34;https://velocity.apache.org/&#34;&gt;Apache Velocity&lt;/a&gt;, which allows concepts such as variables, loops etc. to be used, i.e. simple programming features. The output format is HTML.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Find or create a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt; which contains the data to be included in your output document. The idea is that each row in the view will correspond to one document, with the data from that row being merged in. The view needs to be created from the parent table of the file field created for the output document&lt;/li&gt;
+&lt;li&gt;Toggle to development mode and click the top left pencil icon to edit the view&lt;/li&gt;
+&lt;li&gt;Load the &amp;lsquo;workflow - generate PDFs&amp;rsquo; panel&lt;/li&gt;
+&lt;li&gt;Click CREATE to create a new blank template, then EDIT to edit it&lt;/li&gt;
+&lt;li&gt;Tick a file field to assign the template to that file&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Then a user will see a &amp;lsquo;generate document&amp;rsquo; button when they edit a record from the table, allowing them to generate a PDF from the template.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Existing templates can also be edited or downloaded. Manually created templates with complex features such as variable setting and looping can&amp;rsquo;t be edited using the WYSIWYG editor, but can be downloaded, edited manually then re-uploaded.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/document_generation.png&#34; alt=&#34;Template creation&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;filename&#34;&gt;Filename&lt;/h3&gt;
+&lt;p&gt;The filename of the generated document will be comprised of two parts, separated by a dash:
+a) the name of the template which you created as above
+b) the value of the first field in the view above&lt;/p&gt;
+&lt;p&gt;Additionally if multi-tenanting is active, then the name of the tenant associated with the record the document is being generated in will also be added, preceded by a dash.&lt;/p&gt;
+&lt;h2 id=&#34;including-data&#34;&gt;Including data&lt;/h2&gt;
+&lt;p&gt;Each field in the view (included calculations), or parent table, can be merged in to the template by referencing the field name, preceded by a dollar sign. For convenience, a list of available fields is listed below the WYSIWYG editor, for easy copying and pasting into the template.&lt;/p&gt;
+&lt;p&gt;For those manually creating templates, a field name becomes a variable to reference by&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;writing it in lower case&lt;/li&gt;
+&lt;li&gt;replacing spaces with underscores (_)&lt;/li&gt;
+&lt;li&gt;removing all characters that are neither letters nor numbers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here&amp;rsquo;s an example of a template being updated in the WYSYWIG editor:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/template-editor.png&#34; alt=&#34;Template editing&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;using-templates&#34;&gt;Using templates&lt;/h3&gt;
+&lt;p&gt;Templates can be used when generating documents, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/file-field-options/#template&#34;&gt;manually&lt;/a&gt; or using an &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-document-generator/&#34;&gt;automated workflow&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;They can also be used as printout templates to let users print data from the system formatted as you wish.&lt;/p&gt;
+&lt;h2 id=&#34;advanced-templating&#34;&gt;Advanced templating&lt;/h2&gt;
+&lt;h3 id=&#34;convenience-features&#34;&gt;Convenience features&lt;/h3&gt;
+&lt;p&gt;As well as data, various convenience features are available for insertion into a template.&lt;/p&gt;
+&lt;p&gt;Here are some of the most commonly used utility functions.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.getCalendar()&lt;/td&gt;
+&lt;td&gt;Return a Java &lt;a href=&#34;https://docs.oracle.com/javase/10/docs/api/java/util/Calendar.html&#34;&gt;Calendar&lt;/a&gt; object representing the current date and time&lt;br/&gt;Also useful: $viewTools.getCalendarConstant(String name), e.g.&lt;br&gt;&lt;code&gt;#set($dayOfWeek = $viewTools.getCalendar().get($viewTools.getCalendarConstant(&amp;quot;DAY_OF_WEEK&amp;quot;)))&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.getDatestampString()&lt;/td&gt;
+&lt;td&gt;Output the current date in the format 31/01/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.getDatestampString(&amp;ldquo;format&amp;rdquo;)&lt;/td&gt;
+&lt;td&gt;Output the current date/time in a &lt;a href=&#34;https://docs.oracle.com/javase/10/docs/api/java/text/SimpleDateFormat.html&#34;&gt;custom format&lt;/a&gt; e.g. &lt;code&gt;$viewTools.getDatestampString(&amp;quot;EEE, d MMM yyyy HH:mm:ss&amp;quot;)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.getDatestampString(calendar, &amp;ldquo;format&amp;rdquo;)&lt;/td&gt;
+&lt;td&gt;Output the given date/time (as returned by $viewTools.getCalendar() in a custom format&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.getMathTool()&lt;/td&gt;
+&lt;td&gt;Return a &lt;a href=&#34;https://velocity.apache.org/tools/3.0/apidocs/org/apache/velocity/tools/generic/MathTool.html&#34;&gt;MathTool&lt;/a&gt; for doing maths&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.getNumberTool()&lt;/td&gt;
+&lt;td&gt;Return a &lt;a href=&#34;https://velocity.apache.org/tools/3.0/apidocs/org/apache/velocity/tools/generic/NumberTool.html&#34;&gt;NumberTool&lt;/a&gt; for formatting and converting numbers&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.getRandomInt(bound)&lt;/td&gt;
+&lt;td&gt;Return a random number &amp;gt;=0 and &amp;lt;bound&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.spelloutCurrencyFromString(&amp;ldquo;number&amp;rdquo;)&lt;/td&gt;
+&lt;td&gt;Convert e.g. &amp;ldquo;12.50&amp;rdquo; into &amp;ldquo;Twelve pounds 50 pence&amp;rdquo;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.spelloutNumber(number)&lt;/td&gt;
+&lt;td&gt;Convert e.g. 1,200 into &amp;ldquo;One thousand, two hundred&amp;rdquo;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;complex-data-merging&#34;&gt;Complex data merging&lt;/h3&gt;
+&lt;p&gt;Here are some of the most commonly used data retrieval / formatting functions.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.getReportDataRows()&lt;/td&gt;
+&lt;td&gt;Return all rows in the current view e.g.&lt;br /&gt;&lt;code&gt;#set($rows = $view.getReportDataRows())&lt;/code&gt;&lt;br&gt;&lt;code&gt;#foreach($row in $rows)&lt;/code&gt;&lt;br&gt;&lt;code&gt;  $row.getValue(&amp;quot;name&amp;quot;)&amp;lt;br&amp;gt;&lt;/code&gt;&lt;br&gt;&lt;code&gt;#end&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.getReportDataRows(view)&lt;/td&gt;
+&lt;td&gt;Return all rows in the specified view e.g.&lt;br /&gt;&lt;code&gt;#set($myView = $view.getReport(&amp;quot;my view&amp;quot;))&lt;/code&gt;&lt;br&gt;&lt;code&gt;#set($rows = $view.getReportDataRows($myView))&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.getReportDataRows(view, n)&lt;/td&gt;
+&lt;td&gt;Return the top n rows in the specified view&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.htmlTable()&lt;/td&gt;
+&lt;td&gt;Output a HTML table containing the rows of the current session view (the last one the user opened), with session filters applied&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.htmlTable(view, rows)&lt;/td&gt;
+&lt;td&gt;Given a list of rows as returned by getReportDataRows, from the specified view, format them as a HTML table e.g.&lt;br&gt;&lt;code&gt;#set($myView = $view.getReport(&amp;quot;my view&amp;quot;))&lt;/code&gt;&lt;br&gt;&lt;code&gt;#set($rows = $view.getReportDataRows($myView))&lt;/code&gt;&lt;br&gt;&lt;code&gt;$view.htmlTable($myView, $rows)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.htmlTable(&amp;ldquo;table name&amp;rdquo;, &amp;ldquo;child view name&amp;rdquo;)&lt;/td&gt;
+&lt;td&gt;For the given table, find the record being edited by the user. Filter the given view (which must contain the ID field for the table) by the ID of that record and output the rows as a HTML table. e.g.&lt;br&gt;&lt;code&gt;$view.htmlTable(&amp;quot;organisations&amp;quot;, &amp;quot;all contacts&amp;quot;)&lt;/code&gt;&lt;br&gt;might output the contacts belonging to the current organisation in the user&amp;rsquo;s session&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.htmlTable(&amp;ldquo;table name&amp;rdquo;, &amp;ldquo;child view name&amp;rdquo;, true/false)&lt;/td&gt;
+&lt;td&gt;As above, but if true is added, include any columns which are empty for all records (they are excluded by default)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.htmlTableTransverse(view, rows)&lt;/td&gt;
+&lt;td&gt;As per $view.htmlTable(view, rows) above, but swap the axes in the table, i.e. field names will appear down the left, each row will be output as a column&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.htmlTableTransverse(&amp;ldquo;table name&amp;rdquo;, &amp;ldquo;child view name&amp;rdquo;)&lt;/td&gt;
+&lt;td&gt;As per $view.htmlTable(&amp;ldquo;table name&amp;rdquo;, &amp;ldquo;child view name&amp;rdquo;) but again with swapped axes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&amp;hellip;and here are some of the most commonly used session functions. Each user gets a new session when they log in, it stores information about the system&amp;rsquo;s current state for them.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$sessionData.getReport()&lt;/td&gt;
+&lt;td&gt;Return the last view the user looked at&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$sessionData.getTable()&lt;/td&gt;
+&lt;td&gt;Return the last table the user looked at&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$sessionData.getRowId()&lt;/td&gt;
+&lt;td&gt;Return the ID of the record last loaded&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$sessionData.getTile()&lt;/td&gt;
+&lt;td&gt;Return the open tile&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;There are many more functions than these available, indeed the whole of the Agilebase user interface is created with templates including functions of these three types.&lt;/p&gt;
+&lt;p&gt;The entire templating API is beyond the scope of this documentation but if you do wish to create any template functionality not covered by the above, it&amp;rsquo;s probably possible. Please get in touch with us to discuss your needs and be pointed in the right direction.&lt;/p&gt;
+&lt;h3 id=&#34;using-apache-velocity-features&#34;&gt;Using Apache Velocity features&lt;/h3&gt;
+&lt;p&gt;In the examples above are some uses of simple programming code. A full reference for what you can do with the Apache Velocity language is here: &lt;a href=&#34;https://velocity.apache.org/engine/2.3/user-guide.html&#34;&gt;https://velocity.apache.org/engine/2.3/user-guide.html&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Integrations</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/</guid>
+      <description>
+        
+        
+        &lt;p&gt;There are a number of ways to extract data from Agilebase, whether manually for an individual&amp;rsquo;s use or programatically for integration with other systems.&lt;/p&gt;
+&lt;p&gt;There are also multiple ways other than the user interface to enter data into Agilebase.&lt;/p&gt;
+&lt;h2 id=&#34;outgoing-data&#34;&gt;Outgoing Data&lt;/h2&gt;
+&lt;p&gt;Users are able to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Export Data to spreadsheet&lt;/li&gt;
+&lt;li&gt;Generate Docs via a template&lt;/li&gt;
+&lt;li&gt;Access attached files&lt;/li&gt;
+&lt;li&gt;Print screen information&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Third parties can access data via an API, either:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PULL data&lt;/li&gt;
+&lt;li&gt;PUSH data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There is also dedicated facility for integrating data with a Calendar&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Calendar Integration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Finally, data can be sent to third party reporting tools like Power BI, Tableau, Excel or anything which can use &lt;a href=&#34;https://en.wikipedia.org/wiki/Open_Database_Connectivity&#34;&gt;ODBC&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting/business-intelligence/&#34;&gt;External reporting (read-only access to data)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;incoming-data&#34;&gt;Incoming Data&lt;/h2&gt;
+&lt;p&gt;Users are able to add data:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Via the User Interface&lt;/li&gt;
+&lt;li&gt;Import CSV files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Third parties can save data into agilebase:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Via the POST API&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;testing-and-debugging-apis&#34;&gt;Testing and debugging APIs&lt;/h2&gt;
+&lt;h3 id=&#34;viewing-logs&#34;&gt;Viewing logs&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the API view and toggle the development mode on&lt;/li&gt;
+&lt;li&gt;From the panel sidebar, choose &amp;lsquo;use API&amp;rsquo; and scroll down to Logs&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The most recent API actions and any errors which may have occurred will be shown&lt;/p&gt;
+&lt;h3 id=&#34;showing-the-internal-id-of-each-record&#34;&gt;Showing the internal ID of each record&lt;/h3&gt;
+&lt;p&gt;Sometimes it can be useful to see the internal ID (primary key value) of each record the API acts on, to match up with info from the third party system you&amp;rsquo;re integrating with. To do this, see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/introduction/development-mode/#accessing-additional-debugging-information&#34;&gt;Accessing additional debugging information&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Workflows</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A workflow is a task that processes data to achieve a particular function. Agilebase has a number of workflow functions that can be used to automate or simplify the activities users would otherwise need to perform manually.&lt;/p&gt;
+&lt;p&gt;Workflows can automatically edit records and create new records, saving a lot of manual typing. The system will follow rules for creating new records, editing values in existing records or taking other actions. The rules can be simple or complex, in fact anything that can be represented by a standard view, which makes it quite powerful.&lt;/p&gt;
+&lt;p&gt;Workflows can also send email notifications, generate documents and push data to 3rd parties. Importantly steps can be &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/&#34;&gt;chained together&lt;/a&gt;. Many business processes can therefore be fully automated. As an example if the system stores recipes, whenever an allergen is changed, a product specification doc can be generated and emailed to significant customers.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-edit.png&#34; alt=&#34;Workflow&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;creating-a-workflow&#34;&gt;Creating a workflow&lt;/h2&gt;
+&lt;p&gt;Here are the basics.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;A workflow is represented by a view. First create the view to represent the workflow&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Any records which become visible in your workflow view will trigger the action selected. So add filters (on a calculation if necessary) to select only the records you wish to trigger the action.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If creating or editing a record, the fields in the view will populate the new or existing record. Any fields in the view with the same name as a field in the table will populate that field with its data. The view field can be a calculation as well as a standard field.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Once the view fields and filters have been created, open up the &amp;lsquo;workflow - edit records&amp;rsquo; panel. Choose the type of workflow, e.g. &amp;lsquo;create new records&amp;rsquo; or &amp;lsquo;update records&amp;rsquo;. Fill in the options for ‘recording the time of the last action’ by selecting a date field in the table the view’s based on. This date will be updated every time the workflow runs. If there’s no relevant date field existing, add one to the table.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Choose when the workflow should be run. Use the option &lt;em&gt;manually only&lt;/em&gt; if for example you want the workflow to run on a button press. Alternatively, set the frequency you wish the workflow to attempt to run. This determines how often the system should check whether there are records to process. The check is only done if there&amp;rsquo;s been a relevant change to the state of the system e.g. records edited since the last workflow run. However all workflows with a check frequency are guaranteed to run at least once a day.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Using &lt;em&gt;24 hours&lt;/em&gt; plus a filter on a &amp;rsquo;d&amp;rsquo;ay of the week&amp;rsquo; calculation allows you to run weekly workflows.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;For 24hr workflows you can optionally set a specific time of day for them to run.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Types of Workflow Actions</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/types-of-actions/</link>
+      <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/types-of-actions/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;types-of-action&#34;&gt;Types of Action&lt;/h2&gt;
+&lt;p&gt;Actions fall in to two types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Those that effect data held within Agilebase tables&lt;/li&gt;
+&lt;li&gt;Those that send data to another system.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;alter-data&#34;&gt;Alter Data&lt;/h3&gt;
+&lt;p&gt;Use the dropdown within the &lt;em&gt;workflow - edit records&lt;/em&gt; panel when editing the view to control the action that will be applied to every record in the view.
+Options are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create record - This will create a new item in the nominated table&lt;/li&gt;
+&lt;li&gt;Update record - This will alter the values of the record.&lt;/li&gt;
+&lt;li&gt;Lock record - This will apply a record level lock on the item.&lt;/li&gt;
+&lt;li&gt;Delete record - This will totally remove the record.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-manage-new.png&#34; alt=&#34;Workflow actions that alter data&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;creating-records&#34;&gt;Creating records&lt;/h4&gt;
+&lt;p&gt;If &amp;lsquo;create record&amp;rsquo; is chosen, a couple of other options appear.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You can select which table the new record should be created in&lt;/li&gt;
+&lt;li&gt;&amp;lsquo;Auto-connect new records&amp;rsquo; can be used when &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/&#34;&gt;chaining workflows&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;sending-data&#34;&gt;Sending Data&lt;/h3&gt;
+&lt;p&gt;The options to send data are contained within the &lt;em&gt;send&lt;/em&gt; section of the &lt;em&gt;workflow&lt;/em&gt; tab. Matching records will be sent to the appropriate &lt;strong&gt;function&lt;/strong&gt;.&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-data-to-a-third-party-via-api/&#34;&gt;Send data to a third party via API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;Send an email&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;Send an email Chaser&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-document-generator/&#34;&gt;Send to document generator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RSS feed - See facility with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/setting-up-the-pull-api/&#34;&gt;PULL API&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-send-new.png&#34; alt=&#34;Workflow functions that send data&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: APIs</title>
+      <link>https://docs.agilebase.co.uk/docs/views/special-uses/apis/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/apis/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Any view can be used to generate an API - a unique URL which third party services can call in order to extract data, or which can be used to push data to those services and applications.&lt;/p&gt;
+&lt;p&gt;The view created in this case is used to define the set of records to send and the fields to include.&lt;/p&gt;
+&lt;p&gt;For more information, see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;integrations&lt;/a&gt; topic, which contains full details of how to set up and use APIs.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This topic also includes information about APIs which receive data from third party systems, as opposed to sending to them, for which a view isn&amp;rsquo;t necessary.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Workflows</title>
+      <link>https://docs.agilebase.co.uk/docs/views/special-uses/workflows/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/workflows/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A workflow can be used to edit data in the system automatically.&lt;/p&gt;
+&lt;p&gt;The view created in this case is used to define the set of records to act on (others can be excluded via &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;view filters&lt;/a&gt; and also the data to use - each calculation or field in the view can be a source of data to create or update.&lt;/p&gt;
+&lt;p&gt;For more information, see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; topic, which contains full details of how to set up and use workflows.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Altering Data</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/altering-data/</link>
+      <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/altering-data/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The following Workflows alter data within the system&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create record - This will create a new item in the nominated table&lt;/li&gt;
+&lt;li&gt;Update record - This will alter the values of the record.&lt;/li&gt;
+&lt;li&gt;Lock record - This will apply a record level lock on the item.&lt;/li&gt;
+&lt;li&gt;Delete record - This will totally remove the record.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When creating or editing a record, the fields in the view will populate the new or existing record. Any fields in the view with the same name as a field in the table will populate that field with its data. The view field can be a calculation as well as a standard field.&lt;/p&gt;
+&lt;h3 id=&#34;relation-fields&#34;&gt;Relation fields&lt;/h3&gt;
+&lt;p&gt;If you want your workflow to set the value of a relation find, i.e. link to a particular record, there’s no need to create a calculation for it, just include the ID field for the record you want to link to in the view.&lt;/p&gt;
+&lt;p&gt;If creating a calculation is easier, you can still do that. Either create a numeric calculation which outputs the internal row ID of the record to link to, or the text of the primary value for the relation. If the latter case, the field for the primary value in the related table should be unique and marked as such in the field options.&lt;/p&gt;
+&lt;p&gt;To set a relation field to blank, add a numeric calculation with the name of the field as normal, but set it to output the value -1.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Deleting records is not reversible. Please use with caution.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Referenced Data Panels</title>
+      <link>https://docs.agilebase.co.uk/docs/views/special-uses/referenced-data-panels/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/referenced-data-panels/</guid>
+      <description>
+        
+        
+        &lt;p&gt;It can be useful to include calculations and data from other parts of the system in a form, to add context and optionally allow editing of that related data.&lt;/p&gt;
+&lt;p&gt;To do that, a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced data field&lt;/a&gt; can be &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/&#34;&gt;added to the form&lt;/a&gt;. When adding this field, the administrator can choose a view to reference, the data from which will display in the form.&lt;/p&gt;
+&lt;p&gt;The way it works that a when a particular record is shown on screen in a form, the row ID of the record being edited is used to filter the results of that view. Records from the view that include that ID are displayed in a panel.&lt;/p&gt;
+&lt;p&gt;Referenced data can also be used to&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;display charts&lt;/li&gt;
+&lt;li&gt;provide default values for form fields&lt;/li&gt;
+&lt;li&gt;show a workflow button - if the referenced view is a workflow, a button to run it will display&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Full details of all of these features can be found on the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced data panel&lt;/a&gt; page.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Creating a POST API</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Firstly, identify the table into which you wish to receive incoming data. Edit that table and open the &lt;em&gt;API&lt;/em&gt; panel. Tick &amp;lsquo;Public form or API data entry’, which will create an API for the table.&lt;/p&gt;
+&lt;p&gt;To protect the system from spam input, we also suggest you tick &amp;lsquo;Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.&lt;/p&gt;
+&lt;p&gt;Optionally, you can add an email address to notify when a new item is added and an autoresponse text which will be sent to any email addresses found in the posted data.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/incoming-data-api-new.png&#34; alt=&#34;Configuring the POST API&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;creating-new-records&#34;&gt;Creating new records&lt;/h2&gt;
+&lt;p&gt;Clicking the ‘sample form’ link will then show a sample form which can be used for testing or to copy code from.&lt;/p&gt;
+&lt;p&gt;If you want to submit data directly from an app rather than a web form, simply prepare a HTTP POST request that mimics the form. Again, use the source code of the form as a reference. Note the form contains three hidden fields that need to be included. They are listed at the start of the sample form, for reference they are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;save_new_record = true&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;c = [internalcompanyid]&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;t = [internaltableid]&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The post URL is&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://appserver.gtportalbase.com/Agilebase/Public.ab&#34;&gt;https://appserver.gtportalbase.com/Agilebase/Public.ab&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The form needs to be posted using the method POST.&lt;/p&gt;
+&lt;p&gt;Remember also to set the &amp;lsquo;Authorization&amp;rsquo; HTTP header if that option has been selected.&lt;/p&gt;
+&lt;h3 id=&#34;specifying-the-data-to-save&#34;&gt;Specifying the data to save&lt;/h3&gt;
+&lt;p&gt;To specify the contents of each field to be saved, just add an&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;[internalfieldname] = value&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;parameter for each field.&lt;/p&gt;
+&lt;p&gt;The internal field names necessary will be shown on screen when API use is enabled.&lt;/p&gt;
+&lt;p&gt;Alternatively, friendly field name parameters can be used, with the addition of the parameter&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;allow_friendly_fieldnames = true&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Then &lt;em&gt;[internalfieldname]&lt;/em&gt; can be replaced by &lt;em&gt;[friendlyfieldname]&lt;/em&gt; which is the lowercase version of the field name, with spaces replaced by underscores and all other special (i.e. not a letter or a number) characters removed.&lt;/p&gt;
+&lt;p&gt;For example, the field &amp;lsquo;Discount Approved?&amp;rsquo; would have the friendly name &lt;em&gt;discount_approved&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;We suggest you only use friendly fieldnames if you&amp;rsquo;re confident the field name isn&amp;rsquo;t going to change. Internal fieldnames are constant and never change, whereas friendly names can easily change if the field is renamed.&lt;/p&gt;
+&lt;p&gt;With the option on, internal field names and friendly field names can be mixed and matched, i.e either can be used for each field - some fields can be specified by internal ID and others by friendly name.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The API can be tested using a tool such as &lt;a href=&#34;https://www.postman.com&#34;&gt;Postman&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;updating-existing-records&#34;&gt;Updating existing records&lt;/h2&gt;
+&lt;p&gt;The process is similar, but instead of &lt;em&gt;save_new_record=true&lt;/em&gt;, supply&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;update_record=true&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;row_id=[internal id of the record]&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The internal record ID can be got from a JSON feed or by using the &lt;em&gt;return=posted_json&lt;/em&gt; as above if editing a record previously created using the API.&lt;/p&gt;
+&lt;h2 id=&#34;uploading-files&#34;&gt;Uploading files&lt;/h2&gt;
+&lt;p&gt;As well as &amp;lsquo;standard&amp;rsquo; data, Agilebase can accept documents posted into a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/&#34;&gt;file field&lt;/a&gt;. This can be done in two ways:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Make sure the form is posted with encoding type &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST&#34;&gt;multipart/form-data&lt;/a&gt;. Then simply post the contents of the file with the form parameter specifying the internal name of the file field.&lt;/li&gt;
+&lt;li&gt;Post the form normally (not as multipart/form-data), and provide a URL value for the file field. That URL will be downloaded by Agilebase and the contents saved as a file.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Method 2 is &lt;a href=&#34;https://www.zapier.com&#34;&gt;Zapier&lt;/a&gt;-compatible.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;response&#34;&gt;Response&lt;/h2&gt;
+&lt;p&gt;The response to the successful request will be a JSON representation of the complete record created or updated, after the update has taken place. An object of key-value pairs is returned, the key being the internal field name.&lt;/p&gt;
+&lt;p&gt;The row ID is returned with the key &lt;code&gt;rowId&lt;/code&gt; - this is often useful to identify a record when performing multiple actions. For example, when a new record is created, the calling system may want to store its row ID in order to be able to make future updates to the same record.&lt;/p&gt;
+&lt;p&gt;If there is an error, an appropriate HTTP response code is returned (see below) along with JSON explaining the error, containing three keys. For example if an incorrect Authorization header is supplied, the response may be&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
+  &amp;#34;error&amp;#34;: true,
+  &amp;#34;type&amp;#34;: &amp;#34;DisallowedException&amp;#34;,
+  &amp;#34;message&amp;#34;: &amp;#34;User public api is not allowed to edit delete data in table my table. An administrator can set up privileges so this can be allowed&amp;#34;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;http-response-codes&#34;&gt;HTTP response codes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;200: success&lt;/li&gt;
+&lt;li&gt;401: unauthorised: the API key is missing or invalid&lt;/li&gt;
+&lt;li&gt;404: not found: an object identified in the request was not found e.g. no match was found for a table ID specified with the &amp;rsquo;t&amp;rsquo; parameter&lt;/li&gt;
+&lt;li&gt;429: too many requests: the frequency of requests is too high, please throttle them back&lt;/li&gt;
+&lt;li&gt;507: insufficient storage: when creating a record, the limit on number of records which can be stored has been reached. Contact us to purchase additional capacity.&lt;/li&gt;
+&lt;li&gt;500: some other server error&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When there is an error, a response header X-AB-error is also set with the type and content of the error message.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: File Field Options</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-options/file-field-options/</link>
+      <pubDate>Thu, 04 Jun 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/file-field-options/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;type&#34;&gt;Type&lt;/h2&gt;
+&lt;p&gt;The type of document typically stored by this field. Can be&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Document - such as a PDF file or spreadsheet for example&lt;/li&gt;
+&lt;li&gt;Image/photo&lt;/li&gt;
+&lt;li&gt;Profile photo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The selection affects the display in the user interface in some ways. In particular when a profile photo field is moved to the start of the record, it is displayed as part of the record header.&lt;/p&gt;
+&lt;h2 id=&#34;image-resolution&#34;&gt;Image resolution&lt;/h2&gt;
+&lt;p&gt;This option allows you to specify that the system should automatically down-size any large images uploaded. This could be to save storage space (for which there is a cost), or it may be appropriate if these files are going to be attached to emails sent by the system.&lt;/p&gt;
+&lt;h2 id=&#34;template&#34;&gt;Template&lt;/h2&gt;
+&lt;p&gt;Type the name of a template to be used for &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/&#34;&gt;generating PDF documents&lt;/a&gt; to be stored in this field.&lt;/p&gt;
+&lt;h2 id=&#34;view-to-use&#34;&gt;View to use&lt;/h2&gt;
+&lt;p&gt;The system will look in this view for a template with the name specified above.&lt;/p&gt;
+&lt;h2 id=&#34;paper-size&#34;&gt;Paper size&lt;/h2&gt;
+&lt;p&gt;When a PDF is generated, base it on this size of paper. The default is A4, changing this can be useful if e.g. you want to use the system to print labels.&lt;/p&gt;
+&lt;h2 id=&#34;footer&#34;&gt;Footer&lt;/h2&gt;
+&lt;p&gt;Optionally, add a footer to every page of a generated document, including the name of the document, page number and total number of pages.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The document name is set to be the contents of the first (non-ID) field in the &amp;lsquo;view to use&amp;rsquo; (see above), so you can set it to whatever you like. A calculation can be used if required.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Creating a PUSH API</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/</link>
+      <pubDate>Mon, 01 Jun 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/</guid>
+      <description>
+        
+        
+        &lt;ol&gt;
+&lt;li&gt;Firstly, create a a view which contains the data you wish to send&lt;/li&gt;
+&lt;li&gt;In the &amp;lsquo;Use API&amp;rsquo; panel, enter a URL into the &lt;em&gt;Push URL&lt;/em&gt; field. This is the URL that Agilebase will POST to when there’s new data.&lt;/li&gt;
+&lt;li&gt;In the table that the API view was created from, add a new date/time field, accurate to the second, for the system to record when the API push was last used&lt;/li&gt;
+&lt;li&gt;Go back to the view and the &amp;lsquo;Use API&amp;rsquo; panel and select the field you just created for the &amp;lsquo;Log Time Of Push To&amp;rsquo; field.
+The system will now make a POST to the URL specified in step 2 whenever there’s new data to send. It will contain one parameter, ‘json’, which is a JSON representation of all the data in the view.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-push-new.png&#34; alt=&#34;Configuring the PUSH API&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;selecting-data-to-push&#34;&gt;Selecting data to push&lt;/h3&gt;
+&lt;p&gt;How do we know which data is new and wants to be sent out via the API?&lt;/p&gt;
+&lt;p&gt;That’s up to you - any filters can be added to the view to select data you want. Commonly, you’d use the date/time field set up in step 3. When a push successfully completes, every record in the view has this field set to the current time.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: if the push encounters an error for any reason, say the third party system returns a HTTP error code rather than the expected ‘200’ code for success, the timestamp won’t be set.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A few common scenarios would be:&lt;/p&gt;
+&lt;h4 id=&#34;pushing-any-data-modified-since-it-was-last-pushed&#34;&gt;Pushing any data modified since it was last pushed&lt;/h4&gt;
+&lt;p&gt;To do this, add a boolean calculation to your view, something like&lt;/p&gt;
+&lt;p&gt;needs pushing = &lt;code&gt;{last modified [auto]} &amp;gt; {last pushed}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;where ‘last pushed’ is the name of the timestamp field you added in step 3 above.&lt;/p&gt;
+&lt;p&gt;Then add a filter on the view ‘needs pushing equals true’.&lt;/p&gt;
+&lt;h4 id=&#34;pushing-any-new-rows-that-have-never-been-pushed-before&#34;&gt;Pushing any new rows that have never been pushed before&lt;/h4&gt;
+&lt;p&gt;For this scenario, simply add a filter to the view ‘last pushed is empty’.&lt;/p&gt;
+&lt;h4 id=&#34;pushing-only-rows-not-yet-marked-as-received&#34;&gt;Pushing only rows not yet marked as received&lt;/h4&gt;
+&lt;p&gt;In some cases, you may want to be even more prudent than using the internal timestamp. The third party system could make a separate API call to Agilebase for every row that’s received, telling it to update the row with an ID to prove receipt. That’s more API calls of course, but some situations may warrant it.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Send an email</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/send-email/</link>
+      <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/send-email/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Agilebase can be used to send emails. This facility should &lt;strong&gt;NOT&lt;/strong&gt; be used for marketing purposes, rather as a method to notify people about data associated to the system.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: When setting up an email alert, the system needs to know the email address of the recipient. Sometimes this may be very simple, when you always want to send the alert to the same person. For some alerts though you may wish to change who gets it depending on the data, e.g. each salesperson may get the leads assigned to them. In this case, the system will need to know the email address, so it needs to be stored somewhere. For Agilebase users, if they use their email address as their username, the system can pick this up when a user’s assigned to a record, either manually or as part of the automatic ‘created by’ and ‘modified by’ fields&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;step-1-add-a-necessary-field&#34;&gt;Step 1: add a necessary field&lt;/h2&gt;
+&lt;p&gt;Select the table which has the alert data in it and add a date/time field with SECOND accuracy called e.g. “Last notified”. This will be used by the system to store when the last notification was sent for each record.&lt;/p&gt;
+&lt;h2 id=&#34;step-2-create-a-new-view&#34;&gt;Step 2: create a new view&lt;/h2&gt;
+&lt;p&gt;Create a view from the table above, containing all the information you want to send in the email. Sort it by “last modified [auto]” descending, so new items appear at the top.&lt;/p&gt;
+&lt;h2 id=&#34;step-3-add-filters&#34;&gt;Step 3: add filters&lt;/h2&gt;
+&lt;p&gt;Add filters so that only records that need an email notification to be sent appear. It’s important that records must disappear once a notification’s been sent otherwise the recipient will be bombarded with repeat alerts.&lt;/p&gt;
+&lt;p&gt;For simple alerts of new items, add a filter “Last notified IS NULL”. That way, a notification will only ever be sent once for a record.&lt;/p&gt;
+&lt;p&gt;To set up a repeating monthly alert, you could add a filter &amp;ldquo;last notified is more than 1 month ago&amp;rdquo;, with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/#including-blank-values&#34;&gt;or is blank&lt;/a&gt; ticked:&lt;/p&gt;
+&lt;p&gt;If you have any difficulty thinking up what criteria you need for your purpose, please get in touch.&lt;/p&gt;
+&lt;h2 id=&#34;step-4-fill-in-an-email-template&#34;&gt;Step 4: fill in an email template&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Edit the view and open the &lt;em&gt;workflow - send emails&lt;/em&gt; panel&lt;/li&gt;
+&lt;li&gt;Select &lt;em&gt;email notification&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Fill in the subject, to and body of the email. To merge in data from the view, use field names in lowercase surrounded by curly brackets. A typical template would look something like this:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/send-email-new.png&#34; alt=&#34;Workflow actions that alter data&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You can attach documents to the email by including the field name for a file in the message.&lt;/p&gt;
+&lt;p&gt;Under the email template, set “Notification time field” to the field that you created in step 1, e.g. “Last notified”&lt;/p&gt;
+&lt;p&gt;Note in the To: field, you can include email addresses manually, or merge them in from the view. If you are assigning records to users in Agilebase, you can use that field and the system will automatically pick out the email address for them.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;That’s it! Note when testing, we recommend setting the “To:” value to your own email address, just until you’re sure everything’s working properly.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;including-attachments&#34;&gt;Including attachments&lt;/h3&gt;
+&lt;p&gt;If you add a file field to the view, it will be added to the outgoing email as an attachment. Note the ID field for the file field&amp;rsquo;s parent table also needs to be present, which should happen automatically.&lt;/p&gt;
+&lt;h3 id=&#34;including-record-history&#34;&gt;Including record history&lt;/h3&gt;
+&lt;p&gt;To include a log of recent updates to a record (since the last notification was sent), just add the line&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ab_record_history&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;to the body of the email.&lt;/p&gt;
+&lt;h2 id=&#34;rich-text-html-emails&#34;&gt;Rich text (HTML) emails&lt;/h2&gt;
+&lt;p&gt;HTML emails can now be sent by apps built on the Agilebase platform.
+That means that your company can send out branded, rich-text emails (with attachments) to customers, suppliers and anyone else you deal with.&lt;/p&gt;
+&lt;h3 id=&#34;setting-up&#34;&gt;Setting up&lt;/h3&gt;
+&lt;p&gt;Set up an email notification workflow as normal (when editing a view, use the &lt;em&gt;workflow - send emails&lt;/em&gt; panel).&lt;/p&gt;
+&lt;p&gt;Start the body of the email with &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt; and end with &lt;code&gt;&amp;lt;/html&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The email will then be interpreted as HTML, i.e. formatted.&lt;/p&gt;
+&lt;p&gt;You do need to know some basic HTML. If you’d like to get started there are plenty of great tutorials on the web - here’s an example: &lt;a href=&#34;http://www.htmldog.com&#34;&gt;www.htmldog.com&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Creating a PULL API</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-pull-api/</link>
+      <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-pull-api/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Connections to Agilebase are made using standard HTTP calls. This makes it easy for developers in any language, so PHP, Java, even JavaScript in a browser can be used.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The first step is to create a view in Agilebase that contains the data you want to make available to other apps. You can use the standard view creation features of the administrator interface, including adding fields and calculations, sorts and filters.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Secondly, turn on the ability for the view to be accessed via a PULL API by going to the &lt;em&gt;use API&lt;/em&gt; panel, and ticking &lt;em&gt;Send data to a third party system using the API&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finally Tick the &lt;em&gt;Allow access from third party software using an API key&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The remainder of this article explains how to PULL the data.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-pull-new.png&#34; alt=&#34;Configuring the PULL API&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The most important piece of information is the URL that the third party will access your data via. This will be:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://appserver.gtportalbase.com/Agilebase/Public.ab&#34;&gt;https://appserver.gtportalbase.com/Agilebase/Public.ab&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you host on your own cloud or on premises, this may be different.&lt;/p&gt;
+&lt;p&gt;Requests can contain a number of parameters, the one which must be supplied to use the JSON API is &lt;em&gt;get_report_json=true&lt;/em&gt;.
+Other parameters to control various options are detailed below.&lt;/p&gt;
+&lt;p&gt;HTTP requests can be submitted as GET or POST.&lt;/p&gt;
+&lt;p&gt;Three parameters for the view also need to be submitted as parameters to the request. These are ‘c’, ‘t’ and ‘r’, the values are displayed in the administrator interface (see screenshot above). Together, these identify the view from which to extract data.&lt;/p&gt;
+&lt;p&gt;Finally, the API key provided needs to be submitted not as a HTTP request parameter, but as a header named ‘Authorization’. This is to reduce the change of it being cached or used in a browser string where it can be easily retained and read by unauthorised users.&lt;/p&gt;
+&lt;p&gt;Here’s a complete example of making a request, using PHP in WordPress&lt;/p&gt;
+&lt;p&gt;[php]&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$url = &amp;#39;http://appserver.gtportalbase.com/Agilebase/Public.ab?get_report_json=true&amp;amp;simple_format=true&amp;amp;t=mytablecode&amp;amp;r=myreportcode&amp;amp;c=mycompanycode&amp;amp;json_format=json&amp;#39;;
+
+$args = array(&amp;#39;headers&amp;#39; =&amp;gt; array( &amp;#39;Authorization&amp;#39; =&amp;gt; &amp;#39;myauthorisationkey&amp;#39;));
+
+$response = wp_remote_get( $url, $args );
+
+var_dump($response);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;[/php]&lt;/p&gt;
+&lt;p&gt;Sample output would look like&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[
+  {
+    forename: &amp;#34;Oliver&amp;#34;,
+    surname: &amp;#34;Kohll&amp;#34;,
+    email_address: &amp;#34;oliver@agilebase.co.uk&amp;#34;
+  },
+  {
+    forename: &amp;#34;Simon&amp;#34;,
+    surname: &amp;#34;Minton&amp;#34;,
+    email_address: &amp;#34;simon@agilebase.co.uk&amp;#34;
+  },
+  {
+    forename: &amp;#34;Cliff&amp;#34;,
+    surname: &amp;#34;Calcutt&amp;#34;,
+    email_address: &amp;#34;cliff@agilebase.co.uk&amp;#34;
+  }
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;of course the fields being those returned for the particular view chosen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;request-options&#34;&gt;Request options&lt;/h3&gt;
+&lt;p&gt;Here are the options that can be provided as parameters to the request, along with the c, t and r identifiers and in addition to get_report_json=true.&lt;/p&gt;
+&lt;h4 id=&#34;simple_formattruefalse-default-false&#34;&gt;simple_format=true/false (default false)&lt;/h4&gt;
+&lt;p&gt;This option controls the JSON format returned. With simple_format=true, the response will be a simple array of objects, each containing keys for the field names as above. Keys are basically lowercase field names with spaces replaced by underscores, so “Email address” would become “email_address”
+With simple_format=false, a more complex but more robust format it used. Rather than field names, internal Agilebase field identifiers are used as keys. This has the advantage that if the field names are changed (easy for an Agilebase administrator to do), the JSON will remain the same. The first object in the JSON will be a dictionary mapping internal identifier to field name.&lt;/p&gt;
+&lt;h4 id=&#34;json_formatjson&#34;&gt;json_format=json&lt;/h4&gt;
+&lt;p&gt;With this option, just the JSON will be returned. This is the usual case required. Without it, complete Javascript will be returned defining the JSON as an object, i.e. &lt;code&gt;var abJson=[…]&lt;/code&gt; which can be useful if you want to run the result as Javascript.&lt;/p&gt;
+&lt;h4 id=&#34;returnposted_json&#34;&gt;return=posted_json&lt;/h4&gt;
+&lt;p&gt;Optional, if this is included, the return content will be JSON including the ID of the record as well as the full content of the data.&lt;/p&gt;
+&lt;h4 id=&#34;unencode_htmltrue&#34;&gt;unencode_html=true&lt;/h4&gt;
+&lt;p&gt;Causes characters which would normally be encoded as HTML entities (e.g. &lt;code&gt;&amp;amp;&lt;/code&gt; -&amp;gt; &lt;code&gt;&amp;amp;amp;&lt;/code&gt;) to be returned unencoded&lt;/p&gt;
+&lt;h4 id=&#34;exact_filterstruefalse-default-false&#34;&gt;exact_filters=true/false (default false)&lt;/h4&gt;
+&lt;p&gt;If true, filters (see below) will be need to match results exactly instead of using the default &amp;lsquo;contains&amp;rsquo; filtering&lt;/p&gt;
+&lt;h4 id=&#34;row_limitrow-limit&#34;&gt;row_limit=[row limit]&lt;/h4&gt;
+&lt;p&gt;The default limit on the number of records to return is 10,000. Add this parameter to change this. Note the hard maximum allowed is 100,000.&lt;/p&gt;
+&lt;h3 id=&#34;filtering&#34;&gt;Filtering&lt;/h3&gt;
+&lt;p&gt;By specifying exact_filters=true, filters can be supplied to search for a particular record or set of records. For HTTP parameter names, just use the internal Agilebase field identifiers. The easiest way of finding these is to right click on a field in the administrator interface using a browser like Chrome, Safari or Firefox and select ‘inspect element’.&lt;/p&gt;
+&lt;p&gt;Standard Agilebase quick filters can be used for preparing complex criteria on multiple fields, for example in each field using “?” to find blank records, &amp;gt; and &amp;lt; for numbers and date ranges, phrases like “last month” for dates, “=[word]” for exact matches, “:word” for starts with, and “!word” for doesn’t contain.&lt;/p&gt;
+&lt;h3 id=&#34;response-codes&#34;&gt;Response codes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;200: request successful&lt;/li&gt;
+&lt;li&gt;401: unauthorised: the API key is missing or incorrect&lt;/li&gt;
+&lt;li&gt;404: not found: an object identifier (company ID, table ID or report ID) was supplied that wasn’t found in the system&lt;/li&gt;
+&lt;li&gt;429: too many requests: the frequency of requests is too high, please throttle them back&lt;/li&gt;
+&lt;li&gt;500: some other server error&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When there is an error, the X-AB-error header will be set and JSON returned representing the error, as happens with the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/#response&#34;&gt;POST API&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To ensure one customer&amp;rsquo;s use doesn&amp;rsquo;t consume an inordinate amount of resources, each customer can only process one pull API request at a time. Whilst a request is processing, any further incoming requests are held in a queue, then processed in order as the previous one finishes.
+If at any time, a request has been held up for 60 seconds, further requests result in the 429 error and they are discarded.&lt;/p&gt;
+&lt;p&gt;If this occurs, there are a number of tactics you can use to shorten individual response times or make less requests - please get in touch if you need help.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;generate-api-descriptions&#34;&gt;Generate API descriptions&lt;/h3&gt;
+&lt;p&gt;For developers who use the Agilebase API to create and update data within Agilebase from a third party product, there’s now a way to further automate the process.&lt;/p&gt;
+&lt;p&gt;Agilebase will now generate a &lt;a href=&#34;https://swagger.io/&#34;&gt;swagger.io&lt;/a&gt; compatible API description of any table you want to post to. That means if you deal with accounts for many Agilebase customers, you can with a common query get the API details needed to interact with them.&lt;/p&gt;
+&lt;p&gt;Just make a POST request to&lt;/p&gt;
+&lt;p&gt;/Agilebase/Public.ab with parameters&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;c = the company identifier (the table options screen will show this)&lt;/li&gt;
+&lt;li&gt;t = the table identifier (similarly shown by the options screen)&lt;/li&gt;
+&lt;li&gt;describe_table = true&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;and the ‘Authorization’ header set to the API key (if the table requires one).&lt;/p&gt;
+&lt;p&gt;This also makes testing with &lt;a href=&#34;https://www.postman.com/&#34;&gt;Postman&lt;/a&gt; easier, since Postman can import a Swagger API description – so you don’t have to write a single line of code to test out an API.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Send a Chaser email</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/send-chaser/</link>
+      <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/send-chaser/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Chaser email facility is often used to remind people to send information. This facility is a dedicated tool, optimised to this purpose.&lt;/p&gt;
+&lt;p&gt;In a nutshell, the system comprises three parts&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;checking when something’s due and emailing the person who needs to supply it&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;allowing the recipient to easily provide the data by following a link in the email to an online form. Documents can be uploaded and other information filled in&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;if no response is received, re-sending a number of times, finally escalating to someone else (usually someone internal)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/chaser2.png&#34; alt=&#34;Screenshot of Chaser user interface&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+&lt;p&gt;The system can be applied whenever you need a third party to supply you with information or documents of a known type.&lt;/p&gt;
+&lt;p&gt;For example, a food manufacturer who receives ingredients from suppliers may occasionally need to raise a non-conformance where something isn&amp;rsquo;t up to standard.&lt;/p&gt;
+&lt;p&gt;Whenever a non-conformance is raised against a supplier, whether as a result of an audit or ad hoc, the supplier can be chased for information about a resolution of the issue. Likewise, staff can be chased if an internal non-conformance is not resolved.&lt;/p&gt;
+&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
+&lt;p&gt;As an Agilebase administrator, if you want to set up your own chaser, here’s how to do so.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Create a view with a list of people to chase. When editing the view, open the &lt;em&gt;workflow - send emails&lt;/em&gt; panel. &lt;em&gt;email chaser&lt;/em&gt; should be selected by default&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tick &amp;rsquo;enable this chaser&#39;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The system will add a number of calculations to the view and a couple of fields to the underlying table, to help manage chasing. These will be listed on the screen after ticking &amp;rsquo;enable this chaser&#39;.&lt;/p&gt;
+&lt;p&gt;Please edit the calculations to fill in the details required, such as the email address to send messages to, the frequency with which to send messages etc.&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Now make sure that only things you want to chase are chased, by adding any relevant filters to the view. e.g. to show anything out of date&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That will be enough to get emails sending out. What about receiving the information back?&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Simply add any fields you want the recipient to supply to the view, from the parent table.
+The system will automatically create a form containing these fields (excluding any of the chaser fields above such as ‘to’ and ‘subject’). When the recipient receives an email, it will have a link in it that takes them to this form.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you want the content that the chaser sends out to be visible to users, add the chaser view into a form as a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced data field&lt;/a&gt;. The panel displayed to users will show information such as the email to be sent, how many times the record’s been chased, when the last time was etc. If the record doesn’t need to be chased it will instead show the reasons why (the filters from the view).&lt;/p&gt;
+&lt;h3 id=&#34;including-attachments&#34;&gt;Including attachments&lt;/h3&gt;
+&lt;p&gt;If you add a file field to the view and a row being chased has a file uploaded to that field, it will be added to the outgoing email as an attachment.&lt;/p&gt;
+&lt;p&gt;Note if you add a file field from the view&amp;rsquo;s parent table to the view and a particular record &lt;em&gt;doesn&amp;rsquo;t&lt;/em&gt; have a file uploaded, the chaser will request the recipient uploads one, when completing the form. In other words it will request a document.&lt;/p&gt;
+&lt;h4 id=&#34;multiple-attachments&#34;&gt;Multiple attachments&lt;/h4&gt;
+&lt;p&gt;Sometimes there may be a set of files you wish to attach to a single email, where the files are all stored in a child table. To accomplish this, join down to the child table and add the file field in that child table to the view.&lt;/p&gt;
+&lt;p&gt;Then, when there are multiple child records, each containing a file, those files will all be added to the outgoing email.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Don&amp;rsquo;t worry that the view then contains multiple rows per email. The chaser is clever enough to only send one email, but merge in all the files from the multiple rows.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;receiving-a-response&#34;&gt;Receiving a response&lt;/h3&gt;
+&lt;p&gt;When a response is received to a chaser, as well as saving the documents / fields the chaser asked for, a comment will be logged to the first comment field in the parent table (if there is a comment field).&lt;/p&gt;
+&lt;p&gt;An email will also be sent to a user notifying them of the response. The logic for who to send that notification to is:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;If there are any dropdown fields in the table with the option &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/#lists-of-users&#34;&gt;fill with users&lt;/a&gt; then send the email to the user selected in that field. If there&amp;rsquo;s more than one field with that option, use the first one.&lt;/li&gt;
+&lt;li&gt;If there are no fields with &amp;lsquo;fill with users&amp;rsquo; selected, fall back to notifying the user who last updated or created the record being chased.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;sending-thank-you-emails&#34;&gt;Sending thank you emails&lt;/h3&gt;
+&lt;p&gt;When someone completes the chaser form and provides the information requested, a thank you page will be shown. If the value of the &lt;em&gt;send thanks&lt;/em&gt; calculation in the chaser form is &lt;em&gt;true&lt;/em&gt; for a row, then the recipient will be sent a thank you email as well.&lt;/p&gt;
+&lt;h4 id=&#34;optional-response-fields&#34;&gt;Optional response fields&lt;/h4&gt;
+&lt;p&gt;The following fields can optionally be added to the table. If they are found, they will be populated by the chaser system when a chaser response is received.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;chaser response received&lt;/strong&gt;: if a &lt;em&gt;date&lt;/em&gt; field with this name exists, the value will be set to the date and time of the response&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;chaser response needs checking&lt;/strong&gt;: if a &lt;em&gt;checkbox&lt;/em&gt; field with this name exists, it will be ticked when the response is received&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;errors&#34;&gt;Errors&lt;/h3&gt;
+&lt;p&gt;If an email can&amp;rsquo;t be sent because of an invalid address in the &amp;lsquo;To&amp;rsquo; field, then the address specified in the &amp;lsquo;Escalate To&amp;rsquo; field will be notified.&lt;/p&gt;
+&lt;h3 id=&#34;using-multiple-chasers-on-the-same-table&#34;&gt;Using multiple chasers on the same table&lt;/h3&gt;
+&lt;p&gt;[TODO]&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Controlling Form User Interfaces</title>
+      <link>https://docs.agilebase.co.uk/docs/views/special-uses/controlling-form-user-interfaces/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/controlling-form-user-interfaces/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The record editing form on screen can be programatically controlled to hide or show various elements, like tabs and individual fields. Fields can also be locked for editing and tabs can be coloured.&lt;/p&gt;
+&lt;p&gt;This allows relevant information to be shown/highlighted on screen - what is shown at any one time can change depending on the state of the data in the system. As a brief example, when a sales opportunity is closed, additional fields could appear asking for the outcome details to be recorded.&lt;/p&gt;
+&lt;p&gt;In a similar way to most other view uses in this section, the ID of the record being edited is used to filter the view chosen for the form element. If that ID appears in the view, the element is shown/unlocked etc., if not it isn&amp;rsquo;t.&lt;/p&gt;
+&lt;p&gt;Here are some references for how to accomplish each feature:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#show-if-record-in-view&#34;&gt;Controlling field visibility&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#unlock-if-record-in-view&#34;&gt;Locking and unlocking fields&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/separator-options/&#34;&gt;Initially expanding or contracting blocks of fields&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#show-only-if-in-view&#34;&gt;Hiding or showing tabs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#colour-from-view&#34;&gt;Colouring tabs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Related Record Chooser</title>
+      <link>https://docs.agilebase.co.uk/docs/views/special-uses/related-record-pickers/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/related-record-pickers/</guid>
+      <description>
+        
+        
+        &lt;p&gt;When a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation field&lt;/a&gt; is part of a form, the user can choose a record to link to from a view of items in the related table.&lt;/p&gt;
+&lt;p&gt;That way, a subset of records can be shown relevant to the situation. For example, imagine there is a table of company records, which store customers and suppliers. When selecting a customer for a new invoice record, the user should be able to select only from companies which are customers, so a filtered view can be used.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/relation-field-options/#view-to-use&#34;&gt;view to use&lt;/a&gt; relation field option.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Send to Document Generator</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/send-document-generator/</link>
+      <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/send-document-generator/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;automated-bulk-document-generation&#34;&gt;Automated bulk document generation&lt;/h2&gt;
+&lt;p&gt;Automatically generating PDF documents based on criteria you specify is a powerful feature.
+For example, if your system tracks exam marks, you may wish to automatically generate a certificate whenever someone passes. Another more common example might be generating invoices for all the work carried out each month.&lt;/p&gt;
+&lt;h2 id=&#34;setting-up&#34;&gt;Setting up&lt;/h2&gt;
+&lt;p&gt;The concept works much like email notifications or syncing events to Google calendar. A view must be set up that contains the records that you want to generate documents for.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The first step is to set up and upload a template as per &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/&#34;&gt;generating PDF documents&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;In the same screen, choose a date field to log the time of each document generation. If no suitable date field exists in the table yet, you can add one by selecting &amp;lsquo;create new field&amp;rsquo;.&lt;/li&gt;
+&lt;li&gt;Choose a frequency to run the workflow at, e.g. every hour&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That’s it. Now whenever a record appears in the view, a document will be generated.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/document_generation.png&#34; alt=&#34;Workflow setup to generate a PDF document&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;automatically-emailing-documents-as-attachments&#34;&gt;Automatically emailing documents as attachments&lt;/h2&gt;
+&lt;p&gt;Once your system is generating documents automatically, you can set it up to email those out to people as attachments, also automatically without any user input. That’s great if you’re processing a large number of documents, for example invoicing hundreds or thousands of people per invoice run, it could be quite a time saver.&lt;/p&gt;
+&lt;p&gt;To set this up, create an automated notification as normal, to send an email to the intended document recipient. Just make sure that the body ‘template’ contains a reference to the field name of the document that you want to attach the document field must be in the table that the notification view’s based on.&lt;/p&gt;
+&lt;p&gt;e.g. your template body could be
+`Dear {forename},&lt;/p&gt;
+&lt;p&gt;Many thanks for your custom with us this month. Your invoice {invoice number} is attached.&lt;/p&gt;
+&lt;p&gt;Regards
+XYZ&lt;/p&gt;
+&lt;p&gt;{invoice file}
+`&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note – we recommend setting it up to send to someone within your organisation as a test, before switching to the actual recipient.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Exporting to spreadsheet</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/exporting-to-spreadsheet/</link>
+      <pubDate>Tue, 02 Jun 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/exporting-to-spreadsheet/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A spreadsheet export is the simplest way for everyday users to get data out of Agilebase without requiring that an administrator sets up an integration.&lt;/p&gt;
+&lt;p&gt;Details of how to allow this are in the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/exporting/&#34;&gt;security and compliance&lt;/a&gt; section.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Advanced information on Workflows</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/advanced/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/advanced/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;logging&#34;&gt;Logging&lt;/h2&gt;
+&lt;p&gt;If you are using the more advanced features of agilebase workflows then knowing where to look for logging information will become important. At the bottom fo the &lt;em&gt;workflow - edit records&lt;/em&gt; panel when editing a view, recent logs are shown.&lt;/p&gt;
+&lt;p&gt;They will contain success and failures of past runs as well as the next time the workflow is scheduled to be run.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-history.png&#34; alt=&#34;Viewing the logging history of a Workflow&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Chaining Workflows</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;how-to-chain-workflows&#34;&gt;How to chain Workflows&lt;/h2&gt;
+&lt;p&gt;To set the next workflow in a chain, simply set the appropriate view in the Chain workflow section of the &lt;em&gt;workflow - edit records&lt;/em&gt; panel when editing a view. The next workflow in the chain will run as soon as the previous finishes.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-chain.png&#34; alt=&#34;Configuring the PULL API&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;auto-connect-new-records-to-records-created-in-previous-chained-workflow-steps&#34;&gt;Auto-connect new records to records created in previous chained workflow steps&lt;/h2&gt;
+&lt;p&gt;This option is available when using a workflow that creates new records. Say for example a workflow consists of two steps&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create an organisation&lt;/li&gt;
+&lt;li&gt;Create a contact belonging to that organisation (assume there&amp;rsquo;s a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation field&lt;/a&gt; linking contacts to organisations)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When &amp;lsquo;auto-connect new records&amp;rsquo; is ticked on the workflow for step 2, the contact will automatically be linked to the organisation previously created by setting the relation field appropriately.&lt;/p&gt;
+&lt;p&gt;This mechanism works no matter how many steps there are in a workflow - any records created are remembered and can be used to set values in subsequent steps. So for example&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create an organisation&lt;/li&gt;
+&lt;li&gt;Create a site for the organisation, linked to it&lt;/li&gt;
+&lt;li&gt;Create a contact linked to both site and organisation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;would work too, so long as &amp;lsquo;auto-connect new records&amp;rsquo; is ticked for workflow steps 2 and 3.&lt;/p&gt;
+&lt;h2 id=&#34;workflow-buttons-and-chained-workflows&#34;&gt;Workflow buttons and chained workflows&lt;/h2&gt;
+&lt;p&gt;When a record is kicked off from a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/&#34;&gt;manual workflow button&lt;/a&gt;, it will only run on the single record the user has open on the screen, i.e. the record that the workflow button is in.&lt;/p&gt;
+&lt;p&gt;If the workflow has further steps chained from it, you&amp;rsquo;ll most likely want those to only run on that record too.&lt;/p&gt;
+&lt;p&gt;For example, imagine a workflow is made up of two chained steps&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;generate a document e.g. an invoice&lt;/li&gt;
+&lt;li&gt;send that document to a recipient&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The workflow view may contain many records which could theoretically have a document generated for them. When the button is pressed to run step 1, it will only run on the single record on screen.&lt;/p&gt;
+&lt;p&gt;Agilebase will then pass the ID of that record through to the next workflow step to act as a filter. i.e. &amp;lsquo;send that document to a receipient&amp;rsquo; will only send the individual document which has just been created.&lt;/p&gt;
+&lt;p&gt;This mechanism works until any workflow step creates a new record. When that happens, it&amp;rsquo;s unclear whether subsequent steps should run on the original record or the newly created one, so the ID won&amp;rsquo;t be passed through to following steps and you&amp;rsquo;ll have to manage things manually, e.g. using flagging as below.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This behaviour can be manually disabled by un-ticking the option &lt;em&gt;Make subsequent workflow steps act on the same record as this one&lt;/em&gt;, which will then cause the next chained workflow to always act on all records in its view.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;using-hidden-flagging-fields&#34;&gt;Using hidden &amp;ldquo;flagging&amp;rdquo; fields&lt;/h2&gt;
+&lt;p&gt;It is sometimes necessary to &lt;strong&gt;find&lt;/strong&gt; the source record when chaining workflows.&lt;/p&gt;
+&lt;p&gt;A trick to allow you to find the appropriate record is to use and set a flag field in the source table.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Use an Update Workflow to set the flag to True&lt;/li&gt;
+&lt;li&gt;Other workflows can join to this table and filter by &lt;em&gt;flag=true&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Finally, remember to set the flag to false as the last step in the chain, so that it is not inadvertently included in the next run.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;visualising-linked-workflows&#34;&gt;Visualising linked workflows&lt;/h2&gt;
+&lt;p&gt;We’ve added one more thing to the system to make working with these multi-step workflows easier. When you click on a workflow step in the admin interface, it will colour all preceding steps (if any) in green, fading to lighter green the further back they go. Similarly all future chained steps are marked in blue, fading to light blue the further forward they are in the chain.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-recursive.png&#34; alt=&#34;Configuring the PULL API&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Recursive Workflows</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/advanced/recursive-workflows/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/advanced/recursive-workflows/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Recursion is a rather heavyweight feature of the workflow capabilities of the Agilebase platform.&lt;/p&gt;
+&lt;p&gt;If you’re interested in a bit of maths and want to know what that means, there’s a great &lt;a href=&#34;https://www.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/recursion&#34;&gt;tutorial about the concept at the Khan Academy&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If not, never mind, the takeaway is it allows an administrator to set up workflows that weren’t possible before, particularly where you have networks of people or things. For example, if your CRM links people who know each other, you could create a list of all people 1 step removed, 2 steps etc.&lt;/p&gt;
+&lt;p&gt;More generally, any calculation with a repetitive step that depends on the results of the previous repetition is recursive. For example, solving sudokus or to some extent crosswords. In fact, we have a sudoku solver as one of our demos.&lt;/p&gt;
+&lt;h2 id=&#34;worked-example--an-ingredients-declaration&#34;&gt;Worked example – an ingredients declaration&lt;/h2&gt;
+&lt;p&gt;Here’s an example that may be a useful pattern for reference. We have a recipe with quantities of each ingredient. However, an ingredient may itself also be a recipe containing other ingredients. We wish to calculate an ‘ingredients declaration’ which has a list of all ‘raw ingredients’ at the end of the chain i.e. those with no recipe and their percentages in the initial recipe.&lt;/p&gt;
+&lt;p&gt;This can (and has) been done with a some linked workflows including a couple of recursive steps. Here’s the logic (not including technical implementation details).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Step 1&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Firstly, with for our main recipe (let’s call it Tom Yum Soup), look at all the direct ingredients and make a copy list, we’ll call it the &lt;em&gt;exploded ingredients&lt;/em&gt;. After this step it will just be exactly the same ingredients as the main list, but later on we’ll recurse and add ingredients of ingredients.&lt;/p&gt;
+&lt;p&gt;In Agilebase parlance, a workflow will copy all the items from an &lt;em&gt;ingredient lines&lt;/em&gt; table to an &lt;em&gt;exploded ingredient lines&lt;/em&gt; table. Each exploded ingredient line will have&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a link to the main recipe, i.e. Tom Yum Soup&lt;/li&gt;
+&lt;li&gt;a link to it’s corresponding ingredient line e.g. 10 grams of chilli paste&lt;/li&gt;
+&lt;li&gt;a link to the ‘parent exploded line’, which will just be empty in this first step&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Step 2&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Go through each of the exploded ingredient lines. For each one, if the ingredient is itself a recipe, add lines for each of it’s ingredients, setting&lt;/p&gt;
+&lt;p&gt;main recipe = the same main recipe as the existing exploded line, i.e. Tom Yum Soup
+link to parent ingredient line = the line we’re looking at e.g. 10 grams chilli paste
+link to ingredient line = e.g. 7 grams crushed chillies
+Now recurse and do step 2 again, for any of the new exploded ingredient lines that are themselves recipes. Repeat 2 as many times as are necessary until there are no new lines which are recipes. &lt;strong&gt;This is the key step – after this you’ll have a complete list of raw ingredients.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To make Agilebase do that, simply tick the &lt;em&gt;recursive&lt;/em&gt; checkbox in the view’s workflow section. It will repeat the step until the view contains no records.&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Step 3&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The only thing left is to fill in the percentages. This involves a similar logic – bootstrap by first filling in percentages copied from the direct ingredients of the main recipe, then in a new workflow calculate the percentage of sub-ingredients by multiplying the proportion of the main ingredient by the percentage in the sub-ingredient. So for example if our Tom Yum is 2% chilli paste, which contains 70% crushed chillies, the percentage of crushed chillies in the Tom Yum is 0.02 x 70 = 1.4%.&lt;/p&gt;
+&lt;p&gt;When implementing, there are a couple of other details to take into consideration, e.g. how to mark each exploded line as ‘processed’ so you don’t keep on re-calculating them. We do that with a counter. You also have to deal with the mechanics of things like what to do if a recipe changes e.g. an ingredient is deleted – another recursive workflow will go through and delete all exploded lines including sub-ingredients.&lt;/p&gt;
+&lt;p&gt;If you’d like to see a full implementation details for this example, please let us know and we can take you through it on our demo system.&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Step 4&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Finally, the ingredient declaration to e.g. go on a label can be calculated by joining together the names of all the raw ingredients i.e. the exploded ingredients that aren’t themselves recipes, along with their percentages.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Running on record creation or load</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-on-create/</link>
+      <pubDate>Tue, 31 Aug 2021 16:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-on-create/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This can be set up in the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/workflow/&#34;&gt;table&amp;rsquo;s workflow options&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Workflows Buttons</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Some &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; need to be run on an adhoc basis, initiated by a user.
+In these instances it can be useful to assign the Workflow to run behind a Button.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;N.b. In both cases below it is necessary for the Workflow to marked as Manual.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;workflow-buttons-on-a-form&#34;&gt;Workflow Buttons on a Form&lt;/h2&gt;
+&lt;p&gt;To add the Workflow button to a Table&amp;rsquo;s form simply create a new field of type Cross Reference with the workflow as the source.
+When the Workflow is run, it will be filtered by the Id of the record. (You may wish read up about &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/&#34;&gt;Chaining Workflows&lt;/a&gt; )
+It is often necessary to put some thought in to the visibility of the button - it can be confusing to the user that a button is present when it does nothing due to filters they cann not know about.&lt;/p&gt;
+&lt;h2 id=&#34;workflow-buttons-on-views&#34;&gt;Workflow Buttons on Views&lt;/h2&gt;
+&lt;p&gt;Some Manual workflows are more appropriately run on a number of records. As such the ability to run them is likely to be associated to a list presented in a view.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create the workflow view&lt;/li&gt;
+&lt;li&gt;Find or create a view we&amp;rsquo;ll call &amp;lsquo;display view&amp;rsquo;, which displays an appropriate list of records - most likely this will show contain the same filters as the workflow view, so it shows the same records to the user.&lt;/li&gt;
+&lt;li&gt;In the display view, use the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/&#34;&gt;Chain Workflows&lt;/a&gt; functionality. Choose the workflow view.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When the user opens the display view, a workflow button will appear at the top of the screen. Pressing this will run the workflow.&lt;/p&gt;
+&lt;p&gt;On completion, the user will be shown the number of records that were affected by the workflow run e.g. created or updated, along with an option to see the any log messages, which can be useful to check for errors.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

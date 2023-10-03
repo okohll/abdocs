@@ -1,0 +1,84 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agilebase docs – Security</title>
+    <link>https://docs.agilebase.co.uk/tags/security/</link>
+    <description>Recent content in Security on Agilebase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 31 Aug 2023 13:00:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Guides: 6. Security and Access Control</title>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/security-and-access-control/</link>
+      <pubDate>Thu, 31 Aug 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/security-and-access-control/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;   Understand basic database privileges&amp;hellip; Roles and giving them to Users!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; To have built a multi table system, to have more than themselves as users.&lt;/p&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;AgileBase uses the classic concept of Roles to help you control the access users have to the system you are building.
+A classic metaphor would be the manager of an office has the keys to the building, whilst the staff do not. The person acting as the manager may change overtime, but the permission and privileges (in this case having keys) does not!&lt;/p&gt;
+&lt;p&gt;[guide 1.6 - video 1]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ybixmV1TdVA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;creating-roles&#34;&gt;Creating Roles&lt;/h2&gt;
+&lt;p&gt;For our scenario of a Basic CRM we will model the simple situation that all users will need to access contact information, but only some users will log tasks. Similarly, only some users will access sales opportunities.
+We can start by creating a Role called ‘Orgs and Contacts’
+Press Add Role and name it ‘Orgs and Contacts’
+Start by looking at the Privileges list. As you can see this shows you a list of ALL the tables in the system. We want users with this role to be able to read and importantly WRITE any organisation info.
+Set the radio button Edit on Organisations, Sites and Contacts
+&lt;img src=&#34;https://docs.agilebase.co.uk/roles-privileges.png&#34; alt=&#34;The Roles privilege list&#34;&gt;
+Now look at the Members option. We can give this permission to all our users.&lt;/p&gt;
+&lt;p&gt;For our Basic CRM we will need to do the same for a role to use Tasks and another for Sales Opportunites&lt;/p&gt;
+&lt;h3 id=&#34;user-roles-permissions-and-tiles&#34;&gt;User Roles, Permissions and Tiles&lt;/h3&gt;
+&lt;p&gt;Now to take a look from a User&amp;rsquo;s perspective.
+Back to the starting page of Development mode and click Users to show ALL users
+Click on a user&amp;rsquo;s record
+If we click on the Roles option, we can see any roles the user may be missing.
+Simple click to add
+&lt;img src=&#34;https://docs.agilebase.co.uk/user-roles.png&#34; alt=&#34;The Roles privilege list&#34;&gt;
+Sometimes it&amp;rsquo;s useful to see an individual’s permissions. This can be done by looking at the Privileges tab on their user record.&lt;/p&gt;
+&lt;p&gt;Perhaps, more useful is ensuring they have the tile to access the functionality!!!
+Click on Tiles and you can see whether they have our Sales opportunity tile.
+When you add a tile you are prompted to choose the default view. It is an important consideration to choose the most appropriate view for your users.
+&lt;img src=&#34;https://docs.agilebase.co.uk/user-adding-tile.png&#34; alt=&#34;The Roles privilege list&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;advanced-access-control&#34;&gt;Advanced Access Control&lt;/h2&gt;
+&lt;p&gt;Sometimes we may find a situation where access control can not be broken down to complete tables, but instead we want to have control on a field by field basis. In this instance we can use field visibility rules combined with the roles system.
+In our example scenario we have a role called “HR” and we only want ONLY users with this role to see a Date of Birth field on the Contact record.&lt;/p&gt;
+&lt;p&gt;[guide 1.6 - video 1]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/MEFep-NFl1o&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;We need to create a view that will control the visibility of the field, so we create a view in the &amp;ldquo;System Visibility Tile”&lt;/p&gt;
+&lt;h3 id=&#34;field-visibility-and-user-roles&#34;&gt;Field Visibility and User Roles&lt;/h3&gt;
+&lt;p&gt;We have already had an exmaple of using a visibility rule to hide a button. In this case we are going a step further and controlling visibility based on the logged in User&amp;rsquo;s roles.
+To start we will need a view called ‘vis - Contact HR only’ built rom the Contacts table.
+Since Field Visibility rules work by only showing the field if the record exists in a specified view we don’t need loads of columns, we just need to concentrate on filtering. For this example we need to filter by the Role the user has, and we can do this by using a calculation.
+Add a Calculation field of type boolean called ‘is in HR’. The SQL you need is&amp;hellip;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  ab_userroles() ilike &amp;#39;%HR%&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;It is easy to follow if you have an understanding of SQL, if not there is plenty of help and tutorials on the internet. However, as a brief explanation, aB_userroles() is a variable that will return the list of roles that the logged in user is a member of. Ilike is a text match that looks for in this case the letters HR. In otherwords, this query will let us know is the user is a member of the HR role.
+Dont forget to apply the filter by going to the fiter option and adding where &amp;ldquo;is in HR&amp;rdquo; equals True&lt;/p&gt;
+&lt;p&gt;All that&amp;rsquo;s left to do is apply the visibilty rule to the chosen field. In this example, navigate to edit the Contacts table, Click on the DOB field.
+Scroll down to Field Visibility, show choosing the view ‘vis - Contact HR only’&lt;/p&gt;
+&lt;h2 id=&#34;success---a-basic-crm&#34;&gt;SUCCESS - A basic CRM&lt;/h2&gt;
+&lt;p&gt;If you have been following along and building your own system then congratulations you have a fledging CRM system for your business. You now have knowledge of the all the building blocks needed to extend this tool and turn it into a powerful back office system to help your colleagues manage their work.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

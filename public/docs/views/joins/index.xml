@@ -1,0 +1,93 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agilebase docs – Joins</title>
+    <link>https://docs.agilebase.co.uk/docs/views/joins/</link>
+    <description>Recent content in Joins on Agilebase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 13 May 2020 16:40:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/docs/views/joins/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Types of Join</title>
+      <link>https://docs.agilebase.co.uk/docs/views/joins/types-of-join/</link>
+      <pubDate>Fri, 15 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/joins/types-of-join/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Here&amp;rsquo;s a Youtube video explaining the concept of joins and running through the various types.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/9yeOJ0ZMUYw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Just remember, when using third party resources to learn about joins (or other SQL features), you don&amp;rsquo;t need to write the SQL code in Agilebase, it&amp;rsquo;s generated for you behind the scenes.&lt;/p&gt;
+&lt;h2 id=&#34;left-outer-and-inner-joins&#34;&gt;Left outer and inner joins&lt;/h2&gt;
+&lt;p&gt;The left outer join is the default type used when a join is added to a view in Agilebase. It suits most cases, but can be changed after join creation if needed.&lt;/p&gt;
+&lt;p&gt;A left outer join type will ensure that every row from the left source (table or view) is visible in output, whether or not the data links to a row on the right side. Conversely, when an inner join&amp;rsquo;s used, data from the left will be hidden unless it links to data on the right.&lt;/p&gt;
+&lt;p&gt;That may sound rather abstract: working with an example, we can see what it means in practice.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s take the common and straightforward example of linking contacts to organisations. We start by creating a view from the contacts table, so that&amp;rsquo;s on the left side. We then join from contacts to an organisations table, on the right. This join looks as follows:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/example-join.png&#34; alt=&#34;example join&#34;&gt;&lt;/p&gt;
+&lt;p&gt;That gives us a view where we can add fields from the organisation table into the view of contacts data. The output may look something like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/view-contacts.png&#34; alt=&#34;contacts view&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Each row representing a contact, has the contact details (name, email address etc.) and from the organisations table, you can see the name and website of the organisation they belong to.&lt;/p&gt;
+&lt;p&gt;But wait a minute, what&amp;rsquo;s that contact with blank spaces for the organisation name and website? That represents a &lt;strong&gt;contact which is not yet linked to an organisation&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;I guess to be nit-picky, it could represent a contact joined to an organisation without a name or website address added, but here we&amp;rsquo;ll assume all organisations have those details filled in.&lt;/p&gt;
+&lt;p&gt;When the join type is &lt;strong&gt;left outer&lt;/strong&gt;, then this row will be shown, as seen. However, if it&amp;rsquo;s changed to an &lt;strong&gt;inner&lt;/strong&gt; join, then it will be hidden.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s why left outer is the safest type to use by default. Otherwise with an inner, if a user adds a new contact, fills in all their basic details but doesn&amp;rsquo;t link her or him to an organisation (perhaps they don&amp;rsquo;t know the organisation or it doesn&amp;rsquo;t exist in the system yet), then they won&amp;rsquo;t be able to see that contact in the view. And if they can&amp;rsquo;t see it, then they can&amp;rsquo;t click on it to load it - it will have vanished for good (well, until the join is changed back to a left outer).&lt;/p&gt;
+&lt;p&gt;Sometimes of course, inner joins are very useful - but it makes sense that there must be a conscious decision to change a join to that type.&lt;/p&gt;
+&lt;h2 id=&#34;right-outer-and-full-outer&#34;&gt;Right outer and full outer&lt;/h2&gt;
+&lt;p&gt;You may think, if there&amp;rsquo;s a left outer, is there also a right outer? There is, it means all data from the right side is always visible, whether or not there&amp;rsquo;s a match on the left. So in our contacts/organisations example, all organisations would be visible, whether or not any contacts belonged to them.&lt;/p&gt;
+&lt;p&gt;Practically, this isn&amp;rsquo;t used much, as a right outer join is just the same as a left outer join started from the other table. There&amp;rsquo;s no difference in the data visible, but using a left outer works better in Agilebase because you can be guaranteed that clicking on a row will load a record (with a right outer, if there&amp;rsquo;s no data on the left side, then no record can be loaded when the row&amp;rsquo;s clicked).&lt;/p&gt;
+&lt;p&gt;You may also hear of a full outer join - this again has a very small number of useful cases, but you can &lt;a href=&#34;https://stackoverflow.com/questions/2094793/when-is-a-good-situation-to-use-a-full-outer-join&#34;&gt;read about them online&lt;/a&gt; if interested.&lt;/p&gt;
+&lt;h2 id=&#34;venn-diagram&#34;&gt;Venn diagram&lt;/h2&gt;
+&lt;p&gt;Joins are often represented visually with Venn diagrams. Here&amp;rsquo;s one, showing that for a left outer join, all the data from the left side is visible, whether or not a matching row exists on the right, and for an inner join, data from the left is excluded without a match. The results of right outer and full outer are also visualised.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/joins-venn.png&#34; alt=&#34;Joins Venn diagram&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;cross-join&#34;&gt;Cross join&lt;/h2&gt;
+&lt;p&gt;There&amp;rsquo;s one final type to consider that can be used in Agilebase. Strictly speaking, it isn&amp;rsquo;t a join at all, but it does bring together data from left and right sides in a particular way, so we&amp;rsquo;ll think of it as a join here and it&amp;rsquo;s treated as such in Agilebase.&lt;/p&gt;
+&lt;p&gt;If you have a mathematical background, it may help to know that it produces a cartesian product, or cross product, of all rows in the left and right sides.&lt;/p&gt;
+&lt;p&gt;However if you don&amp;rsquo;t, not to worry, it can be easily explained without maths. Basically, every combination of each row on the left with each row on the right is output. So if you have three rows, A, B and C on the left and another three X, Y and Z on the right, then you would get as output: data from&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Row A with row X&lt;/li&gt;
+&lt;li&gt;Row A with row Y&lt;/li&gt;
+&lt;li&gt;Row A with row Z&lt;/li&gt;
+&lt;li&gt;Row B with row X&lt;/li&gt;
+&lt;li&gt;Row B with row Y&lt;/li&gt;
+&lt;li&gt;Row B with row Z&lt;/li&gt;
+&lt;li&gt;Row C with row X&lt;/li&gt;
+&lt;li&gt;Row C with row Y&lt;/li&gt;
+&lt;li&gt;Row C with row Z&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can see that you need to be careful when creating cross joins that results won&amp;rsquo;t balloon up into massive numbers of rows that are hard to deal with. For example, if two tables, each with a hundred thousand rows in, are joined by cross join, then 100,000 x 100,000 = 10,000,000,000 (ten billion) rows would output.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Once again, potential uses may be most easily explained by a real world example.&lt;/p&gt;
+&lt;p&gt;Cross joins can be used when reporting, to find data that&amp;rsquo;s &lt;strong&gt;not&lt;/strong&gt; there (to get a bit Zen). For example, say we have two tables&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;customers&lt;/li&gt;
+&lt;li&gt;products&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We may want to create output representing the combination of every customer with every product - we could then further join this to sales data to find which products a customer isn&amp;rsquo;t buying, or which products are being bought by most and fewest customers.&lt;/p&gt;
+&lt;p&gt;Firstly, we need all combinations. Create a cross join between customers and products, in a &amp;lsquo;customer products&amp;rsquo; view.&lt;/p&gt;
+&lt;p&gt;The next step is similar to our reporting example of &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/#joining-on-multiple-fields&#34;&gt;joining on multiple fields&lt;/a&gt;. Create a calculation &amp;lsquo;customer product&amp;rsquo; which concatenates together customer ID and product ID. Create the same calculation in a view of sales (each sale of a product to a customer). Then join this sales view into our customer products view and bingo, we can display the total sales, whether zero or more, of each product to each customer.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you haven&amp;rsquo;t yet read up on &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/&#34;&gt;calculations&lt;/a&gt;, you may need to do that in order to accomplish everything above&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;adding-a-cross-join&#34;&gt;Adding a cross join&lt;/h3&gt;
+&lt;p&gt;Adding a cross join is a little different to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/#adding-a-join&#34;&gt;adding a normal join&lt;/a&gt;. The left and right fields don&amp;rsquo;t matter (as we want to apply any exclusion rules, we just want every combination of rows possible).&lt;/p&gt;
+&lt;p&gt;So follow the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/#complex-joins&#34;&gt;normal process for a complex join&lt;/a&gt;, but just select the left and right tables (or views), leave the fields at their default values.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

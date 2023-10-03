@@ -1,0 +1,72 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agilebase docs – DropDown</title>
+    <link>https://docs.agilebase.co.uk/tags/dropdown/</link>
+    <description>Recent content in DropDown on Agilebase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 16 Aug 2023 13:00:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/tags/dropdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Guides: 3. Adding a Sales Pipeline - Kanban</title>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/sales_pipeline/</link>
+      <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/sales_pipeline/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;  Introduce Kanban / Card view. Power of dropdowns on fields. Show how easy to add graphs. Show off the advanced UI elements of aB&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched “Capturing Company and Contact details” video. Understand relational data&lt;/p&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;In this step of our guide we going to look at adding a dropdown field to &amp;ldquo;control&amp;rdquo; data input as we want to set up a Kanban board approach to managing Sales Opportunities.
+This video assumes you are happy creating tables so jumps to the point of adding the Dropdown field.
+If you are following along and want to build this table please copy the following table structure&lt;/p&gt;
+&lt;p&gt;Fields we will need: Organisation(relation to Organisation) Title (text), Detail (text large), Date of Enquiry (date), Source (text), Main Contact (relation to contact), Opp. Owner (text), Demo-Meeting (Separator), Date of Demo (date), Meeting Notes (text large), Quote (Separator), Quote Amount (number), Quote notes (text large), Outcome (Separator), Date Won (date), Date lost (date), Lost reason (text), closed by (text), closed date (date)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/Sales_Opportunity_pre_dropdown&#34; alt=&#34;Sales Opprtunity Fields before Status DropDown has been added&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;adding-a-dropdown-field&#34;&gt;Adding a dropdown field&lt;/h2&gt;
+&lt;p&gt;A dropdown field is as simple to add as any other field type. However there are some considerations about how it is configured to help the user experience.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Having an initial comma in the list means the default value will be blank.&lt;/li&gt;
+&lt;li&gt;Adding an initial number to each option in the list is very useful to imply an order (an override the default alphabetical ordering).&lt;/li&gt;
+&lt;li&gt;Autofilling with a list of users. &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/#lists-of-users&#34;&gt;Click here for more info&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In this stage of our guide we are going to add the stages a typical Sales opportunity will pass through.
+[Guide 1.3 - video 1]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1PzY64hPWlE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;creating-a-kanban-view&#34;&gt;Creating a Kanban view&lt;/h2&gt;
+&lt;p&gt;We can now create a view to show all the Sales Opportunities we will be mansaging.
+This is the basically the same as we’ve done before
+&lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/#adding-views-that-show-all-the-tasks-that-have-been-createds&#34;&gt;Click here to see how add a view&lt;/a&gt;
+Before We set the interface option to be &amp;ldquo;Cards in Column&amp;rdquo; its important to move the controlling field to the top of the list. In this case we want ther Kanban board to be controlled by Status, therefore it should be the first DropDown field in the view.&lt;/p&gt;
+&lt;p&gt;[Guide 1.3 - video 2]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ydCtGAdgqjk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;adding-graphs&#34;&gt;Adding Graphs!&lt;/h2&gt;
+&lt;p&gt;Sales teams love graphs. After all, a picture says a thousand words, and agileBase has an easy to use graphing facility to help you show off the insights your data contains.
+Creating graphs can be done by any user, but it usually helps if the developers take the lead and build the obvious ones.&lt;/p&gt;
+&lt;p&gt;This video demonstrates adding a pie chart to show the number of Sales Opportunites by Source, and also a column graph to show volume of sales enquires over time. It also shows the advanced option of using Stcaking to add more insights.&lt;/p&gt;
+&lt;p&gt;[Guide 1.3 - video 3]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/3FOOk8QS5RE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

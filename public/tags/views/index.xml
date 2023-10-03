@@ -1,0 +1,83 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agilebase docs – views</title>
+    <link>https://docs.agilebase.co.uk/tags/views/</link>
+    <description>Recent content in views on Agilebase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 31 Aug 2023 13:00:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/tags/views/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Guides: 1. Personalising our CRM</title>
+      <link>https://docs.agilebase.co.uk/guides/guide2-personalisation/creating_personal_views/</link>
+      <pubDate>Thu, 31 Aug 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide2-personalisation/creating_personal_views/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;  Understand the easy ways to alter an existing view&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; To be a competent user of agilebase, with Citizen Developer level 1 (or higher) enabled&lt;/p&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;The guide is going to introduce to you some of the features that become available to you once you’ve been given the role of Citizen Developer. In essence, you now have the power to make small tweaks to the system that just affect yourself, helping you customise how it works and hopefully making it a more efficient and enjoyable process.
+A good example would be making your own view of a list of organisations that is focused on the ones where you are the owner&lt;/p&gt;
+&lt;p&gt;[guide 2 - video 1]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/D_400LI_O_g&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;introducing-developer-mode&#34;&gt;Introducing Developer Mode&lt;/h2&gt;
+&lt;p&gt;Navigate to the view you wish to personalise
+Then simply toggle the development mode icon that you’ll find top left of the page.
+You can see some new icons on the user interface.
+&lt;img src=&#34;https://docs.agilebase.co.uk/view-edit-mode.png&#34; alt=&#34;Edit mode enabled - new icons now visible&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;adding-a-field&#34;&gt;Adding a field&lt;/h3&gt;
+&lt;p&gt;Look at the far right of the table headers, there should now be a plus button.
+If this is the first time you’ve tried to change the view then the system will tell you that it needs to make a copy just for you. Simply press the button to do this. The view will reload on screen and we can see the change in name indicating that it’s your version. You can now press the Plus button again…
+From this window you can add other fields that may be of interest.
+For example me, the date the record was created. This has the rather cumbersome name &amp;ldquo;Creation Time [Auto]&amp;rdquo;. Select it and press ‘Add’.
+You are prompted to change the name or simply press Add to keep the original.&lt;/p&gt;
+&lt;h3 id=&#34;moving-fields&#34;&gt;Moving Fields&lt;/h3&gt;
+&lt;p&gt;You change the order of the fields from the list of fields found under the Edit button.
+Pressing  ‘Edit view’ at the top left to enter development mode. You should now see the list of all the fields and its as simple as dragging and dropping the fields in to the desired order.&lt;/p&gt;
+&lt;h3 id=&#34;removing-a-field&#34;&gt;Removing a Field&lt;/h3&gt;
+&lt;p&gt;To remove a field, you can either:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;click the small &amp;ldquo;X&amp;rdquo; icon on the right hand side of the list of fields.&lt;/li&gt;
+&lt;li&gt;edit the individual field and press the &amp;ldquo;Remore from view button
+Please be aware that some fields can NOT be removed. Don’t worry, you can’t cause any damage. The system simply alerts you that it can’t delete the field. In these cases you may want to simply move the field to the bottom of the list out of the way!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;adding-a-filter&#34;&gt;Adding a filter&lt;/h3&gt;
+&lt;p&gt;A useful filter to add in this example would be to only show Organisations that belong to myself.
+Make sure you are in developer mode, oand start by clicking  ‘Edit view’ at the top left
+Now click on the filters section.
+To add the filter choose the field you wish to filter by, in this case ‘Owner’.
+The type of filter depends on the situation, but in this case we’ll choose ‘contains’
+And the value we need to enter is your name
+Then we simply press ‘Add’&lt;/p&gt;
+&lt;h3 id=&#34;renaming-a-view&#34;&gt;Renaming a view&lt;/h3&gt;
+&lt;p&gt;Again, make sure you are in developer mode, and start by clicking  ‘Edit view’ at the top left
+Now click on &amp;ldquo;Properties and Options&amp;rdquo;
+Simply enter your new title in the &amp;ldquo;view name&amp;rdquo; input box.
+&lt;strong&gt;TIP&lt;/strong&gt; You can use a &amp;quot; - &amp;quot; to help organise how the views are diaplyed in the menu.
+So it may make sense to rename this view to &amp;ldquo;Organisations - MY&amp;rdquo;, to have our view appear in the existing Organisations menu item.&lt;/p&gt;
+&lt;h3 id=&#34;changing-the-default-view-of-a-tile&#34;&gt;Changing the Default View of a tile&lt;/h3&gt;
+&lt;p&gt;Rather than having to swap to “my” view everytime I click in to the tile, it wuld be more efficient if changed the default to be My personal view.
+On the front screen, click your avatar and choose tile settings.
+Each of the tiles will now have a cog on it.
+On the CRM tile we can click it and change our default view to be my personalised one.
+From now on, when you click on the CRM tile it goes straight to the most useful view!&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

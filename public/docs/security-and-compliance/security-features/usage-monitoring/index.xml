@@ -1,0 +1,131 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agilebase docs – Usage Monitoring</title>
+    <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/</link>
+    <description>Recent content in Usage Monitoring on Agilebase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 24 Apr 2020 16:40:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Reporting</title>
+      <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Log data reporting provides a rich view of system usage.&lt;/p&gt;
+&lt;h2 id=&#34;enhanced-audit-trail&#34;&gt;Enhanced audit trail&lt;/h2&gt;
+&lt;p&gt;For organisations who have activated the enhanced audit trail, all logs are stored in user-accessible tables which are just like any other tables in the system, the only difference being the data is read only. This means an administrator can use the full power of the built in Agilebase reporting features, to create views, add calculations, charts etc., even export via the API.&lt;/p&gt;
+&lt;p&gt;So for example, you could analyse how many changes were made per month by each user, count the volume of logins from various locations or see what the most common fields are to search on. All actions listed on the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/&#34;&gt;usage monitoring&lt;/a&gt; page are available to query.&lt;/p&gt;
+&lt;p&gt;Data is also retained for an extended period, see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/#retention-periods&#34;&gt;retention periods&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If interested in activating this feature, please &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;get in touch&lt;/a&gt;. There will be a small recurring charge added to your bill.&lt;/p&gt;
+&lt;h3 id=&#34;data-stored&#34;&gt;Data stored&lt;/h3&gt;
+&lt;h4 id=&#34;logins&#34;&gt;Logins&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Username&lt;/li&gt;
+&lt;li&gt;Date and time&lt;/li&gt;
+&lt;li&gt;IP Address&lt;/li&gt;
+&lt;li&gt;Country&lt;/li&gt;
+&lt;li&gt;Internet Service Provider organisation name and location&lt;/li&gt;
+&lt;li&gt;Client web browser (both summary and exact version details)&lt;/li&gt;
+&lt;li&gt;Client operating system&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;data-changes-record-creation--update--delete&#34;&gt;Data changes (record creation / update / delete)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Username (in the case of an API call, will be &amp;lsquo;Public API [IP address]&amp;rsquo;. In the case of a system workflow, &amp;lsquo;System&amp;rsquo;)&lt;/li&gt;
+&lt;li&gt;Date and time&lt;/li&gt;
+&lt;li&gt;Action (e.g. update or delete)&lt;/li&gt;
+&lt;li&gt;Table&lt;/li&gt;
+&lt;li&gt;Field (if a single field is updated)&lt;/li&gt;
+&lt;li&gt;Row ID - internal identifier of the record updated&lt;/li&gt;
+&lt;li&gt;Saved data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;view-access&#34;&gt;View access&lt;/h4&gt;
+&lt;p&gt;This covers any time a view is opened or filtered, either by a user, or an API call&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Username (in the case of an API call, will be &amp;lsquo;Public API [IP address]&amp;rsquo;)&lt;/li&gt;
+&lt;li&gt;Date and time&lt;/li&gt;
+&lt;li&gt;Tile and view name&lt;/li&gt;
+&lt;li&gt;Details - any filters and row limit applied&lt;/li&gt;
+&lt;li&gt;Rows - the number of records returned to the user or API&lt;/li&gt;
+&lt;li&gt;Processing time - the total server-side processing time in milliseconds needed to retrieve the data, and if for an API, transform it into JSON format&lt;/li&gt;
+&lt;li&gt;Of which Q time &lt;strong&gt;(API calls only)&lt;/strong&gt; - to achieve a fair level of load balancing, Agilebase operates a separate API request queue for each customer. If a request arrives and the system is still busy processing a previous request, the new one gets held in a queue. This field shows how much of the total processing time, in ms was spent waiting for previous requests to complete&lt;/li&gt;
+&lt;li&gt;Bytes &lt;strong&gt;(API calls only)&lt;/strong&gt; - the number of bytes of JSON data returned via the API&lt;/li&gt;
+&lt;li&gt;Count - if many similar requests or API calls (to a particular view) reach the server in quick succession, they will be amalgamated together into one log line. The count then shows the number of requests the log line refers to, otherwise it will be 1. If more than one, then the &lt;em&gt;rows&lt;/em&gt;, &lt;em&gt;processing time&lt;/em&gt;, &lt;em&gt;of which q time&lt;/em&gt; and &lt;em&gt;bytes&lt;/em&gt; will represent the totals for all requests&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;table-schema-changes&#34;&gt;Table schema changes&lt;/h4&gt;
+&lt;p&gt;These are changes made to a table structure by someone with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;develop&lt;/a&gt; privileges, such as adding or removing a field.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Date and time&lt;/li&gt;
+&lt;li&gt;Username&lt;/li&gt;
+&lt;li&gt;Table name&lt;/li&gt;
+&lt;li&gt;Action e.g. &amp;lsquo;add field&amp;rsquo;, &amp;lsquo;remove field&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;Details - e.g. the name of the field&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;view-schema-changes&#34;&gt;View schema changes&lt;/h4&gt;
+&lt;p&gt;Changes made to a view structure, such as adding fields, filters, calculations or charts&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Date and time&lt;/li&gt;
+&lt;li&gt;Username&lt;/li&gt;
+&lt;li&gt;Tile and view name&lt;/li&gt;
+&lt;li&gt;Action&lt;/li&gt;
+&lt;li&gt;Details - additional data related to the action, e.g. if adding a field, the field name&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;authentication-changes&#34;&gt;Authentication changes&lt;/h2&gt;
+&lt;p&gt;A log of administrative actions such as assigning a user to a role, assigning privileges, or user actions such as requesting a password reset&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Date and time&lt;/li&gt;
+&lt;li&gt;Username (of the user making the change)&lt;/li&gt;
+&lt;li&gt;Action - e.g. add privilege&lt;/li&gt;
+&lt;li&gt;Table name - only if the action relates to a particular table, e.g. assigning a role to a table&lt;/li&gt;
+&lt;li&gt;Details - additional data related to the action, e.g. if adding a role to the table, the role name&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;standard-reporting&#34;&gt;Standard reporting&lt;/h2&gt;
+&lt;p&gt;Built in reports are available in a number of areas, whether using the enhanced audit trail or standard logging.&lt;/p&gt;
+&lt;h3 id=&#34;the-dashboard&#34;&gt;The dashboard&lt;/h3&gt;
+&lt;p&gt;From the tiles interface, click the bird icon at the top left, then select &lt;em&gt;usage dashboard&lt;/em&gt;. The dashboard contains system reports including usage data.&lt;/p&gt;
+&lt;h4 id=&#34;trends&#34;&gt;Trends&lt;/h4&gt;
+&lt;p&gt;An overall usage treemap is displayed at the top. Each view is a section of the screen. Large areas represent views that get a lot of use, smaller areas those that don’t. Colours give immediate feedback on whether usage has been increasing (blue) or decreasing (grey) this month. Hovering over an area shows more stats including the top users.&lt;/p&gt;
+&lt;p&gt;Underneath that a series of sparkline charts show long term trends, across selected operational, tactical and strategic metrics, all geared to showing utilisation over a 12 month period.&lt;/p&gt;
+&lt;p&gt;Raw data can be downloaded to spreadsheet using the links beneath each sparkline. Note only the most recent 200,000 records can be downloaded in this way.&lt;/p&gt;
+&lt;h4 id=&#34;capacity&#34;&gt;Capacity&lt;/h4&gt;
+&lt;p&gt;As well as actual usage, the dashboard shows total capacity i.e. how many users, records, tables etc. are present in the system, along with purchased capacity (if relevant). These elements affect billing.&lt;/p&gt;
+&lt;h4 id=&#34;workflows&#34;&gt;Workflows&lt;/h4&gt;
+&lt;p&gt;A convenience view of all workflows which carry out automated data modifications, see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;database-graph&#34;&gt;Database graph&lt;/h4&gt;
+&lt;p&gt;Finally, for background on what the data structure looks like and how tables are connected, the database graph shows relations between tables is visual form. This can provide a fuller understaning of the system.&lt;/p&gt;
+&lt;h3 id=&#34;table-and-view-usage&#34;&gt;Table and view usage&lt;/h3&gt;
+&lt;p&gt;A quick overview of who is viewing data is shown in the administration interface for both tables and views.&lt;/p&gt;
+&lt;p&gt;For a table&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Edit the table&lt;/li&gt;
+&lt;li&gt;Open the &lt;em&gt;Recent Changes&lt;/em&gt; panel&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The report shows the number of times each user has viewed data from the table, per view. All views which contain any data from the table are included.&lt;/p&gt;
+&lt;p&gt;For a view&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Edit the view&lt;/li&gt;
+&lt;li&gt;Open to the &lt;em&gt;Recent Changes&lt;/em&gt; panel&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Similar data is show as for tables, but limited to the selected view.&lt;/p&gt;
+&lt;h2 id=&#34;individual-record-histories&#34;&gt;Individual record histories&lt;/h2&gt;
+&lt;p&gt;Any user can see the complete history of changes to an individual record, up to the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/#retention-periods&#34;&gt;retention period&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When editing a record, scroll to the bottom of the screen and click &lt;em&gt;history&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;To view the precise time of a change, hover over a date.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
