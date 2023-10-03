@@ -75,3 +75,15 @@ S
 #content/guides/guide1-crm/_index.md,a/3/a33a0c27cac0025c468cc9be8b7ca4aae75f4aae
 M
 content/docs/fields/_index.md,c/f/cf1854eb0ba65e3361f7182da4a40574ecbb5a02
+q
+Acontent/guides/guide2-personalisation/creating_personal_charts.md,e/0/e05a655c71ed9b115e62f5c043f376b3cec6f486
+b
+2content/guides/guide1-crm/calculated_datafields.md,2/5/259fd5c38945cfd827147bd3280539b0048c6870
+l
+<content/guides/guide1-crm/cross_reference_and_automations.md,4/9/49195d56eb9737b95adafb1a04c8ee36699cab12
+n
+>content/docs/introduction/Learner-progression-levels/_index.md,8/7/87d533178e06f0d2c05d66df167a18ab993b098d
+Å
+Qcontent/docs/introduction/Learner-progression-levels/citizen-developer-level-1.md,4/2/42a70ef5fa29d0e29c419f880f59793f72ff5f10
+Å
+Qcontent/docs/introduction/Learner-progression-levels/citizen-developer-level-2.md,e/6/e623112003c201ef1201a87f4d2c0abb5f26f31c

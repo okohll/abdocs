@@ -16,7 +16,7 @@ hugo mod clean --all
 hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
 
 cp -r public/* ../abdocs-public 
-rm -r public
+sudo rm -r public
 
 cd ../abdocs-public
 git add --all

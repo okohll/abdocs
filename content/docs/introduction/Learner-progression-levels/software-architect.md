@@ -20,7 +20,7 @@ As well as building and disassembling applications, software architects can set 
 If your company has just started building using agileBase and you are reading this, then you're probably feeling that you've been thrown in to the deep end!
 Don't worry - using agilebase will feel like you've been given a life buoy on ... with an outboard motor... in lovely warm water... next to the 5 star all inclusive carribean resort!
 To kick-off, watch the following guide which will walk you through building a fully functional sales CRM. 
-* [Build a CRM]({{<relref "/guides/guide1-crm/">}})
+* [Build a CRM]({{<relref "/guides/guide1-crm">}})
 
 
 ## Useful Links
@@ -28,6 +28,6 @@ Looking for some guides to help you...
 * COMING SOON - Video about Debugging tips and advice on managing agileBase development projects 
 
 For more information about:
-1. [Using the API]({{<relref "/docs/workflows/send-data-to-a-third-party-via-api/">}})
-2. [Build Patterns]({{<relref "/docs/workflows/advanced-usage/build-patterns/">}})
+1. [Using the API]({{<relref "/docs/workflows/send-data-to-a-third-party-via-api">}})
+2. [Build Patterns]({{<relref "/docs/workflows/advanced-usage/build-patterns">}})
 
