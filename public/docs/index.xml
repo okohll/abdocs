@@ -832,10 +832,10 @@ Used to configure &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenanting&lt;/a
     
     <item>
       <title>Guides: 2. Capturing Company and Contact data (Introducing Relational Databases)</title>
-      <link>https://docs.agilebase.co.uk/guides/guide1-crm/adding_relational_data/</link>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/adding-relational-data/</link>
       <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
       
-      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/adding_relational_data/</guid>
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/adding-relational-data/</guid>
       <description>
         
         
@@ -981,10 +981,10 @@ We will link to two tables, the organisation they work for and the site they pri
     
     <item>
       <title>Guides: 3. Adding a Sales Pipeline - Kanban</title>
-      <link>https://docs.agilebase.co.uk/guides/guide1-crm/sales_pipeline/</link>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/sales-pipeline/</link>
       <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
       
-      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/sales_pipeline/</guid>
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/sales-pipeline/</guid>
       <description>
         
         
@@ -1176,8 +1176,8 @@ Creating graphs can be done by any user, but it usually helps if the developers 
 &lt;h2 id=&#34;useful-links&#34;&gt;Useful Links&lt;/h2&gt;
 &lt;p&gt;Boost your learning by watching our more advanced guides:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide1-crm/cross_reference_and_automations/&#34;&gt;Cross Refereances and Automations&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;&#34;&gt;Security and Access Control&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;Cross Refereances and Automations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide1-crm/security-and-access-control/&#34;&gt;Security and Access Control&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;For more information about:&lt;/p&gt;
 &lt;ol&gt;
@@ -1193,10 +1193,10 @@ Creating graphs can be done by any user, but it usually helps if the developers 
     
     <item>
       <title>Guides: 4. Calculated Datafields</title>
-      <link>https://docs.agilebase.co.uk/guides/guide1-crm/calculated_datafields/</link>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/calculated-datafields/</link>
       <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
       
-      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/calculated_datafields/</guid>
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/calculated-datafields/</guid>
       <description>
         
         
@@ -1525,16 +1525,16 @@ Creating graphs can be done by any user, but it usually helps if the developers 
 &lt;li&gt;Assign privileges&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;dont-know-where-to-start&#34;&gt;Don&amp;rsquo;t know where to start?&lt;/h2&gt;
-&lt;p&gt;If your company has just started building using agileBase and you are reading this, then you&amp;rsquo;re probably feeling that you&amp;rsquo;ve been thrown in to the deep end!
-Don&amp;rsquo;t worry - using agilebase will feel like you&amp;rsquo;ve been given a life buoy on &amp;hellip; with an outboard motor&amp;hellip; in lovely warm water&amp;hellip; next to the 5 star all inclusive carribean resort!
-To kick-off, watch the following guide which will walk you through building a fully functional sales CRM.&lt;/p&gt;
+&lt;p&gt;If your company has just started building using Agilebase and you are reading this, then you&amp;rsquo;re probably feeling that you&amp;rsquo;ve been thrown in to the deep end!
+Don&amp;rsquo;t worry - using Agilebase will feel like you&amp;rsquo;ve been given a life buoy on &amp;hellip; with an outboard motor&amp;hellip; in lovely warm water&amp;hellip; next to the 5 star all inclusive carribean resort!
+To kick off, watch the following guide which will walk you through building a fully functional sales CRM.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide1-crm/&#34;&gt;Build a CRM&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;useful-links&#34;&gt;Useful Links&lt;/h2&gt;
 &lt;p&gt;Looking for some guides to help you&amp;hellip;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;COMING SOON - Video about Debugging tips and advice on managing agileBase development projects&lt;/li&gt;
+&lt;li&gt;COMING SOON - Video about debugging tips and advice on managing Agilebase development projects&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;For more information about:&lt;/p&gt;
 &lt;ol&gt;
@@ -1884,10 +1884,10 @@ For example, in your organisations table, you may have a field &amp;lsquo;Organi
     
     <item>
       <title>Guides: 5. Cross References and Automations</title>
-      <link>https://docs.agilebase.co.uk/guides/guide1-crm/cross_reference_and_automations/</link>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/cross-reference-and-automations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/cross_reference_and_automations/</guid>
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/cross-reference-and-automations/</guid>
       <description>
         
         

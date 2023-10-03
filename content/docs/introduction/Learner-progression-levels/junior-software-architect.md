@@ -22,7 +22,7 @@ Their only limitations are to do with managing the organisation as a whole, incl
 
 ## Useful Links
 Boost your learning by watching our more advanced guides:
-* [Cross Refereances and Automations]({{<relref "/guides/guide1-crm/cross_reference_and_automations">}})
+* [Cross Refereances and Automations]({{<relref "/guides/guide1-crm/cross-reference-and-automations">}})
 * [Security and Access Control]({{<relref "/guides/guide1-crm/security-and-access-control">}})
 
 
