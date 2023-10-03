@@ -19,7 +19,7 @@ A good example would be making your own view of a list of organisations that is 
 
 [guide 2 - video 1]{{<youtube id="D_400LI_O_g">}}
 
-## Introducing Devloper Mode 
+## Introducing Developer Mode 
 Navigate to the view you wish to personalise
 Then simply toggle the development mode icon that you’ll find top left of the page.
 You can see some new icons on the user interface.
