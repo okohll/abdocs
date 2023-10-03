@@ -1,6 +1,6 @@
 ---
 title: "Citizen Developer Level 1"
-date: 2022-09-12T13:00:00+01:00
+date: 2023-09-12T13:00:00+01:00
 type: docs
 weight: 20
 description: "Start of the AgileBase Journey - Personalisation"

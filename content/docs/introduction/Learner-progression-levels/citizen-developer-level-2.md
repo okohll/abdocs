@@ -1,6 +1,6 @@
 ---
 title: "Citizen Developer Level 2"
-date: 2022-09-12T13:00:00+01:00
+date: 2023-09-12T13:00:00+01:00
 type: docs
 weight: 30
 description: "Starting to develop functionality"
@@ -34,4 +34,4 @@ For more information about:
 2. [Adding and editing tables]({{<relref "/docs/tables/adding-and-removing">}})
 3. [What is a view]({{<relref "docs/views">}})	
 
-COMING SOON How to control the Interface
+

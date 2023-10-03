@@ -7,7 +7,7 @@ menu:
   main:
     weight: 3
 ---
-There's lots to get your teeth into with Agilebase, but this guide will give you a quick start.
+There's lots to get your teeth into with Agilebase, but these guides will give you a quick start.
 
 
 

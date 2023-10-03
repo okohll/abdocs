@@ -2,7 +2,7 @@
 title: "Development Mode"
 date: 2022-02-18T16:40:00+01:00
 type: docs
-weight: 7
+weight: 5
 description: How to toggle between development and standard user modes
 tags:
 - Citizen Developer level 2
@@ -11,8 +11,11 @@ tags:
 As a no-code platform, Agilebase allows you to easily construct (and later de-construct or 'refactor') and change your software.
 
 ## Toggling development mode on and off
+To get started, you need to toggle from 'normal' mode to 'development' mode.
+
 ![Toggle development mode](/toggle-build-mode.png)
-To get started, you need to toggle from 'normal' mode to 'development' mode. You can do this wherever you are in the system and you will switch to building or developing the item you're looking at. The three main areas this covers are:
+
+You can do this wherever you are in the system and you will switch to building or developing the item you're looking at. The three main areas this covers are:
 1. The homepage. Toggling to development mode on the homepage shows an overview of everything in the system - tables, views, tiles, roles and users can all be listed and edited. Furthermore, the connections between different objects can be shown. More advanced users will typically use this area, when working on larger systems. {{< youtube id="A_OYbB9wR6c" >}}
 2. In a [view]({{<relref "/docs/views">}}). When a view is open, toggling development on will let you edit that view - to add or remove fields and calculations for example.
 3. When viewing a record from a [table]({{<relref "/docs/tables">}}>), toggling development on will let you edit that table, e.g. to add/remove fields.
