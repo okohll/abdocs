@@ -29,4 +29,5 @@ Looking for some guides to help you...
 
 For more information about:
 1. [Using the API]({{<relref "/docs/workflows/send-data-to-a-third-party-via-api">}})
+2. [Build Patterns]({{<relref "docs/advanced-usage/build-patterns">}})
 
