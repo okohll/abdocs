@@ -21,7 +21,7 @@ Additionally, actions not related to having develop privileges on a particular t
 
 
 ## Useful Links
-COMING SOON - Video about hot to control the UI
+Videos about how to control the UI [Guide 3 - Advanced UI Usage]({{<relref "/guides/guide3-advanced-usage">}})
 
 For more information about:
 1. [Setting up Tiles]({{<relref "/docs/tiles">}})	
