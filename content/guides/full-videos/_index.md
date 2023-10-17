@@ -17,6 +17,9 @@ If you just want to watch the full videos of our guides...
 ## Guide 2 - Personalisation
 
 
+## Guide 3 - Advanced Usage: Controlling the User Interface
+
+
 
 
 
