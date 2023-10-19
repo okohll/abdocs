@@ -84,6 +84,6 @@ With sparklines next to every record on screen, you can quickly get an idea of t
 ![Example of sparkline on a view](/sparkine.png)
 
 They are added to the view like any other field - simply choose “Activity histogram [auto]” from the dropdown list of fields for the appropriate table.
-[For more information visit]({{<relref "docs/fields/field-types/special-field-types/automatically-present-fields/#activity-histogram-auto">}})
+[For more information visit]({{<relref "docs/fields/field-types/special-field-types/automatically-present-fields#activity-histogram-auto">}})
 
 {video coming soon}
