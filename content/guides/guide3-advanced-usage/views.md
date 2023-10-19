@@ -13,7 +13,7 @@ tags:
 
 There are several videos and help pages you can find about creating views. We are going to concentrate on the parts that affect how the user interacts with them.
 Let us start with an important concept... Your views name, and how a naming convention affects the menu.
-{video coming soon}
+(video coming soon}
 Start by giving your view a simple name, you can see it is listed under a menu title that is the name of the tile.
 
 ![Original View title](/view-title.png)
@@ -38,21 +38,29 @@ This option will show mini cards for each record, stacked in to columns based on
 ![Example of Kanban or Cards View](/view-kanban-example.png)
 
 For the Tabular list of records you have the further option of how to control the “headings”.
+
 ![View Heading Options](/view-heading-options.png)
+
 Spreadsheet is as it sounds with a column heading per row.
+
 Headings and rows will group records by the first value.
-Long headings and rows will group by the first “few” values that are from the same source.
+
 ![View Heading and Rows](/view-heading.png)
+
+Long headings and rows will group by the first “few” values that are from the same source.
+
 ![View Heading and Rows](/view-long-heading.png)
 
 Obviously these last two options are for when you want to group together data…. This typically occurs when records share a similar value. This will naturally occur when displaying Parent Child data (e.g. Organisations list of contacts) but equally when records share a finite list of options (e.g. Contacts by source).
 
-{video coming soon}
+(video coming soon}
 
 ### Adding a Button to a view
 
 A useful feature in agileBase is to provide a button on a view that your user can press that will fire a WorkFlow that performs a function appropriate to the views content. 
+
 Example 1: your view shows a list of Food Samples that are to be created Today. The button at the top could fire a WorkFlow that generates the PDF of labels for use in sending out the resulting samples!
+
 Example 2: your view shows a list of customer orders for delivery today. The button placed at the top of the view fires a workflow that updates the list and places the orders in a suggested sequence order for the delivery driver to follow.
 
 To add a button to a view follow the following steps:
@@ -76,14 +84,16 @@ Edit the view and click on the “properties and options” of the view. Simply 
 
 For information about embedding a graph on a record see {insert link here}}.
 
-{video coming soon}
+(video coming soon}
 
 ### Sparkline / Activity Histogram
 These are mini little graphs that you can set to appear next to each record in a view. 
 With sparklines next to every record on screen, you can quickly get an idea of the relative activity of each.
-![Example of sparkline on a view](/sparkine.png)
+
+![Example of sparkline on a view](/sparkline.png)
 
 They are added to the view like any other field - simply choose “Activity histogram [auto]” from the dropdown list of fields for the appropriate table.
+
 [For more information visit]({{<relref "docs/fields/field-types/special-field-types/automatically-present-fields#activity-histogram-auto">}})
 
-{video coming soon}
+(video coming soon)

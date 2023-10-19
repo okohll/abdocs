@@ -31,7 +31,7 @@ This will appear as a hover over when your user places their cursor above it. Co
 
 You can control the order the tile appears by setting an index number.
 Additionally you can provide "breaks" in the list of tiles by giving them a section. You can see how this affects the UI below
-![Tile details](/tile-individual-details.png)
+![Tile with sections](/tile-with-sections.png)
 
 When assigning a tile to a user we can set a "Default View".
 When choosing a default view it makes sense to aim your user towards the one they would most
