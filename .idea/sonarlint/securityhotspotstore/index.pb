@@ -93,3 +93,9 @@ F
 content/docs/_index.md,1/e/1e35bea99591670d1d3e4e112a8fc1e1db9cc14d
 z
 Jcontent/docs/introduction/Learner-progression-levels/software-architect.md,5/5/558b8d41434709b81b91ae9d6e33afd53d1da469
+_
+/content/guides/guide3-advanced-usage/records.md,b/e/bec187c699a539c1d85df9c3f140d0e880edcf05
+]
+-content/guides/guide3-advanced-usage/tiles.md,2/f/2f3163d16f10f9e6fea3b752acfb34e35f258451
+]
+-content/guides/guide3-advanced-usage/views.md,5/0/50f178f0bfe314ca1bdcdb1c78d8379bd28b58be

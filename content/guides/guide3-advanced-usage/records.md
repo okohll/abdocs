@@ -168,7 +168,7 @@ Another setting with the Separator is “has tabs”. This simple tickbox probab
 The last Separator to have this option "ticked" will be the first "block" contained under the first record tab.
 
 **Form layout**
-[For more information on layout options visit ]({{<relref "docs/tables/table-layouts/">}})
+[For more information on layout options visit ]({{<relref "docs/tables/table-layouts">}})
 
 (video coming soon)
 
