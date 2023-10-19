@@ -32,19 +32,19 @@ Its during this scenario that being able to “Swap colours” can also be be ha
 
 There is a further option to “load” the options with the list of Users in the system - very useful when assigning ownership e.g. Account Manager or Task Assigned to
 ![Example of a drop down field restricted toa  drop down of users](/text-field-dropdown.png)
-{video coming soon}
+(video coming soon)
 
 **A couple of quickies…**
 
 Date fields -  you can control the date format (e.g. use the 3 letter month name not a number) as well as the accuracy required on data entry.
 Number fields -  a hidden option on a decimal field is the ability to use “as duration”. Make sure you have 2 decimal places of accuracy and the user will see a time or duration… so instead of seeing a value like “17.5” they will see 17:30.
 
-{video coming soon}
+(video coming soon)
 
 ### Relation fields 
 These are the cornerstone of agileBase. Controlling and helping the user “pick” the right relation can make or break the usability of a system. It is worth spending the extra time to ensure the right “picker” is set up on a relation field. This is done by setting the “view to use” to be a tailored view dedicated to the job…
 
-{video coming soon}
+(video coming soon)
 
 ### Cross Reference fields
 One of the most powerful features a developer can use when defining a table and its user interface is a cross referenced field.
@@ -74,7 +74,7 @@ In this example we will create a view from the organisation that joins DOWN to t
 ![options for controlling how Xref data appears](/xref-tabular.png)
 We can now see the Organisation's contact list embedded in the Organisation record
 
-{video coming soon}
+(video coming soon)
 
 #### Important Concept for building Cross References
 How you start building a Cross Reference view will effect how the UI uses it.
@@ -86,7 +86,7 @@ In this configuration this Cross reference is an alternative to using the contac
 As the developer the choice is yours to use the mechanism which you feel is best.
 For this use case it would make sense to keep the Contacts tab, and use the first style of cross reference (read only mode) but only after its been tweaked to return those contacts who are flagged as the Owner or CEO.
 
-{video coming soon}
+(video coming soon)
 
 #### Xref as Workflows
 If you have read some of our other guides you'll know that a view can be configured to be a WorkFlow and perform an action. And since a cross reference is also a view we can use this "double life" and use a cross reference WorkFlow to make a Button! 
@@ -99,7 +99,7 @@ The first is a simple "data" that shows the user the current "Status".
 The other 2 cross references, both Workflows, each set the "hidden" status to the appropriate value.
 The visibility rule applied to each is very important - they need to check a combination of status and user role to ensure that the button is only visible at the right time to the right people.
 
-{video coming soon}
+(video coming soon)
 
 #### Xref to embed Graphs
 The final use of cross reference fields is to embed graphs in to the User Interface.
@@ -108,7 +108,7 @@ Whilst the Cross reference may return a large data table (and corrsponding graph
 
 ![options for controlling how Xref data appears](/xref-graph.png)
 
-{video coming soon}
+(video coming soon)
 
 ### Controlling access to a Field 
 The roles and permissions system gives you top level control as to the whether the whole table is accessible to a user. However, you often need more fined grained control on field by field basis.
@@ -121,7 +121,7 @@ It is very similar to creating and using a cross reference... a view is created.
 There is actually a shortcut to a regularly used "locking" use case... Often you want a field to be non-editable once filled in. In this case you dont need to write the logic an apply the view, simply tick the option on the field options screen
 ![Image of Lock value when set](/lock-value-when-set.png)
 
-{video coming soon}
+(video coming soon)
 
 ### Form Titles 
 
@@ -159,6 +159,6 @@ The last Separator to have this option "ticked" will be the first "block" contai
 **Form layout**
 [For more information on layout options visit ]({{<relref "docs/tables/table-layouts/"}})
 
-{video coming soon}
+(video coming soon)
 
 

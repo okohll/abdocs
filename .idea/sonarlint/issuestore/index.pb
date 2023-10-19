@@ -61,12 +61,8 @@ N
 content/docs/tables/options.md,9/1/9193be03e1acf177d580f468a128af53a83cdb0d
 S
 #assets/scss/_variables_project.scss,7/8/78a22fd6edee9064f0b473df1378389f9f90a3a2
-[
-+content/guides/guide1-crm/sales_pipeline.md,f/b/fb3c60032c9c53f47c2841a0c0998c33dc8606f3
 C
 content/_index.html,6/7/677474fa6727c0479c458e13aa5a562c324b6a0f
-c
-3content/guides/guide1-crm/adding_relational_data.md,9/7/9744a12c4a899a6130bad73ccc83d5b6571dad12
 T
 $layouts/partials/hooks/head-end.html,5/f/5f7151666b4110be0d2a7a73f4fdb8c727bd4684
 S
@@ -77,10 +73,6 @@ M
 content/docs/fields/_index.md,c/f/cf1854eb0ba65e3361f7182da4a40574ecbb5a02
 q
 Acontent/guides/guide2-personalisation/creating_personal_charts.md,e/0/e05a655c71ed9b115e62f5c043f376b3cec6f486
-b
-2content/guides/guide1-crm/calculated_datafields.md,2/5/259fd5c38945cfd827147bd3280539b0048c6870
-l
-<content/guides/guide1-crm/cross_reference_and_automations.md,4/9/49195d56eb9737b95adafb1a04c8ee36699cab12
 n
 >content/docs/introduction/Learner-progression-levels/_index.md,8/7/87d533178e06f0d2c05d66df167a18ab993b098d
 Å
