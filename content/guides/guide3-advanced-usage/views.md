@@ -63,7 +63,7 @@ Set the “Next: when this workflow finishes, also run” to be the Work Flow yo
 {video coming soon}
 
 ### Graphs
-Visit this page to find out more about [how to add graphs to a view]({{<relref "guides/guide2-personalisation/creating_personal_charts"}})
+Visit this page to find out more about [how to add graphs to a view]({{<relref "guides/guide2-personalisation/creating_personal_charts">}})
 
 Just a quick note about how graphs affect the views user interface…
 The drop down list of views will use a little graph icon next to to a view that contains a graph 
@@ -83,7 +83,7 @@ These are mini little graphs that you can set to appear next to each record in a
 With sparklines next to every record on screen, you can quickly get an idea of the relative activity of each.
 ![Example of sparkline on a view](/sparkine.png)
 
-They are added to the view like any other field - simply choose “Activity histogram [auto]” from the drop down list of fields for the appropriate table.
-[For more information visit]({{<relref "docs/fields/field-types/special-field-types/automatically-present-fields/#activity-histogram-auto"}})
+They are added to the view like any other field - simply choose “Activity histogram [auto]” from the dropdown list of fields for the appropriate table.
+[For more information visit]({{<relref "docs/fields/field-types/special-field-types/automatically-present-fields/#activity-histogram-auto">}})
 
 {video coming soon}

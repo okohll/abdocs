@@ -13,7 +13,7 @@ tags:
 ## Tiles
 
 A tile on a user’s home screen represents an application or module of an application. It is a collection of data and functionality that forms a coherent whole
-[For detailed information about Tiles visit]({{<relref "/docs/tiles"}})
+[For detailed information about Tiles visit]({{<relref "/docs/tiles">}})
 
 Let’s start by looking at the collection of tiles this system has configured
 Using the developer interface you can access your list of current tiles.
