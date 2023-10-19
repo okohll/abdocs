@@ -16,7 +16,7 @@ The Full record view is the interface that a user uses to update and create data
 
 This User interface isn’t simply every field shown on the screen. The power of agilebase comes from providing facilities to control how the user interacts with their data. Put another way, by allowing developers to control individual fields, decide when to show them and group them together etc, the job of entering data becomes a pleasant user experience. 
 
-There is plenty of help available in the agileBase Docs system - [Help on Fields]({{<relref "docs/fields"}})
+There is plenty of help available in the agileBase Docs system - [Help on Fields]({{<relref "docs/fields">}})
 So, we will focus on a couple of key features that have a big impact on the user interface
 
 Let’s start with the simplest Field type, a **text box**. It actually has some of the most powerful options. This can be setup to accept “anything” - and you can choose how much text is “expected” from the user by setting small, medium or large.
@@ -157,7 +157,7 @@ Another setting with the Separator is “has tabs”.
 The last Separator to have this option "ticked" will be the first "block" contained under the first record tab.
 
 **Form layout**
-[For more information on layout options visit ]({{<relref "docs/tables/table-layouts/"}})
+[For more information on layout options visit ]({{<relref "docs/tables/table-layouts">}})
 
 (video coming soon)
 
