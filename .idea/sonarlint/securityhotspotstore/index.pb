@@ -87,3 +87,17 @@ n
 Qcontent/docs/introduction/Learner-progression-levels/citizen-developer-level-1.md,4/2/42a70ef5fa29d0e29c419f880f59793f72ff5f10
 Å
 Qcontent/docs/introduction/Learner-progression-levels/citizen-developer-level-2.md,e/6/e623112003c201ef1201a87f4d2c0abb5f26f31c
+b
+2content/guides/guide1-crm/calculated-datafields.md,d/b/db697e45e7f643cbbc12838453310f1ad804b7d2
+l
+<content/guides/guide1-crm/cross-reference-and-automations.md,4/f/4faafaa2eb5be2bcac6dee046e5cfc13a04ea395
+c
+3content/guides/guide1-crm/adding-relational-data.md,7/8/789c638f2a9877218a3fb953893a1b564ce132cd
+Å
+Qcontent/docs/introduction/Learner-progression-levels/junior-software-architect.md,e/b/ebf7ca1d44f63f5e32bcc0851b10793793620eab
+Y
+)content/docs/workflows/advanced/_index.md,d/3/d31179faf095aeffc70472d331ba0ff0878b5597
+F
+content/docs/_index.md,1/e/1e35bea99591670d1d3e4e112a8fc1e1db9cc14d
+z
+Jcontent/docs/introduction/Learner-progression-levels/software-architect.md,5/5/558b8d41434709b81b91ae9d6e33afd53d1da469
