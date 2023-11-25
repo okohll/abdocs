@@ -27,6 +27,9 @@ The system will look in this view for a template with the name specified above.
 ## Paper size
 When a PDF is generated, base it on this size of paper. The default is A4, changing this can be useful if e.g. you want to use the system to print labels.
 
+## Zoom %
+Setting this to smaller than 100 will make text and other content appear smaller on the page, similarly larger bigger
+
 ## Footer
 Optionally, add a footer to every page of a generated document, including the name of the document, page number and total number of pages.
 

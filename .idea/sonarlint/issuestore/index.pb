@@ -99,3 +99,7 @@ _
 -content/guides/guide3-advanced-usage/tiles.md,2/f/2f3163d16f10f9e6fea3b752acfb34e35f258451
 ]
 -content/guides/guide3-advanced-usage/views.md,5/0/50f178f0bfe314ca1bdcdb1c78d8379bd28b58be
+g
+7content/docs/fields/field-options/file-field-options.md,7/5/75b5a270b247090dbe300820bdcb8bfa6fe6d747
+~
+Ncontent/docs/fields/field-types/special-field-types/file/document-templates.md,f/c/fc03ece72bfd5d8f7f2d7781f2d9f2797f1cce88
