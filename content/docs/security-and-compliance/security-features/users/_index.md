@@ -73,6 +73,13 @@ It's possible for companies to apply their logo and custom login screen to the s
 #### Logout after
 Automatically end the user's session after this many minutes of inactivity. The user themselves can also change this setting.
 
+#### Disable
+Ticking the 'disable' option for a user ensures they won't be able to log in. 
+
+It may be useful to use this instead of removing a user if you may want to re-instate them in the future, for example a regular contractor. All their privileges, tiles etc. will remain in place.
+
+For security, the system will automatically disable users if they haven't logged in for a long period of time. You can then un-tick this to enable them again if necessary.
+
 #### Restrict data access
 Here, you can specify a field name, either an equals or a contains filter and a value. The button _set to user ID_ will set the value to the user's ID.
 
