@@ -29,8 +29,8 @@ To allow this, you will need to use your own SMTP server, or a third party trust
 
 Once you have the SMTP server address, username and password from your service, enter them into the details in this section in Agilebase.
 
-### Slack Webhook URL
-See [Integrations - Slack]({{<relref "/docs/integrations/slack-integration">}})
+### Comments Webhook URL
+See [Integrations - Comments]({{<relref "/docs/integrations/comments-integration">}})
 
 ### Send chart subscriptions from
 Users can opt to have daily, weekly or monthly emails sent to them containing all the charts they've subscribed to for that period. The emails will come from an email address @notifications.agilebase.co.uk by default, this option will allow you to specify your own address.

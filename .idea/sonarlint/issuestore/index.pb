@@ -105,3 +105,7 @@ g
 Ncontent/docs/fields/field-types/special-field-types/file/document-templates.md,f/c/fc03ece72bfd5d8f7f2d7781f2d9f2797f1cce88
 v
 Fcontent/docs/security-and-compliance/security-features/users/_index.md,5/a/5aaad003c21d956d0536ea62faeb738ebabd4589
+_
+/content/docs/advanced-usage/company-settings.md,d/0/d0605586afae323bb802b915c6b10131409a7295
+a
+1content/docs/integrations/comments-integration.md,f/e/fe70c75990bb4a0a32104a678572714ca3521aa7
