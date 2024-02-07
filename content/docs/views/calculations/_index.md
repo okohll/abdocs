@@ -10,7 +10,7 @@ tags:
 ---
 The ability to add calculations to a view opens up a world of possibilities. Within the confines of the SQL language, there's no limit to what you can do, and those confines contain a pretty large space.
 
-This is the only area of Agilebase which requires some 'semi-programming' to use - using snippets of SQL. SQL is a standard, widely popular and easy to learn language and there are lots of resources available on the internet.
+This is the only area of Agilebase which requires some 'semi-programming' to use - using snippets of SQL. However, SQL is a standard, widely popular and the AI is there to help as you get started.
 
 We'll start with some simple examples, then move on to some more advanced ones, but even then we won't cover every capability so will point you to specific further resources and references.
 
@@ -32,6 +32,22 @@ Before doing that, we'll quickly review the main areas of the calculation editin
 The other options available we will cover below.
 
 Now we can get to the fun stuff and think of a calculation.
+
+## Using the AI
+Agilebase's AI will create a calculation for you, using SQL syntax, so if you're unfamiliar with SQL don't worry, that's no barrier.
+
+1. When editing a calculation, enter a description of what you want to achieve in the _description_ box. Reference any fields you want to use by name.
+> For example, type 'VAT (at 20%) for the invoice line amount', if you are in a view of invoice lines and you have a field called 'invoice line amount'.
+2. Press the 'AI: Generate Calculation' button
+3. If the result looks acceptable, press 'Update' to save the calculation
+
+> The AI can only utilise fields available in the view's parent table, plus any joined tables or views. So for example if you are editing a view of invoices and you want to add a calculation for 'total invoice line amounts per invoice', you must join to the invoice lines table first.
+> See [joins]({{<relref "/docs/views/joins">}}) for more information
+
+> Note that the description you provide, along with a list of existing fields in any joined tables will be sent to the third party AI provider.
+> Please check that you are happy with their [privacy policy]({{<relref "/docs/artificial-intelligence#data-privacy">}})
+
+To enter and edit calculations manually, read on.
 
 ## Basic examples
 Firstly, we can of course do maths. So in the calculation definition, you can enter things like

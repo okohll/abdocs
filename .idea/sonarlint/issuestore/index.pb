@@ -121,3 +121,5 @@ U
 %content/the-user-experience/_index.md,0/6/0678d78166cfe4d14cf9a92021fe67fc47c80e1a
 Z
 *content/docs/tables/adding-and-removing.md,d/b/db0ae92a1a8c1088a72ec71ee9477650de6f1da1
+Y
+)content/docs/views/calculations/_index.md,9/8/98ff4c8984f9f8308b3efeb2542eeb5ca3d6dd11

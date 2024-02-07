@@ -18,6 +18,9 @@ Then when fleshing it out, the AI can help with more complex tasks like adding c
 
 However, AI isn't a replacement for your own understanding, more of an aid. It's always a good idea to have some knowledge of the principles of how database systems work and Agilebase in particular - [relational database concepts]({{<relref "/docs/tables/relational-database-concepts">}}) is a good starting point.
 
+## Getting Started
+See [Using AI to add multiple tables]({{<relref "/docs/tables/adding-and-removing#using-ai-to-add-multiple-tables">}}) as the starting point for building a complete system, or extending an existing system with new applications
+
 ## Data Privacy
 
 Whenever you use AI features, which are marked with a 'sparkles' icon and the word AI inside a button, you should be aware that the prompts that you provide, along with other information from the Agilebase system (explained in the documentation for each feature) is sent to a third party AI. 
