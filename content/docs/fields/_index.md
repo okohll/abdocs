@@ -12,13 +12,26 @@ Adding fields to a table creates a form by which people (and other sources such 
 
 There are various types of fields and field options which this section will cover.
 
-## Adding a field
-1. Ensure [development mode]({{<relref "/docs/introduction/development-mode">}}) is toggled on
-2. Select the table to add a field to
-3. Click on the pencil icon above the record, if necessary, to edit the table
-4. From the controls at the top of the list of existing fields:
+## Adding fields automatically using AI
+If you are starting from scratch, Agilebase's AI can propose a set of sensible fields for your table. Each can then be accepted or rejected according to your needs.
+
+That includes adding relation fields to link your table with other existing tables in the system, for example to link a contact to an organisation.
+
+> This feature is only relevant to tables which don't yet have any fields
+
+1. [Edit the table]({{<relref "/docs/tables/adding-and-removing#editing-a-table">}})
+2. Enter or edit a brief description of what the table will be used for
+3. Press the 'AI: Auto Populate' button
+4. When the list is provided, un-tick any you don't want and press 'Accept', or alternatively press 'Reject All' to go back, tweak the description and try again.
+
+> Note: when you use the AI, the description you provide, along with a list of other tables in the system (to allow relation fields to be added) is sent to the third party AI provider.
+> Please check that you are happy with their [privacy policy]({{<relref "/docs/artificial-intelligence#data-privacy">}})
+
+## Adding a field manually
+1. [Edit the table]({{<relref "/docs/tables/adding-and-removing#editing-a-table">}})
+2. From the controls at the top of the list of existing fields:
     - Type in a field name, optional description, choose a type and press the _Add_ button
-6. Optionally, drag and drop the field to a desired location relevant to other fields
+3. Optionally, drag and drop the field to a desired location relevant to other fields
 
 ![Adding a table field](/adding-a-table-field.png)
 

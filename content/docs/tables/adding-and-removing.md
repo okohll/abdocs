@@ -10,11 +10,36 @@ tags:
 ---
 A table is a store of data of a particular type e.g. a company, contact, product or invoice. Tables are the fundamental building blocks of an Agilebase application.
 
-## Adding a table
-1. On the homepage, click the 'toggle' button in the top-right of the screen to enable dev mode (if it is not enabled already)
+## Using AI to add multiple tables
+Providing a short text prompt to the AI will let it suggest a suite of tables which will comprise a complete system.
+
+For example, asking for a 'Gym Membership system' might result in tables for
+* membership types
+* members
+* subscriptions
+* payments
+* classes
+* class registrations
+* trainers
+* trainer schedules
+* equipment
+* equipment usage
+
+Agilebase will create all of these tables for you.
+
+{{< youtube sBYr8Sf6hAI >}}
+
+To start this process:
+1. On the homepage, click the 'toggle' button in the top-right of the screen to enable development mode (if it is not enabled already)
+2. Press _AI: Create System_ at the top, then enter a short (or more detailed) description of what you'd like to create
+
+> Note that the prompt you provide, along with a list of existing tables in your system (so duplicates can be avoided) will be sent to the third party AI provider.
+> Please check that you are happy with their [privacy policy]({{<relref "/docs/artificial-intelligence#data-privacy">}})
+
+## Adding a single table
+1. On the homepage, click the 'toggle' button in the top-right of the screen to enable development mode (if it is not enabled already)
 2. Click _+ Table_, choosing a name for the new table
 
-**TODO: images**
 ![Add Table Button](/add-table-button.png)
 
 You can change the table's name and add a longer description under **Help**. This description will be used as help text in the user interface.
@@ -47,6 +72,11 @@ From either display, you can click a table to edit it. Once open, you can also p
 When build mode is enabled, if you are viewing an individual record then clicking the big pencil at the top left of the screen lets you edit the underlying table.
 
 ![Editing a record](/editing-a-record.png)
+
+## Adding fields
+Once the table is created, you can use the [AI to populate it]({{<relref "/docs/fields#adding-fields-automatically-using-ai">}}) with a set of relevant fields, or [add each field you want individually]({{<relref "/docs/fields#adding-a-field-manually">}}).
+
+The AI will also link your table to other existing tables, where relevant, by adding relation fields.
 
 ## Removing a table
 Before removing a table, you first need to remove all views and [fields]({{<relref "/docs/fields#removing-a-field">}}).
