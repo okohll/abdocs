@@ -31,6 +31,23 @@ When a PDF is generated, base it on this size of paper. The default is A4, chang
 Setting this to smaller than 100 will make text and other content appear smaller on the page, similarly larger bigger
 
 ## Footer
-Optionally, add a footer to every page of a generated document, including the name of the document, page number and total number of pages.
+Optionally, add a footer to every page of a generated document, including e.g. the name of the document, page number and total number of pages.
 
-> The document name is set to be the contents of the first (non-ID) field in the 'view to use' (see above), so you can set it to whatever you like. A calculation can be used if required.
+If you like, you can define a completely custom footer in HTML. Add a `<div>` element to your HTML template with the id 'ab_pdf_footer'.
+The footer element may use only inline CSS styles, classes will be ignored. However, so the footer element *only* appears in the footer, we suggest adding a class to it to hide it in the main document, for example
+
+```css
+.display-none {
+    display: none;
+}
+```
+
+You can use `<span class='pageNumber'></span>` to output the current page number in the template and `<span class='totalPages'></span>` for the total number of pages.
+
+If you don't define a custom footer via a `<div id='ab_pdf_footer'>` element, then the following will be used:
+
+```html
+<div id='ab_pdf_footer' style='font-size: 8pt; width: 100%; text-align: center'>[title] - page <span class='pageNumber'></span> of <span class='totalPages'></span></div>
+```
+
+where `[title]` is the contents of the first (non-ID) field in the ‘view to use’ (see above), so you can set it to whatever you like. A calculation can be used if required.
