@@ -58,4 +58,4 @@ Later on down the route of creating applications, you may wish the user interfac
 
 This can be useful when testing and debugging [APIs]({{<relref "/docs/integrations">}}) for example.
 
-To enable this, add `&set_context=systadmin` to the URL in the browser. To revert to normal mode, replace it with `&set_context=business`.
+To enable this, add `&set_context=sysadmin` to the URL in the browser. To revert to normal mode, replace it with `&set_context=business`.

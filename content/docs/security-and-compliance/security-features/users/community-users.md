@@ -41,9 +41,11 @@ When setting up the role, tick the 'members are community users' tickbox. Then c
 The following restrictions appropriate to users of an outside community are applied.
 
 * a community users role can be set to allow VIEW access to up to 10 tables, plus EDIT privileges on up to 3 additional tables
+<!--
 * for the 3 tables which allow editing, community users can only see and edit records they themselves have created. All records from read-only tables can be seen.
     * for example, a user may have read-only access to a list of companies. Against each company, they can add and edit timesheet records
 * community users only see comments added by themselves or specifically sent to them (comments are commonly used for internal company discussions)
+-->
 * a community user can have up to 6 tiles on their homepage
 * the homepage is fixed for community users, they can't add or remove tiles
 
