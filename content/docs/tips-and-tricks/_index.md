@@ -30,12 +30,13 @@ A new line can be inserted by using the correct escape character so…
 (It may be simple, but I always end up looking this up on Postgres forums so thought it useful for this forum!)
 
 ## SQL to return the full name of the logged in User 
-The inbuilt function abuserid() returns the user’s identity, which is great for setting dropdowns that are filled with users, but not so good when you don’t want their username (e.g. the sign off an email or in Doc gen).
+The inbuilt function ab_userid() returns the user’s identity, which is great for setting dropdowns that are filled with users, but not so good when you don’t want their username (e.g. the sign off an email or in Doc gen).
 
 Try using the following to get just the user’s full name
 ~~~
 left(ab_userid(), position(‘(’ in ab_userid()) -2)
 ~~~
+That will transform e.g. 'Jane Smith (jane@gmail.com)' to 'Jane Smith'.
 
 ## Finding records without any child records 
 A customer came up with an interesting question this morning - how to find records without any connected child records, in this case companies with no opportunities logged.
