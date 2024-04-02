@@ -3,7 +3,7 @@ title: "Tips and Tricks"
 date: 2024-04-02T09:30:00+01:00
 type: docs
 weight: 115
-description: Some interesting solutions for common problems encountered when building solutions in agileBase
+description: Some interesting solutions for common problems encountered when building solutions in Agilebase
 tags:
 - Software Architect
 - v6

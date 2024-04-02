@@ -15,11 +15,7 @@ When developing applications using Agilebase itself, you'll frequently see quest
 ## Further support
 If there's an area you find the documentation doesn't cover sufficiently, please let us know at support@agilechilli.com. We'll try to improve it and answer your question.
 
-We invite all users to join our [community support forum](https://app.element.io/#/room/#agilebase:agilechilli.ems.host). That is a space where customers and partners can share tips or request support. It's a real-time chat facility and we'll reply to any relevant queries.
+We invite all customers to join a Google Chat space, if you'd like to communicate with us via instant messaging. Please let us know if so and we'll set that up.
 
-Note that access to the support forum is by invitation, to join please follow these steps and we'll get you set up.
-1) Create an account at https://app.element.io/
-2) Contact us at support@agilechilli.com to let us know your username and we'll invite you into the forum
-
-As well as support, the forum contains announcements of upcoming features, new releases etc.
+New users may want to follow our guided Learner Progression path. To access that, once logged in, click your user icon at the top right of the screen, then *Learner Progression*
 
