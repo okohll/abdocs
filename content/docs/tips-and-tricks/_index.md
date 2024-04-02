@@ -3,12 +3,12 @@ title: "Tips and Tricks"
 date: 2024-04-02T09:30:00+01:00
 type: docs
 weight: 115
-description: Some interesting solutions for common problems encountered when building solutions in Agilebase
+description: Some interesting solutions for common problems encountered when building apps with Agilebase
 tags:
 - Software Architect
 - v6
 ---
-WInteresting solutions for customers will be described here.
+Interesting solutions for customers will be described here.
 ## Manually Formatting a 2dp decimal as a Duration 
 Numeric fields can be marked as “Use Duration” which will nicely display the field as a time - really useful for event start times etc.
 However, sometimes you need to do the formatting yourself and it can be fiddly.
@@ -20,11 +20,12 @@ Use the following code to help…
     to_char( ( {start time} - trunc ( {start time} ) ) * 60, ‘00’)
     )
 ~~~
+Using that, the number 0.5 would be transformed to '00:30' (half an hour) for example.
 
 ## Adding a carriage return to a calculated string - ‘\n’
 A new line can be inserted by using the correct escape character so…
 ~~~
-some text before || ‘\n’ ||some text after ==
+'some text before' || '\n' || 'some text after'
 ~~~
 (It may be simple, but I always end up looking this up on Postgres forums so thought it useful for this forum!)
 
