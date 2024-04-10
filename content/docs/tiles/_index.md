@@ -10,15 +10,13 @@ tags:
 ---
 A tile on a user's home screen represents an application or module of an application - a collection of data and functionality that forms a coherent whole.
 
-There are five types of tile, each of which present data in a different way.
+There are four types of tile, each of which present data in a different way.
 * Data tile
     - the most common tile type - from the administrator's viewpoint this is a collection of [views]({{<relref "/docs/views">}}). The user can navigate the views, search for data, edit records etc.
 * Image / document library
     - a type of data tile. Views which contain a document field can be displayed in 'card' format to show large document previews, rather than the usual 'rows' format
 * Calendar
     - can display any views in the system containing date/time fields in calendar formats, such as a standard month layout, or gannt-like chart
-* Visualisations
-    - rather than a collection of views, displays a collection of charts
 * Comment stream
     - brings together everyone's [comments]({{<relref "/docs/fields/field-types/special-field-types/comment-feeds">}}) (that a user has privileges to see) from everywhere in the system into one place. The newest comments are shown in the tile on the user's homepage. Clicking on a comment loads the record it's attached to
 
@@ -28,7 +26,7 @@ Data tiles need to be created by an administrator. Once a data tile is created a
 
 ## Creating a tile
 1. Go to the homepage and toggle development mode
-3. Click the '+ TILE' near the top right of the screen
+2. Click the '+ TILE' near the top right of the screen
 
 You should now see an editing screen with the details of the tile you just created.
 ![Tile editing](/tile-details.png)
