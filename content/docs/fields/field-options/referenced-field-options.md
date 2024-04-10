@@ -14,9 +14,10 @@ See [Common build patters - custom filtering when using a relation]({{<relref "/
 ## Prominent
 Make the background of the referenced panel bright red - useful for showing warnings on screen.
 
+If the referenced field is a [workflow button]({{<relref "docs/workflows/advanced/workflow-buttons">}}), then it will become mandatory - it will need to be pressed on every visit to a record, if the field is [visible]({{<relref "docs/fields/field-options/common-options#field-visibility">}})
+
 ## Display of fields
 Controls the display style - what content should be included the output, and also the format of the output: a standard panel, or various tabular styles, often used when there's lots of data.
-
 
 The options are
 * **Content fieldnames** - show the names of fields inside the panel, but not the fieldname of the panel itself (the default)
