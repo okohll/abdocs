@@ -117,6 +117,11 @@ When there is an error, the X-AB-error header will be set and JSON returned repr
 > 
 > If this occurs, there are a number of tactics you can use to shorten individual response times or make less requests - please get in touch if you need help.
 
+### Security
+Note that you won't be able to make calls to Agilebase APIs using Javascript from web browsers. You'll only be able to use server-side technologies to call these 'pull' APIs, or third party tools such as Zapier or Microsoft Power Automate.
+
+The reason is that browsers block access for security reasons. The API typically needs an Authorization key to work, which can be hidden from users if the call is made server-side, but which can't if it's done from the browser. If that was allowed, any user of the website could find the Authorization key and make it public. Please see the [discussion here](https://stackoverflow.com/questions/11470389/how-to-protect-an-api-key-when-using-javascript) for further details. 
+
 ### Generate API descriptions
 For developers who use the Agilebase API to create and update data within Agilebase from a third party product, there’s now a way to further automate the process.
 
