@@ -30,7 +30,7 @@ Here are the basics.
 
 5) Choose when the workflow should be run. Use the option _manually only_ if for example you want the workflow to run on a button press. Alternatively, set the frequency you wish the workflow to attempt to run. This determines how often the system should check whether there are records to process. The check is only done if there's been a relevant change to the state of the system e.g. records edited since the last workflow run. However all workflows with a check frequency are guaranteed to run at least once a day.
 
->Using _24 hours_ plus a filter on a 'd'ay of the week' calculation allows you to run weekly workflows.
+> Using _24 hours_ plus a filter on a 'day of the week' calculation allows you to run weekly workflows.
 
 For 24hr workflows you can optionally set a specific time of day for them to run.
 
