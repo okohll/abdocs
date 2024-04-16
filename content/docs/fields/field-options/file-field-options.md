@@ -37,7 +37,7 @@ If you like, you can define a completely custom footer in HTML. Add a `<div>` el
 The footer element may use only inline CSS styles, classes will be ignored. However, so the footer element *only* appears in the footer, we suggest adding a class to it to hide it in the main document, for example
 
 ```css
-.display-none {
+#ab_pdf_footer {
     display: none;
 }
 ```
