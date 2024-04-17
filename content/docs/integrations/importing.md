@@ -25,6 +25,19 @@ Inserting new records will create a new record in the database for every line in
 
 In either case, the CSV file must contain fields in the same order as they are in the table being imported into. The column titles don’t need to be the same though, it’s the order which is important. The import screen will show you the column order which is necessary.
 
+### Relations
+A relation field is matched to a column in the import CSV file just like any other field. The values that should be in that column should be those of a unique field in the related table.
+
+When doing the import, the system will prompt you to select 
+
+For example, if you have an existing table of organisations and you want to import contacts related to each, your contacts table will have a relation field pointing to the organisations table. In the organisations table, you could make the 'organisation name' field unique. Then in the contacts CSV, include the organisation name (or other unique field) exactly as it appears in the organisation record. Select 'organisation name' for the organisation values when prompted, when doing the import.
+
+Note that the unique field doesn't strictly need to have the 'unique' option ticked to force it to be unique, but it will help prevent import mixups if it is.
+
+Alternatively, if you have no fields that are unique and can't add any, it's possible to specify the internal (usually hidden) unique IDs that Agilebase automatically generates for each record. To find these, do an export from the related table, 'organisations' in the example above. The first column in the exported spreadsheet will be the internal ID. Then when importing contacts, specify one of those IDs in the organisation column, for each row of the data.
+
+> When importing relations, if you use numbers, they will be interpreted as these internal unique values. Therefore you can't use any other numeric, your own unique fields used for import matching must be text.
+
 ## Updating existing records
 When updating records, a key field must be selected to match records up. This can be any field that has the [unique]({{<relref "/docs/fields/field-options/common-options#unique">}}) property set. Alternatively the internal Agilebase rowID can be used. This field is included as the first field in any data export.
 
