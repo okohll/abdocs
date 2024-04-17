@@ -28,9 +28,7 @@ In either case, the CSV file must contain fields in the same order as they are i
 ### Relations
 A relation field is matched to a column in the import CSV file just like any other field. The values that should be in that column should be those of a unique field in the related table.
 
-When doing the import, the system will prompt you to select 
-
-For example, if you have an existing table of organisations and you want to import contacts related to each, your contacts table will have a relation field pointing to the organisations table. In the organisations table, you could make the 'organisation name' field unique. Then in the contacts CSV, include the organisation name (or other unique field) exactly as it appears in the organisation record. Select 'organisation name' for the organisation values when prompted, when doing the import.
+For example, if you have an existing table of organisations and you want to import contacts related to each, your contacts table will have a relation field pointing to the organisations table. In the organisations table, you could make the 'organisation name' field unique. Then in the contacts CSV, include the organisation name (or other unique field) exactly as it appears in the organisation record. Select 'organisation name' for the organisation values when prompted during the import.
 
 Note that the unique field doesn't strictly need to have the 'unique' option ticked to force it to be unique, but it will help prevent import mixups if it is.
 
