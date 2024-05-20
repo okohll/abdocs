@@ -34,7 +34,7 @@ Note that the unique field doesn't strictly need to have the 'unique' option tic
 
 Alternatively, if you have no fields that are unique and can't add any, it's possible to specify the internal (usually hidden) unique IDs that Agilebase automatically generates for each record. To find these, do an export from the related table, 'organisations' in the example above. The first column in the exported spreadsheet will be the internal ID. Then when importing contacts, specify one of those IDs in the organisation column, for each row of the data.
 
-> When importing relations, if you use numbers, they will be interpreted as these internal unique values. Therefore you can't use any other numeric, your own unique fields used for import matching must be text.
+> When importing relations, if you use numbers, they will be interpreted as these internal unique values. Therefore you can't use any other numeric values, your own unique fields used for import matching must be text.
 
 ## Updating existing records
 When updating records, a key field must be selected to match records up. This can be any field that has the [unique]({{<relref "/docs/fields/field-options/common-options#unique">}}) property set. Alternatively the internal Agilebase rowID can be used. This field is included as the first field in any data export.

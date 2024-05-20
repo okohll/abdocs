@@ -36,7 +36,7 @@ The recommended way to set passwords is for the user to choose their own, which 
 
 As an administrator, you can also manually reset someone's password by clicking 'change password' in their user details screen.
 
-> We recommend the adoption of a password wallet service like [1Password](https://1password.com/), [LastPass](https://lastpass.com) or built-in browser features to generate and store passwords. That lets passwords become much more secure and harder to guess whilst not requiring users to remember them.
+> We strongly recommend the adoption of a password wallet service like [1Password](https://1password.com/), [Bitwarden](https://bitwarden.com) or built-in browser features to generate and store passwords. That lets passwords become much more secure and harder to guess whilst not requiring users to remember them.
 >
 
 #### Notes about password security
