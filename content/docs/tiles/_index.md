@@ -33,13 +33,18 @@ You should now see an editing screen with the details of the tile you just creat
 
 The available options are
 * Name - the tile name
-* Section - optional. If you have a large number of tiles, you can organise them into sections. This is an aid for administrators only, it doesn't affect end users
+* Section - optional. If you have a large number of tiles, you can organise them into sections - see below.
 * Index - affects the order of tiles on screen, lower numbered tiles appear before higher
 * Purpose - can be used as help content to tell users about this tile
 * Colour - the colour will be automatically chosen to avoid as much colour duplication as possible, however you can manually change the colour if you like, e.g. to organise similarly themed or related tiles together visually
 * Icon - a tile icon can be chosen from the icon panel
 
-> A multitude of icons are available, from [Font Awesome](https://fontawesome.com). They are constantly adding more so if you see one that's available on their website that's not in our set yet then just let us know.
+### Sections
+If you give a tile a Section name, a section heading will be displayed above that tile, forming a block of tiles. You don't need to set the section name for every tile, the section will last until you fill in a different section name for a following tile.
+
+Here's what sections look like on screen - if there are four or more, a navigation menu appears to the left of the tiles.
+
+![Sections](/tile-sections.png)
 
 ## Adding views to a data tile
 Data tiles need to contain one or more views to be useful. If you have no tables or views yet, you may want to check out the [Quick Start Guides]({{<relref "guides">}}), or see [Views]({{<relref "/docs/views">}}) for full details on view creation.
