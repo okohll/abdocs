@@ -27,15 +27,19 @@ You may wish to instead use email addresses from your own domain name, especiall
 
 To allow this, you will need to use your own SMTP server, or a third party trusted system authenticated against your domain name. Using a service like [AuthSmtp](http://www.authsmtp.com/), [SendGrid](http://www.sendgrid.com/) or [Amazon Simple Email Service](https://aws.amazon.com/ses/) is probably the most straightforward way of setting this up - their instructions will tell you how to set up facilities such as Sender Policy Framework and DomainKeys in order to increase email deliverability.
 
-Once you have the SMTP server address, username and password from your service, enter them into the details in this section in Agilebase.
+Once you have the SMTP server address, username and password from your service, enter them into the details in this section.
+
+### Default From: Address
+This is the email address that email messages (workflows and chasers as above) come from, unless overridden in the individual notification or chaser view settings.
+
+You should set it to be an address from your own domain name.
+
+It's also the address that [chart subscription emails] get sent from.
+
+If the SMTP server details above aren't filled in, this has no effect, emails will come from *anaddress*@.notifications.agilebase.co.uk
 
 ### Comments Webhook URL
 See [Integrations - Comments]({{<relref "/docs/integrations/comments-integration">}})
-
-### Send chart subscriptions from
-Users can opt to have daily, weekly or monthly emails sent to them containing all the charts they've subscribed to for that period. The emails will come from an email address @notifications.agilebase.co.uk by default, this option will allow you to specify your own address.
-
-If used, then the SMTP details above also need to be completed.
 
 ### Export message
 As you will know, your organisation is required to protect personal data, as per the GDPR. One thing to watch out for is what happens to data that is exported to spreadsheet?

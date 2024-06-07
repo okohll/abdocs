@@ -8,7 +8,7 @@ tags:
 - Junior Software Architect
 ---
 
-Agilebase can be used to send emails. This facility should **NOT** be used for marketing purposes, rather as a method to notify people about data associated to the system.
+Agilebase can be used to send emails. This facility should **NOT** be used for marketing purposes, rather as a method to notify people about data associated to the system. For marketing emails, there are more appropriate specifically designed third party apps.
 
 > Note: When setting up an email alert, the system needs to know the email address of the recipient. Sometimes this may be very simple, when you always want to send the alert to the same person. For some alerts though you may wish to change who gets it depending on the data, e.g. each salesperson may get the leads assigned to them. In this case, the system will need to know the email address, so it needs to be stored somewhere. For Agilebase users, if they use their email address as their username, the system can pick this up when a user’s assigned to a record, either manually or as part of the automatic ‘created by’ and ‘modified by’ fields
 
