@@ -58,6 +58,9 @@ The above saves one new record and updates one existing record, both in the same
 
 Remember also to set the 'Authorization' HTTP header if that option has been selected.
 
+> A current limitation is that all records to save provided by the JSON array must be in the same table, the one the Authorization header value is for.
+> However that may change in future, if we add the facility to use a single Authorization value for multiple tables.
+
 ## Alternative mechanism: individual actions
 
 As an alternative to providing a JSON object containing the data to save, you can instead save a single record by making a form POST, where the data for each field is identified by a parameter, the name of which is the internal ID of that field (read on for details).
