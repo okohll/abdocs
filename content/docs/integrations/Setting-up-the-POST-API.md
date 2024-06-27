@@ -13,15 +13,60 @@ Firstly, identify the table into which you wish to receive incoming data. Edit t
 
 To protect the system from spam input, we also suggest you tick 'Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.
 
-Optionally, you can add an email address to notify when a new item is added and an autoresponse text which will be sent to any email addresses found in the posted data.
-
 ![Configuring the POST API](/incoming-data-api-new.png)
 
-## Creating new records
+## Posting data
 
-Clicking the ‘sample form’ link will then show a sample form which can be used for testing or to copy code from. 
+Firstly, identify the Agilebase account by including a 'c' parameter in the URL, i.e.
 
-If you want to submit data directly from an app rather than a web form, simply prepare a HTTP POST request that mimics the form. Again, use the source code of the form as a reference. Note the form contains three hidden fields that need to be included. They are listed at the start of the sample form, for reference they are:
+https://cloud.agilebase.co.uk/Agilebase/Public.ab?save_records=true&c=[mycompanyidentifier]
+
+The _API_ panel will provide that URL for you.
+
+As the body of the post, provide a JSON object containing an array of records to save or update, "data".
+
+Each object in the array must have parameters
+
+* **t**: the ID of the table to save into
+* **action**: either 'save_new_record' or 'update_record'
+* **rowid**: only required if the action is update_record, to identify the record to update
+
+Then the actual data to save should be the other parameters in the object. Either internal field IDs or 'user facing' field names can be supplied. Field IDs are preferable if possible as they can't change.
+
+An example JSON object is as follows:
+
+```JSON
+{ "data": [
+    {
+      "t": "testtable_ou4b",
+      "action": "save_new_record",
+      "textfield_juzo7j": "Gamma",
+      "dateandtimefield_kt5kto": "25/12/2050 16:00", 
+      "decimalnumber_jvfyz3": 25,
+      "tickbox_jugw7x": true
+    },
+    {
+      "t": "testtable_ou4b",
+      "action": "update_record",
+      "rowid": 10,
+      "textfield_juzo7j": "Beta"
+  }
+]}
+```
+
+The above saves one new record and updates one existing record, both in the same table.
+
+Remember also to set the 'Authorization' HTTP header if that option has been selected.
+
+## Alternative mechanism: individual actions
+
+As an alternative to providing a JSON object containing the data to save, you can instead save a single record by making a form POST, where the data for each field is identified by a parameter, the name of which is the internal ID of that field (read on for details).
+
+This mechanism must be used if you need to upload files as part of the data - you can submit the form as multipart form data.
+
+### Saving a single new record
+
+Three parameters need to be included in addition to the data to save. They are
 
 * _save_new_record = true_
 * _c = [internalcompanyid]_
@@ -29,13 +74,13 @@ If you want to submit data directly from an app rather than a web form, simply p
 
 The post URL is
 
-https://appserver.gtportalbase.com/Agilebase/Public.ab
+https://cloud.agilebase.co.uk/Agilebase/Public.ab
 
 The form needs to be posted using the method POST.
 
 Remember also to set the 'Authorization' HTTP header if that option has been selected.
 
-### Specifying the data to save
+#### Specifying the data to save
 To specify the contents of each field to be saved, just add an 
 * _[internalfieldname] = value_
 
@@ -56,21 +101,21 @@ With the option on, internal field names and friendly field names can be mixed a
 
 > The API can be tested using a tool such as [Postman](https://www.postman.com).
 
-## Updating existing records
+### Updating existing records individually
 The process is similar, but instead of _save_new_record=true_, supply 
 * _update_record=true_
 * _row_id=[internal id of the record]_
 
 The internal record ID can be got from a JSON feed or by using the _return=posted_json_ as above if editing a record previously created using the API.
 
-## Uploading files
+### Uploading files
 As well as 'standard' data, Agilebase can accept documents posted into a [file field]({{<relref "/docs/fields/field-types/special-field-types/file">}}). This can be done in two ways:
 
 1) Make sure the form is posted with encoding type [multipart/form-data](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST). Then simply post the contents of the file with the form parameter specifying the internal name of the file field.
 2) Post the form normally (not as multipart/form-data), and provide a URL value for the file field. That URL will be downloaded by Agilebase and the contents saved as a file.
 > Method 2 is [Zapier](https://www.zapier.com)-compatible.
 
-## Response
+### Response
 
 The response to the successful request will be a JSON representation of the complete record created or updated, after the update has taken place. An object of key-value pairs is returned, the key being the internal field name.
 
@@ -86,7 +131,7 @@ If there is an error, an appropriate HTTP response code is returned (see below) 
 }
 ```
 
-### HTTP response codes
+## HTTP response codes
 * 200: success
 * 401: unauthorised: the API key is missing or invalid
 * 404: not found: an object identified in the request was not found e.g. no match was found for a table ID specified with the 't' parameter
