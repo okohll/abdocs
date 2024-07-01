@@ -41,6 +41,39 @@ Use the same calculation in views you want to join to and join on it.
 
 This is much better than the 'naive' idea of creating separate joins to each table, which won’t work.
 
+## Creating chooser views which exclude already chosen items
+
+This is a hard one to explain in abstract, but an example might help.
+
+Say you have a many to many relationship, represented with three tables
+
+1) Courses
+2) Trainers
+3) Course Trainers
+
+The last table is a 'junction table', i.e. one which contains a relation field to courses, and another to trainers, allowing you to link trainers to courses in a many-to-many fashion. One course can have many trainers, but also trainers can train on a number of different courses each.
+
+When editing a trainer, you want to be able to add a list of courses they teach. That can be done by creating records in the Course Trainers table, e.g. if Trainers has a [tab]({{<relref "/docs/tables/hierarchy-navigation/tabs">"}}) for Course Trainers.
+
+However, you don't want to be able to select the same course twice for a trainer (or the same trainer more than once for a course). The way you do that is to create a view for choosing a course which excludes already chosen courses (then similar for choosing a trainer).
+
+To do that
+1) Create a new view from the Courses table, to use as a chooser for a course. Let's call it 'all possible course trainers' (we'll see why in a mo.)
+2) Add a [cross join]({{<relref ""/docs/views/joins/types-of-join#cross-join">}}) from courses to trainers. 
+We now have a view of all possible combinations of course and trainer
+3) Give each combination a unique ID by adding a text calculation `{courses.id:courses} || '_' || {trainers.id:trainers}`
+4) Now we want to exclude the existing courses for each trainer, i.e. the existing combinations: Firstly create a new view from the Course Trainers table, 'existing course trainers'
+5) To that view, join to both courses and trainers, then add the same calculation `{courses.id:courses} || '_' || {trainers.id:trainers}`
+6) From the first 'all possible course trainers' view, join on the calculation to the calculation in the second 'existing course trainers' view
+7) Add a filter to 'all possible course trainers' - ensure the ID from the existing course trainers 'is blank', i.e. meaning the combination Course Trainers ID doesn't exist in the list of existing course trainers.
+8) We now have our list of all possible course trainer combinations, **excluding** those which already exist in the data. Now just use this by making it the 'view to use' in the field options for the Course relation field in the Course Trainers table
+
+There are two key concepts that make this work:
+1) The concept of cross joining, to give all possible values
+2) The concept of filtering to subtract the existing 'real' values
+
+Together these can be useful in many other similar situations, for where you have events assigned to dates, but wish to show a list of all dates, whether they have events or not.
+
 ## Including multiple aggregates from different sources
 Joining from one table down to multiple child tables in order to perform aggregates will not work - you'll experience double counting.
 

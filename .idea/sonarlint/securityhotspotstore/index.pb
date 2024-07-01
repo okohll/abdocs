@@ -137,3 +137,5 @@ T
 $content/docs/workflows/send-email.md,7/d/7d2e3a2066f1ab2d029cca5651d41f8f430f3c23
 Z
 *content/docs/charting/built-in-charting.md,b/f/bff49f85ed18782fca2dce9ed6d29ab625208e40
+Y
+)content/docs/views/joins/types-of-join.md,1/8/18277a473fda810b82f3386c599a5a32bd6b13ad

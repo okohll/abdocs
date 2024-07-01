@@ -65,7 +65,7 @@ Remember also to set the 'Authorization' HTTP header if that option has been sel
 
 As an alternative to providing a JSON object containing the data to save, you can instead save a single record by making a form POST, where the data for each field is identified by a parameter, the name of which is the internal ID of that field (read on for details).
 
-This mechanism must be used if you need to upload files as part of the data - you can submit the form as multipart form data.
+This mechanism can be used if you need to upload files as part of the data - you can submit the form as multipart form data.
 
 ### Saving a single new record
 
