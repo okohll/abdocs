@@ -53,13 +53,13 @@ Say you have a many to many relationship, represented with three tables
 
 The last table is a 'junction table', i.e. one which contains a relation field to courses, and another to trainers, allowing you to link trainers to courses in a many-to-many fashion. One course can have many trainers, but also trainers can train on a number of different courses each.
 
-When editing a trainer, you want to be able to add a list of courses they teach. That can be done by creating records in the Course Trainers table, e.g. if Trainers has a [tab]({{<relref "/docs/tables/hierarchy-navigation/tabs">"}}) for Course Trainers.
+When editing a trainer, you want to be able to add a list of courses they teach. That can be done by creating records in the Course Trainers table, e.g. if Trainers has a [tab]({{<relref "/docs/tables/hierarchy-navigation/tabs">}}) for Course Trainers.
 
 However, you don't want to be able to select the same course twice for a trainer (or the same trainer more than once for a course). The way you do that is to create a view for choosing a course which excludes already chosen courses (then similar for choosing a trainer).
 
 To do that
 1) Create a new view from the Courses table, to use as a chooser for a course. Let's call it 'all possible course trainers' (we'll see why in a mo.)
-2) Add a [cross join]({{<relref ""/docs/views/joins/types-of-join#cross-join">}}) from courses to trainers. 
+2) Add a [cross join]({{<relref "/docs/views/joins/types-of-join#cross-join">}}) from courses to trainers. 
 We now have a view of all possible combinations of course and trainer
 3) Give each combination a unique ID by adding a text calculation `{courses.id:courses} || '_' || {trainers.id:trainers}`
 4) Now we want to exclude the existing courses for each trainer, i.e. the existing combinations: Firstly create a new view from the Course Trainers table, 'existing course trainers'
