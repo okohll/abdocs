@@ -63,8 +63,8 @@ anchor = "smart"
 # Everything below this are Site Params
 
 [params]
-copyright = "agileBase Ltd"
-privacy_policy = "https://agilechilli.com/help-centre/agilebase/privacy-policy/"
+copyright = "Agilebase Ltd"
+privacy_policy = "https://agilebase.co.uk/privacy-policy/"
 
 # First one is picked as the Twitter card image if not set on page.
 # images = ["images/project-illustration.png"]
