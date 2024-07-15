@@ -139,3 +139,5 @@ Z
 *content/docs/charting/built-in-charting.md,b/f/bff49f85ed18782fca2dce9ed6d29ab625208e40
 Y
 )content/docs/views/joins/types-of-join.md,1/8/18277a473fda810b82f3386c599a5a32bd6b13ad
+d
+4content/docs/integrations/Setting-up-the-PUSH-API.md,d/b/db4c2e295b4a23d5ea6694603981207f5205c821

@@ -15,6 +15,12 @@ To protect the system from spam input, we also suggest you tick 'Require API key
 
 ![Configuring the POST API](/incoming-data-api-new.png)
 
+## OpenAPI (Swagger) description
+
+You can see a Swagger description of the API by calling 
+
+https://cloud.agilebase.co.uk/Agilebase/Public.ab?describe_table=true&c=[mycompanyidentifier]&t=[mytableidentifier]
+
 ## Posting data
 
 Firstly, identify the Agilebase account by including a 'c' parameter in the URL, i.e.
