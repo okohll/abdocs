@@ -11,9 +11,8 @@ tags:
 
 1) Firstly, create a view which contains the data you wish to send
 2) In the 'Use API' panel, enter a URL into the _Push URL_ field. This is the URL that Agilebase will POST to when there’s new data.
-3) In the table that the API view was created from, add a new date/time field, accurate to the second, for the system to record when the API push was last used
-4) Go back to the view and the 'Use API' panel and select the field you just created for the 'Log Time Of Push To' field.
-The system will now make a POST to the URL specified in step 2 whenever there’s new data to send. It will contain one parameter, ‘json’, which is a JSON representation of all the data in the view.
+3) In the dropdown under that, _Log time of push to_, create a new date field (or choose an existing one). The API will update this field in a record when that record is included in a push to the external system
+The system will now make a POST to the URL specified in step 2 whenever there’s new data to send. It will contain a JSON representation of all the data in the view.
 
 ![Configuring the PUSH API](/workflow-push-new.png)
 
@@ -103,7 +102,21 @@ where ‘last pushed’ is the name of the timestamp field you added in step 3 a
 Then add a filter on the view ‘needs pushing equals true’.
 
 ### Pushing any new rows that have never been pushed before
-For this scenario, simply add a filter to the view ‘last pushed is empty’.
+The view will actually default to this. It will automatically add a filter on the date field you select in step 3 at the top of this page, so only rows with nothing set for that date will be included.
+
+If you want to cancel this and always send all rows, or a custom selection, just remove this filter and add any specific filters you like.
 
 ### Pushing only rows not yet marked as received
 In some cases, you may want to be even more prudent than using the internal timestamp. The third party system could make a separate API call to Agilebase for every row that’s received, telling it to update the row with an ID to prove receipt. That’s more API calls of course, but some situations may warrant it.
+
+## OpenAPI (Swagger) description
+
+You can see an OpenAPI description of the API in the _Use API_ panel when editing the view. The 'View / download OpenAPI definition of this API' link will let you access it.
+
+Alternatively, if you don't have a login for Agilebase, you can call a public URL
+
+https://cloud.agilebase.co.uk/Agilebase/Public.ab?describe_table=true&c=[mycompanyidentifier]&t=[mytableidentifier]&r=[myviewidentifier]
+
+whilst also providing the required Authorization header.
+
+

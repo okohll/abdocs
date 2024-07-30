@@ -40,7 +40,7 @@ Here’s a complete example of making a request, using PHP in WordPress
 
 [php]
 ```
-$url = 'http://appserver.gtportalbase.com/Agilebase/Public.ab?get_report_json=true&simple_format=true&t=mytablecode&r=myreportcode&c=mycompanycode&json_format=json';
+$url = 'http://appserver.gtportalbase.com/Agilebase/Public.ab?get_report_json=true&simple_format=true&t=mytablecode&r=myreportcode&c=mycompanycode';
 
 $args = array('headers' => array( 'Authorization' => 'myauthorisationkey'));
 
@@ -81,12 +81,14 @@ Here are the options that can be provided as parameters to the request, along wi
 This option controls the JSON format returned. With simple_format=true, the response will be a simple array of objects, each containing keys for the field names as above. Keys are basically lowercase field names with spaces replaced by underscores, so “Email address” would become “email_address”
 With simple_format=false, a more complex but more robust format it used. Rather than field names, internal Agilebase field identifiers are used as keys. This has the advantage that if the field names are changed (easy for an Agilebase administrator to do), the JSON will remain the same. The first object in the JSON will be a dictionary mapping internal identifier to field name.
 
+<!-- deprecated: jsonp not used any more for security reasons - CORS has replaced
 #### json_format=json
 With this option, just the JSON will be returned. This is the usual case required. Without it, complete Javascript will be returned defining the JSON as an object, i.e. `var abJson=[…]` which can be useful if you want to run the result as Javascript.
-
+-->
+<!-- Mistaken option
 #### return=posted_json
 Optional, if this is included, the return content will be JSON including the ID of the record as well as the full content of the data.
-
+-->
 #### unencode_html=true
 Causes characters which would normally be encoded as HTML entities (e.g. `&` -> `&amp;`) to be returned unencoded
 
@@ -94,7 +96,7 @@ Causes characters which would normally be encoded as HTML entities (e.g. `&` -> 
 If true, filters (see below) will be need to match results exactly instead of using the default 'contains' filtering
 
 #### row_limit=[row limit]
-The default limit on the number of records to return is 10,000. Add this parameter to change this. Note the hard maximum allowed is 100,000.
+The default limit on the number of records to return is 10,000. Add this parameter to change it. Note the hard maximum allowed is 100,000.
 
 ### Filtering
 
@@ -125,16 +127,19 @@ The reason is that browsers block access for security reasons. The API typically
 ### Generate API descriptions
 For developers who use the Agilebase API to create and update data within Agilebase from a third party product, there’s now a way to further automate the process.
 
-Agilebase will now generate a [swagger.io](https://swagger.io/) compatible API description of any table you want to post to. That means if you deal with accounts for many Agilebase customers, you can with a common query get the API details needed to interact with them.
+Agilebase will now generate a [OpenAPI](https://www.openapis.org/) compatible API description of the view. 
 
-Just make a POST request to
+When editing the view, in the _Use API_ panel, go to _OpenAPI Definition_ and you'll be able to download it.
+
+Alternatively, for anyone without an Agilebase login, make a GET request to
 
 /Agilebase/Public.ab with parameters
 
 * c = the company identifier (the table options screen will show this)
 * t = the table identifier (similarly shown by the options screen)
-* describe_table = true
+* r = the view identifier
+* describe_report = true
 
 and the ‘Authorization’ header set to the API key (if the table requires one).
 
-This also makes testing with [Postman](https://www.postman.com/) easier, since Postman can import a Swagger API description – so you don’t have to write a single line of code to test out an API.
+This also makes testing with [Postman](https://www.postman.com/) easier, since Postman can import a OpenAPI API description. You don’t have to write a single line of code to test out an API.

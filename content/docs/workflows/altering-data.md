@@ -14,8 +14,10 @@ The following Workflows alter data within the system
 3) Lock record - This will apply a record level lock on the item.
 4) Delete record - This will totally remove the record.
 
-
+## Specifying field values to save
 When creating or editing a record, the fields in the view will populate the new or existing record. Any fields in the view with the same name as a field in the table will populate that field with its data. The view field can be a calculation as well as a standard field.
+
+Fields which will be saved, i.e. those which match a calculation or field in the view will be marked in white at the top of the workflow panel.
 
 ### Relation fields
 

@@ -17,9 +17,13 @@ To protect the system from spam input, we also suggest you tick 'Require API key
 
 ## OpenAPI (Swagger) description
 
-You can see a Swagger description of the API by calling 
+You can see an OpenAPI description of the API in the _Use API_ panel when editing the table. The 'View / download OpenAPI definition of this API' link will let you access it.
+
+Alternatively, if you don't have a login for Agilebase, you can call use a public URL
 
 https://cloud.agilebase.co.uk/Agilebase/Public.ab?describe_table=true&c=[mycompanyidentifier]&t=[mytableidentifier]
+
+whilst also providing the required Authorization header.
 
 ## Posting data
 
