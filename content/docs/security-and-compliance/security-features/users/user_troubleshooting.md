@@ -14,7 +14,7 @@ you may be called on to help people who have forgotten their password, or are ha
 Here are a few things you can do and check to help them get back in.
 
 ## Precursor
-Firstly, if anyone reports login issues, make absolutely sure that it is really them requesting help. There are unfortunately an increasing number of ways that malicious people try to gain access to systems, so have a process to check.
+Firstly, if anyone reports login issues, make absolutely sure that it is really them requesting help. There are unfortunately an increasing number of ways that malicious people try to gain access to systems, so have a process to check.*
 
 ## Initial Checks
 ### Username and password checks
@@ -50,3 +50,5 @@ The user will be asked to set up 2FA again the next time they log in.
 > We strongly recommend the adoption of a password wallet service like [1Password](https://1password.com/), [Bitwarden](https://bitwarden.com) or built-in browser features to generate and store passwords. That lets passwords become much more secure and harder to guess whilst not requiring users to remember them.
 
 Some of those apps can also store 2FA codes making the login process more convenient and protecting against losing 2FA devices.
+
+* https://hachyderm.io/@Unixbigot@aus.social/112877895284998578
