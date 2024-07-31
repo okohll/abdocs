@@ -17,3 +17,5 @@ Costing is controlled by five factors
 * Optional API charges - when integrating with third party software
 
 Each element has a sliding scale - the larger the number of units, the lower the per-unit cost, to allow large scale use while remaining affordable.
+
+Please see https://agilebase.co.uk/pricing/ and contact us for further details.

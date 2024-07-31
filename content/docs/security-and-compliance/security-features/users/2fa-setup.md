@@ -2,7 +2,7 @@
 title: "2FA setup"
 date: 2020-04-24T16:40:00+01:00
 type: docs
-weight: 10
+weight: 11
 description: Setting up two factor authentication - a guide for all users
 tags:
 - Core User
