@@ -14,7 +14,7 @@ you may be called on to help people who have forgotten their password, or are ha
 Here are a few things you can do and check to help them get back in.
 
 ## Precursor
-Firstly, if anyone reports login issues, make absolutely sure that it is really them requesting help. There are unfortunately an increasing number of ways that malicious people try to gain access to systems, so have a process to check.*
+Firstly, if anyone reports login issues, make absolutely sure that it is really them requesting help. There are unfortunately an increasing number of ways that malicious people try to gain access to systems*, so have a process to check.
 
 ## Initial Checks
 ### Username and password checks
