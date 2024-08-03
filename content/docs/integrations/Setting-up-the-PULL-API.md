@@ -23,7 +23,7 @@ The remainder of this article explains how to PULL the data.
 
 The most important piece of information is the URL that the third party will access your data via. This will be:
 
-https://appserver.gtportalbase.com/Agilebase/Public.ab
+https://cloud.agilebase.co.uk/Agilebase/Public.ab
 
 If you host on your own cloud or on premises, this may be different.
 
@@ -36,11 +36,11 @@ Three parameters for the view also need to be submitted as parameters to the req
 
 Finally, the API key provided needs to be submitted not as a HTTP request parameter, but as a header named ‘Authorization’. This is to reduce the change of it being cached or used in a browser string where it can be easily retained and read by unauthorised users.
 
+### PHP
 Here’s a complete example of making a request, using PHP in WordPress
 
-[php]
-```
-$url = 'http://appserver.gtportalbase.com/Agilebase/Public.ab?get_report_json=true&simple_format=true&t=mytablecode&r=myreportcode&c=mycompanycode';
+```php
+$url = 'http://cloud.agilebase.co.uk/Agilebase/Public.ab?get_report_json=true&simple_format=true&t=mytablecode&r=myreportcode&c=mycompanycode';
 
 $args = array('headers' => array( 'Authorization' => 'myauthorisationkey'));
 
@@ -48,30 +48,57 @@ $response = wp_remote_get( $url, $args );
 
 var_dump($response);
 ```
-[/php]
 
 Sample output would look like
-```
+```json
 [
   {
-    forename: "Oliver",
-    surname: "Kohll",
-    email_address: "oliver@agilebase.co.uk"
+    "forename": "Oliver",
+    "surname": "Kohll",
+    "email_address": "oliver@agilebase.co.uk"
   },
   {
-    forename: "Simon",
-    surname: "Minton",
-    email_address: "simon@agilebase.co.uk"
+    "forename": "Simon",
+    "surname": "Minton",
+    "email_address": "simon@agilebase.co.uk"
   },
   {
-    forename: "Cliff",
-    surname: "Calcutt",
-    email_address: "cliff@agilebase.co.uk"
+    "forename": "Cliff",
+    "surname": "Calcutt",
+    "email_address": "cliff@agilebase.co.uk"
   }
 ]
 ```
 
 - of course the fields being those returned for the particular view chosen.
+
+### A Python example
+```python
+import requests
+# API endpoint
+url = <request_url>
+# Headers, including the authorization header
+headers = {
+    "Authorization": "Bearer API_KEY"
+}
+# Making the GET request
+response = requests.get(url, headers=headers)
+# Check if the request was successful
+if response.status_code == 200:
+    # Parsing the JSON response
+    data = response.json()
+    # Printing the JSON output
+    print(data)
+else:
+    print(f"Failed to retrieve data: {response.status_code}")
+```
+
+### Command line
+Or just a simple one-liner:
+
+```bash
+curl -H "Authorization: Bearer API_KEY" "http://cloud.agilebase.co.uk/Agilebase/Public.ab?get_report_json=true&t=mytablecode&r=myreportcode&c=mycompanycode"
+```
 
 ### Request options
 
