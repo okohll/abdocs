@@ -69,8 +69,7 @@ Sample output would look like
   }
 ]
 ```
-
-- of course the fields being those returned for the particular view chosen.
+of course the fields being those returned for the particular view chosen.
 
 ### A Python example
 ```python
