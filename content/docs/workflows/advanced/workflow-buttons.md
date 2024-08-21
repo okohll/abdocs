@@ -16,7 +16,7 @@ In these instances it can be useful to assign the Workflow to run behind a Butto
 ## Workflow Buttons on a Form
 To add the Workflow button to a Table's form simply create a new field of type [Referenced Data]({{<relref "/docs/workflows/advanced/workflow-buttons">}}) with the workflow as the source.
 When the Workflow is run, it will be filtered by the ID of the record. (You may wish read up about [Chaining Workflows]({{<relref "/docs/workflows/advanced/chaining-workflows">}}) )
-It is often necessary to put some thought in to the visibility of the button - it can be confusing to the user that a button is present when it does nothing due to filters they cann not know about.
+It is often necessary to put some thought in to the visibility of the button - it can be confusing to the user that a button is present when it does nothing due to filters they cannot know about.
 
 
 ## Workflow Buttons on Views

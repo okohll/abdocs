@@ -16,7 +16,7 @@ If not, never mind, the takeaway is it allows an administrator to set up workflo
 
 More generally, any calculation with a repetitive step that depends on the results of the previous repetition is recursive. For example, solving sudokus or to some extent crosswords. In fact, we have a sudoku solver as one of our demos.
 
-## Worked example – an ingredients declaration
+## Worked example - an ingredients declaration
 Here’s an example that may be a useful pattern for reference. We have a recipe with quantities of each ingredient. However, an ingredient may itself also be a recipe containing other ingredients. We wish to calculate an ‘ingredients declaration’ which has a list of all ‘raw ingredients’ at the end of the chain i.e. those with no recipe and their percentages in the initial recipe.
 
 This can (and has) been done with a some linked workflows including a couple of recursive steps. Here’s the logic (not including technical implementation details).
