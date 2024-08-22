@@ -56,8 +56,10 @@ Firstly, we can of course do maths. So in the calculation definition, you can en
 * `10 / 2`
 * `5 ^ 3` (five to the power 3)
 
+> For those of you who may have used SQL before, remember you don't need to start the calculation with `SELECT`, you're not writing a whole statement, just a snippet of SQL to form a calculation
+
 ## Referencing fields
-Calculations normally need to act on existing data. We can included references to other fields, including other calculations, in the view by writing out the field name surrounded by curly brackets.
+Calculations normally need to act on existing data. We can include references to other fields, including other calculations, in the view by writing out the field name surrounded by curly brackets.
 
 Some examples might be
 * `{net price} * 0.2` (calculate VAT amount)
