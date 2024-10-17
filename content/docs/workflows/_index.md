@@ -27,9 +27,23 @@ Here are the basics.
 4) If creating or editing a record, the fields in the view will populate the new or existing record. Any fields in the view with the same name as a field in the table will populate that field with its data. The view field can be a calculation as well as a standard field.
 5) Choose when the workflow should be run. Use the option _manually only_ if for example you want the workflow to run on a button press. Alternatively, set the frequency you wish the workflow to attempt to run. This determines how often the system should check whether there are records to process. The check is only done if there's been a relevant change to the state of the system e.g. records edited since the last workflow run. However all workflows with a check frequency are guaranteed to run at least once a day.
 
-> Using _24 hours_ plus a filter on a 'day of the week' calculation allows you to run weekly workflows.
+## Scheduling
+The _Frequency_ option sets when the workflow runs.
 
-For 24hr workflows you can optionally set a specific time of day for them to run.
+* Manually Only
+  * This can be used if you want the workflow to run on a button press by users for example. See [workflow buttons]({{<relref "advanced/workflow-buttons">}})
+* Every 24 hours
+  * The workflow is guaranteed to run once a day at the time you specify (accurate to a minute or two, there may be slight tweaks depending on how many other workflows are scheduled to run at the same time).
+    > Note 1: the workflow may actually run more than once a day in some cases, e.g. if a server reboots for upgrade purposes. Please bear this in mind in the design of your workflows. You may want to add a filter on the field used to record the time of last action, to prevent duplicate runs within e.g. 12 hours. 
+
+    > Note 2: the scheduling is done once a day around 8am. So if at 10am, you set a workflow to run in the afternoon, the first run won't be until the next day
+
+    > Note 3: Using _24 hours_ plus a filter on a 'day of the week' calculation allows you to run weekly workflows, similar for monthly etc.
+
+* Other times: every 5 mins, 10 mins, 20 mins etc.
+  * These are scheduled to run whenever someone edits data that could effect the workflow view.
+
+    For example, if a 10-minute workflow view has a filter on it that filters for only records where a 'status' field is 'completed', then it will be scheduled to run in 10 minutes time whenever someone changes a status. All pending records will be processed at that time.
 
 ## Workflow options
 Some of these options will be relevant only for certain types of workflow, or in certain cases.

@@ -10,7 +10,9 @@ tags:
 ---
 The primary purpose of roles is to apply privileges to groups of users, rather than applying them individually. That makes managing large numbers of users easier and also more secure as it's easy to see which privileges each type of user has and which they don't.
 
-Roles have some other important uses, such as multi-tenanting, described below.
+If you're not sure how to use roles, a good starting point might be to align them with the job roles in your organisation, or departments. 
+
+Roles also have some other important uses, such as multi-tenanting, described below.
 
 ## Creating a role
 1. Go to the homepage and toggle development mode on
