@@ -14,7 +14,7 @@ The API mechanisms described in this section (push, pull etc.) don't require a l
 
 To do that, the third party app must act exactly as if it were a web browser allowing the user to log in. In other words it must follow this process:
 
-1) Visit https://appserver.gtportalbase.com/Agilebase/AppController.servlet?return=user_details
+1) Visit https://cloud.agilebase.co.uk/agileBase/AppController.servlet?return=user_details
 2) The page will return a login form and a cookie JSESSIONID
 3) Post the form i.e. submit values j_username and j_password, along with the cookie
 4) If the username and password are correct, a JSON object will be returned in the response, containing the user's details. If not, an error page will be returned

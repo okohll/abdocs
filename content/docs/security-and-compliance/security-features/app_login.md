@@ -21,7 +21,7 @@ In this example, we'll use the [React](https://reactjs.org/) [Native Web View](h
 ## General Principle
 The application must reproduce the same login process as a human would, using a HTTP client. Importantly, the HTTP client must support cookies, as the login process depends on them, in particular setting a `JSESSIONID` cookie.
 
-1. Make a request to load the page https://appserver.gtportalbase.com/Agilebase/AppController.servlet?return=user_details. This will return the login page and set the cookie value.
+1. Make a request to load the page https://cloud.agilebase.co.uk/agileBase/AppController.servlet?return=user_details. This will return the login page and set the cookie value.
 2. Submit the login form using the user's username and password. If using a programattic process i.e. making the calls from code rather than using a web view, this means making a form POST to `/Agilebase/j_security_check` with the parameters `j_username` and `j_password`
 3. Detect whether the login's successful. If not, the standard Agilebase login failure page will be returned
 4. If successful, a HTML page will be returned containing three hidden input fields, `username`, `forename`, `surname` containing relevant details for the logged in user. If being called from a React Native Web View, the page will also post back messages to React using this JavaScript:
@@ -101,7 +101,7 @@ const LoginScreen = (props) => {
             <StatusBar backgroundColor={Colors.black} barStyle={'dark-content'}/>
             {(netInfo?.isInternetReachable && !user_data?.surname) ?
                 <WebView
-                    source={{uri: 'https://appserver.gtportalbase.com/Agilebase/AppController.servlet?return=user_details'}}
+                    source={{uri: 'https://cloud.agilebase.co.uk/agileBase/AppController.servlet?return=user_details'}}
                     onMessage={onResponseFromWebView}
                     textZoom={100}
                     sharedCookiesEnabled={true}
