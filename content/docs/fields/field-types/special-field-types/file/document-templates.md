@@ -10,7 +10,7 @@ tags:
 ---
 Document templates in Agilebase are typically used to create output that needs to be printed or emailed, for example form letters and especially anything that needs to be branded. They can be used for some quite complex and large documents, for example one customer uses them to create branded multi-page reports that are sold to customers, complete with custom fonts, layouts, images and colours.
 
-The same templating system is used for both generating documents (which can be done automatically with a [workflow]({{<relref "/docs/workflows/send-document-generator">}}) or manually) and displaying output to be printed.
+The same templating system is used for both generating documents (which can be done automatically with a [workflow]({{<relref "/docs/workflows/send-document-generator">}}) or [manually]({{<relref "/docs/fields/field-options/file-field-options#template">}})) and displaying output to be printed.
 
 Each template is attached to a view and given a name.
 
@@ -50,10 +50,14 @@ Here's an example of a template being updated in the WYSYWIG editor:
 
 ![Template editing](/template-editor.png)
 
-### Using templates
-Templates can be used when generating documents, [manually]({{<relref "/docs/fields/field-options/file-field-options#template">}}) or using an [automated workflow]({{<relref "/docs/workflows/send-document-generator">}}).
+### Embedding images
+If you have an image file in your view, you can reference it by adding _path to the variable name.
 
-They can also be used as printout templates to let users print data from the system formatted as you wish.
+For example, if you have a file with field name "Company Logo", you could embed the image in a template with the code
+
+```html
+<img src="$company_logo_path" />
+```
 
 ## Advanced templating
 ### Convenience features
