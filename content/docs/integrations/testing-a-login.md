@@ -42,6 +42,14 @@ Either way, you should now have a user identifier for an authenticated person.
 
 You will then receive only records which are 'owned' by the user provided.
 
+> **To avoid the possibility of one person's username being a subset of another, it's recommended when filtering that you pass in the exact string as output by the Agilebase view.**
+> 
+> In the case of the Created By [Auto] and Modified By [Auto] fields, that will be the format `Forename Surname (username)`. If you want just the username, you can extract it with a calculation.
+> 
+> Then use exact filtering in the API, e.g. by prepending the filter value with an equals sign
+
+Otherwise, you may find for example that filtering for 'alice' returns data for users 'alice.smith', 'alice@example.com' and 'louise_alice_jones'.
+
 ## Resources / Examples
 
 These are examples for approach 1 above.
