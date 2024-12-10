@@ -29,13 +29,18 @@ Many platforms now allow you to perform authentication with Google, Apple, Faceb
 
 You should receive a user identifier for the valid login, such as their email address.
 
-Ensure the usernames in Agilebase match the identifiers returned, then you can
+Ensure the usernames in Agilebase match the identifiers returned.
+
+> Note: if you can't ensure that usernames in both systems match, you can create a lookup table in Agilebase, to map one to the other, then join to that in your API views.
+
+## Returning the correct data for the user
+
+Either way, you should now have a user identifier for an authenticated person.
+
 1) Include the Created By [Auto] or Modified By [Auto] fields (or a custom 'owner' field of some sort) in any API view you want to call
 2) In the API call, include the user ID supplied as a filter
 
 You will then receive only records which are 'owned' by the user provided.
-
-> Note: if you can't ensure that usernames in both systems match, you can create a lookup table in Agilebase, to map one to the other, then join to that in your API views.
 
 ## Resources / Examples
 
