@@ -30,10 +30,12 @@ When a PDF is generated, base it on this size of paper. The default is A4, chang
 ## Zoom %
 Setting this to smaller than 100 will make text and other content appear smaller on the page, similarly larger bigger
 
-## Footer
+## Footer style
 Optionally, add a footer to every page of a generated document, including e.g. the name of the document, page number and total number of pages.
 
-If you like, you can define a completely custom footer in HTML. Add a `<div>` element to your HTML template with the id 'ab_pdf_footer'.
+Set to either `footer` or `no footer`.
+
+With footer set, you can define a completely custom footer in HTML if you like. Add a `<div>` element to your HTML template with the id 'ab_pdf_footer'.
 The footer element may use only inline CSS styles, classes will be ignored. However, so the footer element *only* appears in the footer, we suggest adding a class to it to hide it in the main document, for example
 
 ```css

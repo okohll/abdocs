@@ -12,14 +12,34 @@ Sometimes when developing an app that integrates with Agilebase, you may want to
 
 The API mechanisms described in this section (push, pull etc.) don't require a login to use, they work only via the API keys as described, however your app may still wish to test a users login to ensure they are a valid user.
 
-To do that, the third party app must act exactly as if it were a web browser allowing the user to log in. In other words it must follow this process:
+There are two approaches you can take to this. Which you select will probably depend on the capabilities of the third party language or platform - which it is able to do most easily.
+
+### 1) Perform an actual log in
+
+To do this, the third party app must act exactly as if it were a web browser allowing the user to log in. In other words it must follow this process:
 
 1) Visit https://cloud.agilebase.co.uk/agileBase/AppController.servlet?return=user_details
 2) The page will return a login form and a cookie JSESSIONID
 3) Post the form i.e. submit values j_username and j_password, along with the cookie
 4) If the username and password are correct, a JSON object will be returned in the response, containing the user's details. If not, an error page will be returned
 
+### 2) Use social login and match on the email address
+
+Many platforms now allow you to perform authentication with Google, Apple, Facebook etc. They redirect you to those company's login facilities, then once authentication is complete, back again.
+
+You should receive a user identifier for the valid login, such as their email address.
+
+Ensure the usernames in Agilebase match the identifiers returned, then you can
+1) Include the Created By [Auto] or Modified By [Auto] fields (or a custom 'owner' field of some sort) in any API view you want to call
+2) In the API call, include the user ID supplied as a filter
+
+You will then receive only records which are 'owned' by the user provided.
+
+> Note: if you can't ensure that usernames in both systems match, you can create a lookup table in Agilebase, to map one to the other, then join to that in your API views.
+
 ## Resources / Examples
+
+These are examples for approach 1 above.
 
 ### Java
 See section **Form Login with Cookies** of https://www.tutorialspoint.com/apache_httpclient/apache_httpclient_form_based_login.htm

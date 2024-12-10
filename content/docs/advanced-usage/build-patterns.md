@@ -134,6 +134,8 @@ However it won’t filter on anything that’s more than one direct relationship
 2. From the main table, create a new view. In that view, create a calculation with the same name and contents.
 3. Add that a cross-reference field into the main table, utilising that view. In the field options, tick [use as filter]({{<relref "https://docs.agilebase.co.uk/docs/fields/field-options/referenced-field-options#use-as-a-filter-for-relations">}})
 
+In that way, you can set the chooser to only show options relevant to the situation at hand.
+
 ## Switching a field from one type to another
 For example, converting a whole number field into a decimal number
 1. Rename the field to '{fieldname} old'

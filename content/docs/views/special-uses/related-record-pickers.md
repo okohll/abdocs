@@ -12,4 +12,4 @@ When a [relation field]({{<relref "/docs/fields/field-types/basic-field-types#re
 
 That way, a subset of records can be shown relevant to the situation. For example, imagine there is a table of company records, which store customers and suppliers. When selecting a customer for a new invoice record, the user should be able to select only from companies which are customers, so a filtered view can be used.
 
-See the [view to use]({{<relref "/docs/fields/field-options/relation-field-options#view-to-use">}}) relation field option.
+See the [view to use]({{<relref "/docs/fields/field-options/relation-field-options#view-to-use">}}) relation field option for more details, including how to filter the set of records further, perhaps with contextual data like field values from the record the chooser is in.
