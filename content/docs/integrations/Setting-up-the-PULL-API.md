@@ -126,7 +126,13 @@ The default limit on the number of records to return is 10,000. Add this paramet
 
 ### Filtering
 
-By specifying exact_filters=true, filters can be supplied to search for a particular record or set of records. For HTTP parameter names, just use the internal Agilebase field identifiers. The easiest way of finding these is to right click on a field in the administrator interface using a browser like Chrome, Safari or Firefox and select ‘inspect element’.
+To filter on a particular field, add a HTTP parameter for it, with the value the filter you want.
+
+For parameter names, just use the internal Agilebase field identifiers. These can be seen in the API panel when editing a view, or the field properties when editing an individual field.
+
+Alternatively you can use the 'simple' version of the field name, which is the name in lowercase with all 'special' characters removed and spaces replaced by underscores. This might be easier to look at, however has the disadvantage that user-facing names may change over time whereas internal field IDs will remain constant.
+
+By specifying exact_filters=true, an exact match rather than a 'contains' match will be used for text field filters supplied. Using this, your filter can also contain symbols such as '>' or words like ' OR ' which would otherwise change the behaviour of the filter.
 
 Standard Agilebase quick filters can be used for preparing complex criteria on multiple fields, for example in each field using “?” to find blank records, > and < for numbers and date ranges, phrases like “last month” for dates, “=[word]” for exact matches, “:word” for starts with, and “!word” for doesn’t contain.
 
