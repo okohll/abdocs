@@ -54,5 +54,10 @@ Columns for [separator]({{<relref "/docs/fields/field-types/special-field-types/
 
 Data can be imported into [comment fields]({{<relref "/docs/fields/field-types/special-field-types/comment-feeds">}}) as per any other field.
 
+## Importing special characters
+CSV files should be saved with the **UTF-8** character encoding. There may be an option to select the encoding when exporting to CSV.
+
+This is important if any of the text includes accented characters i.e. diacritics, e.g. é, â etc., or indeed any other special characters, otherwise you may find they don't appear correctly after import.
+
 
 
