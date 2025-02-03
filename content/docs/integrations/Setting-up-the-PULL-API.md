@@ -101,7 +101,8 @@ curl -H "Authorization: Bearer API_KEY" "http://cloud.agilebase.co.uk/agileBase/
 Here are the options that can be provided as parameters to the request
 
 #### simple_format=true/false (default false)
-This option controls the JSON format returned. With simple_format=true, the response will be a simple array of objects, each containing keys for the field names as above. Keys are basically lowercase field names with spaces replaced by underscores, so “Email address” would become “email_address”
+This option controls the JSON format returned. With simple_format=true, the response will be a simple array of objects, each containing keys for the field names as above. Keys are basically lowercase field names with spaces replaced by underscores, so “Email address” would become “email_address”.
+
 With simple_format=false, a more complex but more robust format it used. Rather than field names, internal Agilebase field identifiers are used as keys. This has the advantage that if the field names are changed (easy for an Agilebase administrator to do), the JSON will remain the same. The first object in the JSON will be a dictionary mapping internal identifier to field name.
 
 > We recommend that simple_format=false is specified in most cases, as it ensures APIs will remain reliable over the long term.
