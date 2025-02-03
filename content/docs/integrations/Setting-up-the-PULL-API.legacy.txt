@@ -23,23 +23,26 @@ The remainder of this article explains how to PULL the data.
 
 The most important piece of information is the URL that the third party will access your data via. This will be:
 
-https://cloud.agilebase.co.uk/agileBase/api.ab/[mycompanyname]/[myviewid]
+https://cloud.agilebase.co.uk/Agilebase/Public.ab
 
 If you host on your own cloud or on premises, this may be different.
 
-Requests can contain a number of parameters to control filtering or the format of the returned JSON
+Requests can contain a number of parameters, the one which must be supplied to use the JSON API is _get_report_json=true_. 
+Other parameters to control various options are detailed below.
 
-HTTP requests should be submitted as GET.
+HTTP requests can be submitted as GET or POST.
 
-Finally, the API key provided needs to be submitted not as a HTTP request parameter, but as a header named ‘Authorization’. This is to reduce the change of it being cached or used in a browser string where it can be easily retained and read by unauthorised users. We use the Bearer authentication standard, where the value supplied is the word Bearer followed by a space then the authorisation key, but we also accept just a plain authorisation key.
+Three parameters for the view also need to be submitted as parameters to the request. These are ‘c’, ‘t’ and ‘r’, the values are displayed in the administrator interface (see screenshot above). Together, these identify the view from which to extract data.
+
+Finally, the API key provided needs to be submitted not as a HTTP request parameter, but as a header named ‘Authorization’. This is to reduce the change of it being cached or used in a browser string where it can be easily retained and read by unauthorised users.
 
 ### PHP
 Here’s a complete example of making a request, using PHP in WordPress
 
 ```php
-$url = 'http://cloud.agilebase.co.uk/agileBase/mycompanyname/myviewid';
+$url = 'http://cloud.agilebase.co.uk/Agilebase/Public.ab?get_report_json=true&simple_format=true&t=mytablecode&r=myreportcode&c=mycompanycode';
 
-$args = array('headers' => array( 'Authorization' => 'Bearer myauthorisationkey'));
+$args = array('headers' => array( 'Authorization' => 'myauthorisationkey'));
 
 $response = wp_remote_get( $url, $args );
 
@@ -93,19 +96,25 @@ else:
 Or just a simple one-liner:
 
 ```bash
-curl -H "Authorization: Bearer API_KEY" "http://cloud.agilebase.co.uk/agileBase/mycompanyname/mycompanyid"
+curl -H "Authorization: Bearer API_KEY" "http://cloud.agilebase.co.uk/Agilebase/Public.ab?get_report_json=true&t=mytablecode&r=myreportcode&c=mycompanycode"
 ```
 
 ### Request options
 
-Here are the options that can be provided as parameters to the request
+Here are the options that can be provided as parameters to the request, along with the c, t and r identifiers and in addition to get_report_json=true.
 
 #### simple_format=true/false (default false)
 This option controls the JSON format returned. With simple_format=true, the response will be a simple array of objects, each containing keys for the field names as above. Keys are basically lowercase field names with spaces replaced by underscores, so “Email address” would become “email_address”
 With simple_format=false, a more complex but more robust format it used. Rather than field names, internal Agilebase field identifiers are used as keys. This has the advantage that if the field names are changed (easy for an Agilebase administrator to do), the JSON will remain the same. The first object in the JSON will be a dictionary mapping internal identifier to field name.
 
-> We recommend that simple_format=false is specified in most cases, as it ensures APIs will remain reliable over the long term.
-
+<!-- deprecated: jsonp not used any more for security reasons - CORS has replaced
+#### json_format=json
+With this option, just the JSON will be returned. This is the usual case required. Without it, complete Javascript will be returned defining the JSON as an object, i.e. `var abJson=[…]` which can be useful if you want to run the result as Javascript.
+-->
+<!-- Mistaken option
+#### return=posted_json
+Optional, if this is included, the return content will be JSON including the ID of the record as well as the full content of the data.
+-->
 #### unencode_html=true
 Causes characters which would normally be encoded as HTML entities (e.g. `&` -> `&amp;`) to be returned unencoded
 
