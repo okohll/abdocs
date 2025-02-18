@@ -21,6 +21,8 @@ An AI workflow uses SQL calculations as well, but to create a *prompt* to send t
 
 The examples below should clarify how that works.
 
+## Creating an AI workflow
+
 There are two types of AI workflows, those which create new records or those which update existing ones.
 
 In either case, follow the same steps as normal to start i.e.
@@ -31,7 +33,7 @@ In either case, follow the same steps as normal to start i.e.
 
 Following that, the next steps depend on the type of workflow.
 
-## Updating existing records
+### Updating existing records
 
 To update a field with AI, create a calculation with the same name as that field. With the calculation open, tick 'use as AI prompt'.
 
@@ -45,7 +47,7 @@ for example.
 
 Then when the workflow runs, the generated prompt will be sent to the AI. Any response it returns will be saved to the target field, i.e. the one with the same name as the calculation.
 
-## Adding new records
+### Adding new records
 
 Setting up an AI workflow to create new records is a two step process. Firstly, add a calculation to generate the prompt for the AI. The calculation can be called anything, e.g. 'AI prompt'. It could be for example
 
