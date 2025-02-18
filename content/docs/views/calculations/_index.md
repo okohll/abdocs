@@ -101,6 +101,11 @@ The rule not to mix aggregate parts and non-aggregate parts, as above, still hol
 
 > Just be aware that if you update one of the composite parts, you then need to update any calculations that depend on it. The system won't automatically update them to reference the new version. This is due to the way the database works under the hood - it doesn't natively support referencing one calculation from another, so we add that layer in Agilebase functionality.
 
+### Comments
+You may find it helpful to add comments to complex calculations to explain to others (or your later self) how it works:
+
+https://www.postgresql.org/docs/17/sql-syntax-lexical.html#SQL-SYNTAX-COMMENTS
+
 ### Troubleshooting errors
 If there is an error in a view, it's more than likely the culprit is a calculation, as they are one of the more complex facilities of Agilebase and the only one where SQL can be entered by the user, as opposed to be automatically generated. You may see messages like **view broken** or errors when you try to change a view e.g. move a field.
 
