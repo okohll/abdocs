@@ -92,7 +92,7 @@ To solve this,
 ## Outputting a ‘pivoted’ view in a printout
 In a template, `$view.htmlTable(“table name”, “view name”)` outputs the contents of the view.
 
-Use `$view.htmlTableTransverse(“table name”, “view name”)` instead for a pivoted version with columns and rows swapped.
+Use `$view.htmlTableTransposed(“table name”, “view name”)` instead for a pivoted version with columns and rows swapped.
 
 ## Capturing dates of status changes on lookup list
 Show a date field only when the dropdown reaches the desired status, using [field options]({{<relref "/docs/fields/field-options/common-options#show-if-record-in-view">}}). Use a [referenced data field]({{<relref "/docs/fields/field-options/common-options#set-from-previous-referenced-field">}}) to populate it with the current time.

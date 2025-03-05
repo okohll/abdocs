@@ -13,7 +13,9 @@ AI workflows are exactly the same in that regard: a view is created which select
 
 The only difference is that a standard workflow to update or create records will use SQL calculations to define the contents of the field values to be saved. For example, if a workflow creates an invoice record, it might define a calculation to save to a *VAT amount* field as
 
-```{net amount} * 0.2```
+```sql
+{net amount} * 0.2
+```
 
 Calculations can of course output text, numbers or any other supported data type.
 
