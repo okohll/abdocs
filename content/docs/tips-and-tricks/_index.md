@@ -14,11 +14,12 @@ Numeric fields can be marked as “Use Duration” which will nicely display the
 However, sometimes you need to do the formatting yourself and it can be fiddly.
 Use the following code to help…
 ~~~
-    to_char( trunc ( {start time} ), ‘00’ )
-    || ‘:’ ||
-    trim(
-    to_char( ( {start time} - trunc ( {start time} ) ) * 60, ‘00’)
-    )
+    to_char(
+    (
+      to_timestamp(1.5 * 3600.0) AT TIME ZONE 'UTC'
+    ),
+    'HH24:MI'
+  )
 ~~~
 Using that, the number 0.5 would be transformed to '00:30' (half an hour) for example.
 
