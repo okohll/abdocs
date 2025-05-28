@@ -128,6 +128,8 @@ By specifying exact_filters=true, an exact match rather than a 'contains' match 
 
 Standard Agilebase quick filters can be used for preparing complex criteria on multiple fields, for example in each field using “?” to find blank records, > and < for numbers and date ranges, phrases like “last month” for dates, “=[word]” for exact matches, “:word” for starts with, and “!word” for doesn’t contain.
 
+For dates, many common formats can be used, for example ISO format dates like "2020-01-01", "7 May 2027", or even computer epochs, i.e. the number of seconds since 1st Jan 1970 (sometimes used in data transfers).
+
 ### Response codes
 
 * 200: request successful
