@@ -131,6 +131,7 @@ Standard Agilebase quick filters can be used for preparing complex criteria on m
 ### Response codes
 
 * 200: request successful
+* 400: this can occur if a required parameter for the request isn't present, or if parameter values aren't URL encoded in a GET request
 * 401: unauthorised: the API key is missing or incorrect
 * 404: not found: an object identifier (company ID, table ID or report ID) was supplied that wasn’t found in the system
 * 429: too many requests: the frequency of requests is too high, please throttle them back
