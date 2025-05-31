@@ -71,6 +71,29 @@ Remember also to set the 'Authorization' HTTP header if that option has been sel
 > A current limitation is that all records to save provided by the JSON array must be in the same table, the one the Authorization header value is for.
 > However that may change in future, if we add the facility to use a single Authorization value for multiple tables.
 
+### Response
+
+If successful, the response will be a JSON array, with one object for each passed in as data to save.
+
+Each object will contain the row ID of the updated, or newly created record. The row ID can be used to retrieve the full record e.g. using the [pull API]({{<relref "Setting-up-the-PULL-API">}})
+
+For the above request, the response could be
+
+```JSON
+{ "results": [
+    {
+      "table": "testtable_ou4b",
+      "action": "SAVE_NEW_RECORD",
+      "rowId": 198657
+    },
+    {
+    "table": "testtable_ou4b",
+    "action": "UPDATE_RECORD",
+    "rowId": 10
+    }
+]}
+```
+
 ## Alternative mechanism: individual actions
 
 As an alternative to providing a JSON object containing the data to save, you can instead save a single record by making a form POST, where the data for each field is identified by a parameter, the name of which is the internal ID of that field (read on for details).
