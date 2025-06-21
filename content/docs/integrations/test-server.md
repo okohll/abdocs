@@ -30,14 +30,8 @@ then you will most likely benefit from requesting a test server setup.
 The test server will be an exact copy of your live system. The application structure (table, views etc.) will be the same as will the data itself in the database. All users and roles will also be the same, so people can log in using their existing username and passwords to test changes.
 
 ### The test process
-1) Transfer a snapshot from live - this will update your test system to be an exact copy of the live system as of approx. 7am in the morning
-    * Log in to the web interface for your test server at www.linode.com
-    * Click your test server name, then the 'Launch LISH Console' button at the top right
-    * Enter your username, then password at the prompts
-    * Type `sudo ./reload.sh` and enter your password again
-    * The system will now update from the latest snapshot.
-    * Type 'logout' and press Enter
-    * Please wait around 5 minutes then you'll be able to log in to it
+1) Transfer a snapshot from your live system.
+    * We use a Github Action to do this - please contact us for a URL to use. Just log in to that address and run the workflow to do copy the database
 2) Make and test any changes on the test server
 3) View a summary list of changes you've made
     * Use the [enhanced audit trail]({{<relref "/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting#enhanced-audit-trail">}}) to see changes like field addition/removals or view alterations
@@ -47,8 +41,6 @@ The test server will be an exact copy of your live system. The application struc
     * Internal IDs for tables, fields and views are deterministic. That means if you create them with the same names in the same order on the live system, they will get the same internal IDs. Therefore APIs using them won't need changing
     * API Authorization keys however will be different, so will need updating in any system that calls a new API
     
-> By default, a new snapshot will be made available every 24hrs, at around 7am. However, if you wish, you can ask us to set up a different timing or frequency of snapshots, just let us know.
-
 ## Testing Agilebase platform updates
 
 As well as testing your own changes, the test server comes with the added benefit that you can access pre-release versions of new versions of the Agilebase platform itself.
