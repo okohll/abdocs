@@ -46,7 +46,7 @@ If it's a popular view, i.e. there are people looking at it all the time, then d
 If records from a table are taking significant time to open, then a breakdown of what is causing the slowdown will be displayed on screen in the list of fields as you're editing the table.
 Orange bars will show how much each field is contributing to the slowness, cumulatively (to reach 100% at the bottom of the list).
 
-In this example, you can see that the field **Project Phase** is the main contributor. Since it has a visibility view (denoted by the eye symbol), that is probably the cause. You can drill into the detials by clicking on the view.
+In this example, you can see that the field **Project Phase** is the main contributor. Since it has a visibility view (denoted by the eye symbol), that is probably the cause. You can drill into the details by clicking on the field.
 
 ![table slowdown contributors](/table_speed.png)
 
@@ -68,7 +68,7 @@ There's a bit of a trade-off with practicality here sometimes. You may have a vi
 However for particularly problematic views you may want to consider it.
 
 ### Query plan selection
-"
+
 Agilebase will automatically compare different plans and suggest the best one, but that can change over time. To verify it yourself, use the [query plan]({{<relref "/docs/views/options/behaviour-options#query-plan">}}) option.
 
 ### Caching
