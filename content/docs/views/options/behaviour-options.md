@@ -73,7 +73,7 @@ The advantage of caching the lower level *invoice totals* view rather than the t
 
 #### The cache is updated too often
 Sometimes views may need to be always up to date when viewing them and also update so often that the cache would need to be refreshed almost every time the view was looked at.
-In that case, there's no benefit to caching and to speed it up, you'd need to look at [other methods]({{<relref "/docs/advanced-usage/performance-optimisation" />}}).
+In that case, there's no benefit to caching and to speed it up, you'd need to look at [other methods]({{<relref "/docs/advanced-usage/performance-optimisation">}}).
 
 #### The system can't detect when a cache update is necessary.
 In some cases, the system might not be able to properly detect every time the cache needs to be updated. To explain this, we'll need to look at how the caching works:
