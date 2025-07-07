@@ -50,7 +50,7 @@ In this example, you can see that the field **Project Phase** is the main contri
 
 ![table slowdown contributors](/table_speed.png)
 
-Note that if a table has the [Run this workflow whenever each record is viewed]({{<relref "/tables/workflow/run-this-workflow-whenever-each-record-is-viewed>}}) option, the speed of the workflow view(s) used can also contribute to loading time.
+Note that if a table has the [Run this workflow whenever each record is viewed]({{<relref "/tables/workflow/run-this-workflow-whenever-each-record-is-viewed">}}) option, the speed of the workflow view(s) used can also contribute to loading time.
 
 ## Speeding things up
 There are a number of ways that view performance can be optimised.
