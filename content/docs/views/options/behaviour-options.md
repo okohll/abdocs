@@ -40,22 +40,59 @@ If you have two views with fields of the same type in the same order, then you c
 This is done using an [SQL UNION](https://www.sqltutorial.org/sql-union/) clause.
 
 ## Cache view rows
-Caching can speed up views. It doesn't need to be used often as the underlying database PostgreSQL is great at dealing with large data problems, but when it is necessary it can significantly speed up access, allowing faster loading and searching. Caching works well when
+Caching can speed up views. It works well when
 * a view is complex and slow to load
 * it doesn't contain a massive number of rows - in this case the issue is likely to be the raw volume of data, rather than the complexity of calculations
 
-If both those criteria are met, then turning on caching can significantly speed a view up, allowing faster loading and searching. There are three options
+If both those criteria are met, then turning on caching can significantly speed a view up, allowing faster loading and searching. The options are
 * no caching (the default)
-* cache view, update on record save
+* cache view, update when data changes
     - this means when a view is opened or searched, if there have been changes to data in any tables used by the view since it was last opened, then the cache will be updated
-* cache view, update once a day
+* update every 10 minutes or hourly
+* update once a day
     - useful for views that don't need to be updated often, e.g. monthly reporting figures
 
-> If a view is cached and other views reference it, those other views will also speed up too.
+It's best to choose the longest time you can get away with as the cache will need to be refreshed less frequently, reducing the load on the server and speeding things up the most.
+However sometimes you may need data to be absolutely up to date, in which case the 'update when data changes' option is necessary.
+
+### Speeding up *other* views
+
+If a view is cached and other views reference (are joined to) it, those other views will also speed up too.
+
+For example, say you have a top level view 'monthly invoicing', which shows the total invoice amount per customer per month.
+
+To allow it to work, it joins to another view 'invoice amuounts', which per invoice, adds up all the invoice line values.
+
+Now, absent of any caching, the *monthly invoicing* view would need to do all the work of *invoice amounts* every time it was viewed, as well as its own work of totaling per month per customer.
+
+If the view *invoice totals* were cached, *monthly invoicing* be able to just 'look up' the total of each invoice from the cache, potentially speeding things up significantly.
+
+The advantage of caching the lower level *invoice totals* view rather than the top level view is that it's not unlikely that *invoice totals* is referenced by other views as well - so you get more bang from your buck by caching it, you potentially speed up lots of views in one go.
+
+### Things to watch out for
+
+#### The cache is updated too often
+Sometimes views may need to be always up to date when viewing them and also update so often that the cache would need to be refreshed almost every time the view was looked at.
+In that case, there's no benefit to caching and to speed it up, you'd need to look at [other methods]({{<relref "/docs/advanced-usage/performance-optimisation" />}}).
+
+#### The system can't detect when a cache update is necessary.
+In some cases, the system might not be able to properly detect every time the cache needs to be updated. To explain this, we'll need to look at how the caching works:
+
+Every time someone edits (adds, updates or deletes) a record in Agilebase, it performs a check to see which views might be affected.
+Not every view may be - for example if the change is to a field which doesn't appear in a view and which isn't used in a filter, then it can be guaranteed not to affect it.
+If any of those views are cached, a cache refresh is triggered, either for some specific time in the future, or when the view is next read (depending on the caching option selected).
+
+However, not all changes to a view might be detectable. For example, if a view has a filter on 'creation time is older than 10 minutes ago', then the contents of the view will change 10 minutes after the creation time of the oldest record in it, whether or not any actual data in the database changes.
+
+To help mitigate that, such views are detected and *any* change to data in joined tables will trigger a refresh, regardless of whether the change could affect the view. However that still doesn't help if there aren't any data changes at all.
+
+For views like that, a warning is shown on screen when you enable caching. It doesn't mean that you can't cache it necessarily, just that you should be aware of the risk that it might not *always* be updated in a timely manner.
+
+> Note: 24 hour workflows are excluded from this concern, they're always guaranteed to run once a day
+
+### Technical details
 
 Caching is implemented using [materialized views](https://en.wikipedia.org/wiki/Materialized_view).
-
-> If you find a view is slow, feel free to [contact us](https://agilechilli.com/contact-us/) for support before trying options like caching, there are many other targeted options we can look at first, such as adding indexes.
 
 ## Query Plan
 
