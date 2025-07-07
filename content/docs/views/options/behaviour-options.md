@@ -53,7 +53,7 @@ If both those criteria are met, then turning on caching can significantly speed 
     - useful for views that don't need to be updated often, e.g. monthly reporting figures
 
 It's best to choose the longest time you can get away with as the cache will need to be refreshed less frequently, reducing the load on the server and speeding things up the most.
-However sometimes you may need data to be absolutely up to date, in which case the 'update when data changes' option is necessary.
+However sometimes you may need data to be absolutely up to date, in which case 'update when data changes' is the only option.
 
 ### Speeding up *other* views
 
@@ -61,13 +61,13 @@ If a view is cached and other views reference (are joined to) it, those other vi
 
 For example, say you have a top level view 'monthly invoicing', which shows the total invoice amount per customer per month.
 
-To allow it to work, it joins to another view 'invoice amuounts', which per invoice, adds up all the invoice line values.
+To allow it to work, it joins to another view 'invoice amounts', which per invoice, adds up all the invoice line values.
 
 Now, absent of any caching, the *monthly invoicing* view would need to do all the work of *invoice amounts* every time it was viewed, as well as its own work of totaling per month per customer.
 
 If the view *invoice totals* were cached, *monthly invoicing* be able to just 'look up' the total of each invoice from the cache, potentially speeding things up significantly.
 
-The advantage of caching the lower level *invoice totals* view rather than the top level view is that it's not unlikely that *invoice totals* is referenced by other views as well - so you get more bang from your buck by caching it, you potentially speed up lots of views in one go.
+An advantage of caching the lower level *invoice totals* view rather than the top level view is that it's not unlikely that *invoice totals* is referenced by other views as well - so you get more bang from your buck by caching it, you potentially speed up lots of views in one go.
 
 ### Things to watch out for
 
