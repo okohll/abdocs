@@ -50,7 +50,7 @@ In this example, you can see that the field **Project Phase** is the main contri
 
 ![table slowdown contributors](/table_speed.png)
 
-Note that if a table has the [Run this workflow whenever each record is viewed]({{<relref "/tables/workflow/run-this-workflow-whenever-each-record-is-viewed">}}) option, the speed of the workflow view(s) used can also contribute to loading time.
+Note that if a table has the [Run this workflow whenever each record is viewed]({{<relref "/docs/tables/workflow#run-this-workflow-whenever-each-record-is-viewed">}}) option, the speed of the workflow view(s) used can also contribute to loading time.
 
 ## Speeding things up
 There are a number of ways that view performance can be optimised.
@@ -68,12 +68,12 @@ There's a bit of a trade-off with practicality here sometimes. You may have a vi
 However for particularly problematic views you may want to consider it.
 
 ### Query plan selection
-
-Agilebase will automatically compare different plans and suggest the best one, but that can change over time. To verify it yourself, use the [query plan]({{<relref "/docs/views/options/behaviour-options#query-plan>}}) option.
+"
+Agilebase will automatically compare different plans and suggest the best one, but that can change over time. To verify it yourself, use the [query plan]({{<relref "/docs/views/options/behaviour-options#query-plan">}}) option.
 
 ### Caching
 
-For a complete discussion of what caching is and when it works, please see the [cache view rows]({{<relref "/docs/views/options/behaviour-options#cache-view-rows>}}) option.
+For a complete discussion of what caching is and when it works, please see the [cache view rows]({{<relref "/docs/views/options/behaviour-options#cache-view-rows">}}) option.
 
 ### Using a tool to examine the query plan
 
