@@ -60,6 +60,15 @@ Then, when there are multiple child records, each containing a file, those files
 
 > Don't worry that the view then contains multiple rows per email. The chaser is clever enough to only send one email, but merge in all the files from the multiple rows.
 
+### Customising with a logo
+
+When the recipient receives the chaser email, they can click on a link to fill in a form and supply the requested information.
+
+That form can be customised by adding a logo at the top. To do that, a file field named *Logo* must be added to the chaser view.
+
+If the same logo is to be used for all messages, the simplest way of accomplishing this is to put the Logo file field in a table with only a single record in it.
+Then add a [cross join]({{<relref "/docs/views/joins/types-of-join/#cross-join">}}) from the chaser to that table, to allow you to add the Logo field to the view.
+
 ### Receiving a response
 When a response is received to a chaser, as well as saving the documents / fields the chaser asked for, a comment will be logged to the first comment field in the parent table (if there is a comment field).
 
