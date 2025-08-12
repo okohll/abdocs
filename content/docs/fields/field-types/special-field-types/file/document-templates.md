@@ -117,6 +117,18 @@ Some table types (currently only key/value tables) will add classes to each `th`
 
 `varchar` (for text fields), `timestamp`, `float` (fields are actually double precision), `bigint` or `boolean`.
 
+So for example, if you want to make the backgrounds of all table headings blue, add
+
+```html
+<style>
+    table.standard.referenced_report_data th {
+        background-color: blue;
+    }
+</style>
+```
+
+to your template.
+
 ### Session functions
 Here are some of the most commonly used session functions. Each user gets a new session when they log in, it stores information about the system's current state for them.
 
