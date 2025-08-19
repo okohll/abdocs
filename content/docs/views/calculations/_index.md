@@ -109,8 +109,13 @@ https://www.postgresql.org/docs/17/sql-syntax-lexical.html#SQL-SYNTAX-COMMENTS
 ### Troubleshooting errors
 If there is an error in a view, it's more than likely the culprit is a calculation, as they are one of the more complex facilities of Agilebase and the only one where SQL can be entered by the user, as opposed to be automatically generated. You may see messages like **view broken** or errors when you try to change a view e.g. move a field.
 
+#### Bad data
 Errors can occur due to data changing. Division by zero errors are automatically handled by Agilebase (null is returned), but other types of calculation can also cause errors in certain circumstances. For example if a calculation squares a field, if someone enters a really large number into that field in a particular record, then an overflow error may occur.
 
 This can be resolved by temporarily filtering out the problem data, then the view can be edited to handle the issue, or perhaps a [data integrity check]({{<relref "/docs/tables/data-integrity-checks">}}) can be added to disallow problem data in future.
 
+#### Wrong datatypes
+If a calculation is set to be a number type but outputs text, that will cause an immediate issue. A more pernicious problem can be caused the other way round. If a calculation is expected to be a number, and used by other calculations as a number, but has actually been set or left as text (the default type), errors can occur.
+
+#### Persistent errors
 If there is a persistent issue, one way of dealing with it is to temporarily delete all the calculation definitions - you can copy and paste them somewhere else for record-keeping, perhaps into each calculation's notes entry. Then once the view is working again, add the calculation definitions back one by one until you find the problem.

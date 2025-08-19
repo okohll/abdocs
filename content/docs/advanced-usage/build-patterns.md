@@ -132,9 +132,13 @@ However it won’t filter on anything that’s more than one direct relationship
 
 1. In the relation chooser view, create a calculation e.g. ‘my relation filter’ and set it to contain the contents of what you want to filter on e.g. some other field. The calculation can be hidden.
 2. From the main table, create a new view. In that view, create a calculation with the same name and contents.
-3. Add that a cross-reference field into the main table, utilising that view. In the field options, tick [use as filter]({{<relref "https://docs.agilebase.co.uk/docs/fields/field-options/referenced-field-options#use-as-a-filter-for-relations">}})
+3. Add that a referenced data field into the main table, utilising that view. In the field options, tick [use as filter]({{<relref "https://docs.agilebase.co.uk/docs/fields/field-options/referenced-field-options#use-as-a-filter-for-relations">}})
 
 In that way, you can set the chooser to only show options relevant to the situation at hand.
+
+> Note 1: there's no need to set the visibility of the referenced data field to hide it, ticking 'use as filter' will hide it automatically. You can if you like use the visibility to toggle it on or off, as when hidden it won't take effect
+
+> Note 2: remember that the chooser view will already be filtering by the IDs of any other relations in the form. For example if you're editing a contact and there's a relation to an organisation, the chooser will filter by that organisation **if it contains the organisation ID**. If you want to filter *only* using your referenced data field, make sure to remove any extra ID fields in the chooser view. 
 
 ## Switching a field from one type to another
 For example, converting a whole number field into a decimal number
