@@ -8,7 +8,7 @@ tags:
 - Software Architect
 - v6
 ---
-Once you've [identified]({{<relref "examining-performance" />}}) which views might be performance hogs, what can you do about it?
+Once you've [identified]({{<relref "examining-performance">}}) which views might be performance hogs, what can you do about it?
 
 There are a number of options to look at.
 
