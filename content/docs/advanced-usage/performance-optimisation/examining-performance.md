@@ -1,4 +1,4 @@
-`---
+---
 title: "Examining Performance"
 date: 2025-08-31T14:00:00+01:00
 type: docs
@@ -7,7 +7,7 @@ description: Agilebase gives you some tools to enable you to see where performan
 tags:
 - Software Architect
 - v6
----`
+---
 ## Performance suggestions
 Performance suggestions may be shown on the [development homepage]({{<relref "/docs/introduction/development-mode">}}), when you first toggle it on.
 
