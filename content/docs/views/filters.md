@@ -53,3 +53,11 @@ However, as it stands, that would exclude any tasks which have **never** had a n
 
 To include those, just tick 'or is blank' after creating the filter.
 
+## Disabling and removing filters
+
+Crossing off a filter will disable it. Crossing it off again will completely remove it.
+
+Disabling filters can be useful when you want to quickly check its effect - you can toggle it on and off. A disabled filter can be re-enabled with the button as shown:
+
+![Filters](/disabled_filter.png)
+
