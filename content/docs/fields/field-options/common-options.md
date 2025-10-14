@@ -12,7 +12,7 @@ tags:
 By default Agilebase displays field names in Title Case. Un-ticking this option disables that, which can be useful for special cases like e.g. 'pH' or 'Length (m)', which would otherwise show as 'PH' and 'Length (M)'.
 
 ## Icon
-Rather than displaying a field name, show an icon, chosen from https://fontawesome.com/icons. For example, to show a phone icon for a phone number field, you could enter `phone`, for an email field `envelope` or a twitter handle `twitter`.
+Rather than displaying a field name, show an icon, chosen from https://fontawesome.com/icons. For example, to show a phone icon for a phone number field, you could enter `fa-phone`, for an email field `fa-envelope` or a twitter handle `fa-twitter`.
 
 ## Field visibility
 Allow a field to be hidden or shown based on conditions.
