@@ -22,10 +22,20 @@ This option allows you to specify that the system should automatically down-size
 Type the name of a template to be used for [generating PDF documents]({{<relref "/docs/fields/field-types/special-field-types/file/document-templates">}}) to be stored in this field.
 
 ## View to use
-The system will look in this view for a template with the name specified above.
+For PDF output, the system will look in this view for a template with the name specified above. For spreadsheet output (see *Output format* below), the contents of this view will be output to the spreadsheet.
 
-## Paper size
+## Output format
 When a PDF is generated, base it on this size of paper. The default is A4, changing this can be useful if e.g. you want to use the system to print labels.
+
+You can also choose **Excel** or **CSV** to generate a spreadsheet instead of a PDF file. In that case, *Template* (above) can be left blank. The generated spreadsheet will contain the contents of the *View to use*.
+
+### Excel
+If *Excel* is chosen, a spreadsheet containing the contents of the *View to use* will be generated. As well as the core data, one tab will be created per chart in the view, containing the raw data for that chart.
+
+### CSV
+A Comma Separated Variable file will be generated, commonly used for importing data into third party legacy software products if there is no API.
+
+As opposed to the Excel format, any row IDs will be excluded from the file. Only visible data will be output, meaning you can design the view columns to exactly match the needs of any such software.
 
 ## Zoom %
 Setting this to smaller than 100 will make text and other content appear smaller on the page, similarly larger bigger

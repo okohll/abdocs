@@ -10,7 +10,7 @@ tags:
 ---
 To access them:
 1. From the homepage, click your user icon at the top right of the screen and choose _Profile_ from the menu
-2. Go to Account -> Organisation Settings from the lefthand navigation bar
+2. Go to _Account_ -> _Organisation Settings_ from the lefthand navigation bar
 
 ### Mandate 2FA
 When this is ticked, all users in the organisation will be required to set up [Two Factor Authentication]({{<relref "/docs/security-and-compliance/security-features/users/2fa-setup" >}}) before they can see or use any features of the application.
