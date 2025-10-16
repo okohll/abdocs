@@ -59,6 +59,15 @@ For example, if you have a file with field name "Company Logo", you could embed 
 <img src="$company_logo_path" />
 ```
 
+### Embedding QR codes
+Include the following code in your template to generate a QR code:
+
+```html
+<script type="text/javascript" src="resources/qrcode.js"></script>
+<script type="text/javascript" src="resources/qrsetup.js"></script>
+<div class="ab_qrcode" data-url="[my URL or data to encode]" data-width="[width in pixels]"></div>
+```
+
 ## Advanced templating
 ### Convenience features
 As well as data, various convenience features are available for insertion into a template.
