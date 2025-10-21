@@ -18,10 +18,11 @@ The system will now make a POST to the URL specified in step 2 whenever there’
 
 The data posted will be a JSON array of objects, each object representing a row in the view.
 
-## Specifying the data format
+## Options
+### Specifying the data format
 Using the *Data Format* selector and *Generate 'simple format'* options in the API panel, you can choose various formats to send
 
-### Data Format = JSON content body (Zapier compatible)
+#### Data Format = JSON content body (Zapier compatible)
 This is obviously what to choose if sending to zapier.com, but there's nothing stopping you from using if for other systems too.
 
 The contents of the view are posted to the URL as JSON, as the body of the HTTP request.
@@ -74,13 +75,17 @@ If ticked, then 'human friendly' keys will be used, e.g. a field called 'First N
 }
 ```
 
-### Data Format = JSON content body (Agilebase compatible)
+#### Data Format = JSON content body (Agilebase compatible)
 
 This is a format used only for pushing data from one Agilebase server to another, please contact us for details if necessary.
 
-### Data Format = Form post with data parameter
+#### Data Format = Form post with data parameter
 
 The JSON is the same, but rather than being submitted as the body of the request, a 'json' parameter is submitted containing it.
+
+### Authentication
+
+If the third party uses [Bearer token authentication](https://swagger.io/docs/specification/v3_0/authentication/bearer-authentication/), you can specify the authorization key provided by the third party in the _API key for Authorization_ field.
 
 ## Selecting data to push
 
