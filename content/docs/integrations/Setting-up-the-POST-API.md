@@ -21,7 +21,7 @@ You can see an OpenAPI description of the API in the _Use API_ panel when editin
 
 Alternatively, if you don't have a login for Agilebase, you can call use a public URL
 
-https://cloud.agilebase.co.uk/Agilebase/Public.ab?describe_table=true&c=[mycompanyidentifier]&t=[mytableidentifier]
+https://cloud.agilebase.co.uk/agileBase/Public.ab?describe_table=true&c=[mycompanyidentifier]&t=[mytableidentifier]
 
 whilst also providing the required Authorization header.
 
@@ -29,7 +29,7 @@ whilst also providing the required Authorization header.
 
 Firstly, identify the Agilebase account by including a 'c' parameter in the URL, i.e.
 
-https://cloud.agilebase.co.uk/Agilebase/Public.ab?save_records=true&c=[mycompanyidentifier]
+https://cloud.agilebase.co.uk/agileBase/Public.ab?save_records=true&c=[mycompanyidentifier]
 
 The _API_ panel will provide that URL for you.
 
@@ -110,7 +110,7 @@ Three parameters need to be included in addition to the data to save. They are
 
 The post URL is
 
-https://cloud.agilebase.co.uk/Agilebase/Public.ab
+https://cloud.agilebase.co.uk/agileBase/Public.ab
 
 The form needs to be posted using the method POST.
 

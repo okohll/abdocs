@@ -120,7 +120,7 @@ You can see an OpenAPI description of the API in the _Use API_ panel when editin
 
 Alternatively, if you don't have a login for Agilebase, you can call a public URL
 
-https://cloud.agilebase.co.uk/Agilebase/Public.ab?describe_table=true&c=[mycompanyidentifier]&t=[mytableidentifier]&r=[myviewidentifier]
+https://cloud.agilebase.co.uk/agileBase/Public.ab?describe_table=true&c=[mycompanyidentifier]&t=[mytableidentifier]&r=[myviewidentifier]
 
 whilst also providing the required Authorization header.
 

@@ -23,7 +23,7 @@ The remainder of this article explains how to PULL the data.
 
 The most important piece of information is the URL that the third party will access your data via. This will be:
 
-https://cloud.agilebase.co.uk/Agilebase/Public.ab
+https://cloud.agilebase.co.uk/agileBase/Public.ab
 
 If you host on your own cloud or on premises, this may be different.
 
@@ -40,7 +40,7 @@ Finally, the API key provided needs to be submitted not as a HTTP request parame
 Here’s a complete example of making a request, using PHP in WordPress
 
 ```php
-$url = 'http://cloud.agilebase.co.uk/Agilebase/Public.ab?get_report_json=true&simple_format=true&t=mytablecode&r=myreportcode&c=mycompanycode';
+$url = 'http://cloud.agilebase.co.uk/agileBase/Public.ab?get_report_json=true&simple_format=true&t=mytablecode&r=myreportcode&c=mycompanycode';
 
 $args = array('headers' => array( 'Authorization' => 'myauthorisationkey'));
 
@@ -96,7 +96,7 @@ else:
 Or just a simple one-liner:
 
 ```bash
-curl -H "Authorization: Bearer API_KEY" "http://cloud.agilebase.co.uk/Agilebase/Public.ab?get_report_json=true&t=mytablecode&r=myreportcode&c=mycompanycode"
+curl -H "Authorization: Bearer API_KEY" "http://cloud.agilebase.co.uk/agileBase/Public.ab?get_report_json=true&t=mytablecode&r=myreportcode&c=mycompanycode"
 ```
 
 ### Request options
@@ -165,7 +165,7 @@ When editing the view, in the _Use API_ panel, go to _OpenAPI Definition_ and yo
 
 Alternatively, for anyone without an Agilebase login, make a GET request to
 
-/Agilebase/Public.ab with parameters
+/agileBase/Public.ab with parameters
 
 * c = the company identifier (the table options screen will show this)
 * t = the table identifier (similarly shown by the options screen)

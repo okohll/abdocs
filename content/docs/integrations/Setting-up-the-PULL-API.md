@@ -160,7 +160,7 @@ When editing the view, in the _Use API_ panel, go to _OpenAPI Definition_ and yo
 
 Alternatively, for anyone without an Agilebase login, make a GET request to
 
-/Agilebase/Public.ab with parameters
+/agileBase/Public.ab with parameters
 
 * c = the company identifier (the table options screen will show this)
 * t = the table identifier (similarly shown by the options screen)
