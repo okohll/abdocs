@@ -14,10 +14,17 @@ However, it's useful for administrators to know how the system works in outline,
 
 In Agilebase, charts 'belong to' a view. Each view can have a collection of charts. Users can toggle between viewing data rows and looking at charts based on those rows. When a user filters data using the quick filter boxes at the top of the screen, the data or charts (whichever is shown) will update to match the filtered results.
 
-## Creating a chart
+## Generate a chart with AI
 1. In the tiles interface, open the tile and view to use as a source of chart data
 2. Click the charts button at the top right of the screen
-3. Click the _add/edit chart or map_ button
+3. Fill in the 'describe required chart' field and press the add chart button
+
+> The AI can only make use of fields which are in the view, so you may wish to consider adding fields or [calculations]({{<relref "/docs/views/calculations">}}) before charting
+
+## Creating a chart manually
+1. In the tiles interface, open the tile and view to use as a source of chart data
+2. Click the charts button at the top right of the screen
+3. Click the _add/Add chart or map_ button
 4. Follow each of the steps (1 - 3) on screen to build the chart
 5. In the last step, give a name to the chart and press _save_
 
