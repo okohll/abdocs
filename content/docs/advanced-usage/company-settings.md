@@ -1,5 +1,5 @@
 ---
-title: "Company Settings"
+title: "Organisation Settings"
 date: 2020-04-24T16:40:00+01:00
 type: docs
 weight: 120
@@ -47,3 +47,18 @@ There are various [rules]({{<relref "/docs/security-and-compliance/security-feat
 
 This option allows you to set the text of a prompt that users see before exporting. It can be used to remind people of their obligations and point them to any further information provided by your organisation. They will need to tick to accept before performing the export.
 
+### AI Settings
+#### AI Provider URL
+You can choose which AI provider you use, as long as it is compatible with the standard OpenAI API format.
+
+Your AI provider's documentation should specify their API URL.
+
+You can if you wish point towards a self-hosted Large Language Model (LLM) if you wish all data to remain within your own infrastructure. 
+
+> Note by default in Agilebase, if this setting is left blank, EU AI providers bound by strict GDPR regulations are used - see [Artificial Intelligence]({{<relref "/docs/artificial-intelligence">}})
+
+#### AI Model
+Optional - if the AI provider offers multiple model options, you can select one here. Please contact us if you wish to know the models available from our default provider.
+
+#### AI Authorization key
+The authorization key which goes with the API provider URL. Please see your AI provider's documentation.

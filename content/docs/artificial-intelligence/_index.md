@@ -21,13 +21,17 @@ However, AI isn't a replacement for your own understanding, more of an aid. It's
 ## Getting Started
 See [Using AI to add multiple tables]({{<relref "/docs/tables/adding-and-removing#using-ai-to-add-multiple-tables">}}) as the starting point for building a complete system, or extending an existing system with new applications
 
-## Data Privacy
+## Private AI
 
-Whenever you use AI features, which are marked with a 'sparkles' icon and the word AI inside a button, you should be aware that the prompts that you provide, along with other information from the Agilebase system (explained in the documentation for each feature) is sent to a third party AI. 
+Where AI features are available in Agilebase, EU AI providers bound by strict GDPR regulations are used. Contractually, data is never shared or used for model training purposes.
 
-In summary, when you 
-* [create a system]({{<relref "/docs/tables/adding-and-removing#using-ai-to-add-multiple-tables">}}) - the prompt you enter is sent
+Whenever you use AI features, which are marked with a 'sparkles' icon and the word AI inside a button, the prompts that you provide, along with other information from the Agilebase system (explained in the documentation for each feature) is sent to the AI.
+
+For example, when you 
+* [create a system]({{<relref "/docs/tables/adding-and-removing#using-ai-to-add-multiple-tables">}}) - the prompt you provide, plus a list of existing tables in the system is sent
 * [add fields to a table]({{<relref "/docs/fields#adding-fields-automatically-using-ai">}}) - the prompt you provide, plus a list of existing tables in the system is sent
 * [create a calculation]({{<relref "/docs/views/calculations#using-the-ai">}}) - the prompt you provide, plus a list of existing fields in all joined tables/views, is sent
+* [create a chart]({{<relref "/docs/charting/built-in-charting">}}) - the chart description you provide, the view name and a list of fields in the view is sent
 
-At the time of writing, we use OpenAI's ChatGPT API. Their terms and policies, including their privacy policy are located here: https://openai.com/policies
+### Self hosted models
+Should you wish, you can [configure your organisation settings]({{<relref "/docs/advanced-usage/company-settings">}}) to use your own choice of AI, including self-hosted models to ensure traffic never leaves your own controlled infrastructure.
