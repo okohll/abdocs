@@ -62,3 +62,8 @@ Optional - if the AI provider offers multiple model options, you can select one 
 
 #### AI Authorization key
 The authorization key which goes with the API provider URL. Please see your AI provider's documentation.
+
+### Address search license key
+If you have a standard set of address fields (i.e. address 1, address 2, town, postcode or a similar variation) and this field is filled in, Agilebase will show matching addresses when you enter the postcode and allow you to auto-fill the other fields.
+
+For that to work, you need to have signed up to the address API we recognise. At the time of writing, that is https://ideal-postcodes.co.uk. Just enter the license key that they give you here and the feature will start working. 
