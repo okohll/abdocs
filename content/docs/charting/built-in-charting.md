@@ -38,21 +38,29 @@ then the scatter diagram will work but the bubble chart won't. For the bubble ch
 
 ![Chart - step 3](/chart-bubble.png)
 
-## Embedding charts in forms
+## Editing charts
+Again, this can be done either with AI or manually.
+
+When looking at a saved chart, the burger (three lines) menu at the top right of the chart will have an 'edit chart' option. That will bring up a space to enter a description of the change you want.
+
+If you enter a description and press the 'change chart' button, AI will try to make the modification you request. If you leave the description blank however, you will instead be taken to the manual editing screen, similar to when creating a new chart manually.
+
+## Using charts
+### Embedding charts in forms
 Charts can be embedded into tables. When the user opens a record, the chart will automatically filter to show data pertaining to that record only. 
 
 So for example if you have a chart of sales per month per customer, which you embed into a customer table, it will show as sales per month, only for the customer on screen.
 
 This is accomplished by using a view with chart(s) as a [referenced data field]({{<relref "/docs/fields/field-types/special-field-types/referenced-data">}}) - see that page for setup information.
 
-## Embedding charts in tabs
+### Embedding charts in tabs
 When a tab contains many 'child' records, e.g. an organisation may have a tab which contains financial data for the past 10 years, then charts can display above the rows of data when the tab's opened.
 
 To accomplish this, simply add a chart to the [view used by the tab]({{<relref "/docs/tables/hierarchy-navigation/tabs#tab-view">}}). When the tab is opened, the chart will automatically be filtered to only show data pertaining to the parent table, in a similar fashion to how charts embedded using cross-referenced panels are filtered, as above.
 
 ![Endole example](/endole-example.png "Example of a chart in a tab")
 
-## Subscribing users or roles to charts
+### Subscribing users or roles to charts
 Users can be subscribed to charts (or subscribe themselves) to receive them by email.
 
 1. In a view with some charts, open the charts
