@@ -19,6 +19,8 @@ In Agilebase, charts 'belong to' a view. Each view can have a collection of char
 2. Click the charts button at the top right of the screen
 3. Fill in the 'describe required chart' field and press the add chart button
 
+{{< youtube umIEzIAkGBM >}}
+
 > The AI can only make use of fields which are in the view, so you may wish to consider adding fields or [calculations]({{<relref "/docs/views/calculations">}}) before charting
 
 ## Creating a chart manually
@@ -60,12 +62,16 @@ To accomplish this, simply add a chart to the [view used by the tab]({{<relref "
 
 ![Endole example](/endole-example.png "Example of a chart in a tab")
 
-### Subscribing users or roles to charts
+### Reporting - subscribing users or roles to charts and data
 Users can be subscribed to charts (or subscribe themselves) to receive them by email.
 
-1. In a view with some charts, open the charts
+Subscribers receive a PDF report containing all the charts and data, combined from all views they are subscribed to.
+
+They can also opt to receive a spreadsheet export of data from a view, see below.
+
+1. In a view, click the charts button to see the charts
 2. Next to 'Send these charts to me', select a frequency, e.g. monthly.
-3. Under 'Include data too', select tabular data to include in the email too - various options will be displayed e.g. all new rows since the last email
+3. Under 'Include data too', select tabular data to include in the email too - various options will be displayed e.g. all new rows since the last email. One of those options is to send the data as a spreadsheet, the others will embed a table of data into the PDF along with the charts.
 4. Next to 'roles', select a role to send the charts and data to. All users in the role will be subscribed. Multiple roles can be added
 
 > If the view has no charts, this function can be used to send tabular data only

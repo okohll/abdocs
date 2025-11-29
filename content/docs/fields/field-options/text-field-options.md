@@ -51,6 +51,9 @@ If it's un-ticked, then an 'add new entry' option will be available for users to
 
 > In some circumstances, it can be useful to leave this un-ticked and let options grow organically, until a certain point. Administrators can then rationalise and 'hard-code' values from the most commonly entered. In other situations, it may be best to specify available options right from the start.
 
+### 'Use only given values' for relation fields
+> For relation fields, this option has a [different use]({{<relref "/docs/fields/field-options/relation-field-options#use-only-given-values">}})
+
 ## Value(s)
 For basic text fields, i.e. not those which display as dropdowns or tag lists (see below), this simply provides a default value to set the field to when a new record's created. If not provided, the field value will be blank on creation.
 

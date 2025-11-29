@@ -43,6 +43,10 @@ When development mode is toggled on from the homepage, the development homepage 
 2. **The map**: clicking this diagram shows the connections between tables in the system, i.e. the [relations]({{<relref "/docs/tables/relational-database-concepts">}}) between them. Clicking a table opens it for editing.
 3. **Lists**: to the right of the map, at the top, is a set of boxes which each load a different type of object, i.e. [tables]({{<relref "/docs/tables">}}), [tiles]({{<relref "/docs/tiles">}}), [roles]({{<relref "/docs/security-and-compliance/security-features/roles">}}), [users]({{<relref "/docs/security-and-compliance/security-features/users">}}) and different categories of [view]({{<relref "/docs/views">}}). Clicking on each will load a list of objects, so you can see full details, edit and delete them.
 
+Under *Lists*, one special item is 'history'. That gives you a list of all the recent changes made anything in the system - table, view or role for example.
+
+In the *lefthand sidebar*, if you hover over a table or view, as well as being able to edit it, an option will appear to show the connections to other options. That will load a subset of the map, including only items which are related (via relation fields for table, or joins for views) - multiple levels of relations are displayed.
+
 ### Pinning objects
 When you have an editing panel open, e.g. by clicking on an object from a list (see above), you can 'pin' it by clicking the pushpin icon at the top left of the panel.
 
