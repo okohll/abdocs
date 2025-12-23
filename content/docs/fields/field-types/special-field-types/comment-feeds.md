@@ -46,5 +46,22 @@ However, comments are also the mechanism by which emails from external parties c
 
 When a [workflow]({{<relref "/docs/workflows/send-email">}}) or [chaser]({{<relref "/docs/workflows/send-chaser">}}) sends an outgoing email, that is logged as a comment (including any attachments) too.
 
-## Slack integration
-If [Slack](https://www.slack.com) is integrated via [company options]({{<relref "/docs/advanced-usage/company-settings">}}), every comment added will also be sent to your Slack workspace.
+## Integration
+If an integration is set up via [company options]({{<relref "/docs/advanced-usage/company-settings#comments-webhook-url">}}), every comment added will also be sent to the service used e.g. Slack, Teams, Google Workspace etc.
+
+## Comments as a system table
+Just like audit trail tables can surface system logs so that system architects (or anyone they allow) will be able to see the data, the same can be set up for a comments table.
+
+All comments added to any record will be saved in this table, allowing e.g. views to be created which amalgamate comments from many different tables into one place.
+
+To set this up, just create a table with a name 'ab comments'. Prefixes are allowed so e.g. 'z) ab comments' would also work. Then the following fields *must* be added:
+* author (text)
+* author id (text)
+* field id (text)
+* row id (whole number)
+* text (text, large)
+* record data (text, large)
+* participants (text)
+* file (file)
+* tags (text)
+* table (text)

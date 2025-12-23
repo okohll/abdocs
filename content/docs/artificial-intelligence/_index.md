@@ -32,6 +32,6 @@ For example, when you
 * [add fields to a table]({{<relref "/docs/fields#adding-fields-automatically-using-ai">}}) - the prompt you provide, plus a list of existing tables in the system is sent
 * [create a calculation]({{<relref "/docs/views/calculations#using-the-ai">}}) - the prompt you provide, plus a list of existing fields in all joined tables/views, is sent
 * [create a chart]({{<relref "/docs/charting/built-in-charting">}}) - the chart description you provide, the view name and a list of fields in the view is sent
-
+* [edit a document template]({{<relref "/docs/fields/field-types/special-field-types/file/document-templates/">}}) - the existing template content and the list of available template variables (fields etc.) is sent
 ### Self hosted models
 Should you wish, you can [configure your organisation settings]({{<relref "/docs/advanced-usage/company-settings">}}) to use your own choice of AI, including self-hosted models to ensure traffic never leaves your own controlled infrastructure.

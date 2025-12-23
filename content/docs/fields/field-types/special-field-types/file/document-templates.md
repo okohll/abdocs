@@ -17,6 +17,8 @@ Each template is attached to a view and given a name.
 ## Creating a template
 Templates can be created using the built-in WYSIWYG editor, which allows simple presentation controls, like adding tables, headings and text formatting.
 
+The built-in AI will also be able to edit the template for you. Just type in a prompt at the top of the screen, and your template will be created or edited as required. It will be able to include any template variables (see 'including data' below).
+
 Alternatively and for complex needs, templates can be created manually. The templating language is [Apache Velocity](https://velocity.apache.org/), which allows concepts such as variables, loops etc. to be used, i.e. simple programming features. The output format is HTML.
 
 1. Find or create a [view]({{<relref "/docs/views">}}) which contains the data to be included in your output document. The idea is that each row in the view will correspond to one document, with the data from that row being merged in. The view needs to be created from the parent table of the file field created for the output document
