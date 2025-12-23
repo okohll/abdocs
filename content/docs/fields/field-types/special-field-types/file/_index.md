@@ -20,4 +20,6 @@ When a new file is uploaded (or generated), any previous file is kept as a previ
 ## Generating PDF documents
 If a template is uploaded using the [file field options]({{<relref "/docs/fields/field-options/file-field-options#template">}}), the file upload button in the user interface will be replaced by a generate button.
 
+Pressing that button will generate a PDF based on the template. Holding down the Shift key as the button is pressed will generate a HTML file instead.
+
 See [document templates]({{<relref "/docs/fields/field-types/special-field-types/file/document-templates">}}) for more information.

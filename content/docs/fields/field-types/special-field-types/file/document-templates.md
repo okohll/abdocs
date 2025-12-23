@@ -157,3 +157,6 @@ The entire templating API is beyond the scope of this documentation but if you d
 ### Using Apache Velocity features
 
 In the examples above are some uses of simple programming code. A full reference for what you can do with the Apache Velocity language is here: https://velocity.apache.org/engine/2.3/user-guide.html
+
+## Debugging
+While editing a record, hold down the Shift key while pressing the Generate button for the file. A HTML file will then be generated instead of a PDF. You can then open that to see the generated HTML, debug CSS etc.
