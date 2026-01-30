@@ -157,22 +157,5 @@ The response to the successful request will be a JSON representation of the comp
 
 The row ID is returned with the key `rowId` - this is often useful to identify a record when performing multiple actions. For example, when a new record is created, the calling system may want to store its row ID in order to be able to make future updates to the same record.
 
-If there is an error, an appropriate HTTP response code is returned (see below) along with JSON explaining the error, containing three keys. For example if an incorrect Authorization header is supplied, the response may be
+If there is an error, an appropriate response code and explanation is returned, please see [response codes]({{<relfef "response-codes">}}).
 
-```
-{
-  "error": true,
-  "type": "DisallowedException",
-  "message": "User public api is not allowed to edit delete data in table my table. An administrator can set up privileges so this can be allowed"
-}
-```
-
-## HTTP response codes
-* 200: success
-* 401: unauthorised: the API key is missing or invalid
-* 404: not found: an object identified in the request was not found e.g. no match was found for a table ID specified with the 't' parameter
-* 429: too many requests: the frequency of requests is too high, please throttle them back
-* 507: insufficient storage: when creating a record, the limit on number of records which can be stored has been reached. Contact us to purchase additional capacity.
-* 500: some other server error
-
-When there is an error, a response header X-AB-error is also set with the type and content of the error message.

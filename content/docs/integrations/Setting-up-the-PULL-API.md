@@ -132,19 +132,12 @@ For dates, many common formats can be used, for example ISO format dates like "2
 
 ### Response codes
 
-* 200: request successful
-* 400: this can occur if a required parameter for the request isn't present, or if parameter values aren't URL encoded in a GET request
-* 401: unauthorised: the API key is missing or incorrect
-* 404: not found: an object identifier (company ID, table ID or report ID) was supplied that wasn’t found in the system
-* 429: too many requests: the frequency of requests is too high, please throttle them back
-* 500: some other server error
-
-When there is an error, the X-AB-error header will be set and JSON returned representing the error, as happens with the [POST API]({{<relref "Setting-up-the-POST-API#response">}}).
+When there is an error, details will be returned as described in [response codes]({{<relfef "response-codes">}}).
 
 > To ensure one customer's use doesn't consume an inordinate amount of resources, each customer can only process one pull API request at a time. Whilst a request is processing, any further incoming requests are held in a queue, then processed in order as the previous one finishes.
 > If at any time, a request has been held up for 60 seconds, further requests result in the 429 error and they are discarded.
 > 
-> If this occurs, there are a number of tactics you can use to shorten individual response times or make less requests - please get in touch if you need help.
+> If this occurs, there are a number of tactics you can use to shorten individual response times or make less requests - please get in touch if you need help. Alternatively, you can upgrade to one of our 'isolated environment' plans.
 
 ### Security
 Note that you won't be able to make calls to Agilebase APIs using Javascript from web browsers. You'll only be able to use server-side technologies to call these 'pull' APIs, or third party tools such as Zapier or Microsoft Power Automate.
