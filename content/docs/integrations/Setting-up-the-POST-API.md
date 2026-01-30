@@ -157,5 +157,4 @@ The response to the successful request will be a JSON representation of the comp
 
 The row ID is returned with the key `rowId` - this is often useful to identify a record when performing multiple actions. For example, when a new record is created, the calling system may want to store its row ID in order to be able to make future updates to the same record.
 
-If there is an error, an appropriate response code and explanation is returned, please see [response codes]({{<relfef "response-codes">}}).
-
+When there is an error, details will be returned as described in [response codes]({{<relref "api-response-codes">}}).

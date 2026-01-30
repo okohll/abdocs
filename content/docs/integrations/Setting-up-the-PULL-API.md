@@ -132,7 +132,7 @@ For dates, many common formats can be used, for example ISO format dates like "2
 
 ### Response codes
 
-When there is an error, details will be returned as described in [response codes]({{<relfef "response-codes">}}).
+When there is an error, details will be returned as described in [response codes]({{<relref "api-response-codes">}}).
 
 > To ensure one customer's use doesn't consume an inordinate amount of resources, each customer can only process one pull API request at a time. Whilst a request is processing, any further incoming requests are held in a queue, then processed in order as the previous one finishes.
 > If at any time, a request has been held up for 60 seconds, further requests result in the 429 error and they are discarded.

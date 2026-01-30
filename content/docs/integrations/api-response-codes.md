@@ -1,8 +1,8 @@
 ---
 title: "API response codes"
-date: 2026-01-30T17:54:00+01:00
+date: 2026-01-30T13:00:00+01:00
 type: docs
-weight: 200
+weight: 300
 description: Descriptions of the various HTTP error codes that might be returned if an API request fails
 tags:
 - Software Architect
