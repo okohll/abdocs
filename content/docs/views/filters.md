@@ -53,6 +53,23 @@ However, as it stands, that would exclude any tasks which have **never** had a n
 
 To include those, just tick 'or is blank' after creating the filter.
 
+## Indexes
+
+When you start working with a certain amount of data, say tables grow to include hundreds of thousands or millions of rows, then one thing that can drastically speed up your views is adding an index on a filtered field.
+
+An index, as the name implies, is just like an index for a phrase in a book. It's a very quick way of finding something without having to read through all of the data.
+
+Database indexes are a bit more flexible than book indexes. For example, if you have an index on a date field, it can speed up views which have a filter 'my date field is newer than 6 months old' or similar.
+
+Agilebase will show any indexed fields by prefixing them with a lightning bolt symbol, when showing the filter, or selecting a field to filter on.
+
+![Filter indexes](/filter_indexes.png)
+
+To add an index, you will currently need to contact your support representative, we will be able to do that for you. In some cases, Agilebase may display a message suggesting an index addition and prompting you to do that.
+
+> Note that even if a field is indexed, that doesn't guarantee the index will be used and the view will speed up. For example, for certain filters, an index can't be used unless specifically designed for that case. An index on a text field typically won't help if you want to search for text containing or ending with a certain value for example, only for filters on exact values or possibly those starting with something.
+> See [performance optimisation]({{<relref "/docs/advanced-usage/performance-optimisation">}}) to learn about the general topic of making a system faster.
+
 ## Disabling and removing filters
 
 Crossing off a filter will disable it. Crossing it off again will completely remove it.
