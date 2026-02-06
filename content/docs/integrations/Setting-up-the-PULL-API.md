@@ -1,5 +1,5 @@
 ---
-title: "Creating a PULL API"
+title: "PULL API - query Agilebase from third party systems"
 date: 2020-05-29T12:35:00+01:00
 type: docs
 weight: 140
