@@ -17,5 +17,5 @@ If there's an area you find the documentation doesn't cover sufficiently, please
 
 We invite all customers to join a Google Chat space, if you'd like to communicate with us via instant messaging. Please let us know if so and we'll set that up.
 
-New users may want to follow our guided Learner Progression path. To access that, once logged in, click your user icon at the top right of the screen, then *Learner Progression*
+New users may want to follow our guided Agile Academy learning path. To access that, once logged in, click your user icon at the top right of the screen, then *Agile Academy*
 

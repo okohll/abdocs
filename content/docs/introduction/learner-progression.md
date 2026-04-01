@@ -1,5 +1,5 @@
 ---
-title: "Learner Progression"
+title: "Agile Academy""
 date: 2022-02-18T16:40:00+01:00
 type: docs
 weight: 6
@@ -8,7 +8,7 @@ tags:
 - Citizen Developer level 1
 - v6
 ---
-Agilebase's learner progression pathway enables you to transform your career. You can go from  a citizen developer to a no-code software architect. 
+The Agile Academy learning pathway enables you to transform your career. You can go from  a citizen developer to a no-code software architect. 
  
 Citizen developers can create their own applications using no code. Software architects can build complex applications, including powerful workflow features and integrations with other applications.
  
@@ -78,7 +78,7 @@ As well as building and disassembling applications, software architects can set 
 * Add and remove [users]({{<relref "/docs/security-and-compliance/security-features/users">}})
 * Edit company level settings (e.g. whether to enforce 2FA)
 * Change table [sensitive and personal data]({{<relref "/docs/tables/sensitive-data">}}) settings (GDPR)
-* View and controls users' learner progression levels and 'budget' limits
+* View and controls users' learning levels
 * Assign any privileges up to the highest 'develop' level
 
 

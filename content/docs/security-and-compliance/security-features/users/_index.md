@@ -62,12 +62,12 @@ If a user encounters any problems with 2FA, e.g. they lose the device for genera
 This can be done in the [company settings]({{<relref "/docs/advanced-usage/company-settings#mandate-2fa" >}})
 
 ### Other options
-#### Learner Progression Level
+#### Agile Academy learning level
 When created, the level defaults to being a 'core user', i.e. a standard user who has no special development privileges.
 
-A software architect can change this to move any user up (or down) in learner development progress. Please see [learner progression]({{<relref "/docs/introduction/learner-progression">}}) for more information on what abilities each level confers.
+A software architect can change this to move any user up (or down) in learner development progress. Please see [Agile Academy]({{<relref "/docs/introduction/learner-progression">}}) for more information on what abilities each level confers.
 
-#### Use the custom AgileChilli UI rather than Agilebase's
+#### Use the custom UI rather than Agilebase's
 It's possible for companies to apply their logo and custom login screen to the system. Please contact us if you'd like to set this up.
 
 #### Logout after

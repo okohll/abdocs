@@ -31,7 +31,7 @@ Privileges are additive - if a user is a member of multiple roles, they gain all
         * import data from spreadsheet
         * override options which would normally disallow global editing of data in the table
 
-Privilege levels work in conjunction with [Learner Progression levels]({{<relref "/docs/introduction/learner-progression">}}), for example, only someone at level Citizen Developer level 3 can have Develop privileges assigned to them.
+Privilege levels work in conjunction with [Agile Academy learning levels]({{<relref "/docs/introduction/learner-progression">}}), for example, only someone at level Citizen Developer level 3 can have Develop privileges assigned to them.
 
 > Two Factor Authentication is required for any user with any Citizen Developer or Software Architect role.
 

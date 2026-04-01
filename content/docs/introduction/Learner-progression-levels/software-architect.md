@@ -13,7 +13,7 @@ As well as building and disassembling applications, software architects can set 
 * Add and remove [users]({{<relref "/docs/security-and-compliance/security-features/users">}})
 * Edit company level settings (e.g. whether to enforce 2FA)
 * Change table [sensitive and personal data]({{<relref "/docs/tables/sensitive-data">}}) settings (GDPR)
-* View and controls users' learner progression levels 
+* View and set users' learning levels (Agile Academy)
 * Assign privileges 
 
 ## Don't know where to start?
