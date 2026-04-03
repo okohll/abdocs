@@ -1,5 +1,5 @@
 ---
-title: "Agile Academy""
+title: "Agile Academy"
 date: 2022-02-18T16:40:00+01:00
 type: docs
 weight: 6

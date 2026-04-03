@@ -1,5 +1,5 @@
 ---
-title: "Example: finding scheduling conflicts"
+title: "2nd April 2026 - finding scheduling conflicts"
 date: 2026-04-02T09:57:55+01:00
 type: docs
 weight: 60
@@ -24,7 +24,7 @@ It turns out we can solve this relatively easily with multi-ranges, using nothin
 As a starting point, we create a single view containing all the appointments. We have one row per appointment, each with a start time and an end time, something like
 
 | Staff	| Booking	| Start time	| End time |
-|---|---|---|----------|
+|---|---|---|---|
 | Alice	| Octavia Butler	| 9am	| 10am     |
 | Alice	| Stephen King	| 10:30	| 11:30am  | 
 | Alice	| Zora Hurston	| 11am	| 12pm | 
@@ -32,11 +32,11 @@ As a starting point, we create a single view containing all the appointments. We
 
 The first step is to combine the start and end times into one ‘thing’, a date range. Later on we’ll be able to compare date ranges with each other to find overlaps. In PostgreSQL, a function ‘tsrange’ can be used to do that, which gives us
 
-| Staff	| Booking	| Range (tsrange) |
-|---|---|---|
-| Alice	| Octavia | Butler	| 9am – | 10am |
-| Alice	| Stephen King	| 10:30 – | 11:30am |
-| Alice	| Zora Hurston	| 11am – | 12pm |
+| Staff | Booking	        | Range (tsrange) |
+|---|-----------------|---------------|
+| Alice	 | Octavia Butler	 | 9am - 10am    |
+| Alice	 | Stephen King	   | 10:30 - 11:30am |
+| Alice	 | Zora Hurston    | 11am - 12pm |
 
 The next step conceptually is that for each row, we want to create a collection of all date ranges for a particular staff member, excluding the current row. Finally we want to search that collection for any overlaps with the current row. If there is one, we’ve found a conflict.
 
