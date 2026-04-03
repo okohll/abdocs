@@ -5,6 +5,6 @@ type: docs
 weight: 1
 menu:
   main:
-    weight: 1
+    weight: 6
 ---
 Anything that doesn't fit in the documentation - typically interesting examples of specific things customers are doing with Agilebase, or industry news. 

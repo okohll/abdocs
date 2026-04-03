@@ -6,7 +6,7 @@ description: Reference documentation for business software development using Agi
 weight: 1
 menu:
   main:
-    weight: 4
+    weight: 2
 ---
 The sections to the left cover the full range of functionality of Agilebase. Concepts are covered roughly in the order in which they are useful, from top to bottom, but if you want a guided tour to get started, then a quick start guides section is coming soon.
 

@@ -5,7 +5,7 @@ type: docs
 weight: 1
 menu:
   main:
-    weight: 2
+    weight: 4
 ---
 These days, the majority of many people's time at work consists of interacting with and through software. There's really no need for the software itself to make this a frustrating or dull process, rather it should provide a helpful and friendly environment.
 
