@@ -7,13 +7,13 @@ description: A neat calculation to find overlaps of any date-based data in Agile
 ---
 There's a relatively new (given Postgresql's history) database feature called ‘date multi-ranges’ and it turns out that a partner of ours has found a great use for them for a customer they’re working with.
 
-It’s so interesting that I thought I’d write it up here. It’s potentially a widely applicable example with many possible uses amongst other customers, but also it’s just an elegant example of a great database feature that people who like to see how things work might like.
+It’s so interesting that I thought I’d write it up here. It’s potentially a widely applicable example with many possible uses amongst other customers, but also it’s just an elegant example of a great database feature that people who like to see how things work might appreciate.
 
 Since Agilebase uses Postgresql under the hood, all Postgres functions are available to you, as an Agilebase architect.
 
 ![A mountain, showing the layers of sedimentary rock laid down over time](/sedimentary.jpg)
 *A different type of date range*
-*the geological Rhododendrites, CC BY-SA 4.0, via Wikimedia Commons*
+*- the geological Rhododendrites, CC BY-SA 4.0, via Wikimedia Commons*
 
 A typical problem to solve with date multi-ranges, is one of scheduling. Say you have many staff, each of whom have lots of appointments they need to be at throughout a day. Those appointments can be booked by themselves or assigned from other people from different departments.
 
@@ -28,6 +28,7 @@ As a starting point, we create a single view containing all the appointments. We
 | Alice	| Octavia Butler	| 9am	| 10am     |
 | Alice	| Stephen King	| 10:30	| 11:30am  | 
 | Alice	| Zora Hurston	| 11am	| 12pm | 
+
 (we’ll assume that there’s a date attached to each start and end time too, it’s just not written in here for brevity).
 
 The first step is to combine the start and end times into one ‘thing’, a date range. Later on we’ll be able to compare date ranges with each other to find overlaps. In PostgreSQL, a function ‘tsrange’ can be used to do that, which gives us
@@ -98,7 +99,7 @@ If we want to keep everything in a single calculation, we can expand that out, i
 ```
 range_agg( tsrange(start time, end time) )
 &&
-range_agg( tsrange(start time, end time)
+range_agg( tsrange(start time, end time) )
 over (
 partition by staff
 rows between unbounded preceding and unbounded following
@@ -106,7 +107,7 @@ exclude current row
 )
 ```
 
-The first three lines are the range, the rest are the multirange. The whole thing just returns a true or false for each row, true if there’s an overlap and false if there isn’t.
+The first line is the range, line 3 onwards is the multirange. The whole thing just returns a true or false for each row, true if there’s an overlap and false if there isn’t.
 
 Filtering the results to just those where there is an overlap will give us
 
@@ -117,6 +118,6 @@ Filtering the results to just those where there is an overlap will give us
 
 That’s the basic idea - a couple of knotty concepts to get your head round but a very elegant solution once you know how things work.
 
-In the real world of course, we might like to do extra things, like add columns to show more details about the overlaps, or maybe show just the times which overlap. If anyone wants to use or think about this for their own systems, please let me know, I’d be delighted to see it in use and help if I can.
+In the real world of course, we might like to do extra things, like add columns to show more details about the overlaps, or maybe show just the times which overlap. If anyone wants to use or think about this for their own systems, please let me know, I’d be delighted to see it in use more and help if I can.
 
 - Oliver
