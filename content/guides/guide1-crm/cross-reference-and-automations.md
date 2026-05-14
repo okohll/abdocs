@@ -3,7 +3,7 @@ title: "5. Cross References and Automations"
 date: 2023-08-16T13:00:00+01:00
 type: docs
 weight: 60
-description: "Introducing more advanced features such as cross referencing data and building a utomations"
+description: "Introducing more advanced features such as cross referencing data and building automations"
 tags:
 - Citizen Developer level 3
 - Junior Software Architect
