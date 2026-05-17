@@ -1,6 +1,6 @@
 ---
-title: "14th May 2026 - more UI improvements, storage changes and coming up"
-date: 2026-05-14T09:57:55+01:00
+title: "17th May 2026 - more UI improvements, storage changes and coming up"
+date: 2026-05-17T09:57:55+01:00
 type: docs
 weight: 50
 description: Pinning and other UI improvements, file storage and new features in development"
@@ -49,6 +49,9 @@ We're building tools to let you define, enforce and see those definitions wherev
 What this looks like in practice will become clear - we will test all new features internally before making them widely available, but if you want an input during the development phase please do get in touch with your thoughts.
 
 Thanks to Natalie Watts for working with us in this area.
+
+![Latin Dictionary](/latin-dictionary.jpg)
+*[Dr. Marcus Gossler](https://commons.wikimedia.org/wiki/File:Latin_dictionary.jpg), [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons*
 
 ### Business Intelligence
 We have some projects in the pipeline for looking at [data warehouseing](https://en.wikipedia.org/wiki/Data_warehouse), a step beyond the direct use of [Business Intelligence]({{<relref "/docs/charting/business-intelligence">}}) tools.
