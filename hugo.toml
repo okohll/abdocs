@@ -144,3 +144,18 @@ enable = false
         desc = "Follow us on Twitter to get the latest news!"
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 
+[module]
+  proxy = "direct"
+  # uncomment line below for temporary local development of module
+  # replacements = "github.com/google/docsy -> ../../docsy"
+  [module.hugoVersion]
+    extended = true
+    min = "0.157.0"
+  [[module.imports]]
+    path = "github.com/google/docsy"
+    disable = false
+
+[security]
+  [security.node]
+    [security.node.permissions]
+      disable = true

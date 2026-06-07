@@ -2,7 +2,7 @@
 title: "Special Uses"
 date: 2020-05-13T16:40:00+01:00
 type: docs
-weight: 100
+weight: 110
 description: Creating application functionality using views
 tags:
 - Junior Software Architect

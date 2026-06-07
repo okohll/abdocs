@@ -2,7 +2,7 @@
 title: "Options"
 date: 2022-05-22T16:00:00+01:00
 type: docs
-weight: 110
+weight: 100
 description: Many options affect how views look and behave
 tags:
 - Citizen Developer level 3
