@@ -75,7 +75,7 @@ If a view in the middle of a long chain of views is cached, it can greatly speed
 
 There's an art to selecting views to cache. Agilebase helps by **suggesting** certain views based on various heuristics and statistics. For example, views which contain aggregate calculations, which are relatively slow and return small numbers of rows are good candidates.
 
-Thirdly, **query plan** tweaking. If a view is slow, Agilebase will experiment with disabling an enabling some query planning options, automatically setting them if they have a large enough effect for a view.
+Thirdly, **query plan** tweaking. If a view is slow, Agilebase will experiment with disabling and enabling some query planning options, automatically setting them if they have a large enough effect for a view.
 
 Fourthly, **index** use. Agilebase will show which fields are indexed, so the user can select them for filtering if necessary. Indexes can't yet be created by a developer, but can be added on request.
 
@@ -93,6 +93,6 @@ The article we referenced at the start mentions a couple of other downsides of u
 * Row level security. Again, we have our own mechanism in-application for this - [multi-tenanting]({{<relref "/docs/security-and-compliance/security-features/roles#multi-tenanting">}})
 
 ## Summary
-We think that the work explained above makes Agilebase one of the best platforms for database applications for businesses. To the robustness and performance capabilities of the [Postgresq](https://postgresql.org) database, we add affordances to make the process of developing large, complex applications a lot easier.. 
+We think that the work explained above makes Agilebase one of the best platforms for database applications for businesses. To the robustness and performance capabilities of the [PostgreSQL](https://postgresql.org) database, we add affordances to make the process of developing large, complex applications a lot easier.
 
 We must emphasise however that the trade-offs and decisions talked about above are those which fit the intended use cases. Cases in which really complex applications need to be developed, but they are primarily internal business applications. Consumer facing applications working with big data for example may well have different needs.
