@@ -10,11 +10,11 @@ tags:
 ---
 As you build applications in Agilebase, you will quickly find yourself creating views as this section of the documentation describes.
 
-Each view serves a purpose, to help individual people carry out their daily work, for many functions from just creating lists of items to work through, through to more complex things like maths, calculating resource utilisations or stats for management reports.
+Each view serves a purpose, to help individual people carry out their daily work. They support many functions from just creating lists of items to work through, through to more complex things like maths, calculating resource utilisations or stats for management reports.
 
 As an application grows in size, you will naturally start to want to make the output of one view feed into another.
 
-A good example is a recipe development application. As each ingredient is assigned an amount to add, a view can calculate the total for the recipe, then the percentage figure for each line. The percentage can be used for many purposes, for example
+A good example is a recipe development application. As each ingredient is assigned an amount in grams, a view can calculate the total for the recipe, then the percentage figure for each line. The percentage can be used for many purposes, for example
 * scaling a recipe to make large amounts
 * calculating the nutritional value of the recipe as a whole, given the values of each ingredient
 * working out the raw material costs of producing any amount, given the cost/g of each constituent
@@ -25,7 +25,7 @@ As it happens, we have an example of a recipe generation app, as part of a wider
 Here's a diagram which shows the number of views which the 'product ing. weight total' view feeds into
 ![A node diagram showing view connections](/weight-total-views.png)
 
-Each node is a view and the lines are connections (i.e. [joins]({{<relref "joins"">}}) or [unions]({{<relref "/docs/views/options/behaviour-options#amalgamate-with">}})) between them. In this case, 84 views depend on the weight total. You can see that there are chains of views, where one view joins to another, which joins to another etc.
+Each node is a view and the lines are connections (i.e. [joins]({{<relref "joins">}}) or [unions]({{<relref "/docs/views/options/behaviour-options#amalgamate-with" >}})) between them. In this case, 84 views depend on the weight total. You can see that there are chains of views, where one view joins to another, which joins to another etc.
 
 The interesting thing is that this tactic would actually be frowned upon in traditional database development. There's an excellent writeup of some of the costs associated with the tactic here:
 
@@ -38,7 +38,7 @@ In fact, speaking personally for a moment, this is the part of Agilebase which I
 Some of the traditional problems of view dependencies, along with our solutions are:
 
 ## Refactoring
-One key issue is that when certain types of change are made to a view, like adding or removing a field, all dependent views have to be dropped first, then recreated again in the right order afterwards.
+One key issue is that when certain types of change are made to a view, like removing a field, all dependent views have to be dropped first, then recreated again in the right order afterwards.
 
 In the normal database world, this is a major issue, a time consuming manual operation. Agilebase though already has an in-memory representation of each view and knows how they're all connected.
 
@@ -67,19 +67,19 @@ So often, the database's query planner will decide to not call *B* directly, but
 ### Mitigations
 So what does Agilebase offer for performance management?
 
-The first thing is monitoring and reporting. We rank views by speed and overall 'load' i.e. how many times each view is called per day multiplied by how long each call takes. That gives the developer a priority list of views to look at. Importantly, even if a view isn't called directly, it's call count is incremented when a view joining to it is used. That way, those views for which improvements would have the most impact are highlighted.
+The first thing is **monitoring** and reporting. We rank views by speed and overall 'load' i.e. how many times each view is called per day multiplied by how long each call takes. That gives the developer a priority list of views to look at. Importantly, even if a view isn't called directly, it's call count is incremented when a view joining to it is used. That way, those views for which improvements would have the most impact are highlighted.
 
-Secondly, caching. A PostgreSQL capability called view materialization is used to cache views. Agilebase can automatically refresh the cache on a set schedule, e.g. every 10 minutes or every hour, even down to every time it's called. The system is intelligent though - even if set to refresh on every call, the refresh is only actually done if data edits which could have affected the view have been made since the last call. Agilebase knows which data edits are being made and given how a view is constructed, which could affect it.
+Secondly, **caching**. A PostgreSQL capability called view materialization is used to cache views. Agilebase can automatically refresh the cache on a set schedule, e.g. every 10 minutes or every hour, even down to every time it's called. The system is intelligent though - even if set to refresh on every call, the refresh is only actually done if data edits which could have affected the view have been made since the last call. Agilebase knows which data edits are being made and given how a view is constructed, which could affect it.
 
 If a view in the middle of a long chain of views is cached, it can greatly speed things up. The database doesn't have to worry about anything 'underneath' the cached view - all those joined views are irrelevant. To the database, it looks like the cached view is a simple table.
 
-There's an art to selecting views to cache. Agilebase helps by suggesting certain views based on various heuristics and statistics. For example, views which contain aggregate calculations, which are relatively slow and return small numbers of rows are good candidates.
+There's an art to selecting views to cache. Agilebase helps by **suggesting** certain views based on various heuristics and statistics. For example, views which contain aggregate calculations, which are relatively slow and return small numbers of rows are good candidates.
 
-Thirdly, query plan tweaking. If a view is slow, Agilebase will experiment with disabling an enabling some query planning options, automatically setting them if they have a large enough effect for a view.
+Thirdly, **query plan** tweaking. If a view is slow, Agilebase will experiment with disabling an enabling some query planning options, automatically setting them if they have a large enough effect for a view.
 
-Fourthly, index use. Agilebase will show which fields are indexed, so the user can select them for filtering if necessary. Indexes can't yet be created by a developer, but can be added on request.
+Fourthly, **index** use. Agilebase will show which fields are indexed, so the user can select them for filtering if necessary. Indexes can't yet be created by a developer, but can be added on request.
 
-Lastly, Agilebase will generate 'explain' plans on request. Third party tools like https://www.pgmustard.com or https://explain.depesz.com will use those to make suggestions as to how performance might be improved.
+Lastly, Agilebase will generate '**explain**' plans on request. Third party tools like https://www.pgmustard.com or https://explain.depesz.com will use those to make suggestions as to how performance might be improved.
 
 ## Understanding
 When we do start to create complex view structures, containing many views depending on each other, it helps to be able to visualise how everything's connected. In the [development interface]({{<relref "/docs/introduction/development-mode">}}), you can select any view or table and generate the chart of joins to or from it.
@@ -90,9 +90,9 @@ Here's part of the structure of one of the views which uses the product ingredie
 ## Other
 The article we referenced at the start mentions a couple of other downsides of using chains of views. These ones though aren't relevant for us.
 * Writeable views. Agilebase has it's own [inline editing]({{<relref "/docs/views/options/display-options#interface-inline-editing">}}) mode which effectively allows this functionality for any view.
-* Row level security. Again, we have our own mechanism in-application for this - [multi-tenanting]]({{<relref "/docs/security-and-compliance/security-features/roles#multi-tenanting">}})
+* Row level security. Again, we have our own mechanism in-application for this - [multi-tenanting]({{<relref "/docs/security-and-compliance/security-features/roles#multi-tenanting">}})
 
 ## Summary
-We think that the work explained above makes Agilebase one of the best platforms for database applications for businesses. To the robustness and performance capabilities of the Postgresql database, we add affordances to make the process of developing large, complex applications a lot easier.. 
+We think that the work explained above makes Agilebase one of the best platforms for database applications for businesses. To the robustness and performance capabilities of the [Postgresq](https://postgresql.org) database, we add affordances to make the process of developing large, complex applications a lot easier.. 
 
-We must emphasise however that the trade-offs and decisions talked about above are those which fit the intended use cases. Cases in which really complex applications need to be developed, but they are primarily internal business applications. Customer facing applications working with big data for example may well have different needs.
+We must emphasise however that the trade-offs and decisions talked about above are those which fit the intended use cases. Cases in which really complex applications need to be developed, but they are primarily internal business applications. Consumer facing applications working with big data for example may well have different needs.
