@@ -38,7 +38,7 @@ Our privacy policy is available here: https://agilechilli.com/help-centre/agileb
 
 An overview of our GDPR policy is available [here](/gdpr-overview.pdf).
 
-[![GDPR Compliance Cycle](/gdpr-compliance-cycle.png)](/gdpr-overview.pdf)
+![[GDPR Compliance Cycle](/gdpr-compliance-cycle.png)](/gdpr-overview.pdf)
 
 ## Data Protection and Disaster Recovery
 

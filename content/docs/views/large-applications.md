@@ -73,7 +73,7 @@ Secondly, **caching**. A PostgreSQL capability called view materialization is us
 
 If a view in the middle of a long chain of views is cached, it can greatly speed things up. The database doesn't have to worry about anything 'underneath' the cached view - all those joined views are irrelevant. To the database, it looks like the cached view is a simple table.
 
-There's an art to selecting views to cache. Agilebase helps by **suggesting** certain views based on various heuristics and statistics. For example, views which contain aggregate calculations, which are relatively slow and return small numbers of rows are good candidates.
+There's an art to selecting views to cache. Agilebase helps by **suggesting** certain views based on various heuristics and statistics. For example, views which contain aggregate calculations, which are relatively slow and return small numbers of rows are good candidates. When a view is cached, the system will report how much of a benefit the caching is, i.e. the proportion of times the data can be read without needing to update the cache.
 
 Thirdly, **query plan** tweaking. If a view is slow, Agilebase will experiment with disabling and enabling some query planning options, automatically setting them if they have a large enough effect for a view.
 
