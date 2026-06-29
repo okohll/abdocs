@@ -124,3 +124,5 @@ Agilebase has a mechanism to retrieve a full user object given a username, so it
 
 ## Agreements
 Before starting, we'll need the developer to agree to assign all IP ownership of code to Agilebase Ltd and also sign a Non Disclosure Agreement. Documents to cover those things can be supplied on request.
+
+Use of AI as an aid is at your discretion, but particularly if you do use AI, please only respond if you are already an experienced Java developer, i.e. someone who can fully understand and be accountable for any generated code.
