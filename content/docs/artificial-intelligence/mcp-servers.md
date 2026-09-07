@@ -7,7 +7,7 @@ description: Setting up MCP servers to allow you to interface with Agilebase via
 tags:
 - Software Architect
 ---
-In Agilebase you have the ability to easily [create MCP servers]({{<relref "mcp-servers"">}}). What is an MCP server? The acronym's not very helpful, as per many tech. acronyms (it stands for Model Context Protocol), but in simple terms it means you can connect up a standard third party AI chat interface, like ChatGPT, Claude or Mistral, with Agilebase and query your system with natural language.
+In Agilebase you have the ability to easily [create MCP servers]({{<relref "mcp-servers">}}). What is an MCP server? The acronym's not very helpful, as per many tech. acronyms (it stands for Model Context Protocol), but in simple terms it means you can connect up a standard third party AI chat interface, like ChatGPT, Claude or Mistral, with Agilebase and query your system with natural language.
 
 So for example you can ask the system a question and it will look up information from views, or you can ask it to do something like add a note to add a new person to the database.
 
