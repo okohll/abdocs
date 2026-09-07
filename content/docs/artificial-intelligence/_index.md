@@ -22,7 +22,7 @@ Examples could be
 * summarising large amounts of data or extracting key points for reporting
 
 ## 3) Chat interface
-In Agilebase you have the ability to easily [create MCP servers]({{<relref "mcp-servers"">}}). What is an MCP server? The acronym's not very helpful, as per many tech. acronyms (it stands for Model Context Protocol), but in simple terms it means you can connect up a standard AI chat interface with Agilebase and query your system with natural language.
+In Agilebase you have the ability to easily [create MCP servers]({{<relref "mcp-servers">}}). What is an MCP server? The acronym's not very helpful, as per many tech. acronyms (it stands for Model Context Protocol), but in simple terms it means you can connect up a standard AI chat interface with Agilebase and query your system with natural language.
 
 So for example you can ask the system a question and it will look up information from views, or you can ask it to do something like add a note to add a new person to the database.
 
