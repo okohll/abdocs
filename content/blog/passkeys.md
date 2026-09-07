@@ -5,6 +5,8 @@ type: docs
 weight: 900
 description: Temporary location of a request for developers
 ---
+UPDATE: work has been completed.
+
 # Passkeys
 We have a bespoke Java application running in a servlet container (currently Tomcat 10). The authentication is form based, with an additional 2FA solution using a one-time-password library. The form authentication uses the container's built in realm based authentication, with a BCrypt realm to hash passwords which we have supplied - the only component which is not out of the box for Tomcat.
 
@@ -125,4 +127,4 @@ Agilebase has a mechanism to retrieve a full user object given a username, so it
 ## Agreements
 Before starting, we'll need the developer to agree to assign all IP ownership of code to Agilebase Ltd and also sign a Non Disclosure Agreement. Documents to cover those things can be supplied on request.
 
-Use of AI as an aid is at your discretion, but particularly if you do use AI, please only respond if you are already an experienced Java developer, i.e. someone who can fully understand and be accountable for any generated code.
+Use of AI tools like e.g. Claude Code is at your discretion, but particularly if you do use AI, please only respond if you are already an experienced Java developer, i.e. someone who can fully understand and be accountable for any generated code.

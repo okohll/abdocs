@@ -8,30 +8,23 @@ tags:
 - Software Architect
 - v6
 ---
-AI is used in many core features of Agilebase: to give you ideas about what to build, help to build those systems and build more advanced features more quickly than you would be able to do on your own as you progress your learning.
+AI use in Agilebase falls into three categories. In all cases, use is optional. By default EU AI providers bound by strict GDPR regulations are used. Contractually, data is never shared or used for model training purposes. Please contact us if you wish to use your own privately hosted models.
 
-It's possible, with a few simple prompts, for Agilebase's AI to build a complete system for you from scratch, for whatever you want (a CRM system for a charity, an asset tracking system for a film production company, or whatever you want to describe).
+## 1) Development
+[AI can aid you]({{<relref "ai-development">}}) in creating a system from scratch, or adding functionality, particularly when it comes to more complex things like SQL calculations.
 
-{{< youtube sBYr8Sf6hAI >}}
+## 2) AI workflows
+As well as working *on* the system, you can put AI to work *in* the system as well, modifying your data in bulk, with [AI workflows]({{<relref "/docs/workflows/ai-workflows">}}). These can create or update records, merging existing data into prompts.
 
-Then when fleshing it out, the AI can help with more complex tasks like adding calculations for reporting.
+Examples could be
+* letting people enter basic details for records (sales enquiries, time logs etc.) and letting the AI automatically categorise and add metadata in the background
+* when a new field is added to a table, update all historical records to set sensible values for it
+* summarising large amounts of data or extracting key points for reporting
 
-However, AI isn't a replacement for your own understanding, more of an aid. It's always a good idea to have some knowledge of the principles of how database systems work and Agilebase in particular - [relational database concepts]({{<relref "/docs/tables/relational-database-concepts">}}) is a good starting point.
+## 3) Chat interface
+In Agilebase you have the ability to easily [create MCP servers]({{<relref "mcp-servers"">}}). What is an MCP server? The acronym's not very helpful, as per many tech. acronyms (it stands for Model Context Protocol), but in simple terms it means you can connect up a standard AI chat interface with Agilebase and query your system with natural language.
 
-## Getting Started
-See [Using AI to add multiple tables]({{<relref "/docs/tables/adding-and-removing#using-ai-to-add-multiple-tables">}}) as the starting point for building a complete system, or extending an existing system with new applications
+So for example you can ask the system a question and it will look up information from views, or you can ask it to do something like add a note to add a new person to the database.
 
-## Private AI
+The full power comes because MCP is an industry standard, which means you can not just connect Agilebase, but via one chat interface, connect many different systems. So for example, it could monitor an email inbox, to triage, categorise and create support tickets, sales enquiries etc. in Agilebase.
 
-Where AI features are available in Agilebase, EU AI providers bound by strict GDPR regulations are used. Contractually, data is never shared or used for model training purposes.
-
-Whenever you use AI features, which are marked with a 'sparkles' icon and the word AI inside a button, the prompts that you provide, along with other information from the Agilebase system (explained in the documentation for each feature) is sent to the AI.
-
-For example, when you 
-* [create a system]({{<relref "/docs/tables/adding-and-removing#using-ai-to-add-multiple-tables">}}) - the prompt you provide, plus a list of existing tables in the system is sent
-* [add fields to a table]({{<relref "/docs/fields#adding-fields-automatically-using-ai">}}) - the prompt you provide, plus a list of existing tables in the system is sent
-* [create a calculation]({{<relref "/docs/views/calculations#using-the-ai">}}) - the prompt you provide, plus a list of existing fields in all joined tables/views, is sent
-* [create a chart]({{<relref "/docs/charting/built-in-charting">}}) - the chart description you provide, the view name and a list of fields in the view is sent
-* [edit a document template]({{<relref "/docs/fields/field-types/special-field-types/file/document-templates/">}}) - the existing template content and the list of available template variables (fields etc.) is sent
-### Self hosted models
-Should you wish, you can [configure your organisation settings]({{<relref "/docs/advanced-usage/company-settings">}}) to use your own choice of AI, including self-hosted models to ensure traffic never leaves your own controlled infrastructure.
