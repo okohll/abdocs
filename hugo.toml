@@ -169,9 +169,4 @@ enable = false
     urls = ['(?i)^https?://[a-z0-9]', '! ^https?://\d+\.', '! (?i)localhost', '! (?i)^https?://[^/?#]*@']
   [security.node]
     [security.node.permissions]
-      allowAddons = ['tailwindcss']
-      allowChildProcess = ['tailwindcss']
-      allowRead = ['.']
-      allowWorker = ['tailwindcss']
-      allowWrite = []
-      disable = false
+      disable = true

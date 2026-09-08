@@ -6,7 +6,7 @@ set -e
 git pull
 
 # Upgrade Docsy template
-# hugo mod get -u github.com/google/docsy
+# See https://www.docsy.dev/docs/update/hugo-module/
 
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 

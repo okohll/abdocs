@@ -7,11 +7,11 @@ description: Setting up MCP servers to allow you to interface with Agilebase via
 tags:
 - Software Architect
 ---
-In Agilebase you have the ability to easily [create MCP servers]({{<relref "mcp-servers">}}). What is an MCP server? The acronym's not very helpful, as per many tech. acronyms (it stands for Model Context Protocol), but in simple terms it means you can connect up a standard third party AI chat interface, like ChatGPT, Claude or Mistral, with Agilebase and query your system with natural language.
+In Agilebase you have the ability to easily create MCP servers). What is an MCP server? The acronym's not very helpful, as per many tech. acronyms (it stands for Model Context Protocol), but in simple terms it means you can connect up a standard third party AI chat interface, like ChatGPT, Claude or Mistral, to Agilebase and query your system with natural language.
 
-So for example you can ask the system a question and it will look up information from views, or you can ask it to do something like add a note to add a new person to the database.
+So for example you can ask your Agilebase system a question and it will look up relevant information from views, or you can ask it to do something like add a new person to the database.
 
-The full power comes because MCP is an industry standard, which means you can not just connect Agilebase, but via one chat interface, connect many different systems. So for example, it could monitor an email inbox, to triage, categorise and create support tickets, sales enquiries etc. in Agilebase.
+The full power comes because MCP is an industry standard, which means you can not just connect Agilebase, but many different systems, via one chat interface. So for example, it could monitor an email inbox, to triage, categorise and create support tickets, sales enquiries etc. in Agilebase.
 
 > This feature is currently in beta testing and will evolve over time.
 > In particular, you will currently need a Mistral AI account to make use of it. In time, other chat interfaces will be supported.
