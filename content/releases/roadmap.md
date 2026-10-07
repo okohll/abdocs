@@ -13,6 +13,8 @@ Recently, we've released [passkey]({{<relref "/docs/security-and-compliance/secu
 
 Currently, we're planning out the major elements of how our AI support will evolve. Specifically, our MCP server, the feature which gives AI agents the ability to retrieve and store data in Agilebase.
 
+> In a nutshell, this allows you to interact with Agilebase not directly, but via any AI chat system, like OpenAI, Claude or Mistral.
+
 The MCP server does currently work and customers are using it effectively. (If you're not already, please give it a go and let us know what you think, so you can inform future development). However we've been consulting widely amongst customers and outside experts and it's clear that some further development could make it even more useful.
 
 ## Executive summary
