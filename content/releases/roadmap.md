@@ -9,13 +9,22 @@ Agilebase is constantly being updated with many minor improvements and bug fixes
 
 However, there are some longer term threads that are more planned than reactive.
 
-Recently, we've released passkey support, which is one of those.
+Recently, we've released [passkey]({{<relref "/docs/security-and-compliance/security-features/users/passkeys>}}) support, which is one of those.
 
-Currently, we're planning out the major elements of how our MCP server will evolve. That's the feature which gives AI agents the ability to retrieve and store data in Agilebase.
+Currently, we're planning out the major elements of how our AI support will evolve. Specifically, our MCP server, the feature which gives AI agents the ability to retrieve and store data in Agilebase.
 
-The MCP server does work and customers are using it effectively. (If you're not already, please give it a go and let us know what you think, so you can inform future development). However we've been consulting widely amongst customers and outside experts and it's clear that some further development could make it even more useful.
+The MCP server does currently work and customers are using it effectively. (If you're not already, please give it a go and let us know what you think, so you can inform future development). However we've been consulting widely amongst customers and outside experts and it's clear that some further development could make it even more useful.
 
-Our planned items are:
+## Executive summary
+In brief, the AI agent functionality will, in order of development:
+1) allow the AI to authenticate against Agilebase to 'take on' the privileges of the person using it - the AI won't be able to do anything the person using it would when they log in to Agilebase
+2) allow the AI to examine how views and tables are built, to distill meaning from them, so it can answer questions and carry out requested actions more reliably
+3) allow you to give it specific instructions for specific tasks where it's never going to distill meaning automatically. So that when a user asks to say 'make a new purchase order' it knows which steps must be carried out
+4) further work to let your unique processes and language permeate the AI's workings
+
+> Importantly, no. 2 will allow not just users to query Agilebase effectively, but also allow developers to ask it to help with any arbitrary task - things like 'create a view to show samples tested per week', 'make sure each company has it's own invoice number sequence' etc.
+
+Our planned items in more detail are:
 
 ## 1) Authentication mechanism changes
 Currently, to use the MCP server, you have to use a secret API key (provided by Agilebase). This is perfectly secure, but it doesn't allow different people to use the same MCP server and apply their own privileges. Which means the MCP server has to be carefully designed and shared appropriately.
@@ -38,7 +47,7 @@ Inference only gets you so far. Some processes which your organisation carries o
 
 We will therefore add the ability for you to specify your own set of 'skills', as they're called in AI land. Each one can tell the AI in detail the steps necessary to accomplish any particular task. So for example if you add a new customer, you might require that the organisation has a contact marked as 'accounts payable' with a valid email address - just as one step amongst many.
 
-## 3) Meaning
+## 4) Meaning
 There are a number of terms floating about in the field of AI to add understanding of your particular work, as opposed to 'the average case' which AI defaults to. For example, in your organisation, your accounts dept. may have a particular way of amortising invoices over past or future months, or you may use your own jargon for parts of a process. In order to give you back valid answers, the AI would have to understand all the little details.
 
 Briefly, the ways to ensure your own specific meanings get through are to do with ontologies, knowledge graphs or taxonomies and semantic layers. There are many people who are trying to develop best practices and get to grips with how to make the knowledge embedded in your business usable by AI.

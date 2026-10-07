@@ -82,6 +82,8 @@ Also for dropdown lists and tags fields, Agilebase can generate dropdown content
 
 Only users/roles which have privileges to view the data in this particular table will be shown in the list. That can keep things manageable if a system has hundreds or more users.
 
+Also, if a user is a member of a role which has [user visibility]({{<relref "/docs/security-and-compliance/security-features/roles#multi-tenanting">}}) ticked, they will only be visible to members of the same role.
+
 > An example use would be assigning an account manager to a customer, selecting from a list of staff members (who are users).
 
 When a user is selected in this way, more options for use are opened up, such as automatically emailing the selected person when there's a status change or something is overdue for example. Agilebase can look up the user's email address to accomplish this, See [email workflows]({{<relref "/docs/workflows/send-email">}}) for details.

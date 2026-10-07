@@ -7,9 +7,11 @@ description: Two beta features - MCP servers for AI interactions, Passkeys for m
 ---
 This release includes a couple of major features for you to try out.
 
-> They are both currently in beta testing, which means it's not recommended to roll them out across your entire organisation yet, but they are complete and work, so administrators can use and test them.
+The release will be rolled out gradually over the next few weeks, customer test servers first.
 
 ## MCP server
+> This is currently in beta testing, which means it's not recommended to roll them out across your entire organisation yet, but feature is complete and works, so administrators can use and test.
+
 The addition of an MCP server functionality to Agilebase brings a powerful new capability for AI agents and people to interact with your system from outside it. In fact, you can connect up many different systems, if they have their own MCP servers, to transfer data intelligently between them or synthesize it.
 
 This feature in particular will evolve further over time but you can already use it to accomplish useful work.
@@ -18,6 +20,8 @@ To get started, you'll need a Mistral AI account (other systems will be supporte
 
 ## Passkeys
 Passkeys are a replacement for passwords. After enabling, you can log in to your system with a quick biometric check - whatever your device supports, be that a fingerprint reader, face scan or something else.
+
+If you find passwords and Two Factor Authentication codes a hassle, passkeys are for you!
 
 They are both more convenient and more secure, as explained by the UK government's National Cyber Security Centre, which recommends their use whenever possible.
 
