@@ -9,7 +9,7 @@ Agilebase is constantly being updated with many minor improvements and bug fixes
 
 However, there are some longer term threads that are more planned than reactive.
 
-Recently, we've released [passkey]({{<relref "/docs/security-and-compliance/security-features/users/passkeys>}}) support, which is one of those.
+Recently, we've released [passkey]({{<relref "/docs/security-and-compliance/security-features/users/passkeys">}}) support, which is one of those.
 
 Currently, we're planning out the major elements of how our AI support will evolve. Specifically, our MCP server, the feature which gives AI agents the ability to retrieve and store data in Agilebase.
 
@@ -24,16 +24,16 @@ In brief, the AI agent functionality will, in order of development:
 
 > Importantly, no. 2 will allow not just users to query Agilebase effectively, but also allow developers to ask it to help with any arbitrary task - things like 'create a view to show samples tested per week', 'make sure each company has it's own invoice number sequence' etc.
 
-Our planned items in more detail are:
+## Technical details
 
-## 1) Authentication mechanism changes
+### 1) Authentication mechanism changes
 Currently, to use the MCP server, you have to use a secret API key (provided by Agilebase). This is perfectly secure, but it doesn't allow different people to use the same MCP server and apply their own privileges. Which means the MCP server has to be carefully designed and shared appropriately.
 
 If we used a different mechanism called OAuth, we would be able to get the person using an AI chat or agent to authenticate as themselves. The agent would then take on their permission levels and privileges and wouldn't be able to do anything that the particular person themselves couldn't do.
 
 So that's the first item, which then allows a solid foundation of data security to build on.
 
-## 2) Discoverability vs design
+### 2) Discoverability vs design
 Currently an administrator has to specifically choose which tables and views from Agilebase are made available to outside AI - due to the permissions mechanism described above.
 
 However when we have OAuth, we can open up a lot more power by giving agents access to everything in Agilebase that the person using it has available. The paradigm changes from 'allow only specifically chosen areas', to 'allow the AI to discover what it needs to carry out a particular task. It can see how tables are connected together to infer what it might need to do. For example, if asked to add an organisation and contacts, it can find out that organisations and contacts are connected via site addresses, therefore a site address needs adding too. (If of course they are in your system, that's just an example).
@@ -42,12 +42,12 @@ If asked to find turnover data, it will be able to search the entire list of vie
 
 A discovery mechanism will also let the AI be a much more useful development assistant. It will be able to check how the structure works - which joins a view has etc., if say you ask it to explain a workflow or change a view.
 
-## 3) Skills
+### 3) Skills
 Inference only gets you so far. Some processes which your organisation carries out need to be explained. Maybe you have how-tos, process maps or guides for new employees in particular roles. This idea is similar. In fact, if you do have that documentation, it can be re-purposed..
 
 We will therefore add the ability for you to specify your own set of 'skills', as they're called in AI land. Each one can tell the AI in detail the steps necessary to accomplish any particular task. So for example if you add a new customer, you might require that the organisation has a contact marked as 'accounts payable' with a valid email address - just as one step amongst many.
 
-## 4) Meaning
+### 4) Meaning
 There are a number of terms floating about in the field of AI to add understanding of your particular work, as opposed to 'the average case' which AI defaults to. For example, in your organisation, your accounts dept. may have a particular way of amortising invoices over past or future months, or you may use your own jargon for parts of a process. In order to give you back valid answers, the AI would have to understand all the little details.
 
 Briefly, the ways to ensure your own specific meanings get through are to do with ontologies, knowledge graphs or taxonomies and semantic layers. There are many people who are trying to develop best practices and get to grips with how to make the knowledge embedded in your business usable by AI.
