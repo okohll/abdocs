@@ -55,6 +55,13 @@ In that case, when you press the 'login with passkey' button, you'll be shown a 
 #### If I have a passkey can I still use my username and password?
 In the short term, yes, you can use either method to log in. In the long term, people with passkeys will only be able to log in with that method, to take advantage of the increased security.
 
+## API changes
+
+Some minor updates have been made to the API surface, for people who are integrating systems with Agilebase to know about:
+
+* The OpenAPI spec. Agilebase provides mistakenly set 'row_limit' as a boolean, it's now a whole number
+* For Authorization via API key, the "Bearer " prefix to the API key in the Authorization header is now not case sensitive - lowercase can be used as well as a capital B
+
 ## Other
 
 Many other incremental improvements and bugfixes have been implemented since the last release. To see all of them, please take a look at
