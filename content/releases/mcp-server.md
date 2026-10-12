@@ -31,7 +31,7 @@ Passkey technology first came to our attention back in 2017, as a technology con
 
 It's also only recently become possible to easily and securely migrate and stored passkeys from one system to another. Until that, if you set up your login on say a Microsoft system, you couldn't then move to Apple. We weren't happy asking customers to lock themselves in to any one particular vendor, so waited until that was solved before releasing.
 
-We recommend that system administrators test this facility e.g. on their own accounts so they become comfortable with how it works, before rolling out more fully throughout their ornganisations.
+We recommend that system administrators set this up on their own accounts first so they become comfortable with how it works, before rolling out more fully throughout their ornganisations.
 
 ### Passkey FAQ
 
@@ -59,8 +59,16 @@ In the short term, yes, you can use either method to log in. In the long term, p
 
 Some minor updates have been made to the API surface, for people who are integrating systems with Agilebase to know about:
 
-* The OpenAPI spec. Agilebase provides mistakenly set 'row_limit' as a boolean, it's now a whole number
+* The OpenAPI spec. Agilebase provides mistakenly described 'row_limit' as a boolean, it's now a whole number
 * For Authorization via API key, the "Bearer " prefix to the API key in the Authorization header is now not case sensitive - lowercase can be used as well as a capital B
+
+> Coming soon, but not in this release: all table updates by API will require an API key. Currently a developer can set the table to not require them, that option will be removed in future.
+
+## Multi-step chasers
+
+Chasers can now have multiple steps in them, i.e. as someone fills in form values, other questions conditionally appear.
+
+If you'd like to configure this in the near term, please let us know - the documentation is in the process of being updated.
 
 ## Other
 
