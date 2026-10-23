@@ -2,7 +2,7 @@
 title: "2nd April 2026 - finding scheduling conflicts"
 date: 2026-04-02T09:57:55+01:00
 type: docs
-weight: 60
+weight: 800
 description: A neat calculation to find overlaps of any date-based data in Agilebase
 ---
 There's a relatively new (given Postgresql's history) database feature called ‘date multi-ranges’ and it turns out that a partner of ours has found a great use for them for a customer they’re working with.

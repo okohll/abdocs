@@ -142,8 +142,6 @@ The process is similar, but instead of _save_new_record=true_, supply
 * _update_record=true_
 * _row_id=[internal id of the record]_
 
-The internal record ID can be got from a JSON feed or by using the _return=posted_json_ as above if editing a record previously created using the API.
-
 ### Uploading files
 As well as 'standard' data, Agilebase can accept documents posted into a [file field]({{<relref "/docs/fields/field-types/special-field-types/file">}}). This can be done in two ways:
 
