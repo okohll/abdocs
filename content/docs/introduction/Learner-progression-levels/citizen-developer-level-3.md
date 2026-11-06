@@ -9,16 +9,11 @@ tags:
 ---
 
 ### Introduction
-A Software Architect (see below) can, at their discretion, assign a citizen developer 3 'develop' privileges on a table (or tables).
+A Software Architect (see below) can, at their discretion, assign a citizen developer 3 'develop' privileges on tables.
 
-That allows them to
-* add [fields]({{<relref "/docs/fields">}}) to those table, excluding referenced fields
-* remove fields that they themselves have added (not others)
-* edit the basic properties of any field in those tables, e.g. the list of options in a dropdown box
+The privileges are as per Citizen Developer level 2, but you can also update or remove fields which have visibility rules, and manage [data integrity constraints]({{<relref "/docs/tables/data-integrity-checks#data-integrity-checks-advanced">}}).
 
-Additionally, actions not related to having develop privileges on a particular table are
-* edit the basic properties of any regular view. However, workflow, API and some other types of system view will be read-only
-
+Views work in the same way as at level 2.
 
 ## Useful Links
 Videos about how to control the UI [Guide 3 - Advanced UI Usage]({{<relref "/guides/guide3-advanced-usage">}})

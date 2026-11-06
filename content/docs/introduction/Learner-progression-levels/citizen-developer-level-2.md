@@ -16,15 +16,15 @@ This level is suggested or 'unlocked' once a citizen developer has carried out a
 However to activate the level, it must be manually assigned by a Software Architect level user, as it allows changes to the system which can affect other users.
 
 A citizen developer level 2 can
-* create new views that everyone can see, from any table
-	- edit them as per the citizen developer functionality above
-	- additionally they can add and remove simple joins, to include data from other tables in a view
-* remove views that they themselves have created (not those that others have)
-* create their own [tables]({{<relref "/docs/tables">}})
-	- add, edit and remove fields and tabs from those tables
-	- edit basic properties of the fields
+* create their own [tables]({{<relref "/docs/tables">}}), and delete them
+	- add, edit and remove fields and tabs, apart from fields with visibility rules or used for multi-tenanting
 	- assign privileges (up to edit) on those tables, using existing roles or direct user privileges
-* create [tiles]({{<relref "/docs/tiles">}}) and delete tiles they've added themselves
+* be given 'develop' privileges on other tables by a Software Architect, to work on their fields and tabs in the same way
+* create new views, or clone existing ones, from any table they can see
+* edit views they created, or where they have 'develop' privileges on the parent table
+* create and remove [tiles]({{<relref "/docs/tiles">}})
+
+Views used by workflows, and advanced view settings such as API access, stay read-only until Junior Software Architect.
 
 ## Useful Links
 Learn how to add functionality by watching our guide [Creating a basic task list]({{<relref "guides/guide1-crm/tasklist">}})

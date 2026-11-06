@@ -12,13 +12,15 @@ tags:
 A junior software architect can use practically all of the application building functionality of Agilebase. For example
 * Create [workflows]({{<relref "/docs/workflows">}}) (including chasers, document generation)
 * Set up [APIs]({{<relref "/docs/integrations">}})
-* Add complex [joins]({{<relref "/docs/views/joins">}}) to views
-* Create, edit and delete [roles]({{<relref "/docs/security-and-compliance/security-features/roles">}})
+* Create, edit and delete [roles]({{<relref "/docs/security-and-compliance/security-features/roles">}}), apart from the most powerful ones, such as those allowing exports or used for multi-tenanting
 * Assign [privileges]({{<relref "/docs/security-and-compliance/security-features/privileges">}}) to roles or users up to the 'edit' level
-* Remove fields, views etc. created by anyone
-* Edit the advanced properties of fields and views, including field visibility rules (confidentiality rules) for example
+* Work on fields, views etc. created by anyone, on tables they have 'develop' privileges for
+* Edit advanced view settings, such as API access, and fields used for multi-tenanting
 
-Their only limitations are to do with managing the organisation as a whole, including other users.
+They can see all tables and views in the system, whether or not they have privileges to see the actual data in them.
+That allows them to see the whole picture when looking at a system, so that consequences of a change can be seen and the chance of duplicates being made is reduced. 
+
+Their main limitations are to do with managing the organisation as a whole: users, company settings, and the most powerful roles and privileges.
 
 ## Useful Links
 Boost your learning by watching our more advanced guides:

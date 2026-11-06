@@ -11,14 +11,15 @@ tags:
 ### Introduction
 This is the start of the Agilebase journey. At this level you can create your own customisations, using no coding. 
  
-An Agilebase citizen developer can create 'personal copies' of any [view]({{<relref "/docs/views">}}) and edit those copies
-* remove or add fields, excepting any that are marked 'confidential' (only higher level developers can access those fields)
-* rearrange fields
-* change field sorting
-* add filters or remove filters (except on 'confidential' fields)
+An Agilebase citizen developer can create 'personal copies' of [views]({{<relref "/docs/views">}}) and edit those copies
+* remove or add fields, excepting any used for [multi-tenanting]({{<relref "/docs/security-and-compliance/security-features/roles#multi-tenanting">}}) (only higher level developers can access those fields)
+* add calculations
+* rearrange fields and change sorting
+* add or remove filters (except on multi-tenanting fields)
 * add and remove [charts]({{<relref "/docs/charting">}})
+* join in data from other tables
 
-> A confidential field is one that has a [visibility]({{<relref "/docs/fields/field-options/common-options#show-if-record-in-view">}}) rule, or is used for [multi-tenanting]({{<relref "/docs/security-and-compliance/security-features/roles#multi-tenanting">}}).
+Views used by workflows can't be copied, and creating brand new views comes at level 2.
 
 The personal copy of the view is seen only by them. For example, a citizen developer may create a list of records filtered to show ones assigned to them. Everyone else in the organisation sees only the original view.
 

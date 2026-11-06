@@ -10,15 +10,14 @@ tags:
 
 ### Introduction
 As well as building and disassembling applications, software architects can set company-wide settings and manage the account as a whole. They can 
-* Add and remove [users]({{<relref "/docs/security-and-compliance/security-features/users">}})
-* Edit company level settings (e.g. whether to enforce 2FA)
-* Change table [sensitive and personal data]({{<relref "/docs/tables/sensitive-data">}}) settings (GDPR)
-* View and set users' learning levels (Agile Academy)
-* Assign privileges 
+* Add and remove [users]({{<relref "/docs/security-and-compliance/security-features/users">}}), and edit their details
+* Edit company level settings (e.g. security settings)
+* View and set other users' learning levels (Agile Academy)
+* Assign any privileges, and manage any roles
 
 ## Don't know where to start?
 If your company has just started building using Agilebase and you are reading this, then you're probably feeling that you've been thrown in to the deep end!
-Don't worry - using Agilebase will feel like you've been given a life buoy on ... with an outboard motor... in lovely warm water... next to the 5 star all inclusive carribean resort!
+Don't worry - using Agilebase will feel like you've been given a life buoy on ... with an outboard motor... in lovely warm water... next to the 5 star all inclusive Caribbean resort!
 To kick off, watch the following guide which will walk you through building a fully functional sales CRM. 
 * [Build a CRM]({{<relref "/guides/guide1-crm">}})
 
