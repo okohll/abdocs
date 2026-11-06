@@ -5,7 +5,6 @@ type: docs
 weight: 700
 description: We will soon be migrating customer systems to new infrastructure
 ---
-We will soon be migrating customer systems to new infrastructure.
 
 The upgrade is designed to provide an even more secure, robust and reliable foundation for Agilebase, improve performance and give us greater control over the infrastructure supporting your system.
 
