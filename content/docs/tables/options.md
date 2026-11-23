@@ -38,7 +38,7 @@ Records can be locked to prevent editing. You may like to do this based on crite
 
 To actually lock the record, a [workflow]({{<relref "/docs/workflows">}}) can be used.
 
-Locked records can be manually unlocked by someone with develop privileges on the table, but only one at a time.
+Locked records can be manually unlocked only one at a time. To unlock, a user must have 'develop' privileges on the table, or be a member of a role which has [allow global editing]({{<relref "/docs/security-and-compliance/roles#allow-global-editing">}}) ticked.
 
 ### Email notifications
 When someone adds a comment to a record, when selecting recipients, they have the option to email those recipients, as well as adding the comment to the [comment stream]({{<relref "/docs/tiles">}}). Ticking this table option sets the default to send emails for any comment added to this table. Users can override this on an individual comment basis and recipients can override in their notification preferences.

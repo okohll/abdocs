@@ -69,6 +69,15 @@ That form can be customised by adding a logo at the top. To do that, a file fiel
 If the same logo is to be used for all messages, the simplest way of accomplishing this is to put the Logo file field in a table with only a single record in it.
 Then add a [cross join]({{<relref "/docs/views/joins/types-of-join/#cross-join">}}) from the chaser to that table, to allow you to add the Logo field to the view.
 
+### Multi-step chaser forms
+As well as simple forms, you can create logic to allow multi-step questions, i.e. depending on the answer to one question, others can be shown. The logic is:
+* If at least one of the chaser form fields has the 'change causes refresh' option ticked
+* At least one has a visibility rule, i.e. it hides or shows based on criteria
+
+When that's the case, the form is re-shown on initial submission, unless the values the form completer has filled in cause the record to be filtered out of the view. I.e. the form has been completed successfully. In that case a thank-you screen is shown.
+
+If there are no visibility views or 'change causes refresh' fields, then the recipient always gets a thank-you screen, whether or not they have filled in valid entries. However if they haven't they will be re-chased in future.
+
 ### Receiving a response
 When a response is received to a chaser, as well as saving the documents / fields the chaser asked for, a comment will be logged to the first comment field in the parent table (if there is a comment field).
 
@@ -87,7 +96,3 @@ The following fields can optionally be added to the table. If they are found, th
 
 ### Errors
 If an email can't be sent because of an invalid address in the 'To' field, then the address specified in the 'Escalate To' field will be notified.
-
-### Using multiple chasers on the same table
-
-[TODO]

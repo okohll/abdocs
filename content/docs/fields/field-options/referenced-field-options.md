@@ -12,7 +12,9 @@ tags:
 See [Common build patters - custom filtering when using a relation]({{<relref "/docs/advanced-usage/build-patterns#custom-filtering-when-choosing-a-relation">}})
 
 ## Prominent
-Make the background of the referenced panel bright red - useful for showing warnings on screen.
+Make the background of the referenced panel a bright colour - red, unless [record flagging]({{<relref "/docs/tables/options#flag-records-with-colour">}}) overrides it.
+
+This can be useful for showing warnings on screen. 
 
 If the referenced field is a [workflow button]({{<relref "docs/workflows/advanced/workflow-buttons">}}), then it will become mandatory - it will need to be pressed on every visit to a record, if the field is [visible]({{<relref "docs/fields/field-options/common-options#field-visibility">}})
 

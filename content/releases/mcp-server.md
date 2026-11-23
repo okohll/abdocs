@@ -16,7 +16,7 @@ The addition of an MCP server functionality to Agilebase brings a powerful new c
 
 This feature in particular will evolve further over time but you can already use it to accomplish useful work.
 
-To get started, you'll need a Mistral AI account (other systems will be supported over time). Please see the [documentation]({{<relref "/docs/artificial-intelligence/mcp-servers" >}}) for how to set things up.
+To get started, you'll need a Mistral AI account (other systems will be supported over time). Please see the [documentation]({{<relref "/docs/artificial-intelligence" >}}) for how to set things up.
 
 ## Passkeys
 Passkeys are a replacement for passwords. After enabling, you can log in to your system with a quick biometric check - whatever your device supports, be that a fingerprint reader, face scan or something else.

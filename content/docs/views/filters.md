@@ -14,17 +14,15 @@ Filters can be applied permanently to a view, allowing an administrator to speci
 
 A filter can act on any field or calculation in the view, as well as on any in joined tables or views.
 
-Multiple filters act like they have AND between them, i.e. they are applied additively. If you wish to apply a filters with OR between them, or if you wish to apply a filter on the reult of the comparison of fields, then simply create the relevant [calculation]({{<relref "calculations">}}). For example, if you added two filters to a suppliers view
+When there are multiple filters, you can choose whether to use 'AND' or 'OR' inbetween each. ORs are evaluated first, i.e. 
 
-**status equals approved** and **status equals pending**
+```date > today AND category = a OR category = b```
 
-then you would get no records showing - a status can't be both one thing and another. However if you created a boolean calculation 'pending or approved', with definition
+would evaluate as
 
-`{status} like 'approved' or {status} like 'pending'`
+```date > today AND (category = a OR category = b)```
 
-you could then add a filter on that calculation
-
-**pending or approved equals true**
+If you want something different, you can create complex logic in a calculation and filter on that.
 
 ## Adding a filter
 1. Open the view you want to edit

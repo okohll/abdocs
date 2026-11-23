@@ -83,3 +83,6 @@ If a workflow step creates a record, or otherwise acts on a record, ticking this
 Only one workflow in a chain can have this option ticked.
 
 For example, if a user presses a button which creates an invoice record and document, ticking this option will ensure the user sees that invoice once it's created.
+
+### Enable
+Un-ticking this will disable the workflow and stop any currently running actions immediately, even if halfway through a set of rows.

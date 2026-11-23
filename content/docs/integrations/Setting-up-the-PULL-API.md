@@ -134,7 +134,7 @@ For dates, many common formats can be used, for example ISO format dates like "2
 
 When there is an error, details will be returned as described in [response codes]({{<relref "api-response-codes">}}).
 
-> To ensure one customer's use doesn't consume an inordinate amount of resources, each customer can only process one pull API request at a time. Whilst a request is processing, any further incoming requests are held in a queue, then processed in order as the previous one finishes.
+> To help avoid overloads, there's a configurable number of API requests that can run simultaneously. Any further incoming requests are held in a queue, then processed in order as the previous one finishes.
 > If at any time, a request has been held up for 60 seconds, further requests result in the 429 error and they are discarded.
 > 
 > If this occurs, there are a number of tactics you can use to shorten individual response times or make less requests - please get in touch if you need help. Alternatively, you can upgrade to one of our 'isolated environment' plans.

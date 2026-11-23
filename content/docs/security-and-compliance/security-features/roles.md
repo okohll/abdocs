@@ -38,6 +38,8 @@ To perform a global edit, the user should
 **User Visibility** and **Allow only multi-tenanting views to be seen**
 Used to configure [multi-tenanting](#multi-tenanting)
 
+The global editing privilege also allows people to unlock individual [locked records]({{<relref "/docs/tables/options#records-lockable">}}) for editing.
+
 ### Members
 Tick each user to add them to the role. Users will gain all the privileges defined by the role.
 

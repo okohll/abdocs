@@ -18,6 +18,8 @@ The selection affects the display in the user interface in some ways. In particu
 ## Image resolution
 This option allows you to specify that the system should automatically down-size any large images uploaded. This could be to save storage space (for which there is a cost), or it may be appropriate if these files are going to be attached to emails sent by the system.
 
+This option affects PDF files as well as images - images inside them are compressed on PDF generation or upload.
+
 ## Template
 Type the name of a template to be used for [generating PDF documents]({{<relref "/docs/fields/field-types/special-field-types/file/document-templates">}}) to be stored in this field.
 

@@ -24,3 +24,5 @@ Run a [workflow]({{<relref "/docs/workflows">}}) immediately after the creation 
 
 ### Run this workflow whenever each record is viewed
 As well as running the workflow on record creation, also run it whenever a user views a record in this table. Be aware this may have a performance impact for users, if the workflow is resource intensive and/or multi-step, particularly if records are also viewed frequently.
+
+> This option will also trigger the workflow when an API updates a record in the table.

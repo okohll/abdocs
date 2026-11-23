@@ -25,6 +25,8 @@ As it happens, we have an example of a recipe generation app, as part of a wider
 Here's a diagram which shows the number of views which the 'product ing. weight total' view feeds into
 ![A node diagram showing view connections](/weight-total-views.png)
 
+More detail can be seen if you tick 'entity relationship diagram'. Each node will become a box listing important table or view properties, such as what a view's filters are and whether it's cached.
+
 Each node is a view and the lines are connections (i.e. [joins]({{<relref "joins">}}) or [unions]({{<relref "/docs/views/options/behaviour-options#amalgamate-with" >}})) between them. In this case, 84 views depend on the weight total. You can see that there are chains of views, where one view joins to another, which joins to another etc.
 
 The interesting thing is that this tactic would actually be frowned upon in traditional database development. There's an excellent writeup of some of the costs associated with the tactic here:

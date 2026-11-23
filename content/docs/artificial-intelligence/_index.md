@@ -51,6 +51,8 @@ If you want to later change that selection, please disconnect and reconnect the 
 ### Usage
 Once connected, simply chat to the system. Use the word Agilebase to prompt the connector. For example, 'What are the project statuses in Agilebase?' or 'In Agilebase, how would I create a report to show monthly sales totals?'
 
+> We suggest you use an AI model or setting appropriate to whatever task you want to do. Faster, more energy efficient models for simple questions or tasks and slower but more capable ones where there is more complexity.
+
 ### Disconnecting
 When a user logs out, any AI sessions are disconnected too. The same happens if the user is disabled, deleted or if their password is changed.
 

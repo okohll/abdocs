@@ -18,6 +18,8 @@ To add the Workflow button to a Table's form simply create a new field of type [
 When the Workflow is run, it will be filtered by the ID of the record. (You may wish read up about [Chaining Workflows]({{<relref "/docs/workflows/advanced/chaining-workflows">}}) )
 It is often necessary to put some thought in to the visibility of the button - it can be confusing to the user that a button is present when it does nothing due to filters they cannot know about.
 
+> Workflow buttons for a record also show in calendar popups when an event is clicked and when a record is a row in a [tab]({{<relref "/docs/tables/hierarchy-navigation/tabs"}}). In the latter case, the navigation arrow at the left of the row will show them alongside the options to navigate to related records.
+
 
 ## Workflow Buttons on Views
 Some Manual workflows are more appropriately run on a number of records. As such the ability to run them is likely to be associated to a list presented in a view.
